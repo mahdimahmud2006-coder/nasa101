@@ -1,0 +1,9 @@
+{
+  "command": "make verify",
+  "exit_code": 0,
+  "preexisting_output_files": 782,
+  "validator_report_changes": [],
+  "all_preexisting_outputs_preserved": true,
+  "remaining_mismatches": [],
+  "note": "Current validation output is retained in make_verify.log. Existing validators may rewrite timing reports; changed generated reports are saved in this phase evidence directory and original historical bytes restored. No failed validator is reclassified as passing."
+}

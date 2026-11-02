@@ -1,0 +1,950 @@
+{
+  "inspection_date_local": "2026-11-02",
+  "timezone": "Asia/Dhaka",
+  "inspected_at": "2026-11-02T00:35:55.124378+06:00",
+  "scope": "Nine unique actively configured GCOV inputs across four cases; other local raw products are outside the active series. Header/dataset existence and dtype inspection, not large-array covariance science.",
+  "records": [
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "acquisition_start": "2026-08-19T23:39:18.000000000",
+      "acquisition_end": "2026-08-19T23:39:53.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 98,
+      "frame": 16,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32645",
+      "shape": [
+        33840,
+        34488
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "source_file": "aug19.h5",
+      "size_bytes": 7243563008,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "nepal_surface",
+        "nepal_impact_corridor"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33840,
+                34488
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33840,
+                34488
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4230,
+                4311
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4230,
+                4311
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+      "acquisition_start": "2026-08-31T23:39:18.000000000",
+      "acquisition_end": "2026-08-31T23:39:52.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 98,
+      "frame": 16,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32645",
+      "shape": [
+        33840,
+        34488
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "source_file": "aug31.h5",
+      "size_bytes": 7050625024,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "nepal_surface",
+        "nepal_impact_corridor"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33840,
+                34488
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33840,
+                34488
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4230,
+                4311
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4230,
+                4311
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001",
+      "acquisition_start": "2026-06-18T23:21:35.000000000",
+      "acquisition_end": "2026-06-18T23:22:10.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 69,
+      "frame": 14,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32646",
+      "shape": [
+        33552,
+        34200
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "source_file": "database/bangladesh-shared/NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001.h5",
+      "size_bytes": 6878658560,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "jamuna_river",
+        "tanguar_wetland"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001",
+      "acquisition_start": "2026-07-24T23:21:33.000000000",
+      "acquisition_end": "2026-07-24T23:22:08.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 69,
+      "frame": 14,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32646",
+      "shape": [
+        33552,
+        34200
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "source_file": "database/bangladesh-shared/NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001.h5",
+      "size_bytes": 6870269952,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "jamuna_river",
+        "tanguar_wetland"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001",
+      "acquisition_start": "2026-08-17T23:21:32.000000000",
+      "acquisition_end": "2026-08-17T23:22:06.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 69,
+      "frame": 14,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32646",
+      "shape": [
+        33552,
+        34200
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "source_file": "database/bangladesh-shared/NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 6685720576,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "jamuna_river",
+        "tanguar_wetland"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001",
+      "acquisition_start": "2026-08-29T23:21:32.000000000",
+      "acquisition_end": "2026-08-29T23:22:06.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 69,
+      "frame": 14,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32646",
+      "shape": [
+        33552,
+        34200
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "source_file": "database/bangladesh-shared/NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 6689914880,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "jamuna_river",
+        "tanguar_wetland"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001",
+      "acquisition_start": "2026-09-22T23:21:32.000000000",
+      "acquisition_end": "2026-09-22T23:22:06.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 69,
+      "frame": 14,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32646",
+      "shape": [
+        33552,
+        34200
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "source_file": "database/bangladesh-shared/NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 6685720576,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "jamuna_river",
+        "tanguar_wetland"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001",
+      "acquisition_start": "2026-10-16T23:21:32.000000000",
+      "acquisition_end": "2026-10-16T23:22:06.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 69,
+      "frame": 14,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32646",
+      "shape": [
+        33552,
+        34200
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "source_file": "database/bangladesh-shared/NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 6681526272,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "jamuna_river",
+        "tanguar_wetland"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001",
+      "acquisition_start": "2026-09-12T23:39:18.000000000",
+      "acquisition_end": "2026-09-12T23:39:52.999342105",
+      "product": "GCOV",
+      "level": "L2",
+      "track": 98,
+      "frame": 16,
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "product_version": "1.0.11",
+      "specification_version": "1.5.0",
+      "frequency": "frequencyA",
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "crs": "EPSG:32645",
+      "shape": [
+        33840,
+        34488
+      ],
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "source_file": "sept12.h5",
+      "size_bytes": 7046430720,
+      "processing_release": "P05023",
+      "used_by_cases": [
+        "nepal_surface",
+        "nepal_impact_corridor"
+      ],
+      "has_ssar_group": false,
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33840,
+                34488
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33840,
+                34488
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4230,
+                4311
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4230,
+                4311
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "file_stat_stable_during_read": true
+    }
+  ],
+  "series": [
+    {
+      "track": 69,
+      "frame": 14,
+      "observation_count": 6,
+      "release_strings": [
+        "P05023"
+      ],
+      "product_versions": [
+        "1.0.11"
+      ],
+      "timestamps_utc": [
+        "2026-06-18T23:21:35.000000000",
+        "2026-07-24T23:21:33.000000000",
+        "2026-08-17T23:21:32.000000000",
+        "2026-08-29T23:21:32.000000000",
+        "2026-09-22T23:21:32.000000000",
+        "2026-10-16T23:21:32.000000000"
+      ]
+    },
+    {
+      "track": 98,
+      "frame": 16,
+      "observation_count": 3,
+      "release_strings": [
+        "P05023"
+      ],
+      "product_versions": [
+        "1.0.11"
+      ],
+      "timestamps_utc": [
+        "2026-08-19T23:39:18.000000000",
+        "2026-08-31T23:39:18.000000000",
+        "2026-09-12T23:39:18.000000000"
+      ]
+    }
+  ],
+  "off_diagonal_datasets_found": [],
+  "phase_2_branch": "DIAGONAL_ONLY_PROXIES_NO_DPRVI_OR_M_CHI",
+  "new_datasets_downloaded": 0,
+  "source": "User-supplied NASA\u2013ISRO NISAR products, matching the existing NASA Earthdata / ASF record; no new external source queried.",
+  "limitation": "Stat stability and schema checks do not constitute full-file cryptographic verification. Large source HDF5 files are inputs and are not included in the processed-output baseline."
+}

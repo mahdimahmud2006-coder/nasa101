@@ -1,0 +1,32 @@
+{
+  "source_archive_sha256": "867b5bebb4881d1b8f88af31df7f784f5db612fa651c911d81d7304bf5be0dda",
+  "original_ring_count": 23,
+  "geometry_parts": 17,
+  "mapped_geometry_area_km2": 37.35446891115319,
+  "independent_geometry_centroid_wgs84": [
+    85.32009841233806,
+    28.144416974920865
+  ],
+  "illustrative_24km_window_overlap_km2": 6.419218911675034,
+  "interpretation": "Read-only geographic/point-validity feasibility, not a completed event-centered case or accuracy validation. Mapping represents preliminary mudflow/rockflow impacts, not flood-water extent. Point samples do not certify all-pixel coverage.",
+  "observations": [
+    {
+      "source_file": "aug19.h5",
+      "source_footprint_intersection_km2": 37.35446891115319,
+      "sampled_points_within_grid": 17,
+      "sampled_points_positive_quality_valid": 17
+    },
+    {
+      "source_file": "aug31.h5",
+      "source_footprint_intersection_km2": 37.35446891115319,
+      "sampled_points_within_grid": 17,
+      "sampled_points_positive_quality_valid": 17
+    },
+    {
+      "source_file": "sept12.h5",
+      "source_footprint_intersection_km2": 37.35446891115319,
+      "sampled_points_within_grid": 17,
+      "sampled_points_positive_quality_valid": 17
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "status": "ACTUAL_EXISTING_HV_LAYER_AOI_CHECKED",
+  "records": [
+    {
+      "source_file": "aug19.h5",
+      "granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "timestamp": "2026-08-19T23:39:18.000000000",
+      "dataset_path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+      "dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "valid_fraction": 0.9957177083333333,
+      "window_sha256": "b91cc69fbcec97e094389d1cfb95052445eb0421c4de55ea5c15bd2a007c364e",
+      "hh_selected_zone_hv_mean_delta_db": 0.0,
+      "hh_selected_zone_hv_mean_absolute_delta_db": 0.0
+    },
+    {
+      "source_file": "aug31.h5",
+      "granule_id": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+      "timestamp": "2026-08-31T23:39:18.000000000",
+      "dataset_path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+      "dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "valid_fraction": 0.9824032986111111,
+      "window_sha256": "37f9b4f6dc98803afc971ddae41f0ffc43acffc226f5500aed00fa75e542568e",
+      "hh_selected_zone_hv_mean_delta_db": -1.8111540995650555,
+      "hh_selected_zone_hv_mean_absolute_delta_db": 2.8656743998503567
+    },
+    {
+      "source_file": "sept12.h5",
+      "granule_id": "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001",
+      "timestamp": "2026-09-12T23:39:18.000000000",
+      "dataset_path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+      "dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "valid_fraction": 0.9511527777777777,
+      "window_sha256": "70112624a1cae86eceabbc795226e948fe57d787de5f1b572e69820f800596e3",
+      "hh_selected_zone_hv_mean_delta_db": -2.4509843797539945,
+      "hh_selected_zone_hv_mean_absolute_delta_db": 3.1144264163683406
+    }
+  ],
+  "zone_common_native_pixels": 199,
+  "interpretation": "Feasibility/exploratory summary only. Zone was selected by HH changes, so HV agreement is not an independent event label. No physical cause, confidence or new classification inferred. Both frequency A and B here are L-band subbands, not L-band/S-band pairing."
+}

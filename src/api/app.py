@@ -28,6 +28,11 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         url=urlsplit(self.path).path
+        if url=='/api/investigations':
+            path=PUBLIC/'cases/investigations.json'
+            if not path.is_file():
+                return self.send_json({'error':'Generate investigations with make investigations'},status=503)
+            return self.send_json(json.loads(path.read_text()))
         if url=='/api/project':
             from src.api.readiness import readiness
             status=readiness(ROOT)
@@ -46,6 +51,20 @@ class Handler(SimpleHTTPRequestHandler):
             if not case.replace('_','').replace('-','').isalnum():
                 return self.send_error(404)
             name=parts[3] if len(parts)==4 else 'manifest'
+            if name=='investigation':
+                path=PUBLIC/'cases'/case/'investigation/manifest.json'
+                if not path.is_file():
+                    return self.send_error(404,'Investigation observations not generated')
+                return self.send_json(json.loads(path.read_text()))
+            if name=='investigation-probe':
+                try:
+                    from src.compute.investigation_probe import probe
+                    query=parse_qs(urlsplit(self.path).query)
+                    return self.send_json(probe(PUBLIC/'cases'/case/'investigation',int(query['row'][0]),int(query['col'][0])))
+                except (ValueError,KeyError,OverflowError):
+                    return self.send_json({'error':'Invalid investigation cell'},status=422)
+                except FileNotFoundError:
+                    return self.send_json({'error':'Investigation data not available'},status=404)
             if name in ('flood-escalation','flood-model','thermal','dna','landslide'):
                 filename=name+'/manifest.json' if name in ('thermal','dna','landslide') else ('flood/model.json' if name=='flood-model' else 'flood/manifest.json')
                 path=PUBLIC/'cases'/case/filename

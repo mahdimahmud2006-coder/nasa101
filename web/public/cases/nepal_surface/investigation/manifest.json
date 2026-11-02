@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "case_id": "nepal_surface",
+  "module": "surface",
+  "title": "Kathmandu \u00b7 persistence investigation",
+  "question": "The change alert disappeared. Did the surface return to its baseline?",
+  "status": "OBSERVATIONS_READY",
+  "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+  "grid": {
+    "shape": [
+      2400,
+      2400
+    ],
+    "affine": [
+      10.0,
+      0.0,
+      323480.0,
+      0.0,
+      -10.0,
+      3088170.0
+    ],
+    "crs": "EPSG:32645",
+    "pixel_area_km2": 0.0001,
+    "bounds_wgs84": [
+      85.20639099989948,
+      27.690230304043727,
+      85.45324557837118,
+      27.909743780696033
+    ]
+  },
+  "baseline_observation_id": "visit_0",
+  "observations": [
+    {
+      "observation_id": "visit_0",
+      "timestamp": "2026-08-19T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "source_file": "aug19.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9957177083333333,
+          "window_sha256": "39bc00456c0571f8e9623a1455b9ebc25a22534567faf85556c25d9881e3a35f",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5749602,
+          "total_pixels": 5760000,
+          "masked_pixels": 10398,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0010920614004135132,
+            3732.875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5735334,
+          "processed_sha256": "3b16c0495173750f3e02e609f9de69ba57b49250029e1c8f778edb3675498f9e"
+        },
+        "hv": {
+          "valid_fraction": 0.9957177083333333,
+          "window_sha256": "b91cc69fbcec97e094389d1cfb95052445eb0421c4de55ea5c15bd2a007c364e",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5749602,
+          "total_pixels": 5760000,
+          "masked_pixels": 10398,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.00030270591378211975,
+            2307.4375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5735334,
+          "processed_sha256": "aa691eb0b1b4e93a7972924c535302a051510c953cc5ed97e0d573af77fa6a74"
+        }
+      },
+      "rasters": {
+        "hh": "hh_0.tif",
+        "hv": "hv_0.tif"
+      },
+      "layers": {
+        "hh": "hh_0.webp",
+        "hv": "hv_0.webp",
+        "ratio": "ratio_0.webp",
+        "baseline": "baseline_0.webp",
+        "successive": null
+      },
+      "paired_valid_fraction": 0.9957177083333333,
+      "baseline_common_fraction": 0.9957177083333333,
+      "baseline_disturbance_area_km2": 0.0
+    },
+    {
+      "observation_id": "visit_1",
+      "timestamp": "2026-08-31T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+      "source_file": "aug31.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9824032986111111,
+          "window_sha256": "3b3d5458da8fc62a2ffb6982063259c0edd74bcae2ae963535a2f1d33b2966e0",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5672910,
+          "total_pixels": 5760000,
+          "masked_pixels": 87090,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0010997653007507324,
+            4328.5
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5658643,
+          "processed_sha256": "5f667ace3fb6b21057cc1fcb6ead85d9db3b9861e890127f654525a643885dd8"
+        },
+        "hv": {
+          "valid_fraction": 0.9824032986111111,
+          "window_sha256": "37f9b4f6dc98803afc971ddae41f0ffc43acffc226f5500aed00fa75e542568e",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5672910,
+          "total_pixels": 5760000,
+          "masked_pixels": 87090,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.00024074502289295197,
+            2110.78125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5658643,
+          "processed_sha256": "569ee7e3b480f1ae89dcc3cb87ce541fa1924caa268bb3134f738ac0103a2f77"
+        }
+      },
+      "rasters": {
+        "hh": "hh_1.tif",
+        "hv": "hv_1.tif"
+      },
+      "layers": {
+        "hh": "hh_1.webp",
+        "hv": "hv_1.webp",
+        "ratio": "ratio_1.webp",
+        "baseline": "baseline_1.webp",
+        "successive": "successive_1.webp"
+      },
+      "paired_valid_fraction": 0.9824032986111111,
+      "baseline_common_fraction": 0.9823522569444444,
+      "baseline_disturbance_area_km2": 25.732000000000003
+    },
+    {
+      "observation_id": "visit_2",
+      "timestamp": "2026-09-12T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001",
+      "source_file": "sept12.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9511527777777777,
+          "window_sha256": "039a403ec9cd7518d11ada865e20b87043edc45b3f793ff8357dee0014d9f49b",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5492956,
+          "total_pixels": 5760000,
+          "masked_pixels": 267044,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0004240088164806366,
+            3325.15625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5478640,
+          "processed_sha256": "b9c5ae6049d61afdf749ae70ab2af290cec2ce51a704f0646c5307106f4351a3"
+        },
+        "hv": {
+          "valid_fraction": 0.9511527777777777,
+          "window_sha256": "70112624a1cae86eceabbc795226e948fe57d787de5f1b572e69820f800596e3",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5492956,
+          "total_pixels": 5760000,
+          "masked_pixels": 267044,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0003457479178905487,
+            2133.25
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5478640,
+          "processed_sha256": "c4b7bc7ab17f3f8fc85a7cfa2e2103d576a39f9df3f63cfd92c8d62c5249a843"
+        }
+      },
+      "rasters": {
+        "hh": "hh_2.tif",
+        "hv": "hv_2.tif"
+      },
+      "layers": {
+        "hh": "hh_2.webp",
+        "hv": "hv_2.webp",
+        "ratio": "ratio_2.webp",
+        "baseline": "baseline_2.webp",
+        "successive": "successive_2.webp"
+      },
+      "paired_valid_fraction": 0.9511527777777777,
+      "baseline_common_fraction": 0.9511114583333333,
+      "baseline_disturbance_area_km2": 33.214400000000005
+    }
+  ],
+  "profiles": [
+    {
+      "label": "Previously tracked 1.99-hectare zone",
+      "selection": "Original geographic case retained. The highlighted zone was selected by the earlier HH analysis; it is not an independent validation sample.",
+      "status": "MEASURED",
+      "footprint_pixels": 199,
+      "common_valid_pixels": 199,
+      "common_valid_fraction": 1.0,
+      "footprint_area_km2": 0.0199,
+      "measured_area_km2": 0.0199,
+      "observations": [
+        {
+          "index": 0,
+          "hh_mean_db": -4.770070468438274,
+          "hv_mean_db": -15.767042610513505,
+          "hh_baseline_delta_db": 0.0,
+          "hv_baseline_delta_db": 0.0,
+          "hh_successive_delta_db": null,
+          "hv_successive_delta_db": null,
+          "hh_minus_hv_db": 10.99697214207523,
+          "observation_id": "visit_0",
+          "timestamp": "2026-08-19T23:39:18Z"
+        },
+        {
+          "index": 1,
+          "hh_mean_db": -12.296379446384297,
+          "hv_mean_db": -17.57819671007856,
+          "hh_baseline_delta_db": -7.526308989405033,
+          "hv_baseline_delta_db": -1.8111540995650555,
+          "hh_successive_delta_db": -7.526308989405033,
+          "hv_successive_delta_db": -1.8111540995650555,
+          "hh_minus_hv_db": 5.281817263694265,
+          "observation_id": "visit_1",
+          "timestamp": "2026-08-31T23:39:18Z"
+        },
+        {
+          "index": 2,
+          "hh_mean_db": -11.84668738877953,
+          "hv_mean_db": -18.2180269902675,
+          "hh_baseline_delta_db": -7.076616928206017,
+          "hv_baseline_delta_db": -2.4509843797539945,
+          "hh_successive_delta_db": 0.44969205760476577,
+          "hv_successive_delta_db": -0.6398302801889391,
+          "hh_minus_hv_db": 6.3713396014879695,
+          "observation_id": "visit_2",
+          "timestamp": "2026-09-12T23:39:18Z"
+        }
+      ],
+      "interpretation": "Mean filtered log-backscatter on a fixed common-valid footprint. dB differences are not ground displacement. No cause or calibrated confidence is inferred."
+    }
+  ],
+  "reference": null,
+  "display_limits": {
+    "hh": [
+      -10.045949935913086,
+      0.5640371370315554
+    ],
+    "hv": [
+      -17.464984283447265,
+      -6.8078670692443835
+    ]
+  },
+  "thresholds": {
+    "baseline_disturbance_db": 3.0,
+    "radar_dark_hh_db": -17.0,
+    "radar_dark_hv_db": -24.0,
+    "brightening_db": 3.0,
+    "calibration_status": "UNCALIBRATED"
+  },
+  "selection_note": "Original geographic case retained. The highlighted zone was selected by the earlier HH analysis; it is not an independent validation sample.",
+  "limitations": [
+    "PROVISIONAL GCOV intensity; not ground displacement.",
+    "HH/HV measurements do not uniquely identify a physical cause.",
+    "Only actual acquisitions are shown; missing visits are not interpolated.",
+    "Fixed-baseline difference does not establish physical damage or recovery.",
+    "Radar-dark and brightening thresholds are illustrative and UNCALIBRATED; not validated water, habitat or flood classifications.",
+    "Observed-visit fractions are not continuous inundation duration or seasonal climatology.",
+    "A fixed common-valid footprint is required for selected-region profiles."
+  ],
+  "provenance": {
+    "config_sha256": "572ec4b661bd0ded9255ca83ec798004d420058b6e20360492bcf5a246b69b98",
+    "model_sha256": "1ff6fcd27b7506a55f6a7acbed86fb90501e88f68c28d720abbc4846308d1888",
+    "source_policy": "New inputs must come from non-Chinese organizations/sites; provider and upstream provenance require review."
+  },
+  "formulas": {
+    "baseline": "HH(t) - HH(first observed visit), dB",
+    "successive": "HH(t) - HH(previous observed visit), dB; unavailable at first visit",
+    "ratio": "HH_dB - HV_dB = 10 log10(HH_power/HV_power); difference of filtered log-power",
+    "dark": "valid HH <= configured HH threshold AND valid HV <= configured HV threshold",
+    "occupancy": "dark valid visits / paired valid visits; only when at least two visits valid",
+    "brightening": "both channels increase by configured dB relative to first observation, on baseline-common pixels"
+  }
+}

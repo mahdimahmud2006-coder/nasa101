@@ -23,7 +23,7 @@ class Page(HTMLParser):
 
 def check(root=ROOT):
     root=Path(root);report={}
-    for name,script in [('index','studio.mjs'),('change-lab','change-lab.mjs'),('timeseries','timeseries.js'),('comparison','app.js')]:
+    for name,script in [('index','studio.mjs'),('change-lab','change-lab.mjs'),('timeseries','timeseries.js'),('comparison','app.js'),('investigations','investigations.mjs')]:
         page=Page();page.feed((root/'web'/(name+'.html')).read_text())
         assert not page.stack and len(page.ids)==len(set(page.ids))
         for asset in page.assets:

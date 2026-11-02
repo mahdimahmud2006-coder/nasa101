@@ -1,0 +1,174 @@
+node tests/playback.test.mjs
+TAP version 13
+# Subtest: first play traverses the whole saved range, even when initial view is in its middle
+ok 1 - first play traverses the whole saved range, even when initial view is in its middle
+  ---
+  duration_ms: 1.401843
+  ...
+# Subtest: pause cancels the timer and prevents an already queued callback advancing
+ok 2 - pause cancels the timer and prevents an already queued callback advancing
+  ---
+  duration_ms: 0.147921
+  ...
+# Subtest: loop returns to range start without introducing intermediate dates
+ok 3 - loop returns to range start without introducing intermediate dates
+  ---
+  duration_ms: 1.456698
+  ...
+# Subtest: manual seek pauses playback, then play resumes the selected acquisition
+ok 4 - manual seek pauses playback, then play resumes the selected acquisition
+  ---
+  duration_ms: 0.206782
+  ...
+# Subtest: a new range resets playback and a single-date range cannot autoplay
+ok 5 - a new range resets playback and a single-date range cannot autoplay
+  ---
+  duration_ms: 0.185448
+  ...
+# Subtest: slow image loading completes before the next frame timer starts
+ok 6 - slow image loading completes before the next frame timer starts
+  ---
+  duration_ms: 0.14381
+  ...
+# Subtest: pause and seek during a pending frame cannot restart its old playback
+ok 7 - pause and seek during a pending frame cannot restart its old playback
+  ---
+  duration_ms: 0.13517
+  ...
+# Subtest: load failure stops playback and reports the error without another timer
+ok 8 - load failure stops playback and reports the error without another timer
+  ---
+  duration_ms: 0.324662
+  ...
+# Subtest: speed changes reschedule a waiting timer and preserve the current frame
+ok 9 - speed changes reschedule a waiting timer and preserve the current frame
+  ---
+  duration_ms: 0.275657
+  ...
+# Subtest: invalid range, speed and frame positions are rejected
+ok 10 - invalid range, speed and frame positions are rejected
+  ---
+  duration_ms: 0.404238
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 12.955575
+node tests/terrain-view.test.mjs
+TAP version 13
+# Subtest: top-down center selects the center source cell
+ok 1 - top-down center selects the center source cell
+  ---
+  duration_ms: 1.427884
+  ...
+# Subtest: northwest ground locations retain source row/column orientation
+ok 2 - northwest ground locations retain source row/column orientation
+  ---
+  duration_ms: 0.141311
+  ...
+# Subtest: rotated orthographic mesh picking maps back to the original geographic cell
+ok 3 - rotated orthographic mesh picking maps back to the original geographic cell
+  ---
+  duration_ms: 0.22354
+  ...
+# Subtest: clicks outside the footprint never fabricate a cell
+ok 4 - clicks outside the footprint never fabricate a cell
+  ---
+  duration_ms: 0.112574
+  ...
+# Subtest: 2D fallback accounts for the display-to-backing-store scale
+ok 5 - 2D fallback accounts for the display-to-backing-store scale
+  ---
+  duration_ms: 1.220371
+  ...
+# Subtest: keyboard navigation pans and zooms without leaving footprint limits
+ok 6 - keyboard navigation pans and zooms without leaving footprint limits
+  ---
+  duration_ms: 0.262092
+  ...
+# Subtest: keyboard Enter uses geographic picking before inspecting a cell
+ok 7 - keyboard Enter uses geographic picking before inspecting a cell
+  ---
+  duration_ms: 0.171468
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11.488054
+node tests/studio.test.mjs
+TAP version 13
+# Subtest: studio initializes from real saved manifests with explainable index and geographic check
+ok 1 - studio initializes from real saved manifests with explainable index and geographic check
+  ---
+  duration_ms: 51.725777
+  ...
+# Subtest: thermal layer uses the selected real acquisition and its own coverage legend
+ok 2 - thermal layer uses the selected real acquisition and its own coverage legend
+  ---
+  duration_ms: 13.136231
+  ...
+# Subtest: coverage badge distinguishes selected radar validity from flood assessability across dates
+ok 3 - coverage badge distinguishes selected radar validity from flood assessability across dates
+  ---
+  duration_ms: 22.402473
+  ...
+# Subtest: date selection changes map, score and independent thermal scene together
+ok 4 - date selection changes map, score and independent thermal scene together
+  ---
+  duration_ms: 10.241532
+  ...
+# Subtest: scenario controls submit the actual selected values and enable baseline comparison
+ok 5 - scenario controls submit the actual selected values and enable baseline comparison
+  ---
+  duration_ms: 21.199082
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 123.02976
+node tests/change-lab.test.mjs
+TAP version 13
+# Subtest: Change Lab reads real DNA and explicitly shows censored recovery and unavailable similarity
+ok 1 - Change Lab reads real DNA and explicitly shows censored recovery and unavailable similarity
+  ---
+  duration_ms: 25.526883
+  ...
+# Subtest: Terrain and rainfall components switch actual saved map textures
+ok 2 - Terrain and rainfall components switch actual saved map textures
+  ---
+  duration_ms: 11.069363
+  ...
+# Subtest: Baseline date has no radar modifier and retains its disclosed effective weights
+ok 3 - Baseline date has no radar modifier and retains its disclosed effective weights
+  ---
+  duration_ms: 7.317933
+  ...
+# Subtest: Guided story focuses the real zone then returns to landscape susceptibility
+ok 4 - Guided story focuses the real zone then returns to landscape susceptibility
+  ---
+  duration_ms: 9.601342
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58.149323

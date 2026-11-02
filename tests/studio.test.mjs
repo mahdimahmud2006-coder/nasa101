@@ -57,6 +57,15 @@ test('thermal layer uses the selected real acquisition and its own coverage lege
   assert.equal(f.api.state.layer,'thermal');assert.ok(f.api.terrain.images[1].endsWith(f.api.state.scene.preview));
   assert.equal(f.elements.get('legend-title').textContent,'Land surface temperature');assert.ok(f.elements.get('coverage-badge').textContent.includes('thermal'));
 });
+test('coverage badge distinguishes selected radar validity from flood assessability across dates',async()=>{
+  const f=await fixture();
+  assert.equal(f.elements.get('coverage-badge').textContent,'95.1% radar');
+  await f.document.querySelector('[data-layer="escalation"]').emit('click');
+  assert.equal(f.elements.get('coverage-badge').textContent,'94.7% assessed');
+  await f.document.querySelector('[data-layer="radar"]').emit('click');
+  await f.document.querySelector('[data-date="0"]').emit('click');
+  assert.equal(f.elements.get('coverage-badge').textContent,'99.6% radar');
+});
 test('date selection changes map, score and independent thermal scene together',async()=>{
   const f=await fixture();await f.document.querySelector('[data-date="0"]').emit('click');
   assert.equal(f.api.state.index,0);assert.equal(f.elements.get('score-value').textContent,'20.8');assert.ok(f.api.state.scene.datetime.startsWith('2026-08-18'));

@@ -1,0 +1,67 @@
+{
+  "project": "TerraPulse",
+  "schema_version": 1,
+  "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+  "source_policy": "New inputs must come from non-Chinese organizations/sites; provider and upstream provenance require review.",
+  "frequency": "frequencyA",
+  "terms": ["HHHH", "HVHV"],
+  "minimum_observations": 3,
+  "minimum_valid_fraction": 0.8,
+  "median_filter_size": 3,
+  "baseline_disturbance_db": 3.0,
+  "radar_dark_hh_db": -17.0,
+  "radar_dark_hv_db": -24.0,
+  "brightening_db": 3.0,
+  "cases": [
+    {
+      "case_id": "nepal_surface",
+      "module": "surface",
+      "title": "Kathmandu · persistence investigation",
+      "question": "The change alert disappeared. Did the surface return to its baseline?",
+      "center": [85.33, 27.8],
+      "size_m": [24000, 24000],
+      "source_files": ["aug19.h5", "aug31.h5", "sept12.h5"],
+      "source_directory": "database/nepal-series",
+      "granule_pattern": "NISAR_L2_PR_GCOV_*_098_A_016_4005_DHDH_A_*_P05023_*.h5",
+      "legacy_zone_raster": "data/derived/nepal_case_01/timeseries/zone_labels.tif",
+      "selection_note": "Original geographic case retained. The highlighted zone was selected by the earlier HH analysis; it is not an independent validation sample."
+    },
+    {
+      "case_id": "nepal_impact_corridor",
+      "module": "surface",
+      "title": "Rasuwa–Nuwakot · reference-aligned corridor",
+      "question": "What radar changes coincide spatially with preliminary mapped mudflow/rockflow impacts?",
+      "center": [85.32009841233806, 28.144416974920865],
+      "size_m": [24000, 24000],
+      "source_files": ["aug19.h5", "aug31.h5", "sept12.h5"],
+      "source_directory": "database/nepal-series",
+      "granule_pattern": "NISAR_L2_PR_GCOV_*_098_A_016_4005_DHDH_A_*_P05023_*.h5",
+      "reference_archive": "data/context/unosat_20260826_flood_extent.zip",
+      "selection_note": "Window centered on the independent mapped geometry centroid before inspecting detections. Covers only part of the mapped corridor. Mapping is preliminary impact context, not exhaustive validation or flood-water truth."
+    },
+    {
+      "case_id": "jamuna_river",
+      "module": "river",
+      "title": "Jamuna · Sirajganj river corridor",
+      "question": "Which radar-dark signatures appear, recede, or persist between visits?",
+      "center": [89.71, 24.49],
+      "size_m": [20000, 20000],
+      "source_files": [],
+      "source_directory": "database/bangladesh-shared",
+      "granule_pattern": "NISAR_L2_PR_GCOV_*_069_A_014_4005_DHDH_A_*_P05023_*.h5",
+      "selection_note": "Geographic river corridor selected before radar inspection. Radar-dark candidates are not validated water, bank erosion or flood damage."
+    },
+    {
+      "case_id": "tanguar_wetland",
+      "module": "wetland",
+      "title": "Tanguar Haor · wetland observations",
+      "question": "How do dark and bright radar responses vary across observed wetland visits?",
+      "center": [91.08, 25.10],
+      "size_m": [18000, 16000],
+      "source_files": [],
+      "source_directory": "database/bangladesh-shared",
+      "granule_pattern": "NISAR_L2_PR_GCOV_*_069_A_014_4005_DHDH_A_*_P05023_*.h5",
+      "selection_note": "Geographic wetland window selected before radar inspection. No habitat boundary or independently calibrated inundated-vegetation classifier is asserted."
+    }
+  ]
+}

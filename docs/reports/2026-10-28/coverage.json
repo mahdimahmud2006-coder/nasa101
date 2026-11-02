@@ -1,0 +1,730 @@
+{
+  "version": 1,
+  "artifact": {
+    "identity": "TerraPulse released-challenge strategy",
+    "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+    "view": "Scoped current case, new feasibility findings, README and coverage control; not every application view"
+  },
+  "categories": [
+    {
+      "id": "usefulness",
+      "label": "Usefulness / completeness",
+      "applicable": true,
+      "assessment": "The challenge is directly addressed, but the primary physical event story needs revision."
+    },
+    {
+      "id": "clarity",
+      "label": "Analytical clarity",
+      "applicable": true,
+      "assessment": "Baseline versus successive change is supported; interpretation remains qualified."
+    },
+    {
+      "id": "visual",
+      "label": "Visual / interaction consistency",
+      "applicable": true,
+      "assessment": "Radar badge repaired and mock-tested. Current real-browser legibility and GPU behavior unverified."
+    },
+    {
+      "id": "sources",
+      "label": "Source authority / confidence",
+      "applicable": true,
+      "assessment": "NASA/ASF and archived independent references are identified; candidate metadata does not certify new usable observations."
+    },
+    {
+      "id": "values",
+      "label": "SQL / value accuracy",
+      "applicable": true,
+      "assessment": "Raw-HV calculations, geographic feasibility and corrected coverage bindings are evidenced; no SQL is used."
+    },
+    {
+      "id": "within",
+      "label": "Within-chart agreement",
+      "applicable": true,
+      "assessment": "Selected-layer radar badge and selected-date binding corrected. Broader rendered chart agreement remains outside this browser-blocked review."
+    },
+    {
+      "id": "details",
+      "label": "Complete source details",
+      "applicable": true,
+      "assessment": "Saved raw CMR metadata, granule IDs, source archive hash and reproducible scripts support reviewed new claims."
+    },
+    {
+      "id": "cross",
+      "label": "Cross-artifact consistency",
+      "applicable": true,
+      "assessment": "README factual corrections verified. Existing release predates repairs and presentation draft needs final-format revision."
+    },
+    {
+      "id": "quality",
+      "label": "Data quality controls",
+      "applicable": true,
+      "assessment": "Common-valid HV pixels and 17 geographic samples checked; full event-aligned crop and added-date quality remain unverified."
+    },
+    {
+      "id": "conclusions",
+      "label": "Conclusion support",
+      "applicable": true,
+      "assessment": "Persistence finding is descriptive. Current event attribution lacks independent corroboration; no AI pass probability is asserted."
+    }
+  ],
+  "units": [
+    {
+      "id": "statement",
+      "label": "Released challenge interpretation",
+      "kind": "question",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "usefulness": {
+          "checks": [
+            {
+              "id": "statement-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/challenge_statement_review.json"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "statement-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/challenge_statement_review.json"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "details": {
+          "checks": [
+            {
+              "id": "statement-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/challenge_statement_review.json"
+              ]
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "current-interpretation",
+      "label": "Current zone independent event corroboration",
+      "kind": "claim",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "usefulness": {
+          "checks": [
+            {
+              "id": "current-interpretation-checked",
+              "state": "failed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/public/cases/nepal_case_01/validation.json",
+                "docs/FINAL_PROJECT_READINESS.md"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "event-attribution-missing",
+              "status": "open",
+              "checkIds": [
+                "current-interpretation-checked"
+              ]
+            }
+          ]
+        },
+        "conclusions": {
+          "checks": [
+            {
+              "id": "current-interpretation-checked",
+              "state": "failed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/public/cases/nepal_case_01/validation.json",
+                "docs/FINAL_PROJECT_READINESS.md"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "event-attribution-missing",
+              "status": "open",
+              "checkIds": [
+                "current-interpretation-checked"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "persistence",
+      "label": "Fixed-zone baseline persistence versus transition mask",
+      "kind": "comparison",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "persistence-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/public/cases/nepal_case_01/dna/manifest.json"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "values": {
+          "checks": [
+            {
+              "id": "persistence-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/public/cases/nepal_case_01/dna/manifest.json"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "conclusions": {
+          "checks": [
+            {
+              "id": "persistence-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/public/cases/nepal_case_01/dna/manifest.json"
+              ]
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "hv",
+      "label": "Actual unused HV feasibility",
+      "kind": "comparison",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "sources": {
+          "checks": [
+            {
+              "id": "hv-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/dual_pol_feasibility.json",
+                "docs/reports/2026-10-28/check_dual_pol_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "values": {
+          "checks": [
+            {
+              "id": "hv-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/dual_pol_feasibility.json",
+                "docs/reports/2026-10-28/check_dual_pol_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "quality": {
+          "checks": [
+            {
+              "id": "hv-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/dual_pol_feasibility.json",
+                "docs/reports/2026-10-28/check_dual_pol_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "details": {
+          "checks": [
+            {
+              "id": "hv-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/dual_pol_feasibility.json",
+                "docs/reports/2026-10-28/check_dual_pol_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "conclusions": {
+          "checks": [
+            {
+              "id": "hv-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/dual_pol_feasibility.json",
+                "docs/reports/2026-10-28/check_dual_pol_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "reference-window",
+      "label": "Event-aligned geographic and point feasibility",
+      "kind": "comparison",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "sources": {
+          "checks": [
+            {
+              "id": "reference-window-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/event_aoi_feasibility.json",
+                "docs/reports/2026-10-28/check_event_aoi_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "values": {
+          "checks": [
+            {
+              "id": "reference-window-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/event_aoi_feasibility.json",
+                "docs/reports/2026-10-28/check_event_aoi_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "quality": {
+          "checks": [
+            {
+              "id": "reference-window-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/event_aoi_feasibility.json",
+                "docs/reports/2026-10-28/check_event_aoi_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "details": {
+          "checks": [
+            {
+              "id": "reference-window-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/event_aoi_feasibility.json",
+                "docs/reports/2026-10-28/check_event_aoi_feasibility.py"
+              ]
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "catalog",
+      "label": "Additional acquisition candidates",
+      "kind": "claim",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "sources": {
+          "checks": [
+            {
+              "id": "catalog-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/cmr_nepal_candidates.json",
+                "docs/reports/2026-10-28/cmr_candidate_summary.json"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "details": {
+          "checks": [
+            {
+              "id": "catalog-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/cmr_nepal_candidates.json",
+                "docs/reports/2026-10-28/cmr_candidate_summary.json"
+              ]
+            }
+          ],
+          "findings": []
+        },
+        "conclusions": {
+          "checks": [
+            {
+              "id": "catalog-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/cmr_nepal_candidates.json",
+                "docs/reports/2026-10-28/cmr_candidate_summary.json"
+              ]
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "full-crop",
+      "label": "Full event-crop valid coverage and reference evaluation",
+      "kind": "question",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "quality": {
+          "checks": [
+            {
+              "id": "full-crop-checked",
+              "state": "unverified",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": []
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "new-date-headers",
+      "label": "New-date header and AOI compatibility",
+      "kind": "question",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "quality": {
+          "checks": [
+            {
+              "id": "new-date-headers-checked",
+              "state": "unverified",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": []
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "radar-badge",
+      "label": "Selected-layer/date coverage badge",
+      "kind": "control",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "visual": {
+          "checks": [
+            {
+              "id": "radar-badge-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/studio.mjs",
+                "tests/studio.test.mjs",
+                "docs/reports/2026-10-28/ui-tests.txt"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "wrong-radar-denominator",
+              "status": "fixed",
+              "checkIds": [
+                "radar-badge-checked"
+              ]
+            }
+          ]
+        },
+        "values": {
+          "checks": [
+            {
+              "id": "radar-badge-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/studio.mjs",
+                "tests/studio.test.mjs",
+                "docs/reports/2026-10-28/ui-tests.txt"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "wrong-radar-denominator",
+              "status": "fixed",
+              "checkIds": [
+                "radar-badge-checked"
+              ]
+            }
+          ]
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "radar-badge-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/studio.mjs",
+                "tests/studio.test.mjs",
+                "docs/reports/2026-10-28/ui-tests.txt"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "wrong-radar-denominator",
+              "status": "fixed",
+              "checkIds": [
+                "radar-badge-checked"
+              ]
+            }
+          ]
+        },
+        "cross": {
+          "checks": [
+            {
+              "id": "radar-badge-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "web/studio.mjs",
+                "tests/studio.test.mjs",
+                "docs/reports/2026-10-28/ui-tests.txt"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "wrong-radar-denominator",
+              "status": "fixed",
+              "checkIds": [
+                "radar-badge-checked"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "readme",
+      "label": "README measurement, source and feature claims",
+      "kind": "component",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "readme-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "README.md",
+                "docs/reports/2026-10-28/verification.json"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "readme-factual-overclaims",
+              "status": "fixed",
+              "checkIds": [
+                "readme-checked"
+              ]
+            }
+          ]
+        },
+        "cross": {
+          "checks": [
+            {
+              "id": "readme-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "README.md",
+                "docs/reports/2026-10-28/verification.json"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "readme-factual-overclaims",
+              "status": "fixed",
+              "checkIds": [
+                "readme-checked"
+              ]
+            }
+          ]
+        },
+        "details": {
+          "checks": [
+            {
+              "id": "readme-checked",
+              "state": "passed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "README.md",
+                "docs/reports/2026-10-28/verification.json"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "readme-factual-overclaims",
+              "status": "fixed",
+              "checkIds": [
+                "readme-checked"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "browser",
+      "label": "Current browser visuals and accessibility",
+      "kind": "question",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "visual": {
+          "checks": [
+            {
+              "id": "browser-checked",
+              "state": "unverified",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": []
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "browser-checked",
+              "state": "unverified",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": []
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "package",
+      "label": "Release archive includes current audit fixes",
+      "kind": "component",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "cross": {
+          "checks": [
+            {
+              "id": "package-checked",
+              "state": "failed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/reports/2026-10-28/verification.json"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "release-predates-current-source",
+              "status": "open",
+              "checkIds": [
+                "package-checked"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "presentation",
+      "label": "Presentation draft uses final local-guide format",
+      "kind": "component",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "cross": {
+          "checks": [
+            {
+              "id": "presentation-checked",
+              "state": "failed",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": [
+                "docs/SUBMISSION_BRIEF.md",
+                "/home/mahdi-mahmud/Downloads/space-apps-2026-build-guide.html"
+              ]
+            }
+          ],
+          "findings": [
+            {
+              "id": "presentation-format-not-finalized",
+              "status": "open",
+              "checkIds": [
+                "presentation-checked"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "screening",
+      "label": "AI-screening pass guarantee or scoring rubric",
+      "kind": "question",
+      "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "screening-checked",
+              "state": "unverified",
+              "revision": "75c929ed611289ba5341adbe3deacb69799d6241cab668d8a92f3c475b88b29d",
+              "evidence": []
+            }
+          ],
+          "findings": []
+        }
+      }
+    }
+  ]
+}

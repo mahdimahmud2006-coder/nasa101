@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-28",
+  "python_tests_passed": 187,
+  "javascript_tests_passed": 35,
+  "analytical_validation_targets": 6,
+  "saved_output_report": "saved_outputs.json",
+  "historical_artifacts_preserved": 508,
+  "ready_cases": [
+    "nepal_surface",
+    "nepal_impact_corridor"
+  ],
+  "awaiting_data": [
+    "jamuna_river",
+    "tanguar_wetland"
+  ],
+  "request_handler_statuses": {
+    "/investigations.html": 200,
+    "/investigations.mjs": 200,
+    "/api/investigations": 200,
+    "/api/cases/nepal_surface/investigation": 200,
+    "/api/cases/nepal_impact_corridor/investigation": 200,
+    "/api/cases/nepal_surface/investigation-probe?row=1200&col=1200": 200,
+    "/cases/download-plan.json": 200
+  },
+  "runtime_ready": true,
+  "browser_visual_qa": "UNVERIFIED: prior URL-policy block; no browser fallback attempted",
+  "controller_qa_scope": "Explicit DOM/canvas/image/terrain mocks, not a browser",
+  "physical_offline_rehearsal": "PENDING",
+  "new_hdf_products_downloaded_by_agent": 0,
+  "server": "Started on localhost:8000; this is a startup observation, not continuous monitoring",
+  "source_hashes": {
+    "config.investigations.json": "57be3f796d554431a184b1135760976284a5304d03918da72dc2dced5fbed67b",
+    "src/compute/investigation_pipeline.py": "6631320f72613b6b040550a618655e26845865388364f1fa7685e36ed6e500ab",
+    "src/compute/investigation_probe.py": "49b4a9b9b270c13ba14e2a04d830335143b90ac94071b18c8ad820634de888f6",
+    "src/compute/investigations.py": "c708a4689497379f48534f33fd0ce88799e8edc20bc61bf8a053bb0bb4746630",
+    "web/investigations.mjs": "13af1ad840df2b9f67b352b2441b6a2da855a35b668135580f386d408123d3b4",
+    "web/investigation-model.mjs": "cc5f212572e41d5783e8aa9f66e0c7f36b17028211a8c53f9f105b04fdc423ee",
+    "web/investigations.html": "b3c77ab3e0c9bb4b9b6c1ba42858d5ca9ca3107cc9d3845bbe50f7fd76311e54",
+    "web/investigations.css": "561f222d96e501cf40aedfab5687e64c9feb4f01b20f86e246abce4fcc230c5f"
+  }
+}

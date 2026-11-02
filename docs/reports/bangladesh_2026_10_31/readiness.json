@@ -1,0 +1,49 @@
+{
+  "name": "TerraPulse",
+  "version": "1.0.0",
+  "team": "DevAtMad",
+  "challenge": "Dancing with the SARs",
+  "scope": "Local NISAR surface-change investigation and environmental context",
+  "case_id": "nepal_case_01",
+  "release_status": "SUBMISSION_CANDIDATE",
+  "science_status": "PROVISIONAL radar; UNVERIFIED causes; UNCALIBRATED susceptibility",
+  "network_required_at_runtime": false,
+  "empirical_hazard_validation": false,
+  "competition_eligibility_verified": false,
+  "runtime_ready": true,
+  "missing_runtime_files": [],
+  "invalid_runtime_files": [],
+  "dependencies": {
+    "numpy": true,
+    "scipy": true,
+    "rasterio": true,
+    "h5py": true,
+    "pyarrow": true,
+    "PIL": true,
+    "pyproj": true,
+    "shapely": true,
+    "affine": true
+  },
+  "acquisition_count": 3,
+  "tracked_zone_count": 1,
+  "landslide_validation_status": "INSUFFICIENT_INDEPENDENT_REFERENCE",
+  "investigation_cases": {
+    "nepal_surface": "OBSERVATIONS_READY",
+    "nepal_impact_corridor": "OBSERVATIONS_READY",
+    "jamuna_river": "OBSERVATIONS_READY",
+    "tanguar_wetland": "OBSERVATIONS_READY"
+  },
+  "capabilities": [
+    "NISAR radar comparison",
+    "Acquisition playback",
+    "Change DNA",
+    "Terrain and rainfall context",
+    "Landsat thermal/optical",
+    "Flood counterfactuals",
+    "Landslide susceptibility",
+    "Evidence export",
+    "Multi-case HH/HV investigations",
+    "River/Wetland radar-signature processing"
+  ],
+  "verification_scope": "Runtime file/dependency preflight; scientific recalculation and visual QA are separate."
+}

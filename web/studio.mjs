@@ -82,7 +82,8 @@ async function renderMap(){
   await terrain.setImages(floodBase+'relief.png',layer,before);if(token!==state.generation)return;
   $('compare-control').hidden=!(scenario&&state.layer==='escalation');
   $('map-date').textContent=(state.layer==='thermal'||state.layer==='optical')?day(state.scene.datetime)+' · LANDSAT':day(obs.timestamp)+' · NISAR';
-  $('layer-caption').textContent=caption;$('coverage-badge').textContent=state.layer==='thermal'?fmt(state.scene.valid_fraction*100,1)+'% thermal':state.layer==='optical'?fmt(state.scene.optical_valid_fraction*100,1)+'% optical':fmt(obs.summary.coverage_fraction*100,1)+'% assessed';
+  const radarObservation=state.timeline.observations.find(item=>item.observation_id===obs.observation_id);
+  $('layer-caption').textContent=caption;$('coverage-badge').textContent=state.layer==='thermal'?fmt(state.scene.valid_fraction*100,1)+'% thermal':state.layer==='optical'?fmt(state.scene.optical_valid_fraction*100,1)+'% optical':state.layer==='radar'?fmt(radarObservation.valid_fraction*100,1)+'% radar':fmt(obs.summary.coverage_fraction*100,1)+'% assessed';
   document.querySelectorAll('[data-layer]').forEach(button=>{button.classList.toggle('active',button.dataset.layer===state.layer);button.setAttribute('aria-pressed',String(button.dataset.layer===state.layer));});
   document.querySelectorAll('[data-date]').forEach(button=>{const selected=Number(button.dataset.date)===state.index;button.classList.toggle('active',selected);if(selected)button.setAttribute('aria-current','date');else button.removeAttribute('aria-current');});
   $('radar-panel').hidden=state.layer!=='radar';$('evidence-panel').hidden=state.layer==='radar';$('priority-panel').hidden=state.layer==='radar';

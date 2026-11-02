@@ -1,0 +1,17 @@
+{
+  "date_local": "2026-11-02",
+  "timezone": "Asia/Dhaka",
+  "files": 795,
+  "bytes": 1550239068,
+  "output_roots": [
+    "data/derived",
+    "web/public",
+    "docs/reports",
+    "dist",
+    "reports"
+  ],
+  "additional_scope": "Top-level docs scientific media and JSON outputs; phase evidence under reports is included.",
+  "excluded": "Raw HDF5/source caches, src/web code and configuration, documentation prose, virtual environments, Git metadata, this manifest and its scope sidecar.",
+  "preservation_policy": "Every listed file must remain byte-identical. New files outside this list may be added. Preserve existing validator timing reports while keeping fresh logs separately.",
+  "manifest_sha256": "b38b011fb3db5f6f0b3a0e8058ca261fb511982e7bc6113ffc95fa72dd686754"
+}

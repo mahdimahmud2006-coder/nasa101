@@ -1,0 +1,620 @@
+{
+  "schema_version": 1,
+  "case_id": "tanguar_wetland",
+  "module": "wetland",
+  "title": "Tanguar Haor \u00b7 wetland observations",
+  "question": "How do dark and bright radar responses vary across observed wetland visits?",
+  "status": "OBSERVATIONS_READY",
+  "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+  "grid": {
+    "shape": [
+      1600,
+      1800
+    ],
+    "affine": [
+      10.0,
+      0.0,
+      297380.0,
+      0.0,
+      -10.0,
+      2785400.0
+    ],
+    "crs": "EPSG:32646",
+    "pixel_area_km2": 0.0001,
+    "bounds_wgs84": [
+      90.9895389532272,
+      25.026639418364375,
+      91.17021585958979,
+      25.173363702854573
+    ]
+  },
+  "baseline_observation_id": "visit_0",
+  "observations": [
+    {
+      "observation_id": "visit_0",
+      "timestamp": "2026-06-18T23:21:35Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001",
+      "source_file": "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 69,
+      "frame": 14,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "713655d03a39715c43ab4b710c6e5d38590a41f400d5577333ef043757be17af",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.0005920156836509705,
+            259.875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "4cbc9a059692f5e897912bcd9cf01339bcb7e11290c9f3bfd9348fcdd99da1c6"
+        },
+        "hv": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "470bfe2ee173df50fd51fbc2b367fbdbd6fef22a259dd8f236827727ff55f4fb",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.000176258385181427,
+            33.58447265625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "c7802a98566eb0f26cee707ca0bd9890e0404f7e6881777ac06d489126131f50"
+        }
+      },
+      "rasters": {
+        "hh": "hh_0.tif",
+        "hv": "hv_0.tif"
+      },
+      "layers": {
+        "water": "water_0.png",
+        "river": "river_0.png",
+        "wetland": "wetland_0.png",
+        "hh": "hh_0.webp",
+        "hv": "hv_0.webp",
+        "ratio": "ratio_0.webp",
+        "baseline": "baseline_0.webp",
+        "successive": null
+      },
+      "response": {
+        "paired_valid_area_km2": 287.3204,
+        "radar_dark_candidate_area_km2": 138.1953,
+        "baseline_common_area_km2": 287.3204,
+        "brightening_candidate_area_km2": 0.0,
+        "gain_dark_signature_km2": 0.0,
+        "loss_dark_signature_km2": 0.0,
+        "persistent_dark_signature_km2": 138.1953
+      },
+      "paired_valid_fraction": 0.9976402777777778,
+      "baseline_common_fraction": 0.9976402777777778,
+      "baseline_disturbance_area_km2": 0.0
+    },
+    {
+      "observation_id": "visit_1",
+      "timestamp": "2026-07-24T23:21:33Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001",
+      "source_file": "NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 69,
+      "frame": 14,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "b25c3e7512c1c29af7207416f08683df96ea6da9d387d670c26ff311cf416080",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.0007826238870620728,
+            294.625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "30c64951efeebe6b70c7721212ef5cd5777845f4d79229ca1dc778b2efe3c49c"
+        },
+        "hv": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "bcd303846a98738ac0c7a5fc7d256f1dc2831d852b2c2eb65c8922ec75926fe3",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.00019419752061367035,
+            33.1005859375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "e1f77dd8b7f5d5736374527f4a768fc2b4948b85c235b33c212459409643760d"
+        }
+      },
+      "rasters": {
+        "hh": "hh_1.tif",
+        "hv": "hv_1.tif"
+      },
+      "layers": {
+        "water": "water_1.png",
+        "river": "river_1.png",
+        "wetland": "wetland_1.png",
+        "hh": "hh_1.webp",
+        "hv": "hv_1.webp",
+        "ratio": "ratio_1.webp",
+        "baseline": "baseline_1.webp",
+        "successive": "successive_1.webp"
+      },
+      "response": {
+        "paired_valid_area_km2": 287.3204,
+        "radar_dark_candidate_area_km2": 131.9424,
+        "baseline_common_area_km2": 287.3204,
+        "brightening_candidate_area_km2": 0.7332000000000001,
+        "gain_dark_signature_km2": 49.8761,
+        "loss_dark_signature_km2": 56.129000000000005,
+        "persistent_dark_signature_km2": 82.0663
+      },
+      "paired_valid_fraction": 0.9976402777777778,
+      "baseline_common_fraction": 0.9976402777777778,
+      "baseline_disturbance_area_km2": 19.0208
+    },
+    {
+      "observation_id": "visit_2",
+      "timestamp": "2026-08-17T23:21:32Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001",
+      "source_file": "NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 69,
+      "frame": 14,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "c2ad654dbfe6750feee42bd0336f107d748f3e97ff8fcc9cc5ff1f90323f27fd",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.0009509921073913574,
+            354.05859375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "c71cbeb9739774327ef1b8bf22e80b4cce7362f65ac5b60a9678af84d8f9dd0e"
+        },
+        "hv": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "e3d7170caa3e0a47a3f63d801d25ce645faec9f862eb5791d8021f22d0ae3676",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.00019834749400615692,
+            28.1865234375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "616aa3925166aaa6b9e425923b94e2be2b746cc3cd49141a08ea6ce9bf7ccf2d"
+        }
+      },
+      "rasters": {
+        "hh": "hh_2.tif",
+        "hv": "hv_2.tif"
+      },
+      "layers": {
+        "water": "water_2.png",
+        "river": "river_2.png",
+        "wetland": "wetland_2.png",
+        "hh": "hh_2.webp",
+        "hv": "hv_2.webp",
+        "ratio": "ratio_2.webp",
+        "baseline": "baseline_2.webp",
+        "successive": "successive_2.webp"
+      },
+      "response": {
+        "paired_valid_area_km2": 287.3204,
+        "radar_dark_candidate_area_km2": 45.5584,
+        "baseline_common_area_km2": 287.3204,
+        "brightening_candidate_area_km2": 7.962300000000001,
+        "gain_dark_signature_km2": 15.300400000000002,
+        "loss_dark_signature_km2": 107.93730000000001,
+        "persistent_dark_signature_km2": 30.258000000000003
+      },
+      "paired_valid_fraction": 0.9976402777777778,
+      "baseline_common_fraction": 0.9976402777777778,
+      "baseline_disturbance_area_km2": 48.8742
+    },
+    {
+      "observation_id": "visit_3",
+      "timestamp": "2026-08-29T23:21:32Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001",
+      "source_file": "NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 69,
+      "frame": 14,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "64a44c0789974c8b82e1a457bd2e3832f94734c9cdeef38d829084eedd551ce3",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.0005623102188110352,
+            268.8046875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "5863d998fc93696e6b5b464ef89e0a7bbfd0a7899e5f3cbecdcf2a4c32c95bec"
+        },
+        "hv": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "322d151f628dcd73d4f4acc84aa5ad5f070c188ff39fe16600d42d1914615466",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.00014667026698589325,
+            35.74951171875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "f80bd10111b74109203302da03a2970b1133402caf3fbeb8746e6204ea4c0e61"
+        }
+      },
+      "rasters": {
+        "hh": "hh_3.tif",
+        "hv": "hv_3.tif"
+      },
+      "layers": {
+        "water": "water_3.png",
+        "river": "river_3.png",
+        "wetland": "wetland_3.png",
+        "hh": "hh_3.webp",
+        "hv": "hv_3.webp",
+        "ratio": "ratio_3.webp",
+        "baseline": "baseline_3.webp",
+        "successive": "successive_3.webp"
+      },
+      "response": {
+        "paired_valid_area_km2": 287.3204,
+        "radar_dark_candidate_area_km2": 144.8115,
+        "baseline_common_area_km2": 287.3204,
+        "brightening_candidate_area_km2": 2.4845,
+        "gain_dark_signature_km2": 62.8279,
+        "loss_dark_signature_km2": 56.2117,
+        "persistent_dark_signature_km2": 81.98360000000001
+      },
+      "paired_valid_fraction": 0.9976402777777778,
+      "baseline_common_fraction": 0.9976402777777778,
+      "baseline_disturbance_area_km2": 55.9712
+    },
+    {
+      "observation_id": "visit_4",
+      "timestamp": "2026-09-22T23:21:32Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001",
+      "source_file": "NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 69,
+      "frame": 14,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "b2d2121847228b23e35dca5830c8b25ff97a87ab8fc728f3a66a8c3e0642ce7d",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.0005635097622871399,
+            275.796875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "37a6d1f6caedc859e2a319c02f5d57893f5c1e855e1b3810973f38d395c2a81f"
+        },
+        "hv": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "94745e938a954f6bdc03ed027522a3e871781c327b3f5c780e9a7620d2e4504f",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.0001871977001428604,
+            39.4716796875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "a69751e5aad3a6dbbc108a2b1c3b236e62afcbdd135c2778c3b25199e4b33306"
+        }
+      },
+      "rasters": {
+        "hh": "hh_4.tif",
+        "hv": "hv_4.tif"
+      },
+      "layers": {
+        "water": "water_4.png",
+        "river": "river_4.png",
+        "wetland": "wetland_4.png",
+        "hh": "hh_4.webp",
+        "hv": "hv_4.webp",
+        "ratio": "ratio_4.webp",
+        "baseline": "baseline_4.webp",
+        "successive": "successive_4.webp"
+      },
+      "response": {
+        "paired_valid_area_km2": 287.3204,
+        "radar_dark_candidate_area_km2": 132.4684,
+        "baseline_common_area_km2": 287.3204,
+        "brightening_candidate_area_km2": 5.1161,
+        "gain_dark_signature_km2": 56.069900000000004,
+        "loss_dark_signature_km2": 61.796800000000005,
+        "persistent_dark_signature_km2": 76.3985
+      },
+      "paired_valid_fraction": 0.9976402777777778,
+      "baseline_common_fraction": 0.9976402777777778,
+      "baseline_disturbance_area_km2": 43.337900000000005
+    },
+    {
+      "observation_id": "visit_5",
+      "timestamp": "2026-10-16T23:21:32Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001",
+      "source_file": "NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 69,
+      "frame": 14,
+      "range_bandwidth_hz": 40000000.0,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "7176e01f80bc1b3d97957d65e6ea37815a4dfd7640a0c1ae3d8073562f67ba74",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.0004921853542327881,
+            320.91796875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "607bde58dc84c4510ef09ceb45deca426527826ac7bf709395326810b5a8fa2e"
+        },
+        "hv": {
+          "valid_fraction": 0.9976402777777778,
+          "window_sha256": "2f369f5de5248615913371ec05ba3d569888a1c091d6b8ff1361598b937907d5",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 2880000,
+          "total_pixels": 2880000,
+          "masked_pixels": 0,
+          "mask_values": [
+            1
+          ],
+          "positive_power_range": [
+            0.00016653165221214294,
+            37.830078125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 2873204,
+          "processed_sha256": "b5db59aecb33ad96777f7f4e3f2159d9ef68b65bed65b00af3022b960c279d91"
+        }
+      },
+      "rasters": {
+        "hh": "hh_5.tif",
+        "hv": "hv_5.tif"
+      },
+      "layers": {
+        "water": "water_5.png",
+        "river": "river_5.png",
+        "wetland": "wetland_5.png",
+        "hh": "hh_5.webp",
+        "hv": "hv_5.webp",
+        "ratio": "ratio_5.webp",
+        "baseline": "baseline_5.webp",
+        "successive": "successive_5.webp"
+      },
+      "response": {
+        "paired_valid_area_km2": 287.3204,
+        "radar_dark_candidate_area_km2": 171.68720000000002,
+        "baseline_common_area_km2": 287.3204,
+        "brightening_candidate_area_km2": 14.0557,
+        "gain_dark_signature_km2": 77.10730000000001,
+        "loss_dark_signature_km2": 43.6154,
+        "persistent_dark_signature_km2": 94.57990000000001
+      },
+      "paired_valid_fraction": 0.9976402777777778,
+      "baseline_common_fraction": 0.9976402777777778,
+      "baseline_disturbance_area_km2": 111.19800000000001
+    }
+  ],
+  "profiles": [
+    {
+      "label": "Geographic study window \u00b7 common-valid mean",
+      "selection": "Geographic window selected before radar inspection, using the same paired-valid pixels across all visits. This is not a water/habitat reference; opposing local changes can cancel in the average. Click the map to inspect a local neighborhood.",
+      "status": "MEASURED",
+      "footprint_pixels": 2880000,
+      "common_valid_pixels": 2873204,
+      "common_valid_fraction": 0.9976402777777778,
+      "footprint_area_km2": 288.0,
+      "measured_area_km2": 287.3204,
+      "observations": [
+        {
+          "index": 0,
+          "hh_mean_db": -16.77575492824204,
+          "hv_mean_db": -24.434860705426267,
+          "hh_baseline_delta_db": 0.0,
+          "hv_baseline_delta_db": 0.0,
+          "hh_successive_delta_db": null,
+          "hv_successive_delta_db": null,
+          "hh_minus_hv_db": 7.659105777184227,
+          "observation_id": "visit_0",
+          "timestamp": "2026-06-18T23:21:35Z"
+        },
+        {
+          "index": 1,
+          "hh_mean_db": -16.690947041456422,
+          "hv_mean_db": -24.425513779047787,
+          "hh_baseline_delta_db": 0.08480788678843348,
+          "hv_baseline_delta_db": 0.009346926379482376,
+          "hh_successive_delta_db": 0.08480788678843348,
+          "hv_successive_delta_db": 0.009346926379482376,
+          "hh_minus_hv_db": 7.734566737591365,
+          "observation_id": "visit_1",
+          "timestamp": "2026-07-24T23:21:33Z"
+        },
+        {
+          "index": 2,
+          "hh_mean_db": -15.46732159264626,
+          "hv_mean_db": -23.51636288216211,
+          "hh_baseline_delta_db": 1.3084333355980047,
+          "hv_baseline_delta_db": 0.9184978232659076,
+          "hh_successive_delta_db": 1.223625448798913,
+          "hv_successive_delta_db": 0.9091508968847241,
+          "hh_minus_hv_db": 8.04904128951585,
+          "observation_id": "visit_2",
+          "timestamp": "2026-08-17T23:21:32Z"
+        },
+        {
+          "index": 3,
+          "hh_mean_db": -17.261720789419225,
+          "hv_mean_db": -24.454889191460733,
+          "hh_baseline_delta_db": -0.4859658611734859,
+          "hv_baseline_delta_db": -0.0200284860353992,
+          "hh_successive_delta_db": -1.7943991967754596,
+          "hv_successive_delta_db": -0.9385263092978423,
+          "hh_minus_hv_db": 7.193168402041508,
+          "observation_id": "visit_3",
+          "timestamp": "2026-08-29T23:21:32Z"
+        },
+        {
+          "index": 4,
+          "hh_mean_db": -16.85282016949343,
+          "hv_mean_db": -24.205853775059087,
+          "hh_baseline_delta_db": -0.07706524124976893,
+          "hv_baseline_delta_db": 0.22900693036683384,
+          "hh_successive_delta_db": 0.4089006199253727,
+          "hv_successive_delta_db": 0.2490354164022538,
+          "hh_minus_hv_db": 7.353033605565656,
+          "observation_id": "visit_4",
+          "timestamp": "2026-09-22T23:21:32Z"
+        },
+        {
+          "index": 5,
+          "hh_mean_db": -17.708861845018937,
+          "hv_mean_db": -24.258360095053547,
+          "hh_baseline_delta_db": -0.9331069168085088,
+          "hv_baseline_delta_db": 0.1765006103718043,
+          "hh_successive_delta_db": -0.8560416755125421,
+          "hv_successive_delta_db": -0.05250631999770563,
+          "hh_minus_hv_db": 6.54949825003461,
+          "observation_id": "visit_5",
+          "timestamp": "2026-10-16T23:21:32Z"
+        }
+      ],
+      "interpretation": "Mean filtered log-backscatter on a fixed common-valid footprint. dB differences are not ground displacement. No cause or calibrated confidence is inferred.",
+      "footprint_kind": "study_window"
+    }
+  ],
+  "reference": null,
+  "display_limits": {
+    "hh": [
+      -21.853208351135255,
+      -5.476294469833386
+    ],
+    "hv": [
+      -27.628334617614748,
+      -12.491120338439947
+    ]
+  },
+  "thresholds": {
+    "baseline_disturbance_db": 3.0,
+    "radar_dark_hh_db": -17.0,
+    "radar_dark_hv_db": -24.0,
+    "brightening_db": 3.0,
+    "calibration_status": "UNCALIBRATED"
+  },
+  "selection_note": "Geographic wetland window selected before radar inspection. No habitat boundary or independently calibrated inundated-vegetation classifier is asserted.",
+  "limitations": [
+    "PROVISIONAL GCOV intensity; not ground displacement.",
+    "HH/HV measurements do not uniquely identify a physical cause.",
+    "Only actual acquisitions are shown; missing visits are not interpolated.",
+    "Fixed-baseline difference does not establish physical damage or recovery.",
+    "Radar-dark and brightening thresholds are illustrative and UNCALIBRATED; not validated water, habitat or flood classifications.",
+    "Observed-visit fractions are not continuous inundation duration or seasonal climatology.",
+    "A fixed common-valid footprint is required for selected-region profiles."
+  ],
+  "provenance": {
+    "config_sha256": "572ec4b661bd0ded9255ca83ec798004d420058b6e20360492bcf5a246b69b98",
+    "model_sha256": "48e0bc3299b9c9f86144dad7c781b737f67185d5a84ebbb86de22dbb12859f92",
+    "source_policy": "New inputs must come from non-Chinese organizations/sites; provider and upstream provenance require review."
+  },
+  "formulas": {
+    "baseline": "HH(t) - HH(first observed visit), dB",
+    "successive": "HH(t) - HH(previous observed visit), dB; unavailable at first visit",
+    "ratio": "HH_dB - HV_dB = 10 log10(HH_power/HV_power); difference of filtered log-power",
+    "dark": "valid HH <= configured HH threshold AND valid HV <= configured HV threshold",
+    "occupancy": "dark valid visits / paired valid visits; only when at least two visits valid",
+    "brightening": "both channels increase by configured dB relative to first observation, on baseline-common pixels"
+  },
+  "occupancy_preview": "occupancy.webp"
+}

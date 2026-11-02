@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-31",
+  "status": "LOCAL_IMPORT_AND_AUTOMATED_CHECKS_PASS",
+  "user_upload": "Six full-scene files supplied for Jamuna only. Haor crop uses the same files; no separate haor upload/download was received or used.",
+  "python_tests_passed": 189,
+  "javascript_tests_passed": 37,
+  "analytical_validation_targets": 6,
+  "legacy_artifacts_preserved": 508,
+  "cases": [
+    {
+      "case_id": "jamuna_river",
+      "observation_count": 6,
+      "native_shape": [
+        2000,
+        2000
+      ],
+      "paired_valid_fraction_min": 0.998001,
+      "paired_valid_fraction_max": 0.998001,
+      "dates": [
+        "2026-06-18T23:21:35Z",
+        "2026-07-24T23:21:33Z",
+        "2026-08-17T23:21:32Z",
+        "2026-08-29T23:21:32Z",
+        "2026-09-22T23:21:32Z",
+        "2026-10-16T23:21:32Z"
+      ],
+      "source_granules": [
+        "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001"
+      ],
+      "response_areas": [
+        {
+          "date": "2026-06-18",
+          "paired_valid_area_km2": 399.2004,
+          "radar_dark_candidate_area_km2": 14.526900000000001,
+          "baseline_common_area_km2": 399.2004,
+          "brightening_candidate_area_km2": 0.0,
+          "gain_dark_signature_km2": 0.0,
+          "loss_dark_signature_km2": 0.0,
+          "persistent_dark_signature_km2": 14.526900000000001
+        },
+        {
+          "date": "2026-07-24",
+          "paired_valid_area_km2": 399.2004,
+          "radar_dark_candidate_area_km2": 23.3835,
+          "baseline_common_area_km2": 399.2004,
+          "brightening_candidate_area_km2": 4.8945,
+          "gain_dark_signature_km2": 19.1717,
+          "loss_dark_signature_km2": 10.315100000000001,
+          "persistent_dark_signature_km2": 4.2118
+        },
+        {
+          "date": "2026-08-17",
+          "paired_valid_area_km2": 399.2004,
+          "radar_dark_candidate_area_km2": 3.0202,
+          "baseline_common_area_km2": 399.2004,
+          "brightening_candidate_area_km2": 21.0275,
+          "gain_dark_signature_km2": 2.1627,
+          "loss_dark_signature_km2": 13.669400000000001,
+          "persistent_dark_signature_km2": 0.8575
+        },
+        {
+          "date": "2026-08-29",
+          "paired_valid_area_km2": 399.2004,
+          "radar_dark_candidate_area_km2": 14.0533,
+          "baseline_common_area_km2": 399.2004,
+          "brightening_candidate_area_km2": 7.0719,
+          "gain_dark_signature_km2": 10.8306,
+          "loss_dark_signature_km2": 11.3042,
+          "persistent_dark_signature_km2": 3.2227
+        },
+        {
+          "date": "2026-09-22",
+          "paired_valid_area_km2": 399.2004,
+          "radar_dark_candidate_area_km2": 11.8774,
+          "baseline_common_area_km2": 399.2004,
+          "brightening_candidate_area_km2": 13.085700000000001,
+          "gain_dark_signature_km2": 9.231200000000001,
+          "loss_dark_signature_km2": 11.880700000000001,
+          "persistent_dark_signature_km2": 2.6462000000000003
+        },
+        {
+          "date": "2026-10-16",
+          "paired_valid_area_km2": 399.2004,
+          "radar_dark_candidate_area_km2": 10.1163,
+          "baseline_common_area_km2": 399.2004,
+          "brightening_candidate_area_km2": 33.9444,
+          "gain_dark_signature_km2": 7.6427000000000005,
+          "loss_dark_signature_km2": 12.0533,
+          "persistent_dark_signature_km2": 2.4736000000000002
+        }
+      ]
+    },
+    {
+      "case_id": "tanguar_wetland",
+      "observation_count": 6,
+      "native_shape": [
+        1600,
+        1800
+      ],
+      "paired_valid_fraction_min": 0.9976402777777778,
+      "paired_valid_fraction_max": 0.9976402777777778,
+      "dates": [
+        "2026-06-18T23:21:35Z",
+        "2026-07-24T23:21:33Z",
+        "2026-08-17T23:21:32Z",
+        "2026-08-29T23:21:32Z",
+        "2026-09-22T23:21:32Z",
+        "2026-10-16T23:21:32Z"
+      ],
+      "source_granules": [
+        "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001"
+      ],
+      "response_areas": [
+        {
+          "date": "2026-06-18",
+          "paired_valid_area_km2": 287.3204,
+          "radar_dark_candidate_area_km2": 138.1953,
+          "baseline_common_area_km2": 287.3204,
+          "brightening_candidate_area_km2": 0.0,
+          "gain_dark_signature_km2": 0.0,
+          "loss_dark_signature_km2": 0.0,
+          "persistent_dark_signature_km2": 138.1953
+        },
+        {
+          "date": "2026-07-24",
+          "paired_valid_area_km2": 287.3204,
+          "radar_dark_candidate_area_km2": 131.9424,
+          "baseline_common_area_km2": 287.3204,
+          "brightening_candidate_area_km2": 0.7332000000000001,
+          "gain_dark_signature_km2": 49.8761,
+          "loss_dark_signature_km2": 56.129000000000005,
+          "persistent_dark_signature_km2": 82.0663
+        },
+        {
+          "date": "2026-08-17",
+          "paired_valid_area_km2": 287.3204,
+          "radar_dark_candidate_area_km2": 45.5584,
+          "baseline_common_area_km2": 287.3204,
+          "brightening_candidate_area_km2": 7.962300000000001,
+          "gain_dark_signature_km2": 15.300400000000002,
+          "loss_dark_signature_km2": 107.93730000000001,
+          "persistent_dark_signature_km2": 30.258000000000003
+        },
+        {
+          "date": "2026-08-29",
+          "paired_valid_area_km2": 287.3204,
+          "radar_dark_candidate_area_km2": 144.8115,
+          "baseline_common_area_km2": 287.3204,
+          "brightening_candidate_area_km2": 2.4845,
+          "gain_dark_signature_km2": 62.8279,
+          "loss_dark_signature_km2": 56.2117,
+          "persistent_dark_signature_km2": 81.98360000000001
+        },
+        {
+          "date": "2026-09-22",
+          "paired_valid_area_km2": 287.3204,
+          "radar_dark_candidate_area_km2": 132.4684,
+          "baseline_common_area_km2": 287.3204,
+          "brightening_candidate_area_km2": 5.1161,
+          "gain_dark_signature_km2": 56.069900000000004,
+          "loss_dark_signature_km2": 61.796800000000005,
+          "persistent_dark_signature_km2": 76.3985
+        },
+        {
+          "date": "2026-10-16",
+          "paired_valid_area_km2": 287.3204,
+          "radar_dark_candidate_area_km2": 171.68720000000002,
+          "baseline_common_area_km2": 287.3204,
+          "brightening_candidate_area_km2": 14.0557,
+          "gain_dark_signature_km2": 77.10730000000001,
+          "loss_dark_signature_km2": 43.6154,
+          "persistent_dark_signature_km2": 94.57990000000001
+        }
+      ]
+    }
+  ],
+  "handler_checks": {
+    "/investigations.html?mode=river": 200,
+    "/api/investigations": 200,
+    "/api/cases/jamuna_river/investigation": 200,
+    "/api/cases/jamuna_river/investigation-probe?row=1000&col=1000": 200,
+    "/api/cases/tanguar_wetland/investigation": 200
+  },
+  "new_external_datasets_downloaded_by_agent": 0,
+  "browser_qa": "Unverified: prior URL-policy block; no alternate browser access attempted",
+  "controller_checks": "Explicit DOM/canvas/image mocks, not a real browser",
+  "physical_offline_rehearsal": "Pending",
+  "source_hashes": {
+    "src/compute/investigation_pipeline.py": "7df6419963050b98217eb96798e8eecbd22054b8e2fa9eefffe56c7826b555e8",
+    "src/compute/validate_investigations.py": "e70cecbb3362f78070f85109480a6e1d79e7a3acfd5c793b2e029b903f15cb69",
+    "web/investigations.mjs": "39e7180c7111c77eddd5ad599a10d15eec0a0ccfbb5f156ce55eb9f4189a82c2",
+    "tests/test_investigations.py": "6d2ba7cb3fcc30a91742ed25389e09c56de73cabf961682c6add6313b876f218",
+    "tests/investigations.test.mjs": "8d85ca806c28cafc9aa1cf6b335d57f6a209ab9d5dc4438b3333b5f62fd95703"
+  }
+}

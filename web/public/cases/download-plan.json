@@ -1,0 +1,125 @@
+{
+  "retrieved_date": "2026-10-28",
+  "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+  "provider": "NASA Earthdata / ASF DAAC",
+  "track": 69,
+  "frame": 14,
+  "orbit": "ascending",
+  "named_mode": "4005_DHDH_A",
+  "processing_release": "P05023",
+  "destination": "database/bangladesh-shared",
+  "same_files_support": [
+    "river_memory",
+    "wetland_pulse"
+  ],
+  "planned_bboxes": {
+    "river_memory": [
+      89.59,
+      24.37,
+      89.83,
+      24.61
+    ],
+    "wetland_pulse": [
+      90.98,
+      25.01,
+      91.18,
+      25.19
+    ]
+  },
+  "priority_total_gib": 37.8062002947554,
+  "all_total_gib": 62.92320064920932,
+  "status": "PRIORITY_SIX_RAW_HEADERS_AND_BOTH_CROP_QUALITY_VERIFIED",
+  "granules": [
+    {
+      "date": "2026-06-18",
+      "granule_id": "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6576.6187534332275,
+      "priority": "START_HERE",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-06-30",
+      "granule_id": "NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6359.256684303284,
+      "priority": "EXTEND_SERIES",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-07-12",
+      "granule_id": "NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6392.161724090576,
+      "priority": "EXTEND_SERIES",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-07-24",
+      "granule_id": "NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6568.776913642883,
+      "priority": "START_HERE",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-08-17",
+      "granule_id": "NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6392.087359428406,
+      "priority": "START_HERE",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-08-29",
+      "granule_id": "NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6396.279546737671,
+      "priority": "START_HERE",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-09-10",
+      "granule_id": "NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6572.610321998596,
+      "priority": "EXTEND_SERIES",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-09-22",
+      "granule_id": "NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6392.005049705505,
+      "priority": "START_HERE",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-10-04",
+      "granule_id": "NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6395.779632568359,
+      "priority": "EXTEND_SERIES",
+      "covers_both_planned_bboxes": true
+    },
+    {
+      "date": "2026-10-16",
+      "granule_id": "NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001/NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001.h5",
+      "catalog_size_mib": 6387.781478881836,
+      "priority": "START_HERE",
+      "covers_both_planned_bboxes": true
+    }
+  ],
+  "catalog_snapshot_status": "CATALOG_FOOTPRINTS_VERIFIED; raw headers and pixel validity pending",
+  "local_ingestion": {
+    "date": "2026-10-31",
+    "source_file_count": 6,
+    "ready_cases": [
+      "jamuna_river",
+      "tanguar_wetland"
+    ],
+    "extra_haor_download_required_for_these_dates": false,
+    "source_audit": "docs/reports/bangladesh_2026_10_31/source_audit.json"
+  }
+}

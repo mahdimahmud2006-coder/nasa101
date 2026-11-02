@@ -35,6 +35,8 @@ test-ui:
 	node tests/terrain-view.test.mjs
 	node tests/studio.test.mjs
 	node tests/change-lab.test.mjs
+	node tests/investigation-model.test.mjs
+	node tests/investigations.test.mjs
 
 .PHONY: flood thermal download-thermal studio validate-flood
 flood:
@@ -65,10 +67,20 @@ run:
 	./run.sh
 check-ready:
 	$(PYTHON) -m src.api.readiness
-verify: test test-ui validate validate-timeseries validate-context validate-flood validate-change-lab check-ready check-web
+verify: test test-ui validate validate-timeseries validate-context validate-flood validate-change-lab validate-investigations check-ready check-web
 release:
 	$(PYTHON) scripts/package_release.py
 
 .PHONY: check-web
 check-web:
 	$(PYTHON) scripts/check_web.py
+
+.PHONY: investigations jamuna wetland validate-investigations
+investigations:
+	$(PYTHON) -m src.compute.investigation_pipeline
+jamuna:
+	$(PYTHON) -m src.compute.investigation_pipeline --case jamuna_river
+wetland:
+	$(PYTHON) -m src.compute.investigation_pipeline --case tanguar_wetland
+validate-investigations:
+	$(PYTHON) -m src.compute.validate_investigations

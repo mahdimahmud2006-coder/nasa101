@@ -1,0 +1,368 @@
+{
+  "inspected_at": "2026-11-02T00:37:33.531805+06:00",
+  "cases": [
+    {
+      "case_id": "nepal_surface",
+      "status": "measured",
+      "grid": {
+        "shape": [
+          2400,
+          2400
+        ],
+        "affine": [
+          10.0,
+          0.0,
+          323480.0,
+          0.0,
+          -10.0,
+          3088170.0
+        ],
+        "crs": "EPSG:32645",
+        "pixel_area_km2": 0.0001,
+        "bounds_wgs84": [
+          85.20639099989948,
+          27.690230304043727,
+          85.45324557837118,
+          27.909743780696033
+        ]
+      },
+      "observation_count": 3,
+      "granule_ids": [
+        "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001"
+      ],
+      "source_timestamps_utc": [
+        "2026-08-19T23:39:18Z",
+        "2026-08-31T23:39:18Z",
+        "2026-09-12T23:39:18Z"
+      ],
+      "saved_profiles": 1,
+      "reference_area_km2": null
+    },
+    {
+      "case_id": "nepal_impact_corridor",
+      "status": "measured",
+      "grid": {
+        "shape": [
+          2400,
+          2400
+        ],
+        "affine": [
+          10.0,
+          0.0,
+          323030.0,
+          0.0,
+          -10.0,
+          3126350.0
+        ],
+        "crs": "EPSG:32645",
+        "pixel_area_km2": 0.0001,
+        "bounds_wgs84": [
+          85.19607173296369,
+          28.034670073510398,
+          85.44376811560396,
+          28.25422262743529
+        ]
+      },
+      "observation_count": 3,
+      "granule_ids": [
+        "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001"
+      ],
+      "source_timestamps_utc": [
+        "2026-08-19T23:39:18Z",
+        "2026-08-31T23:39:18Z",
+        "2026-09-12T23:39:18Z"
+      ],
+      "saved_profiles": 1,
+      "reference_area_km2": 6.423017231044916
+    },
+    {
+      "case_id": "jamuna_river",
+      "status": "measured",
+      "grid": {
+        "shape": [
+          2000,
+          2000
+        ],
+        "affine": [
+          10.0,
+          0.0,
+          156520.0,
+          0.0,
+          -10.0,
+          2722450.0
+        ],
+        "crs": "EPSG:32646",
+        "pixel_area_km2": 0.0001,
+        "bounds_wgs84": [
+          89.60896471693857,
+          24.39765950515116,
+          89.81072414632627,
+          24.582291708894346
+        ]
+      },
+      "observation_count": 6,
+      "granule_ids": [
+        "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001"
+      ],
+      "source_timestamps_utc": [
+        "2026-06-18T23:21:35Z",
+        "2026-07-24T23:21:33Z",
+        "2026-08-17T23:21:32Z",
+        "2026-08-29T23:21:32Z",
+        "2026-09-22T23:21:32Z",
+        "2026-10-16T23:21:32Z"
+      ],
+      "saved_profiles": 1,
+      "reference_area_km2": null
+    },
+    {
+      "case_id": "tanguar_wetland",
+      "status": "measured",
+      "grid": {
+        "shape": [
+          1600,
+          1800
+        ],
+        "affine": [
+          10.0,
+          0.0,
+          297380.0,
+          0.0,
+          -10.0,
+          2785400.0
+        ],
+        "crs": "EPSG:32646",
+        "pixel_area_km2": 0.0001,
+        "bounds_wgs84": [
+          90.9895389532272,
+          25.026639418364375,
+          91.17021585958979,
+          25.173363702854573
+        ]
+      },
+      "observation_count": 6,
+      "granule_ids": [
+        "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_026_069_A_014_4005_DHDH_A_20260724T232133_20260724T232208_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_028_069_A_014_4005_DHDH_A_20260817T232132_20260817T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_029_069_A_014_4005_DHDH_A_20260829T232132_20260829T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001",
+        "NISAR_L2_PR_GCOV_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001"
+      ],
+      "source_timestamps_utc": [
+        "2026-06-18T23:21:35Z",
+        "2026-07-24T23:21:33Z",
+        "2026-08-17T23:21:32Z",
+        "2026-08-29T23:21:32Z",
+        "2026-09-22T23:21:32Z",
+        "2026-10-16T23:21:32Z"
+      ],
+      "saved_profiles": 1,
+      "reference_area_km2": null
+    }
+  ],
+  "legacy_nominal_pair_summaries": {
+    "t1_t2": {
+      "changed_area_km2": 0.0195,
+      "region_count": 1,
+      "common_valid_area_km2": 565.8349000000001,
+      "common_valid_pixels": 5658349,
+      "changed_fraction_of_valid_area": 3.44623493531417e-05
+    },
+    "t1_t3": {
+      "changed_area_km2": 0.7949,
+      "region_count": 30,
+      "common_valid_area_km2": 547.8402,
+      "common_valid_pixels": 5478402,
+      "changed_fraction_of_valid_area": 0.0014509705567426416
+    },
+    "t2_t3": {
+      "changed_area_km2": 0.0,
+      "region_count": 0,
+      "common_valid_area_km2": 547.8383,
+      "common_valid_pixels": 5478383,
+      "changed_fraction_of_valid_area": 0.0
+    }
+  },
+  "timeseries_intervals": [
+    {
+      "interval_id": "t1_t2",
+      "before": "nisar_gc_2026_08_19",
+      "after": "nisar_gc_2026_08_31",
+      "start": "2026-08-19T23:39:18Z",
+      "end": "2026-08-31T23:39:18Z",
+      "days": 12.0,
+      "candidate_area_km2": 0.0199,
+      "raw_score_area_km2": 4.6714,
+      "region_count": 1,
+      "common_valid_area_km2": 565.8349000000001,
+      "valid_fraction": 0.9823522569444444,
+      "median_signed_change_db": 0.31426000595092773,
+      "median_absolute_change_db": 0.949577808380127,
+      "mean_absolute_change_db": 1.1564079523086548,
+      "candidate_median_absolute_change_db": 7.340915679931641,
+      "normalization": {
+        "center_db": 0.31426000595092773,
+        "mad_db": 0.9260725975036621,
+        "robust_spread_db": 1.3729952330589295,
+        "epsilon": 1e-06,
+        "degenerate_spread": false
+      },
+      "threshold": 3.0,
+      "calibration_status": "UNCALIBRATED",
+      "change_raster": "change_t1_t2.tif",
+      "score_raster": "score_t1_t2.tif",
+      "mask_raster": "candidate_t1_t2.tif",
+      "overlay": "t1_t2_overlay.png"
+    },
+    {
+      "interval_id": "t2_t3",
+      "before": "nisar_gc_2026_08_31",
+      "after": "nisar_gc_2026_09_12",
+      "start": "2026-08-31T23:39:18Z",
+      "end": "2026-09-12T23:39:18Z",
+      "days": 12.0,
+      "candidate_area_km2": 0.0,
+      "raw_score_area_km2": 4.5675,
+      "region_count": 0,
+      "common_valid_area_km2": 547.8383,
+      "valid_fraction": 0.9511081597222222,
+      "median_signed_change_db": -0.05985116958618164,
+      "median_absolute_change_db": 0.899524450302124,
+      "mean_absolute_change_db": 1.0964821577072144,
+      "candidate_median_absolute_change_db": null,
+      "normalization": {
+        "center_db": -0.05985116958618164,
+        "mad_db": 0.8982958793640137,
+        "robust_spread_db": 1.3318134707450866,
+        "epsilon": 1e-06,
+        "degenerate_spread": false
+      },
+      "threshold": 3.0,
+      "calibration_status": "UNCALIBRATED",
+      "change_raster": "change_t2_t3.tif",
+      "score_raster": "score_t2_t3.tif",
+      "mask_raster": "candidate_t2_t3.tif",
+      "overlay": "t2_t3_overlay.png"
+    }
+  ],
+  "protected_zone": {
+    "zone_id": "NP-Z4ab9a6118de9",
+    "features": {
+      "magnitude_db": 7.526309013366699,
+      "onset_rate_db_per_day": 0.6271924177805582,
+      "peak_growth_km2_per_day": -0.0016583333333333335,
+      "persistence": 1.0,
+      "recovery": 0.05974931027443686,
+      "variability_db": 0.22484588623046875,
+      "peak_candidate_area_km2": 0.0199,
+      "rain_24h_mm": 15.920000076293945,
+      "rain_72h_mm": 40.779998779296875,
+      "slope_deg": 1.809823225491011,
+      "thermal_anomaly_c": null,
+      "confidence": null
+    },
+    "labels": [
+      "Onset bracketed between radar visits",
+      "Baseline disturbance exceeds illustrative 3 dB screen",
+      "Disturbance remains in every valid post-onset visit",
+      "Limited return toward baseline observed",
+      "Successive change-mask area contracted",
+      "Gentle mean terrain context"
+    ],
+    "observations": [
+      {
+        "zone_id": "NP-Z4ab9a6118de9",
+        "observation_id": "nisar_gc_2026_08_19",
+        "timestamp": "2026-08-19T23:39:18Z",
+        "area_km2": null,
+        "zone_footprint_area_km2": 0.0199,
+        "common_valid_fraction": 1.0,
+        "mean_delta_from_baseline_db": 0.0,
+        "median_delta_from_baseline_db": 0.0,
+        "mean_absolute_delta_from_baseline_db": 0.0,
+        "recovery": null,
+        "validation_status": "UNVERIFIED"
+      },
+      {
+        "zone_id": "NP-Z4ab9a6118de9",
+        "observation_id": "nisar_gc_2026_08_31",
+        "timestamp": "2026-08-31T23:39:18Z",
+        "area_km2": 0.0199,
+        "zone_footprint_area_km2": 0.0199,
+        "common_valid_fraction": 1.0,
+        "mean_delta_from_baseline_db": -7.526309013366699,
+        "median_delta_from_baseline_db": -7.340915679931641,
+        "mean_absolute_delta_from_baseline_db": 7.526309013366699,
+        "recovery": 0.0,
+        "validation_status": "UNVERIFIED"
+      },
+      {
+        "zone_id": "NP-Z4ab9a6118de9",
+        "observation_id": "nisar_gc_2026_09_12",
+        "timestamp": "2026-09-12T23:39:18Z",
+        "area_km2": 0.0,
+        "zone_footprint_area_km2": 0.0199,
+        "common_valid_fraction": 1.0,
+        "mean_delta_from_baseline_db": -7.076617240905762,
+        "median_delta_from_baseline_db": -7.074244499206543,
+        "mean_absolute_delta_from_baseline_db": 7.076617240905762,
+        "recovery": 0.059749435202946066,
+        "validation_status": "UNVERIFIED"
+      }
+    ],
+    "onset_bracket": [
+      "2026-08-19T23:39:18Z",
+      "2026-08-31T23:39:18Z"
+    ],
+    "onset_bracket_days": 12.0,
+    "peak_observation_id": "nisar_gc_2026_08_31",
+    "recovery_half_life_days": null,
+    "recovery_half_life_bracket_days": null,
+    "recovery_half_life_censored": true,
+    "recovery_followup_days": 12.0,
+    "observed_disturbance_span_days": 12.0,
+    "disturbance_still_observed_latest": true,
+    "persistence_denominator": 2,
+    "valid_observation_count": 3,
+    "observation_count": 3,
+    "interval_change_persistence": 0.5,
+    "data_coverage_fraction": 1.0,
+    "confidence": null,
+    "confidence_status": "UNVALIDATED",
+    "thermal_status": "UNAVAILABLE: no matched spatial/temporal thermal anomaly baseline",
+    "rainfall_context_timestamp": "2026-08-31T23:39:18Z",
+    "geometry": {
+      "centroid_wgs84": [
+        85.22182839493927,
+        27.900827925751493
+      ],
+      "bbox_projected": [
+        324780.0,
+        3087370.0,
+        325150.0,
+        3087660.0
+      ]
+    },
+    "interpretation": "Descriptive retrospective radar signature, not a disaster diagnosis. Rainfall precedes first observed disturbance, not necessarily its unobserved onset.",
+    "similarity": {
+      "zone_id": "NP-Z4ab9a6118de9",
+      "matches": [],
+      "available": false,
+      "reference_count": 0,
+      "method": "Cosine similarity on reference-only z-standardized physical features; constant and missing dimensions excluded",
+      "confidence": null,
+      "interpretation": "Similarity describes radar behavior, not event type or independent confirmation.",
+      "reason": "Insufficient independent reference zones; the current zone is not compared with itself."
+    }
+  }
+}

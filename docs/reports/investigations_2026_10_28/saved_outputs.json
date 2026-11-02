@@ -1,0 +1,39 @@
+{
+  "status": "SAVED_INVESTIGATION_OUTPUT_CHECKS_PASS",
+  "cases": [
+    {
+      "case_id": "nepal_surface",
+      "status": "SAVED_OUTPUT_CHECKS_PASS",
+      "observations": 3,
+      "native_shape": [
+        2400,
+        2400
+      ],
+      "saved_profiles": 1,
+      "reference_overlap_km2": null
+    },
+    {
+      "case_id": "nepal_impact_corridor",
+      "status": "SAVED_OUTPUT_CHECKS_PASS",
+      "observations": 3,
+      "native_shape": [
+        2400,
+        2400
+      ],
+      "saved_profiles": 1,
+      "reference_overlap_km2": 6.423017231044916
+    },
+    {
+      "case_id": "jamuna_river",
+      "status": "AWAITING_DATA",
+      "fabricated_observations": false
+    },
+    {
+      "case_id": "tanguar_wetland",
+      "status": "AWAITING_DATA",
+      "fabricated_observations": false
+    }
+  ],
+  "prior_artifacts_preserved": 508,
+  "scope": "Raster/coverage/geometry/profile/asset consistency and known numerical relationships. Not physical-cause validation, water/habitat classifier accuracy, browser QA or a disconnected rehearsal."
+}

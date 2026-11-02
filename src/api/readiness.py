@@ -9,7 +9,7 @@ def readiness(root):
     root=Path(root);config_path=root/'config.project.json'
     project=json.loads(config_path.read_text()) if config_path.exists() else {'name':'TerraPulse','release_status':'UNCONFIGURED'}
     missing=[];invalid=[];cases=root/'web/public/cases'/project.get('case_id','nepal_case_01')
-    for filename in ['index.html','studio.css','studio.mjs','terrain-view.mjs','playback.mjs','change-lab.html','change-lab.css','change-lab.mjs','timeseries.html','comparison.html']:
+    for filename in ['index.html','studio.css','studio.mjs','terrain-view.mjs','playback.mjs','change-lab.html','change-lab.css','change-lab.mjs','timeseries.html','comparison.html','investigations.html','investigations.css','investigations.mjs','investigation-model.mjs']:
         if not (root/'web'/filename).is_file():missing.append('web/'+filename)
     required=['manifest.json','evidence.json','metadata.json','methodology.json','change_regions.geojson',
         'timeseries/timeline.json','timeseries/zones.json','timeseries/zone_timeseries.json','context/context.json',
@@ -38,6 +38,22 @@ def readiness(root):
     if components.is_file():
         with components.open('rb') as stream:
             if stream.read(2)!=b'PK':invalid.append(str(components.relative_to(root)))
+    investigation_states={}
+    for name in ['investigations.json','download-plan.json']:
+        if not (root/'web/public/cases'/name).is_file():missing.append('web/public/cases/'+name)
+    registry=root/'web/public/cases/investigations.json'
+    if registry.is_file():
+        try:
+            for case in json.loads(registry.read_text())['cases']:
+                investigation_states[case['case_id']]=case['status']
+                if case['status']!='OBSERVATIONS_READY':continue
+                folder=root/'web/public/cases'/case['case_id']/'investigation'
+                manifest=folder/'manifest.json'
+                if not manifest.is_file():missing.append(str(manifest.relative_to(root)));continue
+                for observation in json.loads(manifest.read_text())['observations']:
+                    for value in [*observation['rasters'].values(),*observation['layers'].values()]:
+                        if value is not None and not (folder/value).is_file():missing.append(str((folder/value).relative_to(root)))
+        except (ValueError,KeyError,TypeError):invalid.append(str(registry.relative_to(root)))
     packages=['numpy','scipy','rasterio','h5py','pyarrow','PIL','pyproj','shapely','affine']
     dependencies={name:importlib.util.find_spec(name) is not None for name in packages}
     ready=not missing and not invalid and all(dependencies.values())
@@ -45,7 +61,8 @@ def readiness(root):
         'dependencies':dependencies,'acquisition_count':len(manifests.get('timeseries/timeline.json',{}).get('observations',[])),
         'tracked_zone_count':manifests.get('dna/manifest.json',{}).get('zone_count'),
         'landslide_validation_status':manifests.get('landslide/manifest.json',{}).get('validation',{}).get('status','UNAVAILABLE'),
-        'capabilities':['NISAR radar comparison','Acquisition playback','Change DNA','Terrain and rainfall context','Landsat thermal/optical','Flood counterfactuals','Landslide susceptibility','Evidence export'],
+        'investigation_cases':investigation_states,
+        'capabilities':['NISAR radar comparison','Acquisition playback','Change DNA','Terrain and rainfall context','Landsat thermal/optical','Flood counterfactuals','Landslide susceptibility','Evidence export','Multi-case HH/HV investigations','River/Wetland radar-signature processing'],
         'verification_scope':'Runtime file/dependency preflight; scientific recalculation and visual QA are separate.'}
 
 

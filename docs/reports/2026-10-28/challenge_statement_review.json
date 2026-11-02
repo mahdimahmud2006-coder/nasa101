@@ -1,0 +1,33 @@
+{
+  "source": "User-supplied released challenge statement",
+  "source_file": "/home/mahdi-mahmud/.codex/attachments/a68926d6-e959-4fca-917f-bd909d0d01dc/Pasted text.txt",
+  "sha256": "ce82dc29a11e127764d4ba866e64314147be043e04691b1d13d0a027c53b57ac",
+  "review_date": "2026-10-28",
+  "required": [
+    "Interactive application",
+    "Actual NISAR radar observations",
+    "Track and visualize at least one type of surface change",
+    "Accessible communication of observed findings"
+  ],
+  "encouraged": [
+    "Physical-driver hypotheses",
+    "Supplemental imagery/GIS",
+    "Storytelling and user-friendly interaction"
+  ],
+  "optional": [
+    "More polarizations",
+    "Other sensors/frequencies",
+    "Multiple locations",
+    "Human-driver analysis",
+    "Personal local context"
+  ],
+  "not_required": [
+    "Operational flood/landslide prediction",
+    "Thermal mapping",
+    "LLM or machine learning",
+    "Global processing coverage",
+    "Centimeter displacement from intensity"
+  ],
+  "ai_screening": "Reported by user as local judge advice; no screening model/rubric/weights supplied. No pass guarantee can be derived.",
+  "official_challenge_page_fetch": "HTTP 502 on 2026-10-28; user-supplied text controls requirement analysis."
+}

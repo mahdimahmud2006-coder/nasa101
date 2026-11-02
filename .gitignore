@@ -67,6 +67,9 @@ build/
 develop-eggs/
 dist/
 downloads/
+!docs/downloads/
+!docs/downloads/*.json
+!docs/downloads/*.txt
 eggs/
 .eggs/
 lib/

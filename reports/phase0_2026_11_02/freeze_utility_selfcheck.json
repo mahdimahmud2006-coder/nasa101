@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "include processed/viewer/doc-JSON outputs",
+    "exclude raw source and code",
+    "verify recorded hashes",
+    "allow additive new paths",
+    "detect changed frozen bytes",
+    "refuse baseline overwrite"
+  ]
+}

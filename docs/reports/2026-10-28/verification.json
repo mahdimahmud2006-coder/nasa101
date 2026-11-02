@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-28",
+  "ui_tests": 26,
+  "ui_failures": 0,
+  "test_scope": "Explicit DOM and terrain mocks; not a real browser",
+  "prior_analytical_artifacts_checked": 508,
+  "prior_analytical_artifact_mismatches": [],
+  "readme_binding_claim_checks": "PASS",
+  "new_hdf_downloads": 0,
+  "new_cases_implemented": 0,
+  "browser_visual_qa": "UNVERIFIED: URL policy blocked access; no bypass attempted",
+  "physical_offline_rehearsal": "PENDING",
+  "release_archive": "Existing archive predates review changes; rebuild before updated distribution",
+  "source_hashes": {
+    "README.md": "335ccda0f66a95756c79d9421bd5c933407b502f2aca1481329c3afcca91d007",
+    "web/studio.mjs": "ab88be99319f4c3f37f312143c52b310a05a59d16203716658be36ff2b3e6fe7",
+    "tests/studio.test.mjs": "3f6a3d03eebf8c033bad2de32d20f21c181575c318f6044c5b249f93ca9f3c26",
+    "docs/CHALLENGE_STRATEGY_2026-10-28.md": "1a2538333ee4bcfac23180fe79a6cf92d19d9d8ea0fa22342b376271b9c0b3b1"
+  }
+}
