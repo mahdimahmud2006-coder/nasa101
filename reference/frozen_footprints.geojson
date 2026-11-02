@@ -1,0 +1,449 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.33508147414146,
+              27.79558424590976
+            ],
+            [
+              85.33494390395727,
+              27.80460797832393
+            ],
+            [
+              85.32479588422797,
+              27.8044852489614
+            ],
+            [
+              85.32493429190852,
+              27.795461563176392
+            ],
+            [
+              85.33508147414146,
+              27.79558424590976
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "nepal_surface_target_geographic",
+        "case_id": "nepal_surface",
+        "role": "target_geographic",
+        "selection": "Fixed 1 km geographic square at predeclared fractional crop position. Unmapped means no TerraPulse target label assigned, not known unaffected/reference-negative.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.26305516270169,
+              27.72971552986444
+            ],
+            [
+              85.26291204208442,
+              27.738739009975077
+            ],
+            [
+              85.25277051353041,
+              27.73861126714212
+            ],
+            [
+              85.2529144686864,
+              27.729587835641418
+            ],
+            [
+              85.26305516270169,
+              27.72971552986444
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "nepal_surface_unmapped_comparison",
+        "case_id": "nepal_surface",
+        "role": "unmapped_comparison",
+        "selection": "Fixed 1 km geographic square at predeclared fractional crop position. Unmapped means no TerraPulse target label assigned, not known unaffected/reference-negative.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.22173356570634,
+              27.69160061720628
+            ],
+            [
+              85.22168968642055,
+              27.694307617293116
+            ],
+            [
+              85.21864852115324,
+              27.6942685234536
+            ],
+            [
+              85.21869247538226,
+              27.69156152783468
+            ],
+            [
+              85.22173356570634,
+              27.69160061720628
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "nepal_surface_putative_stable_comparison",
+        "case_id": "nepal_surface",
+        "role": "putative_stable_comparison",
+        "selection": "Square centered on largest connected first-date/DEM putative-control component; no new reference viewed. Square not guaranteed entirely stable.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.32520279080708,
+              28.140045591832397
+            ],
+            [
+              85.32506238378654,
+              28.149068826914625
+            ],
+            [
+              85.3148821259426,
+              28.14894397146183
+            ],
+            [
+              85.31502338537457,
+              28.139920783426508
+            ],
+            [
+              85.32520279080708,
+              28.140045591832397
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "nepal_impact_corridor_target_geographic",
+        "case_id": "nepal_impact_corridor",
+        "role": "target_geographic",
+        "selection": "Fixed 1 km geographic square at predeclared fractional crop position. Unmapped means no TerraPulse target label assigned, not known unaffected/reference-negative.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.25296566234323,
+              28.074164928666754
+            ],
+            [
+              85.2528196053181,
+              28.083187909215916
+            ],
+            [
+              85.24264595359107,
+              28.083057965424743
+            ],
+            [
+              85.24279286002745,
+              28.07403503391449
+            ],
+            [
+              85.25296566234323,
+              28.074164928666754
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "nepal_impact_corridor_unmapped_comparison",
+        "case_id": "nepal_impact_corridor",
+        "role": "unmapped_comparison",
+        "selection": "Fixed 1 km geographic square at predeclared fractional crop position. Unmapped means no TerraPulse target label assigned, not known unaffected/reference-negative.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.31187148265421,
+              28.22069973472468
+            ],
+            [
+              85.31182888859377,
+              28.22340665610975
+            ],
+            [
+              85.3087727121155,
+              28.223368892945906
+            ],
+            [
+              85.3088153831965,
+              28.220661975822445
+            ],
+            [
+              85.31187148265421,
+              28.22069973472468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "nepal_impact_corridor_putative_stable_comparison",
+        "case_id": "nepal_impact_corridor",
+        "role": "putative_stable_comparison",
+        "selection": "Square centered on largest connected first-date/DEM putative-control component; no new reference viewed. Square not guaranteed entirely stable.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.7149582468886,
+              24.485598329465937
+            ],
+            [
+              89.71472379323745,
+              24.49461512562108
+            ],
+            [
+              89.70487028556398,
+              24.494400209077966
+            ],
+            [
+              89.7051054393117,
+              24.4853835022182
+            ],
+            [
+              89.7149582468886,
+              24.485598329465937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "jamuna_river_target_geographic",
+        "case_id": "jamuna_river",
+        "role": "target_geographic",
+        "selection": "Fixed 1 km geographic square at predeclared fractional crop position. Unmapped means no TerraPulse target label assigned, not known unaffected/reference-negative.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.65727260736094,
+              24.430201943194234
+            ],
+            [
+              89.65703465185184,
+              24.439218277184747
+            ],
+            [
+              89.64718603217356,
+              24.43900005930939
+            ],
+            [
+              89.64742468551843,
+              24.42998381613535
+            ],
+            [
+              89.65727260736094,
+              24.430201943194234
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "jamuna_river_unmapped_comparison",
+        "case_id": "jamuna_river",
+        "role": "unmapped_comparison",
+        "selection": "Fixed 1 km geographic square at predeclared fractional crop position. Unmapped means no TerraPulse target label assigned, not known unaffected/reference-negative.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              89.70638603053816,
+              24.45703769189417
+            ],
+            [
+              89.70631561621417,
+              24.459742718927483
+            ],
+            [
+              89.70336039136258,
+              24.459678232681224
+            ],
+            [
+              89.70343086858612,
+              24.456973213694855
+            ],
+            [
+              89.70638603053816,
+              24.45703769189417
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "jamuna_river_putative_stable_comparison",
+        "case_id": "jamuna_river",
+        "role": "putative_stable_comparison",
+        "selection": "Square centered on largest connected first-date/DEM putative-control component; no new reference viewed. Square not guaranteed entirely stable.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.08495559421918,
+              25.095576105657422
+            ],
+            [
+              91.08481499478324,
+              25.10460200903996
+            ],
+            [
+              91.07490233166423,
+              25.104473625884392
+            ],
+            [
+              91.07504365772559,
+              25.095447774931007
+            ],
+            [
+              91.08495559421918,
+              25.095576105657422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tanguar_wetland_target_geographic",
+        "case_id": "tanguar_wetland",
+        "role": "target_geographic",
+        "selection": "Fixed 1 km geographic square at predeclared fractional crop position. Unmapped means no TerraPulse target label assigned, not known unaffected/reference-negative.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.0321246917091,
+              25.051552134224554
+            ],
+            [
+              91.03198050360328,
+              25.060577807693047
+            ],
+            [
+              91.02207169739916,
+              25.060446109040246
+            ],
+            [
+              91.02221661032863,
+              25.051420489423055
+            ],
+            [
+              91.0321246917091,
+              25.051552134224554
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tanguar_wetland_unmapped_comparison",
+        "case_id": "tanguar_wetland",
+        "role": "unmapped_comparison",
+        "selection": "Fixed 1 km geographic square at predeclared fractional crop position. Unmapped means no TerraPulse target label assigned, not known unaffected/reference-negative.",
+        "truth_status": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.01151190733775,
+              25.164888062659383
+            ],
+            [
+              91.01146798005139,
+              25.167595690779795
+            ],
+            [
+              91.00849277841827,
+              25.16755568136607
+            ],
+            [
+              91.00853677132194,
+              25.16484805813835
+            ],
+            [
+              91.01151190733775,
+              25.164888062659383
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tanguar_wetland_putative_stable_comparison",
+        "case_id": "tanguar_wetland",
+        "role": "putative_stable_comparison",
+        "selection": "Square centered on largest connected first-date/DEM putative-control component; no new reference viewed. Square not guaranteed entirely stable.",
+        "truth_status": "unknown"
+      }
+    }
+  ]
+}

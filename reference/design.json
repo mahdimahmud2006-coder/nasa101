@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-02T16:27:29.421545+00:00",
+  "design": "prospective descriptive reference comparison, not accuracy validation",
+  "new_reference_viewed_before_freeze": false,
+  "known_prior_exposure": [
+    "Existing preliminary UN mudflow/rockflow mapping and NASA GLC were viewed in earlier implementations; those cannot be called blinded references.",
+    "Existing radar observations, NASADEM and Phase 3 control diagnostics are known. No new OPERA/HLS reference catalog or image has been examined."
+  ],
+  "time_tolerance_seconds": {
+    "DSWx_S1": 259200,
+    "DSWx_HLS": 259200,
+    "HLS": 432000,
+    "DIST": 432000
+  },
+  "spatial_tolerance_m": 30,
+  "spatial_use": "No buffer is applied to measured intersection area; tolerance is disclosed for geolocation differences. Pixel-center inclusion for reference cells.",
+  "sensor_difference": "NISAR L-band vs Sentinel-1 C-band or HLS optical; different scattering/cloud sensitivity.",
+  "matching": "Choose closest eligible reference in tolerance, then lowest cloud where available, then lexicographic ID, without inspecting response values.",
+  "metrics_allowed": [
+    "assessable area",
+    "reference-water overlap area",
+    "radar-dark/reference-water intersection area",
+    "time difference",
+    "coverage"
+  ],
+  "metrics_prohibited": [
+    "precision",
+    "recall",
+    "IoU",
+    "classification accuracy",
+    "causal attribution"
+  ],
+  "thresholds_frozen": {
+    "hh_db": -17,
+    "hv_db": -24,
+    "dual_brightening_db": 3
+  },
+  "holdout_policy": "No reference value can select thresholds, tune rules, pick footprints, or change input baselines. Negative/mixed results retained.",
+  "comparison_roles": [
+    "target_geographic",
+    "putative_stable_comparison",
+    "unmapped_comparison"
+  ],
+  "limitations": "No random/exhaustive truth sample or validated stable/unmapped labels; descriptive overlap only."
+}

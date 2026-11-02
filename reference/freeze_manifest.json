@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-02T16:27:29.421638+00:00",
+  "sha256": {
+    "reference/frozen_footprints.geojson": "2f1e101cb750db73e2dd0d5d6cab4aeaec39c8f456bba1a9999bd940433097e0",
+    "reference/design.json": "df97e021dc73d26673f8d8a1563f7770f57059a24261e526c4dbfef909dfccc2"
+  }
+}
