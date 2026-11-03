@@ -1,0 +1,10 @@
+{
+  "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001.h5",
+  "request": "GET Range bytes=0-7; read at most eight response bytes and close",
+  "retrieved_at": "2026-11-03T10:57:48.890832+00:00",
+  "authentication": "Unauthenticated; no secret read or submitted",
+  "science_subset_accepted": false,
+  "http_status": 401,
+  "bytes_read": 0,
+  "error_type": "HTTPError"
+}

@@ -80,7 +80,8 @@ def test_explicit_and_shared_source_discovery_is_deduplicated(tmp_path):
 
 @pytest.fixture
 def saved_case(tmp_path,monkeypatch):
-    public=tmp_path/'public';folder=public/'cases/sample/investigation';folder.mkdir(parents=True)
+    monkeypatch.setattr(app,'ROOT',tmp_path)
+    public=tmp_path/'web/public';folder=public/'cases/sample/investigation';folder.mkdir(parents=True)
     observations=[]
     for i in range(3):
         observation={'observation_id':str(i),'timestamp':f'2026-08-{i+1:02d}T00:00:00Z','rasters':{}}

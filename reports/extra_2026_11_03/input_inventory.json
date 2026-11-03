@@ -1,0 +1,2214 @@
+[
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GCOV_023_098_A_016_4005_DHDH_A_20260620T233921_20260620T233956_P05023_N_F_J_001.h5",
+    "bytes": 7239368704,
+    "metadata": {
+      "filename": "NISAR_L2_PR_GCOV_023_098_A_016_4005_DHDH_A_20260620T233921_20260620T233956_P05023_N_F_J_001.h5",
+      "size_bytes": 7239368704,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-06-20T23:39:21.000000000",
+      "acquisition_end": "2026-06-20T23:39:56.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_023_098_A_016_4005_DHDH_A_20260620T233921_20260620T233956_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 98,
+      "frame": 16,
+      "orbit": 4695,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((86.602458713229 27.9932963662152 4814.65673828302,86.5327892471367 28.2048920750687 5187.03808522218,86.4685178638454 28.4178089538138 5177.53320312427,86.4127074663702 28.6327802478381 4582.87451172044,86.3504570202195 28.8462392054033 4405.17236328112,86.2714598585042 29.0557179282983 5330.07191949589,86.2122701142199 29.2699697460361 4911.39013781642,86.1434602024844 29.481947869605 5117.88964843839,86.0675905270122 29.6922647432783 5776.45458952941,86.0095407453465 29.9068827553159 5228.8139646824,85.9413167734202 30.1190943887906 5340.35888671957,85.6449336803787 30.0479113559499 5156.16259765627,85.3516678187876 29.976710230413 5720.23730468819,85.0770598571792 29.9093608363552 5746.95019534104,84.822699056174 29.8463970795011 4855.66210938274,84.5607390409953 29.780941423488 5278.4580078141,84.3142889358372 29.718818143988 4957.91113281257,84.0749237486778 29.6579696713253 4528.45166087236,83.8286821895266 29.5948309335647 5336.67822276192,83.5999987248805 29.535728945182 4874.17187499837,83.3665615635544 29.4749098787863 5399.88618176431,83.4398233840749 29.2642461092799 5219.18749999972,83.5123692426807 29.053434911139 5080.95312500042,83.5863595235676 28.8430416068324 4745.00195312448,83.6698767622001 28.6351824859479 3311.6772460926,83.7401784935668 28.4238984625871 3312.18139648464,83.8222318193459 28.215725273684 1969.44860892582,83.902948414414 28.0072356580271 740.988341825365,83.969619933536 27.7951142671025 1036.32287460612,84.0472509583866 27.5858882327058 79.7365645684777,84.1156919003161 27.3743021372332 109.920075049337,84.3413864603452 27.4326147561005 171.014633305869,84.569426006994 27.4910983761384 452.232574188909,84.8048940647527 27.5510339233429 475.018678076853,85.0275218827371 27.6072567623215 2239.46630970103,85.2846920022226 27.6717195761907 1301.89428787704,85.5383778004802 27.7347579746165 1365.85620117176,85.799510314009 27.7990858518323 1488.51196289136,86.0525276006275 27.8608582297161 2950.95201715422,86.3128999359744 27.923869027027 4522.97070244484,86.602458713229 27.9932963662152 4814.65673828302))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 243969.625,
+        "mean_value": 1.1583834886550903,
+        "min_value": 1.2696444852913175e-18,
+        "sample_stddev": 85.72006225585938,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32645",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        83.3665615635544,
+        27.3743021372332,
+        86.602458713229,
+        30.1190943887906
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": []
+    },
+    "incompatibilities": [],
+    "readable": true
+  },
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GCOV_024_098_A_016_4005_DHDH_A_20260702T233920_20260702T233955_P05023_N_F_J_001.h5",
+    "bytes": 7239368704,
+    "metadata": {
+      "filename": "NISAR_L2_PR_GCOV_024_098_A_016_4005_DHDH_A_20260702T233920_20260702T233955_P05023_N_F_J_001.h5",
+      "size_bytes": 7239368704,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-07-02T23:39:20.000000000",
+      "acquisition_end": "2026-07-02T23:39:55.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_024_098_A_016_4005_DHDH_A_20260702T233920_20260702T233955_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 98,
+      "frame": 16,
+      "orbit": 4868,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((86.6089435789578 27.9733191002995 4752.38183593707,86.5405979232779 28.1852293702849 5037.35208955287,86.4678090001994 28.3961044376865 5604.49737262192,86.4154981220077 28.6119114063582 4774.25079145257,86.3569134164985 28.8262451776629 4352.60400390559,86.2815926296521 29.0366022126767 5033.2988289143,86.2239873110336 29.2512308536786 4512.03127823565,86.1529297620929 29.4626682019931 4870.56510106886,86.0771505361027 29.6730047547514 5524.92919923148,86.0131755263533 29.8862000671081 5373.91259781312,85.9511678672264 30.0998985611912 5074.92919921934,85.6507524048981 30.0277533737287 5167.48290969277,85.357750360049 29.9566213971787 5721.48876949423,85.0875594139859 29.8903699169985 5400.79152845033,84.8251676489198 29.8254161207645 5181.94482421982,84.5684737686875 29.7612848361809 5159.38965002308,84.322473676489 29.6992851027856 4799.39892581852,84.08152165254 29.6380398515936 4526.64843750079,83.8360871984861 29.5751169904589 5260.70849730154,83.6060369385412 29.5156672027204 4949.2485351994,83.3722812058765 29.4547704730605 5522.05566406039,83.4452206780577 29.2440259861353 5373.39746093745,83.5134621560494 29.0320888605996 5711.32275390623,83.5902529359645 28.8224344350708 5059.42138671946,83.6755220653754 28.6150381772422 3426.31274414047,83.7487419140241 28.4045211535775 3098.31542968669,83.8339132854552 28.1971651917455 1406.04138281421,83.9109891653262 27.9877267422229 578.026123046254,83.9732153811009 27.7744483893198 1363.7305908188,84.0538125741713 27.5659992748442 73.3394628339371,84.1222457027103 27.3544144144355 100.780289161223,84.3464615752319 27.4123369411034 312.744200818486,84.5746379498519 27.4708508931078 566.620483397925,84.8132120571582 27.5315721684258 271.035338752111,85.0392812668435 27.5886541240249 1710.52038182355,85.2916177277321 27.6518871204069 1225.79858353268,85.5473820754765 27.7154334503504 1108.28503418072,85.8036261646426 27.7785455484986 1632.1820068425,86.066295506751 27.8426708490715 2340.06811644995,86.329802739165 27.906416660459 3712.22759878664,86.6089435789578 27.9733191002995 4752.38183593707))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 294228.0625,
+        "mean_value": 1.3063966035842896,
+        "min_value": 1.4072320835552228e-17,
+        "sample_stddev": 99.59821319580078,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32645",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        83.3722812058765,
+        27.3544144144355,
+        86.6089435789578,
+        30.0998985611912
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": []
+    },
+    "incompatibilities": [],
+    "readable": true
+  },
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GCOV_025_098_A_016_4005_DHDH_A_20260714T233920_20260714T233954_P05023_F_F_J_001.h5",
+    "bytes": 7046430720,
+    "metadata": {
+      "filename": "NISAR_L2_PR_GCOV_025_098_A_016_4005_DHDH_A_20260714T233920_20260714T233954_P05023_F_F_J_001.h5",
+      "size_bytes": 7046430720,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-07-14T23:39:20.000000000",
+      "acquisition_end": "2026-07-14T23:39:54.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_025_098_A_016_4005_DHDH_A_20260714T233920_20260714T233954_P05023_F_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 98,
+      "frame": 16,
+      "orbit": 5041,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((86.5949979274031 28.0116141246232 4973.37744107172,86.524820618251 28.2167483403546 5499.61621142344,86.4692806372167 28.4254140760325 5021.19189453118,86.413314959397 28.6340053003354 4558.15869140652,86.3527435176931 28.841521462615 4389.34082031201,86.277202366156 29.0454819513016 5204.99121093646,86.2222579954465 29.254402558375 4626.43017582584,86.1536584192474 29.4600813876868 4942.78955077938,86.0827838714401 29.6652442356731 5392.9257812497,86.0187144644226 29.8720663738874 5372.00195312435,85.9560278237755 30.0792494868217 5242.12499862984,85.6587364139911 30.0078585552266 5124.44042968681,85.3631010958799 29.9360874705829 5876.08154297457,85.0903889728367 29.8692116396546 5768.38330078054,84.8329743828097 29.8054944504732 5146.75244140808,84.5721925505402 29.7403384974601 5489.19761811036,84.325767978428 29.6782274049168 5185.65918033442,84.0889646257371 29.618041858835 4524.65673828291,83.8433809635132 29.5550857431659 5275.21972656382,83.6134102463891 29.4956615919866 4957.14812215288,83.3815835954534 29.435277191867 5317.54052733874,83.4512957025313 29.2300753836992 5303.17863825331,83.517788886817 29.0240670579249 5612.99465596609,83.5918053516567 28.8200700746238 5049.63867116846,83.6765338550019 28.6189145534484 3258.62438782163,83.7464072253503 28.4139013411079 3086.49282384221,83.824554533264 28.2110868297716 1960.26281758677,83.9034359337885 28.0084959365515 719.881347657199,83.9679835630683 27.8021958075438 1037.13830396375,84.0435946579598 27.5988162798982 92.957588553146,84.1103956940792 27.3931739145536 95.0380856299186,84.3364636772921 27.451580842954 119.722878358339,84.5658957756095 27.5104185705042 262.799560598927,84.7968646640734 27.5692023523424 739.43157420448,85.0254991232737 27.6269453318106 1927.79694965897,85.2800838436187 27.690749856938 1241.18090810867,85.5358000625209 27.7542872253012 1137.67919921862,85.7937948058819 27.8178327324448 1528.89164551636,86.0387234853707 27.8776281441213 3612.75699000972,86.3044123462758 27.9419386665786 4764.69140625124,86.5949979274031 28.0116141246232 4973.37744107172))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 234903.953125,
+        "mean_value": 1.3466440439224243,
+        "min_value": 1.6600001153418293e-17,
+        "sample_stddev": 111.47576904296875,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32645",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        83.3815835954534,
+        27.3931739145536,
+        86.5949979274031,
+        30.0792494868217
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": []
+    },
+    "incompatibilities": [],
+    "readable": true
+  },
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001.h5",
+    "bytes": 7239368704,
+    "metadata": {
+      "filename": "NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001.h5",
+      "size_bytes": 7239368704,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-07-26T23:39:19.000000000",
+      "acquisition_end": "2026-07-26T23:39:54.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 98,
+      "frame": 16,
+      "orbit": 5214,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((86.6051522391995 27.9829177553896 4833.26562500267,86.5328338508864 28.1938779424982 5385.80029294621,86.4658629142108 28.4061466384777 5559.18945312365,86.4127825532497 28.6217704279475 4780.21358382578,86.3539401877989 28.8360434615012 4375.05810546844,86.2765411629743 29.0459036738356 5194.11083988338,86.2174908577841 29.2601875393727 4767.72157117413,86.1486939944003 29.4721670769708 4974.67754424658,86.069580293964 29.6817053406156 5850.92041015586,86.0123638589778 29.8965216536227 5248.54199218699,85.9459919545245 30.1091752166369 5238.40478424693,85.648050587634 30.0376236644688 5164.54736328059,85.3543029304055 29.9663096044697 5772.65283203326,85.0822294482471 29.8995909752766 5604.47956994531,84.8251095165157 29.8359476862861 4946.21972656361,84.5609961541451 29.7699525887941 5573.07751100415,84.3183624569079 29.7087982048059 4914.60644531408,84.0786040393906 29.6478557892977 4527.77148437802,83.8347833581123 29.5853495129725 5094.07324219435,83.603960928624 29.5257009410398 4855.81494180874,83.3722572123133 29.4653443014091 5194.52099645386,83.4423402211582 29.253847732674 5364.55273437613,83.5127015405953 29.0424652291378 5467.6463903126,83.5890769535974 28.8326999184094 4863.72607525055,83.6759175897888 28.6257133670223 3058.37982914796,83.7458971764443 28.4143462056906 3092.03228964657,83.8281923185256 28.2062372348575 1720.61840820781,83.9081431361033 27.9975488456517 575.192260742286,83.9741706261755 27.7852608013427 939.514637097149,84.0508606849109 27.5757910370734 85.2779309180076,84.1193364377918 27.3642159161169 109.461334230714,84.343847312874 27.4222160120557 291.635255254787,84.5728586606671 27.4809448364561 462.592926027682,84.8106074060806 27.5414548577495 254.832503381111,85.0328648966687 27.5975741886038 2057.34277343704,85.2885327257608 27.6616501538677 1258.17382813058,85.5398787580748 27.7241005097014 1518.54602050902,85.7985829862118 27.787828856427 1823.8845214863,86.0570825565416 27.8509423340143 2842.59960937452,86.3270453194224 27.9162628246629 3721.94477900371,86.6051522391995 27.9829177553896 4833.26562500267))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 278888.0625,
+        "mean_value": 1.3467519283294678,
+        "min_value": 4.084631926857264e-18,
+        "sample_stddev": 104.8769302368164,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32645",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        83.3722572123133,
+        27.3642159161169,
+        86.6051522391995,
+        30.1091752166369
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": []
+    },
+    "incompatibilities": [],
+    "readable": true
+  },
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001.h5",
+    "bytes": 7046430720,
+    "metadata": {
+      "filename": "NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001.h5",
+      "size_bytes": 7046430720,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-09-24T23:39:18.000000000",
+      "acquisition_end": "2026-09-24T23:39:52.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 98,
+      "frame": 16,
+      "orbit": 6079,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((86.5990415305692 28.0005291542085 4866.36669921638,86.531981781415 28.2064099996261 5182.82173083128,86.46800418918 28.4130552723134 5274.5214843748,86.4126009430758 28.6217813324884 4773.26806650762,86.3557021521739 28.8301767123221 4358.92919921784,86.283355242261 29.0349016518589 4961.70410111443,86.2268484348023 29.243448097238 4489.0488281206,86.1568589823393 29.4487939639477 4898.96044921863,86.082645279455 29.653156133322 5572.74023450805,86.0211866559289 29.8606039571918 5378.5024407209,85.9562734505345 30.0672530987845 5397.17822185976,85.6614304623294 29.9964471098275 5123.53173963595,85.3646805414887 29.9244013358633 5967.02392545894,85.0981614622524 29.8590534531294 5371.42919921982,84.8366413138007 29.7943218156644 5083.67578125152,84.5738729960823 29.7286664692904 5607.04101654424,84.3300892221541 29.6672237948099 5067.14468179907,84.0920953184062 29.6067358674496 4523.42968748923,83.8460040621047 29.5436489339718 5332.05322265511,83.6172751506766 29.4845479996288 4889.6044921898,83.3822563194497 29.4233269919359 5607.71435546858,83.4519292383761 29.2181162696833 5596.4507116791,83.5228292266445 29.0132652668 5413.72607421868,83.5944923369273 28.8086518526525 5110.9780273426,83.6769156377332 28.6068934483739 3574.06665044854,83.7495484026848 28.4026032642947 3093.35048533453,83.8324029612506 28.201020021146 1442.62219413963,83.9079407934843 27.9975552942688 571.771849431312,83.9718015412747 27.7910761378331 963.372070308276,84.0468390361914 27.5875478902854 81.1563097006192,84.1135561909746 27.3818839009883 90.9375442691326,84.3393132031054 27.4402092194747 143.634140309111,84.5680890530149 27.498878077711 347.766175044148,84.8006281543258 27.558062579998 660.81262173299,85.0233391922592 27.6143068296003 2407.58348173577,85.2824165780692 27.6792476231254 1287.28894157084,85.5343362528827 27.7418433837871 1500.02722168296,85.8013570445108 27.8076200549445 1136.52037259945,86.0413197212529 27.8661942182558 3615.82128906219,86.3091463958666 27.9310227446928 4606.78027343801,86.5990415305692 28.0005291542085 4866.36669921638))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 313416.5,
+        "mean_value": 1.1951582431793213,
+        "min_value": 2.964650677361238e-18,
+        "sample_stddev": 79.41923522949219,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32645",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        83.3822563194497,
+        27.3818839009883,
+        86.5990415305692,
+        30.0672530987845
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": []
+    },
+    "incompatibilities": [],
+    "readable": true
+  },
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001.h5",
+    "bytes": 7042236416,
+    "metadata": {
+      "filename": "NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001.h5",
+      "size_bytes": 7042236416,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-10-06T23:39:18.000000000",
+      "acquisition_end": "2026-10-06T23:39:52.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 98,
+      "frame": 16,
+      "orbit": 6252,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((86.6023709918309 27.990345132677 4874.01262461591,86.531922109238 28.195412325309 5420.36083972157,86.4662792325253 28.4016563447338 5625.06416294032,86.4165752481448 28.6117445537409 4740.23486253078,86.3593210659256 28.8200523707122 4350.67333984469,86.2879562570695 29.025010203086 4888.65380859158,86.2305494657045 29.2333386360805 4477.17089843873,86.158622244532 29.4382179711075 5017.16650387215,86.084382919047 29.642571460936 5693.78710877066,86.0228890084337 29.8500083240613 5502.46386718804,85.9571488354209 30.0564567165524 5576.79345697212,85.6650255594985 29.9863049391292 5123.94531249937,85.368185239771 29.9142396045234 5976.02783203266,85.0992121245115 29.8482869450844 5580.6069335937,84.8394567201227 29.7839925433648 5155.93115234654,84.575737249578 29.7180983399821 5770.43113227864,84.3357908067762 29.6576300782694 4879.93066375158,84.0958332860402 29.5966459571384 4522.29296875143,83.8519223523479 29.5341260746532 5109.42773421823,83.6198597759345 29.4741638514835 5015.67529296861,83.3868924859298 29.4134828484451 5513.25585937476,83.4556336326653 29.2080301958408 5603.67382892087,83.5272228990523 29.0033629161953 5342.24997708268,83.594455337126 28.7975904304485 5532.26220705749,83.676113615135 28.5956354503646 4077.47534126864,83.7588529849255 28.3939932739079 2470.44458007927,83.8361543867734 28.190959710054 1435.35836415415,83.9113750353596 27.9874148437135 597.875503948093,83.9732351577984 27.7804165465033 1210.30737304577,84.0504340665786 27.5774548004476 85.9663927232148,84.1169774485203 27.3717483100526 113.374238878305,84.3425876406879 27.430032671536 179.051117122477,84.5705348682237 27.4884862983285 465.13607669814,84.8063226076779 27.5484969404529 451.586351672367,85.0299268235943 27.604959989272 2120.22680653924,85.2859533551955 27.6691267413188 1287.03308105586,85.5409363706018 27.7324803013952 1236.51363482698,85.7997737603003 27.7962333580144 1547.14929076913,86.0538476650678 27.8582588216242 2920.9827945531,86.324873145265 27.9238373327922 3720.25511892763,86.6023709918309 27.990345132677 4874.01262461591))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 213353.875,
+        "mean_value": 1.1433868408203125,
+        "min_value": 9.301453255076071e-18,
+        "sample_stddev": 74.19080352783203,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32645",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        83.3868924859298,
+        27.3717483100526,
+        86.6023709918309,
+        30.0564567165524
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": []
+    },
+    "incompatibilities": [],
+    "readable": true
+  },
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001.h5",
+    "bytes": 7050625024,
+    "metadata": {
+      "filename": "NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001.h5",
+      "size_bytes": 7050625024,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-10-18T23:39:18.000000000",
+      "acquisition_end": "2026-10-18T23:39:52.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 98,
+      "frame": 16,
+      "orbit": 6425,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((86.6102177316462 27.9704503566348 4746.65185546895,86.5410483941956 28.1758204957335 5207.75732421882,86.467231675442 28.3801036393158 5966.35058509586,86.415533772409 28.5897114498401 5214.59472656262,86.3653594473268 28.7997109049601 4350.53076171885,86.2949234743556 29.0048874418773 4827.75439452946,86.2374095893194 29.2131866735068 4424.93945313657,86.1663573990157 29.4182719508825 4907.97851562484,86.090070885636 29.6221311656241 5722.55957031353,86.0271558189471 29.8292237338637 5627.15820312509,85.9646087239699 30.0364336990006 5490.44384765941,85.6713128693272 29.9659967101308 5117.94433585275,85.379017456767 29.8950407692036 5626.80760206658,85.1055802513123 29.8279916382133 5574.20068359253,84.8461054708579 29.7637646496446 5128.76269545697,84.5845013417367 29.6984018902062 5555.78067057764,84.3425844784778 29.6374359192078 4843.89355492639,84.1022978595037 29.5763666116458 4520.68310546907,83.8587586362377 29.5139415597192 5073.671920564,83.6250952351247 29.4535618198849 5153.33349609209,83.3964724670254 29.3940190127261 5178.15624999991,83.4642474067655 29.1883167112455 5372.47509823936,83.5319107163312 28.9826234472189 5545.54687499843,83.6062830579324 28.7787278476067 4935.84228521251,83.69535393732 28.5787164469521 2656.08493115514,83.7614081626976 28.3727106299789 2901.46386815574,83.8452541476914 28.1713927730691 1136.68872206956,83.9152716343964 27.9664931630347 873.428772914412,83.980851400662 27.7604700839887 1070.35168568708,84.056890013994 27.55720985759 72.3280567712665,84.1233762529394 27.3514926608796 103.47464768625,84.3470605255973 27.4092792917162 372.142791523709,84.5756526018997 27.4679025408054 580.871276446908,84.8143705771995 27.5286623605686 270.569275487463,85.0430185335272 27.5863973688607 1466.49340820475,85.2927728508798 27.6489798600918 1225.92419549888,85.5488968487528 27.7126173503021 1078.01403711008,85.8068713850507 27.7761564682779 1463.84408567411,86.0686280214516 27.8400565130867 2251.2363281256,86.3348613647305 27.9044604839418 3432.54052734446,86.6102177316462 27.9704503566348 4746.65185546895))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33840,
+        34488
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 430311.84375,
+        "mean_value": 1.1953086853027344,
+        "min_value": 4.71582780969749e-18,
+        "sample_stddev": 85.49351501464844,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32645",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        126725.0,
+        3347275.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        83.3964724670254,
+        27.3514926608796,
+        86.6102177316462,
+        30.0364336990006
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": []
+    },
+    "incompatibilities": [],
+    "readable": true
+  },
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001.h5",
+    "bytes": 2344615936,
+    "small_metadata": {
+      "science/LSAR/GUNW/grids/frequencyA/centerFrequency": "1239000000.0",
+      "science/LSAR/GUNW/grids/frequencyA/listOfPolarizations": "[b'HH']",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/xCoordinateSpacing": "80.0",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/yCoordinateSpacing": "-80.0",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/xCoordinateSpacing": "80.0",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/yCoordinateSpacing": "-80.0",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/xCoordinateSpacing": "80.0",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/yCoordinateSpacing": "-80.0",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/xCoordinateSpacing": "80.0",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/yCoordinateSpacing": "-80.0",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/xCoordinateSpacing": "20.0",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/yCoordinateSpacing": "-20.0",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/xCoordinateSpacing": "20.0",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/yCoordinateSpacing": "-20.0",
+      "science/LSAR/GUNW/metadata/attitude/reference/attitudeType": "b'Custom'",
+      "science/LSAR/GUNW/metadata/attitude/secondary/attitudeType": "b'Custom'",
+      "science/LSAR/GUNW/metadata/orbit/reference/interpMethod": "b'Hermite'",
+      "science/LSAR/GUNW/metadata/orbit/reference/orbitType": "b'MOE'",
+      "science/LSAR/GUNW/metadata/orbit/secondary/interpMethod": "b'Hermite'",
+      "science/LSAR/GUNW/metadata/orbit/secondary/orbitType": "b'MOE'",
+      "science/LSAR/GUNW/metadata/orbit/temporalBaseline": "12",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/coregistrationMethod": "b'Coarse geometry coregistration with DEM and orbit ephemeris with cross-correlation refinement'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/crossCorrelation": "b'frequency'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/crossCorrelationFilling": "b'fill_smoothed'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/crossCorrelationFilterKernel": "b'boxcar'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/crossCorrelationOutliers": "b'median_filter'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/geometryCoregistration": "b'Range doppler to geogrid then geogrid to range doppler'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/resampling": "b'sinc'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/geocoding/complexGeocodingInterpolation": "b'BILINEAR'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/geocoding/demInterpolation": "b'biquintic'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/geocoding/floatingGeocodingInterpolation": "b'BILINEAR'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/geocoding/integerGeocodingInterpolation": "b'nearest'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/interferogramFormation/flatteningMethod": "b'With geometry offsets'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/interferogramFormation/multilooking": "b'Spatial moving average with decimation'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/interferogramFormation/wrappedInterferogramFiltering": "b'no_filter'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/ionosphereAlgorithm": "b'Range split-spectrum with sub-band interferograms from the main band and the difference of the main and side band of the input RSLCs'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/ionosphereFilling": "b'nearest'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/ionosphereFiltering": "b'Iterative gaussian filter with 1 filtering'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/ionosphereOutliers": "[b'coherence', b'subswath_mask']",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/unwrappingErrorCorrection": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/softwareVersion": "b'0.25.16'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/costMode": "b'smooth'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/preprocessing/wrappedPhaseFilling": "b'distance_interpolator'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/preprocessing/wrappedPhaseOutliers": "b'subswath_mask'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/unwrappingAlgorithm": "b'snaphu'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/unwrappingInitializer": "b'mcf'",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/configFiles": "b'None'",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/demSource": "b'Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.'",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/l1ReferenceSlcGranules": "[b'NISAR_L1_PR_RSLC_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001.h5']",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/l1SecondarySlcGranules": "[b'NISAR_L1_PR_RSLC_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5']",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/orbitFiles": "[b'used RSLC internal reference orbit file', b'used RSLC internal secondary orbit file']",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/waterMaskSource": "b'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/common/frequencyA/dopplerBandwidth": "1262.524683077406",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/geocoding/azimuthIonosphericCorrectionApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/geocoding/hydrostaticTroposphericCorrectionApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/geocoding/rangeIonosphericCorrectionApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/geocoding/wetTroposphericCorrectionApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/ionosphere/highBandBandwidth": "nan",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/ionosphere/lowBandBandwidth": "nan",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/alongTrackSearchWindowSize": "64",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/alongTrackSkipWindowSize": "75",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/alongTrackWindowSize": "96",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/correlationSurfaceOversampling": "16",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/isOffsetsBlendingApplied": "b'None'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/slantRangeSearchWindowSize": "64",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/slantRangeSkipWindowSize": "75",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/slantRangeWindowSize": "64",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/azimuthBandwidth": "1262.524683077406",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/numberOfAzimuthLines": "54720",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/numberOfRangeSamples": "54239",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/rangeBandwidth": "40000000.0",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/slantRangeSpacing": "3.1228381041666666",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/slantRangeStart": "878266.9884158333",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/zeroDopplerEndTime": "b'2026-08-19T23:39:53.999342105'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/zeroDopplerStartTime": "b'2026-08-19T23:39:18.000000000'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/zeroDopplerTimeSpacing": "0.0006578947368421052",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/isMixedMode": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/rfiMitigation": "b'tone-rank'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/rfiMitigationApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/runConfigurationContents": "b\"{'pge_name_group': {'pge_name': 'INSAR_L_PGE'}, 'input_file_group': {'reference_rslc_file': '/data/work/jobs/2026/09/02/10/44/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_029_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260902T104435.543027Z/NISAR_L1_PR_RSLC_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001.h5', 'secondary_rslc_file': '/data/work/jobs/2026/09/02/10/44/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_029_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260902T104435.543027Z/NISAR_L1_PR_RSLC_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5', 'qa_rifg_input_file': 'output/RIFG_product.h5', 'qa_runw_input_file': 'output/RUNW_product.h5', 'qa_gunw_input_file': 'output/GUNW_product.h5', 'qa_roff_input_file': 'ROFF_product.h5', 'qa_goff_input_file': 'GOFF_product.h5'}, 'dynamic_ancillary_file_group': {'dem_file': '/data/work/jobs/2026/09/02/10/44/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_029_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260902T104435.543027Z/dem.vrt', 'dem_file_description': 'Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.', 'water_mask_file': '/data/work/jobs/2026/09/02/10/44/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_029_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260902T104435.543027Z/WATERMASK.vrt', 'water_mask_file_description': 'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.', 'orbit_files': {'reference_orbit_file': None, 'secondary_orbit_file': None}, 'tec_file': '/data/work/jobs/2026/09/02/10/44/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_029_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260902T104435.543027Z/NISAR_ANC_TEC_20260821T211728_20260819T230002_20260820T235952_s015.json', 'troposphere_weather_model_files': {'reference_troposphere_file': '/data/work/jobs/2026/09/02/10/44/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_029_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260902T104435.543027Z/ECMWF_TROP_202608200000_202608200000_1.nc', 'secondary_troposphere_file': '/data/work/jobs/2026/09/02/10/44/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_029_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260902T104435.543027Z/ECMWF_TROP_202609010000_202609010000_1.nc'}}, 'product_path_group': {'product_path': 'output', 'scratch_path': 'scratch', 'sas_output_file': 'output/product.h5', 'qa_output_dir': 'qa_insar', 'product_counter': 1}, 'primary_executable': {'product_type': 'RIFG_RUNW_GUNW', 'product_version': {'rifg_version': '1.0.11', 'roff_version': '1.0.11', 'runw_version': '1.0.11', 'goff_version': '1.0.11', 'gunw_version': '1.0.11'}, 'product_doi': {'rifg_doi': '10.5067/NIL1RIFG-P1', 'roff_doi': '10.5067/NIL1ROFF-P1', 'runw_doi': '10.5067/NIL1RUNW-P1', 'goff_doi': '10.5067/NIL2GOFF-P1', 'gunw_doi': '10.5067/NIL2GUNW-P1'}, 'static_layers_data_access': 'https://nisar-services.earthdata.nasa.gov/redirect/NISAR_L2_STATIC/{granule_id}.h5', 'composite_release_id': 'P05023', 'processing_type': 'PR', 'product_accuracy': 'N', 'urgent_request_id': None, 'processing_center': 'J', 'partial_granule_id': 'NISAR_{Level}_PR_{ProductType}_028_098_A_016_029_{MODE}_{PO}_{RefStartDateTime}_{RefEndDateTime}_{SecStartDateTime}_{SecEndDateTime}_P05023_N_F_J_001'}, 'debug_level_group': {'debug_switch': False}, 'worker': {'intermediate_files_removal_enabled': True, 'internet_access': False, 'gpu_enabled': False, 'gpu_id': 0}, 'processing': {'process_single_co_pol_offset': True, 'input_subset': {'list_of_frequencies': {'A': ['HH']}}, 'dem_download': {'source': None, 'top_left': {'x': None, 'y': None}, 'bottom_right': {'x': None, 'y': None}}, 'geocode': {'runw_path': None, 'roff_path': None, 'rifg_path': None, 'x_snap': None, 'y_snap': None, 'output_epsg': 32645, 'output_posting': {'A': {'x_posting': 80, 'y_posting': 80}, 'B': {'x_posting': None, 'y_posting': None}}, 'wrapped_interferogram': {'interp_method': 'BILINEAR', 'x_snap': None, 'y_snap': None, 'output_posting': {'A': {'x_posting': 20, 'y_posting': 20}, 'B': {'x_posting': None, 'y_posting': None}}}, 'top_left': {'y_abs': None, 'x_abs': None}, 'bottom_right': {'y_abs': None, 'x_abs': None}, 'lines_per_block': 1000, 'interp_method': 'BILINEAR', 'geogrids': {'A': <isce3.ext.isce3.product.GeoGridParameters object at 0x7f31a5d759b0>}, 'wrapped_igram_geogrids': {'A': <isce3.ext.isce3.product.GeoGridParameters object at 0x7f31a5d76bf0>}, 'gunw_datasets': {'connected_components': True, 'coherence_magnitude': True, 'ionosphere_phase_screen': True, 'ionosphere_phase_screen_uncertainty': True, 'unwrapped_phase': True, 'along_track_offset': True, 'slant_range_offset': True, 'correlation_surface_peak': True, 'mask': True}, 'goff_datasets': {'along_track_offset': True, 'snr': True, 'along_track_offset_variance': True, 'correlation_surface_peak': True, 'cross_offset_variance': True, 'slant_range_offset': True, 'slant_range_offset_variance': True, 'mask': True}, 'wrapped_datasets': {'coherence_magnitude': True, 'wrapped_interferogram': True, 'mask': True}}, 'radar_grid_cubes': {'heights': [-500, 0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000], 'output_epsg': 32645, 'output_posting': {'x_posting': 500, 'y_posting': 500}, 'y_snap': None, 'x_snap': None, 'top_left': {'y_abs': None, 'x_abs': None}, 'bottom_right': {'y_abs': None, 'x_abs': None}, 'geogrid': <isce3.ext.isce3.product.GeoGridParameters object at 0x7f31a5d74f70>}, 'bandpass': {'lines_per_block': 1000, 'window_function': 'tukey', 'window_shape': 0.25, 'range_fft_size': None}, 'ionosphere_phase_correction': {'enabled': True, 'lines_per_block': 8000, 'spectral_diversity': 'main_diff_ms_band', 'list_of_frequencies': {'A': ['HH'], 'B': ['HH']}, 'split_range_spectrum': {'lines_per_block': 2048, 'low_band_bandwidth': None, 'high_band_bandwidth': None, 'window_function': 'tukey', 'window_shape': 0.25}, 'dispersive_filter': {'enabled': True, 'filter_mask_type': ['coherence', 'subswath_mask'], 'median_filter_size': 15, 'median_filter_threshold': 0.6, 'filter_coherence_threshold': 0.2, 'filling_method': 'nearest', 'filling_guide_filter_method': 'median_gaussian', 'filling_guide_median_size': 3, 'filling_outlier_threshold': 3.5, 'filling_outlier_min_scale': 0.0, 'filling_outlier_mad_scale_factor': 1.4826, 'kernel_range': 14, 'kernel_azimuth': 110, 'sigma_range': 4, 'sigma_azimuth': 37, 'filter_iterations': 1, 'unwrap_correction': True, 'min_cluster_pixels': 2, 'bridge_algorithm_enabled': True, 'bridge_radius': 500, 'bridge_erosion_size': 2, 'bridge_minimum_samples': 14, 'bridge_ramp_type': None, 'bridge_ramp_maximum_pixel': 1000000.0}}, 'troposphere_delay': {'enabled': True, 'package': 'raider', 'weather_model_type': 'HRES', 'delay_direction': 'line_of_sight_mapping', 'enable_wet_product': True, 'enable_hydrostatic_product': True, 'enable_comb_product': False}, 'geo2rdr': {'threshold': 1e-08, 'maxiter': 25, 'lines_per_block': 1000, 'topo_path': 'scratch'}, 'rdr2geo': {'threshold': 1e-07, 'numiter': 25, 'extraiter': 10, 'lines_per_block': 1000, 'write_x': True, 'write_y': True, 'write_z': True, 'write_incidence': False, 'write_heading': False, 'write_local_incidence': False, 'write_local_psi': False, 'write_simulated_amplitude': False, 'write_layover_shadow': False}, 'coarse_resample': {'offsets_dir': 'scratch', 'lines_per_tile': 1000, 'columns_per_tile': 1000}, 'dense_offsets': {'enabled': True, 'lines_per_block': 1000, 'coregistered_slc_path': 'scratch', 'window_range': 64, 'window_azimuth': 96, 'half_search_range': 32, 'half_search_azimuth': 32, 'skip_range': 75, 'skip_azimuth': 75, 'margin': 0, 'offset_width': None, 'offset_length': None, 'start_pixel_range': None, 'start_pixel_azimuth': None, 'cross_correlation_domain': 'frequency', 'slc_oversampling_factor': 2, 'deramping_method': 'complex', 'deramping_axis': 'azimuth', 'use_gross_offsets': True, 'gross_offset_range': 0, 'gross_offset_azimuth': 0, 'gross_offset_filepath': None, 'merge_gross_offset': None, 'correlation_statistics_zoom': 21, 'correlation_surface_zoom': 8, 'correlation_surface_oversampling_factor': 16, 'correlation_surface_oversampling_method': 'fft', 'cuda_streams': None, 'windows_batch_range': 10, 'windows_batch_azimuth': 1}, 'offsets_product': {'enabled': False, 'coregistered_slc_path': 'scratch', 'lines_per_block': 1000, 'margin': 0, 'offset_length': None, 'offset_width': None, 'skip_range': 15, 'skip_azimuth': 15, 'start_pixel_range': None, 'start_pixel_azimuth': None, 'cross_correlation_domain': 'frequency', 'deramping_method': 'complex', 'deramping_axis': 'azimuth', 'slc_oversampling_factor': 2, 'gross_offset_filepath': None, 'gross_offset_range': 0, 'gross_offset_azimuth': 0, 'merge_gross_offset': False, 'correlation_statistics_zoom': 21, 'correlation_surface_zoom': 8, 'correlation_surface_oversampling_factor': 64, 'correlation_surface_oversampling_method': 'sinc', 'cuda_streams': 2, 'windows_batch_range': 10, 'windows_batch_azimuth': 5, 'layer1': {'window_range': 64, 'window_azimuth': 64, 'half_search_range': 16, 'half_search_azimuth': 16}}, 'rubbersheet': {'dense_offsets_path': 'scratch', 'offsets_product_path': None, 'geo2rdr_offsets_path': 'scratch', 'enabled': True, 'culling_metric': 'median_filter', 'median_filter_size_range': 9, 'median_filter_size_azimuth': 9, 'threshold': 3, 'mask_refine_enabled': True, 'mask_refine_min_neighbors': 0, 'mask_refine_filter_size': 5, 'outlier_filling_method': 'fill_smoothed', 'fill_smoothed': {'iterations': 15, 'kernel_size': 13}, 'interpolation_method': 'idw', 'azimuth_offset_filter': {'offsets_filter': 'mean', 'kernel_size': 31}, 'subswath_mask_apply_enabled': True, 'idw_interpolation': {'power': 2, 'number': 100, 'radius': 200}, 'offsets_filter': 'boxcar', 'boxcar': {'filter_size_range': 5, 'filter_size_azimuth': 5}, 'polyfitting': {'enabled': False, 'degree': 2, 'critical_value': 0.1, 'samples_along_range': 200, 'samples_along_azimuth': 200}}, 'fine_resample': {'enabled': True, 'offsets_dir': 'scratch', 'lines_per_tile': 100, 'columns_per_tile': 0}, 'crossmul': {'range_looks': 5, 'azimuth_looks': 6, 'flatten': True, 'oversample': 2, 'lines_per_block': 1024, 'common_band_range_filter': False, 'common_band_azimuth_filter': False, 'coregistered_slc_path': 'scratch', 'flatten_path': 'scratch'}, 'filter_interferogram': {'interferogram_path': None, 'mask': {'general': None}, 'lines_per_block': 100, 'filter_type': 'no_filter', 'boxcar': {'filter_size_range': 9, 'filter_size_azimuth': 9}}, 'baseline': {'mode': 'top_bottom'}, 'phase_unwrap': {'crossmul_path': None, 'range_looks': 13, 'azimuth_looks': 16, 'preprocess_wrapped_phase': {'enabled': True, 'mask': {'mask_path': None, 'mask_type': 'subswath_mask', 'ocean_water_buffer': 1, 'inland_water_buffer': 1, 'outlier_threshold': 0.5, 'median_filter_size': 25}, 'filling_enabled': False, 'filling_method': 'distance_interpolator', 'distance_interpolator': {'distance': 2}}, 'algorithm': 'snaphu', 'icu': {'seed': 0, 'buffer_lines': 3700, 'overlap_lines': 200, 'use_phase_gradient_neutron': False, 'use_intensity_neutron': False, 'phase_gradient_window_size': 5, 'neutron_phase_gradient_threshold': 3.0, 'neutron_intensity_threshold': 8.0, 'max_intensity_correlation_threshold': 0.8, 'trees_number': 7, 'max_branch_length': 64, 'pixel_spacing_ratio': 1.0, 'initial_correlation_threshold': 0.1, 'max_correlation_threshold': 0.9, 'correlation_threshold_increments': 0.1, 'min_tile_area': 0.003125, 'bootstrap_lines': 16, 'min_overlap_area': 16, 'phase_variance_threshold': 8}, 'phass': {'correlation_threshold_increments': 0.2, 'good_correlation': 0.7, 'min_unwrap_area': 200, 'power': None}, 'snaphu': {'nlooks': None, 'cost_mode': 'smooth', 'mask': None, 'initialization_method': 'mcf', 'min_conncomp_frac': 0.01, 'phase_grad_window': [7, 7], 'ntiles': [1, 1], 'tile_overlap': [0, 0], 'nproc': 1, 'tile_cost_thresh': 500, 'min_region_size': 300, 'single_tile_reoptimize': True, 'regrow_conncomps': True}, 'bridge': {'enabled': True, 'bridge_radius': 500, 'bridge_erosion_size': 2, 'bridge_minimum_samples': 14, 'bridge_ramp_type': None, 'bridge_ramp_maximum_pixel': 1000000.0}}, 'correction_luts': {'solid_earth_tides_enabled': True}}, 'output': {'page_enabled': True, 'compression_enabled': True, 'compression_level': 1, 'chunk_size': [512, 512], 'shuffle': True}, 'qa': {'rifg': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'output_browse_latlon': True, 'resample': 'nearest'}, 'wrapped_igram': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'coh_mag': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'az_and_range_offsets': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}, 'runw': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'rewrap': 2, 'output_browse_latlon': True, 'resample': 'bilinear'}, 'phase_img': {'rewrap': 7, 'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'coh_mag': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'connected_components': {'nan_threshold': 0, 'inf_threshold': 0, 'fill_threshold': 95.0, 'near_zero_threshold': 99.9, 'total_invalid_threshold': 99.9, 'epsilon': 1e-06, 'zero_is_invalid': True, 'max_num_cc': None}, 'ionosphere_phase_screen': {'nan_threshold': -1, 'inf_threshold': 95.0, 'fill_threshold': -1, 'near_zero_threshold': -1, 'total_invalid_threshold': -1, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'ionosphere_phase_screen_uncertainty': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'az_and_range_offsets': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}, 'gunw': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'rewrap': 2, 'output_browse_latlon': True, 'resample': 'average'}, 'phase_img': {'rewrap': 7, 'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.0, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'wrapped_igram': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'coh_mag': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.0, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'connected_components': {'nan_threshold': 0, 'inf_threshold': 0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.9, 'total_invalid_threshold': 99.9, 'epsilon': 1e-06, 'zero_is_invalid': True, 'max_num_cc': None}, 'ionosphere_phase_screen': {'nan_threshold': -1, 'inf_threshold': 99.0, 'fill_threshold': -1, 'near_zero_threshold': -1, 'total_invalid_threshold': -1, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'ionosphere_phase_screen_uncertainty': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'az_and_range_offsets': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.0, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}, 'roff': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'browse_decimation_freqa': None, 'browse_decimation_freqb': None, 'output_browse_latlon': True, 'resample': 'bilinear'}, 'az_and_range_offsets': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'quiver_plots': {'colorbar_min_max': None, 'arrow_density': 20, 'arrow_scaling': None}, 'az_and_rg_variance': {'colorbar_min_max': None, 'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'cross_offset_variance': {'colorbar_min_max': None, 'percentile_for_clipping': [1.0, 99.0], 'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}, 'goff': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'browse_decimation_freqa': None, 'browse_decimation_freqb': None, 'output_browse_latlon': True, 'resample': 'average'}, 'az_and_range_offsets': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'quiver_plots': {'colorbar_min_max': None, 'arrow_density': 20, 'arrow_scaling': None}, 'az_and_rg_variance': {'colorbar_min_max': None, 'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'cross_offset_variance': {'colorbar_min_max': None, 'percentile_for_clipping': [1.0, 99.0], 'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.0, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}}, 'logging': {'path': 'scratch/insar.log', 'write_mode': 'w'}}\"",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/azimuthBandwidth": "1262.5226685910775",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/numberOfAzimuthLines": "53200",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/numberOfRangeSamples": "54238",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/rangeBandwidth": "40000000.0",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/slantRangeSpacing": "3.1228381041666666",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/slantRangeStart": "878266.9884158333",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/zeroDopplerEndTime": "b'2026-08-31T23:39:52.999342105'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/zeroDopplerStartTime": "b'2026-08-31T23:39:18.000000000'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/zeroDopplerTimeSpacing": "0.0006578947368421052",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/isMixedMode": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/rfiMitigation": "b'tone-rank'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/rfiMitigationApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/azimuthBandwidth": "1262.524683077406",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/commonBandAzimuthFilterApplied": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/commonBandRangeFilterApplied": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/ellipsoidalFlatteningApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/numberOfAzimuthLooks": "16",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/numberOfRangeLooks": "13",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/rangeBandwidth": "40000000.0",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/topographicFlatteningApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/azimuthBandwidth": "1262.524683077406",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/commonBandAzimuthFilterApplied": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/commonBandRangeFilterApplied": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/ellipsoidalFlatteningApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/numberOfAzimuthLooks": "6",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/numberOfRangeLooks": "5",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/rangeBandwidth": "40000000.0",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/topographicFlatteningApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/radarGrid/projection": "32645",
+      "science/LSAR/identification/boundingPolygon": "b'POLYGON ((86.6064780547409 27.9794185541377 4783.56250000061,86.5354783176166 28.1906944052213 5246.86773769452,86.4657043590069 28.4022915971762 5609.56576364448,86.4115421824518 28.6176566421434 4902.79638671958,86.3545083764602 28.8323627904971 4376.08740240613,86.2771853112831 29.0422406475873 5189.99902348197,86.2189365520757 29.2567166338148 4710.05421039532,86.1498192087478 29.4686192581721 4938.33837890673,86.0725647766887 29.6786027441878 5690.30487846876,86.0127054863403 29.8927857943415 5264.21044980502,85.9464675372156 30.1054712089393 5245.07421875042,85.64861349128 30.0339339780761 5166.44335937515,85.3552986446694 29.9627194755554 5742.72998046754,85.0838522671895 29.8961510950034 5523.14648492523,84.8249059979368 29.8320485896 5016.67480467363,84.5633257296616 29.7666845290894 5421.43164048574,84.3199564011151 29.7053417424987 4825.84423828183,84.0792687618702 29.6441581524797 4527.04345703222,83.8357657197632 29.5817290798701 5061.82275390758,83.6045590982698 29.5219763471476 4864.22958674568,83.3734512062204 29.4617715131746 5138.23730468689,83.4418705691473 29.2498383232061 5493.21191419073,83.5128245280786 29.0386117161516 5530.54003912837,83.5894525549572 28.8289132537478 4898.45453775649,83.6770592622329 28.6221280233321 3007.85253906693,83.7454982226728 28.4103577379652 3212.91430663957,83.8311911953379 28.2031378828002 1464.04480060313,83.9096163262597 27.9940509015945 488.057190790115,83.9726968402047 27.7809938541011 1179.83984374931,84.05153863138 27.5720861818498 86.3455886322995,84.1199296736443 27.3604891013241 120.018243541066,84.344509771305 27.4185116602087 293.466227616241,84.5730089252718 27.477113610393 516.110596504024,84.8108685506175 27.5376576584161 294.239135744034,85.0346343055142 27.5941633428025 1951.72509765456,85.2892995509286 27.6579909464814 1247.03710937444,85.5430415629027 27.7210412703616 1302.36138835844,85.8010658902466 27.7846021033857 1673.25104919528,86.0589376659159 27.8475638098475 2747.35546789432,86.3266669819888 27.9123474588759 3792.6232910139,86.6064780547409 27.9794185541377 4783.56250000061))'",
+      "science/LSAR/identification/compositeReleaseId": "b'P05023'",
+      "science/LSAR/identification/diagnosticModeFlag": "0",
+      "science/LSAR/identification/frameNumber": "16",
+      "science/LSAR/identification/granuleId": "b'NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001'",
+      "science/LSAR/identification/instrumentName": "b'L-SAR'",
+      "science/LSAR/identification/isDithered": "b'True'",
+      "science/LSAR/identification/isFullFrame": "b'True'",
+      "science/LSAR/identification/isGeocoded": "b'True'",
+      "science/LSAR/identification/isMixedMode": "b'False'",
+      "science/LSAR/identification/isUrgentObservation": "b'False'",
+      "science/LSAR/identification/listOfFrequencies": "[b'A']",
+      "science/LSAR/identification/lookDirection": "b'Left'",
+      "science/LSAR/identification/missionId": "b'NISAR'",
+      "science/LSAR/identification/orbitPassDirection": "b'Ascending'",
+      "science/LSAR/identification/platformName": "b'NISAR'",
+      "science/LSAR/identification/processingCenter": "b'JPL'",
+      "science/LSAR/identification/processingDateTime": "b'2026-09-02T12:30:51'",
+      "science/LSAR/identification/processingType": "b'Nominal'",
+      "science/LSAR/identification/productDoi": "b'10.5067/NIL2GUNW-P1'",
+      "science/LSAR/identification/productLevel": "b'L2'",
+      "science/LSAR/identification/productSpecificationVersion": "b'1.5.0'",
+      "science/LSAR/identification/productType": "b'GUNW'",
+      "science/LSAR/identification/productVersion": "b'1.0.11'",
+      "science/LSAR/identification/radarBand": "b'L'",
+      "science/LSAR/identification/referenceAbsoluteOrbitNumber": "5560",
+      "science/LSAR/identification/referenceHasInputDataException": "0",
+      "science/LSAR/identification/referenceIsJointObservation": "b'True'",
+      "science/LSAR/identification/referenceListOfObservationModes": "[b'(NOT SPECIFIED)']",
+      "science/LSAR/identification/referencePlannedDatatakeId": "[b'dtid_2026231233240']",
+      "science/LSAR/identification/referencePlannedObservationId": "[b'oid_2026231233712']",
+      "science/LSAR/identification/referenceZeroDopplerEndTime": "b'2026-08-19T23:39:53.999342105'",
+      "science/LSAR/identification/referenceZeroDopplerStartTime": "b'2026-08-19T23:39:18.000000000'",
+      "science/LSAR/identification/secondaryAbsoluteOrbitNumber": "5733",
+      "science/LSAR/identification/secondaryHasInputDataException": "0",
+      "science/LSAR/identification/secondaryIsJointObservation": "b'True'",
+      "science/LSAR/identification/secondaryListOfObservationModes": "[b'(NOT SPECIFIED)']",
+      "science/LSAR/identification/secondaryPlannedDatatakeId": "[b'dtid_2026243233240']",
+      "science/LSAR/identification/secondaryPlannedObservationId": "[b'oid_2026243233712']",
+      "science/LSAR/identification/secondaryZeroDopplerEndTime": "b'2026-08-31T23:39:52.999342105'",
+      "science/LSAR/identification/secondaryZeroDopplerStartTime": "b'2026-08-31T23:39:18.000000000'",
+      "science/LSAR/identification/staticLayersDataAccess": "b'https://nisar-services.earthdata.nasa.gov/redirect/NISAR_L2_STATIC/NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001.h5'",
+      "science/LSAR/identification/trackNumber": "98"
+    },
+    "grids": {
+      "science/LSAR/GUNW/grids/frequencyA/centerFrequency": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Center frequency of the processed image in hertz'",
+          "units": "b'hertz'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/listOfPolarizations": {
+        "shape": [
+          1
+        ],
+        "dtype": "|S2",
+        "attrs": {
+          "description": "b'List of processed polarization layers with frequency A'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/alongTrackOffset": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Along-track offset'",
+          "grid_mapping": "b'projection'",
+          "max_value": "0.23681645095348358",
+          "mean_value": "-0.040894363075494766",
+          "min_value": "-0.5478643774986267",
+          "sample_stddev": "0.07569150626659393",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/correlationSurfacePeak": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Normalized cross-correlation surface peak'",
+          "grid_mapping": "b'projection'",
+          "max_value": "0.9914305210113525",
+          "mean_value": "0.6330968737602234",
+          "min_value": "-0.0444815456867218",
+          "sample_stddev": "0.2258182018995285",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/slantRangeOffset": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Slant range offset'",
+          "grid_mapping": "b'projection'",
+          "max_value": "3.760047197341919",
+          "mean_value": "-0.46550223231315613",
+          "min_value": "-1.5132724046707153",
+          "sample_stddev": "0.07731160521507263",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/xCoordinates": {
+        "shape": [
+          4311
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1) (<HDF5 object reference>, 1)\n (<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/yCoordinates": {
+        "shape": [
+          4230
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0) (<HDF5 object reference>, 0)\n (<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/mask": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "uint32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "255",
+          "description": "b'Combination of a water mask, a mask of subswaths of valid samples, and data anomalies in the reference RSLC and the geometrically coregistered secondary RSLC. Each pixel value is encoded as a 32-bit unsigned integer. Bits 0-7 represent subswath encoding, where the most significant digit represents the water flag of that pixel in the reference RSLC, where 1 is water and 0 is non-water; the second most significant digit corresponds to the subswath number of the reference RSLC, and the least significant digit corresponds to the subswath number of the secondary RSLC; a value of 0 in either digit indicates an invalid sample in the corresponding RSLC. Bits 8-15 represent bitwise anomaly flags for the secondary RSLC, and bits 16-23 represent bitwise anomaly flags for the reference RSLC, with each bit corresponding to a specific anomaly condition. A value of 0 in the anomaly bits indicates that no anomaly is detected in the corresponding RSLC. Bits 24-31 are reserved for future use'",
+          "disclaimer": "b'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.'",
+          "grid_mapping": "b'projection'",
+          "percentage_water": "1.013143023537018",
+          "valid_min": "0"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/xCoordinates": {
+        "shape": [
+          4311
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/yCoordinates": {
+        "shape": [
+          4230
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Coherence magnitude between HH layers'",
+          "grid_mapping": "b'projection'",
+          "max_value": "0.9969213008880615",
+          "mean_value": "0.5988537669181824",
+          "min_value": "0.0030148799996823072",
+          "sample_stddev": "0.24468226730823517",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "uint16",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "65535",
+          "description": "b'Connected components for HH layer'",
+          "grid_mapping": "b'projection'",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Ionosphere phase screen'",
+          "grid_mapping": "b'projection'",
+          "max_value": "17.259689331054688",
+          "mean_value": "13.504562377929688",
+          "min_value": "10.082074165344238",
+          "sample_stddev": "1.9944443702697754",
+          "units": "b'radians'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreenUncertainty": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Uncertainty of the ionosphere phase screen'",
+          "grid_mapping": "b'projection'",
+          "max_value": "3.1482694149017334",
+          "mean_value": "0.8762903809547424",
+          "min_value": "0.37870267033576965",
+          "sample_stddev": "0.3961712419986725",
+          "units": "b'radians'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Unwrapped interferogram between HH layers'",
+          "grid_mapping": "b'projection'",
+          "max_value": "21.799692153930664",
+          "mean_value": "2.9987244606018066",
+          "min_value": "-15.103584289550781",
+          "sample_stddev": "2.3992228507995605",
+          "units": "b'radians'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/xCoordinates": {
+        "shape": [
+          4311
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1) (<HDF5 object reference>, 1)\n (<HDF5 object reference>, 1) (<HDF5 object reference>, 1)\n (<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/yCoordinates": {
+        "shape": [
+          4230
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0) (<HDF5 object reference>, 0)\n (<HDF5 object reference>, 0) (<HDF5 object reference>, 0)\n (<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "uint32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "255",
+          "description": "b'Combination of a water mask, a mask of subswaths of valid samples, and data anomalies in the reference RSLC and the geometrically coregistered secondary RSLC. Each pixel value is encoded as a 32-bit unsigned integer. Bits 0-7 represent subswath encoding, where the most significant digit represents the water flag of that pixel in the reference RSLC, where 1 is water and 0 is non-water; the second most significant digit corresponds to the subswath number of the reference RSLC, and the least significant digit corresponds to the subswath number of the secondary RSLC; a value of 0 in either digit indicates an invalid sample in the corresponding RSLC. Bits 8-15 represent bitwise anomaly flags for the secondary RSLC, and bits 16-23 represent bitwise anomaly flags for the reference RSLC, with each bit corresponding to a specific anomaly condition. A value of 0 in the anomaly bits indicates that no anomaly is detected in the corresponding RSLC. Bit 24 indicates a bit mask for ionospheric phase mask used during filtering of ionospheric phase. This ionospheric phase mask indicates pixels which were masked out and filled with interpolated data. Bits 25-31 are reserved for future use'",
+          "disclaimer": "b'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.'",
+          "grid_mapping": "b'projection'",
+          "percentage_water": "1.013143023537018",
+          "valid_min": "0"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/xCoordinates": {
+        "shape": [
+          4311
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/yCoordinates": {
+        "shape": [
+          4230
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/coherenceMagnitude": {
+        "shape": [
+          16920,
+          17244
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Coherence magnitude between HH layers'",
+          "grid_mapping": "b'projection'",
+          "max_value": "0.9987422227859497",
+          "mean_value": "0.359891802072525",
+          "min_value": "0.0",
+          "sample_stddev": "0.3452000021934509",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/wrappedInterferogram": {
+        "shape": [
+          16920,
+          17244
+        ],
+        "dtype": "complex64",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "(nan+nanj)",
+          "description": "b'Complex wrapped interferogram between HH layers'",
+          "grid_mapping": "b'projection'",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/xCoordinates": {
+        "shape": [
+          17244
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1) (<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/yCoordinates": {
+        "shape": [
+          16920
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0) (<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/mask": {
+        "shape": [
+          16920,
+          17244
+        ],
+        "dtype": "uint32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "255",
+          "description": "b'Combination of a water mask, a mask of subswaths of valid samples, and data anomalies in the reference RSLC and the geometrically coregistered secondary RSLC. Each pixel value is encoded as a 32-bit unsigned integer. Bits 0-7 represent subswath encoding, where the most significant digit represents the water flag of that pixel in the reference RSLC, where 1 is water and 0 is non-water; the second most significant digit corresponds to the subswath number of the reference RSLC, and the least significant digit corresponds to the subswath number of the secondary RSLC; a value of 0 in either digit indicates an invalid sample in the corresponding RSLC. Bits 8-15 represent bitwise anomaly flags for the secondary RSLC, and bits 16-23 represent bitwise anomaly flags for the reference RSLC, with each bit corresponding to a specific anomaly condition. A value of 0 in the anomaly bits indicates that no anomaly is detected in the corresponding RSLC. Bits 24-31 are reserved for future use'",
+          "disclaimer": "b'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.'",
+          "grid_mapping": "b'projection'",
+          "percentage_water": "1.0596367366344712",
+          "valid_min": "0"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/xCoordinates": {
+        "shape": [
+          17244
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/yCoordinates": {
+        "shape": [
+          16920
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      }
+    },
+    "readable": true
+  },
+  {
+    "file": "database/extra datasets/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001.h5",
+    "bytes": 2332033024,
+    "small_metadata": {
+      "science/LSAR/GUNW/grids/frequencyA/centerFrequency": "1239000000.0",
+      "science/LSAR/GUNW/grids/frequencyA/listOfPolarizations": "[b'HH']",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/xCoordinateSpacing": "80.0",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/yCoordinateSpacing": "-80.0",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/xCoordinateSpacing": "80.0",
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/yCoordinateSpacing": "-80.0",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/xCoordinateSpacing": "80.0",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/yCoordinateSpacing": "-80.0",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/xCoordinateSpacing": "80.0",
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/yCoordinateSpacing": "-80.0",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/xCoordinateSpacing": "20.0",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/yCoordinateSpacing": "-20.0",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/projection": "32645",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/xCoordinateSpacing": "20.0",
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/yCoordinateSpacing": "-20.0",
+      "science/LSAR/GUNW/metadata/attitude/reference/attitudeType": "b'Custom'",
+      "science/LSAR/GUNW/metadata/attitude/secondary/attitudeType": "b'Custom'",
+      "science/LSAR/GUNW/metadata/orbit/reference/interpMethod": "b'Hermite'",
+      "science/LSAR/GUNW/metadata/orbit/reference/orbitType": "b'MOE'",
+      "science/LSAR/GUNW/metadata/orbit/secondary/interpMethod": "b'Hermite'",
+      "science/LSAR/GUNW/metadata/orbit/secondary/orbitType": "b'MOE'",
+      "science/LSAR/GUNW/metadata/orbit/temporalBaseline": "12",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/coregistrationMethod": "b'Coarse geometry coregistration with DEM and orbit ephemeris with cross-correlation refinement'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/crossCorrelation": "b'frequency'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/crossCorrelationFilling": "b'fill_smoothed'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/crossCorrelationFilterKernel": "b'boxcar'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/crossCorrelationOutliers": "b'median_filter'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/geometryCoregistration": "b'Range doppler to geogrid then geogrid to range doppler'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/coregistration/resampling": "b'sinc'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/geocoding/complexGeocodingInterpolation": "b'BILINEAR'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/geocoding/demInterpolation": "b'biquintic'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/geocoding/floatingGeocodingInterpolation": "b'BILINEAR'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/geocoding/integerGeocodingInterpolation": "b'nearest'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/interferogramFormation/flatteningMethod": "b'With geometry offsets'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/interferogramFormation/multilooking": "b'Spatial moving average with decimation'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/interferogramFormation/wrappedInterferogramFiltering": "b'no_filter'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/ionosphereAlgorithm": "b'Range split-spectrum with sub-band interferograms from the main band and the difference of the main and side band of the input RSLCs'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/ionosphereFilling": "b'nearest'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/ionosphereFiltering": "b'Iterative gaussian filter with 1 filtering'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/ionosphereOutliers": "[b'coherence', b'subswath_mask']",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/ionosphereEstimation/unwrappingErrorCorrection": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/softwareVersion": "b'0.25.16'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/costMode": "b'smooth'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/preprocessing/wrappedPhaseFilling": "b'distance_interpolator'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/preprocessing/wrappedPhaseOutliers": "b'subswath_mask'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/unwrappingAlgorithm": "b'snaphu'",
+      "science/LSAR/GUNW/metadata/processingInformation/algorithms/unwrapping/unwrappingInitializer": "b'mcf'",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/configFiles": "b'None'",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/demSource": "b'Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.'",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/l1ReferenceSlcGranules": "[b'NISAR_L1_PR_RSLC_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5']",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/l1SecondarySlcGranules": "[b'NISAR_L1_PR_RSLC_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001.h5']",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/orbitFiles": "[b'used RSLC internal reference orbit file', b'used RSLC internal secondary orbit file']",
+      "science/LSAR/GUNW/metadata/processingInformation/inputs/waterMaskSource": "b'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/common/frequencyA/dopplerBandwidth": "1262.5226685910775",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/geocoding/azimuthIonosphericCorrectionApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/geocoding/hydrostaticTroposphericCorrectionApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/geocoding/rangeIonosphericCorrectionApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/geocoding/wetTroposphericCorrectionApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/ionosphere/highBandBandwidth": "nan",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/ionosphere/lowBandBandwidth": "nan",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/alongTrackSearchWindowSize": "64",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/alongTrackSkipWindowSize": "75",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/alongTrackWindowSize": "96",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/correlationSurfaceOversampling": "16",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/isOffsetsBlendingApplied": "b'None'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/slantRangeSearchWindowSize": "64",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/slantRangeSkipWindowSize": "75",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/pixelOffsets/frequencyA/slantRangeWindowSize": "64",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/azimuthBandwidth": "1262.5226685910775",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/numberOfAzimuthLines": "53200",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/numberOfRangeSamples": "54238",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/rangeBandwidth": "40000000.0",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/slantRangeSpacing": "3.1228381041666666",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/slantRangeStart": "878266.9884158333",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/zeroDopplerEndTime": "b'2026-08-31T23:39:52.999342105'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/zeroDopplerStartTime": "b'2026-08-31T23:39:18.000000000'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/frequencyA/zeroDopplerTimeSpacing": "0.0006578947368421052",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/isMixedMode": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/rfiMitigation": "b'tone-rank'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/reference/rfiMitigationApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/runConfigurationContents": "b\"{'pge_name_group': {'pge_name': 'INSAR_L_PGE'}, 'input_file_group': {'reference_rslc_file': '/data/work/jobs/2026/09/15/09/09/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_030_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260915T090900.152621Z/NISAR_L1_PR_RSLC_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5', 'secondary_rslc_file': '/data/work/jobs/2026/09/15/09/09/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_030_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260915T090900.152621Z/NISAR_L1_PR_RSLC_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001.h5', 'qa_rifg_input_file': 'output/RIFG_product.h5', 'qa_runw_input_file': 'output/RUNW_product.h5', 'qa_gunw_input_file': 'output/GUNW_product.h5', 'qa_roff_input_file': 'ROFF_product.h5', 'qa_goff_input_file': 'GOFF_product.h5'}, 'dynamic_ancillary_file_group': {'dem_file': '/data/work/jobs/2026/09/15/09/09/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_030_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260915T090900.152621Z/dem.vrt', 'dem_file_description': 'Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.', 'water_mask_file': '/data/work/jobs/2026/09/15/09/09/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_030_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260915T090900.152621Z/WATERMASK.vrt', 'water_mask_file_description': 'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.', 'orbit_files': {'reference_orbit_file': None, 'secondary_orbit_file': None}, 'tec_file': '/data/work/jobs/2026/09/15/09/09/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_030_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260915T090900.152621Z/NISAR_ANC_TEC_20260902T211442_20260831T230002_20260901T220032_s015.json', 'troposphere_weather_model_files': {'reference_troposphere_file': '/data/work/jobs/2026/09/15/09/09/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_030_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260915T090900.152621Z/ECMWF_TROP_202609010000_202609010000_1.nc', 'secondary_troposphere_file': '/data/work/jobs/2026/09/15/09/09/SCIFLO_INSAR__pcm_r05.02.2_pge_r05.02.3-network_pair_030_098_016_full_individual_L_40_DH_05_DH_0_state-config-20260915T090900.152621Z/ECMWF_TROP_202609130000_202609130000_1.nc'}}, 'product_path_group': {'product_path': 'output', 'scratch_path': 'scratch', 'sas_output_file': 'output/product.h5', 'qa_output_dir': 'qa_insar', 'product_counter': 1}, 'primary_executable': {'product_type': 'RIFG_RUNW_GUNW', 'product_version': {'rifg_version': '1.0.11', 'roff_version': '1.0.11', 'runw_version': '1.0.11', 'goff_version': '1.0.11', 'gunw_version': '1.0.11'}, 'product_doi': {'rifg_doi': '10.5067/NIL1RIFG-P1', 'roff_doi': '10.5067/NIL1ROFF-P1', 'runw_doi': '10.5067/NIL1RUNW-P1', 'goff_doi': '10.5067/NIL2GOFF-P1', 'gunw_doi': '10.5067/NIL2GUNW-P1'}, 'static_layers_data_access': 'https://nisar-services.earthdata.nasa.gov/redirect/NISAR_L2_STATIC/{granule_id}.h5', 'composite_release_id': 'P05023', 'processing_type': 'PR', 'product_accuracy': 'N', 'urgent_request_id': None, 'processing_center': 'J', 'partial_granule_id': 'NISAR_{Level}_PR_{ProductType}_029_098_A_016_030_{MODE}_{PO}_{RefStartDateTime}_{RefEndDateTime}_{SecStartDateTime}_{SecEndDateTime}_P05023_N_F_J_001'}, 'debug_level_group': {'debug_switch': False}, 'worker': {'intermediate_files_removal_enabled': True, 'internet_access': False, 'gpu_enabled': False, 'gpu_id': 0}, 'processing': {'process_single_co_pol_offset': True, 'input_subset': {'list_of_frequencies': {'A': ['HH']}}, 'dem_download': {'source': None, 'top_left': {'x': None, 'y': None}, 'bottom_right': {'x': None, 'y': None}}, 'geocode': {'runw_path': None, 'roff_path': None, 'rifg_path': None, 'x_snap': None, 'y_snap': None, 'output_epsg': 32645, 'output_posting': {'A': {'x_posting': 80, 'y_posting': 80}, 'B': {'x_posting': None, 'y_posting': None}}, 'wrapped_interferogram': {'interp_method': 'BILINEAR', 'x_snap': None, 'y_snap': None, 'output_posting': {'A': {'x_posting': 20, 'y_posting': 20}, 'B': {'x_posting': None, 'y_posting': None}}}, 'top_left': {'y_abs': None, 'x_abs': None}, 'bottom_right': {'y_abs': None, 'x_abs': None}, 'lines_per_block': 1000, 'interp_method': 'BILINEAR', 'geogrids': {'A': <isce3.ext.isce3.product.GeoGridParameters object at 0x7fd34f9ba870>}, 'wrapped_igram_geogrids': {'A': <isce3.ext.isce3.product.GeoGridParameters object at 0x7fd34f9ba6b0>}, 'gunw_datasets': {'connected_components': True, 'coherence_magnitude': True, 'ionosphere_phase_screen': True, 'ionosphere_phase_screen_uncertainty': True, 'unwrapped_phase': True, 'along_track_offset': True, 'slant_range_offset': True, 'correlation_surface_peak': True, 'mask': True}, 'goff_datasets': {'along_track_offset': True, 'snr': True, 'along_track_offset_variance': True, 'correlation_surface_peak': True, 'cross_offset_variance': True, 'slant_range_offset': True, 'slant_range_offset_variance': True, 'mask': True}, 'wrapped_datasets': {'coherence_magnitude': True, 'wrapped_interferogram': True, 'mask': True}}, 'radar_grid_cubes': {'heights': [-500, 0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000], 'output_epsg': 32645, 'output_posting': {'x_posting': 500, 'y_posting': 500}, 'y_snap': None, 'x_snap': None, 'top_left': {'y_abs': None, 'x_abs': None}, 'bottom_right': {'y_abs': None, 'x_abs': None}, 'geogrid': <isce3.ext.isce3.product.GeoGridParameters object at 0x7fd34fabcc70>}, 'bandpass': {'lines_per_block': 1000, 'window_function': 'tukey', 'window_shape': 0.25, 'range_fft_size': None}, 'ionosphere_phase_correction': {'enabled': True, 'lines_per_block': 8000, 'spectral_diversity': 'main_diff_ms_band', 'list_of_frequencies': {'A': ['HH'], 'B': ['HH']}, 'split_range_spectrum': {'lines_per_block': 2048, 'low_band_bandwidth': None, 'high_band_bandwidth': None, 'window_function': 'tukey', 'window_shape': 0.25}, 'dispersive_filter': {'enabled': True, 'filter_mask_type': ['coherence', 'subswath_mask'], 'median_filter_size': 15, 'median_filter_threshold': 0.6, 'filter_coherence_threshold': 0.2, 'filling_method': 'nearest', 'filling_guide_filter_method': 'median_gaussian', 'filling_guide_median_size': 3, 'filling_outlier_threshold': 3.5, 'filling_outlier_min_scale': 0.0, 'filling_outlier_mad_scale_factor': 1.4826, 'kernel_range': 14, 'kernel_azimuth': 110, 'sigma_range': 4, 'sigma_azimuth': 37, 'filter_iterations': 1, 'unwrap_correction': True, 'min_cluster_pixels': 2, 'bridge_algorithm_enabled': True, 'bridge_radius': 500, 'bridge_erosion_size': 2, 'bridge_minimum_samples': 14, 'bridge_ramp_type': None, 'bridge_ramp_maximum_pixel': 1000000.0}}, 'troposphere_delay': {'enabled': True, 'package': 'raider', 'weather_model_type': 'HRES', 'delay_direction': 'line_of_sight_mapping', 'enable_wet_product': True, 'enable_hydrostatic_product': True, 'enable_comb_product': False}, 'geo2rdr': {'threshold': 1e-08, 'maxiter': 25, 'lines_per_block': 1000, 'topo_path': 'scratch'}, 'rdr2geo': {'threshold': 1e-07, 'numiter': 25, 'extraiter': 10, 'lines_per_block': 1000, 'write_x': True, 'write_y': True, 'write_z': True, 'write_incidence': False, 'write_heading': False, 'write_local_incidence': False, 'write_local_psi': False, 'write_simulated_amplitude': False, 'write_layover_shadow': False}, 'coarse_resample': {'offsets_dir': 'scratch', 'lines_per_tile': 1000, 'columns_per_tile': 1000}, 'dense_offsets': {'enabled': True, 'lines_per_block': 1000, 'coregistered_slc_path': 'scratch', 'window_range': 64, 'window_azimuth': 96, 'half_search_range': 32, 'half_search_azimuth': 32, 'skip_range': 75, 'skip_azimuth': 75, 'margin': 0, 'offset_width': None, 'offset_length': None, 'start_pixel_range': None, 'start_pixel_azimuth': None, 'cross_correlation_domain': 'frequency', 'slc_oversampling_factor': 2, 'deramping_method': 'complex', 'deramping_axis': 'azimuth', 'use_gross_offsets': True, 'gross_offset_range': 0, 'gross_offset_azimuth': 0, 'gross_offset_filepath': None, 'merge_gross_offset': None, 'correlation_statistics_zoom': 21, 'correlation_surface_zoom': 8, 'correlation_surface_oversampling_factor': 16, 'correlation_surface_oversampling_method': 'fft', 'cuda_streams': None, 'windows_batch_range': 10, 'windows_batch_azimuth': 1}, 'offsets_product': {'enabled': False, 'coregistered_slc_path': 'scratch', 'lines_per_block': 1000, 'margin': 0, 'offset_length': None, 'offset_width': None, 'skip_range': 15, 'skip_azimuth': 15, 'start_pixel_range': None, 'start_pixel_azimuth': None, 'cross_correlation_domain': 'frequency', 'deramping_method': 'complex', 'deramping_axis': 'azimuth', 'slc_oversampling_factor': 2, 'gross_offset_filepath': None, 'gross_offset_range': 0, 'gross_offset_azimuth': 0, 'merge_gross_offset': False, 'correlation_statistics_zoom': 21, 'correlation_surface_zoom': 8, 'correlation_surface_oversampling_factor': 64, 'correlation_surface_oversampling_method': 'sinc', 'cuda_streams': 2, 'windows_batch_range': 10, 'windows_batch_azimuth': 5, 'layer1': {'window_range': 64, 'window_azimuth': 64, 'half_search_range': 16, 'half_search_azimuth': 16}}, 'rubbersheet': {'dense_offsets_path': 'scratch', 'offsets_product_path': None, 'geo2rdr_offsets_path': 'scratch', 'enabled': True, 'culling_metric': 'median_filter', 'median_filter_size_range': 9, 'median_filter_size_azimuth': 9, 'threshold': 3, 'mask_refine_enabled': True, 'mask_refine_min_neighbors': 0, 'mask_refine_filter_size': 5, 'outlier_filling_method': 'fill_smoothed', 'fill_smoothed': {'iterations': 15, 'kernel_size': 13}, 'interpolation_method': 'idw', 'azimuth_offset_filter': {'offsets_filter': 'mean', 'kernel_size': 31}, 'subswath_mask_apply_enabled': True, 'idw_interpolation': {'power': 2, 'number': 100, 'radius': 200}, 'offsets_filter': 'boxcar', 'boxcar': {'filter_size_range': 5, 'filter_size_azimuth': 5}, 'polyfitting': {'enabled': False, 'degree': 2, 'critical_value': 0.1, 'samples_along_range': 200, 'samples_along_azimuth': 200}}, 'fine_resample': {'enabled': True, 'offsets_dir': 'scratch', 'lines_per_tile': 100, 'columns_per_tile': 0}, 'crossmul': {'range_looks': 5, 'azimuth_looks': 6, 'flatten': True, 'oversample': 2, 'lines_per_block': 1024, 'common_band_range_filter': False, 'common_band_azimuth_filter': False, 'coregistered_slc_path': 'scratch', 'flatten_path': 'scratch'}, 'filter_interferogram': {'interferogram_path': None, 'mask': {'general': None}, 'lines_per_block': 100, 'filter_type': 'no_filter', 'boxcar': {'filter_size_range': 9, 'filter_size_azimuth': 9}}, 'baseline': {'mode': 'top_bottom'}, 'phase_unwrap': {'crossmul_path': None, 'range_looks': 13, 'azimuth_looks': 16, 'preprocess_wrapped_phase': {'enabled': True, 'mask': {'mask_path': None, 'mask_type': 'subswath_mask', 'ocean_water_buffer': 1, 'inland_water_buffer': 1, 'outlier_threshold': 0.5, 'median_filter_size': 25}, 'filling_enabled': False, 'filling_method': 'distance_interpolator', 'distance_interpolator': {'distance': 2}}, 'algorithm': 'snaphu', 'icu': {'seed': 0, 'buffer_lines': 3700, 'overlap_lines': 200, 'use_phase_gradient_neutron': False, 'use_intensity_neutron': False, 'phase_gradient_window_size': 5, 'neutron_phase_gradient_threshold': 3.0, 'neutron_intensity_threshold': 8.0, 'max_intensity_correlation_threshold': 0.8, 'trees_number': 7, 'max_branch_length': 64, 'pixel_spacing_ratio': 1.0, 'initial_correlation_threshold': 0.1, 'max_correlation_threshold': 0.9, 'correlation_threshold_increments': 0.1, 'min_tile_area': 0.003125, 'bootstrap_lines': 16, 'min_overlap_area': 16, 'phase_variance_threshold': 8}, 'phass': {'correlation_threshold_increments': 0.2, 'good_correlation': 0.7, 'min_unwrap_area': 200, 'power': None}, 'snaphu': {'nlooks': None, 'cost_mode': 'smooth', 'mask': None, 'initialization_method': 'mcf', 'min_conncomp_frac': 0.01, 'phase_grad_window': [7, 7], 'ntiles': [1, 1], 'tile_overlap': [0, 0], 'nproc': 1, 'tile_cost_thresh': 500, 'min_region_size': 300, 'single_tile_reoptimize': True, 'regrow_conncomps': True}, 'bridge': {'enabled': True, 'bridge_radius': 500, 'bridge_erosion_size': 2, 'bridge_minimum_samples': 14, 'bridge_ramp_type': None, 'bridge_ramp_maximum_pixel': 1000000.0}}, 'correction_luts': {'solid_earth_tides_enabled': True}}, 'output': {'page_enabled': True, 'compression_enabled': True, 'compression_level': 1, 'chunk_size': [512, 512], 'shuffle': True}, 'qa': {'rifg': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'output_browse_latlon': True, 'resample': 'nearest'}, 'wrapped_igram': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'coh_mag': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'az_and_range_offsets': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}, 'runw': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'rewrap': 2, 'output_browse_latlon': True, 'resample': 'bilinear'}, 'phase_img': {'rewrap': 7, 'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'coh_mag': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'connected_components': {'nan_threshold': 0, 'inf_threshold': 0, 'fill_threshold': 95.0, 'near_zero_threshold': 99.9, 'total_invalid_threshold': 99.9, 'epsilon': 1e-06, 'zero_is_invalid': True, 'max_num_cc': None}, 'ionosphere_phase_screen': {'nan_threshold': -1, 'inf_threshold': 95.0, 'fill_threshold': -1, 'near_zero_threshold': -1, 'total_invalid_threshold': -1, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'ionosphere_phase_screen_uncertainty': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'az_and_range_offsets': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}, 'gunw': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'rewrap': 2, 'output_browse_latlon': True, 'resample': 'average'}, 'phase_img': {'rewrap': 7, 'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.0, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'wrapped_igram': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'coh_mag': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.0, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': True}, 'connected_components': {'nan_threshold': 0, 'inf_threshold': 0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.9, 'total_invalid_threshold': 99.9, 'epsilon': 1e-06, 'zero_is_invalid': True, 'max_num_cc': None}, 'ionosphere_phase_screen': {'nan_threshold': -1, 'inf_threshold': 99.0, 'fill_threshold': -1, 'near_zero_threshold': -1, 'total_invalid_threshold': -1, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'ionosphere_phase_screen_uncertainty': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'az_and_range_offsets': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.0, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}, 'roff': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'browse_decimation_freqa': None, 'browse_decimation_freqb': None, 'output_browse_latlon': True, 'resample': 'bilinear'}, 'az_and_range_offsets': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'quiver_plots': {'colorbar_min_max': None, 'arrow_density': 20, 'arrow_scaling': None}, 'az_and_rg_variance': {'colorbar_min_max': None, 'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'cross_offset_variance': {'colorbar_min_max': None, 'percentile_for_clipping': [1.0, 99.0], 'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 95.0, 'inf_threshold': 95.0, 'fill_threshold': 95.0, 'near_zero_threshold': 95.0, 'total_invalid_threshold': 95.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}, 'goff': {'workflows': {'validate': True, 'qa_reports': True}, 'software_config': {'use_cache': True, 'delete_qa_scratch_files': True}, 'validation': {'metadata_luts_fail_if_all_nan': True}, 'qa_reports': {'browse': {'longest_side_max': 2048, 'browse_decimation_freqa': None, 'browse_decimation_freqb': None, 'output_browse_latlon': True, 'resample': 'average'}, 'az_and_range_offsets': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'quiver_plots': {'colorbar_min_max': None, 'arrow_density': 20, 'arrow_scaling': None}, 'az_and_rg_variance': {'colorbar_min_max': None, 'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'cross_offset_variance': {'colorbar_min_max': None, 'percentile_for_clipping': [1.0, 99.0], 'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': -1, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': False}, 'correlation_surface_peak': {'nan_threshold': 99.0, 'inf_threshold': 99.0, 'fill_threshold': 99.0, 'near_zero_threshold': 99.0, 'total_invalid_threshold': 99.0, 'epsilon': 1e-06, 'zero_is_invalid': True}}}}, 'logging': {'path': 'scratch/insar.log', 'write_mode': 'w'}}\"",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/azimuthBandwidth": "1262.5214080217763",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/numberOfAzimuthLines": "53200",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/numberOfRangeSamples": "54238",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/rangeBandwidth": "40000000.0",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/slantRangeSpacing": "3.1228381041666666",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/slantRangeStart": "878266.9884158333",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/zeroDopplerEndTime": "b'2026-09-12T23:39:52.999342105'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/zeroDopplerStartTime": "b'2026-09-12T23:39:18.000000000'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/frequencyA/zeroDopplerTimeSpacing": "0.0006578947368421052",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/isMixedMode": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/rfiMitigation": "b'tone-rank'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/secondary/rfiMitigationApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/azimuthBandwidth": "1262.5226685910775",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/commonBandAzimuthFilterApplied": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/commonBandRangeFilterApplied": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/ellipsoidalFlatteningApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/numberOfAzimuthLooks": "16",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/numberOfRangeLooks": "13",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/rangeBandwidth": "40000000.0",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/unwrappedInterferogram/frequencyA/topographicFlatteningApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/azimuthBandwidth": "1262.5226685910775",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/commonBandAzimuthFilterApplied": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/commonBandRangeFilterApplied": "b'False'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/ellipsoidalFlatteningApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/numberOfAzimuthLooks": "6",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/numberOfRangeLooks": "5",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/rangeBandwidth": "40000000.0",
+      "science/LSAR/GUNW/metadata/processingInformation/parameters/wrappedInterferogram/frequencyA/topographicFlatteningApplied": "b'True'",
+      "science/LSAR/GUNW/metadata/radarGrid/projection": "32645",
+      "science/LSAR/identification/boundingPolygon": "b'POLYGON ((86.6012137246537 27.9916546770744 4879.48557022227,86.5314076608591 28.1968759561275 5382.02261630323,86.4653886719996 28.403030210058 5611.80859451884,86.4142619687515 28.6127783357533 4822.22607536273,86.3582199745289 28.8213767994216 4350.95263671914,86.2868174028643 29.0263258175426 4891.09570315136,86.2294221418619 29.2346574456171 4478.48876953237,86.1577938898016 29.4396086214019 4998.18749999953,86.0833948237871 29.6439240566851 5685.07275313447,86.0222449211363 29.8514437617095 5470.52343749995,85.9559509851628 30.0577597759294 5581.34033186304,85.6639124178749 29.9876240304431 5122.46386718191,85.3652452467286 29.9151067844869 6113.38720707914,85.096762003873 29.8492669169884 5686.20019531248,84.8382395970917 29.7852734063899 5162.05078124991,84.5748532011208 29.7194589388919 5746.71533039182,84.3342835055442 29.6588290784785 4913.34043241536,84.094676913423 29.5979304130393 4522.55029297124,83.8508054990104 29.5354169012659 5105.38183596088,83.6186362239863 29.4754232617602 5022.59863281239,83.3856150679117 29.4147242394377 5526.19726585322,83.4541016901486 29.2092043419783 5645.61669921791,83.5266924739025 29.0047995703946 5273.24278320994,83.5933412927667 28.7988735186894 5528.91359729285,83.6757687708148 28.5971198172118 3989.07164224298,83.756228531159 28.3948808633925 2636.21533218783,83.8349509698977 28.1922188327331 1443.84570312292,83.9106113775605 27.9887884974026 558.235551075894,83.9730567340221 27.7819423810981 1106.03027343646,84.04938350117 27.5787528638036 79.321214336464,84.1158788609065 27.3730335005675 112.657418960309,84.3414976918518 27.4313236911915 177.658508469378,84.5691514327689 27.4897056042562 494.190950053182,84.8055110827911 27.5498661280855 423.340605745574,85.0280150875115 27.6060541246046 2197.41381836341,85.2846299219055 27.6703739981258 1307.72119053637,85.5388119599919 27.7335330710363 1324.81823730548,85.7992016612018 27.7976744152081 1505.47832289145,86.0528091275107 27.8595888113312 2917.49554377697,86.3188877262792 27.9239756847371 4074.32153320478,86.6012137246537 27.9916546770744 4879.48557022227))'",
+      "science/LSAR/identification/compositeReleaseId": "b'P05023'",
+      "science/LSAR/identification/diagnosticModeFlag": "0",
+      "science/LSAR/identification/frameNumber": "16",
+      "science/LSAR/identification/granuleId": "b'NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001'",
+      "science/LSAR/identification/instrumentName": "b'L-SAR'",
+      "science/LSAR/identification/isDithered": "b'True'",
+      "science/LSAR/identification/isFullFrame": "b'True'",
+      "science/LSAR/identification/isGeocoded": "b'True'",
+      "science/LSAR/identification/isMixedMode": "b'False'",
+      "science/LSAR/identification/isUrgentObservation": "b'True'",
+      "science/LSAR/identification/listOfFrequencies": "[b'A']",
+      "science/LSAR/identification/lookDirection": "b'Left'",
+      "science/LSAR/identification/missionId": "b'NISAR'",
+      "science/LSAR/identification/orbitPassDirection": "b'Ascending'",
+      "science/LSAR/identification/platformName": "b'NISAR'",
+      "science/LSAR/identification/processingCenter": "b'JPL'",
+      "science/LSAR/identification/processingDateTime": "b'2026-09-15T10:32:39'",
+      "science/LSAR/identification/processingType": "b'Nominal'",
+      "science/LSAR/identification/productDoi": "b'10.5067/NIL2GUNW-P1'",
+      "science/LSAR/identification/productLevel": "b'L2'",
+      "science/LSAR/identification/productSpecificationVersion": "b'1.5.0'",
+      "science/LSAR/identification/productType": "b'GUNW'",
+      "science/LSAR/identification/productVersion": "b'1.0.11'",
+      "science/LSAR/identification/radarBand": "b'L'",
+      "science/LSAR/identification/referenceAbsoluteOrbitNumber": "5733",
+      "science/LSAR/identification/referenceHasInputDataException": "0",
+      "science/LSAR/identification/referenceIsJointObservation": "b'True'",
+      "science/LSAR/identification/referenceListOfObservationModes": "[b'(NOT SPECIFIED)']",
+      "science/LSAR/identification/referencePlannedDatatakeId": "[b'dtid_2026243233240']",
+      "science/LSAR/identification/referencePlannedObservationId": "[b'oid_2026243233712']",
+      "science/LSAR/identification/referenceZeroDopplerEndTime": "b'2026-08-31T23:39:52.999342105'",
+      "science/LSAR/identification/referenceZeroDopplerStartTime": "b'2026-08-31T23:39:18.000000000'",
+      "science/LSAR/identification/secondaryAbsoluteOrbitNumber": "5906",
+      "science/LSAR/identification/secondaryHasInputDataException": "0",
+      "science/LSAR/identification/secondaryIsJointObservation": "b'True'",
+      "science/LSAR/identification/secondaryListOfObservationModes": "[b'(NOT SPECIFIED)']",
+      "science/LSAR/identification/secondaryPlannedDatatakeId": "[b'dtid_2026255233240']",
+      "science/LSAR/identification/secondaryPlannedObservationId": "[b'oid_2026255233712']",
+      "science/LSAR/identification/secondaryZeroDopplerEndTime": "b'2026-09-12T23:39:52.999342105'",
+      "science/LSAR/identification/secondaryZeroDopplerStartTime": "b'2026-09-12T23:39:18.000000000'",
+      "science/LSAR/identification/staticLayersDataAccess": "b'https://nisar-services.earthdata.nasa.gov/redirect/NISAR_L2_STATIC/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001.h5'",
+      "science/LSAR/identification/trackNumber": "98"
+    },
+    "grids": {
+      "science/LSAR/GUNW/grids/frequencyA/centerFrequency": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Center frequency of the processed image in hertz'",
+          "units": "b'hertz'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/listOfPolarizations": {
+        "shape": [
+          1
+        ],
+        "dtype": "|S2",
+        "attrs": {
+          "description": "b'List of processed polarization layers with frequency A'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/alongTrackOffset": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Along-track offset'",
+          "grid_mapping": "b'projection'",
+          "max_value": "0.2972657084465027",
+          "mean_value": "0.005711018107831478",
+          "min_value": "-0.4598519802093506",
+          "sample_stddev": "0.032642994076013565",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/correlationSurfacePeak": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Normalized cross-correlation surface peak'",
+          "grid_mapping": "b'projection'",
+          "max_value": "0.9911012053489685",
+          "mean_value": "0.6241781115531921",
+          "min_value": "-0.007978379726409912",
+          "sample_stddev": "0.20691026747226715",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/slantRangeOffset": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Slant range offset'",
+          "grid_mapping": "b'projection'",
+          "max_value": "2.4087114334106445",
+          "mean_value": "-0.38480111956596375",
+          "min_value": "-1.5817103385925293",
+          "sample_stddev": "0.0787438377737999",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/xCoordinates": {
+        "shape": [
+          4311
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1) (<HDF5 object reference>, 1)\n (<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/HH/yCoordinates": {
+        "shape": [
+          4230
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0) (<HDF5 object reference>, 0)\n (<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/mask": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "uint32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "255",
+          "description": "b'Combination of a water mask, a mask of subswaths of valid samples, and data anomalies in the reference RSLC and the geometrically coregistered secondary RSLC. Each pixel value is encoded as a 32-bit unsigned integer. Bits 0-7 represent subswath encoding, where the most significant digit represents the water flag of that pixel in the reference RSLC, where 1 is water and 0 is non-water; the second most significant digit corresponds to the subswath number of the reference RSLC, and the least significant digit corresponds to the subswath number of the secondary RSLC; a value of 0 in either digit indicates an invalid sample in the corresponding RSLC. Bits 8-15 represent bitwise anomaly flags for the secondary RSLC, and bits 16-23 represent bitwise anomaly flags for the reference RSLC, with each bit corresponding to a specific anomaly condition. A value of 0 in the anomaly bits indicates that no anomaly is detected in the corresponding RSLC. Bits 24-31 are reserved for future use'",
+          "disclaimer": "b'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.'",
+          "grid_mapping": "b'projection'",
+          "percentage_water": "1.013143023537018",
+          "valid_min": "0"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/xCoordinates": {
+        "shape": [
+          4311
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/pixelOffsets/yCoordinates": {
+        "shape": [
+          4230
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/coherenceMagnitude": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Coherence magnitude between HH layers'",
+          "grid_mapping": "b'projection'",
+          "max_value": "0.9965014457702637",
+          "mean_value": "0.5694770812988281",
+          "min_value": "0.002800189657136798",
+          "sample_stddev": "0.2351786345243454",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/connectedComponents": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "uint16",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "65535",
+          "description": "b'Connected components for HH layer'",
+          "grid_mapping": "b'projection'",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreen": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Ionosphere phase screen'",
+          "grid_mapping": "b'projection'",
+          "max_value": "11.216963768005371",
+          "mean_value": "8.728384971618652",
+          "min_value": "6.695580959320068",
+          "sample_stddev": "0.9965862035751343",
+          "units": "b'radians'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/ionospherePhaseScreenUncertainty": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Uncertainty of the ionosphere phase screen'",
+          "grid_mapping": "b'projection'",
+          "max_value": "2.5607876777648926",
+          "mean_value": "1.000777244567871",
+          "min_value": "0.45356041193008423",
+          "sample_stddev": "0.3084716498851776",
+          "units": "b'radians'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/unwrappedPhase": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Unwrapped interferogram between HH layers'",
+          "grid_mapping": "b'projection'",
+          "max_value": "17.027179718017578",
+          "mean_value": "-1.827470064163208",
+          "min_value": "-17.931795120239258",
+          "sample_stddev": "1.2489573955535889",
+          "units": "b'radians'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/xCoordinates": {
+        "shape": [
+          4311
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1) (<HDF5 object reference>, 1)\n (<HDF5 object reference>, 1) (<HDF5 object reference>, 1)\n (<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/HH/yCoordinates": {
+        "shape": [
+          4230
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0) (<HDF5 object reference>, 0)\n (<HDF5 object reference>, 0) (<HDF5 object reference>, 0)\n (<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask": {
+        "shape": [
+          4230,
+          4311
+        ],
+        "dtype": "uint32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "255",
+          "description": "b'Combination of a water mask, a mask of subswaths of valid samples, and data anomalies in the reference RSLC and the geometrically coregistered secondary RSLC. Each pixel value is encoded as a 32-bit unsigned integer. Bits 0-7 represent subswath encoding, where the most significant digit represents the water flag of that pixel in the reference RSLC, where 1 is water and 0 is non-water; the second most significant digit corresponds to the subswath number of the reference RSLC, and the least significant digit corresponds to the subswath number of the secondary RSLC; a value of 0 in either digit indicates an invalid sample in the corresponding RSLC. Bits 8-15 represent bitwise anomaly flags for the secondary RSLC, and bits 16-23 represent bitwise anomaly flags for the reference RSLC, with each bit corresponding to a specific anomaly condition. A value of 0 in the anomaly bits indicates that no anomaly is detected in the corresponding RSLC. Bit 24 indicates a bit mask for ionospheric phase mask used during filtering of ionospheric phase. This ionospheric phase mask indicates pixels which were masked out and filled with interpolated data. Bits 25-31 are reserved for future use'",
+          "disclaimer": "b'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.'",
+          "grid_mapping": "b'projection'",
+          "percentage_water": "1.013143023537018",
+          "valid_min": "0"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/xCoordinates": {
+        "shape": [
+          4311
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/yCoordinates": {
+        "shape": [
+          4230
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/coherenceMagnitude": {
+        "shape": [
+          16920,
+          17244
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "nan",
+          "description": "b'Coherence magnitude between HH layers'",
+          "grid_mapping": "b'projection'",
+          "max_value": "0.9982969164848328",
+          "mean_value": "0.3658929765224457",
+          "min_value": "0.0",
+          "sample_stddev": "0.32640540599823",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/wrappedInterferogram": {
+        "shape": [
+          16920,
+          17244
+        ],
+        "dtype": "complex64",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "(nan+nanj)",
+          "description": "b'Complex wrapped interferogram between HH layers'",
+          "grid_mapping": "b'projection'",
+          "units": "b'1'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/xCoordinates": {
+        "shape": [
+          17244
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1) (<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/HH/yCoordinates": {
+        "shape": [
+          16920
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0) (<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/mask": {
+        "shape": [
+          16920,
+          17244
+        ],
+        "dtype": "uint32",
+        "attrs": {
+          "DIMENSION_LIST": "[array([<HDF5 object reference>], dtype=object)\n array([<HDF5 object reference>], dtype=object)]",
+          "_FillValue": "255",
+          "description": "b'Combination of a water mask, a mask of subswaths of valid samples, and data anomalies in the reference RSLC and the geometrically coregistered secondary RSLC. Each pixel value is encoded as a 32-bit unsigned integer. Bits 0-7 represent subswath encoding, where the most significant digit represents the water flag of that pixel in the reference RSLC, where 1 is water and 0 is non-water; the second most significant digit corresponds to the subswath number of the reference RSLC, and the least significant digit corresponds to the subswath number of the secondary RSLC; a value of 0 in either digit indicates an invalid sample in the corresponding RSLC. Bits 8-15 represent bitwise anomaly flags for the secondary RSLC, and bits 16-23 represent bitwise anomaly flags for the reference RSLC, with each bit corresponding to a specific anomaly condition. A value of 0 in the anomaly bits indicates that no anomaly is detected in the corresponding RSLC. Bits 24-31 are reserved for future use'",
+          "disclaimer": "b'Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.'",
+          "grid_mapping": "b'projection'",
+          "percentage_water": "1.0596367366344712",
+          "valid_min": "0"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/projection": {
+        "shape": [],
+        "dtype": "uint32",
+        "attrs": {
+          "description": "b'Product map grid projection: EPSG code, with additional projection information as HDF5 Attributes'",
+          "ellipsoid": "b'WGS84'",
+          "epsg_code": "32645",
+          "false_easting": "500000.0",
+          "false_northing": "0.0",
+          "grid_mapping_name": "b'transverse_mercator'",
+          "inverse_flattening": "298.257223563",
+          "latitude_of_projection_origin": "0.0",
+          "longitude_of_central_meridian": "87.0",
+          "longitude_of_projection_origin": "0.0",
+          "scale_factor_at_central_meridian": "0.9996",
+          "semi_major_axis": "6378137.0",
+          "spatial_ref": "b'PROJCS[\"WGS 84 / UTM zone 45N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",87],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32645\"]]'",
+          "utm_zone_number": "45"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/xCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive pixels'",
+          "long_name": "b'X coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/xCoordinates": {
+        "shape": [
+          17244
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 1)]",
+          "description": "b'X coordinates in specified projection'",
+          "long_name": "b'X coordinate of projection'",
+          "standard_name": "projection_x_coordinate",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/yCoordinateSpacing": {
+        "shape": [],
+        "dtype": "float64",
+        "attrs": {
+          "description": "b'Nominal spacing in meters between consecutive lines'",
+          "long_name": "b'Y coordinates spacing'",
+          "units": "b'meters'"
+        }
+      },
+      "science/LSAR/GUNW/grids/frequencyA/wrappedInterferogram/yCoordinates": {
+        "shape": [
+          16920
+        ],
+        "dtype": "float64",
+        "attrs": {
+          "CLASS": "b'DIMENSION_SCALE'",
+          "NAME": "b''",
+          "REFERENCE_LIST": "[(<HDF5 object reference>, 0)]",
+          "description": "b'Y coordinates in specified projection'",
+          "long_name": "b'Y coordinate of projection'",
+          "standard_name": "projection_y_coordinate",
+          "units": "b'meters'"
+        }
+      }
+    },
+    "readable": true
+  }
+]

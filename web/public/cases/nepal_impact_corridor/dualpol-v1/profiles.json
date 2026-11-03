@@ -1,0 +1,61 @@
+[
+  {
+    "label": "Preliminary mapped impact footprint inside this crop",
+    "selection": "Window centered on the independent mapped geometry centroid before inspecting detections. Covers only part of the mapped corridor. Mapping is preliminary impact context, not exhaustive validation or flood-water truth.",
+    "status": "MEASURED",
+    "footprint_pixels": 64263,
+    "common_valid_pixels": 62899,
+    "common_valid_fraction": 0.9787747226242162,
+    "footprint_area_km2": 6.4263,
+    "measured_area_km2": 6.2899,
+    "observations": [
+      {
+        "index": 0,
+        "hh_mean_db": -5.497864142293064,
+        "hv_mean_db": -11.45419939925227,
+        "hh_baseline_delta_db": 0.0,
+        "hv_baseline_delta_db": 0.0,
+        "hh_successive_delta_db": null,
+        "hv_successive_delta_db": null,
+        "hh_minus_hv_db": 5.956335256959205,
+        "observation_id": "visit_0",
+        "timestamp": "2026-08-19T23:39:18Z",
+        "cpr_mean_db": -5.956335256959205,
+        "cpr_baseline_delta_db": 0.0,
+        "cpr_successive_delta_db": null
+      },
+      {
+        "index": 1,
+        "hh_mean_db": -5.699761486720308,
+        "hv_mean_db": -12.185945381408969,
+        "hh_baseline_delta_db": -0.20189734455581543,
+        "hv_baseline_delta_db": -0.7317459821407523,
+        "hh_successive_delta_db": -0.20189734455581543,
+        "hv_successive_delta_db": -0.7317459821407523,
+        "hh_minus_hv_db": 6.4861838946886605,
+        "observation_id": "visit_1",
+        "timestamp": "2026-08-31T23:39:18Z",
+        "cpr_mean_db": -6.4861838946886605,
+        "cpr_baseline_delta_db": -0.5298486375849368,
+        "cpr_successive_delta_db": -0.5298486375849368
+      },
+      {
+        "index": 2,
+        "hh_mean_db": -5.5190837600470415,
+        "hv_mean_db": -12.114825587577263,
+        "hh_baseline_delta_db": -0.021219617521494292,
+        "hv_baseline_delta_db": -0.6606261883597944,
+        "hh_successive_delta_db": 0.1806777267276461,
+        "hv_successive_delta_db": 0.07111979380186487,
+        "hh_minus_hv_db": 6.5957418275302215,
+        "observation_id": "visit_2",
+        "timestamp": "2026-09-12T23:39:18Z",
+        "cpr_mean_db": -6.5957418275302215,
+        "cpr_baseline_delta_db": -0.6394065708383001,
+        "cpr_successive_delta_db": -0.10955793292578123
+      }
+    ],
+    "interpretation": "Mean filtered log-backscatter on a fixed common-valid footprint. dB differences are not ground displacement. No cause or calibrated confidence is inferred.",
+    "cpr_definition": "HV_dB - HH_dB on the existing fixed common-valid footprint. Difference of filtered log-powers, not a polarimetric decomposition or ratio of spatial mean powers."
+  }
+]

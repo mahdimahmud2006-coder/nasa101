@@ -1,0 +1,625 @@
+{
+  "records": [
+    {
+      "series_id": "nepal_098_016",
+      "query": {
+        "dataset": "NISAR",
+        "processingLevel": "GUNW",
+        "relativeOrbit": 98,
+        "frame": 16,
+        "flightDirection": "ASCENDING",
+        "intersectsWith": "POLYGON((85.20639100 27.90678540,85.23076771 27.90710064,85.25514481 27.90741156,85.27952229 27.90771817,85.30390016 27.90802047,85.32827841 27.90831847,85.35265702 27.90861215,85.37703600 27.90890153,85.40141534 27.90918659,85.42579503 27.90946734,85.45017507 27.90974378,85.45048366 27.88808590,85.45079191 27.86642796,85.45109981 27.84476994,85.45140738 27.82311185,85.45171460 27.80145369,85.45202148 27.77979546,85.45232801 27.75813716,85.45263421 27.73647878,85.45294006 27.71482034,85.45324558 27.69316182,85.42891379 27.69288789,85.40458235 27.69260969,85.38025126 27.69232721,85.35592053 27.69204047,85.33159015 27.69174945,85.30726015 27.69145416,85.28293052 27.69115460,85.25860126 27.69085077,85.23427239 27.69054267,85.20994391 27.69023030,85.20959039 27.71188614,85.20923649 27.73354190,85.20888219 27.75519759,85.20852749 27.77685321,85.20817240 27.79850875,85.20781691 27.82016423,85.20746103 27.84181963,85.20710475 27.86347496,85.20674807 27.88513022,85.20639100 27.90678540))",
+        "start": "2026-06-17T00:00:00Z",
+        "end": "2026-10-20T23:59:59Z"
+      },
+      "retrieved_utc": "2026-11-03T14:48:55.293296+00:00",
+      "provider": "NASA Earthdata / ASF DAAC (USA)",
+      "upstream": "NASA\u2013ISRO (USA/India)",
+      "search_only": true,
+      "downloaded_science_files": 0,
+      "search_complete": true,
+      "response_path": "data/candidates/additional_gunw_2026_11_03/nepal_098_016.json",
+      "response_sha256": "95b73cb25df063efda1c57664ad1fa3a953bc4ed27b352a342fd85bd7651bf7f",
+      "candidates": [
+        {
+          "granule_id": "NISAR_L2_UR_GUNW_033_098_A_016_034_4000_SH_20261018T233918_20261018T233952_20261030T233918_20261030T233953_P05023_F_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-10-18T23:39:18Z",
+            "2026-10-30T23:39:18Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "one or more acquisition endpoints are not in the loaded series",
+            "production configuration differs",
+            "collection differs"
+          ],
+          "size_bytes": 2227175424,
+          "size_gib": 2.07421875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-UR/UR_L2_L_GUNW/NISAR_L2_UR_GUNW_033_098_A_016_034_4000_SH_20261018T233918_20261018T233952_20261030T233918_20261030T233953_P05023_F_F_J_001/NISAR_L2_UR_GUNW_033_098_A_016_034_4000_SH_20261018T233918_20261018T233952_20261030T233918_20261030T233953_P05023_F_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_032_098_A_016_033_4000_SH_20261006T233918_20261006T233952_20261018T233918_20261018T233952_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-10-06T23:39:18Z",
+            "2026-10-18T23:39:18Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2340421632,
+          "size_gib": 2.1796875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_032_098_A_016_033_4000_SH_20261006T233918_20261006T233952_20261018T233918_20261018T233952_P05023_N_F_J_001/NISAR_L2_PR_GUNW_032_098_A_016_033_4000_SH_20261006T233918_20261006T233952_20261018T233918_20261018T233952_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_031_098_A_016_032_4000_SH_20260924T233918_20260924T233952_20261006T233918_20261006T233952_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-09-24T23:39:18Z",
+            "2026-10-06T23:39:18Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2353004544,
+          "size_gib": 2.19140625,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_031_098_A_016_032_4000_SH_20260924T233918_20260924T233952_20261006T233918_20261006T233952_P05023_N_F_J_001/NISAR_L2_PR_GUNW_031_098_A_016_032_4000_SH_20260924T233918_20260924T233952_20261006T233918_20261006T233952_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_UR_GUNW_030_098_A_016_031_4000_SH_20260912T233918_20260912T233952_20260924T233918_20260924T233952_P05023_F_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-09-12T23:39:18Z",
+            "2026-09-24T23:39:18Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "production configuration differs",
+            "collection differs"
+          ],
+          "size_bytes": 2214592512,
+          "size_gib": 2.0625,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-UR/UR_L2_L_GUNW/NISAR_L2_UR_GUNW_030_098_A_016_031_4000_SH_20260912T233918_20260912T233952_20260924T233918_20260924T233952_P05023_F_F_J_001/NISAR_L2_UR_GUNW_030_098_A_016_031_4000_SH_20260912T233918_20260912T233952_20260924T233918_20260924T233952_P05023_F_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_030_098_A_016_031_4000_SH_20260912T233918_20260912T233952_20260924T233918_20260924T233952_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-09-12T23:39:18Z",
+            "2026-09-24T23:39:18Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2348810240,
+          "size_gib": 2.1875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_030_098_A_016_031_4000_SH_20260912T233918_20260912T233952_20260924T233918_20260924T233952_P05023_N_F_J_001/NISAR_L2_PR_GUNW_030_098_A_016_031_4000_SH_20260912T233918_20260912T233952_20260924T233918_20260924T233952_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_UR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_F_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-08-31T23:39:18Z",
+            "2026-09-12T23:39:18Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "production configuration differs",
+            "collection differs"
+          ],
+          "size_bytes": 2202009600,
+          "size_gib": 2.05078125,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-UR/UR_L2_L_GUNW/NISAR_L2_UR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_F_F_J_001/NISAR_L2_UR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_F_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_X05026_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-08-31T23:39:18Z",
+            "2026-09-12T23:39:18Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "release differs"
+          ],
+          "size_bytes": 2332033024,
+          "size_gib": 2.171875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_X05026_N_F_J_001/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_X05026_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-08-31T23:39:18Z",
+            "2026-09-12T23:39:18Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2332033024,
+          "size_gib": 2.171875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": true,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_UR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_F_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-08-19T23:39:18Z",
+            "2026-08-31T23:39:18Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "production configuration differs",
+            "collection differs"
+          ],
+          "size_bytes": 2332033024,
+          "size_gib": 2.171875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-UR/UR_L2_L_GUNW/NISAR_L2_UR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_F_F_J_001/NISAR_L2_UR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_F_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_X05026_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-08-19T23:39:18Z",
+            "2026-08-31T23:39:18Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "release differs"
+          ],
+          "size_bytes": 2344615936,
+          "size_gib": 2.18359375,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_X05026_N_F_J_001/NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_X05026_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-08-19T23:39:18Z",
+            "2026-08-31T23:39:18Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2344615936,
+          "size_gib": 2.18359375,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001/NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": true,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_026_098_A_016_028_4000_SH_20260726T233919_20260726T233954_20260819T233918_20260819T233953_X05026_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-07-26T23:39:19Z",
+            "2026-08-19T23:39:18Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "release differs"
+          ],
+          "size_bytes": 2394947584,
+          "size_gib": 2.23046875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_026_098_A_016_028_4000_SH_20260726T233919_20260726T233954_20260819T233918_20260819T233953_X05026_N_F_J_001/NISAR_L2_PR_GUNW_026_098_A_016_028_4000_SH_20260726T233919_20260726T233954_20260819T233918_20260819T233953_X05026_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 23.999988425925928
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_026_098_A_016_028_4000_SH_20260726T233919_20260726T233954_20260819T233918_20260819T233953_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-07-26T23:39:19Z",
+            "2026-08-19T23:39:18Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2390753280,
+          "size_gib": 2.2265625,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_026_098_A_016_028_4000_SH_20260726T233919_20260726T233954_20260819T233918_20260819T233953_P05023_N_F_J_001/NISAR_L2_PR_GUNW_026_098_A_016_028_4000_SH_20260726T233919_20260726T233954_20260819T233918_20260819T233953_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 23.999988425925928
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_025_098_A_016_026_4000_SH_20260714T233920_20260714T233954_20260726T233919_20260726T233954_X05026_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-07-14T23:39:20Z",
+            "2026-07-26T23:39:19Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "release differs"
+          ],
+          "size_bytes": 2344615936,
+          "size_gib": 2.18359375,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_025_098_A_016_026_4000_SH_20260714T233920_20260714T233954_20260726T233919_20260726T233954_X05026_N_F_J_001/NISAR_L2_PR_GUNW_025_098_A_016_026_4000_SH_20260714T233920_20260714T233954_20260726T233919_20260726T233954_X05026_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 11.999988425925926
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_025_098_A_016_026_4000_SH_20260714T233920_20260714T233954_20260726T233919_20260726T233954_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-07-14T23:39:20Z",
+            "2026-07-26T23:39:19Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2344615936,
+          "size_gib": 2.18359375,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_025_098_A_016_026_4000_SH_20260714T233920_20260714T233954_20260726T233919_20260726T233954_P05023_N_F_J_001/NISAR_L2_PR_GUNW_025_098_A_016_026_4000_SH_20260714T233920_20260714T233954_20260726T233919_20260726T233954_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 11.999988425925926
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_024_098_A_016_025_4000_SH_20260702T233920_20260702T233955_20260714T233920_20260714T233954_X05026_F_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-07-02T23:39:20Z",
+            "2026-07-14T23:39:20Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "release differs"
+          ],
+          "size_bytes": 2353004544,
+          "size_gib": 2.19140625,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_024_098_A_016_025_4000_SH_20260702T233920_20260702T233955_20260714T233920_20260714T233954_X05026_F_F_J_001/NISAR_L2_PR_GUNW_024_098_A_016_025_4000_SH_20260702T233920_20260702T233955_20260714T233920_20260714T233954_X05026_F_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_024_098_A_016_025_4000_SH_20260702T233920_20260702T233955_20260714T233920_20260714T233954_P05023_F_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-07-02T23:39:20Z",
+            "2026-07-14T23:39:20Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2353004544,
+          "size_gib": 2.19140625,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_024_098_A_016_025_4000_SH_20260702T233920_20260702T233955_20260714T233920_20260714T233954_P05023_F_F_J_001/NISAR_L2_PR_GUNW_024_098_A_016_025_4000_SH_20260702T233920_20260702T233955_20260714T233920_20260714T233954_P05023_F_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_023_098_A_016_024_4000_SH_20260620T233921_20260620T233956_20260702T233920_20260702T233955_X05026_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-06-20T23:39:21Z",
+            "2026-07-02T23:39:20Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "release differs"
+          ],
+          "size_bytes": 2378170368,
+          "size_gib": 2.21484375,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_023_098_A_016_024_4000_SH_20260620T233921_20260620T233956_20260702T233920_20260702T233955_X05026_N_F_J_001/NISAR_L2_PR_GUNW_023_098_A_016_024_4000_SH_20260620T233921_20260620T233956_20260702T233920_20260702T233955_X05026_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 11.999988425925926
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_023_098_A_016_024_4000_SH_20260620T233921_20260620T233956_20260702T233920_20260702T233955_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-06-20T23:39:21Z",
+            "2026-07-02T23:39:20Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2378170368,
+          "size_gib": 2.21484375,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_023_098_A_016_024_4000_SH_20260620T233921_20260620T233956_20260702T233920_20260702T233955_P05023_N_F_J_001/NISAR_L2_PR_GUNW_023_098_A_016_024_4000_SH_20260620T233921_20260620T233956_20260702T233920_20260702T233955_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 11.999988425925926
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_022_098_A_016_023_4000_SH_20260608T233922_20260608T233956_20260620T233921_20260620T233956_X05026_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-06-08T23:39:22Z",
+            "2026-06-20T23:39:21Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "one or more acquisition endpoints are not in the loaded series",
+            "release differs"
+          ],
+          "size_bytes": 2348810240,
+          "size_gib": 2.1875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_022_098_A_016_023_4000_SH_20260608T233922_20260608T233956_20260620T233921_20260620T233956_X05026_N_F_J_001/NISAR_L2_PR_GUNW_022_098_A_016_023_4000_SH_20260608T233922_20260608T233956_20260620T233921_20260620T233956_X05026_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 11.999988425925926
+        }
+      ],
+      "status": "complete"
+    },
+    {
+      "series_id": "bangladesh_069_014",
+      "query": {
+        "dataset": "NISAR",
+        "processingLevel": "GUNW",
+        "relativeOrbit": 69,
+        "frame": 14,
+        "flightDirection": "ASCENDING",
+        "intersectsWith": "POLYGON((89.60896472 24.57797641,89.62868297 24.57841952,89.64840170 24.57886007,89.66812089 24.57929803,89.68784055 24.57973343,89.70756067 24.58016624,89.72728125 24.58059649,89.74700229 24.58102416,89.76672378 24.58144925,89.78644572 24.58187177,89.80616812 24.58229171,89.80662572 24.56425668,89.80708288 24.54622159,89.80753960 24.52818646,89.80799587 24.51015127,89.80845169 24.49211604,89.80890707 24.47408075,89.80936200 24.45604541,89.80981650 24.43801002,89.81027054 24.41997458,89.81072415 24.40193909,89.79102977 24.40152262,89.77133584 24.40110360,89.75164236 24.40068203,89.73194933 24.40025790,89.71225675 24.39983121,89.69256464 24.39940198,89.67287298 24.39897019,89.65318178 24.39853585,89.63349105 24.39809895,89.61380079 24.39765951,89.61331930 24.41569143,89.61283735 24.43372330,89.61235492 24.45175512,89.61187202 24.46978689,89.61138865 24.48781861,89.61090481 24.50585027,89.61042050 24.52388188,89.60993571 24.54191344,89.60945045 24.55994495,89.60896472 24.57797641))",
+        "start": "2026-06-17T00:00:00Z",
+        "end": "2026-10-20T23:59:59Z"
+      },
+      "retrieved_utc": "2026-11-03T14:48:57.033354+00:00",
+      "provider": "NASA Earthdata / ASF DAAC (USA)",
+      "upstream": "NASA\u2013ISRO (USA/India)",
+      "search_only": true,
+      "downloaded_science_files": 0,
+      "search_complete": false,
+      "response_path": "data/candidates/additional_gunw_2026_11_03/bangladesh_069_014.json",
+      "response_sha256": "3c351a4b3f47661a006969b1d6805dcac15555eb433576afc2796887bb24568c",
+      "candidates": [
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-10-04T23:21:32Z",
+            "2026-10-16T23:21:32Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "one or more acquisition endpoints are not in the loaded series"
+          ],
+          "size_bytes": 2311061504,
+          "size_gib": 2.15234375,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-09-22T23:21:32Z",
+            "2026-10-04T23:21:32Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "one or more acquisition endpoints are not in the loaded series"
+          ],
+          "size_bytes": 2306867200,
+          "size_gib": 2.1484375,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_030_069_A_014_031_4000_SH_20260910T232131_20260910T232206_20260922T232132_20260922T232206_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-09-10T23:21:31Z",
+            "2026-09-22T23:21:32Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "one or more acquisition endpoints are not in the loaded series"
+          ],
+          "size_bytes": 2332033024,
+          "size_gib": 2.171875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_030_069_A_014_031_4000_SH_20260910T232131_20260910T232206_20260922T232132_20260922T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_030_069_A_014_031_4000_SH_20260910T232131_20260910T232206_20260922T232132_20260922T232206_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.000011574074074
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_029_069_A_014_030_4000_SH_20260829T232132_20260829T232206_20260910T232131_20260910T232206_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-08-29T23:21:32Z",
+            "2026-09-10T23:21:31Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "one or more acquisition endpoints are not in the loaded series"
+          ],
+          "size_bytes": 2323644416,
+          "size_gib": 2.1640625,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_029_069_A_014_030_4000_SH_20260829T232132_20260829T232206_20260910T232131_20260910T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_029_069_A_014_030_4000_SH_20260829T232132_20260829T232206_20260910T232131_20260910T232206_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 11.999988425925926
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_028_069_A_014_029_4000_SH_20260817T232132_20260817T232206_20260829T232132_20260829T232206_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-08-17T23:21:32Z",
+            "2026-08-29T23:21:32Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2315255808,
+          "size_gib": 2.15625,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_028_069_A_014_029_4000_SH_20260817T232132_20260817T232206_20260829T232132_20260829T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_028_069_A_014_029_4000_SH_20260817T232132_20260817T232206_20260829T232132_20260829T232206_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_026_069_A_014_028_4000_SH_20260724T232133_20260724T232208_20260817T232132_20260817T232206_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-07-24T23:21:33Z",
+            "2026-08-17T23:21:32Z"
+          ],
+          "catalog_eligible": true,
+          "rejection_reasons": [],
+          "size_bytes": 2336227328,
+          "size_gib": 2.17578125,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_026_069_A_014_028_4000_SH_20260724T232133_20260724T232208_20260817T232132_20260817T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_026_069_A_014_028_4000_SH_20260724T232133_20260724T232208_20260817T232132_20260817T232206_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 23.999988425925928
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_025_069_A_014_026_4000_SH_20260712T232134_20260712T232208_20260724T232133_20260724T232208_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-07-12T23:21:34Z",
+            "2026-07-24T23:21:33Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "one or more acquisition endpoints are not in the loaded series"
+          ],
+          "size_bytes": 2327838720,
+          "size_gib": 2.16796875,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_025_069_A_014_026_4000_SH_20260712T232134_20260712T232208_20260724T232133_20260724T232208_P05023_N_F_J_001/NISAR_L2_PR_GUNW_025_069_A_014_026_4000_SH_20260712T232134_20260712T232208_20260724T232133_20260724T232208_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 11.999988425925926
+        },
+        {
+          "granule_id": "NISAR_L2_PR_GUNW_024_069_A_014_025_4000_SH_20260630T232134_20260630T232209_20260712T232134_20260712T232208_P05023_N_F_J_001",
+          "product": "GUNW",
+          "acquisition_starts": [
+            "2026-06-30T23:21:34Z",
+            "2026-07-12T23:21:34Z"
+          ],
+          "catalog_eligible": false,
+          "rejection_reasons": [
+            "one or more acquisition endpoints are not in the loaded series"
+          ],
+          "size_bytes": 2256535552,
+          "size_gib": 2.1015625,
+          "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_024_069_A_014_025_4000_SH_20260630T232134_20260630T232209_20260712T232134_20260712T232208_P05023_N_F_J_001/NISAR_L2_PR_GUNW_024_069_A_014_025_4000_SH_20260630T232134_20260630T232209_20260712T232134_20260712T232208_P05023_N_F_J_001.h5",
+          "source_acquisition_compatibility": "unverified until source identifiers/mode/bandwidth/release are checked in the product header",
+          "output_mode_note": "GUNW is an HH frequency-A derived product. Its 4000_SH label is not by itself evidence of incompatible dual-pol source acquisitions.",
+          "subset_feasibility": "not verified",
+          "accepted": false,
+          "in_hand": false,
+          "interval_days": 12.0
+        }
+      ],
+      "status": "incomplete"
+    }
+  ],
+  "scope": "Catalog candidates only. Header/native-window verification required after download. None can restore the permanent NISAR outage."
+}

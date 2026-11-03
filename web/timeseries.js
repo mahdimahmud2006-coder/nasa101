@@ -1,3 +1,6 @@
+import {readView,writeView,legacyChoice} from '/investigation-state.mjs';
+const linkedView=readView(globalThis.window?.location?.hash||'');
+import {calendarForCase,calendarHTML} from '/time-axis.mjs';
 import {createPlayback} from '/playback.mjs';
 const byId=id=>document.getElementById(id);
 const base='/cases/nepal_case_01/timeseries/';
@@ -5,7 +8,7 @@ const number=(value,digits=4)=>value===null||value===undefined?'Not assessable':
 const percentage=value=>value===null||value===undefined?'Not assessable':number(value*100,1)+'%';
 const escaped=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const day=value=>new Date(value).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric',timeZone:'UTC'});
-const model={timeline:null,rows:[],display:[],index:0,zone:null,layer:'observation',context:null,contextLayer:'',generation:0,displayIndex:0};
+const model={calendar:null,timeline:null,rows:[],display:[],index:0,zone:null,layer:'observation',context:null,contextLayer:'',generation:0,displayIndex:0};
 let player=null;
 const decodedImages=new Map();
 function loadImage(url){
@@ -91,6 +94,7 @@ async function renderObservation(){
   byId('observation-image').src=image.src;
   const overlay=byId('temporal-overlay');overlay.hidden=!layer;overlay.style.opacity=contextPath?'1':'.8';if(layer)overlay.src=layer.src;
   if(ghost){if(typeof ghost.animate==='function'){const animation=ghost.animate([{opacity:1},{opacity:0}],{duration:240,easing:'ease-out'});animation.finished.then(()=>ghost.remove()).catch(()=>ghost.remove());}else ghost.remove();}
+  byId('acquisition-calendar').innerHTML=calendarHTML(model.calendar,index);
   byId('date-slider').value=index;byId('selected-date').textContent=day(obs.timestamp);byId('selected-date').dateTime=obs.timestamp;
   byId('map-date').textContent=day(obs.timestamp)+' · UTC';byId('map-date').dateTime=obs.timestamp;
   byId('date-slider').setAttribute('aria-valuetext',day(obs.timestamp));
@@ -103,7 +107,7 @@ async function renderObservation(){
   byId('interval-note').textContent=interval?(interval.region_count?`${interval.days} days between observations. These are centered-score candidates; the original pair-comparison results use their saved nominal rule.`:'No regions passed this successive centered-score rule. This does not prove no physical change or no cumulative change occurred.'):'Baseline observation; interval measurements begin at the next acquisition.';
   byId('observation-evidence').innerHTML=`${row('Timestamp UTC',obs.timestamp)}${row('Track / frame',obs.track+' / '+obs.frame)}${row('Polarization',obs.polarization)}${row('Range bandwidth',number(obs.range_bandwidth_hz/1e6,0)+' MHz')}<p class="source-id">${escaped(obs.source_granule_id)}</p><p class="caption">${escaped(obs.quality.alignment)}</p>`;
   if(model.zone)selectZone(model.zone.zone_id);highlightDate();
-  byId('temporal-map').setAttribute('aria-busy','false');
+  byId('temporal-map').setAttribute('aria-busy','false');writeView({case:'nepal_surface',date:obs.timestamp,mode:'surface',overlay:model.layer,footprint:'zone:'+model.zone?.zone_id});
 }
 function playbackState(state){
   const button=byId('play-dates');button.disabled=state.start===state.end;button.textContent=state.playing?'Ⅱ Pause':'▶ Play range';button.setAttribute('aria-pressed',String(state.playing));button.setAttribute('aria-label',state.playing?'Pause date playback':'Play date range');
@@ -153,7 +157,9 @@ byId('focus-zone').addEventListener('click',()=>{
 });
 try{
   const [timeline,rows,display,audit]=await Promise.all([localJson('/api/cases/nepal_case_01/timeline'),localJson(base+'zone_timeseries.json'),localJson(base+'zones_display.json'),localJson(base+'source_audit.json')]);
-  model.timeline=timeline;model.rows=rows;model.display=display;
+  model.timeline=timeline;
+  try{model.calendar=calendarForCase(await localJson('/cases/time-axis-v1/calendars.json'),'nepal_surface',timeline.observations);}catch{model.calendar=null;}
+  model.rows=rows;model.display=display;
   try{
     model.context=await localJson('/api/cases/nepal_case_01/context');byId('context-layer').disabled=false;
     byId('context-provenance').innerHTML=`<p>Precipitation: NASA POWER / NASA GMAO, hourly UTC PRECTOTCORR, model/reanalysis at 0.5° × 0.625°. IMERG GIS downloads were excluded after missing-resource checks. Terrain: NASADEM HGT v001, NASA/JPL/USGS; downloaded through Microsoft Planetary Computer. Download hosts: NASA and Microsoft.</p><ul>${model.context.limitations.map(item=>`<li>${escaped(item)}</li>`).join('')}</ul>`;
@@ -174,6 +180,7 @@ try{
   byId('audit-summary').textContent=`${timeline.audited_file_count} supplied HDF5 files audited, including ${timeline.new_folder_file_count} in database for imp2. ${timeline.selected_observation_count} are selected for this compatible series. Other sources remain listed with specific exclusions.`;
   byId('source-audit').innerHTML=audit.records.map(r=>`<tr><td>${escaped(r.source_file)}</td><td>${escaped(r.acquisition_start.slice(0,10))}</td><td>${r.track} / ${r.frame}</td><td>${number(r.range_bandwidth_hz/1e6,0)} MHz</td><td>${r.selected?'Selected':escaped(r.selection_reasons.join('; '))}</td></tr>`).concat(audit.unreadable_or_unsupported.map(r=>`<tr><td>${escaped(r.source_file)}</td><td>—</td><td>—</td><td>—</td><td>${escaped(r.selection_reasons.join('; '))}</td></tr>`)).join('');
   byId('temporal-method').innerHTML=`<pre>Physical quantity: ${escaped(timeline.physical_quantity)}\nZ = (successive ΔdB − median(ΔdB)) / (1.4826 × MAD + ${timeline.epsilon})\nScore cutoff: ${timeline.calibration.threshold} (${escaped(timeline.calibration.calibration_status)})\nCleanup: ${timeline.cleanup.opening_iterations} opening iteration; ${timeline.cleanup.min_region_pixels} native pixels minimum\nGrid: ${escaped(timeline.canonical_grid.crs)}, ${timeline.canonical_grid.shape.join(' × ')} pixels\nPersistence: ${escaped(timeline.persistence_definition)}\nRecovery: ${escaped(timeline.recovery_definition)}\nSource SHA-256: ${escaped(timeline.source_code_sha256)}</pre><ul>${timeline.limitations.map(item=>`<li>${escaped(item)}</li>`).join('')}</ul><p>${escaped(timeline.registration_validation)}</p>`;
+  const shared=legacyChoice(linkedView,timeline.observations,model.index);model.index=shared.index;byId('shared-workspace-note').textContent=shared.note;if(['observation','change','persistence','recovery'].includes(linkedView.overlay))model.layer=linkedView.overlay;
   await renderObservation();setupPlayback();
   // Preload the remaining local observation previews without delaying first paint.
   for(const observation of timeline.observations)loadImage(base+observation.preview).catch(()=>{});

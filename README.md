@@ -1,299 +1,218 @@
-# 🛰️ TerraPulse
+<p align="center"><img src="docs/assets/terrapulse-banner.svg" alt="TerraPulse — Earth moves. Keep the evidence." width="100%"></p>
 
-**Transparent Radar Surface-Change Investigation & Environmental Context**  
-*NASA Space Apps Challenge 2026 · Challenge: Dancing with the SARs · Team: DevAtMad*
+<p align="center"><strong>From a radar image to an investigation someone can inspect, question and share.</strong></p>
 
-[![Python](https://img.shields.io/badge/Python-3.12%20%7C%203.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Submission%20Candidate%20(v1.0.0)-success.svg)](#)
-[![Tests](https://img.shields.io/badge/Tests-189%20Python%20%7C%2037%20JS%20Passed-brightgreen.svg)](#verification-and-testing)
-[![Data](https://img.shields.io/badge/Data-NASA--ISRO%20NISAR%20L2%20GCOV%20(Provisional)-orange.svg)](docs/DATASETS.md)
-[![Offline](https://img.shields.io/badge/Runtime-Local%20Assets-darkgreen.svg)](#key-features--architecture)
+<p align="center"><a href="#the-question-that-started-terrapulse">Why it matters</a> · <a href="#one-platform-two-countries">Explore the platform</a> · <a href="#run-terrapulse">Run locally</a> · <a href="#the-evidence-behind-the-story">Science & evidence</a> · <a href="docs/AI_USE.md">AI disclosure</a></p>
 
----
+**TerraPulse** turns NASA–ISRO NISAR radar observations into interactive surface-change investigations across **Bangladesh and Nepal**. Follow a river corridor, explore a wetland, or investigate a disturbance that persists after its initial alert fades. Compare recorded visits, inspect the same physical footprint through time, examine competing explanations and export the evidence.
 
-## 🌍 Overview
+Built for **NASA Space Apps — Dancing with the SARs** by **DevAtMad**.
 
-**TerraPulse** transforms complex, cloud-penetrating synthetic aperture radar (SAR) measurements from the NASA–ISRO NISAR satellite into an interactive, mathematically rigorous, and fully transparent surface-change investigation platform.
+## The question that started TerraPulse
 
-Rather than presenting an ungrounded black-box classification or false disaster confidence, TerraPulse connects **radar backscatter physics**, **antecedent environmental context**, **temporal behavioral fingerprinting (Change DNA)**, and **explainable hazard models**—using local runtime assets and cryptographic data provenance. A physically disconnected browser rehearsal remains pending.
+### The alert disappeared. Did the landscape recover?
 
-![Earlier TerraPulse Radar Comparison interface](docs/demo.png)
-*Figure 1: Earlier Radar Comparison interface for the Kathmandu case; this image does not show the current Evidence Studio. Current browser visual verification remains pending.*
+A small difference between two recent satellite visits can coexist with a lasting difference from an earlier reference. An alert becoming quieter is therefore a different question from the surface returning to its prior state.
 
-> [!IMPORTANT]
-> **Scientific Integrity & Disclaimers:**
-> - **NISAR Data Status:** Earth observation inputs are **PROVISIONAL** (collection `NISAR_L2_GCOV_PROVISIONAL_V1`).
-> - **Physical Causation:** All identified backscatter change causes remain **UNVERIFIED** (backscatter changes can reflect moisture, roughness, or vegetation/structure changes; these GCOV intensity measurements do not establish ground displacement).
-> - **Model Calibration:** Susceptibility and counterfactual scenario indices remain **UNCALIBRATED** demonstration models. Local completeness does not constitute an operational early-warning forecast or emergency response system.
+TerraPulse makes that distinction visible. In the tracked Nepal footprint, the original alert contracts while the HH radar difference remains. The longer record follows that same footprint through October. The user can inspect the reference, the later observations, both polarization channels and the supporting context—and carry the complete evidence into an independent review.
 
-## Three investigation workspaces
+**The outcome is a traceable investigation:** a location, a temporal record, the measurements behind it, possible explanations and a clear next question for follow-up.
 
-Open **[TerraPulse investigations](http://127.0.0.1:8000/investigations.html)** after starting the server.
+## One platform. Two countries.
 
-| Workspace | Current state |
+**Twenty unique GCOV acquisitions · four study windows · ten dates per country · two measured Nepal coherence pairs.** The two crops within each country share their source acquisitions; they are not four independent satellite series.
+
+| Place | Workspace | What you can investigate |
+|---|---|---|
+| **Bangladesh · Jamuna / Sirajganj** | **River Memory** | Where radar-dark signatures appear, recede or persist between observed river-corridor visits. |
+| **Bangladesh · Tanguar Haor** | **Wetland Pulse** | How dark and bright radar responses vary across a wetland landscape in both polarization channels. |
+| **Bangladesh · either study area** | **Surface change** | Whether a selected footprint retains a difference, how the two channels respond, and what could explain the pattern. |
+| **Nepal · Kathmandu & Rasuwa–Nuwakot** | **Surface & coherence** | The June–October intensity record, an explicit August reference and phase consistency between accepted acquisition pairs. |
+| **Nepal · both investigation crops** | **Evidence dossiers** | Fixed-footprint persistence, competing explanations and geographically scoped independent references. |
+| **Nepal · Kathmandu environmental study** | **Terrain & thermal** | Landscape context in 3D, Landsat temperature and optical imagery, and rainfall-assumption scenarios. |
+| **Nepal · Kathmandu environmental study** | **Change DNA, slopes, timeline & comparison** | Radar signatures, sampled recovery, uncalibrated hillside susceptibility and paired-image inspection. |
+
+Bangladesh Surface change uses the same Jamuna and Tanguar observations as the river and wetland workspaces. Environmental layers have their own dates, resolutions and coverage. The application identifies the scope of the selected evidence.
+
+<table><tr><td width="50%"><img src="docs/assets/jamuna-radar-composite.png" alt="Jamuna NISAR false-colour radar composite from 16 October 2026" width="100%"></td><td width="50%"><img src="docs/assets/tanguar-radar-composite.png" alt="Tanguar Haor NISAR false-colour radar composite from 16 October 2026" width="100%"></td></tr><tr><td><strong>River Memory · Jamuna</strong></td><td><strong>Wetland Pulse · Tanguar Haor</strong></td></tr></table>
+
+*Actual NISAR observations, 16 October 2026. False-colour channels combine HH, HV and their relationship; these are radar composites, not optical photographs or classified habitat maps. Source: NASA–ISRO NISAR GCOV / NASA Earthdata, ASF DAAC.*
+
+## An investigation in four steps
+
+1. **Choose a landscape.** Open the overview, select Bangladesh or Nepal and start with a question.
+2. **Play the recorded visits.** Compare actual radar observations using consistent display scales. The primary timeline shows acquired dates only.
+3. **Inspect a footprint.** Choose a saved region, click a native neighborhood or draw a polygon. Follow the same valid pixels across the record, compare reference and recent differences, and inspect explanations and available context.
+4. **Export the evidence.** Save the selected measurements, footprint, observation identifiers, processing provenance, reference status and limitations in a dossier.
+
+The interface supports keyboard map inspection, playback ranges, speed controls, looping, visible focus and reduced-motion preferences. Observation coverage is available under methods and in exports; unavailable acquisitions never become synthetic measurements.
+
+## The evidence behind the story
+
+TerraPulse keeps measurements, interpretation and scenarios distinct:
+
+| Evidence | What it contributes |
 |---|---|
-| **Surface investigations** | Two measured Nepal cases: original Kathmandu footprint and an additional reference-aligned Rasuwa–Nuwakot crop. HH/HV maps, baseline/successive differences, first/selected swipe, discrete-date playback, fixed-neighborhood probes, paired traces and evidence dossiers. |
-| **River Memory** | Six actual Jamuna observations processed, with HH/HV playback, dark-signature gains/losses and observed-visit fractions. These exploratory signatures are not validated bank erosion. |
-| **Wetland Pulse** | The same six files also power Tanguar Haor: observed dark-signature fractions, paired brightening and HH/HV traces. These are not calibrated habitat or inundation classes. |
+| **NISAR GCOV · HH & HV** | Measured L-band backscatter, reference differences, preceding-visit changes and fixed-footprint traces. |
+| **Dual-polarization relationships** | CPR, false-colour composites and exploratory scattering signatures, with cutoff sensitivity. |
+| **Change DNA** | Signed changes, observed-visit persistence and sampled onset/recovery brackets on a fixed footprint. |
+| **NISAR GUNW · Nepal** | Native pairwise HH coherence; phase-related downloads retain their units and quality metadata. |
+| **NASADEM, Landsat & matched optical references** | Separately dated terrain, temperature, visible imagery and descriptive corroboration where suitable evidence exists. |
+| **Deterministic explanation rules** | Supporting, contradicting and missing evidence for competing hypotheses. |
+| **Scenario tools** | Transparent exploration of environmental assumptions using an explicitly uncalibrated susceptibility index. |
 
-The six priority NASA/ASF files were imported on **31 October 2026** and pass coverage checks for both Bangladesh windows. No separate haor download is needed for these dates. Open [River Memory](http://127.0.0.1:8000/investigations.html?mode=river) or [Wetland Pulse](http://127.0.0.1:8000/investigations.html?mode=wetland). See [Bangladesh import results](docs/IMPLEMENTATION_09_BANGLADESH.md), [exact download instructions and import commands](docs/DOWNLOAD_AND_IMPORT.md), [granule names](docs/downloads/bangladesh-priority-granules.txt), and [implementation details](docs/IMPLEMENTATION_08_INVESTIGATIONS.md).
+**What makes the workflow defensible:** actual acquisition dates, fixed spatial support, explicit references, native quality checks, versioned products, source identifiers and reproducible calculations. No runtime language model or remote inference computes the science.
+
+The intended users are researchers, environmental teams and educators deciding where to investigate more closely. Operational decision accuracy, user adoption and field impact have not yet been established. Radar-dark candidates are not validated water or erosion; wetland signatures are not habitat diagnoses; coherence is not displacement; susceptibility is not a flood forecast.
+
+## Run TerraPulse
+
+### 1. Get the source and processed runtime data
 
 ```bash
-# Rebuild Jamuna without changing the other cases
-make jamuna
-make validate-investigations
+git clone --depth 1 https://github.com/mahdimahmud2006-coder/nasa101.git
+cd nasa101
+python3 scripts/fetch_runtime.py
 ```
 
-The new corridor intersects about **6.42 km²** of preliminary independent mudflow/rockflow mapping. This is spatial context, not proven detection accuracy. Earlier sections and reports about zero overlap apply to the original Kathmandu crop.
+**Repository access:** this repository is currently private. Authorized collaborators should sign in with [GitHub CLI](https://cli.github.com/) using `gh auth login` before cloning or downloading release assets. Judges need an invitation while access remains private.
 
----
+The runtime installer downloads versioned assets from this repository’s release, checks their SHA-256 hashes and restores them without overwriting conflicting local files. Source, manifests and provenance live in Git; generated maps and native rasters are distributed separately. Raw satellite HDF5 files and Earthdata credentials are not required to view the processed project.
 
-## ⚡ Quick Start
-
-### 🚀 1. Run with Existing Environment
-
-The local workspace already includes pre-built analytical assets and the verified Python virtual environment:
+### 2. Create the environment and launch
 
 ```bash
-# Launch the application (binds to http://127.0.0.1:8000/)
-make run
-```
-
-Or run directly via the startup script:
-
-```bash
-./run.sh --port 8000
-```
-
-Open **[http://127.0.0.1:8000/](http://127.0.0.1:8000/)** in any modern web browser. Use `Ctrl+C` in your terminal to shut down the server.
-
-### 💻 2. Setup on a Fresh Machine
-
-```bash
-# Clone the repository
-git clone https://github.com/mahdimahmud2006-coder/nasa_space-apps_challenge.git
-cd nasa_space-apps_challenge
-
-# Create and activate virtual environment (Python 3.12+; 3.14 tested)
 python3 -m venv .venv
 source .venv/bin/activate
-
-# Install verified dependencies
-pip install -r requirements.txt
-
-# Verify preflight and start server
-make check-ready
+python -m pip install -r requirements.txt
 ./run.sh
 ```
 
-> [!TIP]
-> **Zero Network Dependency at Runtime:**  
-> Once dependencies are installed, TerraPulse requires **no internet access**, no API keys, no Earthdata credentials, and no external CDNs or map-tile servers. All scripts, fonts, WebGL shaders, raster layers, and GeoJSON boundaries load directly from localhost.
+Open **[TerraPulse](http://127.0.0.1:8000/)**. Start at **Overview**, choose a country, then open an investigation. If that port is occupied:
 
----
+```bash
+./run.sh --host 127.0.0.1 --port 8001
+```
 
-## 🔬 Key Features & Architecture
+Use the port printed by the server. Keep the terminal running; stop with **Ctrl+C**. Once dependencies and runtime data are installed, the application serves its saved evidence locally without Earthdata credentials or live NASA downloads.
+
+### Optional: full native exports and local integrity check
+
+```bash
+# Additional full-resolution dual-polarization export rasters:
+python3 scripts/fetch_runtime.py --full
+
+# Verify installed core runtime data without a download:
+python3 scripts/fetch_runtime.py --verify
+```
+
+For Windows, package details and hardware planning, see [Local setup](RELEASE_README.md). Use a current desktop browser; an SSD is useful for the scientific assets. Hardware recommendations are planning estimates, not validated benchmarks. See the runtime manifest for exact download and installation sizes.
+
+## How it works
 
 ```mermaid
-graph TD
-    A[Raw NISAR L2 GCOV HDF5<br/>10m Gamma-0 HH Backscatter] --> B[Deterministic Science Pipeline<br/>MAD Thresholding & Filtering]
-    C[NASADEM 30m Topography<br/>Slope, TWI, Drainage, Relief] --> D[Environmental Context Engine]
-    E[NASA POWER Hourly Rain<br/>Precipitation Windows] --> D
-    F[USGS Landsat 8/9<br/>Thermal TIRS & Optical QA] --> D
-    
-    B --> G[Multi-Temporal Change DNA<br/>Onset, Magnitude & Persistence]
-    B --> H[Evidence Studio<br/>Acquisition Playback & Scenario Comparison]
-    D --> I[Explainable Flood Model<br/>Counterfactual Scenarios]
-    D --> J[Landslide Susceptibility<br/>NASA GLC Historical Reference]
-    
-    G --> K[Interactive Local Web Workspace<br/>Vanilla JS / Modern CSS / WebGL]
-    H --> K
-    I --> K
-    J --> K
+flowchart LR
+    A[Accepted NASA / partner products] --> B[Header, geometry and quality checks]
+    B --> C[Deterministic scientific processing]
+    C --> D[Versioned local rasters and evidence]
+    D --> E[Local API and interactive workspaces]
+    E --> F[Fixed-footprint investigation]
+    F --> G[Source-linked evidence dossier]
 ```
 
-### 🎛️ 1. Interactive Application Interfaces
+Acquisition is separate from viewing. The numerical methods live in `src/compute`; the local server reads accepted products and computes bounded footprint/scenario requests. The active record registry binds maps, timelines, context and APIs to the same observation sequence.
 
-| View | Route | Description & Key Capabilities |
-|---|---|---|
-| **Evidence Studio** | [`/`](web/index.html) | Radar-led primary workspace with discrete acquisition playback, radar/terrain/optical/thermal context, geographic evidence checks, and a baseline/counterfactual slider for applied scenarios. |
-| **Change Lab** | [`/change-lab.html`](web/change-lab.html) | Deep-dive forensic analytics. Features Change DNA behavioral profiles, onset brackets, backscatter-change magnitude, contraction vs. persistence analysis, and censored recovery tracking. |
-| **Timeline View** | [`/timeseries.html`](web/timeseries.html) | Longitudinal time-series playback of radar observations without artificial date interpolation. Compares transition intervals against baseline references. |
-| **Radar Comparison** | [`/comparison.html`](web/comparison.html) | Radar before/after swipe and scan reveal, histogram inspection, threshold sensitivity adjustment (±10%), and raw vs. robust mask overlays. |
+| Directory | Purpose |
+|---|---|
+| `src/ingest` · `src/compute` · `src/export` | Source interpretation, numerical methods and reproducible exports. |
+| `src/api` · `web` | Local application, geographic navigation and interactive investigation tools. |
+| `config*.json` · `claims` · `rules` | Explicit settings, active record bindings, claim ledger and explanation rules. |
+| `tests` · `reports` · `reference` | Automated checks, retained evidence and frozen reference design. |
+| `docs` | Methods, data provenance, implementation records and submission preparation. |
 
-### 🧬 2. Change DNA: Temporal Behavioral Profiling
-In real-world SAR investigations, an anomaly mask may shrink even while the underlying baseline disturbance remains. TerraPulse distinguishes between:
-- **Baseline Disturbance Persistence:** Retained backscatter difference from the first observed baseline; the baseline is not independently established as pre-event.
-- **Transition Mask Contraction:** Immediate temporal delta between consecutive revisit passes.
-- **Onset & Recovery Bracketing:** Explicit right-censoring rather than interpolated daily recovery curves.
-
-### 🏔️ 3. Environmental & Topographic Context
-- **NASADEM Topographic Derivatives:** 30 m native elevation, slope, aspect, curvature, roughness, relative elevation, D8 flow accumulation, Topographic Wetness Index (TWI), and modeled Euclidean drainage proximity.
-- **3D Terrain Canvas with 2D Fallback:** GPU-accelerated WebGL terrain rendering with keyboard navigation (`Arrow keys` to pan, `+`/`-` to zoom, `Enter` to probe coordinate, `Esc` to reset) and standard 2D canvas fallback.
-- **NASA POWER Precipitation:** Hourly liquid-equivalent rainfall integrated across 24 h, 72 h, and 168 h windows preceding each radar pass.
-- **USGS Landsat 8/9 Context:** Independent Tier-1 thermal surface temperature (TIRS Band 10) and optical RGB reflectance screened for cloud obscuration.
-
-### 🌊 4. Transparent Hazard & Scenario Engines
-- **Explainable Flood Escalation:** Additive component weighting combining terrain wetness, drainage proximity, low slope, antecedent precipitation, and NISAR backscatter decrease.
-- **Counterfactual Scenario Studio:** Fast offline simulation engine exploring alternative rainfall multipliers (0.5×–3.0×) and soil saturation states using a compact 17 MB component cube.
-- **Landslide Susceptibility Index:** Coupled static topography, dynamic rainfall triggers, and radar modifiers. Historical NASA/GSFC Global Landslide Catalog coverage was audited; independent calibration remains unavailable.
-
-![Multi-Layer Scientific Map Comparison](docs/reports/implementation_06_07_maps.png)
-*Figure 2: Model-output comparison of flood attention, static landslide susceptibility, and combined landslide susceptibility. These maps are not independent event validation.*
-
----
-
-## 📊 Study Case Specifications
-
-The Kathmandu surface-change case uses three 2026 observations. Its detected change has no independently established event cause; the separate preliminary UNITAR/UNOSAT mudflow/rockflow mapping does not overlap this crop.
-
-| Dimension | Specification | Source Provenance |
-|---|---|---|
-| **Geographic AOI** | 24 km × 24 km (2,400 × 2,400 pixels at 10 m native resolution) | Centered at 85.33° E, 27.80° N; UTM Zone 45N (EPSG:32645) |
-| **Radar Acquisitions** | 2026-08-19, 2026-08-31, 2026-09-12 (12-day & 24-day intervals) | NASA–ISRO NISAR L2 GCOV (Track 98, Frame 16, 40 MHz, HH) |
-| **Terrain Elevation** | 30 m grid; 530.63 m to 2,723.65 m elevation range | NASADEM HGT tiles (`n27e085`, `n28e085`) via Microsoft Planetary Computer |
-| **Precipitation** | Hourly liquid-equivalent precipitation; native 0.5° × 0.625° regional grid | NASA POWER PRECTOTCORR (MERRA-2 / GEOS-IT) |
-| **Thermal / Optical** | 30 m delivery grid; 4 cloud-screened scenes | USGS Landsat 8/9 Collection 2 Level-2 Surface Temperature/Reflectance |
-| **Historical Reference Audit** | 10 nominal study-AOI reports; 2 meet ≤1 km precision screen | NASA/GSFC Global Landslide Catalog (GLC) subset |
-
-The three processed radar granules are:
-
-```text
-NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001
-NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001
-NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001
-```
-
-Collection: `NISAR_L2_GCOV_PROVISIONAL_V1`; the original analysis uses frequency-A `HHHH`. The new investigation workspace also processes actual `HVHV`; additional catalog dates remain candidates until downloaded and accepted by the importer. See [dataset details](docs/DATASETS.md).
-
----
-
-## 🛠️ Verification and Testing
-
-TerraPulse checks numerical consistency, software behavior, and export agreement. These checks do not establish event attribution or predictive accuracy. All 189 Python tests and 37 JavaScript tests pass in the 2026-10-31 Bangladesh import. JavaScript controller checks use explicit DOM/canvas/terrain mocks, not a real browser. The six analytical validation targets check saved measurements and consistency, not event attribution.
+## Verification and reproducibility
 
 ```bash
-# 1. Run fast local runtime preflight (verifies dependencies and assets)
-make check-ready
-
-# 2. Run Python automated unit and numerical test suite (189 tests)
-make test
-
-# 3. Run JavaScript interaction, math, and UI controller test suite (37 tests)
+# Source consistency and the JavaScript controller/model suites:
+make check-web
 make test-ui
 
-# 4. Run static HTML/CSS/DOM asset integrity verification
-make check-web
+# Python suite: requires the restored runtime for integration checks:
+python -m pytest -q
 
-# 5. Run full verification suite (all tests + 6 analytical validators)
-make verify
+# Publication checks; matched credential contents are never printed:
+python3 scripts/audit_repository.py
 ```
 
-### Test Coverage Highlights
+Native validation reconciles source samples, masks, channel differences, valid visit counts, observed occupancy, footprint means and provenance hashes. Read-only checksum checks protect historical analytical products. Automated socket/DNS-denied handler checks support local delivery testing; rendered browser/accessibility/GPU acceptance and a physical disconnected rehearsal remain separate checks.
 
-- **189 Python Tests:** Verifies pixel area determinants, signed delta dB math, median filter speckle reduction, MAD threshold calculations, geometry alignment, Parquet schema, and API route responses.
-- **37 JavaScript Tests:** Verifies swipe slider math, 3D/2D coordinate transformations, timeline state transitions, keyboard controls, and DOM event listeners.
-- **6 Analytical Validators:**
-  - `validate` (Primary NISAR radar delta and vector geometry)
-  - `validate-timeseries` (Cloud-Optimized GeoTIFFs, transition frequencies, and Parquet continuity)
-  - `validate-context` (Terrain derivatives, drainage routing, and rainfall consistency)
-  - `validate-flood` (Monotonicity under rainfall scaling, scenario cache integrity)
-  - `validate-change-lab` (508 byte-for-byte prior historical artifacts preserved)
-  - `validate-investigations` (new HH/HV case rasters, profiles, coverage and pending-data states)
+Full source reprocessing needs the original inputs described in [Dataset provenance](docs/DATASETS.md). Do not rebuild frozen destinations in place. Use a new product version and the [implementation plan](docs/PRODUCT_IMPROVEMENT_PLAN.md) for additional imports. Historical timing-report validators can write report files; consult the existing preservation wrappers before a full `make verify` run.
 
----
+<details>
+<summary><strong>Audit trail: the claim-to-evidence ledger</strong></summary>
 
-## 📦 Portable Release Packaging
+<!-- CLAIMS:START -->
+- **TP-DATA · measured** — Twenty unique GCOV acquisitions support four investigation study windows: ten Nepal dates and ten shared Bangladesh dates. The Bangladesh record includes all ten available nominal visits in the displayed June–October interval. Limitation: Both crops in each country share their source acquisitions. The August 5 Bangladesh slot is a permanent satellite outage. Historical products remain separately addressable.
 
-TerraPulse can be compiled into a standalone, reproducible zip package containing all application code, public COG rasters, and runtime scenario cubes (excluding multi-gigabyte raw HDF5 files):
+- **TP-PERSIST · measured** — In the 199-pixel Nepal footprint, HH baseline differences remain −7.5263 and −7.0766 dB while centered-score retained alert area falls from 0.0199 km² to zero. Limitation: Alert contraction, baseline persistence and physical recovery are distinct; cause is unresolved.
 
-```bash
-# Build standalone release package
-make release
-```
+- **TP-PAIR · measured** — Original nominal pair areas remain 0.0195, 0.7949 and 0.0000 km² under their original rule. Limitation: These are not the centered-score tracked-zone areas.
 
-This generates (the existing archive predates the 2026-10-28 audit corrections; rebuild before distributing updated source):
-- `dist/terrapulse-1.0.0.zip` (local runtime assets; install Python dependencies first)
-- `dist/terrapulse-1.0.0.zip.sha256` (cryptographic verification hash)
+- **TP-CPR · measured** — The Nepal footprint has CPR baseline changes of +5.7152 dB and +4.6256 dB on the two follow-up visits. Limitation: CPR is HV−HH in dB, the sign reversal of the existing HH−HV relation; not independent corroboration.
 
-To verify an extracted release bundle, then install dependencies as in the fresh-machine instructions above before starting it:
-```bash
-python3 scripts/verify_release.py
-bash run.sh
-```
+- **TP-TERRAIN · measured** — Case-wide median slope is 1.9495° at Jamuna and 1.3598° at Tanguar. Limitation: Terrain/geometry screening and bounded hydrology are contextual models, not validated hazard or visibility classes.
 
----
+- **TP-RAIN · planned** — Frozen IMERG Final-product rain totals remain unavailable. A later NASA catalog search found Late V07 candidates, but no scientific rainfall files were supplied or imported in this batch. Limitation: Exact UTC windows remain implemented. Missing rain stays null; catalog availability does not create precipitation measurements. NASA multisensor lineage still requires review before the strict source policy can accept an import.
 
-## 📂 Project Structure
+- **TP-H1 · measured** — The August dip remains unresolved after frozen putative-control and full-source histogram tests. Limitation: Control shifts do not establish calibration error or physical cause.
 
-```text
-NEPALv1/
-├── Makefile                          # Build, verification, and execution targets
-├── run.sh                            # Preflight check and local server launcher
-├── config.*.json                     # Modular configurations (project, flood, context, etc.)
-├── requirements.txt                  # Pinned Python dependencies
-├── pyproject.toml                    # Package metadata & build definition
-│
-├── src/                              # Core Python Science & API Modules
-│   ├── api/                          # Local standard-library HTTP server & preflight
-│   ├── compute/                      # Deterministic radar math, terrain, flood & landslide pipelines
-│   ├── ingest/                       # HDF5 inspection, STAC metadata, and reference readers
-│   └── export/                       # GeoTIFF COGs, GeoJSON, and evidence JSON serializers
-│
-├── web/                              # Offline User Interface
-│   ├── index.html                    # Evidence Studio interface
-│   ├── change-lab.html               # Change Lab (DNA & Landslide forensic view)
-│   ├── timeseries.html               # Multi-temporal playback timeline
-│   ├── comparison.html               # Direct swipe comparison view
-│   ├── studio.mjs / studio.css       # Studio modular components and design tokens
-│   ├── change-lab.mjs / change-lab.css
-│   ├── terrain-view.mjs              # WebGL 3D terrain & 2D fallback renderer
-│   └── public/cases/nepal_case_01/   # Public Cloud-Optimized GeoTIFFs, WebP, & GeoJSON
-│
-├── tests/                            # Automated Testing Suites
-│   ├── test_science.py               # Radar and analytical tests
-│   ├── test_flood_model.py           # Flood escalation and monotonicity tests
-│   ├── test_landslide.py             # Terrain and susceptibility tests
-│   ├── test_timeseries.py            # Time-series persistence tests
-│   └── *.test.mjs                    # Node.js UI logic and controller tests
-│
-├── scripts/                          # Packaging & Verification Utilities
-│   ├── check_web.py                  # Static HTML/CSS validator
-│   ├── package_release.py            # Release bundler with SHA-256 manifests
-│   └── verify_release.py             # Zero-dependency release integrity verifier
-│
-└── docs/                             # Comprehensive Documentation & Reports
-    ├── DATASETS.md                   # Complete data provenance and access rules
-    ├── METHODOLOGY.md                # Scientific formulations and processing steps
-    ├── VALIDATION.md                 # Verification protocols and criteria
-    ├── LIMITATIONS.md                # Scientific constraints and edge cases
-    ├── FINAL_PROJECT_READINESS.md    # Readiness diagnosis and audit matrix
-    ├── SUBMISSION_BRIEF.md           # 3-minute presentation script and challenge brief
-    └── reports/                      # QA test logs, prior artifact hashes, and figures
-```
+- **TP-FIT · implemented** — Versioned deterministic rules show supporting, contradicting and missing evidence for competing explanations. Limitation: Uncalibrated compatibility statuses, no probability, winning cause or runtime LLM.
 
----
+- **TP-DNA · measured** — Fixed-footprint Change DNA records signed channel changes, observed-visit persistence, onset/recovery brackets and censored recovery for saved or user-selected regions. Limitation: Numeric footprint records are dynamically recomputed with source/rule provenance; retrospective selection is not independent validation.
 
-## 📚 Documentation Directory
+- **TP-MECHANISMS · hypothesized** — Low-return, paired brightening, moisture/roughness, vegetation, steep-source movement and radiometric explanations remain candidate hypotheses. Limitation: Signature compatibility does not uniquely identify a physical process.
 
-For in-depth architectural, scientific, and challenge details, explore the complete documentation suite:
+- **TP-REFERENCE · measured** — The original frozen descriptive HLS comparison has eligible optical pixels in 14 of 54 footprint/date comparisons; 40 remain unavailable. The four added Bangladesh radar dates have no newly accepted optical matches. Limitation: Only the preselected geographic footprints and eligible pixels were assessed. Mixed results are retained; this is algorithmic optical context, not classification accuracy or causal validation.
 
-- 🔎 [**Released Challenge Review & Next-Level Strategy**](docs/CHALLENGE_STRATEGY_2026-10-28.md): Evidence audit, alternative project directions, data feasibility, prioritized upgrades, and review preparation.
-- 📖 [**Submission Brief & Narrative**](docs/SUBMISSION_BRIEF.md): Executive summary, 3-minute presentation script, and challenge alignment.
-- 📋 [**Final Project Readiness Diagnosis**](docs/FINAL_PROJECT_READINESS.md): Audit table of identified gaps, solutions, and verification results.
-- 🛰️ [**Dataset Provenance & Ingestion**](docs/DATASETS.md): Exact granule IDs, bounding coordinates, and download procedures.
-- 📐 [**Methodology & Algorithms**](docs/METHODOLOGY.md): Mathematical formulations for dB conversion, robust MAD cutoffs, and terrain metrics.
-- ⚠️ [**Scientific Limitations**](docs/LIMITATIONS.md): Transparent disclosure of radar ambiguity, spatial resolution, and validation constraints.
-- 🤖 [**AI Assistance Record**](docs/AI_USE.md): Disclosure of code-generation assistance and deterministic runtime separation.
-- 📈 [**Progress & Milestones**](PROJECT_PROGRESS.md): Full chronicle from raw HDF5 discovery to implementation 07.
+- **TP-INTERFEROMETRY · measured** — Two supplied Nepal GUNW products now provide measured native 20 m and 80 m HH coherence for August 19–31 and August 31–September 12 in both Nepal crops. Limitation: Pairwise coherence is not displacement or a unique physical cause. Original Change DNA and Bangladesh retain their original unavailable coherence inputs. Reference-point, correction and unwrap checks are still required before LOS displacement.
 
----
+- **TP-CONTEXT · measured** — The corridor intersects about 6.4230 km² of preliminary mapped mudflow/rockflow impact context. Limitation: This overlap does not establish detection accuracy, flood-water truth or field validation.
 
-## ⚖️ License & Attribution
+- **TP-METHOD · implemented** — Illustrative numerical settings describe measurements and display, not independently calibrated classes. Limitation: Configuration parameters must not be presented as validated physical thresholds.
 
-- **Code License:** [Apache 2.0](LICENSE) © 2026 DevAtMad.
-- **NASA Data:** Distributed under NASA Earth Science Open Data Policy.
-- **USGS Landsat:** USGS/NASA Landsat data distributed via USGS Public Domain.
-- **DEM Data:** NASADEM courtesy of NASA JPL.
-- **Landslide Catalog:** NASA/GSFC Global Landslide Catalog courtesy of Kirschbaum et al. (2010, 2015).
+- **TP-NAV · implemented** — Shared navigation and investigation links preserve supported case, observed date, saved or selected footprint, mode and layer state. Three Movements opens the existing measured evidence. Limitation: Nepal-only workspaces stay explicitly scoped. Unsupported legacy layers/footprints or missing dates are disclosed instead of being treated as equivalent data.
+
+- **TP-ACCESS · implemented** — Keyboard map inspection and polygon vertices, visible focus, reduced-motion styles and live text evidence are implemented. Limitation: Source checks and mocked interactions do not establish real-browser, assistive-technology, GPU or whole-app WCAG conformance.
+
+- **TP-LOCAL · measured** — Checked local page assets and representative reasoning requests work through the HTTP handler while Python sockets and DNS are forbidden. Limitation: This is a scoped automated backend/source check. Browser network behavior and a physically disconnected rehearsal remain unverified.
+
+- **TP-DELIVERY · implemented** — The portable release builder includes current runtime rules, claims and local assets and checks every archive entry against its manifest. Limitation: Dependency installation, clean judging-machine startup, browser/physical rehearsal, public repository/video access and actual submission remain separate acceptance steps.
+
+- **TP-EXTENDED-PERSIST · measured** — The original 199-pixel Nepal footprint remains common-valid across ten visits; its October 18 HH difference from August 19 is about −6.5660 dB. Limitation: This extends the measured backscatter record. Earlier visits vary relative to August 19, which is not a verified undisturbed baseline. No continuous persistence, physical damage or recovery is established.
+
+- **TP-BD-RECORD · measured** — The ten-visit Bangladesh record recomputes HH/HV differences, dual-polarization signatures, observed occupancy, sensitivity, controls and fixed-footprint evidence. Only the August 5 nominal slot remains unobserved. Limitation: Added dates improve temporal sampling; they do not establish water, erosion, habitat, causal or hazard accuracy. No new coherence, scientific rain or thermal observations were supplied.
+<!-- CLAIMS:END -->
+
+</details>
+
+## NASA data and attribution
+
+- **NASA–ISRO NISAR GCOV:** primary radar intensity observations. [GCOV DOI](https://doi.org/10.5067/NIL2GCOV-P1) · [ASF product guide](https://nisar-docs.asf.alaska.edu/gcov/).
+- **NASA–ISRO NISAR GUNW:** accepted Nepal coherence and phase-related products. [ASF GUNW guide](https://nisar-docs.asf.alaska.edu/gunw/).
+- **NASA/USGS NASADEM:** historical terrain context. Source tiles and metadata are documented per case.
+- **USGS Landsat and NASA HLS:** thermal/optical context and quality-screened descriptive references where available.
+- **Independent preliminary impact mapping:** geographically scoped context, with publisher and source identifiers retained in the dossiers.
+
+Providers and declared auxiliary lineage are reviewed under the project’s non-Chinese-source requirement. That review does not certify every contributor to a global auxiliary dataset. Provisional products, unavailable evidence, thresholds and reference limitations remain documented.
+
+[Data provenance](docs/DATASETS.md) · [Methodology](docs/METHODOLOGY.md) · [Limitations](docs/LIMITATIONS.md) · [Field guide](web/guide.html)
+
+## Team, AI use and next evidence
+
+**Team: DevAtMad.** The project record documents the supplied datasets, implementation decisions, source reviews and verification. [AI assistance is disclosed](docs/AI_USE.md): Codex supported implementation, workflow design, tests and documentation; deterministic scientific code produces the measurements. Do not treat AI assistance as independent field validation.
+
+The next priorities are independent corroboration, testing the workflow with intended users, additional compatible coherence pairs and a rehearsed judging-machine run. The [tracked improvement plan](docs/PRODUCT_IMPROVEMENT_PLAN.md) distinguishes implemented capability, missing inputs and manual acceptance. Competition eligibility and final submission have not been certified.
+
+**License:** source code is [Apache-2.0](LICENSE). Satellite products, reference datasets and third-party assets retain their own attribution and license terms.
+
+<p align="center"><strong>Observe the change. Question the explanation. Carry the evidence.</strong></p>

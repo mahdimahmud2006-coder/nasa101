@@ -1,0 +1,31 @@
+{
+  "scope": "Files touched in this import; existing unrelated modifications are not attributed to this turn",
+  "files_sha256": {
+    "scripts/audit_bangladesh_supplied.py": "61aabc457f1680e21f417d6b4c351b945589b8affc3719745724217a7aae2c25",
+    "scripts/activate_bangladesh_record.py": "93cf3e925c7a09d6eca6922e793b748ff59a4d17d0966384ea867bc77e84bcf9",
+    "src/compute/bangladesh_record.py": "837e9d92d1870d810f11ad80174d0b60b3379c1ba9c4fd444c0145f7d6e11f23",
+    "src/compute/bangladesh_intensity.py": "144eb466f53ccaf79506f690f70e43db1eded371f56e32f0634507a43ff0374b",
+    "src/compute/dualpol_record.py": "4d1b220ef011ae54321447dc3ef0fcdaedfd0c35e47bb2c897efcf445b3c6f06",
+    "src/compute/validate_bangladesh_record.py": "4eb7598c43ae860bbec078ca1eedefb652a49d1c14936ff716dbefddb60ee2e8",
+    "src/compute/active_records.py": "fc5300858b01d12cc9e68d833347aafc2bd893fe6c0a278e84b8218a37e2abd1",
+    "src/compute/investigation_dna.py": "85bd14c70df72a5cd4167016b84b897685c083a6abdd0626d892e98816af98fd",
+    "src/compute/investigation_probe.py": "401972e82a2b15d2fa5eaca41671bd6cef17e7b97e6bea6cb7cdf8ea66fa9ca7",
+    "src/api/app.py": "698fa5c326080408f372e16fa683fcd1c7a582ce7e209847673af0c388dade8c",
+    "src/api/readiness.py": "8c118ac3bf99ce94598a07c8548e875c2b2468a72cd1ea427a515b665fed8368",
+    "web/investigations.mjs": "3960ccee9bc69d13fbbea4feb1b0ac5d0d9ab515c5a36cb0370038f5b7d459f4",
+    "web/time-axis.mjs": "0d63e8d6c1437d97a4386fdf5104006874b046caa5e38eceeba99bb589eeff86",
+    "web/home.mjs": "2575ac80f0fd572f9552d55de60fcb04ced2b26b2dba30a8832266d6c260d506",
+    "web/index.html": "8c328843a6f62a1d6e3a28f7024c52263b163afa3b0b6a7118393eaa878ac6f2",
+    "config.records.json": "b88e8825151a79d3b35fcc880d3272345f4485f08ca0ba95805e96e89334466d",
+    "config.claims.json": "b1239960b9e80a2752f9dbf11844d54e7b021a4d4db29c34dae7891d8de9a42f",
+    "claims/claims.yaml": "7767fd9f38f810111ffe5d7220cce283767fe8e6fb9478ea1c42766c2dd4ba3a",
+    "tests/test_active_records.py": "02f33db266a05f7e4165449f3c0e89f39157fc976eb69fe043a381d8162097bf",
+    "tests/investigations.test.mjs": "ffcf1c50864f8ac158989f9085fc071632639b6ef9fa090226f5cc92c5d4d560",
+    "tests/home.test.mjs": "a55e9ffcedd14c9b726449d8e1db0500e78f953709e570868359375aff34c4b6",
+    "tests/test_investigations.py": "099eb5cebb01a1f1bf52b4d73fc81390616e93fce3efb5a0c018feb6fc25aa9e",
+    "tests/test_claims_and_reasoning_api.py": "848bbf850053fc291ecf6dd5bb240a3f0e6d3e935ac2d99d51af97931ed47a52",
+    "scripts/audit_phase7.py": "a08bc1833873bd82c520cfef1b30718b3aa5b270a807e66303ee2e279265d004",
+    "scripts/package_release.py": "0f6405ba2c351bf04489219bf5519d396a61e8521b4ff1111e71d504549d089a",
+    "Makefile": "c31baf93d9b44ffc90e0801919d86004115bf62f5d57a7a7bae07cb55703e722"
+  }
+}

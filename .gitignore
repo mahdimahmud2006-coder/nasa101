@@ -1,35 +1,29 @@
-# ==============================================================================
-# TerraPulse .gitignore
-# NASA Space Apps Challenge - Dancing with the SARs
-# ==============================================================================
+# TerraPulse: source and provenance belong in Git; acquired data and generated
+# runtime binaries are restored from the versioned runtime download.
 
-# ------------------------------------------------------------------------------
-# Raw Earth Observation products and heavy scientific data
-# Raw NASA-ISRO NISAR L2 GCOV HDF5 files (>7 GB each) are strictly excluded.
-# ------------------------------------------------------------------------------
-*.h5
-*.H5
-*.hdf5
-*.HDF5
-*.he5
-*.nc
-*.nc4
-database for imp2/
+# Acquired Earth-observation products, at any location or filename casing
+*.[hH]5
+*.[hH][dD][fF]
+*.[hH][dD][fF]5
+*.[hH][eE]5
+*.[nN][cC]
+*.[nN][cC]4
+*.SAFE/
+/database/
+/database for imp2/
+/downloads/
+*.download
+*.part
+*.partial
+*.crdownload
 
-# ------------------------------------------------------------------------------
-# Full-resolution reproducible analytical rasters (GeoTIFF)
-# Heavy analytical rasters (>10-20 MB each) are reproducible via `make process`.
-# Compact public demo assets (WebP, GeoJSON, lightweight JSON) remain tracked.
-# ------------------------------------------------------------------------------
-*.tif
-*.tiff
-*.TIF
-*.TIFF
+# Full-resolution arrays, rasters and packaged deliverables
+*.[tT][iI][fF]
+*.[tT][iI][fF][fF]
 *.geotiff
-
-# ------------------------------------------------------------------------------
-# Archives and compressed bundles
-# ------------------------------------------------------------------------------
+*.npy
+*.npz
+*.zarr/
 *.zip
 *.tar
 *.tar.gz
@@ -39,105 +33,139 @@ database for imp2/
 *.xz
 *.7z
 *.rar
+/dist/
+/output/
+/runtime-downloads/
+/.runtime-staging/
 
-# Explicit exception: Whitelist compact official validation archive (312 KB)
-!data/context/unosat_20260826_flood_extent.zip
+# Generated public products: retain small metadata and provenance in Git.
+/web/public/cases/**
+!/web/public/cases/**/
+!/web/public/cases/**/*.json
+!/web/public/cases/**/*.geojson
+!/web/public/cases/**/*.md
+!/web/public/cases/**/*.csv
+!/web/public/cases/**/*.parquet
 
-# ------------------------------------------------------------------------------
-# Credentials, secrets, and environment configurations
-# Never commit NASA Earthdata credentials, tokens, or personal .env files
-# ------------------------------------------------------------------------------
-*.netrc
-.netrc
-.env
-.env.*
-!.env.example
-*.pem
-*.key
+# Local scientific caches: retain source identities, formulas and inventories.
+/data/**
+!/data/**/
+!/data/**/*.json
+!/data/**/*.geojson
+!/data/**/*.md
+!/data/**/*.csv
+!/data/**/*.txt
+!/data/**/*.parquet
+!/data/palettes/v1/cividis.json
+!/data/palettes/v1/vik.json
+!/data/palettes/v1/provenance.json
+!/data/palettes/v1/cmcrameri_license
+!/data/palettes/v1/matplotlib_license
+!/data/palettes/v1/matplotlib_source
+!/data/palettes/v1/vik_source
+# Compact, cited original reference archive; not an acquisition cache.
+!/data/context/unosat_20260826_flood_extent.zip
 
-# ------------------------------------------------------------------------------
-# Python runtime, bytecode, and packaging caches
-# ------------------------------------------------------------------------------
+# Generated figures and logs stay local; report metadata and source checks stay.
+/reports/**/*.png
+/reports/**/*.svg
+/reports/**/*.log
+/data/**/*.png
+/data/**/*.webp
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+.cache/
+scratch/
+tmp/
+temp/
+
+# Python environments, compilers and caches
+.venv*/
+venv/
+venv-*/
+env/
+ENV/
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 build/
-develop-eggs/
-dist/
-downloads/
-!docs/downloads/
-!docs/downloads/*.json
-!docs/downloads/*.txt
-eggs/
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
 *.egg
-MANIFEST
-
-# ------------------------------------------------------------------------------
-# Virtual environments and package manager caches
-# ------------------------------------------------------------------------------
-.venv/
-venv/
-env/
-ENV/
-env.bak/
-venv.bak/
-.uv-cache/
+wheels/
 .uv/
-node_modules/
-.npm/
-
-# ------------------------------------------------------------------------------
-# Testing, coverage, and type-checking caches
-# ------------------------------------------------------------------------------
+.uv-cache/
 .pytest_cache/
 .coverage
 .coverage.*
+coverage.xml
 htmlcov/
 .tox/
 .nox/
 .hypothesis/
 .ruff_cache/
 .mypy_cache/
+.ipynb_checkpoints/
 
-# ------------------------------------------------------------------------------
-# Editor, IDE, and operating system artifacts
-# ------------------------------------------------------------------------------
+# JavaScript dependencies and build caches
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# Local editor, OS and assistant/session state
 .vscode/
 .idea/
+.codex/
+.agents/
+.claude/
 *.swp
 *.swo
 *~
 .DS_Store
-.DS_Store?
 ._*
 Thumbs.db
 ehthumbs.db
+Desktop.ini
 
-# ------------------------------------------------------------------------------
-# Logs, runtime scratch, and temporary files
-# ------------------------------------------------------------------------------
-*.log
-*.tmp
-.cache/
-scratch/
-tmp/
-temp/
-
-# Large reproducible scenario component arrays; retain the compact source manifests.
-/data/derived/**/components.npz
-
-# Final application runtime assets are required for local cell probes and scenarios.
-# Raw HDF5/source caches remain excluded; the compact component cube is ~17 MB.
-!web/public/cases/**/*.tif
-!/data/derived/nepal_case_01/flood/components.npz
+# Apply secret exclusions last so metadata exceptions cannot re-include them.
+# Credentials and machine-local identity
+.env
+.env.*
+!.env.example
+!.env.*.example
+.netrc
+.netrc.*
+_netrc
+*.netrc
+.authinfo
+.authinfo.gpg
+.pypirc
+.npmrc
+.git-credentials
+credentials.json
+client_secret*.json
+service-account*.json
+*.[pP][eE][mM]
+*.[kK][eE][yY]
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+.aws/
+.ssh/
+.gnupg/
+.config/gcloud/

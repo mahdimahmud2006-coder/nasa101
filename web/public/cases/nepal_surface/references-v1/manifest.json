@@ -1,0 +1,2825 @@
+{
+  "schema_version": 1,
+  "case_id": "nepal_surface",
+  "claim_status": "measured",
+  "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+  "design": {
+    "schema_version": 1,
+    "created_at": "2026-11-02T16:27:29.421545+00:00",
+    "design": "prospective descriptive reference comparison, not accuracy validation",
+    "new_reference_viewed_before_freeze": false,
+    "known_prior_exposure": [
+      "Existing preliminary UN mudflow/rockflow mapping and NASA GLC were viewed in earlier implementations; those cannot be called blinded references.",
+      "Existing radar observations, NASADEM and Phase 3 control diagnostics are known. No new OPERA/HLS reference catalog or image has been examined."
+    ],
+    "time_tolerance_seconds": {
+      "DSWx_S1": 259200,
+      "DSWx_HLS": 259200,
+      "HLS": 432000,
+      "DIST": 432000
+    },
+    "spatial_tolerance_m": 30,
+    "spatial_use": "No buffer is applied to measured intersection area; tolerance is disclosed for geolocation differences. Pixel-center inclusion for reference cells.",
+    "sensor_difference": "NISAR L-band vs Sentinel-1 C-band or HLS optical; different scattering/cloud sensitivity.",
+    "matching": "Choose closest eligible reference in tolerance, then lowest cloud where available, then lexicographic ID, without inspecting response values.",
+    "metrics_allowed": [
+      "assessable area",
+      "reference-water overlap area",
+      "radar-dark/reference-water intersection area",
+      "time difference",
+      "coverage"
+    ],
+    "metrics_prohibited": [
+      "precision",
+      "recall",
+      "IoU",
+      "classification accuracy",
+      "causal attribution"
+    ],
+    "thresholds_frozen": {
+      "hh_db": -17,
+      "hv_db": -24,
+      "dual_brightening_db": 3
+    },
+    "holdout_policy": "No reference value can select thresholds, tune rules, pick footprints, or change input baselines. Negative/mixed results retained.",
+    "comparison_roles": [
+      "target_geographic",
+      "putative_stable_comparison",
+      "unmapped_comparison"
+    ],
+    "limitations": "No random/exhaustive truth sample or validated stable/unmapped labels; descriptive overlap only."
+  },
+  "design_sha256": "df97e021dc73d26673f8d8a1563f7770f57059a24261e526c4dbfef909dfccc2",
+  "source_results_sha256": "b6b17fa808a2129f19a1898f303863cda8da34859b7a7e255ce501539d55ee04",
+  "source_manifest_sha256": "4c6e1838d9c397616eb7c27df37c8a11695d477a4a74a40396fc9f07857fe523",
+  "radar_manifest_sha256": "29b7ad7df6e1847544b90a2fb53c75b47b6c58db8836d7af60c25ae74ab9f49a",
+  "rules_sha256": "1078b04c5e8748e0261faffd08e9b167b449c6cf9dd9ad1c0782df9d5b2c3278",
+  "profiles": [
+    {
+      "profile": {
+        "status": "MEASURED",
+        "footprint_pixels": 10000,
+        "common_valid_pixels": 10000,
+        "common_valid_fraction": 1.0,
+        "footprint_area_km2": 1.0,
+        "measured_area_km2": 1.0,
+        "observations": [
+          {
+            "index": 0,
+            "hh_mean_db": -5.500220275568171,
+            "hv_mean_db": -12.604444253396988,
+            "hh_baseline_delta_db": 0.0,
+            "hv_baseline_delta_db": 0.0,
+            "hh_successive_delta_db": null,
+            "hv_successive_delta_db": null,
+            "hh_minus_hv_db": 7.104223977828817,
+            "cpr_mean_db": -7.104223977828817,
+            "cpr_baseline_delta_db": 0.0,
+            "cpr_successive_delta_db": null,
+            "observation_id": "visit_0",
+            "timestamp": "2026-08-19T23:39:18Z"
+          },
+          {
+            "index": 1,
+            "hh_mean_db": -5.060362733578554,
+            "hv_mean_db": -12.339330381774902,
+            "hh_baseline_delta_db": 0.43985754192043097,
+            "hv_baseline_delta_db": 0.26511387162208555,
+            "hh_successive_delta_db": 0.43985754192043097,
+            "hv_successive_delta_db": 0.26511387162208555,
+            "hh_minus_hv_db": 7.278967648196348,
+            "cpr_mean_db": -7.278967648196348,
+            "cpr_baseline_delta_db": -0.17474367029834542,
+            "cpr_successive_delta_db": -0.17474367029834542,
+            "observation_id": "visit_1",
+            "timestamp": "2026-08-31T23:39:18Z"
+          },
+          {
+            "index": 2,
+            "hh_mean_db": -5.215486323166336,
+            "hv_mean_db": -12.32200093436241,
+            "hh_baseline_delta_db": 0.2847339522764087,
+            "hv_baseline_delta_db": 0.2824433190345764,
+            "hh_successive_delta_db": -0.1551235895499587,
+            "hv_successive_delta_db": 0.017329447412490845,
+            "hh_minus_hv_db": 7.106514611196075,
+            "cpr_mean_db": -7.106514611196075,
+            "cpr_baseline_delta_db": -0.002290633241832263,
+            "cpr_successive_delta_db": 0.17245303696244954,
+            "observation_id": "visit_2",
+            "timestamp": "2026-09-12T23:39:18Z"
+          }
+        ],
+        "interpretation": "Mean filtered log-backscatter on a fixed common-valid footprint. dB differences are not ground displacement. No cause or calibrated confidence is inferred.",
+        "cpr_definition": "HV_dB - HH_dB on the existing fixed common-valid footprint. Difference of filtered log-powers, not a polarimetric decomposition or ratio of spatial mean powers.",
+        "case_id": "nepal_surface",
+        "label": "Frozen reference: target geographic",
+        "selection": "Frozen before new reference inspection; role labels are not verified event/stability truth.",
+        "window": {
+          "row": 1150,
+          "col": 1150,
+          "height": 101,
+          "width": 101
+        },
+        "geometry_pixel": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                1250.000000000182,
+                1250.0000000000582
+              ],
+              [
+                1250.0000000000582,
+                1150.0000000000582
+              ],
+              [
+                1150.0000000000146,
+                1150.0
+              ],
+              [
+                1150.000000000182,
+                1250.0
+              ],
+              [
+                1250.000000000182,
+                1250.0000000000582
+              ]
+            ]
+          ]
+        }
+      },
+      "dna": {
+        "threshold_db": 3,
+        "threshold_status": "UNCALIBRATED",
+        "mean_abs_hh_baseline_db": [
+          0.0,
+          1.1345000861616805,
+          1.1224892966285347
+        ],
+        "onset_interval": null,
+        "persistence": {
+          "k": 0,
+          "n": 2,
+          "fraction": 0.0,
+          "definition": "Threshold-exceeding visits of assessed observed post-onset visits; not continuous duration."
+        },
+        "recovery_fraction": 0.01058685643099555,
+        "recovery_half_crossing_interval": null,
+        "recovery_right_censored": true,
+        "coherence": null,
+        "coherence_status": "planned",
+        "similar_past_cases": {
+          "status": "unavailable",
+          "reason": "No independent validated event library; no historical matches inferred."
+        },
+        "terrain": {
+          "median_slope_degrees": 14.743968963623047,
+          "median_elevation_m": 1516.4208984375,
+          "class": "moderate slope"
+        },
+        "rain_context": [
+          {
+            "observation_id": "visit_0",
+            "timestamp": "2026-08-19T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-08-18T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-08-16T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-08-12T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": null
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          },
+          {
+            "observation_id": "visit_1",
+            "timestamp": "2026-08-31T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-08-30T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-08-28T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-08-24T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": {
+                "start_inclusive_utc": "2026-08-19T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 1036800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              }
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          },
+          {
+            "observation_id": "visit_2",
+            "timestamp": "2026-09-12T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-09-11T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-09-09T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-09-05T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": {
+                "start_inclusive_utc": "2026-08-31T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 1036800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              }
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          }
+        ]
+      },
+      "explanations": [
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -5.500220275568171
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -5.500220275568171
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -12.604444253396988
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                },
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 14.743968963623047
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_0",
+          "timestamp": "2026-08-19T23:39:18Z",
+          "facts": {
+            "hh_last_db": -5.500220275568171,
+            "hv_last_db": -12.604444253396988,
+            "hh_delta_db": 0.0,
+            "hv_delta_db": 0.0,
+            "hh_change_abs_db": 0.0,
+            "hv_change_abs_db": 0.0,
+            "cpr_change_abs_db": 0.0,
+            "mean_abs_hh_change_db": 0.0,
+            "median_slope_degrees": 14.743968963623047,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.0
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        },
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -5.060362733578554
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -5.060362733578554
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -12.339330381774902
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.43985754192043097
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.26511387162208555
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.43985754192043097
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.26511387162208555
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.17474367029834542
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 1.1345000861616805
+                },
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 14.743968963623047
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.13066864013671875
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_1",
+          "timestamp": "2026-08-31T23:39:18Z",
+          "facts": {
+            "hh_last_db": -5.060362733578554,
+            "hv_last_db": -12.339330381774902,
+            "hh_delta_db": 0.43985754192043097,
+            "hv_delta_db": 0.26511387162208555,
+            "hh_change_abs_db": 0.43985754192043097,
+            "hv_change_abs_db": 0.26511387162208555,
+            "cpr_change_abs_db": 0.17474367029834542,
+            "mean_abs_hh_change_db": 1.1345000861616805,
+            "median_slope_degrees": 14.743968963623047,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.13066864013671875
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        },
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -5.215486323166336
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -5.215486323166336
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -12.32200093436241
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.2847339522764087
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.2824433190345764
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.2847339522764087
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.2824433190345764
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.002290633241832263
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 1.1224892966285347
+                },
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 14.743968963623047
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.04925537109375
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_2",
+          "timestamp": "2026-09-12T23:39:18Z",
+          "facts": {
+            "hh_last_db": -5.215486323166336,
+            "hv_last_db": -12.32200093436241,
+            "hh_delta_db": 0.2847339522764087,
+            "hv_delta_db": 0.2824433190345764,
+            "hh_change_abs_db": 0.2847339522764087,
+            "hv_change_abs_db": 0.2824433190345764,
+            "cpr_change_abs_db": 0.002290633241832263,
+            "mean_abs_hh_change_db": 1.1224892966285347,
+            "median_slope_degrees": 14.743968963623047,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.04925537109375
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        }
+      ],
+      "rules_version": "explanation-fit-v1",
+      "claim_status": "measured",
+      "explanation_status": "hypothesized",
+      "reference_status": "none",
+      "limitations": [
+        "Fixed-footprint means can hide opposing local changes; mean absolute HH change is also retained.",
+        "Onset and recovery are sampled brackets; persistent observed visits do not mean continuous monitoring.",
+        "Rule statuses describe this uncalibrated signature table, not physical truth or a ranked cause.",
+        "Rain unavailable remains unknown; no confidence probability is inferred."
+      ],
+      "reference_footprint_id": "nepal_surface_target_geographic",
+      "reference_design_sha256": "df97e021dc73d26673f8d8a1563f7770f57059a24261e526c4dbfef909dfccc2"
+    },
+    {
+      "profile": {
+        "status": "MEASURED",
+        "footprint_pixels": 10000,
+        "common_valid_pixels": 9986,
+        "common_valid_fraction": 0.9986,
+        "footprint_area_km2": 1.0,
+        "measured_area_km2": 0.9986,
+        "observations": [
+          {
+            "index": 0,
+            "hh_mean_db": -5.2543655384946355,
+            "hv_mean_db": -10.707386288283798,
+            "hh_baseline_delta_db": 0.0,
+            "hv_baseline_delta_db": 0.0,
+            "hh_successive_delta_db": null,
+            "hv_successive_delta_db": null,
+            "hh_minus_hv_db": 5.453020749789163,
+            "cpr_mean_db": -5.453020749789163,
+            "cpr_baseline_delta_db": 0.0,
+            "cpr_successive_delta_db": null,
+            "observation_id": "visit_0",
+            "timestamp": "2026-08-19T23:39:18Z"
+          },
+          {
+            "index": 1,
+            "hh_mean_db": -5.0694750188506195,
+            "hv_mean_db": -10.534493439187512,
+            "hh_baseline_delta_db": 0.18489051947469776,
+            "hv_baseline_delta_db": 0.17289284909628638,
+            "hh_successive_delta_db": 0.18489051947469776,
+            "hv_successive_delta_db": 0.17289284909628638,
+            "hh_minus_hv_db": 5.465018420336893,
+            "cpr_mean_db": -5.465018420336893,
+            "cpr_baseline_delta_db": -0.011997670378411374,
+            "cpr_successive_delta_db": -0.011997670378411374,
+            "observation_id": "visit_1",
+            "timestamp": "2026-08-31T23:39:18Z"
+          },
+          {
+            "index": 2,
+            "hh_mean_db": -5.324993468381221,
+            "hv_mean_db": -10.784708648794714,
+            "hh_baseline_delta_db": -0.07062792986774645,
+            "hv_baseline_delta_db": -0.07732236051091493,
+            "hh_successive_delta_db": -0.2555184499546214,
+            "hv_successive_delta_db": -0.2502152096072013,
+            "hh_minus_hv_db": 5.459715180413493,
+            "cpr_mean_db": -5.459715180413493,
+            "cpr_baseline_delta_db": -0.006694430643168478,
+            "cpr_successive_delta_db": 0.005303240347420135,
+            "observation_id": "visit_2",
+            "timestamp": "2026-09-12T23:39:18Z"
+          }
+        ],
+        "interpretation": "Mean filtered log-backscatter on a fixed common-valid footprint. dB differences are not ground displacement. No cause or calibrated confidence is inferred.",
+        "cpr_definition": "HV_dB - HH_dB on the existing fixed common-valid footprint. Difference of filtered log-powers, not a polarimetric decomposition or ratio of spatial mean powers.",
+        "case_id": "nepal_surface",
+        "label": "Frozen reference: unmapped comparison",
+        "selection": "Frozen before new reference inspection; role labels are not verified event/stability truth.",
+        "window": {
+          "row": 1870,
+          "col": 429,
+          "height": 101,
+          "width": 102
+        },
+        "geometry_pixel": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                530.0000000000509,
+                1970.0000000000582
+              ],
+              [
+                530.0000000000655,
+                1870.0000000000582
+              ],
+              [
+                430.00000000008004,
+                1870.0
+              ],
+              [
+                429.9999999999636,
+                1970.0
+              ],
+              [
+                530.0000000000509,
+                1970.0000000000582
+              ]
+            ]
+          ]
+        }
+      },
+      "dna": {
+        "threshold_db": 3,
+        "threshold_status": "UNCALIBRATED",
+        "mean_abs_hh_baseline_db": [
+          0.0,
+          1.1415221479014621,
+          1.1022209696249352
+        ],
+        "onset_interval": null,
+        "persistence": {
+          "k": 0,
+          "n": 2,
+          "fraction": 0.0,
+          "definition": "Threshold-exceeding visits of assessed observed post-onset visits; not continuous duration."
+        },
+        "recovery_fraction": 0.03442874792116557,
+        "recovery_half_crossing_interval": null,
+        "recovery_right_censored": true,
+        "coherence": null,
+        "coherence_status": "planned",
+        "similar_past_cases": {
+          "status": "unavailable",
+          "reason": "No independent validated event library; no historical matches inferred."
+        },
+        "terrain": {
+          "median_slope_degrees": 26.8359432220459,
+          "median_elevation_m": 1662.127197265625,
+          "class": "steep footprint"
+        },
+        "rain_context": [
+          {
+            "observation_id": "visit_0",
+            "timestamp": "2026-08-19T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-08-18T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-08-16T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-08-12T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": null
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          },
+          {
+            "observation_id": "visit_1",
+            "timestamp": "2026-08-31T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-08-30T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-08-28T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-08-24T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": {
+                "start_inclusive_utc": "2026-08-19T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 1036800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              }
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          },
+          {
+            "observation_id": "visit_2",
+            "timestamp": "2026-09-12T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-09-11T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-09-09T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-09-05T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": {
+                "start_inclusive_utc": "2026-08-31T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 1036800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              }
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          }
+        ]
+      },
+      "explanations": [
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -5.2543655384946355
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -5.2543655384946355
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -10.707386288283798
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 26.8359432220459
+                }
+              ],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_0",
+          "timestamp": "2026-08-19T23:39:18Z",
+          "facts": {
+            "hh_last_db": -5.2543655384946355,
+            "hv_last_db": -10.707386288283798,
+            "hh_delta_db": 0.0,
+            "hv_delta_db": 0.0,
+            "hh_change_abs_db": 0.0,
+            "hv_change_abs_db": 0.0,
+            "cpr_change_abs_db": 0.0,
+            "mean_abs_hh_change_db": 0.0,
+            "median_slope_degrees": 26.8359432220459,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.0
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        },
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -5.0694750188506195
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -5.0694750188506195
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -10.534493439187512
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.18489051947469776
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.17289284909628638
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.18489051947469776
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.17289284909628638
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.011997670378411374
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 26.8359432220459
+                }
+              ],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 1.1415221479014621
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.13066864013671875
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_1",
+          "timestamp": "2026-08-31T23:39:18Z",
+          "facts": {
+            "hh_last_db": -5.0694750188506195,
+            "hv_last_db": -10.534493439187512,
+            "hh_delta_db": 0.18489051947469776,
+            "hv_delta_db": 0.17289284909628638,
+            "hh_change_abs_db": 0.18489051947469776,
+            "hv_change_abs_db": 0.17289284909628638,
+            "cpr_change_abs_db": 0.011997670378411374,
+            "mean_abs_hh_change_db": 1.1415221479014621,
+            "median_slope_degrees": 26.8359432220459,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.13066864013671875
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        },
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -5.324993468381221
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -5.324993468381221
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -10.784708648794714
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": -0.07062792986774645
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": -0.07732236051091493
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.07062792986774645
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.07732236051091493
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.006694430643168478
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 26.8359432220459
+                }
+              ],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 1.1022209696249352
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.04925537109375
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_2",
+          "timestamp": "2026-09-12T23:39:18Z",
+          "facts": {
+            "hh_last_db": -5.324993468381221,
+            "hv_last_db": -10.784708648794714,
+            "hh_delta_db": -0.07062792986774645,
+            "hv_delta_db": -0.07732236051091493,
+            "hh_change_abs_db": 0.07062792986774645,
+            "hv_change_abs_db": 0.07732236051091493,
+            "cpr_change_abs_db": 0.006694430643168478,
+            "mean_abs_hh_change_db": 1.1022209696249352,
+            "median_slope_degrees": 26.8359432220459,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.04925537109375
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        }
+      ],
+      "rules_version": "explanation-fit-v1",
+      "claim_status": "measured",
+      "explanation_status": "hypothesized",
+      "reference_status": "none",
+      "limitations": [
+        "Fixed-footprint means can hide opposing local changes; mean absolute HH change is also retained.",
+        "Onset and recovery are sampled brackets; persistent observed visits do not mean continuous monitoring.",
+        "Rule statuses describe this uncalibrated signature table, not physical truth or a ranked cause.",
+        "Rain unavailable remains unknown; no confidence probability is inferred."
+      ],
+      "reference_footprint_id": "nepal_surface_unmapped_comparison",
+      "reference_design_sha256": "df97e021dc73d26673f8d8a1563f7770f57059a24261e526c4dbfef909dfccc2"
+    },
+    {
+      "profile": {
+        "status": "MEASURED",
+        "footprint_pixels": 870,
+        "common_valid_pixels": 870,
+        "common_valid_fraction": 1.0,
+        "footprint_area_km2": 0.08700000000000001,
+        "measured_area_km2": 0.08700000000000001,
+        "observations": [
+          {
+            "index": 0,
+            "hh_mean_db": -2.906699033569673,
+            "hv_mean_db": -11.08366907602069,
+            "hh_baseline_delta_db": 0.0,
+            "hv_baseline_delta_db": 0.0,
+            "hh_successive_delta_db": null,
+            "hv_successive_delta_db": null,
+            "hh_minus_hv_db": 8.176970042451018,
+            "cpr_mean_db": -8.176970042451018,
+            "cpr_baseline_delta_db": 0.0,
+            "cpr_successive_delta_db": null,
+            "observation_id": "visit_0",
+            "timestamp": "2026-08-19T23:39:18Z"
+          },
+          {
+            "index": 1,
+            "hh_mean_db": -2.765008557018899,
+            "hv_mean_db": -10.838395539645491,
+            "hh_baseline_delta_db": 0.14169047951013192,
+            "hv_baseline_delta_db": 0.24527353637519925,
+            "hh_successive_delta_db": 0.14169047951013192,
+            "hv_successive_delta_db": 0.24527353637519925,
+            "hh_minus_hv_db": 8.073386982626593,
+            "cpr_mean_db": -8.073386982626593,
+            "cpr_baseline_delta_db": 0.10358305686506733,
+            "cpr_successive_delta_db": 0.10358305686506733,
+            "observation_id": "visit_1",
+            "timestamp": "2026-08-31T23:39:18Z"
+          },
+          {
+            "index": 2,
+            "hh_mean_db": -2.892926924052145,
+            "hv_mean_db": -11.183727866205675,
+            "hh_baseline_delta_db": 0.01377210930503648,
+            "hv_baseline_delta_db": -0.10005879018498563,
+            "hh_successive_delta_db": -0.12791836501538068,
+            "hv_successive_delta_db": -0.34533232656018487,
+            "hh_minus_hv_db": 8.290800942153531,
+            "cpr_mean_db": -8.290800942153531,
+            "cpr_baseline_delta_db": -0.11383089949002212,
+            "cpr_successive_delta_db": -0.2174139615448042,
+            "observation_id": "visit_2",
+            "timestamp": "2026-09-12T23:39:18Z"
+          }
+        ],
+        "interpretation": "Mean filtered log-backscatter on a fixed common-valid footprint. dB differences are not ground displacement. No cause or calibrated confidence is inferred.",
+        "cpr_definition": "HV_dB - HH_dB on the existing fixed common-valid footprint. Difference of filtered log-powers, not a polarimetric decomposition or ratio of spatial mean powers.",
+        "case_id": "nepal_surface",
+        "label": "Frozen reference: putative stable comparison",
+        "selection": "Frozen before new reference inspection; role labels are not verified event/stability truth.",
+        "window": {
+          "row": 2356,
+          "col": 86,
+          "height": 31,
+          "width": 31
+        },
+        "geometry_pixel": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                116.49999999994907,
+                2386.500000000058
+              ],
+              [
+                116.5,
+                2356.500000000058
+              ],
+              [
+                86.50000000001819,
+                2356.5
+              ],
+              [
+                86.50000000002547,
+                2386.5
+              ],
+              [
+                116.49999999994907,
+                2386.500000000058
+              ]
+            ]
+          ]
+        }
+      },
+      "dna": {
+        "threshold_db": 3,
+        "threshold_status": "UNCALIBRATED",
+        "mean_abs_hh_baseline_db": [
+          0.0,
+          1.16926421416902,
+          1.147916079612299
+        ],
+        "onset_interval": null,
+        "persistence": {
+          "k": 0,
+          "n": 2,
+          "fraction": 0.0,
+          "definition": "Threshold-exceeding visits of assessed observed post-onset visits; not continuous duration."
+        },
+        "recovery_fraction": 0.018257750727360467,
+        "recovery_half_crossing_interval": null,
+        "recovery_right_censored": true,
+        "coherence": null,
+        "coherence_status": "planned",
+        "similar_past_cases": {
+          "status": "unavailable",
+          "reason": "No independent validated event library; no historical matches inferred."
+        },
+        "terrain": {
+          "median_slope_degrees": 5.8836989402771,
+          "median_elevation_m": 1453.002685546875,
+          "class": "moderate slope"
+        },
+        "rain_context": [
+          {
+            "observation_id": "visit_0",
+            "timestamp": "2026-08-19T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-08-18T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-08-16T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-08-12T23:39:18Z",
+                "end_exclusive_utc": "2026-08-19T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": null
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          },
+          {
+            "observation_id": "visit_1",
+            "timestamp": "2026-08-31T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-08-30T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-08-28T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-08-24T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": {
+                "start_inclusive_utc": "2026-08-19T23:39:18Z",
+                "end_exclusive_utc": "2026-08-31T23:39:18Z",
+                "duration_seconds": 1036800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              }
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          },
+          {
+            "observation_id": "visit_2",
+            "timestamp": "2026-09-12T23:39:18Z",
+            "windows": {
+              "24h": {
+                "start_inclusive_utc": "2026-09-11T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 86400.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "72h": {
+                "start_inclusive_utc": "2026-09-09T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 259200.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "168h": {
+                "start_inclusive_utc": "2026-09-05T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 604800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              },
+              "since_previous": {
+                "start_inclusive_utc": "2026-08-31T23:39:18Z",
+                "end_exclusive_utc": "2026-09-12T23:39:18Z",
+                "duration_seconds": 1036800.0,
+                "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+              }
+            },
+            "status": "unavailable",
+            "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+            "native_resolution_degrees": 0.1,
+            "imerg_24h_mm": null,
+            "imerg_72h_mm": null,
+            "imerg_168h_mm": null,
+            "imerg_since_previous_mm": null
+          }
+        ]
+      },
+      "explanations": [
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -2.906699033569673
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -2.906699033569673
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -11.08366907602069
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.0
+                },
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 5.8836989402771
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.0
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_0",
+          "timestamp": "2026-08-19T23:39:18Z",
+          "facts": {
+            "hh_last_db": -2.906699033569673,
+            "hv_last_db": -11.08366907602069,
+            "hh_delta_db": 0.0,
+            "hv_delta_db": 0.0,
+            "hh_change_abs_db": 0.0,
+            "hv_change_abs_db": 0.0,
+            "cpr_change_abs_db": 0.0,
+            "mean_abs_hh_change_db": 0.0,
+            "median_slope_degrees": 5.8836989402771,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.0
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        },
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -2.765008557018899
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -2.765008557018899
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -10.838395539645491
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.14169047951013192
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.24527353637519925
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.14169047951013192
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.24527353637519925
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.10358305686506733
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 1.16926421416902
+                },
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 5.8836989402771
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.13066864013671875
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_1",
+          "timestamp": "2026-08-31T23:39:18Z",
+          "facts": {
+            "hh_last_db": -2.765008557018899,
+            "hv_last_db": -10.838395539645491,
+            "hh_delta_db": 0.14169047951013192,
+            "hv_delta_db": 0.24527353637519925,
+            "hh_change_abs_db": 0.14169047951013192,
+            "hv_change_abs_db": 0.24527353637519925,
+            "cpr_change_abs_db": 0.10358305686506733,
+            "mean_abs_hh_change_db": 1.16926421416902,
+            "median_slope_degrees": 5.8836989402771,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.13066864013671875
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        },
+        {
+          "model_version": "explanation-fit-v1",
+          "interpretation": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+          "hypotheses": [
+            {
+              "id": "smooth_low_return",
+              "title": "Smooth/open-water-like low-return surface",
+              "status": "contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "gt",
+                  "value": -10,
+                  "observed_value": -2.892926924052145
+                }
+              ],
+              "unmet_signatures": [
+                {
+                  "field": "hh_last_db",
+                  "op": "le",
+                  "value": -17,
+                  "observed_value": -2.892926924052145
+                },
+                {
+                  "field": "hv_last_db",
+                  "op": "le",
+                  "value": -24,
+                  "observed_value": -11.183727866205675
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Date-matched independent water/optical evidence",
+                "Terrain/geometry screening"
+              ],
+              "limitation": "Smooth dry ground and shadow can have low returns. No water classification."
+            },
+            {
+              "id": "flooded_vegetation_like",
+              "title": "Flooded-vegetation-like paired brightening",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.01377210930503648
+                },
+                {
+                  "field": "hv_delta_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": -0.10005879018498563
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent inundation and vegetation evidence",
+                "Date-matched optical/Sentinel-1 water context"
+              ],
+              "limitation": "Brightening is not unique to flooded vegetation; threshold is illustrative."
+            },
+            {
+              "id": "moisture_roughness",
+              "title": "Soil-moisture or roughness change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hh_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.01377210930503648
+                }
+              ],
+              "missing_inputs": [
+                "rain_72h_mm"
+              ],
+              "evidence_still_required": [
+                "Accepted scientific antecedent rainfall",
+                "Soil/roughness or field evidence"
+              ],
+              "limitation": "Rain cutoff is an uncalibrated contextual prompt, never a causal test."
+            },
+            {
+              "id": "vegetation_structure",
+              "title": "Vegetation/crop structure or phenology change",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "hv_change_abs_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 0.10005879018498563
+                },
+                {
+                  "field": "cpr_change_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.11383089949002212
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Cloud-aware optical time series",
+                "Independent vegetation/crop observations"
+              ],
+              "limitation": "CPR is derived from the same two channels and is not independent corroboration."
+            },
+            {
+              "id": "steep_source_movement",
+              "title": "Steep-source mass-movement candidate",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "mean_abs_hh_change_db",
+                  "op": "ge",
+                  "value": 3,
+                  "observed_value": 1.147916079612299
+                },
+                {
+                  "field": "median_slope_degrees",
+                  "op": "ge",
+                  "value": 15,
+                  "observed_value": 5.8836989402771
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independent event/optical mapping",
+                "Interferometric quality-controlled evidence"
+              ],
+              "limitation": "This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."
+            },
+            {
+              "id": "radiometric_processing",
+              "title": "Radiometric/processing or unstable-control effect",
+              "status": "not contradicted",
+              "claim_status": "hypothesized",
+              "supporting_signatures": [],
+              "contradicting_signatures": [],
+              "unmet_signatures": [
+                {
+                  "field": "control_offset_abs_db",
+                  "op": "ge",
+                  "value": 1,
+                  "observed_value": 0.04925537109375
+                }
+              ],
+              "missing_inputs": [],
+              "evidence_still_required": [
+                "Independently stable targets",
+                "Processor/calibration QA and full-scene distribution review"
+              ],
+              "limitation": "Putative controls can change physically; a measured shift is not proof of calibration error."
+            }
+          ],
+          "winner": null,
+          "probabilities": null,
+          "observation_id": "visit_2",
+          "timestamp": "2026-09-12T23:39:18Z",
+          "facts": {
+            "hh_last_db": -2.892926924052145,
+            "hv_last_db": -11.183727866205675,
+            "hh_delta_db": 0.01377210930503648,
+            "hv_delta_db": -0.10005879018498563,
+            "hh_change_abs_db": 0.01377210930503648,
+            "hv_change_abs_db": 0.10005879018498563,
+            "cpr_change_abs_db": 0.11383089949002212,
+            "mean_abs_hh_change_db": 1.147916079612299,
+            "median_slope_degrees": 5.8836989402771,
+            "rain_72h_mm": null,
+            "paired_darkening": false,
+            "control_offset_abs_db": 0.04925537109375
+          },
+          "next_evidence_needed": "Load/inspect nominal visit 2026-09-24, and obtain the independent evidence listed for each hypothesis. Nominal dates are not observations."
+        }
+      ],
+      "rules_version": "explanation-fit-v1",
+      "claim_status": "measured",
+      "explanation_status": "hypothesized",
+      "reference_status": "none",
+      "limitations": [
+        "Fixed-footprint means can hide opposing local changes; mean absolute HH change is also retained.",
+        "Onset and recovery are sampled brackets; persistent observed visits do not mean continuous monitoring.",
+        "Rule statuses describe this uncalibrated signature table, not physical truth or a ranked cause.",
+        "Rain unavailable remains unknown; no confidence probability is inferred."
+      ],
+      "reference_footprint_id": "nepal_surface_putative_stable_comparison",
+      "reference_design_sha256": "df97e021dc73d26673f8d8a1563f7770f57059a24261e526c4dbfef909dfccc2"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_target_geographic",
+      "footprint_role": "target_geographic",
+      "observation_id": "visit_0",
+      "radar_timestamp": "2026-08-19T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "none",
+      "status": "unavailable",
+      "reference_id": "HLS.S30.T45RUL.2026231T044701.v2.0",
+      "reference_timestamp": "2026-08-19T05:01:05.192140Z",
+      "delta_seconds": 67092.80786,
+      "cloud_metadata_percent": 100.0,
+      "clear_assessable_pixels": 0,
+      "reference_pixels": 1089,
+      "overlap": {
+        "status": "unavailable",
+        "assessable_area_km2": 0.0,
+        "reference_water_area_km2": null,
+        "intersection_area_km2": null
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_target_geographic_visit_0.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/19/HLS.S30.T45RUL.2026231T044701.v2.0/HLS.S30.T45RUL.2026231T044701.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/19/HLS.S30.T45RUL.2026231T044701.v2.0/HLS.S30.T45RUL.2026231T044701.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/19/HLS.S30.T45RUL.2026231T044701.v2.0/HLS.S30.T45RUL.2026231T044701.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/19/HLS.S30.T45RUL.2026231T044701.v2.0/HLS.S30.T45RUL.2026231T044701.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "8883c9584e726c17f8dd1aafead2e2bbb18b16f0586f8ab8fc73fc6363b1fd80",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    },
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_target_geographic",
+      "footprint_role": "target_geographic",
+      "observation_id": "visit_1",
+      "radar_timestamp": "2026-08-31T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "none",
+      "status": "unavailable",
+      "reference_id": "HLS.S30.T45RUL.2026241T044701.v2.0",
+      "reference_timestamp": "2026-08-29T05:01:05.699310Z",
+      "delta_seconds": 239892.30069,
+      "cloud_metadata_percent": 84.0,
+      "clear_assessable_pixels": 0,
+      "reference_pixels": 1089,
+      "overlap": {
+        "status": "unavailable",
+        "assessable_area_km2": 0.0,
+        "reference_water_area_km2": null,
+        "intersection_area_km2": null
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_target_geographic_visit_1.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/29/HLS.S30.T45RUL.2026241T044701.v2.0/HLS.S30.T45RUL.2026241T044701.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/29/HLS.S30.T45RUL.2026241T044701.v2.0/HLS.S30.T45RUL.2026241T044701.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/29/HLS.S30.T45RUL.2026241T044701.v2.0/HLS.S30.T45RUL.2026241T044701.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/29/HLS.S30.T45RUL.2026241T044701.v2.0/HLS.S30.T45RUL.2026241T044701.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "8883c9584e726c17f8dd1aafead2e2bbb18b16f0586f8ab8fc73fc6363b1fd80",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    },
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_target_geographic",
+      "footprint_role": "target_geographic",
+      "observation_id": "visit_2",
+      "radar_timestamp": "2026-09-12T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "none",
+      "status": "unavailable",
+      "reference_id": "HLS.S30.T45RUL.2026256T044659.v2.0",
+      "reference_timestamp": "2026-09-13T05:01:05.539940Z",
+      "delta_seconds": 19307.53994,
+      "cloud_metadata_percent": 91.0,
+      "clear_assessable_pixels": 0,
+      "reference_pixels": 1089,
+      "overlap": {
+        "status": "unavailable",
+        "assessable_area_km2": 0.0,
+        "reference_water_area_km2": null,
+        "intersection_area_km2": null
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_target_geographic_visit_2.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T044659.v2.0/HLS.S30.T45RUL.2026256T044659.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T044659.v2.0/HLS.S30.T45RUL.2026256T044659.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T044659.v2.0/HLS.S30.T45RUL.2026256T044659.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T044659.v2.0/HLS.S30.T45RUL.2026256T044659.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "8883c9584e726c17f8dd1aafead2e2bbb18b16f0586f8ab8fc73fc6363b1fd80",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    },
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_unmapped_comparison",
+      "footprint_role": "unmapped_comparison",
+      "observation_id": "visit_0",
+      "radar_timestamp": "2026-08-19T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "date-matched, descriptive",
+      "status": "date-matched, descriptive",
+      "reference_id": "HLS.S30.T45RUL.2026234T045651.v2.0",
+      "reference_timestamp": "2026-08-22T05:11:00.408500Z",
+      "delta_seconds": 192702.4085,
+      "cloud_metadata_percent": 75.0,
+      "clear_assessable_pixels": 162,
+      "reference_pixels": 1089,
+      "overlap": {
+        "status": "date-matched, descriptive",
+        "assessable_area_km2": 0.14579999999999999,
+        "reference_water_area_km2": 0.0,
+        "radar_dark_area_km2": 0.0,
+        "intersection_area_km2": 0.0,
+        "interpretation": "Pixel-center, nearest-grid descriptive overlap. No precision/recall/IoU or calibrated water truth."
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_unmapped_comparison_visit_0.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/22/HLS.S30.T45RUL.2026234T045651.v2.0/HLS.S30.T45RUL.2026234T045651.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/22/HLS.S30.T45RUL.2026234T045651.v2.0/HLS.S30.T45RUL.2026234T045651.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/22/HLS.S30.T45RUL.2026234T045651.v2.0/HLS.S30.T45RUL.2026234T045651.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/22/HLS.S30.T45RUL.2026234T045651.v2.0/HLS.S30.T45RUL.2026234T045651.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "af2ff65f84f7bd2fbb989a6a9ed5a729fcb620d0252fe7df15ab6ee34333467f",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    },
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_unmapped_comparison",
+      "footprint_role": "unmapped_comparison",
+      "observation_id": "visit_1",
+      "radar_timestamp": "2026-08-31T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "none",
+      "status": "unavailable",
+      "reference_id": "HLS.S30.T45RUL.2026239T045659.v2.0",
+      "reference_timestamp": "2026-08-27T05:11:00.380400Z",
+      "delta_seconds": 412097.6196,
+      "cloud_metadata_percent": 71.0,
+      "clear_assessable_pixels": 0,
+      "reference_pixels": 1089,
+      "overlap": {
+        "status": "unavailable",
+        "assessable_area_km2": 0.0,
+        "reference_water_area_km2": null,
+        "intersection_area_km2": null
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_unmapped_comparison_visit_1.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/27/HLS.S30.T45RUL.2026239T045659.v2.0/HLS.S30.T45RUL.2026239T045659.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/27/HLS.S30.T45RUL.2026239T045659.v2.0/HLS.S30.T45RUL.2026239T045659.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/27/HLS.S30.T45RUL.2026239T045659.v2.0/HLS.S30.T45RUL.2026239T045659.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/27/HLS.S30.T45RUL.2026239T045659.v2.0/HLS.S30.T45RUL.2026239T045659.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "8883c9584e726c17f8dd1aafead2e2bbb18b16f0586f8ab8fc73fc6363b1fd80",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    },
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_unmapped_comparison",
+      "footprint_role": "unmapped_comparison",
+      "observation_id": "visit_2",
+      "radar_timestamp": "2026-09-12T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "none",
+      "status": "unavailable",
+      "reference_id": "HLS.S30.T45RUL.2026256T050231.v2.0",
+      "reference_timestamp": "2026-09-13T05:11:17.204260Z",
+      "delta_seconds": 19919.20426,
+      "cloud_metadata_percent": 83.0,
+      "clear_assessable_pixels": 0,
+      "reference_pixels": 1089,
+      "overlap": {
+        "status": "unavailable",
+        "assessable_area_km2": 0.0,
+        "reference_water_area_km2": null,
+        "intersection_area_km2": null
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_unmapped_comparison_visit_2.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T050231.v2.0/HLS.S30.T45RUL.2026256T050231.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T050231.v2.0/HLS.S30.T45RUL.2026256T050231.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T050231.v2.0/HLS.S30.T45RUL.2026256T050231.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T050231.v2.0/HLS.S30.T45RUL.2026256T050231.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "8883c9584e726c17f8dd1aafead2e2bbb18b16f0586f8ab8fc73fc6363b1fd80",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    },
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_putative_stable_comparison",
+      "footprint_role": "putative_stable_comparison",
+      "observation_id": "visit_0",
+      "radar_timestamp": "2026-08-19T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "date-matched, descriptive",
+      "status": "date-matched, descriptive",
+      "reference_id": "HLS.S30.T45RUL.2026234T045651.v2.0",
+      "reference_timestamp": "2026-08-22T05:11:00.408500Z",
+      "delta_seconds": 192702.4085,
+      "cloud_metadata_percent": 75.0,
+      "clear_assessable_pixels": 40,
+      "reference_pixels": 81,
+      "overlap": {
+        "status": "date-matched, descriptive",
+        "assessable_area_km2": 0.036,
+        "reference_water_area_km2": 0.0,
+        "radar_dark_area_km2": 0.0,
+        "intersection_area_km2": 0.0,
+        "interpretation": "Pixel-center, nearest-grid descriptive overlap. No precision/recall/IoU or calibrated water truth."
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_putative_stable_comparison_visit_0.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/22/HLS.S30.T45RUL.2026234T045651.v2.0/HLS.S30.T45RUL.2026234T045651.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/22/HLS.S30.T45RUL.2026234T045651.v2.0/HLS.S30.T45RUL.2026234T045651.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/22/HLS.S30.T45RUL.2026234T045651.v2.0/HLS.S30.T45RUL.2026234T045651.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/22/HLS.S30.T45RUL.2026234T045651.v2.0/HLS.S30.T45RUL.2026234T045651.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "28e1c4ed6c80ecb32f55251deff4cfcb9aa8c3a6e74ad63814b425f5e3483b8e",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    },
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_putative_stable_comparison",
+      "footprint_role": "putative_stable_comparison",
+      "observation_id": "visit_1",
+      "radar_timestamp": "2026-08-31T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "none",
+      "status": "unavailable",
+      "reference_id": "HLS.S30.T45RUL.2026239T045659.v2.0",
+      "reference_timestamp": "2026-08-27T05:11:00.380400Z",
+      "delta_seconds": 412097.6196,
+      "cloud_metadata_percent": 71.0,
+      "clear_assessable_pixels": 0,
+      "reference_pixels": 81,
+      "overlap": {
+        "status": "unavailable",
+        "assessable_area_km2": 0.0,
+        "reference_water_area_km2": null,
+        "intersection_area_km2": null
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_putative_stable_comparison_visit_1.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/27/HLS.S30.T45RUL.2026239T045659.v2.0/HLS.S30.T45RUL.2026239T045659.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/27/HLS.S30.T45RUL.2026239T045659.v2.0/HLS.S30.T45RUL.2026239T045659.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/27/HLS.S30.T45RUL.2026239T045659.v2.0/HLS.S30.T45RUL.2026239T045659.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/08/27/HLS.S30.T45RUL.2026239T045659.v2.0/HLS.S30.T45RUL.2026239T045659.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "0c384837a297a57dfc850792315daeb53b575fbf0572775700bb9403ac6cbbcf",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    },
+    {
+      "case_id": "nepal_surface",
+      "footprint_id": "nepal_surface_putative_stable_comparison",
+      "footprint_role": "putative_stable_comparison",
+      "observation_id": "visit_2",
+      "radar_timestamp": "2026-09-12T23:39:18Z",
+      "freeze_commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+      "reference_status": "none",
+      "status": "unavailable",
+      "reference_id": "HLS.S30.T45RUL.2026256T050231.v2.0",
+      "reference_timestamp": "2026-09-13T05:11:17.204260Z",
+      "delta_seconds": 19919.20426,
+      "cloud_metadata_percent": 83.0,
+      "clear_assessable_pixels": 0,
+      "reference_pixels": 81,
+      "overlap": {
+        "status": "unavailable",
+        "assessable_area_km2": 0.0,
+        "reference_water_area_km2": null,
+        "intersection_area_km2": null
+      },
+      "thumbnail": "/cases/nepal_surface/references-v1/nepal_surface_putative_stable_comparison_visit_2.png",
+      "sources": {
+        "B04": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T050231.v2.0/HLS.S30.T45RUL.2026256T050231.v2.0.B04.tif",
+        "B03": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T050231.v2.0/HLS.S30.T45RUL.2026256T050231.v2.0.B03.tif",
+        "B02": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T050231.v2.0/HLS.S30.T45RUL.2026256T050231.v2.0.B02.tif",
+        "Fmask": "https://hls2euwest.blob.core.windows.net/hls2/S30/45/R/UL/2026/09/13/HLS.S30.T45RUL.2026256T050231.v2.0/HLS.S30.T45RUL.2026256T050231.v2.0.Fmask.tif"
+      },
+      "reference_definition": "HLS Fmask water bit on clear optical pixels; independent optical algorithmic context, NOT OPERA DSWx or validated ground truth.",
+      "sensor_difference": "HLS optical vs NISAR L-band; cloudy/snow/shadow/adjacent-cloud/cirrus cells excluded. Coverage gaps retained.",
+      "thumbnail_sha256": "0c384837a297a57dfc850792315daeb53b575fbf0572775700bb9403ac6cbbcf",
+      "scope": "Only this frozen footprint at this observed visit; not the entire crop or a user-selected polygon."
+    }
+  ],
+  "reference_definition": "HLS Fmask water on eligible optical pixels; independent algorithmic context, not OPERA DSWx or ground truth.",
+  "qa_policy": "Exclude fill, cloud, cloud adjacency, shadow, snow and cirrus/reserved low bits; aerosol bits are retained, not a separate exclusion.",
+  "limitations": [
+    "Geographic comparison roles are not independently verified stable/unaffected labels.",
+    "No accuracy metrics or physical cause are inferred; no threshold tuning after reference inspection.",
+    "Only clear reference pixel centers with finite nearest-grid HH/HV enter overlap; partial coverage is explicit.",
+    "Native radar footprint means and reference-grid overlap use different sampling grids.",
+    "OPERA DSWx and DIST catalogs are screened only; no OPERA reference raster is accepted in this version."
+  ]
+}

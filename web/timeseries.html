@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark"><title>TerraPulse · NISAR time series</title>
-  <link rel="stylesheet" href="/timeseries.css"><script type="module" src="/timeseries.js"></script>
-</head>
-<body>
-<header><a class="brand" href="/">◉ TerraPulse</a><span class="product-status">NISAR L2 GCOV · <strong>PROVISIONAL</strong></span><a href="/comparison.html">Pair comparison ↗</a></header>
-<main>
+  <link rel="stylesheet" href="/timeseries.css"><link rel="stylesheet" href="/time-axis.css"><script type="module" src="/timeseries.js"></script>
+<link rel="stylesheet" href="/workspace-shell.css"><script type="module" src="/workspace-shell.mjs"></script></head>
+<body><a class="tp-skip" href="#main-content">Skip to content</a><nav id="workspace-rail" class="tp-rail" aria-label="TerraPulse navigation"><a class="tp-wordmark" href="/" aria-label="TerraPulse home"><span aria-hidden="true">◉</span> TerraPulse</a><div class="tp-primary"><a data-primary="home" href="/">Overview</a><a data-primary="bangladesh" href="/#bangladesh">Bangladesh</a><a data-primary="nepal" href="/#nepal">Nepal</a><a data-primary="guide" href="/guide.html">Field guide</a></div><span class="tp-local"><i></i> LOCAL OBSERVATIONS</span></nav><nav id="workspace-sections" class="tp-sections" aria-label="Country workspace sections" hidden></nav>
+<header><a class="brand" href="/studio.html">◉ TerraPulse</a><span class="product-status">NISAR L2 GCOV · <strong>PROVISIONAL</strong></span><a href="/comparison.html">Pair comparison ↗</a></header>
+<main id="main-content" tabindex="-1"><p id="shared-workspace-note" class="tp-live" role="status">Nepal · terrain, thermal observations and environmental scenarios.</p>
   <div class="heading"><div><p class="eyebrow">OBSERVATION TIMELINE / NEPAL</p><h1>Follow change through time.</h1><p id="series-summary">Loading saved local time-series evidence…</p></div><a class="button" id="download-timeline" href="/cases/nepal_case_01/timeseries/timeline.json" download>Download timeline ↓</a></div>
   <p class="notice" id="calibration-note" role="status">Radar causes remain UNVERIFIED. Temporal metrics are descriptive.</p>
   <section class="timeline-panel" aria-label="Acquisition timeline">
@@ -21,7 +21,8 @@
       <label>Speed<select id="playback-speed" disabled aria-label="Playback speed"><option value="3000">0.5× · 3 s / date</option><option value="1500" selected>1× · 1.5 s / date</option><option value="750">2× · 0.75 s / date</option></select></label>
       <label class="loop-control"><input id="loop-dates" type="checkbox" disabled> Loop</label>
     </div>
-    <div class="timeline-track"><button id="previous-date" disabled aria-label="Previous acquisition">←</button><div class="timeline-rail"><div id="acquisition-buttons" class="acquisitions"></div><input id="date-slider" type="range" min="0" max="0" step="1" value="0" disabled aria-label="Acquisition position"></div><button id="next-date" disabled aria-label="Next acquisition">→</button><time id="selected-date">—</time></div>
+    <div class="timeline-track"><button id="previous-date" disabled aria-label="Previous acquisition">←</button><div class="timeline-rail"><div id="acquisition-buttons" class="acquisitions"></div><input id="date-slider" type="range" min="0" max="0" step="1" value="0" disabled aria-label="Acquisition position"></div><button id="next-date" disabled aria-label="Next acquisition">→</button><time id="selected-date" aria-live="polite">—</time></div>
+    <section id="acquisition-calendar" class="time-axis-card" aria-label="Nominal acquisition calendar"></section>
     <p class="playback-note">Saved acquisitions only · gaps between dates are not interpolated. Space to play/pause; arrow keys when the map is focused.</p>
   </section>
   <div class="workspace">
@@ -36,7 +37,7 @@
     </section>
     <aside class="evidence-panel" aria-label="Selected zone and environmental evidence" tabindex="0">
       <p class="eyebrow">TRACKED ZONE / CAUSE UNVERIFIED</p><label for="zone-select">Select fixed zone</label><select id="zone-select" disabled></select>
-      <div id="zone-evidence"><p>No zone evidence loaded yet.</p></div>
+      <div id="zone-evidence" aria-live="polite"><p>No zone evidence loaded yet.</p></div>
       <button id="focus-zone" disabled>Center on zone ↗</button>
       <details class="evidence-detail"><summary>Return toward baseline</summary><div id="recovery-chart" class="chart" role="img" aria-label="Selected-zone recovery curve"></div>
       <p class="caption">Recovery is assessed only at or after the observed peak, using the same common-valid zone pixels and the first observation as baseline. It does not establish ecosystem or infrastructure recovery.</p>

@@ -1,0 +1,28 @@
+{
+  "status": "PLAYBACK_SOURCE_AND_DATA_CHECKS_PASS",
+  "javascript_tests_passed": 86,
+  "all_current_javascript_suites_pass": true,
+  "static_pages_checked": 6,
+  "expanded_science_assets_unchanged": true,
+  "frozen_baseline_check": "PASS; 795 files",
+  "playback_scenarios": [
+    "Ten actual intensity frames",
+    "Two native coherence pair frames",
+    "Available-frame date ranges",
+    "Loop and pause",
+    "Unavailable previous-visit difference",
+    "Missing frame error",
+    "Bounded stalled-frame timeout",
+    "Case switching"
+  ],
+  "catalog_candidates_only": true,
+  "metadata_search": {
+    "nepal": "complete",
+    "bangladesh": "incomplete"
+  },
+  "additional_nepal_downloads": 7,
+  "priority_nepal_downloads": 4,
+  "priority_nepal_gib": 8.78515625,
+  "browser_render_verification": "UNVERIFIED; existing local-URL policy block retained",
+  "archive_scope": "Existing release archives preserved and predate this live UI hotfix."
+}

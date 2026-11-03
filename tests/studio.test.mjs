@@ -1,3 +1,4 @@
+import * as sharedView from '../web/investigation-state.mjs';
 /** Interaction-logic smoke tests with explicit DOM/terrain mocks, not browser or visual QA. */
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -6,7 +7,7 @@ import fs from 'node:fs/promises';
 import {createPlayback} from '../web/playback.mjs';
 const root=new URL('../',import.meta.url);
 async function fixture(){
-  const html=await fs.readFile(new URL('web/index.html',root),'utf8');
+  const html=await fs.readFile(new URL('web/studio.html',root),'utf8');
   const source=(await fs.readFile(new URL('web/studio.mjs',root),'utf8')).replace(/^import .*;\n/gm,'');
   const elements=new Map(),nodes=[];
   class Element{
@@ -42,7 +43,7 @@ async function fixture(){
     const data=JSON.parse(await fs.readFile(new URL('web/public'+path,root),'utf8'));return {ok:true,json:async()=>data};
   }
   const timers=new Map();let timerID=0;
-  const sandbox={console,document,window:{matchMedia:()=>({matches:false}),addEventListener(){}},fetch,
+  const sandbox={...sharedView,console,document,window:{matchMedia:()=>({matches:false}),addEventListener(){}},fetch,
     TerrainView:TerrainMock,createPlayback,URLSearchParams,URL,Blob,setTimeout:(fn,delay)=>{timers.set(++timerID,{fn,delay});return timerID;},clearTimeout:id=>timers.delete(id)};
   const api=await vm.runInNewContext('(async()=>{'+source+'\nreturn {state,terrain,player};})()',sandbox);
   assert.equal(elements.get('studio-error').hidden,true,elements.get('studio-error').textContent);

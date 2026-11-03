@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "historical_files_unchanged": 505,
+  "active_record_manifests_unchanged": 10,
+  "active_analytical_assets_verified": 690,
+  "scope": "Read-only checksum reconciliation with previously validated analytical records. No scientific products were rebuilt."
+}

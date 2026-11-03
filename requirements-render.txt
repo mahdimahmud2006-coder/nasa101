@@ -1,0 +1,2 @@
+# Optional scientific figure exports only; never needed by ./run.sh or make verify.
+matplotlib==3.11.2

@@ -1,3 +1,4 @@
+import * as sharedView from '../web/investigation-state.mjs';
 /** Logic checks with explicit DOM/terrain mocks and real saved outputs; not browser visual QA. */
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -24,7 +25,7 @@ async function fixture(){
   constructor(canvas,mesh,options){this.mesh=mesh;this.onPick=options.onPick;this.zoom=1;}async setImages(...images){this.images=images;}draw(){}reset(){this.focused=null;}focus(tile){this.focused=tile;}setMode(mode){this.is3D=mode==='3d';return this.is3D;}
  }
  async function fetch(url){assert.ok(url.startsWith('/cases/'),'Unexpected request '+url);const data=JSON.parse(await fs.readFile(new URL('web/public'+url,root),'utf8'));return {ok:true,json:async()=>data};}
- const sandbox={console,document,window:{addEventListener(){}},fetch,TerrainView:TerrainMock,createPlayback,URLSearchParams,URL,Blob,setTimeout:()=>1,clearTimeout(){}};
+ const sandbox={...sharedView,console,document,window:{addEventListener(){}},fetch,TerrainView:TerrainMock,createPlayback,URLSearchParams,URL,Blob,setTimeout:()=>1,clearTimeout(){}};
  const api=await vm.runInNewContext('(async()=>{'+source+'\nreturn {state,terrain,player};})()',sandbox);
  assert.equal(elements.get('lab-error').hidden,true,elements.get('lab-error').textContent);
  return {api,elements,document};

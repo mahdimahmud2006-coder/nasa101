@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "series_id": "bangladesh_069_014",
+  "case_ids": [
+    "jamuna_river",
+    "tanguar_wetland"
+  ],
+  "product": "GCOV",
+  "loaded_observations_per_case": 6,
+  "permanent_outage_slot": "2026-08-05",
+  "downloads": [
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001",
+      "timestamp": "2026-06-30T23:21:34Z",
+      "end_timestamp": "2026-06-30T23:22:09Z",
+      "track": 69,
+      "frame": 14,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 6652166144,
+      "size_gib": 6.1953125,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "jamuna_river": 0.9999999999999996,
+        "tanguar_wetland": 0.9999999999999994
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001",
+      "timestamp": "2026-07-12T23:21:34Z",
+      "end_timestamp": "2026-07-12T23:22:08Z",
+      "track": 69,
+      "frame": 14,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 6685720576,
+      "size_gib": 6.2265625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "jamuna_river": 0.9999999999999996,
+        "tanguar_wetland": 0.9999999999999994
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001",
+      "timestamp": "2026-09-10T23:21:31Z",
+      "end_timestamp": "2026-09-10T23:22:06Z",
+      "track": 69,
+      "frame": 14,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 6874464256,
+      "size_gib": 6.40234375,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "jamuna_river": 0.9999999999999996,
+        "tanguar_wetland": 0.9999999999999994
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001",
+      "timestamp": "2026-10-04T23:21:32Z",
+      "end_timestamp": "2026-10-04T23:22:06Z",
+      "track": 69,
+      "frame": 14,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 6689914880,
+      "size_gib": 6.23046875,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "jamuna_river": 0.9999999999999996,
+        "tanguar_wetland": 0.9999999999999994
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    }
+  ],
+  "total_gib": 25.0546875,
+  "provider": "NASA Earthdata / ASF DAAC (USA)",
+  "upstream": "NASA\u2013ISRO (USA/India)",
+  "shared_download": true,
+  "source_snapshot": "data/candidates/bangladesh_gcov_gaps_2026_11_03/bangladesh_069_014.json",
+  "source_snapshot_sha256": "3edaca49d4557f222420101c78d4018a3ca4fa9f9bf8c0b5717cc5004a6b74ff",
+  "search_complete": true,
+  "local_inventory": "reports/bangladesh_gap_2026_11_03/local_files.json",
+  "header_audit_required": true,
+  "scope": "These four GCOV intensity files are absent locally. GUNW and Nepal track98/frame16 files cannot replace Bangladesh track69/frame14 GCOV. The August5 outage has no NISAR acquisition to download."
+}

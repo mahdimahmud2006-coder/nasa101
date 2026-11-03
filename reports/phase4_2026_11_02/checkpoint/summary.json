@@ -1,0 +1,20 @@
+{
+  "phase": 4,
+  "status": "COMPLETE",
+  "python_tests": 235,
+  "javascript_tests": 54,
+  "analytical_validators": 9,
+  "make_verify_exit_code": 0,
+  "frozen_files_unchanged": 795,
+  "historical_outputs_unchanged": 508,
+  "saved_footprints": 10,
+  "new_radar_downloads": 0,
+  "claims": 14,
+  "runtime_llm": false,
+  "rules_encoding": "YAML 1.2 JSON subset; no extra dependency",
+  "limitations": "Rules uncalibrated, causes unresolved, coherence null, rainfall unavailable; real-browser QA unverified.",
+  "checkpoint": "Requested stop after Phase 4",
+  "all_preexisting_outputs_preserved": true,
+  "phase5": "staged acquisition only; not complete",
+  "phase6": "preliminary search only; not complete"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "ACTIVE_LOCAL",
+  "version": "bangladesh-v2",
+  "cases": [
+    "jamuna_river",
+    "tanguar_wetland"
+  ],
+  "pointer_sha256": "b88e8825151a79d3b35fcc880d3272345f4485f08ca0ba95805e96e89334466d",
+  "registry_sha256": "83c6de0e89542a88d132f71788462ef97c5e353dd0be3666e80c215314f96e29",
+  "native_validation_sha256": "452be3c1c4aa037d348ffd50edb168ab63545ebf8a94f02f3d5f5aca6439fe13"
+}

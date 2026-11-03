@@ -1,0 +1,10 @@
+{
+  "commit": "889234019f4f3e2e919f63e5e791e69b511975bd",
+  "committed_files": [
+    "reference/frozen_footprints.geojson",
+    "reference/design.json",
+    "reference/freeze_manifest.json"
+  ],
+  "recorded_at": "2026-11-02T16:28:10.578077+00:00",
+  "new_reference_inspection": "not started at commit"
+}

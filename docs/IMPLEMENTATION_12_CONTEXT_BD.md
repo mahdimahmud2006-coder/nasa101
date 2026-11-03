@@ -1,0 +1,15 @@
+# Implementation 12 — Separate context and H1 investigation
+
+Phase 3, 2 November 2026 (Asia/Dhaka).
+
+1. **Changed:** separate NASADEM native windows for all four crops, 30 m slope/aspect/relative elevation/buffer-limited D8 flow and wetness layers, coarse metadata incidence/LOS screening candidates, immutable first-date/DEM putative control masks, full-crop and full-source histograms, exact UTC rainfall windows and new Parquet columns. Public products are in new `context-v2/` directories. The viewer exposes static terrain maps and case-wide radiometric controls. Original POWER, analytical products and thresholds are preserved.
+
+2. **Verification:** `make verify` before: 221 Python / 50 JavaScript tests, seven validators. New tests check exact partial half-hour weighting, gaps, prior-visit arithmetic, geometry signs, first-date-only control reproducibility and static UI context. Final results are in the phase summary/log; all frozen output checks must pass. The new context validator also reconciles full source histograms, masks, native grids and null rainfall.
+
+3. **Data:** approximately 3 MB of native NASADEM raster windows, NASA/JPL/USGS upstream via Microsoft Planetary Computer (USA), with query bounds, retrieval UTC, sizes and SHA-256 in `data/context/context-v2/terrain/sources.json`. Nepal local source tiles are reused only for their own geography. Native DEM is 1 arc-second, EGM96 geoid. Metadata incidence/ENU LOS comes from the existing source GCOV first acquisition, 500 m metadata grid at 0 m ellipsoid plane. Geometry candidates use projected range slope with local grid convergence; they are not full visibility ray tracing or validated layover/shadow corrections. Scientific IMERG V07 queries returned no matching 2026 granules; collection metadata and per-case response checksums are retained. No values are invented or substituted.
+
+4. **Claims:** P3-TERRAIN (**implemented/measured**): median slope about 1.95 degrees Jamuna and 1.36 degrees Tanguar. P3-H1 (**measured**): fixed putative control statistics and full source histograms computed; P3-H1-CAUSE (**hypothesized**): physical/processing explanations remain unresolved. P3-IMERG (**planned** for measurements): exact windows and missing-data path implemented, but accepted scientific rain totals unavailable.
+
+5. **Limits:** see [H1 report](reports/h1_17aug_dip.md). Tanguar controls drift substantially on later dates and are not independent calibration targets. No rain-based causal conclusion is supported. Geometry uses an approximate height plane, and buffered hydrology has bounded catchments. Static terrain can extend up to 20 m beyond the radar crop due to grid sizing; the UI clips its display to the original extent. Optical context is optional and deferred to reference work. Browser checks remain unverified under the earlier policy restriction.
+
+6. **Next:** Phase 4, as authorized: deterministic Explanation Fit, all-case Change DNA, selected polygons, and one claim ledger. No runtime LLM.

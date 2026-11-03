@@ -1,0 +1,151 @@
+{
+  "updated": "2026-11-03",
+  "project": "TerraPulse",
+  "challenge": "Dancing with the SARs",
+  "status_note": "Bangladesh SCI-01 is implemented from accepted local files. Browser, user and independent scientific validation remain separate.",
+  "tasks": [
+    {
+      "id": "UX-01",
+      "priority": "P0",
+      "task": "Overview with actual radar comparison and country selection",
+      "status": "IMPLEMENTED",
+      "dependency": "Existing local previews",
+      "acceptance": "Country keyboard controls, wipe behavior, measured counts and static links checked"
+    },
+    {
+      "id": "UX-02",
+      "priority": "P0",
+      "task": "Shared country navigation and explicit Nepal tools",
+      "status": "IMPLEMENTED",
+      "dependency": "None",
+      "acceptance": "Routes, geography, active state and supported shared-state tests"
+    },
+    {
+      "id": "UX-03",
+      "priority": "P0",
+      "task": "Bangladesh Surface change focus for both crops",
+      "status": "IMPLEMENTED",
+      "dependency": "Existing Bangladesh record",
+      "acceptance": "Both cases selectable; shared focus restores; original scientific module/data retained"
+    },
+    {
+      "id": "UX-04",
+      "priority": "P0",
+      "task": "Concise product descriptions and Field guide",
+      "status": "IMPLEMENTED",
+      "dependency": "Existing capability audit",
+      "acceptance": "HTML/asset checks; source inventory; no invented science"
+    },
+    {
+      "id": "UX-05",
+      "priority": "P0",
+      "task": "Desktop readability and responsive theme",
+      "status": "IMPLEMENTED; visual acceptance pending",
+      "dependency": "Existing source",
+      "acceptance": "CSS breakpoints/reduced motion supplied; run manual matrix below"
+    },
+    {
+      "id": "SCI-01",
+      "priority": "P0",
+      "task": "Complete downloadable Bangladesh intensity slots",
+      "status": "IMPLEMENTED",
+      "dependency": "Four accepted GCOV files in database/new",
+      "acceptance": "Native validation passed; ten-date active record for both crops; August 5 outage retained",
+      "evidence": "reports/bangladesh_import_2026_11_03/native_validation.json"
+    },
+    {
+      "id": "SCI-02",
+      "priority": "P1",
+      "task": "Additional Nepal coherence pairs",
+      "status": "WAITING_DATA",
+      "dependency": "Header-compatible GUNW",
+      "acceptance": "Correct native grids, pair intervals, quality masks and playback"
+    },
+    {
+      "id": "SCI-03",
+      "priority": "P1",
+      "task": "Bangladesh coherence",
+      "status": "WAITING_DATA",
+      "dependency": "Compatible Bangladesh GUNW",
+      "acceptance": "Separate paired measurements; no replacement of missing GCOV visits"
+    },
+    {
+      "id": "REF-01",
+      "priority": "P0",
+      "task": "Independent optical corroboration",
+      "status": "PLANNED / additional usable references needed",
+      "dependency": "Cloud-screened HLS/Landsat or independently documented reference",
+      "acceptance": "Precommitted sampling; dates/validity; disagreement retained; no circular accuracy estimate"
+    },
+    {
+      "id": "USER-01",
+      "priority": "P0",
+      "task": "Test usefulness with intended users",
+      "status": "PLANNED",
+      "dependency": "Team recruits volunteers",
+      "acceptance": "Observed task outcomes and feedback, not simulated testimonials"
+    },
+    {
+      "id": "QA-01",
+      "priority": "P0",
+      "task": "Browser and disconnected presentation rehearsal",
+      "status": "MANUAL_CHECK",
+      "dependency": "Policy-permitted browser / user",
+      "acceptance": "Checklist completed, failures fixed, fallback recording"
+    },
+    {
+      "id": "SUB-01",
+      "priority": "P0",
+      "task": "Final submission narrative and eligibility audit",
+      "status": "PLANNED",
+      "dependency": "QA + team input + current local requirements",
+      "acceptance": "Public access, license, AI disclosure, video and team contributions verified before submission"
+    },
+    {
+      "id": "RAIN-01",
+      "priority": "P2",
+      "task": "Scientific rainfall context",
+      "status": "WAITING_DATA",
+      "dependency": "Accepted rainfall product + full lineage review",
+      "acceptance": "Unit/time/area weighting, missingness and quality checked; no zero substitution"
+    },
+    {
+      "id": "BD-THERMAL-01",
+      "priority": "P2",
+      "task": "Bangladesh thermal context",
+      "status": "WAITING_DATA",
+      "dependency": "USGS Landsat temperature + QA",
+      "acceptance": "Separate thermal date/resolution/cloud coverage; no thermal values inferred from radar"
+    },
+    {
+      "id": "RIVER-02",
+      "priority": "P2",
+      "task": "Quantified bank migration",
+      "status": "DEFERRED",
+      "dependency": "Independently validated channel/bank boundaries + registration uncertainty",
+      "acceptance": "Defensible displacement uncertainty and repeat validation; otherwise retain radar signatures"
+    },
+    {
+      "id": "WETLAND-02",
+      "priority": "P2",
+      "task": "Validated wetland state / hydroperiod",
+      "status": "DEFERRED",
+      "dependency": "Habitat/water labels and sufficiently dense independent time observations",
+      "acceptance": "Distinguish occupancy on observed visits from actual duration; report unresolved intervals"
+    },
+    {
+      "id": "LOS-01",
+      "priority": "P2",
+      "task": "Ground displacement",
+      "status": "DEFERRED",
+      "dependency": "Phase unwrapping/reference/correction/geometry validation",
+      "acceptance": "Documented sign, reference, units, uncertainty and external checks; never convert raw phase directly into a claimed movement map"
+    }
+  ],
+  "next_scientific_task": "SCI-02 / SCI-03 when compatible GUNW is supplied; independent corroboration remains REF-01",
+  "data_guides": [
+    "docs/BANGLADESH_GCOV_DOWNLOADS.md",
+    "docs/NISAR_ADDITIONAL_GUNW_DOWNLOADS.md"
+  ],
+  "manual_acceptance": "docs/PRODUCT_IMPROVEMENT_PLAN.md#manual-acceptance-matrix"
+}

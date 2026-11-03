@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "all_archive_entries_hashed_during_build": true,
+  "files_verified": 1307,
+  "archive_bytes": 4049487906,
+  "archive_gib": 3.771379502490163,
+  "sha256": "0ab18d75673bc8b128b97adfa7ec2ac1ca5310d7c4e78ba243a3eae83975d46d",
+  "startup_document_missing_local_links": [],
+  "current_source_sample_matches": [
+    "PROJECT_PROGRESS.md",
+    "scripts/package_release.py",
+    "tests/test_release.py",
+    "web/investigations.mjs",
+    "web/workspace-shell.mjs",
+    "web/investigation-state.mjs",
+    "rules/explanations.yaml",
+    "config.claims.json"
+  ],
+  "raw_granule_and_secret_paths_excluded": true,
+  "clean_machine_and_browser_rehearsal": "PENDING"
+}

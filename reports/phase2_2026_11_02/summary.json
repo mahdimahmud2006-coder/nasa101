@@ -1,0 +1,44 @@
+{
+  "phase": 2,
+  "date_local": "2026-11-02",
+  "timezone": "Asia/Dhaka",
+  "status": "COMPLETE",
+  "before": {
+    "python_tests": 207,
+    "javascript_tests": 42,
+    "analytical_validators": 6,
+    "make_verify_exit_code": 0
+  },
+  "after": {
+    "python_tests": 221,
+    "javascript_tests": 50,
+    "analytical_validators": 7,
+    "make_verify_exit_code": 0
+  },
+  "frozen_files_unchanged": 795,
+  "historical_analytical_outputs_unchanged": 508,
+  "additional_phase1_files_unchanged": 45,
+  "unique_existing_raw_granules": 9,
+  "new_radar_downloads": 0,
+  "case_visits": 18,
+  "cases": 4,
+  "new_scientific_files": 417,
+  "new_scientific_bytes": 3206015964,
+  "native_cogs": 186,
+  "previews": 214,
+  "scientific_figures_visual_qa": "Rendered and inspected; app browser QA remains unverified under prior URL-policy restriction.",
+  "validation_scope": "All native CPR/RGB/difference support/hint flags and values; all source/code/config/assets hashes and Parquet CPR rows; 90 independent production cutoff cells plus full synthetic matrices. Not mechanism validation.",
+  "nepal_tracked_zone_cpr_baseline_db": [
+    0.0,
+    5.715154889839978,
+    4.625632548452023
+  ],
+  "claims": [
+    "P2-PROXIES",
+    "P2-NUMERICS",
+    "P2-NEPAL-CPR",
+    "P2-MECHANISMS",
+    "P2-EXPLANATION-FIT"
+  ],
+  "next": "Phase 3: separately sourced terrain/rain context, frozen stable-target test and investigation of 17 August Bangladesh dip. Await user go-ahead; additional large downloads remain separately gated."
+}

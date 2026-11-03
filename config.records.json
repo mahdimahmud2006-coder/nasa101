@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "investigation_registry": "investigations-bangladesh-v2.json",
+  "cases": {
+    "jamuna_river": "bangladesh-v2",
+    "tanguar_wetland": "bangladesh-v2"
+  },
+  "native_validation": "reports/bangladesh_import_2026_11_03/native_validation.json",
+  "historical_registry": "investigations.json"
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections",
+  "retrieved_at": "2026-11-02T16:28:14.418734+00:00",
+  "method": "GET",
+  "freeze_commit": "8892340",
+  "license": "Metadata discovery only; dataset license reviewed before use",
+  "status": 200,
+  "sha256": "3a7b22a25e68af2a8bf7e46d03c7606cc0b1176b8217cefbe9c2aec5c9ac5549"
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "case_id": "nepal_surface",
+      "file": "data/context/context-v2/terrain/nepal_surface_NASADEM_HGT_n27e085.tif",
+      "sha256": "7ae06e2131c70cd23a4e864593a2e3d5178f8cd03e4665f034c4516a58cbca62",
+      "size_bytes": 1078405,
+      "provider": "Microsoft Planetary Computer (USA)",
+      "upstream": "NASA/JPL/USGS NASADEM (USA)",
+      "dataset": "NASADEM HGT v001",
+      "license": "NASA Earth science open data; source collection license applies",
+      "url": "https://nasademeuwest.blob.core.windows.net/nasadem-cog/v001/NASADEM_HGT_n27e085.tif",
+      "retrieved_at": "2026-11-02T16:06:42.540934+00:00",
+      "query": {
+        "method": "HTTP range/native raster window",
+        "bounds_wgs84": [
+          85.18474522694964,
+          27.671004785610897,
+          85.47479954506356,
+          27.92893290254529
+        ],
+        "tile": "NASADEM_HGT_n27e085"
+      },
+      "source_reused_local": true,
+      "vertical_reference": "EGM96 geoid, meters",
+      "native_resolution": "1 arc-second"
+    },
+    {
+      "case_id": "nepal_impact_corridor",
+      "file": "data/context/context-v2/terrain/nepal_impact_corridor_NASADEM_HGT_n28e085.tif",
+      "sha256": "5f06b6ce084e9d86d8e7f55ee0c55ae9a60c511a46e9ac7a93f1cd8eb6df1cde",
+      "size_bytes": 1411194,
+      "provider": "Microsoft Planetary Computer (USA)",
+      "upstream": "NASA/JPL/USGS NASADEM (USA)",
+      "dataset": "NASADEM HGT v001",
+      "license": "NASA Earth science open data; source collection license applies",
+      "url": "https://nasademeuwest.blob.core.windows.net/nasadem-cog/v001/NASADEM_HGT_n28e085.tif",
+      "retrieved_at": "2026-11-02T16:06:42.583342+00:00",
+      "query": {
+        "method": "HTTP range/native raster window",
+        "bounds_wgs84": [
+          85.1743514834576,
+          28.01544085952889,
+          85.46539492386393,
+          28.273414890958815
+        ],
+        "tile": "NASADEM_HGT_n28e085"
+      },
+      "source_reused_local": true,
+      "vertical_reference": "EGM96 geoid, meters",
+      "native_resolution": "1 arc-second"
+    },
+    {
+      "case_id": "jamuna_river",
+      "file": "data/context/context-v2/terrain/jamuna_river_NASADEM_HGT_n24e089.tif",
+      "sha256": "a95725fd576157fa261b0b6e79544634eaa9c2f3d590302c0ac45c5d6608c7b0",
+      "size_bytes": 310619,
+      "provider": "Microsoft Planetary Computer (USA)",
+      "upstream": "NASA/JPL/USGS NASADEM (USA)",
+      "dataset": "NASADEM HGT v001",
+      "license": "NASA Earth science open data; source collection license applies",
+      "url": "https://nasademeuwest.blob.core.windows.net/nasadem-cog/v001/NASADEM_HGT_n24e089.tif",
+      "retrieved_at": "2026-11-02T16:06:49.667161+00:00",
+      "query": {
+        "method": "HTTP range/native raster window",
+        "bounds_wgs84": [
+          89.58774742830407,
+          24.378262168166852,
+          89.8318764520864,
+          24.601666985895434
+        ],
+        "tile": "NASADEM_HGT_n24e089"
+      },
+      "source_reused_local": false,
+      "vertical_reference": "EGM96 geoid, meters",
+      "native_resolution": "1 arc-second"
+    },
+    {
+      "case_id": "tanguar_wetland",
+      "file": "data/context/context-v2/terrain/tanguar_wetland_NASADEM_HGT_n25e090.tif",
+      "sha256": "f232854dd7747761faa377c471e6c49b71bd1c0d89fc853eb1d444f7a793074d",
+      "size_bytes": 41093,
+      "provider": "Microsoft Planetary Computer (USA)",
+      "upstream": "NASA/JPL/USGS NASADEM (USA)",
+      "dataset": "NASADEM HGT v001",
+      "license": "NASA Earth science open data; source collection license applies",
+      "url": "https://nasademeuwest.blob.core.windows.net/nasadem-cog/v001/NASADEM_HGT_n25e090.tif",
+      "retrieved_at": "2026-11-02T16:06:51.977623+00:00",
+      "query": {
+        "method": "HTTP range/native raster window",
+        "bounds_wgs84": [
+          90.96839804441166,
+          25.007403520514696,
+          91,
+          25.192575427049295
+        ],
+        "tile": "NASADEM_HGT_n25e090"
+      },
+      "source_reused_local": false,
+      "vertical_reference": "EGM96 geoid, meters",
+      "native_resolution": "1 arc-second"
+    },
+    {
+      "case_id": "tanguar_wetland",
+      "file": "data/context/context-v2/terrain/tanguar_wetland_NASADEM_HGT_n25e091.tif",
+      "sha256": "3cd104ba8c3830bf114b2c4d962906ccd20d3614a4ce3d74eb93d35ca98a8d0f",
+      "size_bytes": 180116,
+      "provider": "Microsoft Planetary Computer (USA)",
+      "upstream": "NASA/JPL/USGS NASADEM (USA)",
+      "dataset": "NASADEM HGT v001",
+      "license": "NASA Earth science open data; source collection license applies",
+      "url": "https://nasademeuwest.blob.core.windows.net/nasadem-cog/v001/NASADEM_HGT_n25e091.tif",
+      "retrieved_at": "2026-11-02T16:06:54.939582+00:00",
+      "query": {
+        "method": "HTTP range/native raster window",
+        "bounds_wgs84": [
+          91,
+          25.007403520514696,
+          91.19129876459132,
+          25.192575427049295
+        ],
+        "tile": "NASADEM_HGT_n25e091"
+      },
+      "source_reused_local": false,
+      "vertical_reference": "EGM96 geoid, meters",
+      "native_resolution": "1 arc-second"
+    }
+  ],
+  "raw_full_tiles_downloaded": 0,
+  "note": "Native source windows only; no signed URLs or credentials saved."
+}

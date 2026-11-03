@@ -1,0 +1,9 @@
+{
+  "status": "STATIC_SCIENTIFIC_FIGURES_INSPECTED",
+  "inspected": [
+    "threshold_sensitivity.png",
+    "dualpol_atlas.png"
+  ],
+  "observed": "Visible curves, endpoint RGB previews, signed CPR maps, date legends and numeric axes; no clipping or empty panels observed at the inspected full-figure scale. Distinct markers/line styles supplement curve colors.",
+  "limits": "Figure review only. App browser layout, accessibility, GPU and mobile rendering not tested. Sensitivity panels use different km\u00b2 ranges for within-case analysis."
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+  "query": {
+    "collections": [
+      "hls2-l30",
+      "hls2-s30"
+    ],
+    "bbox": [
+      89.60896471693857,
+      24.39765950515116,
+      89.81072414632627,
+      24.582291708894346
+    ],
+    "datetime": "2026-06-13T23:21:35+00:00/2026-10-21T23:21:32+00:00",
+    "limit": 1000
+  },
+  "method": "POST",
+  "retrieved_at": "2026-11-02T16:29:36.794564+00:00",
+  "provider": "Microsoft Planetary Computer (USA)",
+  "upstream": "NASA HLS; USGS/NASA Landsat, ESA Sentinel-2",
+  "freeze_commit": "8892340",
+  "status": "complete",
+  "count": 59,
+  "sha256": "de9ead68c3da52987b61368d431367264160bb5ed08353ddbc2ff8c304eb05bc"
+}

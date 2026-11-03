@@ -1,0 +1,16 @@
+{
+  "status": "confirmed",
+  "start": "2026-07-27T22:03:25Z",
+  "end": "2026-08-10T00:55:27Z",
+  "source_url": "https://nisar-docs.asf.alaska.edu/availability-overview/",
+  "provider": "Alaska Satellite Facility DAAC, University of Alaska Fairbanks, USA",
+  "upstream": "NASA\u2013ISRO NISAR mission (USA/India)",
+  "retrieved_at": "2026-11-02T14:56:24.010061+00:00",
+  "query": {
+    "method": "GET",
+    "url": "https://nisar-docs.asf.alaska.edu/availability-overview/"
+  },
+  "snapshot_path": "reports/phase1_2026_11_02/asf_availability.html",
+  "sha256": "1381b9b8f2a693d75fa43f7c82e624a81d9b3f0a20b9a0520ecb7e50cede82db",
+  "license": "Official documentation cited for factual gap timestamps; no separate documentation redistribution license asserted."
+}

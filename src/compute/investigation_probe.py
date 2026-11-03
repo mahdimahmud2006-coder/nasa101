@@ -28,7 +28,7 @@ def probe(directory, row, col):
     a,b,c0,d,e,f=manifest['grid']['affine']
     x,y=a*(col+.5)+b*(row+.5)+c0,d*(col+.5)+e*(row+.5)+f
     lon,lat=Transformer.from_crs(manifest['grid']['crs'],'EPSG:4326',always_xy=True).transform(x,y)
-    return {'case_id':manifest['case_id'],'label':f'Fixed neighborhood at {lat:.5f}° N, {lon:.5f}° E',
+    return {'case_id':manifest['case_id'],'record_version':manifest.get('record_version','original'),'label':f'Fixed neighborhood at {lat:.5f}° N, {lon:.5f}° E',
             'selection':'User-selected native neighborhood, clipped at grid edges; not an independent event reference.',
             'center_row':row,'center_col':col,'longitude':lon,'latitude':lat,
             'window':{'row':r,'col':c,'height':h,'width':w},**result}

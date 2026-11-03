@@ -1,3 +1,5 @@
+import {readView,writeView,legacyChoice} from '/investigation-state.mjs';
+const linkedView=readView(globalThis.window?.location?.hash||'');
 import {TerrainView} from '/terrain-view.mjs';
 import {createPlayback} from '/playback.mjs';
 const $=id=>document.getElementById(id),base='/cases/nepal_case_01/',landslideBase=base+'landslide/';
@@ -55,7 +57,7 @@ async function renderMap(){
  document.querySelectorAll('[data-lab-date]').forEach(b=>{const current=Number(b.dataset.labDate)===state.index;b.classList.toggle('active',current);if(current)b.setAttribute('aria-current','date');else b.removeAttribute('aria-current');});
  $('lab-loading').hidden=true;$('lab-landscape').setAttribute('aria-busy','false');renderScore();renderDNA();
 }
-async function select(index){state.index=index;state.probe=null;if(state.layer==='modifier'&&!observation().radar_available)state.layer='total';await renderMap();}
+async function select(index){state.index=index;writeView({case:'nepal_surface',date:observation().timestamp,mode:'surface',overlay:state.layer,footprint:'zone:'+state.zone});state.probe=null;if(state.layer==='modifier'&&!observation().radar_available)state.layer='total';await renderMap();}
 async function inspect(point){
  player.pause();if(state.layer==='flood'||state.layer==='radar'){$('lab-probe-detail').textContent='Select a landslide component layer to inspect its susceptibility cell.';return;}
  const token=state.generation;
@@ -95,7 +97,7 @@ $('lab-export').addEventListener('click',()=>{const payload={case_id:state.lands
 document.addEventListener('visibilitychange',()=>{if(document.hidden)player?.pause();});window.addEventListener('pagehide',()=>player?.destroy());
 try{
  const [dna,landslide,flood,timeline,mesh]=await Promise.all([json(base+'dna/manifest.json'),json(base+'landslide/manifest.json'),json(base+'flood/manifest.json'),json(base+'timeseries/timeline.json'),json(base+'flood/terrain_mesh.json')]);
- state.dna=dna;state.landslide=landslide;state.flood=flood;state.timeline=timeline;state.zone=dna.profiles[0]?.zone_id||null;state.index=landslide.observations.length-1;
+ state.dna=dna;state.landslide=landslide;state.flood=flood;state.timeline=timeline;state.zone=dna.profiles[0]?.zone_id||null;const shared=legacyChoice(linkedView,landslide.observations);state.index=shared.index;$('shared-workspace-note').textContent=shared.note;if(['radar','total','context','modifier'].includes(linkedView.overlay))state.layer=linkedView.overlay;
  terrain=new TerrainView($('lab-landscape'),mesh,{onPick:inspect,onStatus:text=>{$('lab-terrain-note').textContent=text;$('lab-3d').disabled=true;$('lab-3d').classList.remove('active');$('lab-2d').classList.add('active');}});
  $('dna-zone').innerHTML=dna.profiles.map(p=>`<option value="${esc(p.zone_id)}">${esc(p.zone_id)}</option>`).join('');$('dna-zone').disabled=dna.profiles.length<2;
  $('focus-dna').disabled=!state.zone;

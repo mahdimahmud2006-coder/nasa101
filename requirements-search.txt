@@ -1,0 +1,2 @@
+# Optional archive metadata search; never needed by ./run.sh or make verify.
+asf-search==14.1.0

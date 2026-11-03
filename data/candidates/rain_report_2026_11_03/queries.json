@@ -1,0 +1,47 @@
+[
+  {
+    "short_name": "GPM_3IMERGHH",
+    "query": {
+      "short_name": "GPM_3IMERGHH",
+      "version": "07",
+      "temporal": "2026-06-11T00:00:00Z,2026-10-19T23:59:59Z",
+      "bounding_box": "85.19,24.39,91.18,28.26",
+      "page_size": 1
+    },
+    "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPM_3IMERGHH&version=07&temporal=2026-06-11T00%3A00%3A00Z%2C2026-10-19T23%3A59%3A59Z&bounding_box=85.19%2C24.39%2C91.18%2C28.26&page_size=1",
+    "retrieved_at": "2026-11-03T12:10:11.960775+00:00",
+    "http_status": 200,
+    "hits": 0,
+    "sha256": "1b68221d650823b0697e672a42e09e5cb2de0008a852cee033309868fe4fdf42"
+  },
+  {
+    "short_name": "GPM_3IMERGHHL",
+    "query": {
+      "short_name": "GPM_3IMERGHHL",
+      "version": "07",
+      "temporal": "2026-06-11T00:00:00Z,2026-10-19T23:59:59Z",
+      "bounding_box": "85.19,24.39,91.18,28.26",
+      "page_size": 1
+    },
+    "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPM_3IMERGHHL&version=07&temporal=2026-06-11T00%3A00%3A00Z%2C2026-10-19T23%3A59%3A59Z&bounding_box=85.19%2C24.39%2C91.18%2C28.26&page_size=1",
+    "retrieved_at": "2026-11-03T12:10:12.638347+00:00",
+    "http_status": 200,
+    "hits": 6288,
+    "sha256": "976eebc390b582ef5dd536a85799786bb5f16c35cef0b6fb9101253385f9a1e3"
+  },
+  {
+    "short_name": "GPM_3IMERGHHE",
+    "query": {
+      "short_name": "GPM_3IMERGHHE",
+      "version": "07",
+      "temporal": "2026-06-11T00:00:00Z,2026-10-19T23:59:59Z",
+      "bounding_box": "85.19,24.39,91.18,28.26",
+      "page_size": 1
+    },
+    "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPM_3IMERGHHE&version=07&temporal=2026-06-11T00%3A00%3A00Z%2C2026-10-19T23%3A59%3A59Z&bounding_box=85.19%2C24.39%2C91.18%2C28.26&page_size=1",
+    "retrieved_at": "2026-11-03T12:10:13.258310+00:00",
+    "http_status": 200,
+    "hits": 6288,
+    "sha256": "365e3caf75432028f05a519a4e718470e58054a1414814d095268b7f6c864091"
+  }
+]

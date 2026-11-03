@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "files_checked": 524,
+  "total_bytes": 38950492,
+  "findings": [],
+  "scope": "Current publication set, known credential patterns and large/local files; not a certificate that every possible secret format is absent."
+}

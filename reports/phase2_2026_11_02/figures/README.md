@@ -1,0 +1,1 @@
+Static scientific figure QA only. Native values, masks and common support are verified by src.compute.validate_dualpol. RGB is descriptive and is not perceptually uniform scalar data. Browser UI remains unverified. Source rows: web/public/cases/*/dualpol-v1/sensitivity.json and manifest.json. Matplotlib 3.11.2.

@@ -1,0 +1,1447 @@
+{
+  "schema_version": 1,
+  "version": "expanded-v1",
+  "case_id": "nepal_surface",
+  "title": "Kathmandu \u00b7 persistence investigation",
+  "grid": {
+    "shape": [
+      2400,
+      2400
+    ],
+    "affine": [
+      10.0,
+      0.0,
+      323480.0,
+      0.0,
+      -10.0,
+      3088170.0
+    ],
+    "crs": "EPSG:32645",
+    "pixel_area_km2": 0.0001,
+    "bounds_wgs84": [
+      85.20639099989948,
+      27.690230304043727,
+      85.45324557837118,
+      27.909743780696033
+    ]
+  },
+  "reference_timestamp": "2026-08-19T23:39:18Z",
+  "reference_index": 4,
+  "observations": [
+    {
+      "observation_id": "acq_20260620T233921",
+      "timestamp": "2026-06-20T23:39:21Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_023_098_A_016_4005_DHDH_A_20260620T233921_20260620T233956_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_023_098_A_016_4005_DHDH_A_20260620T233921_20260620T233956_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_0.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_0.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_0.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_0.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_0.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_0.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_0.tif",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_0.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "bb163ccd2d178acac761fe23f1d044230815868601327dfcd29745d20b5199cf",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5660902,
+          "total_pixels": 5760000,
+          "masked_pixels": 99098,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0010606348514556885,
+            3693.9375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5646654,
+          "processed_sha256": "83baf95e674e0bb23777565f13fa95a70cf85bb912b150c85e070298a38b4eec",
+          "valid_fraction": 0.980321875
+        },
+        "hv": {
+          "window_sha256": "c4ca10b59abafefce3a4bb5d97f21ffabca644a493852b35284131236d76b293",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5660902,
+          "total_pixels": 5760000,
+          "masked_pixels": 99098,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.00044065341353416443,
+            2512.90625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5646654,
+          "processed_sha256": "203e824fb945503a6c6be5ff949dbc9ac61e4261e391f95b138de95a58bea422",
+          "valid_fraction": 0.980321875
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20260702T233920",
+      "timestamp": "2026-07-02T23:39:20Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_024_098_A_016_4005_DHDH_A_20260702T233920_20260702T233955_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_024_098_A_016_4005_DHDH_A_20260702T233920_20260702T233955_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_1.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_1.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_1.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_1.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_1.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_1.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_1.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_1.tif",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_1.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "7bbdb812f335da84d8fdee1bd559a4f75b8f8ab98db534e1ddd00b15f4b38968",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5756692,
+          "total_pixels": 5760000,
+          "masked_pixels": 3308,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.00108356773853302,
+            3899.15625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5742484,
+          "processed_sha256": "b99bd85be36dfa4ae6e9e1fc94246bd2c92243fd6fdfe08d37755ab4427529c8",
+          "valid_fraction": 0.9969590277777778
+        },
+        "hv": {
+          "window_sha256": "453f14fa4cddf20c3f4cbbe14720d5e61616b58d7477afb154e0f7986eca98c3",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5756692,
+          "total_pixels": 5760000,
+          "masked_pixels": 3308,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.0003692209720611572,
+            2496.5625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5742484,
+          "processed_sha256": "913f30f3fadcdac1edd8f41e08601f47b961e4bbfc53f37a7c2f0debd56d6a2e",
+          "valid_fraction": 0.9969590277777778
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20260714T233920",
+      "timestamp": "2026-07-14T23:39:20Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_025_098_A_016_4005_DHDH_A_20260714T233920_20260714T233954_P05023_F_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_025_098_A_016_4005_DHDH_A_20260714T233920_20260714T233954_P05023_F_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_2.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_2.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_2.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_2.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_2.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_2.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_2.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_2.tif",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_2.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "d5eb6a2ff13a1d9c5a6b0866a24c5148290c200cd84423d7dfefaa0aa105c63e",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5378152,
+          "total_pixels": 5760000,
+          "masked_pixels": 381848,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0006393566727638245,
+            4939.125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5363903,
+          "processed_sha256": "4c917301938dc70f4827003bc7d10e6d9ae0dbee38f039d3f577bf5be1201171",
+          "valid_fraction": 0.9312331597222222
+        },
+        "hv": {
+          "window_sha256": "7fafb4773046d08f54b8e7944478d18b921b65092332602df68b47c652d3b92f",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5378152,
+          "total_pixels": 5760000,
+          "masked_pixels": 381848,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0002459101378917694,
+            2237.90625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5363903,
+          "processed_sha256": "7e75f291f7ad28d658e12864da0333b7c6755987d8e7fe1c8a569d8aa0c343a1",
+          "valid_fraction": 0.9312331597222222
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20260726T233919",
+      "timestamp": "2026-07-26T23:39:19Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_3.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_3.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_3.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_3.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_3.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_3.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_3.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_3.tif",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_3.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "9f89f7d90a43d37ee428577d7411344d9040832bf58198f487eb604006f395e8",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5736409,
+          "total_pixels": 5760000,
+          "masked_pixels": 23591,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0008910521864891052,
+            4523.5
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5722147,
+          "processed_sha256": "259178b46abcfee4eca5936a687d14b588dc34aab2cdce8adcd70382376d136c",
+          "valid_fraction": 0.9934282986111111
+        },
+        "hv": {
+          "window_sha256": "6744625ceef899a8d2db00c0f875062029434a103d5268eacab7caba4a4bfeca",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5736409,
+          "total_pixels": 5760000,
+          "masked_pixels": 23591,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0004421807825565338,
+            2194.375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5722147,
+          "processed_sha256": "0d9a8b4891693df264863296e2547030ad8a1325cea5e923ab287db7b3bc860d",
+          "valid_fraction": 0.9934282986111111
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20260819T233918",
+      "timestamp": "2026-08-19T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "source_file": "aug19.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_4.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_4.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_4.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_4.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_4.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_4.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_4.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/investigation/hh_0.tif",
+        "hv": "/cases/nepal_surface/investigation/hv_0.tif"
+      },
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9957177083333333,
+          "window_sha256": "39bc00456c0571f8e9623a1455b9ebc25a22534567faf85556c25d9881e3a35f",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5749602,
+          "total_pixels": 5760000,
+          "masked_pixels": 10398,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0010920614004135132,
+            3732.875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5735334,
+          "processed_sha256": "3b16c0495173750f3e02e609f9de69ba57b49250029e1c8f778edb3675498f9e",
+          "preserved_cog_sha256": "371e9753c3c27fcd18d0cdef35edb78ed9a7c13f77f98800b3c071f1172d073f"
+        },
+        "hv": {
+          "valid_fraction": 0.9957177083333333,
+          "window_sha256": "b91cc69fbcec97e094389d1cfb95052445eb0421c4de55ea5c15bd2a007c364e",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5749602,
+          "total_pixels": 5760000,
+          "masked_pixels": 10398,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.00030270591378211975,
+            2307.4375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5735334,
+          "processed_sha256": "aa691eb0b1b4e93a7972924c535302a051510c953cc5ed97e0d573af77fa6a74",
+          "preserved_cog_sha256": "88b561cf0fa6135b68a67ba38a3edc6c687612c68b12c4115d8c8c126df9402e"
+        }
+      },
+      "preserved_original_observation": true
+    },
+    {
+      "observation_id": "acq_20260831T233918",
+      "timestamp": "2026-08-31T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+      "source_file": "aug31.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_5.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_5.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_5.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_5.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_5.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_5.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_5.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/investigation/hh_1.tif",
+        "hv": "/cases/nepal_surface/investigation/hv_1.tif"
+      },
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9824032986111111,
+          "window_sha256": "3b3d5458da8fc62a2ffb6982063259c0edd74bcae2ae963535a2f1d33b2966e0",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5672910,
+          "total_pixels": 5760000,
+          "masked_pixels": 87090,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0010997653007507324,
+            4328.5
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5658643,
+          "processed_sha256": "5f667ace3fb6b21057cc1fcb6ead85d9db3b9861e890127f654525a643885dd8",
+          "preserved_cog_sha256": "c856494c50d9079b5401dc116dba84ac14b39f23db596d013a88cb5888318201"
+        },
+        "hv": {
+          "valid_fraction": 0.9824032986111111,
+          "window_sha256": "37f9b4f6dc98803afc971ddae41f0ffc43acffc226f5500aed00fa75e542568e",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5672910,
+          "total_pixels": 5760000,
+          "masked_pixels": 87090,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.00024074502289295197,
+            2110.78125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5658643,
+          "processed_sha256": "569ee7e3b480f1ae89dcc3cb87ce541fa1924caa268bb3134f738ac0103a2f77",
+          "preserved_cog_sha256": "11f34b5d385e021063f88f54697b669acdb34ac3e26376f84930d6712bf8fc9f"
+        }
+      },
+      "preserved_original_observation": true
+    },
+    {
+      "observation_id": "acq_20260912T233918",
+      "timestamp": "2026-09-12T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001",
+      "source_file": "sept12.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_6.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_6.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_6.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_6.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_6.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_6.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_6.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/investigation/hh_2.tif",
+        "hv": "/cases/nepal_surface/investigation/hv_2.tif"
+      },
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9511527777777777,
+          "window_sha256": "039a403ec9cd7518d11ada865e20b87043edc45b3f793ff8357dee0014d9f49b",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5492956,
+          "total_pixels": 5760000,
+          "masked_pixels": 267044,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0004240088164806366,
+            3325.15625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5478640,
+          "processed_sha256": "b9c5ae6049d61afdf749ae70ab2af290cec2ce51a704f0646c5307106f4351a3",
+          "preserved_cog_sha256": "d658694902e4cab4f75e8320000e9523e290ddb45dca220c3fcaf173906017b4"
+        },
+        "hv": {
+          "valid_fraction": 0.9511527777777777,
+          "window_sha256": "70112624a1cae86eceabbc795226e948fe57d787de5f1b572e69820f800596e3",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5492956,
+          "total_pixels": 5760000,
+          "masked_pixels": 267044,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0003457479178905487,
+            2133.25
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5478640,
+          "processed_sha256": "c4b7bc7ab17f3f8fc85a7cfa2e2103d576a39f9df3f63cfd92c8d62c5249a843",
+          "preserved_cog_sha256": "39096f8cfb6f5d426275593076332ddbdafc525fe0ba5c6199e1ded425e9597a"
+        }
+      },
+      "preserved_original_observation": true
+    },
+    {
+      "observation_id": "acq_20260924T233918",
+      "timestamp": "2026-09-24T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_7.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_7.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_7.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_7.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_7.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_7.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_7.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_7.tif",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_7.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "12655a543ad673340fc22e3a67b8ff363ebc489676a748bb7fe270f667d726ce",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5569839,
+          "total_pixels": 5760000,
+          "masked_pixels": 190161,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0006313472986221313,
+            4714.125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5555542,
+          "processed_sha256": "5b20cef5bd97aa8250c5b02b70a3a913030d678f2d041b9e191775b0296c8093",
+          "valid_fraction": 0.9645038194444444
+        },
+        "hv": {
+          "window_sha256": "9a9c176ea67a77b61407c563b8ae5308a58ed8b5e59f4dc1ffe486a874ee1b2e",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5569839,
+          "total_pixels": 5760000,
+          "masked_pixels": 190161,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            5.144299939274788e-05,
+            2250.09375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5555542,
+          "processed_sha256": "58a0f8d52c1fb848d2e464e7807d4713409f19bfbaec2007d83986a423b38b75",
+          "valid_fraction": 0.9645038194444444
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20261006T233918",
+      "timestamp": "2026-10-06T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_8.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_8.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_8.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_8.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_8.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_8.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_8.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_8.tif",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_8.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "ae9880b47e5141beab998e1a8ef01b9dc4f72e10fab0ed499da2fa2b69a82d8a",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5686193,
+          "total_pixels": 5760000,
+          "masked_pixels": 73807,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.00031600892543792725,
+            4456.8125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5671927,
+          "processed_sha256": "2fdbff24c26bafa3b3adf1fb8d7f9a759888d240760a3bbf9b24b0e2859e2969",
+          "valid_fraction": 0.9847095486111112
+        },
+        "hv": {
+          "window_sha256": "21cf48cc371f92f9a1157cd80c2fd5821de522bae91b822982b3ae0d7748c2e5",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5686193,
+          "total_pixels": 5760000,
+          "masked_pixels": 73807,
+          "mask_values": [
+            0,
+            1,
+            255
+          ],
+          "positive_power_range": [
+            0.0003142058849334717,
+            2506.53125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5671927,
+          "processed_sha256": "d9d248bc86c9cd50d510cadfbd0b95d82d2ca0a839a028c8bacf93f046acf905",
+          "valid_fraction": 0.9847095486111112
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20261018T233918",
+      "timestamp": "2026-10-18T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_9.png",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_9.png",
+        "cpr": "/cases/nepal_surface/expanded-v1/cpr_9.png",
+        "hh_reference": "/cases/nepal_surface/expanded-v1/hh_reference_9.png",
+        "hv_reference": "/cases/nepal_surface/expanded-v1/hv_reference_9.png",
+        "cpr_reference": "/cases/nepal_surface/expanded-v1/cpr_reference_9.png",
+        "hh_successive": "/cases/nepal_surface/expanded-v1/hh_successive_9.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_surface/expanded-v1/hh_9.tif",
+        "hv": "/cases/nepal_surface/expanded-v1/hv_9.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "a43f3989b14a24e08218fad19df9ec473c34a1e2b5ae680a17790aace9ed972b",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5756659,
+          "total_pixels": 5760000,
+          "masked_pixels": 3341,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.0009026676416397095,
+            3233.09375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5742363,
+          "processed_sha256": "0747f0ea51076d7c7756ed6bd63083e309275f46f21e98c57ec7bf141a360489",
+          "valid_fraction": 0.9969380208333334
+        },
+        "hv": {
+          "window_sha256": "68c639fbfb9c26c10210592b2190ce08db111ee7a865b414206f5ff2bae0c5c4",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5756659,
+          "total_pixels": 5760000,
+          "masked_pixels": 3341,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.00037564709782600403,
+            2457.78125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5742363,
+          "processed_sha256": "aa922b8293644dc348361ddc749ad3a26ac48e9f1e94d0c60d2e89728337a325",
+          "valid_fraction": 0.9969380208333334
+        }
+      },
+      "preserved_original_observation": false
+    }
+  ],
+  "profiles": [
+    {
+      "label": "Previously tracked 1.99-hectare zone",
+      "footprint_pixels": 199,
+      "common_valid_pixels": 199,
+      "common_valid_area_km2": 0.0199,
+      "reference_timestamp": "2026-08-19T23:39:18Z",
+      "support": "Same HH/HV-valid native pixel centers across every expanded visit; may be smaller than the preserved original three-date support.",
+      "observations": [
+        {
+          "timestamp": "2026-06-20T23:39:21Z",
+          "observation_id": "acq_20260620T233921",
+          "hh_mean_db": -7.673768866226901,
+          "hh_reference_delta_db": -2.9036983977886264,
+          "hh_successive_delta_db": null,
+          "hv_mean_db": -15.476505634173677,
+          "hv_reference_delta_db": 0.290536976339828,
+          "hv_successive_delta_db": null,
+          "cpr_mean_db": -7.802736767946776,
+          "cpr_reference_delta_db": 3.1942353741284544
+        },
+        {
+          "timestamp": "2026-07-02T23:39:20Z",
+          "observation_id": "acq_20260702T233920",
+          "hh_mean_db": -8.152063801060969,
+          "hh_reference_delta_db": -3.3819933326226943,
+          "hh_successive_delta_db": -0.47829493483406793,
+          "hv_mean_db": -15.985073933050261,
+          "hv_reference_delta_db": -0.21803132253675628,
+          "hv_successive_delta_db": -0.5085682988765843,
+          "cpr_mean_db": -7.833010131989292,
+          "cpr_reference_delta_db": 3.163962010085938
+        },
+        {
+          "timestamp": "2026-07-14T23:39:20Z",
+          "observation_id": "acq_20260714T233920",
+          "hh_mean_db": -7.6859730224513525,
+          "hh_reference_delta_db": -2.915902554013078,
+          "hh_successive_delta_db": 0.46609077860961623,
+          "hv_mean_db": -15.544309510657536,
+          "hv_reference_delta_db": 0.22273309985596867,
+          "hv_successive_delta_db": 0.44076442239272495,
+          "cpr_mean_db": -7.8583364882061835,
+          "cpr_reference_delta_db": 3.1386356538690467
+        },
+        {
+          "timestamp": "2026-07-26T23:39:19Z",
+          "observation_id": "acq_20260726T233919",
+          "hh_mean_db": -6.623165262404399,
+          "hh_reference_delta_db": -1.8530947939661244,
+          "hh_successive_delta_db": 1.0628077600469537,
+          "hv_mean_db": -16.442358932303424,
+          "hv_reference_delta_db": -0.6753163217899196,
+          "hv_successive_delta_db": -0.8980494216458883,
+          "cpr_mean_db": -9.819193669899025,
+          "cpr_reference_delta_db": 1.1777784721762048
+        },
+        {
+          "timestamp": "2026-08-19T23:39:18Z",
+          "observation_id": "acq_20260819T233918",
+          "hh_mean_db": -4.770070468438274,
+          "hh_reference_delta_db": 0.0,
+          "hh_successive_delta_db": 1.8530947939661244,
+          "hv_mean_db": -15.767042610513505,
+          "hv_reference_delta_db": 0.0,
+          "hv_successive_delta_db": 0.6753163217899196,
+          "cpr_mean_db": -10.99697214207523,
+          "cpr_reference_delta_db": 0.0
+        },
+        {
+          "timestamp": "2026-08-31T23:39:18Z",
+          "observation_id": "acq_20260831T233918",
+          "hh_mean_db": -12.296379446384297,
+          "hh_reference_delta_db": -7.526308977946022,
+          "hh_successive_delta_db": -7.526308977946022,
+          "hv_mean_db": -17.57819671007856,
+          "hv_reference_delta_db": -1.8111540995650568,
+          "hv_successive_delta_db": -1.8111540995650568,
+          "cpr_mean_db": -5.281817263694265,
+          "cpr_reference_delta_db": 5.715154878380965
+        },
+        {
+          "timestamp": "2026-09-12T23:39:18Z",
+          "observation_id": "acq_20260912T233918",
+          "hh_mean_db": -11.84668738877953,
+          "hh_reference_delta_db": -7.076616920341256,
+          "hh_successive_delta_db": 0.44969205760476605,
+          "hv_mean_db": -18.2180269902675,
+          "hv_reference_delta_db": -2.4509843797539954,
+          "hv_successive_delta_db": -0.6398302801889386,
+          "cpr_mean_db": -6.3713396014879695,
+          "cpr_reference_delta_db": 4.625632540587261
+        },
+        {
+          "timestamp": "2026-09-24T23:39:18Z",
+          "observation_id": "acq_20260924T233918",
+          "hh_mean_db": -11.688373206248835,
+          "hh_reference_delta_db": -6.918302737810561,
+          "hh_successive_delta_db": 0.1583141825306953,
+          "hv_mean_db": -18.01721430543679,
+          "hv_reference_delta_db": -2.250171694923287,
+          "hv_successive_delta_db": 0.20081268483070858,
+          "cpr_mean_db": -6.328841099187956,
+          "cpr_reference_delta_db": 4.668131042887274
+        },
+        {
+          "timestamp": "2026-10-06T23:39:18Z",
+          "observation_id": "acq_20261006T233918",
+          "hh_mean_db": -11.017829756041866,
+          "hh_reference_delta_db": -6.247759287603592,
+          "hh_successive_delta_db": 0.6705434502069689,
+          "hv_mean_db": -17.44866161729822,
+          "hv_reference_delta_db": -1.6816190067847163,
+          "hv_successive_delta_db": 0.5685526881385705,
+          "cpr_mean_db": -6.430831861256355,
+          "cpr_reference_delta_db": 4.566140280818876
+        },
+        {
+          "timestamp": "2026-10-18T23:39:18Z",
+          "observation_id": "acq_20261018T233918",
+          "hh_mean_db": -11.336414888276527,
+          "hh_reference_delta_db": -6.566344419838253,
+          "hh_successive_delta_db": -0.3185851322346611,
+          "hv_mean_db": -18.201610972533874,
+          "hv_reference_delta_db": -2.4345683620203697,
+          "hv_successive_delta_db": -0.7529493552356534,
+          "cpr_mean_db": -6.865196084257347,
+          "cpr_reference_delta_db": 4.131776057817883
+        }
+      ]
+    },
+    {
+      "label": "Whole study crop \u00b7 common-valid mean",
+      "footprint_pixels": 5760000,
+      "common_valid_pixels": 5363401,
+      "common_valid_area_km2": 536.3401,
+      "reference_timestamp": "2026-08-19T23:39:18Z",
+      "support": "Same HH/HV-valid native pixel centers across every expanded visit; may be smaller than the preserved original three-date support.",
+      "observations": [
+        {
+          "timestamp": "2026-06-20T23:39:21Z",
+          "observation_id": "acq_20260620T233921",
+          "hh_mean_db": -5.694192560272122,
+          "hh_reference_delta_db": -0.33215680959073257,
+          "hh_successive_delta_db": null,
+          "hv_mean_db": -11.751957728376079,
+          "hv_reference_delta_db": -0.1707251903145206,
+          "hv_successive_delta_db": null,
+          "cpr_mean_db": -6.057765168103956,
+          "cpr_reference_delta_db": 0.16143161927621197
+        },
+        {
+          "timestamp": "2026-07-02T23:39:20Z",
+          "observation_id": "acq_20260702T233920",
+          "hh_mean_db": -5.692085681134453,
+          "hh_reference_delta_db": -0.33004993045306374,
+          "hh_successive_delta_db": 0.0021068791376688267,
+          "hv_mean_db": -11.539214271315851,
+          "hv_reference_delta_db": 0.04201826674570697,
+          "hv_successive_delta_db": 0.21274345706022757,
+          "cpr_mean_db": -5.847128590181398,
+          "cpr_reference_delta_db": 0.3720681971987707
+        },
+        {
+          "timestamp": "2026-07-14T23:39:20Z",
+          "observation_id": "acq_20260714T233920",
+          "hh_mean_db": -5.598917334097446,
+          "hh_reference_delta_db": -0.23688158341605625,
+          "hh_successive_delta_db": 0.09316834703700749,
+          "hv_mean_db": -11.631572542410517,
+          "hv_reference_delta_db": -0.0503400043489588,
+          "hv_successive_delta_db": -0.09235827109466577,
+          "cpr_mean_db": -6.032655208313071,
+          "cpr_reference_delta_db": 0.18654157906709745
+        },
+        {
+          "timestamp": "2026-07-26T23:39:19Z",
+          "observation_id": "acq_20260726T233919",
+          "hh_mean_db": -5.455429103587632,
+          "hh_reference_delta_db": -0.09339335290624273,
+          "hh_successive_delta_db": 0.14348823050981352,
+          "hv_mean_db": -11.504534859577193,
+          "hv_reference_delta_db": 0.07669767848436493,
+          "hv_successive_delta_db": 0.12703768283332373,
+          "cpr_mean_db": -6.049105755989561,
+          "cpr_reference_delta_db": 0.17009103139060766
+        },
+        {
+          "timestamp": "2026-08-19T23:39:18Z",
+          "observation_id": "acq_20260819T233918",
+          "hh_mean_db": -5.36203575068139,
+          "hh_reference_delta_db": 0.0,
+          "hh_successive_delta_db": 0.09339335290624273,
+          "hv_mean_db": -11.581232538061558,
+          "hv_reference_delta_db": 0.0,
+          "hv_successive_delta_db": -0.07669767848436493,
+          "cpr_mean_db": -6.219196787380168,
+          "cpr_reference_delta_db": 0.0
+        },
+        {
+          "timestamp": "2026-08-31T23:39:18Z",
+          "observation_id": "acq_20260831T233918",
+          "hh_mean_db": -5.037404498725452,
+          "hh_reference_delta_db": 0.324631251955938,
+          "hh_successive_delta_db": 0.324631251955938,
+          "hv_mean_db": -11.381491694620745,
+          "hv_reference_delta_db": 0.19974084344081255,
+          "hv_successive_delta_db": 0.19974084344081255,
+          "cpr_mean_db": -6.344087195895294,
+          "cpr_reference_delta_db": -0.12489040851512545
+        },
+        {
+          "timestamp": "2026-09-12T23:39:18Z",
+          "observation_id": "acq_20260912T233918",
+          "hh_mean_db": -5.0880121489332035,
+          "hh_reference_delta_db": 0.2740236017481861,
+          "hh_successive_delta_db": -0.05060765020775193,
+          "hv_mean_db": -11.450939421711587,
+          "hv_reference_delta_db": 0.13029311634997143,
+          "hv_successive_delta_db": -0.06944772709084113,
+          "cpr_mean_db": -6.362927272778383,
+          "cpr_reference_delta_db": -0.14373048539821465
+        },
+        {
+          "timestamp": "2026-09-24T23:39:18Z",
+          "observation_id": "acq_20260924T233918",
+          "hh_mean_db": -4.582652279841816,
+          "hh_reference_delta_db": 0.7793834708395737,
+          "hh_successive_delta_db": 0.5053598690913876,
+          "hv_mean_db": -10.94925941220513,
+          "hv_reference_delta_db": 0.6319731258564278,
+          "hv_successive_delta_db": 0.5016800095064564,
+          "cpr_mean_db": -6.366607132363314,
+          "cpr_reference_delta_db": -0.14741034498314587
+        },
+        {
+          "timestamp": "2026-10-06T23:39:18Z",
+          "observation_id": "acq_20261006T233918",
+          "hh_mean_db": -5.323602877095378,
+          "hh_reference_delta_db": 0.03843287358601177,
+          "hh_successive_delta_db": -0.7409505972535619,
+          "hv_mean_db": -11.485729440084793,
+          "hv_reference_delta_db": 0.09550309797676526,
+          "hv_successive_delta_db": -0.5364700278796626,
+          "cpr_mean_db": -6.162126562989415,
+          "cpr_reference_delta_db": 0.05707022439075349
+        },
+        {
+          "timestamp": "2026-10-18T23:39:18Z",
+          "observation_id": "acq_20261018T233918",
+          "hh_mean_db": -5.690461392635851,
+          "hh_reference_delta_db": -0.32842564195446133,
+          "hh_successive_delta_db": -0.3668585155404731,
+          "hv_mean_db": -11.77251202968023,
+          "hv_reference_delta_db": -0.19127949161867264,
+          "hv_successive_delta_db": -0.2867825895954379,
+          "cpr_mean_db": -6.08205063704438,
+          "cpr_reference_delta_db": 0.1371461503357887
+        }
+      ]
+    }
+  ],
+  "interferometry": [
+    {
+      "identification": {
+        "granuleId": "NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001",
+        "productType": "GUNW",
+        "productLevel": "L2",
+        "productVersion": "1.0.11",
+        "compositeReleaseId": "P05023",
+        "trackNumber": 98,
+        "frameNumber": 16,
+        "orbitPassDirection": "Ascending",
+        "lookDirection": "Left",
+        "referenceZeroDopplerStartTime": "2026-08-19T23:39:18.000000000",
+        "secondaryZeroDopplerStartTime": "2026-08-31T23:39:18.000000000",
+        "referenceHasInputDataException": 0,
+        "secondaryHasInputDataException": 0
+      },
+      "timestamps": [
+        "2026-08-19T23:39:18Z",
+        "2026-08-31T23:39:18Z"
+      ],
+      "source_slc_granules": [
+        [
+          "NISAR_L1_PR_RSLC_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001.h5"
+        ],
+        [
+          "NISAR_L1_PR_RSLC_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5"
+        ]
+      ],
+      "source_file": "database/extra datasets/NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001.h5",
+      "size_bytes": 2344615936,
+      "dem_source": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+      "water_mask_source": "Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.",
+      "phase_corrections": "Source ionosphere and external correction metadata retained. Not applied by this extension. No LOS displacement published.",
+      "source_policy": "NASA\u2013ISRO, JPL / ASF DAAC; declared DEM ESA/Copernicus, water mask JRC/Google, ESA, OpenStreetMap and NASA MEaSUREs. No Chinese provider identified in these declared inputs.",
+      "pair_id": "pair_0",
+      "layers": {
+        "coherence20": "/cases/nepal_surface/expanded-v1/gunw_0_coherence20.png",
+        "coherence80": "/cases/nepal_surface/expanded-v1/gunw_0_coherence80.png"
+      },
+      "rasters": {
+        "coherence20": "/cases/nepal_surface/expanded-v1/gunw_0_20_coherence.tif",
+        "mask20": "/cases/nepal_surface/expanded-v1/gunw_0_20_mask.tif",
+        "coherence_valid20": "/cases/nepal_surface/expanded-v1/gunw_0_20_coherence_valid.tif",
+        "coherence80": "/cases/nepal_surface/expanded-v1/gunw_0_80_coherence.tif",
+        "mask80": "/cases/nepal_surface/expanded-v1/gunw_0_80_mask.tif",
+        "connected_components80": "/cases/nepal_surface/expanded-v1/gunw_0_80_connected_components.tif",
+        "phase_radians80": "/cases/nepal_surface/expanded-v1/gunw_0_80_phase_radians.tif",
+        "ionosphere_radians80": "/cases/nepal_surface/expanded-v1/gunw_0_80_ionosphere_radians.tif",
+        "ionosphere_uncertainty_radians80": "/cases/nepal_surface/expanded-v1/gunw_0_80_ionosphere_uncertainty_radians.tif",
+        "coherence_valid80": "/cases/nepal_surface/expanded-v1/gunw_0_80_coherence_valid.tif"
+      },
+      "grids": {
+        "20": {
+          "shape": [
+            1201,
+            1200
+          ],
+          "affine": [
+            20.0,
+            0.0,
+            323480.0,
+            0.0,
+            -20.0,
+            3088180.0
+          ],
+          "crs": "EPSG:32645",
+          "native_spacing_m": 20,
+          "source_window": [
+            12955,
+            9838,
+            1201,
+            1200
+          ],
+          "bounds": [
+            323480.0,
+            3064160.0,
+            347480.0,
+            3088180.0
+          ],
+          "window_sha256": "e52ea327793287b99d8d8cff75a4cb854898b7f601ab7d78c0c67b9c77c58043",
+          "hash_content_order": [
+            "coherence",
+            "mask"
+          ]
+        },
+        "80": {
+          "shape": [
+            301,
+            301
+          ],
+          "affine": [
+            80.0,
+            0.0,
+            323440.0,
+            0.0,
+            -80.0,
+            3088240.0
+          ],
+          "crs": "EPSG:32645",
+          "native_spacing_m": 80,
+          "source_window": [
+            3238,
+            2459,
+            301,
+            301
+          ],
+          "bounds": [
+            323440.0,
+            3064160.0,
+            347520.0,
+            3088240.0
+          ],
+          "window_sha256": "a6bac3e23087cb1cc6e5bee28f2b0fba8018053eed150afd066c9670d2b6f03d",
+          "hash_content_order": [
+            "coherence",
+            "connected_components",
+            "ionosphere_radians",
+            "ionosphere_uncertainty_radians",
+            "mask",
+            "phase_radians"
+          ]
+        }
+      },
+      "statistics": {
+        "20": {
+          "valid_pixels": 1419646,
+          "total_pixels": 1441200,
+          "valid_fraction": 0.985044407438246,
+          "mean_coherence": 0.512946115258202,
+          "median_coherence": 0.5162644982337952,
+          "below_03_pixels": 215191,
+          "below_03_note": "Illustrative summary only; not a change, damage or phase-reliability classification."
+        },
+        "80": {
+          "valid_pixels": 89234,
+          "total_pixels": 90601,
+          "valid_fraction": 0.9849118663149413,
+          "mean_coherence": 0.5003232321331164,
+          "median_coherence": 0.5104532241821289,
+          "below_03_pixels": 14142,
+          "below_03_note": "Illustrative summary only; not a change, damage or phase-reliability classification."
+        }
+      },
+      "phase_assessable_pixels": 85867,
+      "connected_component_labels": [
+        1
+      ],
+      "los_displacement_cm": null
+    },
+    {
+      "identification": {
+        "granuleId": "NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001",
+        "productType": "GUNW",
+        "productLevel": "L2",
+        "productVersion": "1.0.11",
+        "compositeReleaseId": "P05023",
+        "trackNumber": 98,
+        "frameNumber": 16,
+        "orbitPassDirection": "Ascending",
+        "lookDirection": "Left",
+        "referenceZeroDopplerStartTime": "2026-08-31T23:39:18.000000000",
+        "secondaryZeroDopplerStartTime": "2026-09-12T23:39:18.000000000",
+        "referenceHasInputDataException": 0,
+        "secondaryHasInputDataException": 0
+      },
+      "timestamps": [
+        "2026-08-31T23:39:18Z",
+        "2026-09-12T23:39:18Z"
+      ],
+      "source_slc_granules": [
+        [
+          "NISAR_L1_PR_RSLC_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5"
+        ],
+        [
+          "NISAR_L1_PR_RSLC_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001.h5"
+        ]
+      ],
+      "source_file": "database/extra datasets/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001.h5",
+      "size_bytes": 2332033024,
+      "dem_source": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+      "water_mask_source": "Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.",
+      "phase_corrections": "Source ionosphere and external correction metadata retained. Not applied by this extension. No LOS displacement published.",
+      "source_policy": "NASA\u2013ISRO, JPL / ASF DAAC; declared DEM ESA/Copernicus, water mask JRC/Google, ESA, OpenStreetMap and NASA MEaSUREs. No Chinese provider identified in these declared inputs.",
+      "pair_id": "pair_1",
+      "layers": {
+        "coherence20": "/cases/nepal_surface/expanded-v1/gunw_1_coherence20.png",
+        "coherence80": "/cases/nepal_surface/expanded-v1/gunw_1_coherence80.png"
+      },
+      "rasters": {
+        "coherence20": "/cases/nepal_surface/expanded-v1/gunw_1_20_coherence.tif",
+        "mask20": "/cases/nepal_surface/expanded-v1/gunw_1_20_mask.tif",
+        "coherence_valid20": "/cases/nepal_surface/expanded-v1/gunw_1_20_coherence_valid.tif",
+        "coherence80": "/cases/nepal_surface/expanded-v1/gunw_1_80_coherence.tif",
+        "mask80": "/cases/nepal_surface/expanded-v1/gunw_1_80_mask.tif",
+        "connected_components80": "/cases/nepal_surface/expanded-v1/gunw_1_80_connected_components.tif",
+        "phase_radians80": "/cases/nepal_surface/expanded-v1/gunw_1_80_phase_radians.tif",
+        "ionosphere_radians80": "/cases/nepal_surface/expanded-v1/gunw_1_80_ionosphere_radians.tif",
+        "ionosphere_uncertainty_radians80": "/cases/nepal_surface/expanded-v1/gunw_1_80_ionosphere_uncertainty_radians.tif",
+        "coherence_valid80": "/cases/nepal_surface/expanded-v1/gunw_1_80_coherence_valid.tif"
+      },
+      "grids": {
+        "20": {
+          "shape": [
+            1201,
+            1200
+          ],
+          "affine": [
+            20.0,
+            0.0,
+            323480.0,
+            0.0,
+            -20.0,
+            3088180.0
+          ],
+          "crs": "EPSG:32645",
+          "native_spacing_m": 20,
+          "source_window": [
+            12955,
+            9838,
+            1201,
+            1200
+          ],
+          "bounds": [
+            323480.0,
+            3064160.0,
+            347480.0,
+            3088180.0
+          ],
+          "window_sha256": "8fe9b94f9215513fb25c0fcf1a37456662019467530d74aeb1b2d2d28f14a790",
+          "hash_content_order": [
+            "coherence",
+            "mask"
+          ]
+        },
+        "80": {
+          "shape": [
+            301,
+            301
+          ],
+          "affine": [
+            80.0,
+            0.0,
+            323440.0,
+            0.0,
+            -80.0,
+            3088240.0
+          ],
+          "crs": "EPSG:32645",
+          "native_spacing_m": 80,
+          "source_window": [
+            3238,
+            2459,
+            301,
+            301
+          ],
+          "bounds": [
+            323440.0,
+            3064160.0,
+            347520.0,
+            3088240.0
+          ],
+          "window_sha256": "f8de41bc18a96cd82d6f9d8b8a93c5d904bc3449418726782ad34c8cd4b6c8b6",
+          "hash_content_order": [
+            "coherence",
+            "connected_components",
+            "ionosphere_radians",
+            "ionosphere_uncertainty_radians",
+            "mask",
+            "phase_radians"
+          ]
+        }
+      },
+      "statistics": {
+        "20": {
+          "valid_pixels": 1374163,
+          "total_pixels": 1441200,
+          "valid_fraction": 0.9534852900360811,
+          "mean_coherence": 0.5527879653961157,
+          "median_coherence": 0.5648006796836853,
+          "below_03_pixels": 130920,
+          "below_03_note": "Illustrative summary only; not a change, damage or phase-reliability classification."
+        },
+        "80": {
+          "valid_pixels": 86357,
+          "total_pixels": 90601,
+          "valid_fraction": 0.9531572499199789,
+          "mean_coherence": 0.5481118140285672,
+          "median_coherence": 0.5636211633682251,
+          "below_03_pixels": 6985,
+          "below_03_note": "Illustrative summary only; not a change, damage or phase-reliability classification."
+        }
+      },
+      "phase_assessable_pixels": 85011,
+      "connected_component_labels": [
+        1
+      ],
+      "los_displacement_cm": null
+    }
+  ],
+  "display_limits": {
+    "hh": [
+      -30,
+      0
+    ],
+    "hv": [
+      -40,
+      -5
+    ],
+    "cpr": [
+      -20,
+      0
+    ],
+    "hh_reference": [
+      -8,
+      8
+    ],
+    "hv_reference": [
+      -8,
+      8
+    ],
+    "cpr_reference": [
+      -8,
+      8
+    ],
+    "hh_successive": [
+      -8,
+      8
+    ],
+    "coherence20": [
+      0,
+      1
+    ],
+    "coherence80": [
+      0,
+      1
+    ]
+  },
+  "palette_css": {
+    "cividis": "linear-gradient(90deg, rgb(0,34,78) 0.0%, rgb(0,46,106) 6.25%, rgb(26,56,111) 12.5%, rgb(50,67,109) 18.75%, rgb(67,78,108) 25.0%, rgb(82,89,109) 31.25%, rgb(97,101,111) 37.5%, rgb(111,112,115) 43.75%, rgb(124,123,120) 50.0%, rgb(139,135,120) 56.25%, rgb(155,147,118) 62.5%, rgb(171,160,114) 68.75%, rgb(187,173,108) 75.0%, rgb(204,186,100) 81.25%, rgb(221,201,88) 87.5%, rgb(239,215,72) 93.75%, rgb(254,232,56) 100.0%)",
+    "vik": "linear-gradient(90deg, rgb(0,18,97) 0.0%, rgb(2,43,113) 6.25%, rgb(3,68,129) 12.5%, rgb(12,94,146) 18.75%, rgb(47,124,166) 25.0%, rgb(96,157,188) 31.25%, rgb(146,189,210) 37.5%, rgb(197,219,229) 43.75%, rgb(236,229,225) 50.0%, rgb(233,203,185) 56.25%, rgb(220,171,143) 62.5%, rgb(207,142,104) 68.75%, rgb(195,114,67) 75.0%, rgb(179,83,31) 81.25%, rgb(147,46,6) 87.5%, rgb(116,21,6) 93.75%, rgb(89,0,8) 100.0%)"
+  },
+  "original_manifest_url": "/cases/nepal_surface/investigation/manifest.json",
+  "original_manifest_sha256": "29b7ad7df6e1847544b90a2fb53c75b47b6c58db8836d7af60c25ae74ab9f49a",
+  "instrument_gap": {
+    "start": "2026-07-27T22:03:25Z",
+    "end": "2026-08-10T00:55:27Z",
+    "unobservable_nominal_date": "2026-08-07",
+    "source": "https://nisar-docs.asf.alaska.edu/availability-overview/"
+  },
+  "limitations": [
+    "Actual visits only. August-7 outage remains unfilled; no interpolation or continuous duration is inferred.",
+    "Reference is August 19, not the first expanded visit and not a verified undisturbed surface.",
+    "All-visit support can differ from historical three-date support. Original findings and products remain accessible.",
+    "Coherence is pairwise HH phase consistency, not displacement, damage, water truth or a unique physical cause.",
+    "20 m and 80 m coherence have different averaging/support. Never compare them as the same estimator or upscale them as 10 m measurements.",
+    "Unwrapped phase and ionosphere layers are retained as native downloads, without displacement conversion. Corrections/reference-point/unwrap validation remain pending.",
+    "Existing optical matches, terrain controls and Change DNA remain scoped to their original visits; they are not silently assigned to new dates.",
+    "No new Bangladesh, rainfall, thermal or independent validation input was supplied in this batch."
+  ],
+  "provenance": {
+    "code_sha256": "2d92629f894478a09f9ec28594735bc36edeafe03e4398f77cbbefe921596e02",
+    "input_inventory": "reports/extra_2026_11_03/input_inventory.json",
+    "source_organizations": [
+      "NASA / ASF DAAC / JPL (USA)",
+      "ISRO (India)"
+    ],
+    "raw_file_hash_scope": "No full-file digest asserted. Native extraction hashes and exact source identities/sizes retained.",
+    "gcov_compatibility": "L2 PR P05023, v1.0.11, ascending track98/frame16, left-looking, frequencyA HH/HV 40MHz; same original 10m grid."
+  },
+  "assets_sha256": {
+    "hv_3.tif": "de6207079164453daa7f6831b09f63205e1436d9f5d498e378f1b9cca2480e1a",
+    "hv_reference_9.png": "fe502faa1e6e6247f6458c12021525115cf71043269c5d402776dbb083f4e93e",
+    "hv_5.png": "eee50f80fd8284c670d24814f1bf3e26dfec6ed203d5e6e04ce0f221327806bf",
+    "hv_2.png": "f9e7d75dedbcd1cda950a74e5824e6e553a2e2962f0336f043587c8b5bfdb6a4",
+    "hh_reference_5.png": "6b6c51742a973d84b9127f7d33f8ee638d639816497366df11eb50767fbc60ac",
+    "gunw_0_80_coherence_valid.tif": "efcde4eb3cb496f4de0961c68f8c961f55428e9dd12b462ec4a903dc61d22558",
+    "hh_2.tif": "8a8019dbb96c23cacec0e325db9b4eb48c7ae25b31b2e314242f02e080750610",
+    "hh_reference_2.png": "d70165769feebfc0a31fed9c69f05f4735bed730c7a252f125cb8b6dfeff6b25",
+    "hh_reference_1.png": "66c6ff9338b9117d7c1f0716fd211c8fc2b8f85a1483089255fd4cf9102ed4ae",
+    "hh_4.png": "aac4f74e6a5f9bea22cc88bf67dd7eae82b5ab889c3c6c1c9a07bc1ad6342fbb",
+    "gunw_0_20_coherence_valid.tif": "fcf0c9ca4f05c106c26062fead74b07de0ee305e2650144941da98c4458b795d",
+    "hv_0.tif": "3fa5023f73e2090692d25ad39f171c52bf69bc46a0a7147a8d3292e73b821b56",
+    "gunw_1_80_mask.tif": "a7baab156472e4884414c04847dbb420de53bf8c858255316e7ca9c095fdb289",
+    "gunw_0_20_mask.tif": "33bd4063565088c8565b1134465701f728878d09063fae68f6da3f966e06fbd7",
+    "hv_6.png": "a6100fda1e889a0c7164bafd7a3f33d6d2756453acf5e41b7f72f3795bd51bf5",
+    "hh_reference_0.png": "9468f6d9a56ed8059d3743722800948aa848d6da2888657abd7230c1ae6f2c33",
+    "cpr_2.png": "2c0223f4ceaf1c484b7753384056e9a31721ea0f7fc5678811bcd87abaa970c9",
+    "hv_9.png": "9de19cc6347c5fefbd809a1773db49a6db182d2bf6d74a96ff35524c4293e7cc",
+    "cpr_reference_4.png": "0f789e7b28786e9b4c2457ee6bac0cd23a1af571754a5f0f4e56adeaef9c77b6",
+    "cpr_3.png": "b8ab2c79c969590787785b8dbef00a25f015f335aad9e2859b7d582944f15745",
+    "cpr_0.png": "171eb22def1d3364ea5217dbc7d206564ee0d3473ae1d1692a1f63df9b90da22",
+    "cpr_reference_6.png": "b491d0fe539931701582afb4e2f796c68ab31cc0f0852c6da28ffd0704d0e8b2",
+    "gunw_0_20_coherence.tif": "928cc5884c88195c6b9fe50bb7645de05b29533aa25c043a1344eda0d2c49267",
+    "gunw_1_coherence80.png": "3d676aa43865df784f515ca2488fd810ae65cbbc7ca810f0af7a1bc344766fe1",
+    "gunw_0_80_phase_radians.tif": "d64492abd194fe56f6cb4bd8f20881ccc3fd6c99518b3353ba0979a4973f10b9",
+    "hv_reference_1.png": "e1c823bd62131c6bada6d7485d40f6f9ae025f123b5d4b11051e4c4f277c8577",
+    "gunw_1_80_coherence_valid.tif": "18aafa2390ddd08e0227400ad378dee9078aebb76a3577e31e0f11c1d6c5880a",
+    "hh_6.png": "be7b8911f8b7507eed8ed1ca76d62b578c92c151da872959a2dc613fb8d37506",
+    "gunw_1_80_ionosphere_radians.tif": "0b2d6504604340ac6805903580763101dc0abb0d637f8258bf01f2456af2cbc3",
+    "hh_8.tif": "e52b302a0a684ba70ba450ef3fedf8e93114aea083ff60b9700ce6b6dca9d13c",
+    "hv_4.png": "41182e821cd8f1eed48a02e2d147918f55e33569995ba3c29cbbb4335d66b69c",
+    "gunw_0_80_mask.tif": "911e6e0d0ac44f0ff633062b4ce6961fb14d62b1af0d71f5978953098c298b76",
+    "hv_reference_7.png": "53f72afc489c516a0530e10179ab210d3e7b98942c2173883e2961f1f5a27aab",
+    "gunw_1_80_phase_radians.tif": "764e51e727e995e2f7f746ccdfe8cb0bf1fc27c08fcc0fd9489192e662624604",
+    "hh_9.tif": "fe510706836b9ba993f982bff9dbf3301730ea0d6fa5238505ccaa04bcff95e4",
+    "hv_reference_8.png": "113414b325762c9fb4b1c479f4df0c28331294eb0e988009ff3ee9f891b315ed",
+    "tracked_footprint.tif": "e6cb230cf3e11fdb562160cb778024ae0ca2f5209be48a92d17eaaa46dc0e806",
+    "gunw_1_80_ionosphere_uncertainty_radians.tif": "0d7af765900dd57ca511d0e5c6d642cccf8414f6d0d4257945fedc864f663e57",
+    "cpr_4.png": "34f462f70493e9fee94acab9de5a42d5d25fa303d544970807dc66a0e146c0db",
+    "hv_reference_2.png": "bb11cb459588c4319e8575d3c8dec149b5b9f5aedde558c8f8b10d272c838066",
+    "cpr_reference_8.png": "96143dc99365110a7fd43a2b1c3560ec8fd1c002614de02fb27bd95f087cddd7",
+    "hv_3.png": "b5ad8c75522016fdb6ecaca416f4c5b72e20e7ec995e374bf9d9a669adf7556d",
+    "cpr_reference_1.png": "32aabf6407fc92fc81327212984d7a97830dc629b7c58697ccb8f0676ecd8902",
+    "cpr_reference_5.png": "809356ddc5d44a2369a1e204f01a6c05667e12ce7f2f5f757e095f9b2f989f8c",
+    "gunw_1_80_coherence.tif": "5c1b4e956beef06d1878a65513f833a85dbc51b932df3e48aac54eff56d4f9cb",
+    "cpr_reference_3.png": "b245300bd6592e53aa8e8b95ac80453211db2c2e7f9b6a451a5e8d53c951337f",
+    "hh_successive_2.png": "eb56297bad7ce8bb8cebe9cc493a4fd36485879af1aea4cdffbc38e50dfa1b7b",
+    "hh_0.png": "c7fb3fbba528fb4699376ffe1aabb8a9d2aa7dd59ce5830b6a56ea1b2c4f928d",
+    "hv_8.tif": "c4b9aecee523b0d34a0e55f2ad8b54478852f017e1ca928a58db456e08ac49f6",
+    "cpr_8.png": "bf67e4ce335176ff1705207c04143d3b8ac2ceb409bbb902ba534c2bf9586b39",
+    "hh_successive_3.png": "6fffe3e2717f532cfc83dcfce6cec2c012df63968860c42ad4e47df5a59261b1",
+    "gunw_0_80_connected_components.tif": "76ff8c9341f4cac0c204f228a97db1939a10ee651d5dc3bd8ffebf47a148135c",
+    "hh_reference_8.png": "35b152bc80e5d924a428aa71e53c1fcb14f991ba12ae867dd75bdb8193955284",
+    "hh_1.tif": "9979941b573daad76054e5edd36fdb2af0340e73eca8ae39dba56b8953b0e3b3",
+    "hh_3.png": "c22f8667e8c0cdd1a32ed12a2d39a08ddc54d16035d55b1e12bca989d993b37d",
+    "hh_successive_1.png": "00608c25ce2a2df93432f03f510b4d8851bc982b394bc6a500c8d1755c5ad44b",
+    "hh_reference_4.png": "0f789e7b28786e9b4c2457ee6bac0cd23a1af571754a5f0f4e56adeaef9c77b6",
+    "hh_0.tif": "0beaf0d953de7cc858b1f10de9b8f9a50d655eba866551f9cc2a571f4b57ec64",
+    "hv_reference_5.png": "de965a151fcb6b3741355cee2697d245d081499243ca57612d54272d35aa5f71",
+    "gunw_1_coherence20.png": "36f76a714891b756553f8a11df04a24600590b40ac814111e4a538bfed6d8cfb",
+    "cpr_reference_0.png": "a869c82208e74c08e004d9163c12509f3e99697c8b8a55cd423576b102d385dd",
+    "hh_successive_4.png": "e78d3b9480427d4434f5cc58eb427c1baddad78cc4a8657ce202cecbb3c073d2",
+    "hh_reference_7.png": "340e6dbc8da5934e84086b40b7e44562e7b2fc149a8e15586516e26cc54fc4c9",
+    "gunw_0_80_ionosphere_radians.tif": "90bcc926cbe4cadd507f0b18eb4008cc5ab465d7ec58d3641afcd9b9a269f876",
+    "hv_reference_4.png": "0f789e7b28786e9b4c2457ee6bac0cd23a1af571754a5f0f4e56adeaef9c77b6",
+    "gunw_1_80_phase_assessable.tif": "29768015715d7263af1e7ed6b19916f785355dbeba9ed9771d22af33178f2cf9",
+    "gunw_1_20_coherence.tif": "3de25d35b1e72685a810b70501d668edde261eb4140e8f9df5f74e18b8bfc836",
+    "hh_7.png": "3ff31aa72969646738e810c609b15d1acf018b3e735e32f5e8d28f665c018aac",
+    "hv_0.png": "42f66c449b758d25424543129fd3521ffac33d27869a967a4f12351c95e09dbc",
+    "hv_7.tif": "9cffa35da946e5f61eae407f5b381cb7c8c66cc5ac5a3d16b8cfeaf992dd675b",
+    "gunw_0_coherence20.png": "e130ef4547f778154d02e800f226c02ea97ed11ea5b4bcac60d3b94a548551a3",
+    "hh_reference_6.png": "7c3fcfb7a3847ffb974f64cd822a4381fece820d92d9ca07f7aa16493398267e",
+    "hh_reference_3.png": "5f2a7e47f57e85df2ddea56775eedfebf7b70b0568443023aec21c358c661ccb",
+    "hv_1.tif": "c9eda76e7210fa47f4b08b864d69f247078e02aaa97c2ddfc6378e4e792833f5",
+    "gunw_0_80_ionosphere_uncertainty_radians.tif": "92f2da983c85544b4d62650a01d3b831688def104a2c88aa127317b2d156f933",
+    "cpr_reference_7.png": "aaa1d9e8f128d8c87455542176292ddf3c173775b096707411e62cd26076c0bf",
+    "hv_9.tif": "433f5709ed3810c2e7334961e809bffc6b7ec3beee9ddb936eb575c6d8e88c42",
+    "hh_successive_9.png": "f0995718e01b5878a0ef222e89385e7b02e1f8b57a7df69ae6a7fefee3acb3b7",
+    "cpr_5.png": "0ec0b8e337c863a611bd092e8ef96fbf1249b6a931c6b8dca470d4b91c8676e7",
+    "hh_5.png": "0691ebc703c5e9ba02f31230ada79d904d3284ad9ae4c96b39c1f46f32f850b4",
+    "gunw_1_80_connected_components.tif": "9047cfc54209a902b78079cceede469b79ffcccdfb0661e57d448ab3421409e8",
+    "hv_reference_0.png": "3c8bacfe491e28b5f7cfdb18d75b0a6323750111c2f77416ac103e47ef126cca",
+    "hh_successive_6.png": "6e2ec49c9526407fb72a20be4452b5a121a0370954bdd8107f771d58414d9e69",
+    "hv_2.tif": "05f8d10d0665a961b59240c163e1ffdecb8cf099c1014124e13fe955eadd81bd",
+    "cpr_1.png": "c4048870ed1ff2aedd076ab9ef64fc379253b56cc1d5abebe90909659c3d3a73",
+    "gunw_1_20_coherence_valid.tif": "d526857d4c06ab95d533eff0e5ea77c4af027580cfbcfda1505fecef8b347e67",
+    "hh_2.png": "525fc6a2debf36f8eeeddc45ba42479f78fe70fc830781dc020a7ea64c631575",
+    "hh_9.png": "32376f42906218bd3eb0bdd7630f092957449fd66606e5dac0214eff480ed0aa",
+    "hh_8.png": "b42ca74d1bbad8f5bb3246cd3c4e98f0784278e3ea427916957cbfd2aaf3302a",
+    "hh_1.png": "b0d5b6354d8cbf1ea4e14a1d9c26ccf84ee5a9fb36534fa7d3316193fa3238ea",
+    "gunw_1_20_mask.tif": "f72ccd93de4977910ddf43ce9fa1849d828827756fbd1b2dc7c3f05e7221b939",
+    "hv_7.png": "e9dfffbd3436cbc58b5d576cfb3f23590bbe5de1821d5ab3282cf721064c9a96",
+    "hh_successive_5.png": "6b6c51742a973d84b9127f7d33f8ee638d639816497366df11eb50767fbc60ac",
+    "hh_3.tif": "fbaea3d1ce88d0937f11e8b1c884bfe6c1dfe2eea953a1ace13656aa5ed33a1e",
+    "gunw_0_coherence80.png": "e525d2e3b233b283a7edb94ef5ac2d109f99ae846559d6e849b9106d6f943b89",
+    "hv_reference_6.png": "97b40ee5e7d7b2ee9ee045ebbff7167d3e8a817601b51a16bc7f6531da20fced",
+    "gunw_0_80_phase_assessable.tif": "dbe3c20a72b362d2e170c37a85a30cfadcaa745954a49a382f9225ee8dace6cc",
+    "hv_8.png": "117e8bc9729806caee10497ddec43665f4ffce41308406d1a332708c917882d6",
+    "gunw_0_80_coherence.tif": "71e5f50e8f7f9df25ac29edf75ed32d07a270d04f3120147c0de183d040d09bf",
+    "hh_successive_8.png": "48ca53c00d827c4ee67bd7d67dd79dbc41735700de41c2520537a0cd67fd11f8",
+    "cpr_9.png": "237544c87950d1509a4cab04e16b07744ef44fb7961d161c3d1d1a83a1efd531",
+    "hv_reference_3.png": "f666cceb9ab8e20ccbcbfebc64c2716e23d7682bdb6dbb87e06f4e5c34cbd0a0",
+    "hv_1.png": "6df7f567b158c240f7c6cb82e614f9cef6906bf4aae9352385a50a28f74fde9c",
+    "cpr_reference_9.png": "c8d056ab599911be68d23ada1a321566325689a2b92ac15ccf9f0d05a1d075a9",
+    "cpr_7.png": "47dec285dc8bd30e8c91c3b7b933ae3e496200b7f795224f46c2ec571a2fdd81",
+    "hh_successive_7.png": "d32b1aab46ca31ec5e6526131bd0a5542563c1d885f7678b0bec455ee83d28c7",
+    "hh_reference_9.png": "01f531ea25de0617046e73a4b884f251614700aea4c0557c79777195a74d1a83",
+    "hh_7.tif": "7e95c8bd2360d4f7b97e886bfc0d36386d4bd79e9f39af1317d15b4e0ee871fe",
+    "cpr_6.png": "35f487751529e33713cdc00b720e527a112034cd192911cf6d174ff2351c9176",
+    "cpr_reference_2.png": "30a169ee7a6b3431aa0614409dd1e3b25ee20f87565fe5ba3a0806ea96f37502"
+  }
+}

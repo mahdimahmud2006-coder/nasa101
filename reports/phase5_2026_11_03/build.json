@@ -1,0 +1,26 @@
+{
+  "cases": {
+    "nepal_surface": {
+      "comparisons": 9,
+      "assessable": 2,
+      "frozen_footprints": 3
+    },
+    "nepal_impact_corridor": {
+      "comparisons": 9,
+      "assessable": 0,
+      "frozen_footprints": 3
+    },
+    "jamuna_river": {
+      "comparisons": 18,
+      "assessable": 5,
+      "frozen_footprints": 3
+    },
+    "tanguar_wetland": {
+      "comparisons": 18,
+      "assessable": 7,
+      "frozen_footprints": 3
+    }
+  },
+  "source_native_window_bytes": 338167,
+  "full_tiles_downloaded": 0
+}

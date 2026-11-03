@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-03",
+  "status": "IMPLEMENTED_AND_ACTIVE_LOCAL",
+  "plan_task": "SCI-01",
+  "record_version": "bangladesh-v2",
+  "accepted_new_gcov_files": 4,
+  "active_gcov_acquisitions_per_bangladesh_crop": 10,
+  "active_unique_gcov_total_across_countries": 20,
+  "study_cases": [
+    "jamuna_river",
+    "tanguar_wetland"
+  ],
+  "active_views": [
+    "River Memory",
+    "Wetland Pulse",
+    "Bangladesh Surface change"
+  ],
+  "reference": "2026-06-18T23:21:35Z",
+  "remaining_nominal_gap": {
+    "date": "2026-08-05",
+    "reason": "Documented permanent satellite outage; no acquisition exists"
+  },
+  "downloadable_nominal_slots_still_missing_in_displayed_interval": 0,
+  "python_tests_passed": 261,
+  "javascript_tests_passed": 103,
+  "javascript_tests_failed": 0,
+  "native_validation": "BANGLADESH_TEN_VISIT_NATIVE_CHECKS_PASS",
+  "raw_native_samples_checked": 48,
+  "historical_bangladesh_calendar_files_unchanged": 505,
+  "frozen_baseline": {
+    "verified": true,
+    "checked_files": 795,
+    "mismatches": []
+  },
+  "socket_denied_handler_requests": 65,
+  "runtime_ready": true,
+  "browser_visual_qa": "UNVERIFIED \u2014 prior local-URL policy restriction",
+  "physical_disconnected_rehearsal": "PENDING",
+  "release_archive_created": false,
+  "scientific_scope": "GCOV intensity expansion only. No new GUNW, optical, scientific rainfall or thermal observations supplied or inferred.",
+  "input_directory": "database/new",
+  "preview_url": "http://127.0.0.1:8001/",
+  "preview_service": "terrapulse-preview.service active/running after restart"
+}

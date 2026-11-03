@@ -31,12 +31,20 @@ validate-context:
 
 .PHONY: test-ui
 test-ui:
+	node tests/navigation.test.mjs
+	node tests/home.test.mjs
 	node tests/playback.test.mjs
 	node tests/terrain-view.test.mjs
 	node tests/studio.test.mjs
 	node tests/change-lab.test.mjs
 	node tests/investigation-model.test.mjs
 	node tests/investigations.test.mjs
+	node tests/time-axis.test.mjs
+	node tests/dualpol.test.mjs
+	node tests/reasoning.test.mjs
+	node tests/investigation-state.test.mjs
+	node tests/expanded.test.mjs
+	node tests/expanded-controller.test.mjs
 
 .PHONY: flood thermal download-thermal studio validate-flood
 flood:
@@ -67,7 +75,7 @@ run:
 	./run.sh
 check-ready:
 	$(PYTHON) -m src.api.readiness
-verify: test test-ui validate validate-timeseries validate-context validate-flood validate-change-lab validate-investigations check-ready check-web
+verify: test test-ui validate validate-timeseries validate-context validate-flood validate-change-lab validate-investigations validate-dualpol validate-context-v2 validate-dna-v2 validate-references validate-interferometry-gate validate-expanded check-ready check-web
 release:
 	$(PYTHON) scripts/package_release.py
 
@@ -84,3 +92,53 @@ wetland:
 	$(PYTHON) -m src.compute.investigation_pipeline --case tanguar_wetland
 validate-investigations:
 	$(PYTHON) -m src.compute.validate_investigations
+
+# Optional metadata acquisition, isolated from runtime and standard verification.
+.PHONY: setup-search search-slots publish-time-axis check-baseline
+SEARCH_PYTHON ?= .venv-search/bin/python
+SLOT_OUTPUT ?= data/candidates/phase1_2026_11_02_final
+setup-search:
+	$(UV) --cache-dir .uv-cache venv .venv-search --python $(PYTHON)
+	$(UV) --cache-dir .uv-cache pip install --python $(SEARCH_PYTHON) -r requirements-search.txt
+search-slots:
+	$(SEARCH_PYTHON) scripts/nisar_slot_search.py --output "$(SLOT_OUTPUT)"
+publish-time-axis:
+	$(PYTHON) scripts/publish_time_axis.py --source "$(SLOT_OUTPUT)"
+check-baseline:
+	$(PYTHON) scripts/freeze_baseline.py --check
+
+.PHONY: dualpol validate-dualpol
+dualpol:
+	$(PYTHON) -m src.compute.dualpol_pipeline
+validate-dualpol:
+	$(PYTHON) -m src.compute.validate_dualpol
+
+.PHONY: validate-context-v2
+validate-context-v2:
+	$(PYTHON) -m src.compute.validate_context_v2
+
+.PHONY: validate-dna-v2 claims-check
+validate-dna-v2:
+	$(PYTHON) -m src.compute.validate_investigation_dna
+claims-check:
+	$(PYTHON) scripts/generate_claims.py --check
+
+.PHONY: validate-references
+validate-references:
+	$(PYTHON) -m src.compute.validate_references
+
+.PHONY: validate-interferometry-gate
+validate-interferometry-gate:
+	$(PYTHON) -m src.compute.validate_interferometry_gate
+
+.PHONY: expanded validate-expanded
+expanded:
+	$(PYTHON) -m src.compute.expanded_record
+validate-expanded:
+	$(PYTHON) -m src.compute.validate_expanded_record
+
+.PHONY: bangladesh-record validate-bangladesh-record
+bangladesh-record:
+	$(PYTHON) -m src.compute.bangladesh_record
+validate-bangladesh-record:
+	$(PYTHON) -m src.compute.validate_bangladesh_record

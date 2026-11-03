@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "ledger_sha256": "7767fd9f38f810111ffe5d7220cce283767fe8e6fb9478ea1c42766c2dd4ba3a",
+  "claims": [
+    {
+      "id": "TP-DATA",
+      "text": "Twenty unique GCOV acquisitions support four investigation study windows: ten Nepal dates and ten shared Bangladesh dates. The Bangladesh record includes all ten available nominal visits in the displayed June\u2013October interval.",
+      "status": "measured",
+      "evidence_path": "web/public/cases/investigations-bangladesh-v2.json",
+      "limitation": "Both crops in each country share their source acquisitions. The August 5 Bangladesh slot is a permanent satellite outage. Historical products remain separately addressable.",
+      "values": [
+        4,
+        9,
+        3,
+        6,
+        18,
+        7,
+        16,
+        10,
+        20,
+        11
+      ]
+    },
+    {
+      "id": "TP-PERSIST",
+      "text": "In the 199-pixel Nepal footprint, HH baseline differences remain \u22127.5263 and \u22127.0766 dB while centered-score retained alert area falls from 0.0199 km\u00b2 to zero.",
+      "status": "measured",
+      "evidence_path": "web/public/cases/nepal_surface/investigation/manifest.json",
+      "limitation": "Alert contraction, baseline persistence and physical recovery are distinct; cause is unresolved.",
+      "values": [
+        199,
+        -7.5263,
+        -7.0766,
+        0.0199,
+        0,
+        1.99
+      ]
+    },
+    {
+      "id": "TP-PAIR",
+      "text": "Original nominal pair areas remain 0.0195, 0.7949 and 0.0000 km\u00b2 under their original rule.",
+      "status": "measured",
+      "evidence_path": "web/public/cases/nepal_case_01/manifest.json",
+      "limitation": "These are not the centered-score tracked-zone areas.",
+      "values": [
+        0.0195,
+        0.7949,
+        0
+      ]
+    },
+    {
+      "id": "TP-CPR",
+      "text": "The Nepal footprint has CPR baseline changes of +5.7152 dB and +4.6256 dB on the two follow-up visits.",
+      "status": "measured",
+      "evidence_path": "web/public/cases/nepal_surface/dualpol-v1/profiles.json",
+      "limitation": "CPR is HV\u2212HH in dB, the sign reversal of the existing HH\u2212HV relation; not independent corroboration.",
+      "values": [
+        5.7152,
+        4.6256
+      ]
+    },
+    {
+      "id": "TP-TERRAIN",
+      "text": "Case-wide median slope is 1.9495\u00b0 at Jamuna and 1.3598\u00b0 at Tanguar.",
+      "status": "measured",
+      "evidence_path": "data/context/context-v2/build_summary.json",
+      "limitation": "Terrain/geometry screening and bounded hydrology are contextual models, not validated hazard or visibility classes.",
+      "values": [
+        1.9495,
+        1.3598
+      ]
+    },
+    {
+      "id": "TP-RAIN",
+      "text": "Frozen IMERG Final-product rain totals remain unavailable. A later NASA catalog search found Late V07 candidates, but no scientific rainfall files were supplied or imported in this batch.",
+      "status": "planned",
+      "evidence_path": "data/candidates/rain_report_2026_11_03/queries.json",
+      "limitation": "Exact UTC windows remain implemented. Missing rain stays null; catalog availability does not create precipitation measurements. NASA multisensor lineage still requires review before the strict source policy can accept an import.",
+      "values": []
+    },
+    {
+      "id": "TP-H1",
+      "text": "The August dip remains unresolved after frozen putative-control and full-source histogram tests.",
+      "status": "measured",
+      "evidence_path": "docs/reports/h1_17aug_dip.md",
+      "limitation": "Control shifts do not establish calibration error or physical cause.",
+      "values": []
+    },
+    {
+      "id": "TP-FIT",
+      "text": "Versioned deterministic rules show supporting, contradicting and missing evidence for competing explanations.",
+      "status": "implemented",
+      "evidence_path": "rules/explanations.yaml",
+      "limitation": "Uncalibrated compatibility statuses, no probability, winning cause or runtime LLM.",
+      "values": []
+    },
+    {
+      "id": "TP-DNA",
+      "text": "Fixed-footprint Change DNA records signed channel changes, observed-visit persistence, onset/recovery brackets and censored recovery for saved or user-selected regions.",
+      "status": "measured",
+      "evidence_path": "web/public/cases/nepal_surface/evidence-v2/manifest.json",
+      "limitation": "Numeric footprint records are dynamically recomputed with source/rule provenance; retrospective selection is not independent validation.",
+      "values": [],
+      "dynamic_fields": [
+        "hh_baseline_delta_db",
+        "hv_baseline_delta_db",
+        "cpr_baseline_delta_db",
+        "persistence.k",
+        "persistence.n",
+        "recovery_fraction"
+      ]
+    },
+    {
+      "id": "TP-MECHANISMS",
+      "text": "Low-return, paired brightening, moisture/roughness, vegetation, steep-source movement and radiometric explanations remain candidate hypotheses.",
+      "status": "hypothesized",
+      "evidence_path": "rules/explanations.yaml",
+      "limitation": "Signature compatibility does not uniquely identify a physical process.",
+      "values": []
+    },
+    {
+      "id": "TP-REFERENCE",
+      "text": "The original frozen descriptive HLS comparison has eligible optical pixels in 14 of 54 footprint/date comparisons; 40 remain unavailable. The four added Bangladesh radar dates have no newly accepted optical matches.",
+      "status": "measured",
+      "evidence_path": "reports/phase5_2026_11_03/build.json",
+      "limitation": "Only the preselected geographic footprints and eligible pixels were assessed. Mixed results are retained; this is algorithmic optical context, not classification accuracy or causal validation.",
+      "values": [
+        14,
+        54,
+        40
+      ],
+      "dynamic_fields": [
+        "assessable_area_km2",
+        "reference_water_area_km2",
+        "radar_dark_area_km2",
+        "intersection_area_km2",
+        "delta_seconds"
+      ]
+    },
+    {
+      "id": "TP-INTERFEROMETRY",
+      "text": "Two supplied Nepal GUNW products now provide measured native 20 m and 80 m HH coherence for August 19\u201331 and August 31\u2013September 12 in both Nepal crops.",
+      "status": "measured",
+      "evidence_path": "web/public/cases/nepal_surface/expanded-v1/manifest.json",
+      "limitation": "Pairwise coherence is not displacement or a unique physical cause. Original Change DNA and Bangladesh retain their original unavailable coherence inputs. Reference-point, correction and unwrap checks are still required before LOS displacement.",
+      "values": [
+        401,
+        13,
+        2,
+        20,
+        80
+      ],
+      "dynamic_fields": [
+        "eligible_catalog_count",
+        "size_gib",
+        "mean_coherence",
+        "median_coherence",
+        "valid_pixels",
+        "valid_fraction"
+      ]
+    },
+    {
+      "id": "TP-CONTEXT",
+      "text": "The corridor intersects about 6.4230 km\u00b2 of preliminary mapped mudflow/rockflow impact context.",
+      "status": "measured",
+      "evidence_path": "web/public/cases/nepal_impact_corridor/investigation/manifest.json",
+      "limitation": "This overlap does not establish detection accuracy, flood-water truth or field validation.",
+      "values": [
+        6.423,
+        6.42
+      ]
+    },
+    {
+      "id": "TP-METHOD",
+      "text": "Illustrative numerical settings describe measurements and display, not independently calibrated classes.",
+      "status": "implemented",
+      "evidence_path": "config.dualpol.json",
+      "limitation": "Configuration parameters must not be presented as validated physical thresholds.",
+      "values": [
+        -60,
+        -45,
+        -40,
+        -30,
+        -25,
+        -24,
+        -20,
+        -18,
+        -17,
+        -16,
+        -15,
+        -10,
+        -8,
+        -5,
+        -3,
+        -2,
+        -1,
+        0,
+        0.1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        15,
+        17,
+        20,
+        24,
+        25,
+        30,
+        40,
+        48,
+        60,
+        72,
+        100,
+        168,
+        255,
+        500,
+        2400
+      ]
+    },
+    {
+      "id": "TP-NAV",
+      "text": "Shared navigation and investigation links preserve supported case, observed date, saved or selected footprint, mode and layer state. Three Movements opens the existing measured evidence.",
+      "status": "implemented",
+      "evidence_path": "web/investigation-state.mjs",
+      "limitation": "Nepal-only workspaces stay explicitly scoped. Unsupported legacy layers/footprints or missing dates are disclosed instead of being treated as equivalent data.",
+      "values": []
+    },
+    {
+      "id": "TP-ACCESS",
+      "text": "Keyboard map inspection and polygon vertices, visible focus, reduced-motion styles and live text evidence are implemented.",
+      "status": "implemented",
+      "evidence_path": "docs/reports/browser_a11y_2026-11-03.md",
+      "limitation": "Source checks and mocked interactions do not establish real-browser, assistive-technology, GPU or whole-app WCAG conformance.",
+      "values": []
+    },
+    {
+      "id": "TP-LOCAL",
+      "text": "Checked local page assets and representative reasoning requests work through the HTTP handler while Python sockets and DNS are forbidden.",
+      "status": "measured",
+      "evidence_path": "reports/phase7_2026_11_03/offline_and_source_a11y.json",
+      "limitation": "This is a scoped automated backend/source check. Browser network behavior and a physically disconnected rehearsal remain unverified.",
+      "values": []
+    },
+    {
+      "id": "TP-DELIVERY",
+      "text": "The portable release builder includes current runtime rules, claims and local assets and checks every archive entry against its manifest.",
+      "status": "implemented",
+      "evidence_path": "scripts/package_release.py",
+      "limitation": "Dependency installation, clean judging-machine startup, browser/physical rehearsal, public repository/video access and actual submission remain separate acceptance steps.",
+      "values": []
+    },
+    {
+      "id": "TP-EXTENDED-PERSIST",
+      "status": "measured",
+      "text": "The original 199-pixel Nepal footprint remains common-valid across ten visits; its October 18 HH difference from August 19 is about \u22126.5660 dB.",
+      "evidence_path": "web/public/cases/nepal_surface/expanded-v1/manifest.json",
+      "limitation": "This extends the measured backscatter record. Earlier visits vary relative to August 19, which is not a verified undisturbed baseline. No continuous persistence, physical damage or recovery is established.",
+      "values": [
+        199,
+        10,
+        -6.566
+      ],
+      "dynamic_fields": [
+        "hh_reference_delta_db",
+        "hv_reference_delta_db",
+        "cpr_reference_delta_db",
+        "common_valid_pixels",
+        "common_valid_area_km2"
+      ]
+    },
+    {
+      "id": "TP-BD-RECORD",
+      "text": "The ten-visit Bangladesh record recomputes HH/HV differences, dual-polarization signatures, observed occupancy, sensitivity, controls and fixed-footprint evidence. Only the August 5 nominal slot remains unobserved.",
+      "status": "measured",
+      "evidence_path": "reports/bangladesh_import_2026_11_03/native_validation.json",
+      "limitation": "Added dates improve temporal sampling; they do not establish water, erosion, habitat, causal or hazard accuracy. No new coherence, scientific rain or thermal observations were supplied.",
+      "values": [
+        10,
+        11,
+        4
+      ]
+    }
+  ]
+}

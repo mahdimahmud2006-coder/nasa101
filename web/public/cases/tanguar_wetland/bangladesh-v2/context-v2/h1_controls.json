@@ -1,0 +1,107 @@
+{
+  "selection": {
+    "status": "implemented",
+    "hh_first_percentile": 85,
+    "hh_cutoff_db": -15.62222671508789,
+    "elevation_first_percentile": 50,
+    "elevation_cutoff_m": 3.937896728515625,
+    "maximum_slope_degrees": 10,
+    "selected_pixels": 329104,
+    "selection": "First date and DEM only; fixed before examining later-date control statistics. Putative stable bright/high targets, not independently validated built-up or stable ground.",
+    "mask_sha256": "bf3526f5fd9f21859b2d9651bb055091044749414bb494e7ef29f5343c1efea9",
+    "first_source_granule_id": "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001"
+  },
+  "controls": [
+    {
+      "timestamp": "2026-06-18T23:21:35Z",
+      "observation_id": "acq_20260618T232135",
+      "common_control_pixels": 329104,
+      "hh_median_db": -13.037162780761719,
+      "hv_median_db": -20.952106475830078,
+      "hh_baseline_shift_db": 0.0,
+      "hv_baseline_shift_db": 0.0
+    },
+    {
+      "timestamp": "2026-06-30T23:21:34Z",
+      "observation_id": "acq_20260630T232134",
+      "common_control_pixels": 329104,
+      "hh_median_db": -13.27499771118164,
+      "hv_median_db": -20.96039581298828,
+      "hh_baseline_shift_db": -0.23783493041992188,
+      "hv_baseline_shift_db": -0.008289337158203125
+    },
+    {
+      "timestamp": "2026-07-12T23:21:34Z",
+      "observation_id": "acq_20260712T232134",
+      "common_control_pixels": 329104,
+      "hh_median_db": -13.30184555053711,
+      "hv_median_db": -20.734848022460938,
+      "hh_baseline_shift_db": -0.2646827697753906,
+      "hv_baseline_shift_db": 0.21725845336914062
+    },
+    {
+      "timestamp": "2026-07-24T23:21:33Z",
+      "observation_id": "acq_20260724T232133",
+      "common_control_pixels": 329104,
+      "hh_median_db": -13.29571533203125,
+      "hv_median_db": -20.89126205444336,
+      "hh_baseline_shift_db": -0.25855255126953125,
+      "hv_baseline_shift_db": 0.06084442138671875
+    },
+    {
+      "timestamp": "2026-08-17T23:21:32Z",
+      "observation_id": "acq_20260817T232132",
+      "common_control_pixels": 329104,
+      "hh_median_db": -11.508520126342773,
+      "hv_median_db": -19.382476806640625,
+      "hh_baseline_shift_db": 1.5286426544189453,
+      "hv_baseline_shift_db": 1.5696296691894531
+    },
+    {
+      "timestamp": "2026-08-29T23:21:32Z",
+      "observation_id": "acq_20260829T232132",
+      "common_control_pixels": 329104,
+      "hh_median_db": -12.750431060791016,
+      "hv_median_db": -20.30172348022461,
+      "hh_baseline_shift_db": 0.2867317199707031,
+      "hv_baseline_shift_db": 0.6503829956054688
+    },
+    {
+      "timestamp": "2026-09-10T23:21:31Z",
+      "observation_id": "acq_20260910T232131",
+      "common_control_pixels": 329104,
+      "hh_median_db": -12.236701965332031,
+      "hv_median_db": -19.97283172607422,
+      "hh_baseline_shift_db": 0.8004608154296875,
+      "hv_baseline_shift_db": 0.9792747497558594
+    },
+    {
+      "timestamp": "2026-09-22T23:21:32Z",
+      "observation_id": "acq_20260922T232132",
+      "common_control_pixels": 329104,
+      "hh_median_db": -11.647053718566895,
+      "hv_median_db": -19.44029998779297,
+      "hh_baseline_shift_db": 1.3901090621948242,
+      "hv_baseline_shift_db": 1.5118064880371094
+    },
+    {
+      "timestamp": "2026-10-04T23:21:32Z",
+      "observation_id": "acq_20261004T232132",
+      "common_control_pixels": 329104,
+      "hh_median_db": -10.772686004638672,
+      "hv_median_db": -18.631771087646484,
+      "hh_baseline_shift_db": 2.264476776123047,
+      "hv_baseline_shift_db": 2.3203353881835938
+    },
+    {
+      "timestamp": "2026-10-16T23:21:32Z",
+      "observation_id": "acq_20261016T232132",
+      "common_control_pixels": 329104,
+      "hh_median_db": -10.55280590057373,
+      "hv_median_db": -18.597713470458984,
+      "hh_baseline_shift_db": 2.4843568801879883,
+      "hv_baseline_shift_db": 2.3543930053710938
+    }
+  ],
+  "interpretation": "Putative controls can change physically; offsets are hypotheses, not established calibration errors."
+}

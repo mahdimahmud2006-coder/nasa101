@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "model_version": "explanation-fit-v1",
+  "encoding": "YAML 1.2 JSON subset; parsed with Python standard-library json, no PyYAML dependency",
+  "calibration_status": "UNCALIBRATED_RULE_TEMPLATES",
+  "status_meaning": "Signature compatibility under this table, not physical proof or probability; multiple hypotheses may fit.",
+  "hypotheses": [
+    {"id":"smooth_low_return","title":"Smooth/open-water-like low-return surface","support":[{"field":"hh_last_db","op":"le","value":-17},{"field":"hv_last_db","op":"le","value":-24}],"contradict":[{"field":"hh_last_db","op":"gt","value":-10}],"required":["Date-matched independent water/optical evidence","Terrain/geometry screening"],"limitation":"Smooth dry ground and shadow can have low returns. No water classification."},
+    {"id":"flooded_vegetation_like","title":"Flooded-vegetation-like paired brightening","support":[{"field":"hh_delta_db","op":"ge","value":3},{"field":"hv_delta_db","op":"ge","value":3}],"contradict":[{"field":"paired_darkening","op":"eq","value":true}],"required":["Independent inundation and vegetation evidence","Date-matched optical/Sentinel-1 water context"],"limitation":"Brightening is not unique to flooded vegetation; threshold is illustrative."},
+    {"id":"moisture_roughness","title":"Soil-moisture or roughness change","support":[{"field":"hh_change_abs_db","op":"ge","value":3},{"field":"rain_72h_mm","op":"gt","value":10}],"contradict":[],"required":["Accepted scientific antecedent rainfall","Soil/roughness or field evidence"],"limitation":"Rain cutoff is an uncalibrated contextual prompt, never a causal test."},
+    {"id":"vegetation_structure","title":"Vegetation/crop structure or phenology change","support":[{"field":"hv_change_abs_db","op":"ge","value":3},{"field":"cpr_change_abs_db","op":"ge","value":1}],"contradict":[],"required":["Cloud-aware optical time series","Independent vegetation/crop observations"],"limitation":"CPR is derived from the same two channels and is not independent corroboration."},
+    {"id":"steep_source_movement","title":"Steep-source mass-movement candidate","support":[{"field":"mean_abs_hh_change_db","op":"ge","value":3},{"field":"median_slope_degrees","op":"ge","value":15}],"contradict":[{"field":"median_slope_degrees","op":"lt","value":5}],"required":["Independent event/optical mapping","Interferometric quality-controlled evidence"],"limitation":"This template refers to a steep source footprint; low-slope runout is a different geometry. No landslide cause is identified."},
+    {"id":"radiometric_processing","title":"Radiometric/processing or unstable-control effect","support":[{"field":"control_offset_abs_db","op":"ge","value":1}],"contradict":[],"required":["Independently stable targets","Processor/calibration QA and full-scene distribution review"],"limitation":"Putative controls can change physically; a measured shift is not proof of calibration error."}
+  ]
+}

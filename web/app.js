@@ -1,3 +1,5 @@
+import {readView,writeView,legacyChoice} from '/investigation-state.mjs';
+const linkedView=readView(globalThis.window?.location?.hash||'');
 const $ = id => document.getElementById(id);
 const base = '/cases/nepal_case_01/';
 const state = {manifest:null, evidence:null, pair:null, mode:'swipe', scanned:false, scanning:false, robust:false, zoom:1, panX:0, panY:0, generation:0, regions:[], nominalRegions:[], robustRegions:[], nominalOverlay:null, robustOverlay:null};
@@ -52,6 +54,7 @@ function updateLayer(){
 }
 function selectRegion(id){
   const region=state.evidence.regions.find(r=>r.id===id);if(!region)return;
+  writeView({case:'nepal_surface',mode:'surface',date:state.manifest.observations.find(o=>o.id===state.pair.after).acquisition_start,overlay:'pair_'+state.pair.id,footprint:'region:'+id});
   const temporal=region.temporal_consistency;
   const validation=region.validation||{validation_status:'UNVERIFIED',review_notes:'Independent source review pending.'};
   const core=region.robust_core;
@@ -84,7 +87,7 @@ function reveal(){
 }
 async function loadPair(id){
   const generation=++state.generation;state.scanned=false;state.scanning=false;state.robust=false;
-  state.pair=state.manifest.pairs.find(p=>p.id===id);
+  state.pair=state.manifest.pairs.find(p=>p.id===id);writeView({case:'nepal_surface',mode:'surface',date:state.manifest.observations.find(o=>o.id===state.pair.after).acquisition_start,overlay:'pair_'+id});
   $('pair-select').value=id;$('scan-button').disabled=true;$('overlay-toggle').disabled=true;$('overlay-toggle').checked=false;$('robust-toggle').disabled=true;$('robust-toggle').checked=false;$('overlay-image').hidden=true;$('region-hits').replaceChildren();$('sweep').hidden=true;$('download-evidence').disabled=true;
   resetMetrics();setZoom(1);message('Loading local processed observations…');
   const pair=state.pair;
@@ -149,5 +152,7 @@ try{
   $('pair-select').innerHTML=state.manifest.pairs.map(p=>`<option value="${esc(p.id)}">${esc(p.label)}</option>`).join('');$('pair-select').disabled=false;
   const geom=state.manifest.aoi.geometry.coordinates[0];const lon=(Math.min(...geom.map(v=>v[0]))+Math.max(...geom.map(v=>v[0])))/2,lat=(Math.min(...geom.map(v=>v[1]))+Math.max(...geom.map(v=>v[1])))/2;
   $('coordinates').textContent=`${fmt(lat,2)}° N / ${fmt(lon,2)}° E · 24 × 24 KM`;
-  await loadPair(state.manifest.default_pair||state.manifest.pairs[0].id);
+  $('shared-workspace-note').textContent=legacyChoice(linkedView,state.manifest.observations).note;
+  const requestedPair=linkedView.overlay?.replace(/^pair_/,'');await loadPair(state.manifest.pairs.some(p=>p.id===requestedPair)?requestedPair:state.manifest.default_pair||state.manifest.pairs[0].id);
+  if(linkedView.footprint?.startsWith('region:')){reveal();selectRegion(Number(linkedView.footprint.slice(7)));}
 }catch(error){fail(error);}

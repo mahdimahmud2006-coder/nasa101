@@ -1,3 +1,5 @@
+import {readView,writeView,legacyChoice} from '/investigation-state.mjs';
+const linkedView=readView(globalThis.window?.location?.hash||'');
 import {TerrainView} from '/terrain-view.mjs';
 import {createPlayback} from '/playback.mjs';
 const $=id=>document.getElementById(id),base='/cases/nepal_case_01/',floodBase=base+'flood/',thermalBase=base+'thermal/';
@@ -87,7 +89,7 @@ async function renderMap(){
   document.querySelectorAll('[data-layer]').forEach(button=>{button.classList.toggle('active',button.dataset.layer===state.layer);button.setAttribute('aria-pressed',String(button.dataset.layer===state.layer));});
   document.querySelectorAll('[data-date]').forEach(button=>{const selected=Number(button.dataset.date)===state.index;button.classList.toggle('active',selected);if(selected)button.setAttribute('aria-current','date');else button.removeAttribute('aria-current');});
   $('radar-panel').hidden=state.layer!=='radar';$('evidence-panel').hidden=state.layer==='radar';$('priority-panel').hidden=state.layer==='radar';
-  legend(state.layer);renderEvidence();renderThermal();rainChart();loading(false);
+  writeView({case:'nepal_surface',date:observation().timestamp,mode:'surface',overlay:state.layer,footprint:'saved:0'});legend(state.layer);renderEvidence();renderThermal();rainChart();loading(false);
 }
 async function selectObservation(index){
   state.index=index;state.probe=null;state.scenario=null;if(state.layer==='delta')state.layer='escalation';
@@ -154,7 +156,7 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden){player?.pa
 $('export-evidence').addEventListener('click',()=>{const record={observation:observation(),model_version:state.manifest.model.model_version,inputs_sha256:state.manifest.inputs_sha256,scenario:state.scenario,selected_cell:state.probe,thermal_scene:state.scene,limitations:state.manifest.limitations};const url=URL.createObjectURL(new Blob([JSON.stringify(record,null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='terrapulse-evidence-'+observation().timestamp.slice(0,10)+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 try{
   const [manifest,timeline,thermal,mesh,geography,dna]=await Promise.all([localJSON('/api/cases/nepal_case_01/flood-escalation'),localJSON('/api/cases/nepal_case_01/timeline'),localJSON('/api/cases/nepal_case_01/thermal'),localJSON(floodBase+'terrain_mesh.json'),localJSON(floodBase+'geographic_check.json'),localJSON(base+'dna/manifest.json')]);
-  state.manifest=manifest;state.dna=dna;state.timeline=timeline;state.thermal=thermal;state.index=manifest.observations.length-1;
+  state.manifest=manifest;state.dna=dna;state.timeline=timeline;state.thermal=thermal;const shared=legacyChoice(linkedView,manifest.observations);state.index=shared.index;$('shared-workspace-note').textContent=shared.note;if(['radar','escalation','thermal','rainfall'].includes(linkedView.overlay))state.layer=linkedView.overlay;
   terrain=new TerrainView($('landscape'),mesh,{onPick:inspectCell,onStatus:text=>{$('terrain-note').textContent=text;$('view-3d').disabled=true;$('view-3d').classList.remove('active');$('view-2d').classList.add('active');$('orbit').disabled=true;$('map-instruction').textContent='2D fallback · click to inspect';}});
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)$('orbit').disabled=true;
   $('dates').innerHTML=manifest.observations.map((obs,index)=>`<button data-date="${index}"><span>${escape(day(obs.timestamp))}</span><small>${index===0?'BASELINE':index===manifest.observations.length-1?'LATEST RADAR':'REPEAT OBSERVATION'}</small></button>`).join('');

@@ -1,0 +1,12 @@
+{
+  "status": "implemented",
+  "hh_first_percentile": 85,
+  "hh_cutoff_db": -2.427267074584961,
+  "elevation_first_percentile": 50,
+  "elevation_cutoff_m": 2944.945556640625,
+  "maximum_slope_degrees": 10,
+  "selected_pixels": 7102,
+  "selection": "First date and DEM only; fixed before examining later-date control statistics. Putative stable bright/high targets, not independently validated built-up or stable ground.",
+  "mask_sha256": "4504a27892ccdfe21fc9718cdf87c997f670fd5abf04e2729fe6410b2ddf513f",
+  "first_source_granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001"
+}

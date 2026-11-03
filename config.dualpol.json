@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "product_version": "dualpol-v1",
+  "source_cases": ["nepal_surface", "nepal_impact_corridor", "jamuna_river", "tanguar_wetland"],
+  "palette_directory": "data/palettes/v1",
+  "display_limits": {"hh": [-30, 0], "hv": [-40, -5], "ratio": [0, 20], "cpr": [-20, 0], "change": [-8, 8]},
+  "composite": {"red": "HH_dB", "green": "HV_dB", "blue": "HH_dB - HV_dB", "stretch": "linear clipped uint8; same fixed limits for every date and case"},
+  "hints": {"hh_low_db": -17, "hv_low_db": -24, "hh_rise_db": 3, "hv_stable_abs_db": 1, "hv_rise_db": 3, "calibration_status": "UNCALIBRATED"},
+  "sensitivity_offsets_db": [-3, -2, -1, 0, 1, 2, 3],
+  "source_policy": "Existing NASA–ISRO inputs from NASA Earthdata / ASF DAAC only; no new radar acquisition. Palette software from Matplotlib and Fabio Crameri/cmcrameri with licenses and checksums. No Chinese provider/site used."
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/OPERA_L3_DSWX-S1_V1/OPERA_L3_DSWx-S1_T45RUL_20260912T001029Z_20261012T060831Z_S1D_30_v1.0_B01_WTR.tif",
+  "method": "HEAD",
+  "retrieved_at": "2026-11-02T16:34:50.048940+00:00",
+  "http_status": 200,
+  "content_type": "binary/octet-stream",
+  "final_url": "https://deotb6e7tfubr.cloudfront.net/head-edaf5da92e0ce48fb61175c28b67e95d/podaac-ops-cumulus-protected.s3.us-west-2.amazonaws.com/OPERA_L3_DSWX-S1_V1/OPERA_L3_DSWx-S1_T45RUL_20260912T001029Z_20261012T060831Z_S1D_30_v1.0_B01_WTR.tif",
+  "signed_redirect_query_redacted": true
+}

@@ -1,0 +1,125 @@
+{
+  "project": "TerraPulse",
+  "schema_version": 1,
+  "modules": [
+    {
+      "id": "surface",
+      "title": "Surface investigations",
+      "description": "Read persistence, compare polarizations, follow independent evidence."
+    },
+    {
+      "id": "river",
+      "title": "River Memory",
+      "description": "Track appearances, losses and persistence of radar-dark signatures."
+    },
+    {
+      "id": "wetland",
+      "title": "Wetland Pulse",
+      "description": "Explore observed dark and bright wetland radar responses."
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "nepal_surface",
+      "module": "surface",
+      "title": "Kathmandu \u00b7 persistence investigation",
+      "question": "The change alert disappeared. Did the surface return to its baseline?",
+      "center": [
+        85.33,
+        27.8
+      ],
+      "size_m": [
+        24000,
+        24000
+      ],
+      "source_files": [
+        "aug19.h5",
+        "aug31.h5",
+        "sept12.h5"
+      ],
+      "source_directory": "database/nepal-series",
+      "granule_pattern": "NISAR_L2_PR_GCOV_*_098_A_016_4005_DHDH_A_*_P05023_*.h5",
+      "legacy_zone_raster": "data/derived/nepal_case_01/timeseries/zone_labels.tif",
+      "selection_note": "Original geographic case retained. The highlighted zone was selected by the earlier HH analysis; it is not an independent validation sample.",
+      "status": "OBSERVATIONS_READY",
+      "observation_count": 3,
+      "manifest_url": "/cases/nepal_surface/investigation/manifest.json"
+    },
+    {
+      "case_id": "nepal_impact_corridor",
+      "module": "surface",
+      "title": "Rasuwa\u2013Nuwakot \u00b7 reference-aligned corridor",
+      "question": "What radar changes coincide spatially with preliminary mapped mudflow/rockflow impacts?",
+      "center": [
+        85.32009841233806,
+        28.144416974920865
+      ],
+      "size_m": [
+        24000,
+        24000
+      ],
+      "source_files": [
+        "aug19.h5",
+        "aug31.h5",
+        "sept12.h5"
+      ],
+      "source_directory": "database/nepal-series",
+      "granule_pattern": "NISAR_L2_PR_GCOV_*_098_A_016_4005_DHDH_A_*_P05023_*.h5",
+      "reference_archive": "data/context/unosat_20260826_flood_extent.zip",
+      "selection_note": "Window centered on the independent mapped geometry centroid before inspecting detections. Covers only part of the mapped corridor. Mapping is preliminary impact context, not exhaustive validation or flood-water truth.",
+      "status": "OBSERVATIONS_READY",
+      "observation_count": 3,
+      "manifest_url": "/cases/nepal_impact_corridor/investigation/manifest.json"
+    },
+    {
+      "case_id": "jamuna_river",
+      "module": "river",
+      "title": "Jamuna \u00b7 Sirajganj river corridor",
+      "question": "Which radar-dark signatures appear, recede, or persist between visits?",
+      "center": [
+        89.71,
+        24.49
+      ],
+      "size_m": [
+        20000,
+        20000
+      ],
+      "source_files": [],
+      "source_directory": "database/bangladesh-shared + database/new",
+      "granule_pattern": "NISAR_L2_PR_GCOV_*_069_A_014_4005_DHDH_A_*_P05023_*.h5",
+      "selection_note": "Geographic river corridor selected before radar inspection. Radar-dark candidates are not validated water, bank erosion or flood damage.",
+      "status": "OBSERVATIONS_READY",
+      "observation_count": 10,
+      "record_version": "bangladesh-v2",
+      "manifest_url": "/cases/jamuna_river/bangladesh-v2/investigation/manifest.json",
+      "record_base": "/cases/jamuna_river/bangladesh-v2",
+      "calendar_url": "/cases/jamuna_river/bangladesh-v2/calendar.json"
+    },
+    {
+      "case_id": "tanguar_wetland",
+      "module": "wetland",
+      "title": "Tanguar Haor \u00b7 wetland observations",
+      "question": "How do dark and bright radar responses vary across observed wetland visits?",
+      "center": [
+        91.08,
+        25.1
+      ],
+      "size_m": [
+        18000,
+        16000
+      ],
+      "source_files": [],
+      "source_directory": "database/bangladesh-shared + database/new",
+      "granule_pattern": "NISAR_L2_PR_GCOV_*_069_A_014_4005_DHDH_A_*_P05023_*.h5",
+      "selection_note": "Geographic wetland window selected before radar inspection. No habitat boundary or independently calibrated inundated-vegetation classifier is asserted.",
+      "status": "OBSERVATIONS_READY",
+      "observation_count": 10,
+      "manifest_url": "/cases/tanguar_wetland/bangladesh-v2/investigation/manifest.json",
+      "record_version": "bangladesh-v2",
+      "record_base": "/cases/tanguar_wetland/bangladesh-v2",
+      "calendar_url": "/cases/tanguar_wetland/bangladesh-v2/calendar.json"
+    }
+  ],
+  "record_version": "bangladesh-v2",
+  "prior_registry": "investigations.json"
+}

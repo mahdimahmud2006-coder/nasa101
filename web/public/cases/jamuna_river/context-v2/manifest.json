@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "case_id": "jamuna_river",
+  "status": "implemented",
+  "grid": {
+    "shape": [
+      667,
+      667
+    ],
+    "affine": [
+      30.0,
+      0.0,
+      156520.0,
+      0.0,
+      -30.0,
+      2722450.0
+    ],
+    "crs": "EPSG:32646",
+    "resolution_m": 30
+  },
+  "layers": {
+    "dem": {
+      "raster": "dem.tif",
+      "preview": "dem.png",
+      "limits": [
+        6.0,
+        18.736833572387695
+      ],
+      "valid_fraction": 1.0
+    },
+    "slope": {
+      "raster": "slope.tif",
+      "preview": "slope.png",
+      "limits": [
+        0,
+        60
+      ],
+      "valid_fraction": 1.0
+    },
+    "aspect": {
+      "raster": "aspect.tif",
+      "preview": "aspect.png",
+      "limits": [
+        0,
+        360
+      ],
+      "valid_fraction": 0.883730548518844
+    },
+    "relative_elevation": {
+      "raster": "relative_elevation.tif",
+      "preview": "relative_elevation.png",
+      "limits": [
+        -30,
+        30
+      ],
+      "valid_fraction": 1.0
+    },
+    "flow_accumulation": {
+      "raster": "flow_accumulation.tif",
+      "preview": "flow_accumulation.png",
+      "limits": [
+        900.0,
+        1700100.0
+      ],
+      "valid_fraction": 1.0
+    },
+    "twi": {
+      "raster": "twi.tif",
+      "preview": "twi.png",
+      "limits": [
+        5.760041236877441,
+        15.384126663208008
+      ],
+      "valid_fraction": 1.0
+    },
+    "drainage_distance": {
+      "raster": "drainage_distance.tif",
+      "preview": "drainage_distance.png",
+      "limits": [
+        0.0,
+        894.9860229492188
+      ],
+      "valid_fraction": 1.0
+    },
+    "geometry_candidates": {
+      "raster": "geometry_candidates.tif",
+      "preview": "geometry_candidates.png",
+      "limits": [
+        0,
+        1
+      ]
+    }
+  },
+  "terrain_summary": {
+    "median_slope_degrees": 1.9494949579238892,
+    "fraction_slope_ge_10": 0.005783465089044683,
+    "fraction_geometry_candidates": 6.743255059127108e-05
+  },
+  "radiometric_controls": [
+    {
+      "timestamp": "2026-06-18T23:21:35Z",
+      "observation_id": "visit_0",
+      "common_control_pixels": 489210,
+      "hh_median_db": -4.333560466766357,
+      "hv_median_db": -10.884153366088867,
+      "hh_baseline_shift_db": 0.0,
+      "hv_baseline_shift_db": 0.0
+    },
+    {
+      "timestamp": "2026-07-24T23:21:33Z",
+      "observation_id": "visit_1",
+      "common_control_pixels": 489210,
+      "hh_median_db": -4.397000312805176,
+      "hv_median_db": -10.855488777160645,
+      "hh_baseline_shift_db": -0.06343984603881836,
+      "hv_baseline_shift_db": 0.028664588928222656
+    },
+    {
+      "timestamp": "2026-08-17T23:21:32Z",
+      "observation_id": "visit_2",
+      "common_control_pixels": 489210,
+      "hh_median_db": -3.8963940143585205,
+      "hv_median_db": -10.447776794433594,
+      "hh_baseline_shift_db": 0.4371664524078369,
+      "hv_baseline_shift_db": 0.43637657165527344
+    },
+    {
+      "timestamp": "2026-08-29T23:21:32Z",
+      "observation_id": "visit_3",
+      "common_control_pixels": 489210,
+      "hh_median_db": -4.428668975830078,
+      "hv_median_db": -10.838348388671875,
+      "hh_baseline_shift_db": -0.0951085090637207,
+      "hv_baseline_shift_db": 0.04580497741699219
+    },
+    {
+      "timestamp": "2026-09-22T23:21:32Z",
+      "observation_id": "visit_4",
+      "common_control_pixels": 489210,
+      "hh_median_db": -4.22146463394165,
+      "hv_median_db": -10.728182792663574,
+      "hh_baseline_shift_db": 0.11209583282470703,
+      "hv_baseline_shift_db": 0.15597057342529297
+    },
+    {
+      "timestamp": "2026-10-16T23:21:32Z",
+      "observation_id": "visit_5",
+      "common_control_pixels": 489210,
+      "hh_median_db": -4.453381538391113,
+      "hv_median_db": -10.845186233520508,
+      "hh_baseline_shift_db": -0.11982107162475586,
+      "hv_baseline_shift_db": 0.038967132568359375
+    }
+  ],
+  "stable_target_selection": {
+    "status": "implemented",
+    "hh_first_percentile": 85,
+    "hh_cutoff_db": -5.9537882804870605,
+    "elevation_first_percentile": 50,
+    "elevation_cutoff_m": 12.632816314697266,
+    "maximum_slope_degrees": 10,
+    "selected_pixels": 489210,
+    "selection": "First date and DEM only; fixed before examining later-date control statistics. Putative stable bright/high targets, not independently validated built-up or stable ground.",
+    "mask_sha256": "a27ee65869938cdb2edf30b34af26468d66e4f45fa74b3cfed8abe33a342b8cf",
+    "first_source_granule_id": "NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001"
+  },
+  "rain": [
+    {
+      "observation_id": "visit_0",
+      "timestamp": "2026-06-18T23:21:35Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-06-17T23:21:35Z",
+          "end_exclusive_utc": "2026-06-18T23:21:35Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-06-15T23:21:35Z",
+          "end_exclusive_utc": "2026-06-18T23:21:35Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-06-11T23:21:35Z",
+          "end_exclusive_utc": "2026-06-18T23:21:35Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": null
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_1",
+      "timestamp": "2026-07-24T23:21:33Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-07-23T23:21:33Z",
+          "end_exclusive_utc": "2026-07-24T23:21:33Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-07-21T23:21:33Z",
+          "end_exclusive_utc": "2026-07-24T23:21:33Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-07-17T23:21:33Z",
+          "end_exclusive_utc": "2026-07-24T23:21:33Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-06-18T23:21:35Z",
+          "end_exclusive_utc": "2026-07-24T23:21:33Z",
+          "duration_seconds": 3110398.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_2",
+      "timestamp": "2026-08-17T23:21:32Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-08-16T23:21:32Z",
+          "end_exclusive_utc": "2026-08-17T23:21:32Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-08-14T23:21:32Z",
+          "end_exclusive_utc": "2026-08-17T23:21:32Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-08-10T23:21:32Z",
+          "end_exclusive_utc": "2026-08-17T23:21:32Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-07-24T23:21:33Z",
+          "end_exclusive_utc": "2026-08-17T23:21:32Z",
+          "duration_seconds": 2073599.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_3",
+      "timestamp": "2026-08-29T23:21:32Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-08-28T23:21:32Z",
+          "end_exclusive_utc": "2026-08-29T23:21:32Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-08-26T23:21:32Z",
+          "end_exclusive_utc": "2026-08-29T23:21:32Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-08-22T23:21:32Z",
+          "end_exclusive_utc": "2026-08-29T23:21:32Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-08-17T23:21:32Z",
+          "end_exclusive_utc": "2026-08-29T23:21:32Z",
+          "duration_seconds": 1036800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_4",
+      "timestamp": "2026-09-22T23:21:32Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-09-21T23:21:32Z",
+          "end_exclusive_utc": "2026-09-22T23:21:32Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-09-19T23:21:32Z",
+          "end_exclusive_utc": "2026-09-22T23:21:32Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-09-15T23:21:32Z",
+          "end_exclusive_utc": "2026-09-22T23:21:32Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-08-29T23:21:32Z",
+          "end_exclusive_utc": "2026-09-22T23:21:32Z",
+          "duration_seconds": 2073600.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_5",
+      "timestamp": "2026-10-16T23:21:32Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-10-15T23:21:32Z",
+          "end_exclusive_utc": "2026-10-16T23:21:32Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-10-13T23:21:32Z",
+          "end_exclusive_utc": "2026-10-16T23:21:32Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-10-09T23:21:32Z",
+          "end_exclusive_utc": "2026-10-16T23:21:32Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-09-22T23:21:32Z",
+          "end_exclusive_utc": "2026-10-16T23:21:32Z",
+          "duration_seconds": 2073600.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    }
+  ],
+  "terrain_sources": [
+    {
+      "case_id": "jamuna_river",
+      "file": "data/context/context-v2/terrain/jamuna_river_NASADEM_HGT_n24e089.tif",
+      "sha256": "a95725fd576157fa261b0b6e79544634eaa9c2f3d590302c0ac45c5d6608c7b0",
+      "size_bytes": 310619,
+      "provider": "Microsoft Planetary Computer (USA)",
+      "upstream": "NASA/JPL/USGS NASADEM (USA)",
+      "dataset": "NASADEM HGT v001",
+      "license": "NASA Earth science open data; source collection license applies",
+      "url": "https://nasademeuwest.blob.core.windows.net/nasadem-cog/v001/NASADEM_HGT_n24e089.tif",
+      "retrieved_at": "2026-11-02T16:06:49.667161+00:00",
+      "query": {
+        "method": "HTTP range/native raster window",
+        "bounds_wgs84": [
+          89.58774742830407,
+          24.378262168166852,
+          89.8318764520864,
+          24.601666985895434
+        ],
+        "tile": "NASADEM_HGT_n24e089"
+      },
+      "source_reused_local": false,
+      "vertical_reference": "EGM96 geoid, meters",
+      "native_resolution": "1 arc-second"
+    }
+  ],
+  "hydrology": {
+    "processed_cells": 651220,
+    "outlet_count": 3224,
+    "outlet_contributing_area_m2": 586098000.0,
+    "valid_domain_area_m2": 586098000,
+    "maximum_fill_depth_m": 55.756263732910156,
+    "drainage_cell_count": 15358
+  },
+  "incidence_source": {
+    "file": "database/bangladesh-shared/NISAR_L2_PR_GCOV_023_069_A_014_4005_DHDH_A_20260618T232135_20260618T232210_P05023_N_F_J_001.h5",
+    "dataset": "/science/LSAR/GCOV/metadata/radarGrid/incidenceAngle",
+    "height_plane_ellipsoid_m": 0,
+    "native_metadata_spacing_m": 500,
+    "los_components": "ENU, target to sensor; rotated to UTM using local convergence"
+  },
+  "limitations": [
+    "Separate crop-specific NASADEM context; not Nepal data reused geographically for Bangladesh.",
+    "30 m context grid can extend up to 20 m beyond original crop due to ceil sizing; terrain is not radar detail.",
+    "Steep/layover-shadow screening uses local range slope and incidence at 0 m ellipsoid; not full ray tracing, visibility correction or a validated mask.",
+    "NASADEM EGM96 height and incidence ellipsoid reference differ; the fixed 0 m metadata plane is an approximation.",
+    "Hydrology is buffer-limited model routing, not observed drainage or inundation depth.",
+    "Scientific IMERG is unavailable from the recorded queries; no previous GIS zeros or POWER values substituted."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://cmr.earthdata.nasa.gov/search/collections.json?short_name=OPERA_L3_DSWX-S1_V1&page_size=10",
+  "retrieved_at": "2026-11-02T16:28:17.097534+00:00",
+  "method": "GET",
+  "freeze_commit": "8892340",
+  "license": "Metadata discovery only; dataset license reviewed before use",
+  "status": 200,
+  "sha256": "0e47b43288c11f2c33406b939212faeb616827930ea85d6f4941f41740fd3ec4"
+}

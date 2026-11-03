@@ -1,0 +1,16 @@
+{
+  "command": "make verify",
+  "exit_code": 0,
+  "preexisting_output_files": 785,
+  "validator_report_changes": [
+    {
+      "path": "docs/reports/implementation_04_05_qa.json",
+      "before_sha256": "cabee612cd55d4399ea63f672ddc81c458ec880873a8ab6bdf617277af34c399",
+      "verification_sha256": "99760aa2a342934c8aea977ec8aebff40f71e8cbff912e0150adb993c177f350",
+      "historical_bytes_restored": true
+    }
+  ],
+  "all_preexisting_outputs_preserved": true,
+  "remaining_mismatches": [],
+  "note": "Current validation output is retained in make_verify.log. Existing validators may rewrite timing reports; changed generated reports are saved in this phase evidence directory and original historical bytes restored. No failed validator is reclassified as passing."
+}

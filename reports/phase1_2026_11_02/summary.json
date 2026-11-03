@@ -1,0 +1,40 @@
+{
+  "phase": 1,
+  "date_local": "2026-11-02",
+  "timezone": "Asia/Dhaka",
+  "status": "COMPLETE_SEARCH_AND_CALENDAR; INGESTION_AWAITS_DOWNLOAD_APPROVAL",
+  "before": {
+    "python_tests": 189,
+    "javascript_tests": 37,
+    "make_verify_exit_code": 0
+  },
+  "after": {
+    "python_tests": 207,
+    "javascript_tests": 42,
+    "analytical_validators": 6,
+    "make_verify_exit_code": 0
+  },
+  "frozen_files_unchanged": 795,
+  "historical_analytical_outputs_unchanged": 508,
+  "loaded_raw_granules": 9,
+  "new_radar_downloads": 0,
+  "candidate_snapshot": "data/candidates/phase1_2026_11_02_final",
+  "candidate_counts": {
+    "bangladesh": 4,
+    "nepal": 4
+  },
+  "full_download_gib": {
+    "bangladesh": 25.0546875,
+    "nepal": 26.4296875,
+    "total": 51.484375
+  },
+  "claims": [
+    "P1-CALENDAR",
+    "P1-GAP",
+    "P1-ARCHIVE",
+    "P1-INTERVAL",
+    "P1-INGEST"
+  ],
+  "browser_visual_qa": "not performed; prior URL policy restriction remains",
+  "next": "Await user decision on candidate downloads and Phase 2 go-ahead; do not start Phase 2 automatically."
+}

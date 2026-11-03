@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "filename": "NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001.h5",
+      "size_bytes": 6652166144,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-06-30T23:21:34.000000000",
+      "acquisition_end": "2026-06-30T23:22:09.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 69,
+      "frame": 14,
+      "orbit": 4839,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((91.9078133495563 23.9859051601245 274.435039898941,91.8521459692108 24.2003648803434 -21.1893752119681,91.7919419770536 24.413765930428 -15.1817161808257,91.7320746055559 24.6272706776639 -46.8436246986487,91.6715278550271 24.8406376503752 -45.9324685497422,91.6105989240038 25.0539369995944 -33.2646369533138,91.5339542707509 25.2635069634088 1050.07800292977,91.4656519516906 25.4750925706236 1541.48071289092,91.4085600842339 25.6893818293207 1241.12158203024,91.3643732581807 25.9067816128789 40.5006823331107,91.3031800498601 26.1201426441106 -3.95416704950226,91.0196911088264 26.0522549593702 -10.0149752363185,90.7483068023494 25.9866711852073 -0.250044793376453,90.4859549223445 25.9227160264846 118.581597274876,90.2349729453627 25.8610254430232 27.3778432986218,89.9905866853303 25.8004767860691 19.6495728196321,89.7533051490185 25.7412369421021 -32.2504959084352,89.5213169562005 25.6828876382831 -31.0951793991788,89.2944906623597 25.6254249490932 -23.6901277338364,89.0724167182081 25.568771874431 -24.0545458178318,88.8545467790486 25.5128119988666 -23.3834491655936,88.9205412479751 25.3009340405397 -29.1991444514875,88.9862626387923 25.0890184620451 -34.6665811917326,89.0517025167914 24.8770631746915 -38.5245897775103,89.1168695539052 24.6650691402845 -41.4113015614969,89.1817786500378 24.4530407844156 -44.7432159661444,89.246415610697 24.240974100198 -46.5957014167141,89.3107399381966 24.0288576741265 -42.0031628579009,89.3748835117878 23.8167261715143 -45.7873034921336,89.4387604513458 23.6045566256741 -47.8156084056528,89.5022886138518 23.3923275528854 -38.3401820924778,89.7169187453651 23.4470237546365 -46.483679434872,89.9355786535331 23.5023975299466 -44.3327967407432,90.1588836952809 23.5585837720232 -49.6691440567026,90.3872400812995 23.6156605321266 -49.0668360433422,90.6213189614425 23.6737682605742 -46.4497198902859,90.8619544864029 23.7330821449352 -47.8824387655129,91.1100365935531 23.7937840750695 -48.4020525847399,91.3665830616013 23.8560791403723 -35.7987831555295,91.6330872608137 23.920277462642 -12.67634824919,91.9078133495563 23.9859051601245 274.435039898941))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33552,
+        34200
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 34467.19140625,
+        "mean_value": 0.23802167177200317,
+        "min_value": 0.0,
+        "sample_stddev": 3.8377952575683594,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32646",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        88.8545467790486,
+        23.3923275528854,
+        91.9078133495563,
+        26.1201426441106
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": [],
+      "source_file": "database/new/NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001.h5",
+      "processing_release": "P05023",
+      "identification": {
+        "absoluteOrbitNumber": 4839,
+        "boundingPolygon": "POLYGON ((91.9078133495563 23.9859051601245 274.435039898941,91.8521459692108 24.2003648803434 -21.1893752119681,91.7919419770536 24.413765930428 -15.1817161808257,91.7320746055559 24.6272706776639 -46.8436246986487,91.6715278550271 24.8406376503752 -45.9324685497422,91.6105989240038 25.0539369995944 -33.2646369533138,91.5339542707509 25.2635069634088 1050.07800292977,91.4656519516906 25.4750925706236 1541.48071289092,91.4085600842339 25.6893818293207 1241.12158203024,91.3643732581807 25.9067816128789 40.5006823331107,91.3031800498601 26.1201426441106 -3.95416704950226,91.0196911088264 26.0522549593702 -10.0149752363185,90.7483068023494 25.9866711852073 -0.250044793376453,90.4859549223445 25.9227160264846 118.581597274876,90.2349729453627 25.8610254430232 27.3778432986218,89.9905866853303 25.8004767860691 19.6495728196321,89.7533051490185 25.7412369421021 -32.2504959084352,89.5213169562005 25.6828876382831 -31.0951793991788,89.2944906623597 25.6254249490932 -23.6901277338364,89.0724167182081 25.568771874431 -24.0545458178318,88.8545467790486 25.5128119988666 -23.3834491655936,88.9205412479751 25.3009340405397 -29.1991444514875,88.9862626387923 25.0890184620451 -34.6665811917326,89.0517025167914 24.8770631746915 -38.5245897775103,89.1168695539052 24.6650691402845 -41.4113015614969,89.1817786500378 24.4530407844156 -44.7432159661444,89.246415610697 24.240974100198 -46.5957014167141,89.3107399381966 24.0288576741265 -42.0031628579009,89.3748835117878 23.8167261715143 -45.7873034921336,89.4387604513458 23.6045566256741 -47.8156084056528,89.5022886138518 23.3923275528854 -38.3401820924778,89.7169187453651 23.4470237546365 -46.483679434872,89.9355786535331 23.5023975299466 -44.3327967407432,90.1588836952809 23.5585837720232 -49.6691440567026,90.3872400812995 23.6156605321266 -49.0668360433422,90.6213189614425 23.6737682605742 -46.4497198902859,90.8619544864029 23.7330821449352 -47.8824387655129,91.1100365935531 23.7937840750695 -48.4020525847399,91.3665830616013 23.8560791403723 -35.7987831555295,91.6330872608137 23.920277462642 -12.67634824919,91.9078133495563 23.9859051601245 274.435039898941))",
+        "compositeReleaseId": "P05023",
+        "diagnosticModeFlag": 0,
+        "frameNumber": 14,
+        "granuleId": "NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001",
+        "hasInputDataException": 0,
+        "instrumentName": "LSAR",
+        "isDithered": "True",
+        "isFullFrame": "True",
+        "isGeocoded": "True",
+        "isJointObservation": "True",
+        "isMixedMode": "False",
+        "isUrgentObservation": "False",
+        "listOfFrequencies": [
+          "A",
+          "B"
+        ],
+        "listOfObservationModes": [
+          "(NOT SPECIFIED)"
+        ],
+        "lookDirection": "Left",
+        "missionId": "NISAR",
+        "orbitPassDirection": "Ascending",
+        "plannedDatatakeId": [
+          "dtid_2026181231436"
+        ],
+        "plannedObservationId": [
+          "oid_2026181232032"
+        ],
+        "platformName": "NISAR",
+        "processingCenter": "JPL",
+        "processingDateTime": "2026-07-16T03:03:41",
+        "processingType": "Nominal",
+        "productDoi": "10.5067/NIL2GCOV-P1",
+        "productLevel": "L2",
+        "productSpecificationVersion": "1.5.0",
+        "productType": "GCOV",
+        "productVersion": "1.0.11",
+        "radarBand": "L",
+        "staticLayersDataAccess": "https://nisar-services.earthdata.nasa.gov/redirect/NISAR_L2_STATIC/NISAR_L2_PR_GCOV_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001.h5",
+        "trackNumber": 69,
+        "zeroDopplerEndTime": "2026-06-30T23:22:09.999342105",
+        "zeroDopplerStartTime": "2026-06-30T23:21:34.000000000"
+      },
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "declared_inputs": {
+        "science/LSAR/GCOV/metadata/processingInformation/algorithms/demInterpolation": "biquintic",
+        "science/LSAR/GCOV/metadata/processingInformation/inputs/demSource": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+        "science/LSAR/GCOV/metadata/processingInformation/parameters/geocoding/isSourceDataUpsampled": "False",
+        "science/LSAR/GCOV/metadata/sourceData/granuleId": "NISAR_L1_PR_RSLC_024_069_A_014_4005_DHDH_A_20260630T232134_20260630T232209_P05023_N_F_J_001",
+        "science/LSAR/GCOV/metadata/sourceData/lookDirection": "Left",
+        "science/LSAR/GCOV/metadata/sourceData/processingCenter": "J",
+        "science/LSAR/GCOV/metadata/sourceData/processingDateTime": "2026-07-16T00:37:28",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/azimuthCompression": "time-domain backprojection",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/azimuthPresumming": "BLU",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/dopplerCentroidEstimation": "geometric",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/elevationAntennaPatternCorrection": "enabled",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rangeCompression": "FFT convolution",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rangeSpreadingLossCorrection": "enabled",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rfiDetection": "tone-rank",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rfiMitigation": "tone-rank",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/softwareVersion": "0.25.16",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/runConfigurationContents": "input_file_group:\n    input_file_path:\n    -   /data/work/jobs/2026/07/16/00/29/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_024_069_014_0_state-config-20260711T145511.627331Z/NISAR_L0_PR_RRSD_024_069_A_238S_20260630T232032_20260630T232413_P05023_F_J_001.h5\n    qa_input_file: output/rslc.h5\ndynamic_ancillary_file_group:\n    dem_file: \n        /data/work/jobs/2026/07/16/00/29/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_024_069_014_0_state-config-20260711T145511.627331Z/dem.vrt\n    dem_file_description: Digital Elevation Model (DEM) for the NASA-ISRO NISAR \n        mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), \n        referenced to the WGS84 ellipsoid. This digital elevation model (DEM) \n        was prepared at the Jet Propulsion Laboratory, California Institute of \n        Technology, under contract with the National Aeronautics and Space \n        Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1\n        model, provided by the European Space Agency (ESA). The Copernicus DEM \n        30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  \n        Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the\n        European Union and ESA; all rights reserved. The organizations in charge\n        of the NISAR mission or the Copernicus programme by law or by delegation\n        do not incur any liability for any use of the Copernicus WorldDEM-30. \n        Users, including those who redistribute, adapt, modify, or combine the \n        data contained in this DEM, must comply with the terms of the Copernicus\n        DEM 30-m License Agreement. For additional information, please refer to \n        https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.\n    orbit: \n        /data/work/jobs/2026/07/16/00/29/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_024_069_014_0_state-config-20260711T145511.627331Z/NISAR_ANC_J_PR_MOE_20260702T132343_20260630T205942_20260702T025942.xml\n    pointing: \n        /data/work/jobs/2026/07/16/00/29/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_024_069_014_0_state-config-20260711T145511.627331Z/NISAR_ANC_L_PR_NRP_20260702T064349_20260630T225942_20260702T045942.xml\n    external_calibration: \n        /data/work/jobs/2026/07/16/00/29/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_024_069_014_0_state-config-20260711T145511.627331Z/NISAR_LSAR_EXT_CAL_20250730T000000_04.yaml\n    internal_calibration: \n        /data/work/jobs/2026/07/16/00/29/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_024_069_014_0_state-config-20260711T145511.627331Z/NISAR_LSAR_INT_CAL_20250730T000000_02.h5\n    antenna_pattern: \n        /data/work/jobs/2026/07/16/00/29/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_024_069_014_0_state-config-20260711T145511.627331Z/NISAR_ANTPAT_20231129T093104_01.h5\n    corner_reflector_file: \n        /data/work/jobs/2026/07/16/00/29/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_024_069_014_0_state-config-20260711T145511.627331Z/NISAR_ANC_CORNER_REFLECTORS_007.csv\nproduct_path_group:\n    product_path: output\n    scratch_path: scratch\n    sas_output_file: output/rslc.h5\n    sas_config_file: output/rslc_config.yaml\n    qa_output_dir: output\n    product_counter: 1\nprimary_executable:\n    product_type: RSLC\n    product_version: 1.0.11\n    product_doi: 10.5067/NIL1RSLC-P1\n    composite_release_id: P05023\n    processing_type: PR\n    mission_id: NISAR\n    processing_center: J\n    partial_granule_id: \n        NISAR_L1_PR_RSLC_024_069_A_014_{MODE}_{POLE}_A_{StartDateTime}_{EndDateTime}_P05023_N_{C}_J_001\n    product_accuracy: N\n    data_source: A\ngeometry:\n    relative_orbit_number: 69\n    frame_number: 14\n    track_frame_polygon: '{\"coordinates\": [[[[91.831253025731, 23.992608228379407],\n        [91.08159339701956, 23.811754129733565], [90.63050641931635, 23.700924744170752],\n        [89.46823316904921, 23.408422215620103], [89.30938405537498, 23.93214541603555],\n        [89.1489381342834, 24.455649368740005], [88.98685610851932, 24.978927986918595],\n        [88.82309748114187, 25.50197505477423], [90.00334795772348, 25.801057737456183],\n        [90.4615833992815, 25.914201520948943], [91.22332916670375, 26.098605403762214],\n        [91.3773903800371, 25.572371022583404], [91.53004041229022, 25.045956835382327],\n        [91.68131605671864, 24.5193676604176], [91.831253025731, 23.992608228379407]]]],\n        \"type\": \"MultiPolygon\"}'\n    full_coverage_threshold_percent: 75.0\n    cycle_number: 24\n    orbit_direction: Ascending\nworker:\n    gpu_enabled: true\n    gpu_id: 0\nprocessing:\n    output_grid:\n        start_time: 2026-06-30 23:21:34+00:00\n        end_time: 2026-06-30 23:22:10+00:00\n        start_range:\n        end_range:\n        output_prf: 1520\n        time_snap_interval:\n        range_snap_interval: 24.982704833333333\n    ephemeris_crop_pad: 10.0\n    range_window:\n        kind: Kaiser\n        shape: 1.6\n    azimuth_window:\n        kind: Kaiser\n        shape: 0.0\n    elevation_antenna_pattern:\n        spacing: 24.982704833333333\n    noise_equivalent_backscatter:\n        algorithm: MEE\n        num_range_block: 80\n        threshold_invalid_range_block: 10.0\n        fill_nan_ends: true\n        cpi: 10\n        median_ev: true\n        diff: true\n        diff_method: single\n    radio_frequency_interference:\n        detection_enabled: true\n        mitigation_enabled: true\n        mitigation_algorithm: tone-rank\n        num_samples_rng_blk: 256\n        use_entire_pulse: false\n        slow_time_evd:\n            cpi_length: 16\n            max_emitters: 4\n            num_max_trim: 0\n            num_min_trim: 0\n            max_num_rfi_ev: 2\n            num_cpi_per_threshold_block: 15\n            off_diag_overlap_ratio: 0.25\n            diag_valid_ratio: 0.2\n            min_rank_frac: 0.7\n            rx_dynamic_range_db: 50.0\n            threshold_hyperparameters:\n                x:\n                -   2.0\n                -   20.0\n                y:\n                -   5.0\n                -   2.0\n        freq_notch_filter:\n            num_pulses_az: 1000\n            az_winsize: 256\n            rng_winsize: 100\n            trim_frac: 0.01\n            pvalue_threshold: 0.005\n            cdf_threshold: 0.1\n            nb_detect: true\n            wb_detect: true\n        tone_rank:\n            block_dims:\n            -   512\n            -   1024\n            nominal_false_positive_rate: 0.0005\n            reference_quantile: 0.5\n            interpolate: true\n            fill_value: zero\n            max_gap_fraction: 0.5\n    range_common_band_filter:\n        attenuation: 40.0\n        width: 0.15\n    rdr2geo:\n        tol_height: 1e-05\n        look_min_deg: 0.0\n        look_max_deg: 90.0\n    geo2rdr:\n        tol_aztime: 1e-07\n        time_start: 83992.0\n        time_end: 84282.0\n    lookup_tables:\n        downsampling_factor:\n            azimuth: 50\n            range: 50\n        margin_in_pixels:\n            azimuth: 11\n            range: 11\n    doppler:\n        azimuth_boresight_deg: 0.9\n        interp_method: bilinear\n        spacing:\n            range: 2000.0\n            azimuth: 1.0\n        margin_in_pixels:\n            azimuth: 11\n            range: 11\n    rangecomp:\n        mode: full\n        block_size:\n            range: 0\n            azimuth: 1024\n        notches: []\n    azcomp:\n        block_size:\n            range: 32768\n            azimuth: 1024\n        azimuth_resolution: 6.0\n        kernel:\n            type: Knab\n            halfwidth: 4\n            approx_oversample: 1.7\n            fit: Table\n            fit_order: 2048\n    dry_troposphere_model: tsx\n    dem:\n        reference_height: 0.0\n        interp_method: biquintic\n        require_full_coverage: true\n    metadata_cube_epsg: 4326\n    nominal_antenna_size:\n        range: 12.0\n        azimuth: 12.0\n    encoding_scale_factor: 1.0\n    delete_tempfiles: true\n    debug_dump_height: false\n    zero_fill_gaps: true\n    valid_data_mask:\n        polygon_segment_length: 50.0\n        num_ignore: 25\n        max_observation_gap: 0.002\n    caltone:\n        algorithm: auto\n        frequency: 1214882813.0\n        wavelet_size: 64\n    is_enabled:\n        presum_blu: true\n        rangecomp: true\n        eap: true\n        range_cor: true\n        azcomp: true\noutput:\n    data_type: complex64_zero_mantissa\n    compression_enabled: true\n    compression_type: gzip\n    compression_level: 4\n    chunk_size:\n    -   512\n    -   512\n    shuffle: true\n    mantissa_nbits: 10\n    fs_strategy: page\n    fs_page_size: 4194304\nqa:\n    workflows:\n        validate: true\n        qa_reports: true\n        point_target_analyzer: true\n        absolute_radiometric_calibration: true\n        noise_equivalent_backscatter: true\n    software_config:\n        use_cache: true\n        delete_qa_scratch_files: true\n    validation:\n        metadata_luts_fail_if_all_nan: true\n    qa_reports:\n        backscatter_img:\n            linear_units: true\n            nlooks_freqa:\n            nlooks_freqb:\n            longest_side_max: 2048\n            percentile_for_clipping:\n            -   5.0\n            -   95.0\n            gamma: 0.5\n            nan_color_in_pdf: blue\n            tile_shape:\n            -   1024\n            -   1024\n            output_individual_pngs: true\n        browse_latlon:\n            output_browse_latlon: true\n            resample: bilinear\n        histogram:\n            decimation_ratio:\n            -   8\n            -   8\n            backscatter_histogram_bin_edges_range:\n            -   -80.0\n            -   20.0\n            phase_histogram_y_axis_range:\n            -   0.0\n            -   0.5\n            phs_in_radians: true\n            tile_shape:\n            -   1024\n            -   -1\n        range_spectra:\n            az_decimation: 8\n            hz_to_mhz: true\n            tile_height: 512\n        azimuth_spectra:\n            num_columns: 1024\n            hz_to_mhz: false\n            tile_width: 256\n    point_target_analyzer:\n        nchip: 64\n        upsample_factor: 64\n        peak_find_domain: time\n        num_sidelobes: 10\n        predict_null: false\n        fs_bw_ratio: 1.2\n        window_type: rect\n        window_parameter: 0.0\n    absolute_radiometric_calibration:\n        nchip: 64\n        upsample_factor: 64\n        peak_find_domain: time\n        nfit: 5\n        power_method: box\n        power_threshold: 3.0\npge_name_group:\n    pge_name: RSLC_L_PGE\ndebug_level_group:\n    debug_switch: false\n",
+        "science/LSAR/GCOV/metadata/sourceData/productDoi": "10.5067/NIL1RSLC-P1",
+        "science/LSAR/GCOV/metadata/sourceData/productGeometry": "Slant range",
+        "science/LSAR/GCOV/metadata/sourceData/productLevel": "L1",
+        "science/LSAR/GCOV/metadata/sourceData/productType": "RSLC",
+        "science/LSAR/GCOV/metadata/sourceData/productVersion": "1.0.11",
+        "science/LSAR/GCOV/metadata/sourceData/swaths/frequencyA/listOfPolarizations": [
+          "HH",
+          "HV"
+        ],
+        "science/LSAR/GCOV/metadata/sourceData/swaths/frequencyB/listOfPolarizations": [
+          "HH",
+          "HV"
+        ],
+        "science/LSAR/GCOV/metadata/sourceData/swaths/zeroDopplerEndTime": "2026-06-30T23:22:09.999342105",
+        "science/LSAR/GCOV/metadata/sourceData/swaths/zeroDopplerStartTime": "2026-06-30T23:21:34.000000000"
+      },
+      "file_stat_stable_during_read": true,
+      "acceptance_reasons": [],
+      "metadata_compatible": true
+    },
+    {
+      "filename": "NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001.h5",
+      "size_bytes": 6685720576,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-07-12T23:21:34.000000000",
+      "acquisition_end": "2026-07-12T23:22:08.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 69,
+      "frame": 14,
+      "orbit": 5012,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((91.9005310272887 24.0189809412984 145.614827916508,91.8446270517268 24.2270608026334 -19.5067302256439,91.7863009873251 24.4345849903887 -29.522586267375,91.7278779160891 24.6421080761111 -46.3578224205083,91.6689962423782 24.8495447954066 -45.1517435274433,91.6099003847744 25.0569528312682 -42.9889602773427,91.5346432994283 25.260523495606 1061.41552734382,91.4674714529471 25.4660470868521 1592.68884277368,91.4094548982886 25.673781707207 1474.84448241982,91.3701106376234 25.886003995499 58.7213979854614,91.3109435281734 26.093512957782 -5.25414809589243,91.0273533875552 26.0256016117331 -0.070273191749967,90.7561019866627 25.9600511616438 3.97842200087308,90.4940708869722 25.8961764291509 100.64193706567,90.2418846872623 25.8341902795849 117.731957340878,89.9990585696016 25.7740315651824 -24.2244618470597,89.7613440747215 25.7146867195084 -32.2833137585515,89.5294048191066 25.6563531474252 -31.6239657528419,89.3025806672736 25.5988946851646 -19.9709689155173,89.0805652224613 25.5422605706179 -21.9933861285882,88.8627610812246 25.486321984557 -24.0540372278618,88.9268933818759 25.2803261638311 -29.6500784708748,88.99076991075 25.0742956014168 -35.1621018078336,89.0543782248999 24.8682267343813 -38.88504820183,89.1177371318478 24.6621234517847 -42.6453922403211,89.1808335594575 24.4559830541545 -44.7002827277431,89.2436229018907 24.2497933633387 -39.652914764921,89.3062442189811 24.0435896148828 -43.097471024116,89.3686204120819 23.8373525906806 -45.992358109076,89.4307076478665 23.6310700341206 -43.0104676033912,89.49268193709 23.4247868957045 -54.0875320545757,89.7072611173096 23.4794776151339 -50.4082108375094,89.9259613660276 23.5348689399333 -46.8427959288731,90.1492304821732 23.5910531448714 -42.9005514697523,90.3777052052818 23.6481662696286 -48.6676146496248,90.6118679741411 23.7063011164191 -48.4467129390329,90.8525603612836 23.765634860739 -49.4150593603258,91.1006928350646 23.8263545321411 -48.7041862982093,91.3569493346654 23.8885842519686 -7.70445917941147,91.6239784123045 23.9529140219117 -20.0594063152448,91.9005310272887 24.0189809412984 145.614827916508))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33552,
+        34200
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 37716.203125,
+        "mean_value": 0.30953648686408997,
+        "min_value": 1.0558623029549477e-17,
+        "sample_stddev": 4.917924880981445,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32646",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        88.8627610812246,
+        23.4247868957045,
+        91.9005310272887,
+        26.093512957782
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": [],
+      "source_file": "database/new/NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001.h5",
+      "processing_release": "P05023",
+      "identification": {
+        "absoluteOrbitNumber": 5012,
+        "boundingPolygon": "POLYGON ((91.9005310272887 24.0189809412984 145.614827916508,91.8446270517268 24.2270608026334 -19.5067302256439,91.7863009873251 24.4345849903887 -29.522586267375,91.7278779160891 24.6421080761111 -46.3578224205083,91.6689962423782 24.8495447954066 -45.1517435274433,91.6099003847744 25.0569528312682 -42.9889602773427,91.5346432994283 25.260523495606 1061.41552734382,91.4674714529471 25.4660470868521 1592.68884277368,91.4094548982886 25.673781707207 1474.84448241982,91.3701106376234 25.886003995499 58.7213979854614,91.3109435281734 26.093512957782 -5.25414809589243,91.0273533875552 26.0256016117331 -0.070273191749967,90.7561019866627 25.9600511616438 3.97842200087308,90.4940708869722 25.8961764291509 100.64193706567,90.2418846872623 25.8341902795849 117.731957340878,89.9990585696016 25.7740315651824 -24.2244618470597,89.7613440747215 25.7146867195084 -32.2833137585515,89.5294048191066 25.6563531474252 -31.6239657528419,89.3025806672736 25.5988946851646 -19.9709689155173,89.0805652224613 25.5422605706179 -21.9933861285882,88.8627610812246 25.486321984557 -24.0540372278618,88.9268933818759 25.2803261638311 -29.6500784708748,88.99076991075 25.0742956014168 -35.1621018078336,89.0543782248999 24.8682267343813 -38.88504820183,89.1177371318478 24.6621234517847 -42.6453922403211,89.1808335594575 24.4559830541545 -44.7002827277431,89.2436229018907 24.2497933633387 -39.652914764921,89.3062442189811 24.0435896148828 -43.097471024116,89.3686204120819 23.8373525906806 -45.992358109076,89.4307076478665 23.6310700341206 -43.0104676033912,89.49268193709 23.4247868957045 -54.0875320545757,89.7072611173096 23.4794776151339 -50.4082108375094,89.9259613660276 23.5348689399333 -46.8427959288731,90.1492304821732 23.5910531448714 -42.9005514697523,90.3777052052818 23.6481662696286 -48.6676146496248,90.6118679741411 23.7063011164191 -48.4467129390329,90.8525603612836 23.765634860739 -49.4150593603258,91.1006928350646 23.8263545321411 -48.7041862982093,91.3569493346654 23.8885842519686 -7.70445917941147,91.6239784123045 23.9529140219117 -20.0594063152448,91.9005310272887 24.0189809412984 145.614827916508))",
+        "compositeReleaseId": "P05023",
+        "diagnosticModeFlag": 0,
+        "frameNumber": 14,
+        "granuleId": "NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001",
+        "hasInputDataException": 0,
+        "instrumentName": "LSAR",
+        "isDithered": "True",
+        "isFullFrame": "True",
+        "isGeocoded": "True",
+        "isJointObservation": "True",
+        "isMixedMode": "False",
+        "isUrgentObservation": "False",
+        "listOfFrequencies": [
+          "A",
+          "B"
+        ],
+        "listOfObservationModes": [
+          "(NOT SPECIFIED)"
+        ],
+        "lookDirection": "Left",
+        "missionId": "NISAR",
+        "orbitPassDirection": "Ascending",
+        "plannedDatatakeId": [
+          "dtid_2026193231436"
+        ],
+        "plannedObservationId": [
+          "oid_2026193232032"
+        ],
+        "platformName": "NISAR",
+        "processingCenter": "JPL",
+        "processingDateTime": "2026-07-19T14:27:23",
+        "processingType": "Nominal",
+        "productDoi": "10.5067/NIL2GCOV-P1",
+        "productLevel": "L2",
+        "productSpecificationVersion": "1.5.0",
+        "productType": "GCOV",
+        "productVersion": "1.0.11",
+        "radarBand": "L",
+        "staticLayersDataAccess": "https://nisar-services.earthdata.nasa.gov/redirect/NISAR_L2_STATIC/NISAR_L2_PR_GCOV_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001.h5",
+        "trackNumber": 69,
+        "zeroDopplerEndTime": "2026-07-12T23:22:08.999342105",
+        "zeroDopplerStartTime": "2026-07-12T23:21:34.000000000"
+      },
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "declared_inputs": {
+        "science/LSAR/GCOV/metadata/processingInformation/algorithms/demInterpolation": "biquintic",
+        "science/LSAR/GCOV/metadata/processingInformation/inputs/demSource": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+        "science/LSAR/GCOV/metadata/processingInformation/parameters/geocoding/isSourceDataUpsampled": "False",
+        "science/LSAR/GCOV/metadata/sourceData/granuleId": "NISAR_L1_PR_RSLC_025_069_A_014_4005_DHDH_A_20260712T232134_20260712T232208_P05023_N_F_J_001",
+        "science/LSAR/GCOV/metadata/sourceData/lookDirection": "Left",
+        "science/LSAR/GCOV/metadata/sourceData/processingCenter": "J",
+        "science/LSAR/GCOV/metadata/sourceData/processingDateTime": "2026-07-19T12:03:24",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/azimuthCompression": "time-domain backprojection",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/azimuthPresumming": "BLU",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/dopplerCentroidEstimation": "geometric",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/elevationAntennaPatternCorrection": "enabled",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rangeCompression": "FFT convolution",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rangeSpreadingLossCorrection": "enabled",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rfiDetection": "tone-rank",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rfiMitigation": "tone-rank",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/softwareVersion": "0.25.16",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/runConfigurationContents": "input_file_group:\n    input_file_path:\n    -   /data/work/jobs/2026/07/19/11/56/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_025_069_014_0_expired-state-config-20260718T055941.620852Z/NISAR_L0_PR_RRSD_025_069_A_238S_20260712T232032_20260712T232413_P05023_F_J_001.h5\n    qa_input_file: output/rslc.h5\ndynamic_ancillary_file_group:\n    dem_file: \n        /data/work/jobs/2026/07/19/11/56/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_025_069_014_0_expired-state-config-20260718T055941.620852Z/dem.vrt\n    dem_file_description: Digital Elevation Model (DEM) for the NASA-ISRO NISAR \n        mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), \n        referenced to the WGS84 ellipsoid. This digital elevation model (DEM) \n        was prepared at the Jet Propulsion Laboratory, California Institute of \n        Technology, under contract with the National Aeronautics and Space \n        Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1\n        model, provided by the European Space Agency (ESA). The Copernicus DEM \n        30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  \n        Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the\n        European Union and ESA; all rights reserved. The organizations in charge\n        of the NISAR mission or the Copernicus programme by law or by delegation\n        do not incur any liability for any use of the Copernicus WorldDEM-30. \n        Users, including those who redistribute, adapt, modify, or combine the \n        data contained in this DEM, must comply with the terms of the Copernicus\n        DEM 30-m License Agreement. For additional information, please refer to \n        https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.\n    orbit: \n        /data/work/jobs/2026/07/19/11/56/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_025_069_014_0_expired-state-config-20260718T055941.620852Z/NISAR_ANC_J_PR_MOE_20260714T132327_20260712T205942_20260714T025942.xml\n    pointing: \n        /data/work/jobs/2026/07/19/11/56/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_025_069_014_0_expired-state-config-20260718T055941.620852Z/NISAR_ANC_L_PR_NRP_20260714T002348_20260712T165942_20260713T225942.xml\n    external_calibration: \n        /data/work/jobs/2026/07/19/11/56/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_025_069_014_0_expired-state-config-20260718T055941.620852Z/NISAR_LSAR_EXT_CAL_20250730T000000_04.yaml\n    internal_calibration: \n        /data/work/jobs/2026/07/19/11/56/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_025_069_014_0_expired-state-config-20260718T055941.620852Z/NISAR_LSAR_INT_CAL_20250730T000000_02.h5\n    antenna_pattern: \n        /data/work/jobs/2026/07/19/11/56/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_025_069_014_0_expired-state-config-20260718T055941.620852Z/NISAR_ANTPAT_20231129T093104_01.h5\n    corner_reflector_file: \n        /data/work/jobs/2026/07/19/11/56/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_025_069_014_0_expired-state-config-20260718T055941.620852Z/NISAR_ANC_CORNER_REFLECTORS_007.csv\nproduct_path_group:\n    product_path: output\n    scratch_path: scratch\n    sas_output_file: output/rslc.h5\n    sas_config_file: output/rslc_config.yaml\n    qa_output_dir: output\n    product_counter: 1\nprimary_executable:\n    product_type: RSLC\n    product_version: 1.0.11\n    product_doi: 10.5067/NIL1RSLC-P1\n    composite_release_id: P05023\n    processing_type: PR\n    mission_id: NISAR\n    processing_center: J\n    partial_granule_id: \n        NISAR_L1_PR_RSLC_025_069_A_014_{MODE}_{POLE}_A_{StartDateTime}_{EndDateTime}_P05023_N_{C}_J_001\n    product_accuracy: N\n    data_source: A\ngeometry:\n    relative_orbit_number: 69\n    frame_number: 14\n    track_frame_polygon: '{\"coordinates\": [[[[91.831253025731, 23.992608228379407],\n        [91.08159339701956, 23.811754129733565], [90.63050641931635, 23.700924744170752],\n        [89.46823316904921, 23.408422215620103], [89.30938405537498, 23.93214541603555],\n        [89.1489381342834, 24.455649368740005], [88.98685610851932, 24.978927986918595],\n        [88.82309748114187, 25.50197505477423], [90.00334795772348, 25.801057737456183],\n        [90.4615833992815, 25.914201520948943], [91.22332916670375, 26.098605403762214],\n        [91.3773903800371, 25.572371022583404], [91.53004041229022, 25.045956835382327],\n        [91.68131605671864, 24.5193676604176], [91.831253025731, 23.992608228379407]]]],\n        \"type\": \"MultiPolygon\"}'\n    full_coverage_threshold_percent: 75.0\n    cycle_number: 25\n    orbit_direction: Ascending\nworker:\n    gpu_enabled: true\n    gpu_id: 0\nprocessing:\n    output_grid:\n        start_time: 2026-07-12 23:21:34+00:00\n        end_time: 2026-07-12 23:22:09+00:00\n        start_range:\n        end_range:\n        output_prf: 1520\n        time_snap_interval:\n        range_snap_interval: 24.982704833333333\n    ephemeris_crop_pad: 10.0\n    range_window:\n        kind: Kaiser\n        shape: 1.6\n    azimuth_window:\n        kind: Kaiser\n        shape: 0.0\n    elevation_antenna_pattern:\n        spacing: 24.982704833333333\n    noise_equivalent_backscatter:\n        algorithm: MEE\n        num_range_block: 80\n        threshold_invalid_range_block: 10.0\n        fill_nan_ends: true\n        cpi: 10\n        median_ev: true\n        diff: true\n        diff_method: single\n    radio_frequency_interference:\n        detection_enabled: true\n        mitigation_enabled: true\n        mitigation_algorithm: tone-rank\n        num_samples_rng_blk: 256\n        use_entire_pulse: false\n        slow_time_evd:\n            cpi_length: 16\n            max_emitters: 4\n            num_max_trim: 0\n            num_min_trim: 0\n            max_num_rfi_ev: 2\n            num_cpi_per_threshold_block: 15\n            off_diag_overlap_ratio: 0.25\n            diag_valid_ratio: 0.2\n            min_rank_frac: 0.7\n            rx_dynamic_range_db: 50.0\n            threshold_hyperparameters:\n                x:\n                -   2.0\n                -   20.0\n                y:\n                -   5.0\n                -   2.0\n        freq_notch_filter:\n            num_pulses_az: 1000\n            az_winsize: 256\n            rng_winsize: 100\n            trim_frac: 0.01\n            pvalue_threshold: 0.005\n            cdf_threshold: 0.1\n            nb_detect: true\n            wb_detect: true\n        tone_rank:\n            block_dims:\n            -   512\n            -   1024\n            nominal_false_positive_rate: 0.0005\n            reference_quantile: 0.5\n            interpolate: true\n            fill_value: zero\n            max_gap_fraction: 0.5\n    range_common_band_filter:\n        attenuation: 40.0\n        width: 0.15\n    rdr2geo:\n        tol_height: 1e-05\n        look_min_deg: 0.0\n        look_max_deg: 90.0\n    geo2rdr:\n        tol_aztime: 1e-07\n        time_start: 83992.0\n        time_end: 84302.0\n    lookup_tables:\n        downsampling_factor:\n            azimuth: 50\n            range: 50\n        margin_in_pixels:\n            azimuth: 11\n            range: 11\n    doppler:\n        azimuth_boresight_deg: 0.9\n        interp_method: bilinear\n        spacing:\n            range: 2000.0\n            azimuth: 1.0\n        margin_in_pixels:\n            azimuth: 11\n            range: 11\n    rangecomp:\n        mode: full\n        block_size:\n            range: 0\n            azimuth: 1024\n        notches: []\n    azcomp:\n        block_size:\n            range: 32768\n            azimuth: 1024\n        azimuth_resolution: 6.0\n        kernel:\n            type: Knab\n            halfwidth: 4\n            approx_oversample: 1.7\n            fit: Table\n            fit_order: 2048\n    dry_troposphere_model: tsx\n    dem:\n        reference_height: 0.0\n        interp_method: biquintic\n        require_full_coverage: true\n    metadata_cube_epsg: 4326\n    nominal_antenna_size:\n        range: 12.0\n        azimuth: 12.0\n    encoding_scale_factor: 1.0\n    delete_tempfiles: true\n    debug_dump_height: false\n    zero_fill_gaps: true\n    valid_data_mask:\n        polygon_segment_length: 50.0\n        num_ignore: 25\n        max_observation_gap: 0.002\n    caltone:\n        algorithm: auto\n        frequency: 1214882813.0\n        wavelet_size: 64\n    is_enabled:\n        presum_blu: true\n        rangecomp: true\n        eap: true\n        range_cor: true\n        azcomp: true\noutput:\n    data_type: complex64_zero_mantissa\n    compression_enabled: true\n    compression_type: gzip\n    compression_level: 4\n    chunk_size:\n    -   512\n    -   512\n    shuffle: true\n    mantissa_nbits: 10\n    fs_strategy: page\n    fs_page_size: 4194304\nqa:\n    workflows:\n        validate: true\n        qa_reports: true\n        point_target_analyzer: true\n        absolute_radiometric_calibration: true\n        noise_equivalent_backscatter: true\n    software_config:\n        use_cache: true\n        delete_qa_scratch_files: true\n    validation:\n        metadata_luts_fail_if_all_nan: true\n    qa_reports:\n        backscatter_img:\n            linear_units: true\n            nlooks_freqa:\n            nlooks_freqb:\n            longest_side_max: 2048\n            percentile_for_clipping:\n            -   5.0\n            -   95.0\n            gamma: 0.5\n            nan_color_in_pdf: blue\n            tile_shape:\n            -   1024\n            -   1024\n            output_individual_pngs: true\n        browse_latlon:\n            output_browse_latlon: true\n            resample: bilinear\n        histogram:\n            decimation_ratio:\n            -   8\n            -   8\n            backscatter_histogram_bin_edges_range:\n            -   -80.0\n            -   20.0\n            phase_histogram_y_axis_range:\n            -   0.0\n            -   0.5\n            phs_in_radians: true\n            tile_shape:\n            -   1024\n            -   -1\n        range_spectra:\n            az_decimation: 8\n            hz_to_mhz: true\n            tile_height: 512\n        azimuth_spectra:\n            num_columns: 1024\n            hz_to_mhz: false\n            tile_width: 256\n    point_target_analyzer:\n        nchip: 64\n        upsample_factor: 64\n        peak_find_domain: time\n        num_sidelobes: 10\n        predict_null: false\n        fs_bw_ratio: 1.2\n        window_type: rect\n        window_parameter: 0.0\n    absolute_radiometric_calibration:\n        nchip: 64\n        upsample_factor: 64\n        peak_find_domain: time\n        nfit: 5\n        power_method: box\n        power_threshold: 3.0\npge_name_group:\n    pge_name: RSLC_L_PGE\ndebug_level_group:\n    debug_switch: false\n",
+        "science/LSAR/GCOV/metadata/sourceData/productDoi": "10.5067/NIL1RSLC-P1",
+        "science/LSAR/GCOV/metadata/sourceData/productGeometry": "Slant range",
+        "science/LSAR/GCOV/metadata/sourceData/productLevel": "L1",
+        "science/LSAR/GCOV/metadata/sourceData/productType": "RSLC",
+        "science/LSAR/GCOV/metadata/sourceData/productVersion": "1.0.11",
+        "science/LSAR/GCOV/metadata/sourceData/swaths/frequencyA/listOfPolarizations": [
+          "HH",
+          "HV"
+        ],
+        "science/LSAR/GCOV/metadata/sourceData/swaths/frequencyB/listOfPolarizations": [
+          "HH",
+          "HV"
+        ],
+        "science/LSAR/GCOV/metadata/sourceData/swaths/zeroDopplerEndTime": "2026-07-12T23:22:08.999342105",
+        "science/LSAR/GCOV/metadata/sourceData/swaths/zeroDopplerStartTime": "2026-07-12T23:21:34.000000000"
+      },
+      "file_stat_stable_during_read": true,
+      "acceptance_reasons": [],
+      "metadata_compatible": true
+    },
+    {
+      "filename": "NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 6874464256,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-09-10T23:21:31.000000000",
+      "acquisition_end": "2026-09-10T23:22:06.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 69,
+      "frame": 14,
+      "orbit": 5877,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((91.9118426995639 23.9676175370647 364.068485503766,91.8574235345778 24.1823716092375 -17.4197699510991,91.7972212450204 24.3957705549749 -10.3595403332708,91.7374569161759 24.6092971756373 -47.9748617481336,91.676919134599 24.8226630464465 -46.4695663335273,91.616186025164 25.0360067613056 -46.1035651458472,91.5418473366748 25.2461246899438 878.850219990555,91.4715080777258 25.457220614162 1512.54431161767,91.411869125444 25.670898547776 1389.55285644499,91.3699931527381 25.8888473375392 30.4849175210159,91.3087360555995 26.1021901165856 -8.30580697830769,91.0251920438353 26.0342902846544 -8.94795669501749,90.7537525175685 25.9686943482064 7.02279621533206,90.4922275630258 25.9049436901394 59.8130356631625,90.2399744351504 25.8429416450637 78.3475248982035,89.9966653221287 25.782662785244 -23.4487190106238,89.7589368170835 25.7233137650247 -32.2723655685177,89.5269769179834 25.6649741890519 -31.6923599854505,89.3001214232856 25.6075068261987 -18.9214655610438,89.0781202661139 25.5508753402601 -24.6282807226441,88.8602701447182 25.4949237584001 -23.7690366336475,88.9262410980811 25.2830432959908 -29.4687833900958,88.9919410312181 25.0711261616614 -35.0417776913824,89.0573623269183 24.8591690767063 -39.2750431924273,89.1225183204098 24.6471759052932 -43.3944709898658,89.1873347581237 24.4351273797692 -38.6260787828176,89.2519797170959 24.2230657017428 -43.8061637901628,89.3162798931984 24.0109468965978 -38.8752400381977,89.3803653136142 23.7988037990197 -38.3842726021163,89.4442859819801 23.5866485437277 -47.7870240573423,89.5078830304246 23.3744409956323 -48.6017172836401,89.7224446991284 23.4291161865613 -50.8339111877518,89.9410788084341 23.4844801337331 -47.7607696711964,90.1642730079088 23.5406353959653 -43.5795149885054,90.3926911535775 23.5977248509574 -51.1351721739579,90.6267237495158 23.6558184284156 -45.9056036677297,90.8673620346135 23.7151305931114 -49.3273581255181,91.1153999169685 23.7758195070461 -47.6853901829358,91.37184905931 23.8380890635488 -28.9294617973223,91.6384285608676 23.9023040227739 -13.2620401902375,91.9118426995639 23.9676175370647 364.068485503766))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33552,
+        34200
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 38058.97265625,
+        "mean_value": 0.293731689453125,
+        "min_value": 1.8096630616239062e-17,
+        "sample_stddev": 4.303867340087891,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32646",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        88.8602701447182,
+        23.3744409956323,
+        91.9118426995639,
+        26.1021901165856
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": [],
+      "source_file": "database/new/NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001.h5",
+      "processing_release": "P05023",
+      "identification": {
+        "absoluteOrbitNumber": 5877,
+        "boundingPolygon": "POLYGON ((91.9118426995639 23.9676175370647 364.068485503766,91.8574235345778 24.1823716092375 -17.4197699510991,91.7972212450204 24.3957705549749 -10.3595403332708,91.7374569161759 24.6092971756373 -47.9748617481336,91.676919134599 24.8226630464465 -46.4695663335273,91.616186025164 25.0360067613056 -46.1035651458472,91.5418473366748 25.2461246899438 878.850219990555,91.4715080777258 25.457220614162 1512.54431161767,91.411869125444 25.670898547776 1389.55285644499,91.3699931527381 25.8888473375392 30.4849175210159,91.3087360555995 26.1021901165856 -8.30580697830769,91.0251920438353 26.0342902846544 -8.94795669501749,90.7537525175685 25.9686943482064 7.02279621533206,90.4922275630258 25.9049436901394 59.8130356631625,90.2399744351504 25.8429416450637 78.3475248982035,89.9966653221287 25.782662785244 -23.4487190106238,89.7589368170835 25.7233137650247 -32.2723655685177,89.5269769179834 25.6649741890519 -31.6923599854505,89.3001214232856 25.6075068261987 -18.9214655610438,89.0781202661139 25.5508753402601 -24.6282807226441,88.8602701447182 25.4949237584001 -23.7690366336475,88.9262410980811 25.2830432959908 -29.4687833900958,88.9919410312181 25.0711261616614 -35.0417776913824,89.0573623269183 24.8591690767063 -39.2750431924273,89.1225183204098 24.6471759052932 -43.3944709898658,89.1873347581237 24.4351273797692 -38.6260787828176,89.2519797170959 24.2230657017428 -43.8061637901628,89.3162798931984 24.0109468965978 -38.8752400381977,89.3803653136142 23.7988037990197 -38.3842726021163,89.4442859819801 23.5866485437277 -47.7870240573423,89.5078830304246 23.3744409956323 -48.6017172836401,89.7224446991284 23.4291161865613 -50.8339111877518,89.9410788084341 23.4844801337331 -47.7607696711964,90.1642730079088 23.5406353959653 -43.5795149885054,90.3926911535775 23.5977248509574 -51.1351721739579,90.6267237495158 23.6558184284156 -45.9056036677297,90.8673620346135 23.7151305931114 -49.3273581255181,91.1153999169685 23.7758195070461 -47.6853901829358,91.37184905931 23.8380890635488 -28.9294617973223,91.6384285608676 23.9023040227739 -13.2620401902375,91.9118426995639 23.9676175370647 364.068485503766))",
+        "compositeReleaseId": "P05023",
+        "diagnosticModeFlag": 0,
+        "frameNumber": 14,
+        "granuleId": "NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001",
+        "hasInputDataException": 0,
+        "instrumentName": "LSAR",
+        "isDithered": "True",
+        "isFullFrame": "True",
+        "isGeocoded": "True",
+        "isJointObservation": "True",
+        "isMixedMode": "False",
+        "isUrgentObservation": "False",
+        "listOfFrequencies": [
+          "A",
+          "B"
+        ],
+        "listOfObservationModes": [
+          "(NOT SPECIFIED)"
+        ],
+        "lookDirection": "Left",
+        "missionId": "NISAR",
+        "orbitPassDirection": "Ascending",
+        "plannedDatatakeId": [
+          "dtid_2026253231436"
+        ],
+        "plannedObservationId": [
+          "oid_2026253232032"
+        ],
+        "platformName": "NISAR",
+        "processingCenter": "JPL",
+        "processingDateTime": "2026-09-13T21:46:53",
+        "processingType": "Nominal",
+        "productDoi": "10.5067/NIL2GCOV-P1",
+        "productLevel": "L2",
+        "productSpecificationVersion": "1.5.0",
+        "productType": "GCOV",
+        "productVersion": "1.0.11",
+        "radarBand": "L",
+        "staticLayersDataAccess": "https://nisar-services.earthdata.nasa.gov/redirect/NISAR_L2_STATIC/NISAR_L2_PR_GCOV_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001.h5",
+        "trackNumber": 69,
+        "zeroDopplerEndTime": "2026-09-10T23:22:06.999342105",
+        "zeroDopplerStartTime": "2026-09-10T23:21:31.000000000"
+      },
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "declared_inputs": {
+        "science/LSAR/GCOV/metadata/processingInformation/algorithms/demInterpolation": "biquintic",
+        "science/LSAR/GCOV/metadata/processingInformation/inputs/demSource": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+        "science/LSAR/GCOV/metadata/processingInformation/parameters/geocoding/isSourceDataUpsampled": "False",
+        "science/LSAR/GCOV/metadata/sourceData/granuleId": "NISAR_L1_PR_RSLC_030_069_A_014_4005_DHDH_A_20260910T232131_20260910T232206_P05023_N_F_J_001",
+        "science/LSAR/GCOV/metadata/sourceData/lookDirection": "Left",
+        "science/LSAR/GCOV/metadata/sourceData/processingCenter": "J",
+        "science/LSAR/GCOV/metadata/sourceData/processingDateTime": "2026-09-13T18:59:06",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/azimuthCompression": "time-domain backprojection",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/azimuthPresumming": "BLU",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/dopplerCentroidEstimation": "geometric",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/elevationAntennaPatternCorrection": "enabled",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rangeCompression": "FFT convolution",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rangeSpreadingLossCorrection": "enabled",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rfiDetection": "tone-rank",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rfiMitigation": "tone-rank",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/softwareVersion": "0.25.16",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/runConfigurationContents": "input_file_group:\n    input_file_path:\n    -   /data/work/jobs/2026/09/13/18/52/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_030_069_014_0_expired-state-config-20260912T175009.654598Z/NISAR_L0_PR_RRSD_030_069_A_238S_20260910T232030_20260910T232411_P05023_F_J_001.h5\n    qa_input_file: output/rslc.h5\ndynamic_ancillary_file_group:\n    dem_file: \n        /data/work/jobs/2026/09/13/18/52/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_030_069_014_0_expired-state-config-20260912T175009.654598Z/dem.vrt\n    dem_file_description: Digital Elevation Model (DEM) for the NASA-ISRO NISAR \n        mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), \n        referenced to the WGS84 ellipsoid. This digital elevation model (DEM) \n        was prepared at the Jet Propulsion Laboratory, California Institute of \n        Technology, under contract with the National Aeronautics and Space \n        Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1\n        model, provided by the European Space Agency (ESA). The Copernicus DEM \n        30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  \n        Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the\n        European Union and ESA; all rights reserved. The organizations in charge\n        of the NISAR mission or the Copernicus programme by law or by delegation\n        do not incur any liability for any use of the Copernicus WorldDEM-30. \n        Users, including those who redistribute, adapt, modify, or combine the \n        data contained in this DEM, must comply with the terms of the Copernicus\n        DEM 30-m License Agreement. For additional information, please refer to \n        https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.\n    orbit: \n        /data/work/jobs/2026/09/13/18/52/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_030_069_014_0_expired-state-config-20260912T175009.654598Z/NISAR_ANC_J_PR_MOE_20260912T132621_20260910T205942_20260912T025942.xml\n    pointing: \n        /data/work/jobs/2026/09/13/18/52/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_030_069_014_0_expired-state-config-20260912T175009.654598Z/NISAR_ANC_L_PR_NRP_20260912T064318_20260910T225942_20260912T045942.xml\n    external_calibration: \n        /data/work/jobs/2026/09/13/18/52/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_030_069_014_0_expired-state-config-20260912T175009.654598Z/NISAR_LSAR_EXT_CAL_20250730T000000_04.yaml\n    internal_calibration: \n        /data/work/jobs/2026/09/13/18/52/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_030_069_014_0_expired-state-config-20260912T175009.654598Z/NISAR_LSAR_INT_CAL_20250730T000000_02.h5\n    antenna_pattern: \n        /data/work/jobs/2026/09/13/18/52/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_030_069_014_0_expired-state-config-20260912T175009.654598Z/NISAR_ANTPAT_20231129T093104_01.h5\n    corner_reflector_file: \n        /data/work/jobs/2026/09/13/18/52/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_030_069_014_0_expired-state-config-20260912T175009.654598Z/NISAR_ANC_CORNER_REFLECTORS_007.csv\nproduct_path_group:\n    product_path: output\n    scratch_path: scratch\n    sas_output_file: output/rslc.h5\n    sas_config_file: output/rslc_config.yaml\n    qa_output_dir: output\n    product_counter: 1\nprimary_executable:\n    product_type: RSLC\n    product_version: 1.0.11\n    product_doi: 10.5067/NIL1RSLC-P1\n    composite_release_id: P05023\n    processing_type: PR\n    mission_id: NISAR\n    processing_center: J\n    partial_granule_id: \n        NISAR_L1_PR_RSLC_030_069_A_014_{MODE}_{POLE}_A_{StartDateTime}_{EndDateTime}_P05023_N_{C}_J_001\n    product_accuracy: N\n    data_source: A\ngeometry:\n    relative_orbit_number: 69\n    frame_number: 14\n    track_frame_polygon: '{\"coordinates\": [[[[91.831253025731, 23.992608228379407],\n        [91.08159339701956, 23.811754129733565], [90.63050641931635, 23.700924744170752],\n        [89.46823316904921, 23.408422215620103], [89.30938405537498, 23.93214541603555],\n        [89.1489381342834, 24.455649368740005], [88.98685610851932, 24.978927986918595],\n        [88.82309748114187, 25.50197505477423], [90.00334795772348, 25.801057737456183],\n        [90.4615833992815, 25.914201520948943], [91.22332916670375, 26.098605403762214],\n        [91.3773903800371, 25.572371022583404], [91.53004041229022, 25.045956835382327],\n        [91.68131605671864, 24.5193676604176], [91.831253025731, 23.992608228379407]]]],\n        \"type\": \"MultiPolygon\"}'\n    full_coverage_threshold_percent: 75.0\n    cycle_number: 30\n    orbit_direction: Ascending\nworker:\n    gpu_enabled: true\n    gpu_id: 0\nprocessing:\n    output_grid:\n        start_time: 2026-09-10 23:21:31+00:00\n        end_time: 2026-09-10 23:22:07+00:00\n        start_range:\n        end_range:\n        output_prf: 1520\n        time_snap_interval:\n        range_snap_interval: 24.982704833333333\n    ephemeris_crop_pad: 10.0\n    range_window:\n        kind: Kaiser\n        shape: 1.6\n    azimuth_window:\n        kind: Kaiser\n        shape: 0.0\n    elevation_antenna_pattern:\n        spacing: 24.982704833333333\n    noise_equivalent_backscatter:\n        algorithm: MEE\n        num_range_block: 80\n        threshold_invalid_range_block: 10.0\n        fill_nan_ends: true\n        cpi: 10\n        median_ev: true\n        diff: true\n        diff_method: single\n    radio_frequency_interference:\n        detection_enabled: true\n        mitigation_enabled: true\n        mitigation_algorithm: tone-rank\n        num_samples_rng_blk: 256\n        use_entire_pulse: false\n        slow_time_evd:\n            cpi_length: 16\n            max_emitters: 4\n            num_max_trim: 0\n            num_min_trim: 0\n            max_num_rfi_ev: 2\n            num_cpi_per_threshold_block: 15\n            off_diag_overlap_ratio: 0.25\n            diag_valid_ratio: 0.2\n            min_rank_frac: 0.7\n            rx_dynamic_range_db: 50.0\n            threshold_hyperparameters:\n                x:\n                -   2.0\n                -   20.0\n                y:\n                -   5.0\n                -   2.0\n        freq_notch_filter:\n            num_pulses_az: 1000\n            az_winsize: 256\n            rng_winsize: 100\n            trim_frac: 0.01\n            pvalue_threshold: 0.005\n            cdf_threshold: 0.1\n            nb_detect: true\n            wb_detect: true\n        tone_rank:\n            block_dims:\n            -   512\n            -   1024\n            nominal_false_positive_rate: 0.0005\n            reference_quantile: 0.5\n            interpolate: true\n            fill_value: zero\n            max_gap_fraction: 0.5\n    range_common_band_filter:\n        attenuation: 40.0\n        width: 0.15\n    rdr2geo:\n        tol_height: 1e-05\n        look_min_deg: 0.0\n        look_max_deg: 90.0\n    geo2rdr:\n        tol_aztime: 1e-07\n        time_start: 83982.0\n        time_end: 84292.0\n    lookup_tables:\n        downsampling_factor:\n            azimuth: 50\n            range: 50\n        margin_in_pixels:\n            azimuth: 11\n            range: 11\n    doppler:\n        azimuth_boresight_deg: 0.9\n        interp_method: bilinear\n        spacing:\n            range: 2000.0\n            azimuth: 1.0\n        margin_in_pixels:\n            azimuth: 11\n            range: 11\n    rangecomp:\n        mode: full\n        block_size:\n            range: 0\n            azimuth: 1024\n        notches: []\n    azcomp:\n        block_size:\n            range: 32768\n            azimuth: 1024\n        azimuth_resolution: 6.0\n        kernel:\n            type: Knab\n            halfwidth: 4\n            approx_oversample: 1.7\n            fit: Table\n            fit_order: 2048\n    dry_troposphere_model: tsx\n    dem:\n        reference_height: 0.0\n        interp_method: biquintic\n        require_full_coverage: true\n    metadata_cube_epsg: 4326\n    nominal_antenna_size:\n        range: 12.0\n        azimuth: 12.0\n    encoding_scale_factor: 1.0\n    delete_tempfiles: true\n    debug_dump_height: false\n    zero_fill_gaps: true\n    valid_data_mask:\n        polygon_segment_length: 50.0\n        num_ignore: 25\n        max_observation_gap: 0.002\n    caltone:\n        algorithm: auto\n        frequency: 1214882813.0\n        wavelet_size: 64\n    is_enabled:\n        presum_blu: true\n        rangecomp: true\n        eap: true\n        range_cor: true\n        azcomp: true\noutput:\n    data_type: complex64_zero_mantissa\n    compression_enabled: true\n    compression_type: gzip\n    compression_level: 4\n    chunk_size:\n    -   512\n    -   512\n    shuffle: true\n    mantissa_nbits: 10\n    fs_strategy: page\n    fs_page_size: 4194304\nqa:\n    workflows:\n        validate: true\n        qa_reports: true\n        point_target_analyzer: true\n        absolute_radiometric_calibration: true\n        noise_equivalent_backscatter: true\n    software_config:\n        use_cache: true\n        delete_qa_scratch_files: true\n    validation:\n        metadata_luts_fail_if_all_nan: true\n    qa_reports:\n        backscatter_img:\n            linear_units: true\n            nlooks_freqa:\n            nlooks_freqb:\n            longest_side_max: 2048\n            percentile_for_clipping:\n            -   5.0\n            -   95.0\n            gamma: 0.5\n            nan_color_in_pdf: blue\n            tile_shape:\n            -   1024\n            -   1024\n            output_individual_pngs: true\n        browse_latlon:\n            output_browse_latlon: true\n            resample: bilinear\n        histogram:\n            decimation_ratio:\n            -   8\n            -   8\n            backscatter_histogram_bin_edges_range:\n            -   -80.0\n            -   20.0\n            phase_histogram_y_axis_range:\n            -   0.0\n            -   0.5\n            phs_in_radians: true\n            tile_shape:\n            -   1024\n            -   -1\n        range_spectra:\n            az_decimation: 8\n            hz_to_mhz: true\n            tile_height: 512\n        azimuth_spectra:\n            num_columns: 1024\n            hz_to_mhz: false\n            tile_width: 256\n    point_target_analyzer:\n        nchip: 64\n        upsample_factor: 64\n        peak_find_domain: time\n        num_sidelobes: 10\n        predict_null: false\n        fs_bw_ratio: 1.2\n        window_type: rect\n        window_parameter: 0.0\n    absolute_radiometric_calibration:\n        nchip: 64\n        upsample_factor: 64\n        peak_find_domain: time\n        nfit: 5\n        power_method: box\n        power_threshold: 3.0\npge_name_group:\n    pge_name: RSLC_L_PGE\ndebug_level_group:\n    debug_switch: false\n",
+        "science/LSAR/GCOV/metadata/sourceData/productDoi": "10.5067/NIL1RSLC-P1",
+        "science/LSAR/GCOV/metadata/sourceData/productGeometry": "Slant range",
+        "science/LSAR/GCOV/metadata/sourceData/productLevel": "L1",
+        "science/LSAR/GCOV/metadata/sourceData/productType": "RSLC",
+        "science/LSAR/GCOV/metadata/sourceData/productVersion": "1.0.11",
+        "science/LSAR/GCOV/metadata/sourceData/swaths/frequencyA/listOfPolarizations": [
+          "HV",
+          "HH"
+        ],
+        "science/LSAR/GCOV/metadata/sourceData/swaths/frequencyB/listOfPolarizations": [
+          "HV",
+          "HH"
+        ],
+        "science/LSAR/GCOV/metadata/sourceData/swaths/zeroDopplerEndTime": "2026-09-10T23:22:06.999342105",
+        "science/LSAR/GCOV/metadata/sourceData/swaths/zeroDopplerStartTime": "2026-09-10T23:21:31.000000000"
+      },
+      "file_stat_stable_during_read": true,
+      "acceptance_reasons": [],
+      "metadata_compatible": true
+    },
+    {
+      "filename": "NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 6689914880,
+      "provisional": true,
+      "identification_path": "/science/LSAR/identification",
+      "acquisition_start": "2026-10-04T23:21:32.000000000",
+      "acquisition_end": "2026-10-04T23:22:06.999342105",
+      "granule_id": "NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001",
+      "product": "GCOV",
+      "level": "L2",
+      "orbit_direction": "Ascending",
+      "look_direction": "Left",
+      "track": 69,
+      "frame": 14,
+      "orbit": 6223,
+      "product_version": "1.0.11",
+      "doi": "10.5067/NIL2GCOV-P1",
+      "footprint_wkt": "POLYGON ((91.9034050359339 24.0063246963029 174.125671725186,91.8479391405394 24.2145071498328 -20.8169068777218,91.7894063101129 24.4219806625107 -15.8065346128462,91.7311994970259 24.6295537546736 -46.9380606548858,91.6723307652322 24.8369917050984 -45.9148396513604,91.6132592760736 25.0444042280056 -44.7236296222409,91.5402844083927 25.2485183073191 902.452758624714,91.4720673476657 25.4537904497304 1506.76977629089,91.4195168942671 25.6628305306173 1012.23645019523,91.3702687736123 25.8726835725227 279.495085522155,91.3143498226078 26.0809670154632 -6.53697668457916,91.0308509217496 26.0130762928196 -7.18607206257371,90.7594748577628 25.9474945695375 7.16506344391725,90.4985020000899 25.8838787770036 17.556065521799,90.2452138852099 25.8216211925178 127.425347670505,90.0023566597685 25.761454099323 -10.0005305902368,89.764810366083 25.7021510612893 -32.2990608226252,89.532900353039 25.6438248910785 -33.2938390602484,89.3061357823068 25.5863818340025 -26.6322129919541,89.084020448372 25.529722501987 -16.6881358978512,88.8662623280411 25.4737962346658 -22.3725266476365,88.9303976801985 25.2678034238452 -29.8455125890673,88.9942625059661 25.0617722589096 -35.5554264729243,89.0578467147413 24.8556988756761 -38.0266086346823,89.1212091089255 24.6495987448537 -43.6762729640439,89.1842838115987 24.4434550098151 -44.7346604673616,89.247125045983 24.2372804121179 -47.0665342713079,89.3096842164338 24.0310629195704 -44.8638228896828,89.372025697106 23.8248190074091 -45.2168882176557,89.4341347619964 23.61854379355 -46.1497769800681,89.4960242167845 23.4122411635596 -48.8964050125086,89.710549672627 23.4669175489416 -40.5827952819354,89.929288069168 23.5223181273914 -42.5462604826687,90.1525858520529 23.5785092205327 -42.7620041176456,90.3810517385267 23.6356199178687 -48.6976967670052,90.6152189307158 23.6937558235963 -49.8746159355771,90.855895075483 23.7530856973222 -50.2787168626352,91.1040100539592 23.8138014446478 -48.9490521540434,91.3602356773612 23.8760242734785 -6.32319259347511,91.62712391335 23.9403210637046 -9.03885708349501,91.9034050359339 24.0063246963029 174.125671725186))",
+      "specification_version": "1.5.0",
+      "layer_path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+      "layer_dtype": "float32",
+      "shape": [
+        33552,
+        34200
+      ],
+      "layer_attributes": {
+        "DIMENSION_LIST": [
+          [
+            "<HDF5 reference>"
+          ],
+          [
+            "<HDF5 reference>"
+          ]
+        ],
+        "_FillValue": "nan",
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": 33400.5078125,
+        "mean_value": 0.3268849849700928,
+        "min_value": 4.728361912083384e-17,
+        "sample_stddev": 3.8287971019744873,
+        "units": "1",
+        "valid_min": 0.0
+      },
+      "fillvalue": 0.0,
+      "frequency": "frequencyA",
+      "covariance_term": "HHHH",
+      "polarization": "HH",
+      "grid_path": "/science/LSAR/GCOV/grids/frequencyA",
+      "crs": "EPSG:32646",
+      "spacing": [
+        10.0,
+        -10.0
+      ],
+      "origin_center": [
+        59765.0,
+        2908075.0
+      ],
+      "covariance_terms": [
+        "HHHH",
+        "HVHV"
+      ],
+      "bounds_wgs84": [
+        88.8662623280411,
+        23.4122411635596,
+        91.9034050359339,
+        26.0809670154632
+      ],
+      "range_bandwidth_hz": 40000000.0,
+      "center_frequency_hz": 1239000000.0,
+      "source_polarizations": [
+        "HH",
+        "HV"
+      ],
+      "dithered": "True",
+      "named_datatypes": [],
+      "source_file": "database/new/NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+      "processing_release": "P05023",
+      "identification": {
+        "absoluteOrbitNumber": 6223,
+        "boundingPolygon": "POLYGON ((91.9034050359339 24.0063246963029 174.125671725186,91.8479391405394 24.2145071498328 -20.8169068777218,91.7894063101129 24.4219806625107 -15.8065346128462,91.7311994970259 24.6295537546736 -46.9380606548858,91.6723307652322 24.8369917050984 -45.9148396513604,91.6132592760736 25.0444042280056 -44.7236296222409,91.5402844083927 25.2485183073191 902.452758624714,91.4720673476657 25.4537904497304 1506.76977629089,91.4195168942671 25.6628305306173 1012.23645019523,91.3702687736123 25.8726835725227 279.495085522155,91.3143498226078 26.0809670154632 -6.53697668457916,91.0308509217496 26.0130762928196 -7.18607206257371,90.7594748577628 25.9474945695375 7.16506344391725,90.4985020000899 25.8838787770036 17.556065521799,90.2452138852099 25.8216211925178 127.425347670505,90.0023566597685 25.761454099323 -10.0005305902368,89.764810366083 25.7021510612893 -32.2990608226252,89.532900353039 25.6438248910785 -33.2938390602484,89.3061357823068 25.5863818340025 -26.6322129919541,89.084020448372 25.529722501987 -16.6881358978512,88.8662623280411 25.4737962346658 -22.3725266476365,88.9303976801985 25.2678034238452 -29.8455125890673,88.9942625059661 25.0617722589096 -35.5554264729243,89.0578467147413 24.8556988756761 -38.0266086346823,89.1212091089255 24.6495987448537 -43.6762729640439,89.1842838115987 24.4434550098151 -44.7346604673616,89.247125045983 24.2372804121179 -47.0665342713079,89.3096842164338 24.0310629195704 -44.8638228896828,89.372025697106 23.8248190074091 -45.2168882176557,89.4341347619964 23.61854379355 -46.1497769800681,89.4960242167845 23.4122411635596 -48.8964050125086,89.710549672627 23.4669175489416 -40.5827952819354,89.929288069168 23.5223181273914 -42.5462604826687,90.1525858520529 23.5785092205327 -42.7620041176456,90.3810517385267 23.6356199178687 -48.6976967670052,90.6152189307158 23.6937558235963 -49.8746159355771,90.855895075483 23.7530856973222 -50.2787168626352,91.1040100539592 23.8138014446478 -48.9490521540434,91.3602356773612 23.8760242734785 -6.32319259347511,91.62712391335 23.9403210637046 -9.03885708349501,91.9034050359339 24.0063246963029 174.125671725186))",
+        "compositeReleaseId": "P05023",
+        "diagnosticModeFlag": 0,
+        "frameNumber": 14,
+        "granuleId": "NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001",
+        "hasInputDataException": 0,
+        "instrumentName": "LSAR",
+        "isDithered": "True",
+        "isFullFrame": "True",
+        "isGeocoded": "True",
+        "isJointObservation": "True",
+        "isMixedMode": "False",
+        "isUrgentObservation": "False",
+        "listOfFrequencies": [
+          "A",
+          "B"
+        ],
+        "listOfObservationModes": [
+          "(NOT SPECIFIED)"
+        ],
+        "lookDirection": "Left",
+        "missionId": "NISAR",
+        "orbitPassDirection": "Ascending",
+        "plannedDatatakeId": [
+          "dtid_2026277231436"
+        ],
+        "plannedObservationId": [
+          "oid_2026277232032"
+        ],
+        "platformName": "NISAR",
+        "processingCenter": "JPL",
+        "processingDateTime": "2026-10-07T00:26:17",
+        "processingType": "Nominal",
+        "productDoi": "10.5067/NIL2GCOV-P1",
+        "productLevel": "L2",
+        "productSpecificationVersion": "1.5.0",
+        "productType": "GCOV",
+        "productVersion": "1.0.11",
+        "radarBand": "L",
+        "staticLayersDataAccess": "https://nisar-services.earthdata.nasa.gov/redirect/NISAR_L2_STATIC/NISAR_L2_PR_GCOV_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+        "trackNumber": 69,
+        "zeroDopplerEndTime": "2026-10-04T23:22:06.999342105",
+        "zeroDopplerStartTime": "2026-10-04T23:21:32.000000000"
+      },
+      "covariance_grids": {
+        "frequencyA": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyA",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyA/HVHV",
+              "dtype": "float32",
+              "shape": [
+                33552,
+                34200
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        },
+        "frequencyB": {
+          "group_path": "/science/LSAR/GCOV/grids/frequencyB",
+          "listed_terms": [
+            "HHHH",
+            "HVHV"
+          ],
+          "actual_covariance_datasets": {
+            "HHHH": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HHHH",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            },
+            "HVHV": {
+              "path": "/science/LSAR/GCOV/grids/frequencyB/HVHV",
+              "dtype": "float32",
+              "shape": [
+                4194,
+                4275
+              ]
+            }
+          },
+          "off_diagonal_terms": [],
+          "listed_vs_present_agree": true
+        }
+      },
+      "declared_inputs": {
+        "science/LSAR/GCOV/metadata/processingInformation/algorithms/demInterpolation": "biquintic",
+        "science/LSAR/GCOV/metadata/processingInformation/inputs/demSource": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+        "science/LSAR/GCOV/metadata/processingInformation/parameters/geocoding/isSourceDataUpsampled": "False",
+        "science/LSAR/GCOV/metadata/sourceData/granuleId": "NISAR_L1_PR_RSLC_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001",
+        "science/LSAR/GCOV/metadata/sourceData/lookDirection": "Left",
+        "science/LSAR/GCOV/metadata/sourceData/processingCenter": "J",
+        "science/LSAR/GCOV/metadata/sourceData/processingDateTime": "2026-10-06T19:33:54",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/azimuthCompression": "time-domain backprojection",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/azimuthPresumming": "BLU",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/dopplerCentroidEstimation": "geometric",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/elevationAntennaPatternCorrection": "enabled",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rangeCompression": "FFT convolution",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rangeSpreadingLossCorrection": "enabled",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rfiDetection": "tone-rank",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/rfiMitigation": "tone-rank",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/algorithms/softwareVersion": "0.25.16",
+        "science/LSAR/GCOV/metadata/sourceData/processingInformation/parameters/runConfigurationContents": "input_file_group:\n    input_file_path:\n    -   /data/work/jobs/2026/10/06/19/27/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_032_069_014_0_expired-state-config-20261006T183027.243851Z/NISAR_L0_PR_RRSD_032_069_A_238S_20261004T232030_20261004T232411_P05023_F_J_001.h5\n    qa_input_file: output/rslc.h5\ndynamic_ancillary_file_group:\n    dem_file: \n        /data/work/jobs/2026/10/06/19/27/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_032_069_014_0_expired-state-config-20261006T183027.243851Z/dem.vrt\n    dem_file_description: Digital Elevation Model (DEM) for the NASA-ISRO NISAR \n        mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), \n        referenced to the WGS84 ellipsoid. This digital elevation model (DEM) \n        was prepared at the Jet Propulsion Laboratory, California Institute of \n        Technology, under contract with the National Aeronautics and Space \n        Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1\n        model, provided by the European Space Agency (ESA). The Copernicus DEM \n        30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  \n        Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the\n        European Union and ESA; all rights reserved. The organizations in charge\n        of the NISAR mission or the Copernicus programme by law or by delegation\n        do not incur any liability for any use of the Copernicus WorldDEM-30. \n        Users, including those who redistribute, adapt, modify, or combine the \n        data contained in this DEM, must comply with the terms of the Copernicus\n        DEM 30-m License Agreement. For additional information, please refer to \n        https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.\n    orbit: \n        /data/work/jobs/2026/10/06/19/27/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_032_069_014_0_expired-state-config-20261006T183027.243851Z/NISAR_ANC_J_PR_MOE_20261006T132417_20261004T205942_20261006T025942.xml\n    pointing: \n        /data/work/jobs/2026/10/06/19/27/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_032_069_014_0_expired-state-config-20261006T183027.243851Z/NISAR_ANC_L_PR_NRP_20261006T062323_20261004T225942_20261006T045942.xml\n    external_calibration: \n        /data/work/jobs/2026/10/06/19/27/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_032_069_014_0_expired-state-config-20261006T183027.243851Z/NISAR_LSAR_EXT_CAL_20250730T000000_04.yaml\n    internal_calibration: \n        /data/work/jobs/2026/10/06/19/27/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_032_069_014_0_expired-state-config-20261006T183027.243851Z/NISAR_LSAR_INT_CAL_20250730T000000_02.h5\n    antenna_pattern: \n        /data/work/jobs/2026/10/06/19/27/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_032_069_014_0_expired-state-config-20261006T183027.243851Z/NISAR_ANTPAT_20231129T093104_01.h5\n    corner_reflector_file: \n        /data/work/jobs/2026/10/06/19/27/SCIFLO_RSLC__pcm_r05.02.2_pge_r05.02.3-track_frame_032_069_014_0_expired-state-config-20261006T183027.243851Z/NISAR_ANC_CORNER_REFLECTORS_007.csv\nproduct_path_group:\n    product_path: output\n    scratch_path: scratch\n    sas_output_file: output/rslc.h5\n    sas_config_file: output/rslc_config.yaml\n    qa_output_dir: output\n    product_counter: 1\nprimary_executable:\n    product_type: RSLC\n    product_version: 1.0.11\n    product_doi: 10.5067/NIL1RSLC-P1\n    composite_release_id: P05023\n    processing_type: PR\n    mission_id: NISAR\n    processing_center: J\n    partial_granule_id: \n        NISAR_L1_PR_RSLC_032_069_A_014_{MODE}_{POLE}_A_{StartDateTime}_{EndDateTime}_P05023_N_{C}_J_001\n    product_accuracy: N\n    data_source: A\ngeometry:\n    relative_orbit_number: 69\n    frame_number: 14\n    track_frame_polygon: '{\"coordinates\": [[[[91.831253025731, 23.992608228379407],\n        [91.08159339701956, 23.811754129733565], [90.63050641931635, 23.700924744170752],\n        [89.46823316904921, 23.408422215620103], [89.30938405537498, 23.93214541603555],\n        [89.1489381342834, 24.455649368740005], [88.98685610851932, 24.978927986918595],\n        [88.82309748114187, 25.50197505477423], [90.00334795772348, 25.801057737456183],\n        [90.4615833992815, 25.914201520948943], [91.22332916670375, 26.098605403762214],\n        [91.3773903800371, 25.572371022583404], [91.53004041229022, 25.045956835382327],\n        [91.68131605671864, 24.5193676604176], [91.831253025731, 23.992608228379407]]]],\n        \"type\": \"MultiPolygon\"}'\n    full_coverage_threshold_percent: 75.0\n    cycle_number: 32\n    orbit_direction: Ascending\nworker:\n    gpu_enabled: true\n    gpu_id: 0\nprocessing:\n    output_grid:\n        start_time: 2026-10-04 23:21:32+00:00\n        end_time: 2026-10-04 23:22:07+00:00\n        start_range:\n        end_range:\n        output_prf: 1520\n        time_snap_interval:\n        range_snap_interval: 24.982704833333333\n    ephemeris_crop_pad: 10.0\n    range_window:\n        kind: Kaiser\n        shape: 1.6\n    azimuth_window:\n        kind: Kaiser\n        shape: 0.0\n    elevation_antenna_pattern:\n        spacing: 24.982704833333333\n    noise_equivalent_backscatter:\n        algorithm: MEE\n        num_range_block: 80\n        threshold_invalid_range_block: 10.0\n        fill_nan_ends: true\n        cpi: 10\n        median_ev: true\n        diff: true\n        diff_method: single\n    radio_frequency_interference:\n        detection_enabled: true\n        mitigation_enabled: true\n        mitigation_algorithm: tone-rank\n        num_samples_rng_blk: 256\n        use_entire_pulse: false\n        slow_time_evd:\n            cpi_length: 16\n            max_emitters: 4\n            num_max_trim: 0\n            num_min_trim: 0\n            max_num_rfi_ev: 2\n            num_cpi_per_threshold_block: 15\n            off_diag_overlap_ratio: 0.25\n            diag_valid_ratio: 0.2\n            min_rank_frac: 0.7\n            rx_dynamic_range_db: 50.0\n            threshold_hyperparameters:\n                x:\n                -   2.0\n                -   20.0\n                y:\n                -   5.0\n                -   2.0\n        freq_notch_filter:\n            num_pulses_az: 1000\n            az_winsize: 256\n            rng_winsize: 100\n            trim_frac: 0.01\n            pvalue_threshold: 0.005\n            cdf_threshold: 0.1\n            nb_detect: true\n            wb_detect: true\n        tone_rank:\n            block_dims:\n            -   512\n            -   1024\n            nominal_false_positive_rate: 0.0005\n            reference_quantile: 0.5\n            interpolate: true\n            fill_value: zero\n            max_gap_fraction: 0.5\n    range_common_band_filter:\n        attenuation: 40.0\n        width: 0.15\n    rdr2geo:\n        tol_height: 1e-05\n        look_min_deg: 0.0\n        look_max_deg: 90.0\n    geo2rdr:\n        tol_aztime: 1e-07\n        time_start: 83982.0\n        time_end: 84292.0\n    lookup_tables:\n        downsampling_factor:\n            azimuth: 50\n            range: 50\n        margin_in_pixels:\n            azimuth: 11\n            range: 11\n    doppler:\n        azimuth_boresight_deg: 0.9\n        interp_method: bilinear\n        spacing:\n            range: 2000.0\n            azimuth: 1.0\n        margin_in_pixels:\n            azimuth: 11\n            range: 11\n    rangecomp:\n        mode: full\n        block_size:\n            range: 0\n            azimuth: 1024\n        notches: []\n    azcomp:\n        block_size:\n            range: 32768\n            azimuth: 1024\n        azimuth_resolution: 6.0\n        kernel:\n            type: Knab\n            halfwidth: 4\n            approx_oversample: 1.7\n            fit: Table\n            fit_order: 2048\n    dry_troposphere_model: tsx\n    dem:\n        reference_height: 0.0\n        interp_method: biquintic\n        require_full_coverage: true\n    metadata_cube_epsg: 4326\n    nominal_antenna_size:\n        range: 12.0\n        azimuth: 12.0\n    encoding_scale_factor: 1.0\n    delete_tempfiles: true\n    debug_dump_height: false\n    zero_fill_gaps: true\n    valid_data_mask:\n        polygon_segment_length: 50.0\n        num_ignore: 25\n        max_observation_gap: 0.002\n    caltone:\n        algorithm: auto\n        frequency: 1214882813.0\n        wavelet_size: 64\n    is_enabled:\n        presum_blu: true\n        rangecomp: true\n        eap: true\n        range_cor: true\n        azcomp: true\noutput:\n    data_type: complex64_zero_mantissa\n    compression_enabled: true\n    compression_type: gzip\n    compression_level: 4\n    chunk_size:\n    -   512\n    -   512\n    shuffle: true\n    mantissa_nbits: 10\n    fs_strategy: page\n    fs_page_size: 4194304\nqa:\n    workflows:\n        validate: true\n        qa_reports: true\n        point_target_analyzer: true\n        absolute_radiometric_calibration: true\n        noise_equivalent_backscatter: true\n    software_config:\n        use_cache: true\n        delete_qa_scratch_files: true\n    validation:\n        metadata_luts_fail_if_all_nan: true\n    qa_reports:\n        backscatter_img:\n            linear_units: true\n            nlooks_freqa:\n            nlooks_freqb:\n            longest_side_max: 2048\n            percentile_for_clipping:\n            -   5.0\n            -   95.0\n            gamma: 0.5\n            nan_color_in_pdf: blue\n            tile_shape:\n            -   1024\n            -   1024\n            output_individual_pngs: true\n        browse_latlon:\n            output_browse_latlon: true\n            resample: bilinear\n        histogram:\n            decimation_ratio:\n            -   8\n            -   8\n            backscatter_histogram_bin_edges_range:\n            -   -80.0\n            -   20.0\n            phase_histogram_y_axis_range:\n            -   0.0\n            -   0.5\n            phs_in_radians: true\n            tile_shape:\n            -   1024\n            -   -1\n        range_spectra:\n            az_decimation: 8\n            hz_to_mhz: true\n            tile_height: 512\n        azimuth_spectra:\n            num_columns: 1024\n            hz_to_mhz: false\n            tile_width: 256\n    point_target_analyzer:\n        nchip: 64\n        upsample_factor: 64\n        peak_find_domain: time\n        num_sidelobes: 10\n        predict_null: false\n        fs_bw_ratio: 1.2\n        window_type: rect\n        window_parameter: 0.0\n    absolute_radiometric_calibration:\n        nchip: 64\n        upsample_factor: 64\n        peak_find_domain: time\n        nfit: 5\n        power_method: box\n        power_threshold: 3.0\npge_name_group:\n    pge_name: RSLC_L_PGE\ndebug_level_group:\n    debug_switch: false\n",
+        "science/LSAR/GCOV/metadata/sourceData/productDoi": "10.5067/NIL1RSLC-P1",
+        "science/LSAR/GCOV/metadata/sourceData/productGeometry": "Slant range",
+        "science/LSAR/GCOV/metadata/sourceData/productLevel": "L1",
+        "science/LSAR/GCOV/metadata/sourceData/productType": "RSLC",
+        "science/LSAR/GCOV/metadata/sourceData/productVersion": "1.0.11",
+        "science/LSAR/GCOV/metadata/sourceData/swaths/frequencyA/listOfPolarizations": [
+          "HH",
+          "HV"
+        ],
+        "science/LSAR/GCOV/metadata/sourceData/swaths/frequencyB/listOfPolarizations": [
+          "HV",
+          "HH"
+        ],
+        "science/LSAR/GCOV/metadata/sourceData/swaths/zeroDopplerEndTime": "2026-10-04T23:22:06.999342105",
+        "science/LSAR/GCOV/metadata/sourceData/swaths/zeroDopplerStartTime": "2026-10-04T23:21:32.000000000"
+      },
+      "file_stat_stable_during_read": true,
+      "acceptance_reasons": [],
+      "metadata_compatible": true
+    }
+  ],
+  "scope": "Actual local headers, physical comparability, covariance schema and stable file stats. Crop coverage checked at extraction. Full raw-file cryptographic integrity and provider authenticity are not certified.",
+  "source_policy": "NASA/ASF USA; NASA\u2013ISRO USA/India. Review declared auxiliary lineage retained here; not a certificate of every upstream contributor."
+}

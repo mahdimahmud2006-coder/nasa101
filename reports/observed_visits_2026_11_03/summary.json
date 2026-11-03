@@ -1,0 +1,23 @@
+{
+  "status": "IMPLEMENTED",
+  "scope": "Presentation only: recorded visits shown; unobserved nominal slots and warning bands omitted from primary timelines",
+  "javascript_tests_passed": 104,
+  "javascript_tests_failed": 0,
+  "static_pages_checked": 8,
+  "preservation": {
+    "status": "PASS",
+    "historical_files_unchanged": 505,
+    "active_record_manifests_unchanged": 10,
+    "active_analytical_assets_verified": 690,
+    "scope": "Read-only checksum reconciliation with previously validated analytical records. No scientific products were rebuilt."
+  },
+  "baseline": {
+    "verified": true,
+    "checked_files": 795,
+    "mismatches": []
+  },
+  "coverage_details": "Retained in collapsed methods, metadata and evidence exports",
+  "scientific_behavior": "Actual UTC dates, elapsed-time positions, break rules, playback sequences, calculations, source products and exported intervals unchanged",
+  "browser_visual_qa": "Not verified under the prior local-URL policy restriction",
+  "release_archive_updated": false
+}

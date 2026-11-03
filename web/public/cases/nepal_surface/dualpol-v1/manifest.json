@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "product_version": "dualpol-v1",
+  "case_id": "nepal_surface",
+  "status": "implemented",
+  "grid": {
+    "shape": [
+      2400,
+      2400
+    ],
+    "affine": [
+      10.0,
+      0.0,
+      323480.0,
+      0.0,
+      -10.0,
+      3088170.0
+    ],
+    "crs": "EPSG:32645",
+    "pixel_area_km2": 0.0001,
+    "bounds_wgs84": [
+      85.20639099989948,
+      27.690230304043727,
+      85.45324557837118,
+      27.909743780696033
+    ]
+  },
+  "observations": [
+    {
+      "observation_id": "visit_0",
+      "timestamp": "2026-08-19T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "layers": {
+        "hh_fixed": "hh_fixed_0.png",
+        "hv_fixed": "hv_fixed_0.png",
+        "cpr": "cpr_0.png",
+        "hh_baseline": "hh_baseline_0.png",
+        "hv_baseline": "hv_baseline_0.png",
+        "cpr_baseline": "cpr_baseline_0.png",
+        "composite": "composite_0.png",
+        "hint_low": "hint_low_0.png",
+        "hint_hh": null,
+        "hint_hv": null
+      },
+      "rasters": {
+        "hh_fixed": "hh_fixed_0.tif",
+        "hv_fixed": "hv_fixed_0.tif",
+        "cpr": "cpr_0.tif",
+        "hh_baseline": "hh_baseline_0.tif",
+        "hv_baseline": "hv_baseline_0.tif",
+        "cpr_baseline": "cpr_baseline_0.tif",
+        "composite": "composite_0.tif",
+        "hint_bits": "hint_bits_0.tif"
+      },
+      "display_statistics": {
+        "hh_fixed": {
+          "valid_pixels": 5735334,
+          "valid_fraction": 0.9957177083333333,
+          "below_display": 0,
+          "above_display": 137861,
+          "minimum_db": -23.289989471435547,
+          "maximum_db": 24.087764739990234
+        },
+        "hv_fixed": {
+          "valid_pixels": 5735334,
+          "valid_fraction": 0.9957177083333333,
+          "below_display": 0,
+          "above_display": 19973,
+          "minimum_db": -28.10515594482422,
+          "maximum_db": 24.276914596557617
+        },
+        "cpr": {
+          "valid_pixels": 5735334,
+          "valid_fraction": 0.9957177083333333,
+          "below_display": 1688,
+          "above_display": 6372,
+          "minimum_db": -27.25695037841797,
+          "maximum_db": 7.098100662231445
+        },
+        "hh_baseline": {
+          "valid_pixels": 5735334,
+          "valid_fraction": 0.9957177083333333,
+          "below_display": 0,
+          "above_display": 0,
+          "minimum_db": 0.0,
+          "maximum_db": 0.0
+        },
+        "hv_baseline": {
+          "valid_pixels": 5735334,
+          "valid_fraction": 0.9957177083333333,
+          "below_display": 0,
+          "above_display": 0,
+          "minimum_db": 0.0,
+          "maximum_db": 0.0
+        },
+        "cpr_baseline": {
+          "valid_pixels": 5735334,
+          "valid_fraction": 0.9957177083333333,
+          "below_display": 0,
+          "above_display": 0,
+          "minimum_db": 0.0,
+          "maximum_db": 0.0
+        }
+      },
+      "hint_statistics": {
+        "hint_low": {
+          "candidate_pixels": 74,
+          "candidate_area_km2": 0.0074,
+          "assessable_pixels": 5735334,
+          "assessable_area_km2": 573.5334,
+          "status": "measured",
+          "interpretation_status": "hypothesized"
+        },
+        "hint_hh": null,
+        "hint_hv": null
+      }
+    },
+    {
+      "observation_id": "visit_1",
+      "timestamp": "2026-08-31T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+      "layers": {
+        "hh_fixed": "hh_fixed_1.png",
+        "hv_fixed": "hv_fixed_1.png",
+        "cpr": "cpr_1.png",
+        "hh_baseline": "hh_baseline_1.png",
+        "hh_successive": "hh_successive_1.png",
+        "hv_baseline": "hv_baseline_1.png",
+        "hv_successive": "hv_successive_1.png",
+        "cpr_baseline": "cpr_baseline_1.png",
+        "cpr_successive": "cpr_successive_1.png",
+        "composite": "composite_1.png",
+        "hint_low": "hint_low_1.png",
+        "hint_hh": "hint_hh_1.png",
+        "hint_hv": "hint_hv_1.png"
+      },
+      "rasters": {
+        "hh_fixed": "hh_fixed_1.tif",
+        "hv_fixed": "hv_fixed_1.tif",
+        "cpr": "cpr_1.tif",
+        "hh_baseline": "hh_baseline_1.tif",
+        "hh_successive": "hh_successive_1.tif",
+        "hv_baseline": "hv_baseline_1.tif",
+        "hv_successive": "hv_successive_1.tif",
+        "cpr_baseline": "cpr_baseline_1.tif",
+        "cpr_successive": "cpr_successive_1.tif",
+        "composite": "composite_1.tif",
+        "hint_bits": "hint_bits_1.tif"
+      },
+      "display_statistics": {
+        "hh_fixed": {
+          "valid_pixels": 5658643,
+          "valid_fraction": 0.9824032986111111,
+          "below_display": 0,
+          "above_display": 158435,
+          "minimum_db": -23.99677085876465,
+          "maximum_db": 25.386640548706055
+        },
+        "hv_fixed": {
+          "valid_pixels": 5658643,
+          "valid_fraction": 0.9824032986111111,
+          "below_display": 0,
+          "above_display": 21904,
+          "minimum_db": -29.403736114501953,
+          "maximum_db": 24.12919807434082
+        },
+        "cpr": {
+          "valid_pixels": 5658643,
+          "valid_fraction": 0.9824032986111111,
+          "below_display": 2167,
+          "above_display": 6415,
+          "minimum_db": -28.062623977661133,
+          "maximum_db": 8.90103816986084
+        },
+        "hh_baseline": {
+          "valid_pixels": 5658349,
+          "valid_fraction": 0.9823522569444444,
+          "below_display": 233,
+          "above_display": 279,
+          "minimum_db": -13.340298652648926,
+          "maximum_db": 15.616915702819824
+        },
+        "hh_successive": {
+          "valid_pixels": 5658349,
+          "valid_fraction": 0.9823522569444444,
+          "below_display": 233,
+          "above_display": 279,
+          "minimum_db": -13.340298652648926,
+          "maximum_db": 15.616915702819824
+        },
+        "hv_baseline": {
+          "valid_pixels": 5658349,
+          "valid_fraction": 0.9823522569444444,
+          "below_display": 128,
+          "above_display": 180,
+          "minimum_db": -13.208537101745605,
+          "maximum_db": 13.843404769897461
+        },
+        "hv_successive": {
+          "valid_pixels": 5658349,
+          "valid_fraction": 0.9823522569444444,
+          "below_display": 128,
+          "above_display": 180,
+          "minimum_db": -13.208537101745605,
+          "maximum_db": 13.843404769897461
+        },
+        "cpr_baseline": {
+          "valid_pixels": 5658349,
+          "valid_fraction": 0.9823522569444444,
+          "below_display": 1778,
+          "above_display": 1666,
+          "minimum_db": -17.701868057250977,
+          "maximum_db": 23.343971252441406
+        },
+        "cpr_successive": {
+          "valid_pixels": 5658349,
+          "valid_fraction": 0.9823522569444444,
+          "below_display": 1778,
+          "above_display": 1666,
+          "minimum_db": -17.701868057250977,
+          "maximum_db": 23.343971252441406
+        }
+      },
+      "hint_statistics": {
+        "hint_low": {
+          "candidate_pixels": 61,
+          "candidate_area_km2": 0.0061,
+          "assessable_pixels": 5658643,
+          "assessable_area_km2": 565.8643000000001,
+          "status": "measured",
+          "interpretation_status": "hypothesized"
+        },
+        "hint_hh": {
+          "candidate_pixels": 88246,
+          "candidate_area_km2": 8.8246,
+          "assessable_pixels": 5658349,
+          "assessable_area_km2": 565.8349000000001,
+          "status": "measured",
+          "interpretation_status": "hypothesized"
+        },
+        "hint_hv": {
+          "candidate_pixels": 151367,
+          "candidate_area_km2": 15.136700000000001,
+          "assessable_pixels": 5658349,
+          "assessable_area_km2": 565.8349000000001,
+          "status": "measured",
+          "interpretation_status": "hypothesized"
+        }
+      }
+    },
+    {
+      "observation_id": "visit_2",
+      "timestamp": "2026-09-12T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001",
+      "layers": {
+        "hh_fixed": "hh_fixed_2.png",
+        "hv_fixed": "hv_fixed_2.png",
+        "cpr": "cpr_2.png",
+        "hh_baseline": "hh_baseline_2.png",
+        "hh_successive": "hh_successive_2.png",
+        "hv_baseline": "hv_baseline_2.png",
+        "hv_successive": "hv_successive_2.png",
+        "cpr_baseline": "cpr_baseline_2.png",
+        "cpr_successive": "cpr_successive_2.png",
+        "composite": "composite_2.png",
+        "hint_low": "hint_low_2.png",
+        "hint_hh": "hint_hh_2.png",
+        "hint_hv": "hint_hv_2.png"
+      },
+      "rasters": {
+        "hh_fixed": "hh_fixed_2.tif",
+        "hv_fixed": "hv_fixed_2.tif",
+        "cpr": "cpr_2.tif",
+        "hh_baseline": "hh_baseline_2.tif",
+        "hh_successive": "hh_successive_2.tif",
+        "hv_baseline": "hv_baseline_2.tif",
+        "hv_successive": "hv_successive_2.tif",
+        "cpr_baseline": "cpr_baseline_2.tif",
+        "cpr_successive": "cpr_successive_2.tif",
+        "composite": "composite_2.tif",
+        "hint_bits": "hint_bits_2.tif"
+      },
+      "display_statistics": {
+        "hh_fixed": {
+          "valid_pixels": 5478640,
+          "valid_fraction": 0.9511527777777777,
+          "below_display": 0,
+          "above_display": 147274,
+          "minimum_db": -24.83426284790039,
+          "maximum_db": 23.615102767944336
+        },
+        "hv_fixed": {
+          "valid_pixels": 5478640,
+          "valid_fraction": 0.9511527777777777,
+          "below_display": 0,
+          "above_display": 19578,
+          "minimum_db": -27.37429428100586,
+          "maximum_db": 23.847747802734375
+        },
+        "cpr": {
+          "valid_pixels": 5478640,
+          "valid_fraction": 0.9511527777777777,
+          "below_display": 2505,
+          "above_display": 6465,
+          "minimum_db": -28.991695404052734,
+          "maximum_db": 6.3177900314331055
+        },
+        "hh_baseline": {
+          "valid_pixels": 5478402,
+          "valid_fraction": 0.9511114583333333,
+          "below_display": 260,
+          "above_display": 715,
+          "minimum_db": -14.382001876831055,
+          "maximum_db": 18.664066314697266
+        },
+        "hh_successive": {
+          "valid_pixels": 5478383,
+          "valid_fraction": 0.9511081597222222,
+          "below_display": 196,
+          "above_display": 171,
+          "minimum_db": -15.774247169494629,
+          "maximum_db": 19.69367218017578
+        },
+        "hv_baseline": {
+          "valid_pixels": 5478402,
+          "valid_fraction": 0.9511114583333333,
+          "below_display": 89,
+          "above_display": 139,
+          "minimum_db": -11.229188919067383,
+          "maximum_db": 11.626605987548828
+        },
+        "hv_successive": {
+          "valid_pixels": 5478383,
+          "valid_fraction": 0.9511081597222222,
+          "below_display": 102,
+          "above_display": 136,
+          "minimum_db": -12.222128868103027,
+          "maximum_db": 14.832341194152832
+        },
+        "cpr_baseline": {
+          "valid_pixels": 5478402,
+          "valid_fraction": 0.9511114583333333,
+          "below_display": 2195,
+          "above_display": 1956,
+          "minimum_db": -16.613731384277344,
+          "maximum_db": 15.372089385986328
+        },
+        "cpr_successive": {
+          "valid_pixels": 5478383,
+          "valid_fraction": 0.9511081597222222,
+          "below_display": 1436,
+          "above_display": 1565,
+          "minimum_db": -15.482662200927734,
+          "maximum_db": 16.215349197387695
+        }
+      },
+      "hint_statistics": {
+        "hint_low": {
+          "candidate_pixels": 40,
+          "candidate_area_km2": 0.004,
+          "assessable_pixels": 5478640,
+          "assessable_area_km2": 547.864,
+          "status": "measured",
+          "interpretation_status": "hypothesized"
+        },
+        "hint_hh": {
+          "candidate_pixels": 106234,
+          "candidate_area_km2": 10.6234,
+          "assessable_pixels": 5478402,
+          "assessable_area_km2": 547.8402,
+          "status": "measured",
+          "interpretation_status": "hypothesized"
+        },
+        "hint_hv": {
+          "candidate_pixels": 149373,
+          "candidate_area_km2": 14.9373,
+          "assessable_pixels": 5478402,
+          "assessable_area_km2": 547.8402,
+          "status": "measured",
+          "interpretation_status": "hypothesized"
+        }
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "label": "Previously tracked 1.99-hectare zone",
+      "selection": "Original geographic case retained. The highlighted zone was selected by the earlier HH analysis; it is not an independent validation sample.",
+      "status": "MEASURED",
+      "footprint_pixels": 199,
+      "common_valid_pixels": 199,
+      "common_valid_fraction": 1.0,
+      "footprint_area_km2": 0.0199,
+      "measured_area_km2": 0.0199,
+      "observations": [
+        {
+          "index": 0,
+          "hh_mean_db": -4.770070468438274,
+          "hv_mean_db": -15.767042610513505,
+          "hh_baseline_delta_db": 0.0,
+          "hv_baseline_delta_db": 0.0,
+          "hh_successive_delta_db": null,
+          "hv_successive_delta_db": null,
+          "hh_minus_hv_db": 10.99697214207523,
+          "observation_id": "visit_0",
+          "timestamp": "2026-08-19T23:39:18Z",
+          "cpr_mean_db": -10.99697214207523,
+          "cpr_baseline_delta_db": 0.0,
+          "cpr_successive_delta_db": null
+        },
+        {
+          "index": 1,
+          "hh_mean_db": -12.296379446384297,
+          "hv_mean_db": -17.57819671007856,
+          "hh_baseline_delta_db": -7.526308989405033,
+          "hv_baseline_delta_db": -1.8111540995650555,
+          "hh_successive_delta_db": -7.526308989405033,
+          "hv_successive_delta_db": -1.8111540995650555,
+          "hh_minus_hv_db": 5.281817263694265,
+          "observation_id": "visit_1",
+          "timestamp": "2026-08-31T23:39:18Z",
+          "cpr_mean_db": -5.281817263694265,
+          "cpr_baseline_delta_db": 5.715154889839978,
+          "cpr_successive_delta_db": 5.715154889839978
+        },
+        {
+          "index": 2,
+          "hh_mean_db": -11.84668738877953,
+          "hv_mean_db": -18.2180269902675,
+          "hh_baseline_delta_db": -7.076616928206017,
+          "hv_baseline_delta_db": -2.4509843797539945,
+          "hh_successive_delta_db": 0.44969205760476577,
+          "hv_successive_delta_db": -0.6398302801889391,
+          "hh_minus_hv_db": 6.3713396014879695,
+          "observation_id": "visit_2",
+          "timestamp": "2026-09-12T23:39:18Z",
+          "cpr_mean_db": -6.3713396014879695,
+          "cpr_baseline_delta_db": 4.625632548452023,
+          "cpr_successive_delta_db": -1.0895223377937049
+        }
+      ],
+      "interpretation": "Mean filtered log-backscatter on a fixed common-valid footprint. dB differences are not ground displacement. No cause or calibrated confidence is inferred.",
+      "cpr_definition": "HV_dB - HH_dB on the existing fixed common-valid footprint. Difference of filtered log-powers, not a polarimetric decomposition or ratio of spatial mean powers."
+    }
+  ],
+  "display_limits": {
+    "hh": [
+      -30,
+      0
+    ],
+    "hv": [
+      -40,
+      -5
+    ],
+    "ratio": [
+      0,
+      20
+    ],
+    "cpr": [
+      -20,
+      0
+    ],
+    "change": [
+      -8,
+      8
+    ]
+  },
+  "palette_css": {
+    "cividis": "linear-gradient(90deg, rgb(0,34,78) 0.0%, rgb(0,46,106) 6.25%, rgb(26,56,111) 12.5%, rgb(50,67,109) 18.75%, rgb(67,78,108) 25.0%, rgb(82,89,109) 31.25%, rgb(97,101,111) 37.5%, rgb(111,112,115) 43.75%, rgb(124,123,120) 50.0%, rgb(139,135,120) 56.25%, rgb(155,147,118) 62.5%, rgb(171,160,114) 68.75%, rgb(187,173,108) 75.0%, rgb(204,186,100) 81.25%, rgb(221,201,88) 87.5%, rgb(239,215,72) 93.75%, rgb(254,232,56) 100.0%)",
+    "vik": "linear-gradient(90deg, rgb(0,18,97) 0.0%, rgb(2,43,113) 6.25%, rgb(3,68,129) 12.5%, rgb(12,94,146) 18.75%, rgb(47,124,166) 25.0%, rgb(96,157,188) 31.25%, rgb(146,189,210) 37.5%, rgb(197,219,229) 43.75%, rgb(236,229,225) 50.0%, rgb(233,203,185) 56.25%, rgb(220,171,143) 62.5%, rgb(207,142,104) 68.75%, rgb(195,114,67) 75.0%, rgb(179,83,31) 81.25%, rgb(147,46,6) 87.5%, rgb(116,21,6) 93.75%, rgb(89,0,8) 100.0%)"
+  },
+  "composite": {
+    "red": "HH_dB",
+    "green": "HV_dB",
+    "blue": "HH_dB - HV_dB",
+    "stretch": "linear clipped uint8; same fixed limits for every date and case"
+  },
+  "hints": {
+    "hh_low_db": -17,
+    "hv_low_db": -24,
+    "hh_rise_db": 3,
+    "hv_stable_abs_db": 1,
+    "hv_rise_db": 3,
+    "calibration_status": "UNCALIBRATED"
+  },
+  "hint_definitions": {
+    "hint_low": "Low-return candidate: HH <= -17 AND HV <= -24 dB. Consistent with smooth/specular surfaces; dry smooth ground and shadow are alternatives.",
+    "hint_hh": "HH-brightening/stable-HV candidate: baseline delta HH >= 3 dB AND abs(delta HV) <= 1 dB. A double-bounce-like candidate, not an identified scattering mechanism.",
+    "hint_hv": "HV-rise candidate: baseline delta HV >= 3 dB. Consistent with changed depolarization/vegetation structure, with wetness, geometry and calibration alternatives."
+  },
+  "formulas": {
+    "cpr": "HV_dB - HH_dB = 10 log10(HVHV/HHHH), from independently median-filtered log-powers. Sign reversal of the preserved HH-HV ratio; not independent information.",
+    "baseline": "quantity(t)-quantity(first loaded visit), on paired-valid endpoint intersection",
+    "successive": "quantity(t)-quantity(previous loaded visit), on paired-valid endpoint intersection; unavailable on first visit",
+    "composite": "R=HH [-30,0]; G=HV [-40,-5]; B=HH-HV [0,20] dB. Linear clipped uint8 RGB; alpha is paired-valid."
+  },
+  "limits": [
+    "Diagonal-only HH/HV proxies; no off-diagonal covariance, DpRVI or m-chi decomposition.",
+    "All hints are illustrative and uncalibrated, may overlap, and have competing physical explanations. No class or cause is identified.",
+    "Low-return support is current paired-valid pixels; change hints require paired-valid baseline and current endpoints.",
+    "The false-colour RGB channels are not separate physical measurements. Colour is a descriptive composite, not a categorical map.",
+    "Fixed stretches can saturate; display saturation counts are recorded. Full COG numerical values are never clipped.",
+    "Sensitivity sweeps hold the all-visits common-valid footprint fixed; their area can differ from current-visit-valid areas in the preserved original panel.",
+    "Missing values remain unavailable. No coherence, displacement or accuracy is inferred."
+  ],
+  "references": [
+    "https://nisar-docs.asf.alaska.edu/gcov/",
+    "https://science.nasa.gov/mission/nisar/polarimetry/",
+    "https://www.fabiocrameri.ch/colourmaps/"
+  ],
+  "provenance": {
+    "inputs_sha256": {
+      "web/public/cases/nepal_surface/investigation/hh_0.tif": "371e9753c3c27fcd18d0cdef35edb78ed9a7c13f77f98800b3c071f1172d073f",
+      "web/public/cases/nepal_surface/investigation/hv_0.tif": "88b561cf0fa6135b68a67ba38a3edc6c687612c68b12c4115d8c8c126df9402e",
+      "web/public/cases/nepal_surface/investigation/hh_1.tif": "c856494c50d9079b5401dc116dba84ac14b39f23db596d013a88cb5888318201",
+      "web/public/cases/nepal_surface/investigation/hv_1.tif": "11f34b5d385e021063f88f54697b669acdb34ac3e26376f84930d6712bf8fc9f",
+      "web/public/cases/nepal_surface/investigation/hh_2.tif": "d658694902e4cab4f75e8320000e9523e290ddb45dca220c3fcaf173906017b4",
+      "web/public/cases/nepal_surface/investigation/hv_2.tif": "39096f8cfb6f5d426275593076332ddbdafc525fe0ba5c6199e1ded425e9597a",
+      "web/public/cases/nepal_surface/investigation/manifest.json": "29b7ad7df6e1847544b90a2fb53c75b47b6c58db8836d7af60c25ae74ab9f49a",
+      "reports/phase0_2026_11_02/granule_covariance_inventory.json": "1f76d7352bd831bb338c0b40bcda679d52176052c171990d3ce3242529ba1992"
+    },
+    "config_sha256": "b026c7e029e32e4ef5f13415eb660fdb16c53e2a359bf9fc819b68af3d4f5bd0",
+    "source_policy": "Existing NASA\u2013ISRO inputs from NASA Earthdata / ASF DAAC only; no new radar acquisition. Palette software from Matplotlib and Fabio Crameri/cmcrameri with licenses and checksums. No Chinese provider/site used.",
+    "covariance_audit": "reports/phase0_2026_11_02/granule_covariance_inventory.json",
+    "palettes": {
+      "matplotlib_source": {
+        "url": "https://raw.githubusercontent.com/matplotlib/matplotlib/main/lib/matplotlib/_cm_listed.py",
+        "retrieved_at": "2026-11-02T15:34:25.740701+00:00",
+        "sha256": "ddad3698f5129ceb1792a445371286c08bc9080298e657b3054aea19c9659ef9"
+      },
+      "vik_source": {
+        "url": "https://raw.githubusercontent.com/callumrollo/cmcrameri/master/cmcrameri/cmaps/vik.txt",
+        "retrieved_at": "2026-11-02T15:34:26.099350+00:00",
+        "sha256": "60c2abfbffdfd9e7567cfeea1387bfe270eb036efe7262fdd7bf713058bacae2"
+      },
+      "cmcrameri_license": {
+        "url": "https://raw.githubusercontent.com/callumrollo/cmcrameri/master/LICENSE",
+        "retrieved_at": "2026-11-02T15:34:26.494540+00:00",
+        "sha256": "f8ccecbeb9687f6b09a2cb13f12521c067ccb111280d1ea632c9500131b83e3b"
+      },
+      "matplotlib_license": {
+        "url": "https://raw.githubusercontent.com/matplotlib/matplotlib/main/LICENSE/LICENSE",
+        "retrieved_at": "2026-11-02T15:34:26.855247+00:00",
+        "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+      },
+      "origin": {
+        "cividis": "Matplotlib project / cividis authors (USA); Matplotlib license retained",
+        "vik": "Fabio Crameri Scientific colour maps, distributed by cmcrameri (MIT license retained); cite doi:10.5281/zenodo.1243862",
+        "scope": "Software colour lookup tables, not new Earth-observation measurements. No Chinese source used."
+      }
+    },
+    "code_sha256": {
+      "src/compute/dualpol_pipeline.py": "9a9629a93da023fe99429209ca12a59ed897fba2be322d6ea2c95a89d9308d71",
+      "src/compute/dualpol.py": "5afa49fa70d5c16a21a007d24e611188fb56781467d6fc9906a3a61bb22dd449",
+      "src/export/dualpol_render.py": "7fa7790bbf7888e6f4ffa4c7373a91ce2df48e5da6e9ae11772d1efcb5a223c4"
+    },
+    "assets_sha256": {
+      "composite_0.png": "fd8e35e3fe9dffa3b5b45bb65d17218a3a2ad03388fb1527a27bbd5096dd0e34",
+      "composite_0.tif": "2e5eed5c2b71ad952ee561e7cac309f4d7fbb296b314d234ed031cc1d2537ac9",
+      "composite_1.png": "f9474378d0809cf04e7dbc652f8700f89adc29e0f7f053a1e1dc641ea6273660",
+      "composite_1.tif": "b224fb33abcadd75f8099470e0dd90968a644d4d7f774a1ed5fa2c61d4ebd760",
+      "composite_2.png": "f980d638cf5e558d189db2aa9a83cace2c62ebef35ed58f60db0a203cdb33a73",
+      "composite_2.tif": "24f42b140fb56fd222b8d1b33f952358599d92a59512eaf2e6b387918ad83312",
+      "cpr_0.png": "34f462f70493e9fee94acab9de5a42d5d25fa303d544970807dc66a0e146c0db",
+      "cpr_0.tif": "a0bb0e5f3d38e7d384cb15c79ba2a1996c83d3b6903e0c5040e82c2098c0b425",
+      "cpr_1.png": "0ec0b8e337c863a611bd092e8ef96fbf1249b6a931c6b8dca470d4b91c8676e7",
+      "cpr_1.tif": "3e0a917886085c5b5615679833a98215ee0712f8d11d1ef59e344ca67d19a80a",
+      "cpr_2.png": "35f487751529e33713cdc00b720e527a112034cd192911cf6d174ff2351c9176",
+      "cpr_2.tif": "e7d004c7583e66feafe8d1dbe3db521f2f29cd40da93c85d96460a2274a9fd76",
+      "cpr_baseline_0.png": "0f789e7b28786e9b4c2457ee6bac0cd23a1af571754a5f0f4e56adeaef9c77b6",
+      "cpr_baseline_0.tif": "77ce470874c8075f55f7f08a9a6fa7cadab38cd0f6be0483736a54476f7af2ba",
+      "cpr_baseline_1.png": "809356ddc5d44a2369a1e204f01a6c05667e12ce7f2f5f757e095f9b2f989f8c",
+      "cpr_baseline_1.tif": "a49947d4c3181f0d7b56f05b0635b1c332154de973aa92d64c77c255873a8e33",
+      "cpr_baseline_2.png": "b491d0fe539931701582afb4e2f796c68ab31cc0f0852c6da28ffd0704d0e8b2",
+      "cpr_baseline_2.tif": "1c7ae9d37047644ae0f4b5aa0831e0839a8a2f3e1760f6bfec60d1c1e4dee198",
+      "cpr_successive_1.png": "809356ddc5d44a2369a1e204f01a6c05667e12ce7f2f5f757e095f9b2f989f8c",
+      "cpr_successive_1.tif": "6312630eae5ddd8c1ca1a4c2b1f449ebec010a99342f4914afa1a53c37aeb91c",
+      "cpr_successive_2.png": "babf758c4d8c6c01d257f2cd0b3d2dd87ab03a40ed339bb67f79614872f03f1b",
+      "cpr_successive_2.tif": "3ceed7a98ec0cfa179708adfb0eefd11e79c58ef59150999e72fcacf1bb08a44",
+      "hh_baseline_0.png": "0f789e7b28786e9b4c2457ee6bac0cd23a1af571754a5f0f4e56adeaef9c77b6",
+      "hh_baseline_0.tif": "968a0eede25bfdb82cc0bdb4731def106b639f4a6b48382ea8a47e2fc2bf4641",
+      "hh_baseline_1.png": "6b6c51742a973d84b9127f7d33f8ee638d639816497366df11eb50767fbc60ac",
+      "hh_baseline_1.tif": "5b7f4e3537da54c5bab61be3171e3d75ca7ef82b816143b6a48eeb86f3c92dd1",
+      "hh_baseline_2.png": "7c3fcfb7a3847ffb974f64cd822a4381fece820d92d9ca07f7aa16493398267e",
+      "hh_baseline_2.tif": "c69714c26ed4e1e8c5980627ffac917fbf65b8bac634ac9682728243843537b9",
+      "hh_fixed_0.png": "aac4f74e6a5f9bea22cc88bf67dd7eae82b5ab889c3c6c1c9a07bc1ad6342fbb",
+      "hh_fixed_0.tif": "c449cb6bcad9e2a85851e9beab9ac9eacc51cf037882a490d9f8dd92b751dc6a",
+      "hh_fixed_1.png": "0691ebc703c5e9ba02f31230ada79d904d3284ad9ae4c96b39c1f46f32f850b4",
+      "hh_fixed_1.tif": "353dce5e5d067e445eeb3bcb721e35b486aa5abf2f60d891dcba99db23fe89e4",
+      "hh_fixed_2.png": "be7b8911f8b7507eed8ed1ca76d62b578c92c151da872959a2dc613fb8d37506",
+      "hh_fixed_2.tif": "15f354dc70cc5f37798b6862ee08c0a1546372b70af3d4bba9670fcc113d4dfc",
+      "hh_successive_1.png": "6b6c51742a973d84b9127f7d33f8ee638d639816497366df11eb50767fbc60ac",
+      "hh_successive_1.tif": "c03347dca5856d6a432d922e5ed679894a7b0e6f8851d5baa78ef560d14d13d7",
+      "hh_successive_2.png": "6e2ec49c9526407fb72a20be4452b5a121a0370954bdd8107f771d58414d9e69",
+      "hh_successive_2.tif": "797769cf9071df84c636ad3a5c01baac4c1eeed39624f78523b42ae20396bfbb",
+      "hint_bits_0.tif": "5d543d297e65576e3f5a8abebe8679a191ba06c77ca35b8f7c1c67b97db6e622",
+      "hint_bits_1.tif": "75369cfb6a73fcc89d55ea62f0e45e0faf222e321f5928f8cf11748cf81cb05a",
+      "hint_bits_2.tif": "77347441336b8e80a9aad0e24ded6eff237857735c55ab6616558364f03eca37",
+      "hint_hh_1.png": "1ce57b605f9c0c69e9c38aae1e9f62935cd2f7c8fc397cd55514488a0c47303f",
+      "hint_hh_2.png": "af013c16126078d88ed8bd6fa7d967de14334de53bb12a8cadd2800182dc8946",
+      "hint_hv_1.png": "958e24197109168bdcad23c795f1f00b2b35ec7ca6dae03e6a03f3a80b1926e4",
+      "hint_hv_2.png": "ef1276ba3f9af30f0ea65de3f6d84ffda7fcc9b611d9412cee71b7f126ac3772",
+      "hint_low_0.png": "9a7b4ce6c423c9bdb062e70e262065f27b8451667c3467a438d8a848a39c4457",
+      "hint_low_1.png": "e2bd3647a202c6e53ebd89b95ee778ee47884b30a512138040773a55252cd0e3",
+      "hint_low_2.png": "abcde4dd872c9c814860fb06e080e00413a60eaf44df601b1a252941e43bcee2",
+      "hv_baseline_0.png": "0f789e7b28786e9b4c2457ee6bac0cd23a1af571754a5f0f4e56adeaef9c77b6",
+      "hv_baseline_0.tif": "320959a516bd8b1eb033beb2c74289ca8499a6d43c657c20e4617d016343ffff",
+      "hv_baseline_1.png": "de965a151fcb6b3741355cee2697d245d081499243ca57612d54272d35aa5f71",
+      "hv_baseline_1.tif": "e8b609e327b6a90bec4a3571ae755b339295a30c2f05d525b72677e7a047b010",
+      "hv_baseline_2.png": "97b40ee5e7d7b2ee9ee045ebbff7167d3e8a817601b51a16bc7f6531da20fced",
+      "hv_baseline_2.tif": "1df551235cc193fb1de4a197b55688a6113698508f7616364f51470ffc62dfbb",
+      "hv_fixed_0.png": "41182e821cd8f1eed48a02e2d147918f55e33569995ba3c29cbbb4335d66b69c",
+      "hv_fixed_0.tif": "bb21a1f8ba64735786ad8b3bd62baea749805ac93c95eba49ded18b7ab9d49f6",
+      "hv_fixed_1.png": "eee50f80fd8284c670d24814f1bf3e26dfec6ed203d5e6e04ce0f221327806bf",
+      "hv_fixed_1.tif": "6f707e6510802d382a89430584011f535f8ea0a6bdf53239893ebb4ba27670ff",
+      "hv_fixed_2.png": "a6100fda1e889a0c7164bafd7a3f33d6d2756453acf5e41b7f72f3795bd51bf5",
+      "hv_fixed_2.tif": "c400e7d915739590b9adafc39509d5a280c28f95fcecba962d60dd62034d0bb1",
+      "hv_successive_1.png": "de965a151fcb6b3741355cee2697d245d081499243ca57612d54272d35aa5f71",
+      "hv_successive_1.tif": "1e0fcacbf485d17165ff8db091613199add2acb682fc8b7c7394ef510034d3af",
+      "hv_successive_2.png": "3e625d2d5eae984d444f3e11a07e3fbc01b56887e5905c39691072c1e375ab87",
+      "hv_successive_2.tif": "ccd3ce999cd63f5fa4c5167864b54fc50b71a910635fe3e02d06080164e048d5",
+      "profiles.json": "6de2878f662bbdbe9b11ca595d63b71b5ebac2f9468dcc4241fb03d015e502ee",
+      "profiles.parquet": "69ad294144991c553575031f07459928a50e74b8f3096e8fe43651f059e2d4f0",
+      "sensitivity.json": "5226807873480108907077b10c709a43d78465aa86b62b56f321b41f36ac6cd5"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "BANGLADESH_TEN_VISIT_NATIVE_CHECKS_PASS",
+  "historical_files_unchanged": 505,
+  "record_manifests_sha256": {
+    "web/public/cases/jamuna_river/bangladesh-v2/context-v2/manifest.json": "a079d2c036b97c809bf6dd99cfb87c7c785014f638b17a4e4d2242a14b1281d7",
+    "web/public/cases/jamuna_river/bangladesh-v2/references-v1/manifest.json": "a642aeea051f2a319933b8a858f6064315a16b3d90de83653dc70e9c49225d48",
+    "web/public/cases/jamuna_river/bangladesh-v2/dualpol-v1/manifest.json": "a7aba405d72f248e10592b931656ef1cf7bb00d6fdf7b52a7385a8bebb82ccfc",
+    "web/public/cases/jamuna_river/bangladesh-v2/investigation/manifest.json": "445b115a7906100a5e2a469954934439c19e529faf87ab046a99ae82bda81540",
+    "web/public/cases/jamuna_river/bangladesh-v2/evidence-v2/manifest.json": "d192fc1588205f3a9e8fdda673ab68e36bb583ace6b4541f04528a4c1bc3150e",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/context-v2/manifest.json": "4fb6844da19e3d42e4acd57cd44ae788e19b696dd768a249c27fdbe5905e4049",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/references-v1/manifest.json": "03931222056ed5b25b326a3b162bfdc98226bc31309d287084eca4879e8d4ec9",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/dualpol-v1/manifest.json": "528d196f3ae90411527fa9c6250c0f5227a60441821b488f6ef92732da28836c",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/investigation/manifest.json": "84e914d7cb8e9220b2c81a54d403992bbe8739b10fe31803272307142e1dcd7b",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/evidence-v2/manifest.json": "2cec7a079bfb6ae51f1258287a19bd7208fe82544e1c1b1bc74512c57222479e"
+  },
+  "cases": {
+    "jamuna_river": {
+      "observations": 10,
+      "nominal_slots": 11,
+      "permanent_outage": "2026-08-05",
+      "raw_source_interior_samples": 24,
+      "common_valid_pixels": 3992004,
+      "saved_profiles_checked": 4,
+      "all_pixel_checks": "CPR, endpoint differences, masks, dark count, occupancy, valid visit count; independent threshold cells",
+      "reference_new_dates_unavailable": 12
+    },
+    "tanguar_wetland": {
+      "observations": 10,
+      "nominal_slots": 11,
+      "permanent_outage": "2026-08-05",
+      "raw_source_interior_samples": 24,
+      "common_valid_pixels": 2873204,
+      "saved_profiles_checked": 4,
+      "all_pixel_checks": "CPR, endpoint differences, masks, dark count, occupancy, valid visit count; independent threshold cells",
+      "reference_new_dates_unavailable": 12
+    }
+  },
+  "scope": "Numerical/source reconciliation, bindings and preservation; not cause, classification accuracy or browser validation."
+}

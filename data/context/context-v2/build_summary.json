@@ -1,0 +1,25 @@
+{
+  "cases": {
+    "nepal_surface": {
+      "median_slope_degrees": 19.098217010498047,
+      "fraction_slope_ge_10": 0.7152984375,
+      "fraction_geometry_candidates": 0.17289375
+    },
+    "nepal_impact_corridor": {
+      "median_slope_degrees": 31.954429626464844,
+      "fraction_slope_ge_10": 0.980921875,
+      "fraction_geometry_candidates": 0.576803125
+    },
+    "jamuna_river": {
+      "median_slope_degrees": 1.9494949579238892,
+      "fraction_slope_ge_10": 0.005783465089044683,
+      "fraction_geometry_candidates": 6.743255059127108e-05
+    },
+    "tanguar_wetland": {
+      "median_slope_degrees": 1.3597540855407715,
+      "fraction_slope_ge_10": 0.002484394506866417,
+      "fraction_geometry_candidates": 1.560549313358302e-05
+    }
+  },
+  "version": "context-v2"
+}

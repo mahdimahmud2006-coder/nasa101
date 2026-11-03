@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "historical_text_blobs_checked": 315,
+  "findings": [],
+  "scope": "Known credential patterns in historical text blobs up to 8 MiB. No history was rewritten."
+}

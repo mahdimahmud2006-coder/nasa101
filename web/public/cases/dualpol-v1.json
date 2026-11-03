@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "product_version": "dualpol-v1",
+  "cases": [
+    {
+      "case_id": "nepal_surface",
+      "manifest_url": "/cases/nepal_surface/dualpol-v1/manifest.json",
+      "observation_count": 3
+    },
+    {
+      "case_id": "nepal_impact_corridor",
+      "manifest_url": "/cases/nepal_impact_corridor/dualpol-v1/manifest.json",
+      "observation_count": 3
+    },
+    {
+      "case_id": "jamuna_river",
+      "manifest_url": "/cases/jamuna_river/dualpol-v1/manifest.json",
+      "observation_count": 6
+    },
+    {
+      "case_id": "tanguar_wetland",
+      "manifest_url": "/cases/tanguar_wetland/dualpol-v1/manifest.json",
+      "observation_count": 6
+    }
+  ]
+}

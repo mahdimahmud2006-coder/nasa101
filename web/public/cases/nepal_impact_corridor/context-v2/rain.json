@@ -1,0 +1,131 @@
+{
+  "dataset": "GPM_3IMERGHH V07 scientific half-hourly",
+  "observations": [
+    {
+      "observation_id": "visit_0",
+      "timestamp": "2026-08-19T23:39:18Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-08-18T23:39:18Z",
+          "end_exclusive_utc": "2026-08-19T23:39:18Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-08-16T23:39:18Z",
+          "end_exclusive_utc": "2026-08-19T23:39:18Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-08-12T23:39:18Z",
+          "end_exclusive_utc": "2026-08-19T23:39:18Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": null
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_1",
+      "timestamp": "2026-08-31T23:39:18Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-08-30T23:39:18Z",
+          "end_exclusive_utc": "2026-08-31T23:39:18Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-08-28T23:39:18Z",
+          "end_exclusive_utc": "2026-08-31T23:39:18Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-08-24T23:39:18Z",
+          "end_exclusive_utc": "2026-08-31T23:39:18Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-08-19T23:39:18Z",
+          "end_exclusive_utc": "2026-08-31T23:39:18Z",
+          "duration_seconds": 1036800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_2",
+      "timestamp": "2026-09-12T23:39:18Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-09-11T23:39:18Z",
+          "end_exclusive_utc": "2026-09-12T23:39:18Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-09-09T23:39:18Z",
+          "end_exclusive_utc": "2026-09-12T23:39:18Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-09-05T23:39:18Z",
+          "end_exclusive_utc": "2026-09-12T23:39:18Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-08-31T23:39:18Z",
+          "end_exclusive_utc": "2026-09-12T23:39:18Z",
+          "duration_seconds": 1036800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    }
+  ],
+  "availability": {
+    "query": {
+      "short_name": "GPM_3IMERGHH",
+      "version": "07",
+      "temporal": "2026-08-12T23:39:18Z,2026-09-12T23:39:18Z",
+      "bounding_box": "85.19607173296369,28.034670073510398,85.44376811560396,28.25422262743529",
+      "page_size": 1
+    },
+    "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPM_3IMERGHH&version=07&temporal=2026-08-12T23%3A39%3A18Z%2C2026-09-12T23%3A39%3A18Z&bounding_box=85.19607173296369%2C28.034670073510398%2C85.44376811560396%2C28.25422262743529&page_size=1",
+    "retrieved_at": "2026-11-02T16:11:06.134991+00:00",
+    "provider": "NASA GES DISC / NASA Earthdata (USA)",
+    "upstream": "NASA GPM IMERG multisatellite product; individual sensors require provenance review before acceptance",
+    "license": "NASA Earth science open data; DOI 10.5067/GPM/IMERG/3B-HH/07",
+    "http_status": 200,
+    "hits": 0,
+    "response_sha256": "c09ff50265ede1e402d4da0fa4fff58b8a3973121c3401ce1a4f368efe41e928",
+    "response_path": "data/context/context-v2/sources/nepal_impact_corridor_imerg_query.response.json",
+    "status": "unavailable",
+    "reason": "no matching scientific V07 granules in the completed bounded catalog query"
+  }
+}

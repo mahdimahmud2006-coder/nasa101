@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-04",
+  "requested_repository": "https://github.com/mahdimahmud2006-coder/nasa101.git",
+  "visibility": "PRIVATE \u2014 preserved at explicit user request",
+  "readme": "Rewritten around project value, actual radar examples, geographic scope, setup, science and evidence",
+  "git_hygiene": "Source/provenance retained; generated binaries and machine-local/secret files excluded; historical Git commits preserved",
+  "staged_audit": {
+    "status": "PASS",
+    "files_checked": 524,
+    "total_bytes": 38950492,
+    "findings": [],
+    "scope": "Current publication set, known credential patterns and large/local files; not a certificate that every possible secret format is absent."
+  },
+  "history_scan": {
+    "status": "PASS",
+    "historical_text_blobs_checked": 315,
+    "findings": [],
+    "scope": "Known credential patterns in historical text blobs up to 8 MiB. No history was rewritten."
+  },
+  "python_tests_passed": 289,
+  "javascript_tests_passed": 104,
+  "runtime_release": "runtime-20261104",
+  "runtime_parts": 5,
+  "core_download_bytes": 2731846392,
+  "full_download_bytes": 6906120801,
+  "runtime_core_local_verification": "1426 files verified against manifest",
+  "publishing_status": "Prepared for push; remote confirmation will be recorded separately",
+  "raw_HDF5_or_credentials_included": false,
+  "browser_qa": "Prior restriction remains; no new browser verification claimed"
+}

@@ -1,0 +1,18 @@
+{
+  "query": {
+    "short_name": "OPERA_L3_DSWX-S1_V1",
+    "temporal": "2026-06-13T23:21:35+00:00,2026-10-21T23:21:32+00:00",
+    "bounding_box": "90.9895389532272,25.026639418364375,91.17021585958979,25.173363702854573",
+    "page_size": 250,
+    "sort_key": "start_date"
+  },
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=OPERA_L3_DSWX-S1_V1&temporal=2026-06-13T23%3A21%3A35%2B00%3A00%2C2026-10-21T23%3A21%3A32%2B00%3A00&bounding_box=90.9895389532272%2C25.026639418364375%2C91.17021585958979%2C25.173363702854573&page_size=250&sort_key=start_date",
+  "retrieved_at": "2026-11-02T16:29:38.346538+00:00",
+  "provider": "NASA Earthdata / NASA OPERA (USA)",
+  "upstream": "NASA/USGS Landsat and ESA Sentinel constellation (USA/Europe)",
+  "license": "NASA open Earth science data; retain product citation",
+  "freeze_commit": "8892340",
+  "status": "complete",
+  "hits": 57,
+  "sha256": "dd93f415e9d45737db932121a869d02c683011960091899dd2c18f92d123d7ff"
+}

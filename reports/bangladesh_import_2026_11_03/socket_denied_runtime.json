@@ -1,0 +1,389 @@
+{
+  "status": "SCOPED_SOURCE_AND_NETWORK_DENIED_HANDLER_CHECKS_PASS",
+  "pages": {
+    "index": {
+      "form_controls_with_source_labels": 1,
+      "missing_form_labels": [],
+      "shared_navigation": true,
+      "live_region_present": true
+    },
+    "investigations": {
+      "form_controls_with_source_labels": 10,
+      "missing_form_labels": [],
+      "shared_navigation": true,
+      "live_region_present": true
+    },
+    "change-lab": {
+      "form_controls_with_source_labels": 2,
+      "missing_form_labels": [],
+      "shared_navigation": true,
+      "live_region_present": true
+    },
+    "timeseries": {
+      "form_controls_with_source_labels": 7,
+      "missing_form_labels": [],
+      "shared_navigation": true,
+      "live_region_present": true
+    },
+    "comparison": {
+      "form_controls_with_source_labels": 4,
+      "missing_form_labels": [],
+      "shared_navigation": true,
+      "live_region_present": true
+    }
+  },
+  "requests": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 11394
+    },
+    {
+      "path": "/api/claims",
+      "status": 200,
+      "bytes": 9716
+    },
+    {
+      "path": "/api/investigations",
+      "status": 200,
+      "bytes": 3978
+    },
+    {
+      "path": "/api/project",
+      "status": 200,
+      "bytes": 1475
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes": 20717
+    },
+    {
+      "path": "/cases/interferometry-v2.json",
+      "status": 200,
+      "bytes": 66116
+    },
+    {
+      "path": "/cases/investigations-bangladesh-v2.json",
+      "status": 200,
+      "bytes": 4741
+    },
+    {
+      "path": "/cases/jamuna_river/bangladesh-v2/calendar.json",
+      "status": 200,
+      "bytes": 14023
+    },
+    {
+      "path": "/cases/jamuna_river/bangladesh-v2/context-v2/manifest.json",
+      "status": 200,
+      "bytes": 26084
+    },
+    {
+      "path": "/cases/jamuna_river/bangladesh-v2/dualpol-v1/manifest.json",
+      "status": 200,
+      "bytes": 82756
+    },
+    {
+      "path": "/cases/jamuna_river/bangladesh-v2/dualpol-v1/sensitivity.json",
+      "status": 200,
+      "bytes": 28975
+    },
+    {
+      "path": "/cases/jamuna_river/bangladesh-v2/evidence-v2/manifest.json",
+      "status": 200,
+      "bytes": 424047
+    },
+    {
+      "path": "/cases/jamuna_river/bangladesh-v2/investigation/manifest.json",
+      "status": 200,
+      "bytes": 39006
+    },
+    {
+      "path": "/cases/jamuna_river/bangladesh-v2/references-v1/manifest.json",
+      "status": 200,
+      "bytes": 378595
+    },
+    {
+      "path": "/cases/jamuna_river/evidence-v2/manifest.json",
+      "status": 200,
+      "bytes": 256681
+    },
+    {
+      "path": "/cases/jamuna_river/references-v1/manifest.json",
+      "status": 200,
+      "bytes": 238867
+    },
+    {
+      "path": "/cases/nepal_impact_corridor/evidence-v2/manifest.json",
+      "status": 200,
+      "bytes": 33730
+    },
+    {
+      "path": "/cases/nepal_impact_corridor/references-v1/manifest.json",
+      "status": 200,
+      "bytes": 119172
+    },
+    {
+      "path": "/cases/nepal_surface/evidence-v2/manifest.json",
+      "status": 200,
+      "bytes": 34050
+    },
+    {
+      "path": "/cases/nepal_surface/references-v1/manifest.json",
+      "status": 200,
+      "bytes": 123872
+    },
+    {
+      "path": "/cases/tanguar_wetland/bangladesh-v2/calendar.json",
+      "status": 200,
+      "bytes": 14026
+    },
+    {
+      "path": "/cases/tanguar_wetland/bangladesh-v2/context-v2/manifest.json",
+      "status": 200,
+      "bytes": 27082
+    },
+    {
+      "path": "/cases/tanguar_wetland/bangladesh-v2/dualpol-v1/manifest.json",
+      "status": 200,
+      "bytes": 83599
+    },
+    {
+      "path": "/cases/tanguar_wetland/bangladesh-v2/dualpol-v1/sensitivity.json",
+      "status": 200,
+      "bytes": 29882
+    },
+    {
+      "path": "/cases/tanguar_wetland/bangladesh-v2/evidence-v2/manifest.json",
+      "status": 200,
+      "bytes": 424165
+    },
+    {
+      "path": "/cases/tanguar_wetland/bangladesh-v2/investigation/manifest.json",
+      "status": 200,
+      "bytes": 39433
+    },
+    {
+      "path": "/cases/tanguar_wetland/bangladesh-v2/references-v1/manifest.json",
+      "status": 200,
+      "bytes": 375830
+    },
+    {
+      "path": "/cases/tanguar_wetland/evidence-v2/manifest.json",
+      "status": 200,
+      "bytes": 257004
+    },
+    {
+      "path": "/cases/tanguar_wetland/references-v1/manifest.json",
+      "status": 200,
+      "bytes": 237536
+    },
+    {
+      "path": "/cases/time-axis-v1/calendars.json",
+      "status": 200,
+      "bytes": 25816
+    },
+    {
+      "path": "/change-lab.css",
+      "status": 200,
+      "bytes": 4125
+    },
+    {
+      "path": "/change-lab.html",
+      "status": 200,
+      "bytes": 8738
+    },
+    {
+      "path": "/change-lab.mjs",
+      "status": 200,
+      "bytes": 19224
+    },
+    {
+      "path": "/comparison.html",
+      "status": 200,
+      "bytes": 8604
+    },
+    {
+      "path": "/context-v2.mjs",
+      "status": 200,
+      "bytes": 2529
+    },
+    {
+      "path": "/dualpol.css",
+      "status": 200,
+      "bytes": 2599
+    },
+    {
+      "path": "/dualpol.mjs",
+      "status": 200,
+      "bytes": 8578
+    },
+    {
+      "path": "/expanded-model.mjs",
+      "status": 200,
+      "bytes": 4226
+    },
+    {
+      "path": "/expanded.css",
+      "status": 200,
+      "bytes": 5638
+    },
+    {
+      "path": "/expanded.mjs",
+      "status": 200,
+      "bytes": 16014
+    },
+    {
+      "path": "/home.css",
+      "status": 200,
+      "bytes": 11828
+    },
+    {
+      "path": "/home.mjs",
+      "status": 200,
+      "bytes": 2760
+    },
+    {
+      "path": "/investigation-model.mjs",
+      "status": 200,
+      "bytes": 2644
+    },
+    {
+      "path": "/investigation-state.mjs",
+      "status": 200,
+      "bytes": 2280
+    },
+    {
+      "path": "/investigations.css",
+      "status": 200,
+      "bytes": 11253
+    },
+    {
+      "path": "/investigations.html",
+      "status": 200,
+      "bytes": 18036
+    },
+    {
+      "path": "/investigations.mjs",
+      "status": 200,
+      "bytes": 39653
+    },
+    {
+      "path": "/navigation-model.mjs",
+      "status": 200,
+      "bytes": 3146
+    },
+    {
+      "path": "/playback.mjs",
+      "status": 200,
+      "bytes": 2282
+    },
+    {
+      "path": "/reasoning.mjs",
+      "status": 200,
+      "bytes": 6955
+    },
+    {
+      "path": "/studio.css",
+      "status": 200,
+      "bytes": 26839
+    },
+    {
+      "path": "/studio.mjs",
+      "status": 200,
+      "bytes": 30410
+    },
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "bytes": 16824
+    },
+    {
+      "path": "/terrain-view.mjs",
+      "status": 200,
+      "bytes": 14106
+    },
+    {
+      "path": "/time-axis.css",
+      "status": 200,
+      "bytes": 2683
+    },
+    {
+      "path": "/time-axis.mjs",
+      "status": 200,
+      "bytes": 7099
+    },
+    {
+      "path": "/timeseries.css",
+      "status": 200,
+      "bytes": 10294
+    },
+    {
+      "path": "/timeseries.html",
+      "status": 200,
+      "bytes": 9837
+    },
+    {
+      "path": "/timeseries.js",
+      "status": 200,
+      "bytes": 23739
+    },
+    {
+      "path": "/workspace-shell.css",
+      "status": 200,
+      "bytes": 7679
+    },
+    {
+      "path": "/workspace-shell.mjs",
+      "status": 200,
+      "bytes": 1266
+    },
+    {
+      "path": "/api/cases/nepal_surface/investigation-polygon",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/cases/nepal_impact_corridor/investigation-polygon",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/cases/jamuna_river/investigation-polygon",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "path": "/api/cases/tanguar_wetland/investigation-polygon",
+      "status": 200,
+      "method": "POST"
+    }
+  ],
+  "new_theme_text_contrast_pairs": [
+    {
+      "foreground": "#d9e9ee",
+      "background": "#101e29",
+      "ratio": 13.58368942265878
+    },
+    {
+      "foreground": "#0b2527",
+      "background": "#87e4d4",
+      "ratio": 10.761914171970968
+    },
+    {
+      "foreground": "#e5eff1",
+      "background": "#142a34",
+      "ratio": 12.724681300568404
+    },
+    {
+      "foreground": "#a7bbc6",
+      "background": "#111c26",
+      "ratio": 8.675970406346682
+    }
+  ],
+  "network_policy": "Python socket creation and DNS denied during handler requests; no external request permitted.",
+  "browser_visual_keyboard_accessibility_gpu": "UNVERIFIED: prior browser local-URL policy block; no workaround attempted.",
+  "physical_wifi_ethernet_disconnect": "PENDING_USER_REHEARSAL",
+  "whole_app_wcag_conformance": "NOT_ESTABLISHED",
+  "scope": "Native form-label source coverage, four theme color pairs, local source delivery and representative local reasoning. Not rendered layout, full assistive-technology testing or browser network observation."
+}

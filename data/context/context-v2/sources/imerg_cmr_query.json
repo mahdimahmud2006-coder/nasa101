@@ -1,0 +1,17 @@
+{
+  "query": {
+    "short_name": "GPM_3IMERGHH",
+    "version": "07",
+    "temporal": "2026-08-10T00:00:00Z,2026-08-17T23:59:59Z",
+    "page_size": 2,
+    "sort_key": "start_date"
+  },
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPM_3IMERGHH&version=07&temporal=2026-08-10T00%3A00%3A00Z%2C2026-08-17T23%3A59%3A59Z&page_size=2&sort_key=start_date",
+  "retrieved_at": "2026-11-02T16:04:34.289984+00:00",
+  "provider": "NASA GES DISC / NASA Earthdata (USA)",
+  "upstream": "NASA GPM / multinational constellation; source instruments must be checked before acceptance",
+  "license": "NASA open Earth science data; cite DOI 10.5067/GPM/IMERG/3B-HH/07",
+  "status": 200,
+  "cmr_hits": "0",
+  "sha256": "cbf6f912427503b9e8e8e42f5683e21451a329c0cc293c01c0cad71bd0848303"
+}

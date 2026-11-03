@@ -1,0 +1,1431 @@
+{
+  "schema_version": 1,
+  "version": "expanded-v1",
+  "case_id": "nepal_impact_corridor",
+  "title": "Rasuwa\u2013Nuwakot \u00b7 reference-aligned corridor",
+  "grid": {
+    "shape": [
+      2400,
+      2400
+    ],
+    "affine": [
+      10.0,
+      0.0,
+      323030.0,
+      0.0,
+      -10.0,
+      3126350.0
+    ],
+    "crs": "EPSG:32645",
+    "pixel_area_km2": 0.0001,
+    "bounds_wgs84": [
+      85.19607173296369,
+      28.034670073510398,
+      85.44376811560396,
+      28.25422262743529
+    ]
+  },
+  "reference_timestamp": "2026-08-19T23:39:18Z",
+  "reference_index": 4,
+  "observations": [
+    {
+      "observation_id": "acq_20260620T233921",
+      "timestamp": "2026-06-20T23:39:21Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_023_098_A_016_4005_DHDH_A_20260620T233921_20260620T233956_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_023_098_A_016_4005_DHDH_A_20260620T233921_20260620T233956_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_0.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_0.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_0.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_0.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_0.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_0.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_0.tif",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_0.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "84bd2db304759843e23ed91e9b7a7fe5015cfb944159bde54757ca204f659b15",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683426,
+          "total_pixels": 5760000,
+          "masked_pixels": 76574,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.0001589953899383545,
+            13206.875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611035,
+          "processed_sha256": "d311a5aee877a2304e7221e93f95e21dbb0861699e918d64924d7e1dd237a075",
+          "valid_fraction": 0.9741380208333333
+        },
+        "hv": {
+          "window_sha256": "fd4833a71dcb3b7cb90ae26bf63ee3b81a75f2f8ef8a52b87c5ae51a9655fcc5",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683426,
+          "total_pixels": 5760000,
+          "masked_pixels": 76574,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            3.8878992199897766e-05,
+            1022.984375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611035,
+          "processed_sha256": "13bba2813abb3843d93034f64d9eeb9af0c494a6a4f4d5959204c962a197c33b",
+          "valid_fraction": 0.9741380208333333
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20260702T233920",
+      "timestamp": "2026-07-02T23:39:20Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_024_098_A_016_4005_DHDH_A_20260702T233920_20260702T233955_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_024_098_A_016_4005_DHDH_A_20260702T233920_20260702T233955_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_1.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_1.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_1.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_1.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_1.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_1.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_1.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_1.tif",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_1.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "e58fb8be22a085bef6f38522efc7906c898e360c859e86c1251b9a0b8d29d4da",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683339,
+          "total_pixels": 5760000,
+          "masked_pixels": 76661,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.0002737864851951599,
+            12042.375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611100,
+          "processed_sha256": "3d856ed562bfea86f258e8f1b05d44606739d09c88587de5bdd8b6c5568a5003",
+          "valid_fraction": 0.9741493055555556
+        },
+        "hv": {
+          "window_sha256": "b8e1c37db56cdea28e5f5f518753fb0f7c4ac2b44a78ee4ada480cea3d2266b4",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683339,
+          "total_pixels": 5760000,
+          "masked_pixels": 76661,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            1.7982441931962967e-05,
+            1852.671875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611100,
+          "processed_sha256": "34ba886109010370839425de7e5d2ea3596ad0824b7402fa1de720937f1e43c3",
+          "valid_fraction": 0.9741493055555556
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20260714T233920",
+      "timestamp": "2026-07-14T23:39:20Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_025_098_A_016_4005_DHDH_A_20260714T233920_20260714T233954_P05023_F_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_025_098_A_016_4005_DHDH_A_20260714T233920_20260714T233954_P05023_F_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_2.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_2.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_2.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_2.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_2.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_2.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_2.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_2.tif",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_2.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "919871dc1acb2e54e569aaedd7f18a59132827c0f982009d858a1a28499b0acc",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683318,
+          "total_pixels": 5760000,
+          "masked_pixels": 76682,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.00020033866167068481,
+            21020.0
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611016,
+          "processed_sha256": "24cac3698ef271edae06813b12370151468cc48aa7d236e3043715868704dccd",
+          "valid_fraction": 0.9741347222222222
+        },
+        "hv": {
+          "window_sha256": "f398609c2967559f534fc9eeff7781fa63e31253722526e011fc1f9ae8a652f6",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683318,
+          "total_pixels": 5760000,
+          "masked_pixels": 76682,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            8.867960423231125e-05,
+            1870.890625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611016,
+          "processed_sha256": "629af6e46300257a23ed41d3901724248a5848c30e86fa335cdb7deeebfcf598",
+          "valid_fraction": 0.9741347222222222
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20260726T233919",
+      "timestamp": "2026-07-26T23:39:19Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_3.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_3.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_3.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_3.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_3.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_3.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_3.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_3.tif",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_3.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "c4308fac405e3a79a7a59e03d90330bd3611e1c168994dc75d0854b09cfed945",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683395,
+          "total_pixels": 5760000,
+          "masked_pixels": 76605,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.0002765059471130371,
+            9157.5
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611117,
+          "processed_sha256": "ea4bbb63048be98ce106dad3640b090452a5cb8cee6d7c0baf5b2c14eec6eada",
+          "valid_fraction": 0.9741522569444444
+        },
+        "hv": {
+          "window_sha256": "0db28d12f360f0fa6488d8202628f93dae7f766c70f0a5942283be4c6501ea01",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683395,
+          "total_pixels": 5760000,
+          "masked_pixels": 76605,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            4.061311483383179e-05,
+            1329.84375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611117,
+          "processed_sha256": "49c4adb499ad5658e078b8db3a2b86f669639790cc157a87a975183125ffae5d",
+          "valid_fraction": 0.9741522569444444
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20260819T233918",
+      "timestamp": "2026-08-19T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "source_file": "aug19.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_4.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_4.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_4.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_4.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_4.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_4.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_4.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/investigation/hh_0.tif",
+        "hv": "/cases/nepal_impact_corridor/investigation/hv_0.tif"
+      },
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9741619791666667,
+          "window_sha256": "30ca68e851ae543e5270d2872e3ef4897884fb5df8882affde242cbd5321b87d",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683410,
+          "total_pixels": 5760000,
+          "masked_pixels": 76590,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            4.6433997340500355e-06,
+            14267.875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611173,
+          "processed_sha256": "b67d0ce9a31a4eeb5c5c9abdc561027081907df5d29a1b9951644c5c8e12b0dc",
+          "preserved_cog_sha256": "c45ec7ed53ad9bfbb950332f3f656ce66040e56baf21964c590f0553c9741a14"
+        },
+        "hv": {
+          "valid_fraction": 0.9741619791666667,
+          "window_sha256": "ee226b307dad60373f8077c41c5caf110f922f032a855cd5d0579cc3ec0cea40",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683410,
+          "total_pixels": 5760000,
+          "masked_pixels": 76590,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            7.309578359127045e-05,
+            874.140625
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611173,
+          "processed_sha256": "cb51e780615ef7a146c602fa135fb37ac47b5f1434ca1e29b6a58d6aa422a914",
+          "preserved_cog_sha256": "a1463082fc010125c86f4b7c19c90e54b8f8320683a0fdb9de20c58be2455276"
+        }
+      },
+      "preserved_original_observation": true
+    },
+    {
+      "observation_id": "acq_20260831T233918",
+      "timestamp": "2026-08-31T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+      "source_file": "aug31.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_5.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_5.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_5.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_5.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_5.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_5.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_5.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/investigation/hh_1.tif",
+        "hv": "/cases/nepal_impact_corridor/investigation/hv_1.tif"
+      },
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.9741631944444444,
+          "window_sha256": "72c1fa571c7af07204da4613c22ca4d5d76a0e3dbc0c0e245de813fb85fbc9a8",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683407,
+          "total_pixels": 5760000,
+          "masked_pixels": 76593,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            9.185075759887695e-05,
+            9553.25
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611180,
+          "processed_sha256": "92d1f917ab74049bcdc04f0cd8b3cb0f1712b92cc8f78fcd0a486ea4f799dc07",
+          "preserved_cog_sha256": "3542a22a68b864f3d40899e5b9086bb8870f57e922bfb181c864fda0f960e4eb"
+        },
+        "hv": {
+          "valid_fraction": 0.9741631944444444,
+          "window_sha256": "4a218decf5a9e47dd85b567d48e441842ad5bd627bdc80977b08cad8b2ca609a",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683407,
+          "total_pixels": 5760000,
+          "masked_pixels": 76593,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            3.0475901439785957e-05,
+            1039.546875
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611180,
+          "processed_sha256": "8ef7a67a856ace070be3d9cd396f89bafaf3278de85976c11cd90c4d19304d71",
+          "preserved_cog_sha256": "205fa5a7d2fae831ec6252346d38cfafde1e564eddd2cfedb3bae45f148a686e"
+        }
+      },
+      "preserved_original_observation": true
+    },
+    {
+      "observation_id": "acq_20260912T233918",
+      "timestamp": "2026-09-12T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001",
+      "source_file": "sept12.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_6.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_6.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_6.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_6.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_6.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_6.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_6.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/investigation/hh_2.tif",
+        "hv": "/cases/nepal_impact_corridor/investigation/hv_2.tif"
+      },
+      "quality": {
+        "hh": {
+          "valid_fraction": 0.974134375,
+          "window_sha256": "0347bc8aeb871946ec2c21d86bb28f2d871c1e7f5593d4b8ddb98516bb54fd8f",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683320,
+          "total_pixels": 5760000,
+          "masked_pixels": 76680,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.0003059990704059601,
+            10247.0
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611014,
+          "processed_sha256": "63df8c6bf3e2fba8d8ef7ea5cc50cd97e0f8f9df632be81b0c8fffedd7df6e57",
+          "preserved_cog_sha256": "70b52fe9b63864e1221198acbf575d61e2e7213ba64446fc7f737c3ffce00cf6"
+        },
+        "hv": {
+          "valid_fraction": 0.974134375,
+          "window_sha256": "e6efd6cf48510a2eb906e75c98178dccc06e8fd93981e576adb745a94b599d80",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683320,
+          "total_pixels": 5760000,
+          "masked_pixels": 76680,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            6.460584700107574e-05,
+            1054.0
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611014,
+          "processed_sha256": "cf295d24945f0231a6f170f1eee9d06172b1eca3b003e8807a654f5b44c98b67",
+          "preserved_cog_sha256": "1e0b797ab4aac695cea6d7ae22a4eaf41689488942fd83dd5e6a6b39f7e6a5ed"
+        }
+      },
+      "preserved_original_observation": true
+    },
+    {
+      "observation_id": "acq_20260924T233918",
+      "timestamp": "2026-09-24T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_7.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_7.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_7.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_7.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_7.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_7.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_7.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_7.tif",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_7.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "9527b3db33bfa4dd78066bc3ce85ef8300f57e5f18dc9f12e5c623b1f5110c22",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683306,
+          "total_pixels": 5760000,
+          "masked_pixels": 76694,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.000246196985244751,
+            8979.75
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611012,
+          "processed_sha256": "8db156c97c75610778f03b1bc892649371ccdc22c3ac99cc462d24ab2ab49333",
+          "valid_fraction": 0.9741340277777778
+        },
+        "hv": {
+          "window_sha256": "4467bc6ef2ae931a9b719d7a2bc49f81efd5e079d21884da8865e16faec7a436",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683306,
+          "total_pixels": 5760000,
+          "masked_pixels": 76694,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            9.398325346410275e-06,
+            841.109375
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5611012,
+          "processed_sha256": "b0b74b389f5c595664f642afeaf93cef3cc0db18fe4cdb6d6b038ccf58eb4366",
+          "valid_fraction": 0.9741340277777778
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20261006T233918",
+      "timestamp": "2026-10-06T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_8.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_8.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_8.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_8.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_8.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_8.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_8.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_8.tif",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_8.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "e4ae6ea42ddb951c62e82fbf2916371eeb8cdeb90ac7eed0c27db0a8455b187c",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683251,
+          "total_pixels": 5760000,
+          "masked_pixels": 76749,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            7.996801286935806e-05,
+            22990.25
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5610866,
+          "processed_sha256": "738f172224e96fe8091311a3447cbc010fb399bd66b284961fecbf1e71459fa8",
+          "valid_fraction": 0.9741086805555556
+        },
+        "hv": {
+          "window_sha256": "75738d6c16c2d03dafbcbc0bb18f00cfdc3954a28620f6beeeb8c08410cc7e6b",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683251,
+          "total_pixels": 5760000,
+          "masked_pixels": 76749,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            6.724707782268524e-05,
+            678.28125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5610866,
+          "processed_sha256": "abf4396d831b261c9283157bc05dbbf715e793cbf0a617bd13ffbb0d57058e17",
+          "valid_fraction": 0.9741086805555556
+        }
+      },
+      "preserved_original_observation": false
+    },
+    {
+      "observation_id": "acq_20261018T233918",
+      "timestamp": "2026-10-18T23:39:18Z",
+      "source_granule_id": "NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001",
+      "source_file": "database/extra datasets/NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001.h5",
+      "product_version": "1.0.11",
+      "processing_release": "P05023",
+      "track": 98,
+      "frame": 16,
+      "doi": "10.5067/NIL2GCOV-P1",
+      "layers": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_9.png",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_9.png",
+        "cpr": "/cases/nepal_impact_corridor/expanded-v1/cpr_9.png",
+        "hh_reference": "/cases/nepal_impact_corridor/expanded-v1/hh_reference_9.png",
+        "hv_reference": "/cases/nepal_impact_corridor/expanded-v1/hv_reference_9.png",
+        "cpr_reference": "/cases/nepal_impact_corridor/expanded-v1/cpr_reference_9.png",
+        "hh_successive": "/cases/nepal_impact_corridor/expanded-v1/hh_successive_9.png"
+      },
+      "rasters": {
+        "hh": "/cases/nepal_impact_corridor/expanded-v1/hh_9.tif",
+        "hv": "/cases/nepal_impact_corridor/expanded-v1/hv_9.tif"
+      },
+      "quality": {
+        "hh": {
+          "window_sha256": "1006b271f0e5245fec47eaa4b1465b9427e27475c2f3e3eddcdba0176d7a384a",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683285,
+          "total_pixels": 5760000,
+          "masked_pixels": 76715,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            0.0002052169293165207,
+            20285.75
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5610966,
+          "processed_sha256": "e0429690e79ccee6897eb883528e62110720de34053eda9bb5daf676065f7400",
+          "valid_fraction": 0.9741260416666667
+        },
+        "hv": {
+          "window_sha256": "af6bd608d06319fc401ba18fa97263e4b20e58494e191b765670f0fe4e7384ef",
+          "window_sha256_content": "row-major native power, mask and numberOfLooks bytes",
+          "valid_pixels": 5683285,
+          "total_pixels": 5760000,
+          "masked_pixels": 76715,
+          "mask_values": [
+            0,
+            1
+          ],
+          "positive_power_range": [
+            2.675945870578289e-05,
+            1381.953125
+          ],
+          "alignment": "exact native grid extraction; no reprojection",
+          "analysis_valid_pixels": 5610966,
+          "processed_sha256": "807320d1612a714e6a4ef4339446f89cd903256babd514d3c25406e4d48a83be",
+          "valid_fraction": 0.9741260416666667
+        }
+      },
+      "preserved_original_observation": false
+    }
+  ],
+  "profiles": [
+    {
+      "label": "Preliminary mapped impact footprint inside this crop",
+      "footprint_pixels": 64191,
+      "common_valid_pixels": 62820,
+      "common_valid_area_km2": 6.282,
+      "reference_timestamp": "2026-08-19T23:39:18Z",
+      "support": "Same HH/HV-valid native pixel centers across every expanded visit; may be smaller than the preserved original three-date support.",
+      "observations": [
+        {
+          "timestamp": "2026-06-20T23:39:21Z",
+          "observation_id": "acq_20260620T233921",
+          "hh_mean_db": -5.797382382993009,
+          "hh_reference_delta_db": -0.29859828782037834,
+          "hh_successive_delta_db": null,
+          "hv_mean_db": -11.80717148275241,
+          "hv_reference_delta_db": -0.3518473098663062,
+          "hv_successive_delta_db": null,
+          "cpr_mean_db": -6.009789099759402,
+          "cpr_reference_delta_db": -0.05324902204592785
+        },
+        {
+          "timestamp": "2026-07-02T23:39:20Z",
+          "observation_id": "acq_20260702T233920",
+          "hh_mean_db": -5.876812602977867,
+          "hh_reference_delta_db": -0.37802850780523656,
+          "hh_successive_delta_db": -0.07943021998485822,
+          "hv_mean_db": -11.63879079283771,
+          "hv_reference_delta_db": -0.18346661995160574,
+          "hv_successive_delta_db": 0.16838068991470045,
+          "cpr_mean_db": -5.7619781898598434,
+          "cpr_reference_delta_db": 0.19456188785363082
+        },
+        {
+          "timestamp": "2026-07-14T23:39:20Z",
+          "observation_id": "acq_20260714T233920",
+          "hh_mean_db": -5.661825052380036,
+          "hh_reference_delta_db": -0.1630409572074054,
+          "hh_successive_delta_db": 0.21498755059783115,
+          "hv_mean_db": -11.532085528225759,
+          "hv_reference_delta_db": -0.076761355339654,
+          "hv_successive_delta_db": 0.10670526461195173,
+          "cpr_mean_db": -5.870260475845723,
+          "cpr_reference_delta_db": 0.08627960186775141
+        },
+        {
+          "timestamp": "2026-07-26T23:39:19Z",
+          "observation_id": "acq_20260726T233919",
+          "hh_mean_db": -5.697513534169815,
+          "hh_reference_delta_db": -0.19872943899718454,
+          "hh_successive_delta_db": -0.035688481789779125,
+          "hv_mean_db": -11.650790758704574,
+          "hv_reference_delta_db": -0.19546658581846899,
+          "hv_successive_delta_db": -0.11870523047881498,
+          "cpr_mean_db": -5.953277224534759,
+          "cpr_reference_delta_db": 0.0032628531787155524
+        },
+        {
+          "timestamp": "2026-08-19T23:39:18Z",
+          "observation_id": "acq_20260819T233918",
+          "hh_mean_db": -5.49878409517263,
+          "hh_reference_delta_db": 0.0,
+          "hh_successive_delta_db": 0.19872943899718454,
+          "hv_mean_db": -11.455324172886105,
+          "hv_reference_delta_db": 0.0,
+          "hv_successive_delta_db": 0.19546658581846899,
+          "cpr_mean_db": -5.956540077713474,
+          "cpr_reference_delta_db": 0.0
+        },
+        {
+          "timestamp": "2026-08-31T23:39:18Z",
+          "observation_id": "acq_20260831T233918",
+          "hh_mean_db": -5.701810307488465,
+          "hh_reference_delta_db": -0.20302621231583462,
+          "hh_successive_delta_db": -0.20302621231583462,
+          "hv_mean_db": -12.188065848227952,
+          "hv_reference_delta_db": -0.7327416753418472,
+          "hv_successive_delta_db": -0.7327416753418472,
+          "cpr_mean_db": -6.486255540739487,
+          "cpr_reference_delta_db": -0.5297154630260126
+        },
+        {
+          "timestamp": "2026-09-12T23:39:18Z",
+          "observation_id": "acq_20260912T233918",
+          "hh_mean_db": -5.520568596823815,
+          "hh_reference_delta_db": -0.02178450165118484,
+          "hh_successive_delta_db": 0.18124171066464978,
+          "hv_mean_db": -12.116935811591748,
+          "hv_reference_delta_db": -0.6616116387056437,
+          "hv_successive_delta_db": 0.07113003663620354,
+          "cpr_mean_db": -6.596367214767933,
+          "cpr_reference_delta_db": -0.6398271370544588
+        },
+        {
+          "timestamp": "2026-09-24T23:39:18Z",
+          "observation_id": "acq_20260924T233918",
+          "hh_mean_db": -5.451680250126857,
+          "hh_reference_delta_db": 0.047103845045773696,
+          "hh_successive_delta_db": 0.06888834669695854,
+          "hv_mean_db": -11.953628791520174,
+          "hv_reference_delta_db": -0.4983046186340694,
+          "hv_successive_delta_db": 0.16330702007157427,
+          "cpr_mean_db": -6.501948541393317,
+          "cpr_reference_delta_db": -0.5454084636798431
+        },
+        {
+          "timestamp": "2026-10-06T23:39:18Z",
+          "observation_id": "acq_20261006T233918",
+          "hh_mean_db": -6.222834595006683,
+          "hh_reference_delta_db": -0.7240504998340525,
+          "hh_successive_delta_db": -0.7711543448798261,
+          "hv_mean_db": -12.923493105045852,
+          "hv_reference_delta_db": -1.468168932159747,
+          "hv_successive_delta_db": -0.9698643135256777,
+          "cpr_mean_db": -6.700658510039169,
+          "cpr_reference_delta_db": -0.7441184323256946
+        },
+        {
+          "timestamp": "2026-10-18T23:39:18Z",
+          "observation_id": "acq_20261018T233918",
+          "hh_mean_db": -6.348853672773899,
+          "hh_reference_delta_db": -0.8500695776012686,
+          "hh_successive_delta_db": -0.1260190777672161,
+          "hv_mean_db": -13.108661289854279,
+          "hv_reference_delta_db": -1.6533371169681743,
+          "hv_successive_delta_db": -0.18516818480842723,
+          "cpr_mean_db": -6.75980761708038,
+          "cpr_reference_delta_db": -0.8032675393669058
+        }
+      ]
+    },
+    {
+      "label": "Whole study crop \u00b7 common-valid mean",
+      "footprint_pixels": 5760000,
+      "common_valid_pixels": 5606336,
+      "common_valid_area_km2": 560.6336,
+      "reference_timestamp": "2026-08-19T23:39:18Z",
+      "support": "Same HH/HV-valid native pixel centers across every expanded visit; may be smaller than the preserved original three-date support.",
+      "observations": [
+        {
+          "timestamp": "2026-06-20T23:39:21Z",
+          "observation_id": "acq_20260620T233921",
+          "hh_mean_db": -5.547257211005964,
+          "hh_reference_delta_db": -0.3058195467582365,
+          "hh_successive_delta_db": null,
+          "hv_mean_db": -11.53528220797157,
+          "hv_reference_delta_db": -0.41745163517999373,
+          "hv_successive_delta_db": null,
+          "cpr_mean_db": -5.988024996965605,
+          "cpr_reference_delta_db": -0.1116320884217572
+        },
+        {
+          "timestamp": "2026-07-02T23:39:20Z",
+          "observation_id": "acq_20260702T233920",
+          "hh_mean_db": -5.639612837834099,
+          "hh_reference_delta_db": -0.3981751735863712,
+          "hh_successive_delta_db": -0.0923556268281347,
+          "hv_mean_db": -11.367792030229298,
+          "hv_reference_delta_db": -0.24996145743772225,
+          "hv_successive_delta_db": 0.16749017774227148,
+          "cpr_mean_db": -5.728179192395199,
+          "cpr_reference_delta_db": 0.14821371614864898
+        },
+        {
+          "timestamp": "2026-07-14T23:39:20Z",
+          "observation_id": "acq_20260714T233920",
+          "hh_mean_db": -5.393975804261108,
+          "hh_reference_delta_db": -0.15253814001338029,
+          "hh_successive_delta_db": 0.24563703357299094,
+          "hv_mean_db": -11.248532805833188,
+          "hv_reference_delta_db": -0.1307022330416121,
+          "hv_successive_delta_db": 0.11925922439611014,
+          "cpr_mean_db": -5.85455700157208,
+          "cpr_reference_delta_db": 0.021835906971768182
+        },
+        {
+          "timestamp": "2026-07-26T23:39:19Z",
+          "observation_id": "acq_20260726T233919",
+          "hh_mean_db": -5.4913692008446064,
+          "hh_reference_delta_db": -0.24993153659687906,
+          "hh_successive_delta_db": -0.09739339658349877,
+          "hv_mean_db": -11.355074741694123,
+          "hv_reference_delta_db": -0.23724416890254751,
+          "hv_successive_delta_db": -0.10654193586093541,
+          "cpr_mean_db": -5.863705540849517,
+          "cpr_reference_delta_db": 0.012687367694331542
+        },
+        {
+          "timestamp": "2026-08-19T23:39:18Z",
+          "observation_id": "acq_20260819T233918",
+          "hh_mean_db": -5.241437664247727,
+          "hh_reference_delta_db": 0.0,
+          "hh_successive_delta_db": 0.24993153659687906,
+          "hv_mean_db": -11.117830572791576,
+          "hv_reference_delta_db": 0.0,
+          "hv_successive_delta_db": 0.23724416890254751,
+          "cpr_mean_db": -5.876392908543848,
+          "cpr_reference_delta_db": 0.0
+        },
+        {
+          "timestamp": "2026-08-31T23:39:18Z",
+          "observation_id": "acq_20260831T233918",
+          "hh_mean_db": -5.267959090658738,
+          "hh_reference_delta_db": -0.026521426411010296,
+          "hh_successive_delta_db": -0.026521426411010296,
+          "hv_mean_db": -11.149089144894505,
+          "hv_reference_delta_db": -0.031258572102929705,
+          "hv_successive_delta_db": -0.031258572102929705,
+          "cpr_mean_db": -5.881130054235768,
+          "cpr_reference_delta_db": -0.004737145691919409
+        },
+        {
+          "timestamp": "2026-09-12T23:39:18Z",
+          "observation_id": "acq_20260912T233918",
+          "hh_mean_db": -5.084699760353227,
+          "hh_reference_delta_db": 0.15673790389450026,
+          "hh_successive_delta_db": 0.18325933030551056,
+          "hv_mean_db": -11.02535506089742,
+          "hv_reference_delta_db": 0.09247551189415582,
+          "hv_successive_delta_db": 0.12373408399708552,
+          "cpr_mean_db": -5.940655300544193,
+          "cpr_reference_delta_db": -0.06426239200034445
+        },
+        {
+          "timestamp": "2026-09-24T23:39:18Z",
+          "observation_id": "acq_20260924T233918",
+          "hh_mean_db": -5.153154039832985,
+          "hh_reference_delta_db": 0.08828362441474269,
+          "hh_successive_delta_db": -0.06845427947975757,
+          "hv_mean_db": -11.022162243919155,
+          "hv_reference_delta_db": 0.09566832887242072,
+          "hv_successive_delta_db": 0.0031928169782649007,
+          "cpr_mean_db": -5.86900820408617,
+          "cpr_reference_delta_db": 0.007384704457678026
+        },
+        {
+          "timestamp": "2026-10-06T23:39:18Z",
+          "observation_id": "acq_20261006T233918",
+          "hh_mean_db": -5.823675064241354,
+          "hh_reference_delta_db": -0.5822373999936268,
+          "hh_successive_delta_db": -0.6705210244083695,
+          "hv_mean_db": -11.692609463524821,
+          "hv_reference_delta_db": -0.5747788907332456,
+          "hv_successive_delta_db": -0.6704472196056663,
+          "cpr_mean_db": -5.868934399283467,
+          "cpr_reference_delta_db": 0.007458509260381163
+        },
+        {
+          "timestamp": "2026-10-18T23:39:18Z",
+          "observation_id": "acq_20261018T233918",
+          "hh_mean_db": -5.799988654949732,
+          "hh_reference_delta_db": -0.5585509907020043,
+          "hh_successive_delta_db": 0.023686409291622468,
+          "hv_mean_db": -11.736727311920568,
+          "hv_reference_delta_db": -0.6188967391289921,
+          "hv_successive_delta_db": -0.044117848395746506,
+          "cpr_mean_db": -5.936738656970836,
+          "cpr_reference_delta_db": -0.06034574842698781
+        }
+      ]
+    }
+  ],
+  "interferometry": [
+    {
+      "identification": {
+        "granuleId": "NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001",
+        "productType": "GUNW",
+        "productLevel": "L2",
+        "productVersion": "1.0.11",
+        "compositeReleaseId": "P05023",
+        "trackNumber": 98,
+        "frameNumber": 16,
+        "orbitPassDirection": "Ascending",
+        "lookDirection": "Left",
+        "referenceZeroDopplerStartTime": "2026-08-19T23:39:18.000000000",
+        "secondaryZeroDopplerStartTime": "2026-08-31T23:39:18.000000000",
+        "referenceHasInputDataException": 0,
+        "secondaryHasInputDataException": 0
+      },
+      "timestamps": [
+        "2026-08-19T23:39:18Z",
+        "2026-08-31T23:39:18Z"
+      ],
+      "source_slc_granules": [
+        [
+          "NISAR_L1_PR_RSLC_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001.h5"
+        ],
+        [
+          "NISAR_L1_PR_RSLC_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5"
+        ]
+      ],
+      "source_file": "database/extra datasets/NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001.h5",
+      "size_bytes": 2344615936,
+      "dem_source": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+      "water_mask_source": "Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.",
+      "phase_corrections": "Source ionosphere and external correction metadata retained. Not applied by this extension. No LOS displacement published.",
+      "source_policy": "NASA\u2013ISRO, JPL / ASF DAAC; declared DEM ESA/Copernicus, water mask JRC/Google, ESA, OpenStreetMap and NASA MEaSUREs. No Chinese provider identified in these declared inputs.",
+      "pair_id": "pair_0",
+      "layers": {
+        "coherence20": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_coherence20.png",
+        "coherence80": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_coherence80.png"
+      },
+      "rasters": {
+        "coherence20": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_20_coherence.tif",
+        "mask20": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_20_mask.tif",
+        "coherence_valid20": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_20_coherence_valid.tif",
+        "coherence80": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_80_coherence.tif",
+        "mask80": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_80_mask.tif",
+        "connected_components80": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_80_connected_components.tif",
+        "phase_radians80": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_80_phase_radians.tif",
+        "ionosphere_radians80": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_80_ionosphere_radians.tif",
+        "ionosphere_uncertainty_radians80": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_80_ionosphere_uncertainty_radians.tif",
+        "coherence_valid80": "/cases/nepal_impact_corridor/expanded-v1/gunw_0_80_coherence_valid.tif"
+      },
+      "grids": {
+        "20": {
+          "shape": [
+            1201,
+            1201
+          ],
+          "affine": [
+            20.0,
+            0.0,
+            323020.0,
+            0.0,
+            -20.0,
+            3126360.0
+          ],
+          "crs": "EPSG:32645",
+          "native_spacing_m": 20,
+          "source_window": [
+            11046,
+            9815,
+            1201,
+            1201
+          ],
+          "bounds": [
+            323020.0,
+            3102340.0,
+            347040.0,
+            3126360.0
+          ],
+          "window_sha256": "78c6f3c68e9eb4e182b9d50e4156af7e10e2fa071d50bb5f9e7ad85d37c66148",
+          "hash_content_order": [
+            "coherence",
+            "mask"
+          ]
+        },
+        "80": {
+          "shape": [
+            301,
+            301
+          ],
+          "affine": [
+            80.0,
+            0.0,
+            322960.0,
+            0.0,
+            -80.0,
+            3126400.0
+          ],
+          "crs": "EPSG:32645",
+          "native_spacing_m": 80,
+          "source_window": [
+            2761,
+            2453,
+            301,
+            301
+          ],
+          "bounds": [
+            322960.0,
+            3102320.0,
+            347040.0,
+            3126400.0
+          ],
+          "window_sha256": "afcb489c4e42c9794fbdebb7ddf91c6fee5a8164cdc5ab8caa46ab3094e0e379",
+          "hash_content_order": [
+            "coherence",
+            "connected_components",
+            "ionosphere_radians",
+            "ionosphere_uncertainty_radians",
+            "mask",
+            "phase_radians"
+          ]
+        }
+      },
+      "statistics": {
+        "20": {
+          "valid_pixels": 1442401,
+          "total_pixels": 1442401,
+          "valid_fraction": 1.0,
+          "mean_coherence": 0.6054785620402914,
+          "median_coherence": 0.6241123080253601,
+          "below_03_pixels": 145734,
+          "below_03_note": "Illustrative summary only; not a change, damage or phase-reliability classification."
+        },
+        "80": {
+          "valid_pixels": 90601,
+          "total_pixels": 90601,
+          "valid_fraction": 1.0,
+          "mean_coherence": 0.6040311962353522,
+          "median_coherence": 0.6192539930343628,
+          "below_03_pixels": 7555,
+          "below_03_note": "Illustrative summary only; not a change, damage or phase-reliability classification."
+        }
+      },
+      "phase_assessable_pixels": 88539,
+      "connected_component_labels": [
+        1
+      ],
+      "los_displacement_cm": null
+    },
+    {
+      "identification": {
+        "granuleId": "NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001",
+        "productType": "GUNW",
+        "productLevel": "L2",
+        "productVersion": "1.0.11",
+        "compositeReleaseId": "P05023",
+        "trackNumber": 98,
+        "frameNumber": 16,
+        "orbitPassDirection": "Ascending",
+        "lookDirection": "Left",
+        "referenceZeroDopplerStartTime": "2026-08-31T23:39:18.000000000",
+        "secondaryZeroDopplerStartTime": "2026-09-12T23:39:18.000000000",
+        "referenceHasInputDataException": 0,
+        "secondaryHasInputDataException": 0
+      },
+      "timestamps": [
+        "2026-08-31T23:39:18Z",
+        "2026-09-12T23:39:18Z"
+      ],
+      "source_slc_granules": [
+        [
+          "NISAR_L1_PR_RSLC_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5"
+        ],
+        [
+          "NISAR_L1_PR_RSLC_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001.h5"
+        ]
+      ],
+      "source_file": "database/extra datasets/NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001.h5",
+      "size_bytes": 2332033024,
+      "dem_source": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+      "water_mask_source": "Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.",
+      "phase_corrections": "Source ionosphere and external correction metadata retained. Not applied by this extension. No LOS displacement published.",
+      "source_policy": "NASA\u2013ISRO, JPL / ASF DAAC; declared DEM ESA/Copernicus, water mask JRC/Google, ESA, OpenStreetMap and NASA MEaSUREs. No Chinese provider identified in these declared inputs.",
+      "pair_id": "pair_1",
+      "layers": {
+        "coherence20": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_coherence20.png",
+        "coherence80": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_coherence80.png"
+      },
+      "rasters": {
+        "coherence20": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_20_coherence.tif",
+        "mask20": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_20_mask.tif",
+        "coherence_valid20": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_20_coherence_valid.tif",
+        "coherence80": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_80_coherence.tif",
+        "mask80": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_80_mask.tif",
+        "connected_components80": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_80_connected_components.tif",
+        "phase_radians80": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_80_phase_radians.tif",
+        "ionosphere_radians80": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_80_ionosphere_radians.tif",
+        "ionosphere_uncertainty_radians80": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_80_ionosphere_uncertainty_radians.tif",
+        "coherence_valid80": "/cases/nepal_impact_corridor/expanded-v1/gunw_1_80_coherence_valid.tif"
+      },
+      "grids": {
+        "20": {
+          "shape": [
+            1201,
+            1201
+          ],
+          "affine": [
+            20.0,
+            0.0,
+            323020.0,
+            0.0,
+            -20.0,
+            3126360.0
+          ],
+          "crs": "EPSG:32645",
+          "native_spacing_m": 20,
+          "source_window": [
+            11046,
+            9815,
+            1201,
+            1201
+          ],
+          "bounds": [
+            323020.0,
+            3102340.0,
+            347040.0,
+            3126360.0
+          ],
+          "window_sha256": "c8fff711a23d097b6fdf83129a5f991d4d5668c1cee85c4a8e880e308d50b7ae",
+          "hash_content_order": [
+            "coherence",
+            "mask"
+          ]
+        },
+        "80": {
+          "shape": [
+            301,
+            301
+          ],
+          "affine": [
+            80.0,
+            0.0,
+            322960.0,
+            0.0,
+            -80.0,
+            3126400.0
+          ],
+          "crs": "EPSG:32645",
+          "native_spacing_m": 80,
+          "source_window": [
+            2761,
+            2453,
+            301,
+            301
+          ],
+          "bounds": [
+            322960.0,
+            3102320.0,
+            347040.0,
+            3126400.0
+          ],
+          "window_sha256": "dec040dfc03534313349710b8239431964d4615f8b2705aa4ed059887f121b34",
+          "hash_content_order": [
+            "coherence",
+            "connected_components",
+            "ionosphere_radians",
+            "ionosphere_uncertainty_radians",
+            "mask",
+            "phase_radians"
+          ]
+        }
+      },
+      "statistics": {
+        "20": {
+          "valid_pixels": 1442401,
+          "total_pixels": 1442401,
+          "valid_fraction": 1.0,
+          "mean_coherence": 0.548091017209807,
+          "median_coherence": 0.5488300323486328,
+          "below_03_pixels": 222374,
+          "below_03_note": "Illustrative summary only; not a change, damage or phase-reliability classification."
+        },
+        "80": {
+          "valid_pixels": 90601,
+          "total_pixels": 90601,
+          "valid_fraction": 1.0,
+          "mean_coherence": 0.5345600772144188,
+          "median_coherence": 0.5352743268013,
+          "below_03_pixels": 14419,
+          "below_03_note": "Illustrative summary only; not a change, damage or phase-reliability classification."
+        }
+      },
+      "phase_assessable_pixels": 85799,
+      "connected_component_labels": [
+        1
+      ],
+      "los_displacement_cm": null
+    }
+  ],
+  "display_limits": {
+    "hh": [
+      -30,
+      0
+    ],
+    "hv": [
+      -40,
+      -5
+    ],
+    "cpr": [
+      -20,
+      0
+    ],
+    "hh_reference": [
+      -8,
+      8
+    ],
+    "hv_reference": [
+      -8,
+      8
+    ],
+    "cpr_reference": [
+      -8,
+      8
+    ],
+    "hh_successive": [
+      -8,
+      8
+    ],
+    "coherence20": [
+      0,
+      1
+    ],
+    "coherence80": [
+      0,
+      1
+    ]
+  },
+  "palette_css": {
+    "cividis": "linear-gradient(90deg, rgb(0,34,78) 0.0%, rgb(0,46,106) 6.25%, rgb(26,56,111) 12.5%, rgb(50,67,109) 18.75%, rgb(67,78,108) 25.0%, rgb(82,89,109) 31.25%, rgb(97,101,111) 37.5%, rgb(111,112,115) 43.75%, rgb(124,123,120) 50.0%, rgb(139,135,120) 56.25%, rgb(155,147,118) 62.5%, rgb(171,160,114) 68.75%, rgb(187,173,108) 75.0%, rgb(204,186,100) 81.25%, rgb(221,201,88) 87.5%, rgb(239,215,72) 93.75%, rgb(254,232,56) 100.0%)",
+    "vik": "linear-gradient(90deg, rgb(0,18,97) 0.0%, rgb(2,43,113) 6.25%, rgb(3,68,129) 12.5%, rgb(12,94,146) 18.75%, rgb(47,124,166) 25.0%, rgb(96,157,188) 31.25%, rgb(146,189,210) 37.5%, rgb(197,219,229) 43.75%, rgb(236,229,225) 50.0%, rgb(233,203,185) 56.25%, rgb(220,171,143) 62.5%, rgb(207,142,104) 68.75%, rgb(195,114,67) 75.0%, rgb(179,83,31) 81.25%, rgb(147,46,6) 87.5%, rgb(116,21,6) 93.75%, rgb(89,0,8) 100.0%)"
+  },
+  "original_manifest_url": "/cases/nepal_impact_corridor/investigation/manifest.json",
+  "original_manifest_sha256": "a69d5c7bb951faae334d87729d8863380a96e744943fdab0da6d42a4013c2256",
+  "instrument_gap": {
+    "start": "2026-07-27T22:03:25Z",
+    "end": "2026-08-10T00:55:27Z",
+    "unobservable_nominal_date": "2026-08-07",
+    "source": "https://nisar-docs.asf.alaska.edu/availability-overview/"
+  },
+  "limitations": [
+    "Actual visits only. August-7 outage remains unfilled; no interpolation or continuous duration is inferred.",
+    "Reference is August 19, not the first expanded visit and not a verified undisturbed surface.",
+    "All-visit support can differ from historical three-date support. Original findings and products remain accessible.",
+    "Coherence is pairwise HH phase consistency, not displacement, damage, water truth or a unique physical cause.",
+    "20 m and 80 m coherence have different averaging/support. Never compare them as the same estimator or upscale them as 10 m measurements.",
+    "Unwrapped phase and ionosphere layers are retained as native downloads, without displacement conversion. Corrections/reference-point/unwrap validation remain pending.",
+    "Existing optical matches, terrain controls and Change DNA remain scoped to their original visits; they are not silently assigned to new dates.",
+    "No new Bangladesh, rainfall, thermal or independent validation input was supplied in this batch."
+  ],
+  "provenance": {
+    "code_sha256": "2d92629f894478a09f9ec28594735bc36edeafe03e4398f77cbbefe921596e02",
+    "input_inventory": "reports/extra_2026_11_03/input_inventory.json",
+    "source_organizations": [
+      "NASA / ASF DAAC / JPL (USA)",
+      "ISRO (India)"
+    ],
+    "raw_file_hash_scope": "No full-file digest asserted. Native extraction hashes and exact source identities/sizes retained.",
+    "gcov_compatibility": "L2 PR P05023, v1.0.11, ascending track98/frame16, left-looking, frequencyA HH/HV 40MHz; same original 10m grid."
+  },
+  "assets_sha256": {
+    "hv_3.tif": "badd243310c0b1ff278f578e0b9f5d9c58a7fc89e392f6857873d7cd8f1bce68",
+    "hv_reference_9.png": "9d659c43bdfa63cc234634e6e618790a8eddc1c3e751799aa10769acd3ac43e0",
+    "hv_5.png": "178f1dd6992dd3b032ab808745427856627a814ac0c420305d5fb9cd16174fb3",
+    "hv_2.png": "165070c8082d1cb31d32b478f1357ad57de4e1b24fe6de939893af141a3548cc",
+    "hh_reference_5.png": "7fe01d25784dbebde5bada2f8e79968e9f7af89803d4615d3c23ece81aa6c9de",
+    "gunw_0_80_coherence_valid.tif": "1985e2d9a099307939b55dedb8610474ed264e54e032ba833342e6776b42d31c",
+    "hh_2.tif": "2cac87a6d4bf00a7009d7e89a136f359ecf54f81582c677bedf894dd2cb6db50",
+    "hh_reference_2.png": "b97c38f31d8848715d2b32cfde703c72ba4e3ca55750f16f10dcb708d926b0dc",
+    "hh_reference_1.png": "32641d6ae9e2a24e72b80a22f5fb2b9d12b8141c4bf29002d4d2d94c2222f648",
+    "hh_4.png": "b7e5e4891fe20064fd96dabfdb313f35bd56e7d077a865414cb4285e0037d42f",
+    "gunw_0_20_coherence_valid.tif": "6992b0851cea3f4d6c2dee14f2747a1b638c6c467b87095407360dbe50480872",
+    "hv_0.tif": "d59e02e0be7996a13936d2dd6ee9b755b74ec37dff30d245aebe8fddc3b4825f",
+    "gunw_1_80_mask.tif": "6399d8362b8cdf0f36b2cc431732ff27b6defcfa48bf5c0c38015f79ce88df90",
+    "gunw_0_20_mask.tif": "1f05a6d6059b79bc82dcc224725951bfa39085b6cfa11d004e59244fff89c8bd",
+    "hv_6.png": "86a7d0c6168ccab163bc82425255a7daca94bbcfd73b083b2c4217161bf37011",
+    "hh_reference_0.png": "20f892097e118755dc7ee1d4ba8d8e82488a264ac2eceeaaaaf9048cf295b0f5",
+    "cpr_2.png": "6a7aa228f1f3b48cfcfb3b26629fbf168f5658137f0b0c5480bead1475c2492c",
+    "hv_9.png": "8dbd70895d9935599029289dd0fdeefa1d56ca57ab7d6094c5c6d10a73d19173",
+    "cpr_reference_4.png": "664666bb1d86f826390508af425f9027b0684bd5e3930d70a30fe6dadb9b9102",
+    "cpr_3.png": "3c635eba8d17e80f1e2d65dcbd64d42c05591aba7604ad50b76c61ff3ab4ccda",
+    "cpr_0.png": "194ca204d5f653e6f6e9f1ec85c83b0c7f15ee0d996e7ce70fbb508b0a4bdcea",
+    "cpr_reference_6.png": "80c8b7669e161fcfd35454c8d5acd40319aaaec485bacd0714354806d9b0c565",
+    "gunw_0_20_coherence.tif": "2e417f9c2836d71095f51784ecd0f5f9eeca1d300c715f656765023f89895cd0",
+    "gunw_1_coherence80.png": "5730685054bdcd9df50452a15dbb685c9cf42a2c07b2bbbf3b3b11807e3bf5ee",
+    "gunw_0_80_phase_radians.tif": "67beab762a6f69cd13f3d5ecede8c89eb04d5eec3b8fcbb1d3aaa164eaaa2538",
+    "hv_reference_1.png": "eb2171ab0616ae75d229667e25c547a1cc0f0e4cffe15835ee8bdf2160f2b7f5",
+    "gunw_1_80_coherence_valid.tif": "1985e2d9a099307939b55dedb8610474ed264e54e032ba833342e6776b42d31c",
+    "hh_6.png": "928a5b608141306f5169ae335c3b3dbddb0dca23a1a1a49423312d45493ff716",
+    "gunw_1_80_ionosphere_radians.tif": "1cd5bcb3cb6c16ff3f9b8308a7489255be87e4a51256af8afeef09b5adc20bc9",
+    "hh_8.tif": "33afd9408f4887e6ee883af336ce74b9dce9e6d3bf729042e533d92579f14fa3",
+    "hv_4.png": "7a22725d0bcd704517ddc0f715bc0ce353583fcc0b150c16e9c8d78ca2c0fc34",
+    "gunw_0_80_mask.tif": "507ee380230eb45f5e5e3cc6888dc443f4763baebb4f1a615723a44337e96653",
+    "hv_reference_7.png": "da40c2040f12841ca81ed1bd4db5eb223be9dc14a469a8fcaf1dda850cabfa7d",
+    "gunw_1_80_phase_radians.tif": "a6f122d095b6adc4ef0c7f26cec71a7535b18111a2a8a725465e1508730ea5f0",
+    "hh_9.tif": "bafae1f3ac66bf0f13bc30825f4fa64e13e3a6196313eddc676e9ca4d030ee7e",
+    "hv_reference_8.png": "99e2065f18f85ce7c30f9d5610734f919d89890bea381e4134809e28ed509ebd",
+    "tracked_footprint.tif": "e491e9da5bcaf3718108f3f7d36e2c797a0e24be329f263b568443378167be70",
+    "gunw_1_80_ionosphere_uncertainty_radians.tif": "b9aed1e4c08b1fd0372968d424a51c4ad453345cab76234db045358e20b617dd",
+    "cpr_4.png": "b794e48ada3d6a00822229b55446fc113c5d7ce0fd8d5abe2304e9a375f55036",
+    "hv_reference_2.png": "b1ab4670e013d6cdda567befa5bfb6ee948e41a2d4848271f0743f70cb0b784e",
+    "cpr_reference_8.png": "ff9097ea456ace64d5dbe679279ee7f9902b4bd9429bb05c558fe871cd7cfdae",
+    "hv_3.png": "3d21c0a8f46cd47e772236faef31f24cae6135bc75735ac0477e0f280aa6b959",
+    "cpr_reference_1.png": "114f61560fd565fd2d4e0de007e59cf2e6f1be884f47c430d2f148c1bb046538",
+    "cpr_reference_5.png": "e00fbfe0dd82a9404f166092147f714daaf553cedf57ab235105d978d2b787af",
+    "gunw_1_80_coherence.tif": "e8cf0e8b8d8e122a6a2a804b4e047f231df0f7c5f8efef7571e7c86a07107f90",
+    "cpr_reference_3.png": "82521fc0c60547feafcc3ea09db6662ef049598e115269a9acd971769bb15319",
+    "hh_successive_2.png": "367d5e70ff6a5af7917820a80eddb65c264e2a0632331cfecc901d9ffc2e4397",
+    "hh_0.png": "ded6c1944966ee3480f1fb205290f75c402c3e8818613e384bdf738d85efc72d",
+    "hv_8.tif": "149eea83e6e95bdb7d434cb6d996129e0bc72a9c81245cbf46bc1c45eb76e28a",
+    "cpr_8.png": "fa5566735cfb456a8a5e21aaa0d9ffbbbe446e000a3f76a25f9139bbc32d679c",
+    "hh_successive_3.png": "811a2ab92b12dce49def027924a5d0c64ce9e74e6e28bb92f830922be6b2dd01",
+    "gunw_0_80_connected_components.tif": "21c201dd7375c6779efc4be8932c7ae75469b0416fdfcbbb27c024e95d30b3ab",
+    "hh_reference_8.png": "9569dd40629797d3d4a1b6e99884a0edb059e618c460e893018b9def5a47857b",
+    "hh_1.tif": "aa6c773f5a99c5bdad34bc0f0c4925f20fecae582b50a96a76abfb7218b9f3e2",
+    "hh_3.png": "64b478770616782cf72ce55af70443d3dbc7751c9f55686eab4d5dafef32c0fb",
+    "hh_successive_1.png": "a94ef1e4d429f349b0890094e3076b5e4c01af5849c7feeefd627d2939b2336a",
+    "hh_reference_4.png": "664666bb1d86f826390508af425f9027b0684bd5e3930d70a30fe6dadb9b9102",
+    "hh_0.tif": "35962efea9f5d1d151ac70f64d6f2644f7a34af41084caeecdef56632ff53070",
+    "hv_reference_5.png": "1942f24724ab8a826cbad920a6b53577e3769f930e62809ae20b5486a19a7b62",
+    "gunw_1_coherence20.png": "5d64f8c6973fb08294b887c7fb8922c26f5b62c3cb5a323a96e9f051978bd636",
+    "cpr_reference_0.png": "8bb904caff20b6873cddfd2670d4fd08ef92613c58b42cbf3daaba01336a0c73",
+    "hh_successive_4.png": "d1bf135a99b303647f2b2d8fe5d4b2ae7b069c9366ad8930e41c4d65e6e77d24",
+    "hh_reference_7.png": "35a7cac6f1e84e1a5f21826c5958b601cdd70bc6bdd916cbc2b6b2242c3dc3b6",
+    "gunw_0_80_ionosphere_radians.tif": "3af14b9adb71c80812010c459af3237e1643c40240ce8076d4bfce418dd5737c",
+    "hv_reference_4.png": "664666bb1d86f826390508af425f9027b0684bd5e3930d70a30fe6dadb9b9102",
+    "gunw_1_80_phase_assessable.tif": "608fa8b0116f70df4ac1e53d51c6776826dc2a6f0bdc984d8fac7667ccdc7fbc",
+    "gunw_1_20_coherence.tif": "bd4d01b823d41f33ae685f3b38743efe1baa407f1f04ed0f1f50f71d7995b199",
+    "hh_7.png": "348823d3edbacfaea96014b93bf2b7a0fbc077a86c29d4bc4a0f890c03f6e65d",
+    "hv_0.png": "85800a97b88ff8aee725830082c2dd79e6f88c385d8e1ccbcbf257021e78db2d",
+    "hv_7.tif": "be04fd6fcdc41794e8b53cc3fd130f7763a62e0fa94cf2650ad8584b0734d566",
+    "gunw_0_coherence20.png": "d8c6a50ae12a97adaf166e809918d75a27f579e633935374f40191d873faed7b",
+    "hh_reference_6.png": "e40768e42d980c0a6e6503f09b8a9b7963fe9f4070fc4b7c859ecfbe26c13e83",
+    "hh_reference_3.png": "dd8a7c69da4841ff9a892659fc4e5d7d04cfee28b28a96c7ace2dd2c597fa1fc",
+    "hv_1.tif": "cc147fff0ec19ed030f00099ce08a7f5529f70cf95945188bf6528598283c6e3",
+    "gunw_0_80_ionosphere_uncertainty_radians.tif": "593a4f03b2621f057c1d4a0c74b9b9616dc882e974215502a2fbf40b064870e9",
+    "cpr_reference_7.png": "85c90f1239faf105788e3a357ff8b62fc1aa0768804edad7106caedb08b598af",
+    "hv_9.tif": "3da7b4934107994bca17014ad181c777cf5dd098e4d046cdf8fc17e36151806a",
+    "hh_successive_9.png": "70fe5dde8ca96a3cd6f309220cf83c9f66617496c903fcee6f66561643f91fac",
+    "cpr_5.png": "bbc5a5237733451385353e70654f0a0b470da08da7e483858ab9d796499f6fc8",
+    "hh_5.png": "b0f3bddac33f28c0e91fb615e6aa9fa078b69a08844cd24a4ffa318f3febcc3e",
+    "gunw_1_80_connected_components.tif": "53371ef13c8bdbe2e7314bc2e134f6939f1e3f29386a4aba250a4417f9a2c868",
+    "hv_reference_0.png": "f9962c424090589acf1aaa082b1b59a4c470251ff9eea0d3f3d8ef9c42f6fd37",
+    "hh_successive_6.png": "8f28546f8a4e5506a2c2ebc5bf85690a37dcad330f884fce4db56925a0fa27d3",
+    "hv_2.tif": "2f6380de5aa8d1310b2e58addb76c57eb709506f78ed31c25e0f0f0852bd2394",
+    "cpr_1.png": "971e7237d1dbab4a945fe18fb450e44a25a800d09a7e6a3c204eea485042d3dc",
+    "gunw_1_20_coherence_valid.tif": "6992b0851cea3f4d6c2dee14f2747a1b638c6c467b87095407360dbe50480872",
+    "hh_2.png": "98935629c33d7594df30c93fd3707a446b3a586db2831c38306267b1c342c033",
+    "hh_9.png": "ada1f3caa166ab9f8d4b249e578261bd511da2958dd611337feff89750ca69af",
+    "hh_8.png": "de35ebe9f9d55ebb03f1587358c48e3063a1ec479bbd493471ad9e552189ace2",
+    "hh_1.png": "cbd5207d15fc0e677b60e9e214d7c023c2627c8c023cce9a186ade752b48417f",
+    "gunw_1_20_mask.tif": "1f05a6d6059b79bc82dcc224725951bfa39085b6cfa11d004e59244fff89c8bd",
+    "hv_7.png": "a6cc607607be8a6b8ac21723e09cb4679396aa34de0c9888499258ac4efd0bb0",
+    "hh_successive_5.png": "7fe01d25784dbebde5bada2f8e79968e9f7af89803d4615d3c23ece81aa6c9de",
+    "hh_3.tif": "653ea10dda371884b6193a4a80e7739476e77337a7113b315d546babea40e301",
+    "gunw_0_coherence80.png": "64b8b047a86ea39fe2da3d377fe3bf11d26742d804ae12db80972b8506e79a7f",
+    "hv_reference_6.png": "59f06db98cf1bf7c39b14f2996259a128f9a3ec35d957acc397396d1a049ec9a",
+    "gunw_0_80_phase_assessable.tif": "99aff80cd292dab43b9a972d6f2c30ee91bd58554c4250c6b8143af57bcba461",
+    "hv_8.png": "ba08542496704bc4e3d01d58a40161c7b65ca9d25ee4d76cfa72aca7388dd25b",
+    "gunw_0_80_coherence.tif": "370930b4ab00577ec2eb8880d4bb44775566cbdcb67d8bd1ce4119f572340263",
+    "hh_successive_8.png": "08a8840bf01b8c45c246c5323423b51e34a0bd824956314485d16245908c2ccd",
+    "cpr_9.png": "dff6e482df29e97d51d7679137f0e3e85a90f25c44d5bb1eb37738ff5f3690f9",
+    "hv_reference_3.png": "e7da01ee4266dccc937d2ba8490dc6575265683f12a9e1c009880adea14c919a",
+    "hv_1.png": "1e00967f20d40a42545135f08bd37ee73d2fed34772ffbad08e21f744fad8169",
+    "cpr_reference_9.png": "469b9098055b6b277bf18ab2d70639a6190fe315be2528dbea9d8a91476e1c21",
+    "cpr_7.png": "c5c3586030534529a0759ffa86073edbfdebc39b2f3c56563b8facf74238b349",
+    "hh_successive_7.png": "fc08c0cb04400b59bd75c994871a55db79123b5694baa3e9711648abd4b7276f",
+    "hh_reference_9.png": "411c4d207e624948849ed9e0e8b95ebf6486805b37132e92d387fac585db0d35",
+    "hh_7.tif": "f336ee1c865bdcf9acf18ce51462ae0d28499bb8d1fa41f7569eb21bd0d83396",
+    "cpr_6.png": "3fb70a7d929fdf9ea76f158e061d76cb88a758fcfd02d2bdfc8ec9e5089efe0f",
+    "cpr_reference_2.png": "44752ad5266f1cc2445aceab534288897192e7c7cf1e8d6f010b6123ab649948"
+  }
+}

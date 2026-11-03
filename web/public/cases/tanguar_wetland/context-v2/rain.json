@@ -1,0 +1,242 @@
+{
+  "dataset": "GPM_3IMERGHH V07 scientific half-hourly",
+  "observations": [
+    {
+      "observation_id": "visit_0",
+      "timestamp": "2026-06-18T23:21:35Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-06-17T23:21:35Z",
+          "end_exclusive_utc": "2026-06-18T23:21:35Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-06-15T23:21:35Z",
+          "end_exclusive_utc": "2026-06-18T23:21:35Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-06-11T23:21:35Z",
+          "end_exclusive_utc": "2026-06-18T23:21:35Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": null
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_1",
+      "timestamp": "2026-07-24T23:21:33Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-07-23T23:21:33Z",
+          "end_exclusive_utc": "2026-07-24T23:21:33Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-07-21T23:21:33Z",
+          "end_exclusive_utc": "2026-07-24T23:21:33Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-07-17T23:21:33Z",
+          "end_exclusive_utc": "2026-07-24T23:21:33Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-06-18T23:21:35Z",
+          "end_exclusive_utc": "2026-07-24T23:21:33Z",
+          "duration_seconds": 3110398.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_2",
+      "timestamp": "2026-08-17T23:21:32Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-08-16T23:21:32Z",
+          "end_exclusive_utc": "2026-08-17T23:21:32Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-08-14T23:21:32Z",
+          "end_exclusive_utc": "2026-08-17T23:21:32Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-08-10T23:21:32Z",
+          "end_exclusive_utc": "2026-08-17T23:21:32Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-07-24T23:21:33Z",
+          "end_exclusive_utc": "2026-08-17T23:21:32Z",
+          "duration_seconds": 2073599.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_3",
+      "timestamp": "2026-08-29T23:21:32Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-08-28T23:21:32Z",
+          "end_exclusive_utc": "2026-08-29T23:21:32Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-08-26T23:21:32Z",
+          "end_exclusive_utc": "2026-08-29T23:21:32Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-08-22T23:21:32Z",
+          "end_exclusive_utc": "2026-08-29T23:21:32Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-08-17T23:21:32Z",
+          "end_exclusive_utc": "2026-08-29T23:21:32Z",
+          "duration_seconds": 1036800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_4",
+      "timestamp": "2026-09-22T23:21:32Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-09-21T23:21:32Z",
+          "end_exclusive_utc": "2026-09-22T23:21:32Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-09-19T23:21:32Z",
+          "end_exclusive_utc": "2026-09-22T23:21:32Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-09-15T23:21:32Z",
+          "end_exclusive_utc": "2026-09-22T23:21:32Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-08-29T23:21:32Z",
+          "end_exclusive_utc": "2026-09-22T23:21:32Z",
+          "duration_seconds": 2073600.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    },
+    {
+      "observation_id": "visit_5",
+      "timestamp": "2026-10-16T23:21:32Z",
+      "windows": {
+        "24h": {
+          "start_inclusive_utc": "2026-10-15T23:21:32Z",
+          "end_exclusive_utc": "2026-10-16T23:21:32Z",
+          "duration_seconds": 86400.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "72h": {
+          "start_inclusive_utc": "2026-10-13T23:21:32Z",
+          "end_exclusive_utc": "2026-10-16T23:21:32Z",
+          "duration_seconds": 259200.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "168h": {
+          "start_inclusive_utc": "2026-10-09T23:21:32Z",
+          "end_exclusive_utc": "2026-10-16T23:21:32Z",
+          "duration_seconds": 604800.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        },
+        "since_previous": {
+          "start_inclusive_utc": "2026-09-22T23:21:32Z",
+          "end_exclusive_utc": "2026-10-16T23:21:32Z",
+          "duration_seconds": 2073600.0,
+          "definition": "Exact UTC half-open window; partial half-hour bins are duration-weighted assuming constant mean rate inside each bin."
+        }
+      },
+      "status": "unavailable",
+      "reason": "no matching scientific V07 granules in the completed bounded catalog query",
+      "native_resolution_degrees": 0.1,
+      "imerg_24h_mm": null,
+      "imerg_72h_mm": null,
+      "imerg_168h_mm": null,
+      "imerg_since_previous_mm": null
+    }
+  ],
+  "availability": {
+    "query": {
+      "short_name": "GPM_3IMERGHH",
+      "version": "07",
+      "temporal": "2026-06-11T23:21:35Z,2026-10-16T23:21:32Z",
+      "bounding_box": "90.9895389532272,25.026639418364375,91.17021585958979,25.173363702854573",
+      "page_size": 1
+    },
+    "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPM_3IMERGHH&version=07&temporal=2026-06-11T23%3A21%3A35Z%2C2026-10-16T23%3A21%3A32Z&bounding_box=90.9895389532272%2C25.026639418364375%2C91.17021585958979%2C25.173363702854573&page_size=1",
+    "retrieved_at": "2026-11-02T16:11:07.382361+00:00",
+    "provider": "NASA GES DISC / NASA Earthdata (USA)",
+    "upstream": "NASA GPM IMERG multisatellite product; individual sensors require provenance review before acceptance",
+    "license": "NASA Earth science open data; DOI 10.5067/GPM/IMERG/3B-HH/07",
+    "http_status": 200,
+    "hits": 0,
+    "response_sha256": "db79c0d0a9e4abcb9f97a91c7933a33863f3abc3ca153959d9fc07ba844a2ba2",
+    "response_path": "data/context/context-v2/sources/tanguar_wetland_imerg_query.response.json",
+    "status": "unavailable",
+    "reason": "no matching scientific V07 granules in the completed bounded catalog query"
+  }
+}

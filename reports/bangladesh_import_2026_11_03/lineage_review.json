@@ -1,0 +1,9 @@
+{
+  "source_audit": "reports/bangladesh_import_2026_11_03/source_audit.json",
+  "review_date": "2026-11-03",
+  "science_provider": "NASA Earthdata / ASF DAAC, USA",
+  "mission": "NASA\u2013ISRO, USA/India",
+  "declared_dem": "NASA/JPL NISAR DEM 1.2 based on ESA/EU Copernicus DEM; declared DLR and Airbus lineage",
+  "finding": "No Chinese government or agency provider identified in the retained local source declarations. No additional external datasets were acquired during this implementation.",
+  "scope_limit": "Review of supplied headers and declared providers; not a certificate for every upstream contributor to a global auxiliary dataset."
+}

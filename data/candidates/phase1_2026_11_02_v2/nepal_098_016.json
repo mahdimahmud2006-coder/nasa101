@@ -1,0 +1,434 @@
+{
+  "schema_version": 1,
+  "series_id": "nepal_098_016",
+  "criteria": {
+    "track": 98,
+    "frame": 16,
+    "direction": "A",
+    "mode": "4005_DHDH_A",
+    "release": "P05023"
+  },
+  "queries": [
+    {
+      "case_id": "nepal_surface",
+      "parameters": {
+        "dataset": "NISAR",
+        "processingLevel": "GCOV",
+        "relativeOrbit": 98,
+        "frame": 16,
+        "flightDirection": "ASCENDING",
+        "intersectsWith": "POLYGON((85.20639100 27.90678540,85.23076771 27.90710064,85.25514481 27.90741156,85.27952229 27.90771817,85.30390016 27.90802047,85.32827841 27.90831847,85.35265702 27.90861215,85.37703600 27.90890153,85.40141534 27.90918659,85.42579503 27.90946734,85.45017507 27.90974378,85.45048366 27.88808590,85.45079191 27.86642796,85.45109981 27.84476994,85.45140738 27.82311185,85.45171460 27.80145369,85.45202148 27.77979546,85.45232801 27.75813716,85.45263421 27.73647878,85.45294006 27.71482034,85.45324558 27.69316182,85.42891379 27.69288789,85.40458235 27.69260969,85.38025126 27.69232721,85.35592053 27.69204047,85.33159015 27.69174945,85.30726015 27.69145416,85.28293052 27.69115460,85.25860126 27.69085077,85.23427239 27.69054267,85.20994391 27.69023030,85.20959039 27.71188614,85.20923649 27.73354190,85.20888219 27.75519759,85.20852749 27.77685321,85.20817240 27.79850875,85.20781691 27.82016423,85.20746103 27.84181963,85.20710475 27.86347496,85.20674807 27.88513022,85.20639100 27.90678540))",
+        "start": "2026-07-26T00:00:00Z",
+        "end": "2026-10-31T00:00:00Z"
+      },
+      "retrieved_at": "2026-11-02T15:02:16.924294+00:00",
+      "client": "asf_search",
+      "client_version": "14.1.0",
+      "provider": "ASF DAAC, University of Alaska Fairbanks, USA; NASA Earthdata CMR",
+      "upstream": "NASA–ISRO NISAR (USA/India)",
+      "license": "NASA Earth science data are openly available; cite NISAR GCOV DOI 10.5067/NIL2GCOV-P1 and ASF DAAC.",
+      "license_url": "https://earthdata.nasa.gov/s3fs-public/2022-05/2022-03ADMGWorkshop_OSS.pdf",
+      "search_only": true,
+      "effective_intersectsWith": "POLYGON ((85.2063909999999964 27.9067854000000004, 85.2099439100000069 27.6902302999999996, 85.4532455800000008 27.6931618200000003, 85.4501750700000002 27.9097437799999994, 85.2063909999999964 27.9067854000000004))",
+      "aoi_note": "ASF client may simplify/reverse the polygon for search; overlap screening uses the original densified native crop polygon.",
+      "status": "complete",
+      "count": 15,
+      "response_path": "data/candidates/phase1_2026_11_02_v2/raw/nepal_surface.json",
+      "response_sha256": "093d7b730a8c3746219939a2f1fec252f3097faa99ddfc67b48462596fe43441"
+    },
+    {
+      "case_id": "nepal_impact_corridor",
+      "parameters": {
+        "dataset": "NISAR",
+        "processingLevel": "GCOV",
+        "relativeOrbit": 98,
+        "frame": 16,
+        "flightDirection": "ASCENDING",
+        "intersectsWith": "POLYGON((85.19607173 28.25121311,85.22052620 28.25153374,85.24498106 28.25184999,85.26943631 28.25216187,85.29389196 28.25246939,85.31834798 28.25277253,85.34280438 28.25307129,85.36726115 28.25336569,85.39171829 28.25365571,85.41617579 28.25394135,85.44063364 28.25422263,85.44094865 28.23256594,85.44126332 28.21090917,85.44157763 28.18925234,85.44189160 28.16759543,85.44220522 28.14593846,85.44251849 28.12428141,85.44283142 28.10262429,85.44314400 28.08096709,85.44345623 28.05930983,85.44376812 28.03765249,85.41935938 28.03737375,85.39495099 28.03709068,85.37054296 28.03680327,85.34613529 28.03651152,85.32172799 28.03621545,85.29732107 28.03591504,85.27291452 28.03561030,85.24850835 28.03530122,85.22410258 28.03498781,85.19969720 28.03467007,85.19933646 28.05632470,85.19897532 28.07797926,85.19861378 28.09963375,85.19825183 28.12128816,85.19788949 28.14294250,85.19752674 28.16459677,85.19716360 28.18625096,85.19680004 28.20790508,85.19643609 28.22955913,85.19607173 28.25121311))",
+        "start": "2026-07-26T00:00:00Z",
+        "end": "2026-10-31T00:00:00Z"
+      },
+      "retrieved_at": "2026-11-02T15:02:19.163873+00:00",
+      "client": "asf_search",
+      "client_version": "14.1.0",
+      "provider": "ASF DAAC, University of Alaska Fairbanks, USA; NASA Earthdata CMR",
+      "upstream": "NASA–ISRO NISAR (USA/India)",
+      "license": "NASA Earth science data are openly available; cite NISAR GCOV DOI 10.5067/NIL2GCOV-P1 and ASF DAAC.",
+      "license_url": "https://earthdata.nasa.gov/s3fs-public/2022-05/2022-03ADMGWorkshop_OSS.pdf",
+      "search_only": true,
+      "effective_intersectsWith": "POLYGON ((85.1960717299999999 28.2512131099999984, 85.1996972000000028 28.0346700700000007, 85.4437681200000014 28.0376524899999993, 85.4406336400000015 28.2542226300000010, 85.1960717299999999 28.2512131099999984))",
+      "aoi_note": "ASF client may simplify/reverse the polygon for search; overlap screening uses the original densified native crop polygon.",
+      "status": "complete",
+      "count": 15,
+      "response_path": "data/candidates/phase1_2026_11_02_v2/raw/nepal_impact_corridor.json",
+      "response_sha256": "093d7b730a8c3746219939a2f1fec252f3097faa99ddfc67b48462596fe43441"
+    }
+  ],
+  "candidates": [
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001",
+      "timestamp": "2026-07-26T23:39:19Z",
+      "end_timestamp": "2026-07-26T23:39:54Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 7239368704,
+      "size_gib": 6.7421875,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9996283736558418,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_X05026_N_F_J_001",
+      "timestamp": "2026-07-26T23:39:19Z",
+      "end_timestamp": "2026-07-26T23:39:54Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "X05026",
+      "size_bytes": 7239368704,
+      "size_gib": 6.7421875,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_X05026_N_F_J_001/NISAR_L2_PR_GCOV_026_098_A_016_4005_DHDH_A_20260726T233919_20260726T233954_X05026_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9996283736558418,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "incompatible",
+      "reasons": [
+        "release: X05026 != P05023",
+        "catalog crid: X05026 != P05023"
+      ],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "timestamp": "2026-08-19T23:39:18Z",
+      "end_timestamp": "2026-08-19T23:39:53Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 7243563008,
+      "size_gib": 6.74609375,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 1.0000000000000004,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_X05026_N_F_J_001",
+      "timestamp": "2026-08-19T23:39:18Z",
+      "end_timestamp": "2026-08-19T23:39:53Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "X05026",
+      "size_bytes": 7243563008,
+      "size_gib": 6.74609375,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_X05026_N_F_J_001/NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_X05026_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 1.0000000000000004,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "incompatible",
+      "reasons": [
+        "release: X05026 != P05023",
+        "catalog crid: X05026 != P05023"
+      ],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001",
+      "timestamp": "2026-08-31T23:39:18Z",
+      "end_timestamp": "2026-08-31T23:39:52Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 7050625024,
+      "size_gib": 6.56640625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9935368495526594,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_X05026_N_F_J_001",
+      "timestamp": "2026-08-31T23:39:18Z",
+      "end_timestamp": "2026-08-31T23:39:52Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "X05026",
+      "size_bytes": 7050625024,
+      "size_gib": 6.56640625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_X05026_N_F_J_001/NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_X05026_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9935368495526594,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "incompatible",
+      "reasons": [
+        "release: X05026 != P05023",
+        "catalog crid: X05026 != P05023"
+      ],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_UR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_F_F_J_001",
+      "timestamp": "2026-08-31T23:39:18Z",
+      "end_timestamp": "2026-08-31T23:39:52Z",
+      "size_bytes": 7050625024,
+      "size_gib": 6.56640625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-UR/UR_L2_L_GCOV/NISAR_L2_UR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_F_F_J_001/NISAR_L2_UR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_P05023_F_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.99353813118683,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "incompatible",
+      "reasons": [
+        "unrecognized GCOV granule identifier",
+        "catalog collectionName: NISAR_UR_L2 != NISAR_L2_GCOV_PROVISIONAL_V1"
+      ],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001",
+      "timestamp": "2026-09-12T23:39:18Z",
+      "end_timestamp": "2026-09-12T23:39:52Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 7046430720,
+      "size_gib": 6.5625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9698358286624631,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": true
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_X05026_N_F_J_001",
+      "timestamp": "2026-09-12T23:39:18Z",
+      "end_timestamp": "2026-09-12T23:39:52Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "X05026",
+      "size_bytes": 7046430720,
+      "size_gib": 6.5625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_X05026_N_F_J_001/NISAR_L2_PR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_X05026_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9698358286624631,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "incompatible",
+      "reasons": [
+        "release: X05026 != P05023",
+        "catalog crid: X05026 != P05023"
+      ],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_UR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_F_F_J_001",
+      "timestamp": "2026-09-12T23:39:18Z",
+      "end_timestamp": "2026-09-12T23:39:52Z",
+      "size_bytes": 7042236416,
+      "size_gib": 6.55859375,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-UR/UR_L2_L_GCOV/NISAR_L2_UR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_F_F_J_001/NISAR_L2_UR_GCOV_030_098_A_016_4005_DHDH_A_20260912T233918_20260912T233952_P05023_F_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9698415755420822,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "incompatible",
+      "reasons": [
+        "unrecognized GCOV granule identifier",
+        "catalog collectionName: NISAR_UR_L2 != NISAR_L2_GCOV_PROVISIONAL_V1"
+      ],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001",
+      "timestamp": "2026-09-24T23:39:18Z",
+      "end_timestamp": "2026-09-24T23:39:52Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 7046430720,
+      "size_gib": 6.5625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9804446434432463,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_UR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_F_F_J_001",
+      "timestamp": "2026-09-24T23:39:18Z",
+      "end_timestamp": "2026-09-24T23:39:52Z",
+      "size_bytes": 7046430720,
+      "size_gib": 6.5625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-UR/UR_L2_L_GCOV/NISAR_L2_UR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_F_F_J_001/NISAR_L2_UR_GCOV_031_098_A_016_4005_DHDH_A_20260924T233918_20260924T233952_P05023_F_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9804934582588298,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "incompatible",
+      "reasons": [
+        "unrecognized GCOV granule identifier",
+        "catalog collectionName: NISAR_UR_L2 != NISAR_L2_GCOV_PROVISIONAL_V1"
+      ],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001",
+      "timestamp": "2026-10-06T23:39:18Z",
+      "end_timestamp": "2026-10-06T23:39:52Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 7042236416,
+      "size_gib": 6.55859375,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_098_A_016_4005_DHDH_A_20261006T233918_20261006T233952_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 0.9950328372129915,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001",
+      "timestamp": "2026-10-18T23:39:18Z",
+      "end_timestamp": "2026-10-18T23:39:52Z",
+      "track": 98,
+      "frame": 16,
+      "direction": "A",
+      "mode": "4005_DHDH_A",
+      "release": "P05023",
+      "size_bytes": 7050625024,
+      "size_gib": 6.56640625,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001/NISAR_L2_PR_GCOV_033_098_A_016_4005_DHDH_A_20261018T233918_20261018T233952_P05023_N_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 1.0000000000000004,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "catalog_compatible",
+      "reasons": [],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    },
+    {
+      "granule_id": "NISAR_L2_UR_GCOV_034_098_A_016_4005_DHDH_A_20261030T233918_20261030T233953_P05023_F_F_J_001",
+      "timestamp": "2026-10-30T23:39:18Z",
+      "end_timestamp": "2026-10-30T23:39:53Z",
+      "size_bytes": 7243563008,
+      "size_gib": 6.74609375,
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR-UR/UR_L2_L_GCOV/NISAR_L2_UR_GCOV_034_098_A_016_4005_DHDH_A_20261030T233918_20261030T233953_P05023_F_F_J_001/NISAR_L2_UR_GCOV_034_098_A_016_4005_DHDH_A_20261030T233918_20261030T233953_P05023_F_F_J_001.h5",
+      "crop_overlap_fraction": {
+        "nepal_surface": 1.0000000000000004,
+        "nepal_impact_corridor": 1.0000000000000002
+      },
+      "coverage_note": "Planar geographic catalog-footprint overlap only, not valid radar-pixel fraction. Partial overlap is allowed for screening; canonical ingest must audit actual masks.",
+      "compatibility": "incompatible",
+      "reasons": [
+        "unrecognized GCOV granule identifier",
+        "catalog collectionName: NISAR_UR_L2 != NISAR_L2_GCOV_PROVISIONAL_V1"
+      ],
+      "product_version": null,
+      "header_audit_required": true,
+      "audit_note": "Catalog screening only. HDF5 product version, look geometry, channels, quality and native-grid compatibility require the existing ingest audit before use.",
+      "in_hand": false
+    }
+  ],
+  "downloaded_files": 0
+}

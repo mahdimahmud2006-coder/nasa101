@@ -1,0 +1,7 @@
+{
+  "url": "https://erddap.aoml.noaa.gov/hdb/erddap/info/precipitation_2026_v07/index.json",
+  "method": "GET",
+  "retrieved_at": "2026-11-02T16:03:31.765024+00:00",
+  "status": "error",
+  "error": "HTTP Error 404: "
+}

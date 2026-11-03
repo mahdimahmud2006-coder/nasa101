@@ -1,0 +1,11 @@
+{
+  "query": {
+    "short_name": "GPM_3IMERGHH",
+    "page_size": 10
+  },
+  "url": "https://cmr.earthdata.nasa.gov/search/collections.json?short_name=GPM_3IMERGHH&page_size=10",
+  "retrieved_at": "2026-11-02T16:05:51.051019+00:00",
+  "status": 200,
+  "hits": "1",
+  "sha256": "bbc0a42fe3d37e1b8d67e95bb7c15e5e27b097a060faef78cedd2834df8d539c"
+}

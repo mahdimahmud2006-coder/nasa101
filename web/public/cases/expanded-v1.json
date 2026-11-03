@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "version": "expanded-v1",
+  "unique_gcov_granules": 10,
+  "unique_gunw_granules": 2,
+  "cases": [
+    {
+      "case_id": "nepal_surface",
+      "title": "Kathmandu \u00b7 persistence investigation",
+      "observations": 10,
+      "coherence_pairs": 2,
+      "manifest_url": "/cases/nepal_surface/expanded-v1/manifest.json"
+    },
+    {
+      "case_id": "nepal_impact_corridor",
+      "title": "Rasuwa\u2013Nuwakot \u00b7 reference-aligned corridor",
+      "observations": 10,
+      "coherence_pairs": 2,
+      "manifest_url": "/cases/nepal_impact_corridor/expanded-v1/manifest.json"
+    }
+  ],
+  "scope": "Additive Nepal extension. Bangladesh and original investigations remain preserved."
+}

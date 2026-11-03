@@ -1,0 +1,10 @@
+{
+  "origin_configured": true,
+  "public_repository_link_verified": false,
+  "public_video_link_verified": false,
+  "publication_or_submission_performed": false,
+  "origin_host": "github.com",
+  "repository_url": "https://github.com/mahdimahmud2006-coder/nasa101",
+  "repository_check": "Web fetch returned cache miss; public access and current local changes not verified",
+  "video_check": "No finished public video URL supplied"
+}

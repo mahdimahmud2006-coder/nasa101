@@ -1,0 +1,38 @@
+{
+  "status": "IMPLEMENTED_SUPPORTED_SUPPLIED_DATA",
+  "unique_gunw_granules": 2,
+  "accepted_input_files": 9,
+  "new_raw_bytes": 54580477952,
+  "new_nepal_observations_per_crop": 10,
+  "reference_timestamp": "2026-08-19T23:39:18Z",
+  "new_asset_bytes": 1046807320,
+  "python_tests_passed": 255,
+  "javascript_tests_passed": 80,
+  "analytical_validators": 12,
+  "historical_outputs_preserved": true,
+  "claim_snapshot": "claims-expanded-v2",
+  "app_url": "http://127.0.0.1:8001/expanded.html",
+  "browser_visual_acceptance": "UNVERIFIED",
+  "physical_offline_rehearsal": "UNVERIFIED",
+  "remaining_inputs": [
+    "Four shared Bangladesh GCOV dates",
+    "Scientific regional IMERG Late V07 with lineage/QA review",
+    "Additional eligible optical/thermal source pixels as needed for corroboration"
+  ],
+  "ground_displacement": "UNRESOLVED; no conversion performed",
+  "unique_new_gcov_granules": 7,
+  "verification_note": "Full make verify passed 255 Python / 77 JavaScript / 12 validators. Final share-link/cursor/loading controls plus three added regression cases pass the complete 80-test JavaScript suite, static checks and targeted release tests.",
+  "current_release": "dist/terrapulse-1.0.0-expanded-20261103-r2.zip",
+  "portable_package": {
+    "archive": "/home/mahdi-mahmud/Downloads/DATASET NASA/NEPALv1/dist/terrapulse-1.0.0-expanded-20261103-r2.zip",
+    "files": 1549,
+    "bytes": 5092561194,
+    "sha256": "2f01684b7ab548b50378470a212db6399281a09d85344ae94295815ec9b4d2e1",
+    "integrity": "Every archive entry verified by the release builder before publication"
+  },
+  "original_preservation": {
+    "preexisting_output_count": 1379,
+    "changed": [],
+    "all_preserved": true
+  }
+}

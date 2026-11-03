@@ -1,0 +1,9 @@
+{
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasadem/items/NASADEM_HGT_n25e091",
+  "method": "GET",
+  "retrieved_at": "2026-11-02T16:03:39.105211+00:00",
+  "status": 200,
+  "final_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasadem/items/NASADEM_HGT_n25e091",
+  "size_bytes": 2324,
+  "sha256": "8bd6839d2f21af87add50b0d064f3d071eab2bd0e09dd89c355c59acc64b40eb"
+}

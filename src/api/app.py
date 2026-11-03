@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 from urllib.parse import urlsplit, parse_qs
+from src.compute.active_records import registry_path,case_directory
 
 ROOT=Path(__file__).resolve().parents[2]
 WEB=ROOT/'web'
@@ -28,8 +29,11 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         url=urlsplit(self.path).path
+        if url=='/api/claims':
+            version=json.loads((ROOT/'config.claims.json').read_text())['snapshot_version']
+            return self.send_json(json.loads((PUBLIC/'cases'/(version+'.json')).read_text()))
         if url=='/api/investigations':
-            path=PUBLIC/'cases/investigations.json'
+            path=registry_path(ROOT)
             if not path.is_file():
                 return self.send_json({'error':'Generate investigations with make investigations'},status=503)
             return self.send_json(json.loads(path.read_text()))
@@ -51,16 +55,35 @@ class Handler(SimpleHTTPRequestHandler):
             if not case.replace('_','').replace('-','').isalnum():
                 return self.send_error(404)
             name=parts[3] if len(parts)==4 else 'manifest'
+            if name=='expanded-probe':
+                try:
+                    from src.compute.expanded_record import probe
+                    query=parse_qs(urlsplit(self.path).query)
+                    return self.send_json(probe(case,int(query['row'][0]),int(query['col'][0]),ROOT))
+                except (ValueError,KeyError,TypeError,OverflowError):
+                    return self.send_json({'error':'Invalid expanded native neighborhood'},status=422)
+                except FileNotFoundError:
+                    return self.send_json({'error':'Expanded record not generated'},status=404)
             if name=='investigation':
-                path=PUBLIC/'cases'/case/'investigation/manifest.json'
+                path=case_directory(case,ROOT)/'investigation/manifest.json'
                 if not path.is_file():
                     return self.send_error(404,'Investigation observations not generated')
                 return self.send_json(json.loads(path.read_text()))
+            if name=='investigation-reasoning':
+                try:
+                    from src.compute.investigation_dna import polygon_evidence
+                    query=parse_qs(urlsplit(self.path).query);row=int(query['row'][0]);col=int(query['col'][0])
+                    directory=case_directory(case,ROOT);manifest=json.loads((directory/'investigation/manifest.json').read_text());height,width=manifest['grid']['shape']
+                    if not 0<=row<height or not 0<=col<width:raise ValueError('Outside grid')
+                    points=[[max(0,col-5),max(0,row-5)],[min(width,col+6),max(0,row-5)],[min(width,col+6),min(height,row+6)],[max(0,col-5),min(height,row+6)]]
+                    return self.send_json(polygon_evidence(case,points,ROOT,directory))
+                except (ValueError,KeyError,TypeError):return self.send_json({'error':'Invalid native neighborhood'},status=422)
+                except FileNotFoundError:return self.send_json({'error':'Investigation evidence unavailable'},status=404)
             if name=='investigation-probe':
                 try:
                     from src.compute.investigation_probe import probe
                     query=parse_qs(urlsplit(self.path).query)
-                    return self.send_json(probe(PUBLIC/'cases'/case/'investigation',int(query['row'][0]),int(query['col'][0])))
+                    return self.send_json(probe(case_directory(case,ROOT)/'investigation',int(query['row'][0]),int(query['col'][0])))
                 except (ValueError,KeyError,OverflowError):
                     return self.send_json({'error':'Invalid investigation cell'},status=422)
                 except FileNotFoundError:
@@ -186,6 +209,17 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         parts=urlsplit(self.path).path.strip('/').split('/')
+        if len(parts)==4 and parts[:2]==['api','cases'] and parts[3]=='investigation-polygon':
+            case=parts[2]
+            if not case.replace('_','').replace('-','').isalnum():return self.send_error(404)
+            try:
+                length=int(self.headers.get('Content-Length','0'))
+                if not 1<=length<=32768:return self.send_json({'error':'Polygon JSON must be at most 32768 bytes'},status=413)
+                payload=json.loads(self.rfile.read(length))
+                from src.compute.investigation_dna import polygon_evidence
+                return self.send_json(polygon_evidence(case,payload['vertices'],ROOT,case_directory(case,ROOT)))
+            except (ValueError,KeyError,TypeError):return self.send_json({'error':'Use a valid nonempty polygon inside the native case grid'},status=422)
+            except FileNotFoundError:return self.send_json({'error':'Case evidence unavailable'},status=404)
         if len(parts)!=5 or parts[:2]!=['api','cases'] or parts[3:]!=['scenario','flood']:
             return self.send_error(404)
         case=parts[2]

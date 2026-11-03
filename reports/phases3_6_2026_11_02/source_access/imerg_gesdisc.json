@@ -1,0 +1,7 @@
+{
+  "url": "https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.07/2026/229/contents.html",
+  "method": "GET",
+  "retrieved_at": "2026-11-02T16:03:33.883468+00:00",
+  "status": "error",
+  "error": "HTTP Error 404: 404"
+}

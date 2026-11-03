@@ -1,0 +1,89 @@
+{
+  "version": "bangladesh-v2",
+  "cases": {
+    "jamuna_river": {
+      "observations": 10,
+      "reference_timestamp": "2026-06-18T23:21:35Z",
+      "control_support": {
+        "prior_six_visit_common_pixels": 489210,
+        "ten_visit_common_pixels": 489210,
+        "selection": "Original June 18 and terrain-only selection mask reused unchanged; common support recomputed across all ten visits. No calibration correction applied."
+      },
+      "saved_footprint_support": [
+        {
+          "prior_six_visit_common_pixels": 3992004,
+          "ten_visit_common_pixels": 3992004,
+          "same_footprint_mask": true
+        },
+        {
+          "prior_six_visit_common_pixels": 2047,
+          "ten_visit_common_pixels": 2047,
+          "same_footprint_mask": true
+        },
+        {
+          "prior_six_visit_common_pixels": 1773,
+          "ten_visit_common_pixels": 1773,
+          "same_footprint_mask": true
+        },
+        {
+          "prior_six_visit_common_pixels": 1722,
+          "ten_visit_common_pixels": 1722,
+          "same_footprint_mask": true
+        }
+      ],
+      "references": {
+        "old_comparisons_retained": 18,
+        "new_explicitly_unavailable": 12
+      },
+      "calendar_statuses": {
+        "observed": 10,
+        "instrument_gap": 1,
+        "not_in_hand": 0,
+        "unavailable_in_archive": 0
+      }
+    },
+    "tanguar_wetland": {
+      "observations": 10,
+      "reference_timestamp": "2026-06-18T23:21:35Z",
+      "control_support": {
+        "prior_six_visit_common_pixels": 329104,
+        "ten_visit_common_pixels": 329104,
+        "selection": "Original June 18 and terrain-only selection mask reused unchanged; common support recomputed across all ten visits. No calibration correction applied."
+      },
+      "saved_footprint_support": [
+        {
+          "prior_six_visit_common_pixels": 2873204,
+          "ten_visit_common_pixels": 2873204,
+          "same_footprint_mask": true
+        },
+        {
+          "prior_six_visit_common_pixels": 280802,
+          "ten_visit_common_pixels": 280802,
+          "same_footprint_mask": true
+        },
+        {
+          "prior_six_visit_common_pixels": 119551,
+          "ten_visit_common_pixels": 119551,
+          "same_footprint_mask": true
+        },
+        {
+          "prior_six_visit_common_pixels": 48862,
+          "ten_visit_common_pixels": 48862,
+          "same_footprint_mask": true
+        }
+      ],
+      "references": {
+        "old_comparisons_retained": 18,
+        "new_explicitly_unavailable": 12
+      },
+      "calendar_statuses": {
+        "observed": 10,
+        "instrument_gap": 1,
+        "not_in_hand": 0,
+        "unavailable_in_archive": 0
+      }
+    }
+  },
+  "status": "BUILT_NOT_ACTIVATED",
+  "science_scope": "Four added GCOV dates; no new GUNW, optical, thermal or rain measurements."
+}

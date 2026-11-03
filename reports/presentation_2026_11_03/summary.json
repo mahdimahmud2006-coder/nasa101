@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-03",
+  "scope": "Local product presentation, geographic navigation, Bangladesh surface focus, field guide and improvement plan",
+  "javascript_tests_passed": 101,
+  "javascript_tests_failed": 0,
+  "python_targeted_tests_passed": 9,
+  "static_pages_checked": 8,
+  "local_links_checked": 132,
+  "baseline_files_verified": 795,
+  "runtime_ready": true,
+  "preview_service": "terrapulse-preview.service",
+  "preview_service_state": "active/running",
+  "preview_url": "http://127.0.0.1:8001/",
+  "browser_visual_qa": "PENDING \u2014 prior local-URL policy block; DOM tests are not rendered verification",
+  "new_scientific_data_imported": false,
+  "public_deployment_or_submission": false,
+  "release_archive_updated": false,
+  "download_status": "User reports downloads in progress; accepted data registry unchanged",
+  "notes": [
+    "Existing release archives predate this presentation revision.",
+    "Remaining free space observed at approximately 24 GiB during active downloads; recheck before importing."
+  ]
+}

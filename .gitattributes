@@ -1,0 +1,22 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.mjs text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+*.md text eol=lf whitespace=-blank-at-eol
+*.yml text eol=lf
+*.yaml text eol=lf
+*.svg text eol=lf
+*.png binary
+*.webp binary
+*.jpg binary
+*.tif binary
+*.parquet binary
+*.zip binary
+/web/public/cases/** linguist-generated=true
+/data/** linguist-generated=true
+/reports/** linguist-generated=true
+/docs/assets/** linguist-documentation

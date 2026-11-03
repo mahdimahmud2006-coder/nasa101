@@ -1,0 +1,15 @@
+{
+  "phase": 3,
+  "status": "COMPLETE_WITH_SCIENTIFIC_RAIN_UNAVAILABLE_AND_H1_UNRESOLVED",
+  "python_tests": 225,
+  "javascript_tests": 51,
+  "analytical_validators": 8,
+  "make_verify_exit_code": 0,
+  "frozen_files_unchanged": 795,
+  "historical_outputs_unchanged": 508,
+  "phase2_new_products_unchanged": 417,
+  "new_full_raw_granules": 0,
+  "new_terrain_window_bytes": 3021427,
+  "rainfall": "No scientific V07 catalog hits for requested 2026 windows; exact UTC windows retained, totals null. Earlier GIS diagnostics excluded.",
+  "h1": "Six full Bangladesh source-scene histograms and frozen putative controls computed. Cause unresolved; no radiometric correction applied."
+}

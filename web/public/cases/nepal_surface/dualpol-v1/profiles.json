@@ -1,0 +1,61 @@
+[
+  {
+    "label": "Previously tracked 1.99-hectare zone",
+    "selection": "Original geographic case retained. The highlighted zone was selected by the earlier HH analysis; it is not an independent validation sample.",
+    "status": "MEASURED",
+    "footprint_pixels": 199,
+    "common_valid_pixels": 199,
+    "common_valid_fraction": 1.0,
+    "footprint_area_km2": 0.0199,
+    "measured_area_km2": 0.0199,
+    "observations": [
+      {
+        "index": 0,
+        "hh_mean_db": -4.770070468438274,
+        "hv_mean_db": -15.767042610513505,
+        "hh_baseline_delta_db": 0.0,
+        "hv_baseline_delta_db": 0.0,
+        "hh_successive_delta_db": null,
+        "hv_successive_delta_db": null,
+        "hh_minus_hv_db": 10.99697214207523,
+        "observation_id": "visit_0",
+        "timestamp": "2026-08-19T23:39:18Z",
+        "cpr_mean_db": -10.99697214207523,
+        "cpr_baseline_delta_db": 0.0,
+        "cpr_successive_delta_db": null
+      },
+      {
+        "index": 1,
+        "hh_mean_db": -12.296379446384297,
+        "hv_mean_db": -17.57819671007856,
+        "hh_baseline_delta_db": -7.526308989405033,
+        "hv_baseline_delta_db": -1.8111540995650555,
+        "hh_successive_delta_db": -7.526308989405033,
+        "hv_successive_delta_db": -1.8111540995650555,
+        "hh_minus_hv_db": 5.281817263694265,
+        "observation_id": "visit_1",
+        "timestamp": "2026-08-31T23:39:18Z",
+        "cpr_mean_db": -5.281817263694265,
+        "cpr_baseline_delta_db": 5.715154889839978,
+        "cpr_successive_delta_db": 5.715154889839978
+      },
+      {
+        "index": 2,
+        "hh_mean_db": -11.84668738877953,
+        "hv_mean_db": -18.2180269902675,
+        "hh_baseline_delta_db": -7.076616928206017,
+        "hv_baseline_delta_db": -2.4509843797539945,
+        "hh_successive_delta_db": 0.44969205760476577,
+        "hv_successive_delta_db": -0.6398302801889391,
+        "hh_minus_hv_db": 6.3713396014879695,
+        "observation_id": "visit_2",
+        "timestamp": "2026-09-12T23:39:18Z",
+        "cpr_mean_db": -6.3713396014879695,
+        "cpr_baseline_delta_db": 4.625632548452023,
+        "cpr_successive_delta_db": -1.0895223377937049
+      }
+    ],
+    "interpretation": "Mean filtered log-backscatter on a fixed common-valid footprint. dB differences are not ground displacement. No cause or calibrated confidence is inferred.",
+    "cpr_definition": "HV_dB - HH_dB on the existing fixed common-valid footprint. Difference of filtered log-powers, not a polarimetric decomposition or ratio of spatial mean powers."
+  }
+]

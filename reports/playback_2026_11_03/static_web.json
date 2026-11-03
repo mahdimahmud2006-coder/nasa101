@@ -1,0 +1,42 @@
+{
+  "status": "STATIC_CHECKS_PASS",
+  "pages": {
+    "index": {
+      "unique_ids": 82,
+      "javascript_literal_ids_resolve": 76,
+      "balanced_html": true,
+      "all_scripts_css_local": true
+    },
+    "change-lab": {
+      "unique_ids": 51,
+      "javascript_literal_ids_resolve": 47,
+      "balanced_html": true,
+      "all_scripts_css_local": true
+    },
+    "timeseries": {
+      "unique_ids": 48,
+      "javascript_literal_ids_resolve": 0,
+      "balanced_html": true,
+      "all_scripts_css_local": true
+    },
+    "comparison": {
+      "unique_ids": 49,
+      "javascript_literal_ids_resolve": 46,
+      "balanced_html": true,
+      "all_scripts_css_local": true
+    },
+    "investigations": {
+      "unique_ids": 97,
+      "javascript_literal_ids_resolve": 89,
+      "balanced_html": true,
+      "all_scripts_css_local": true
+    },
+    "expanded": {
+      "unique_ids": 43,
+      "javascript_literal_ids_resolve": 39,
+      "balanced_html": true,
+      "all_scripts_css_local": true
+    }
+  },
+  "scope": "Source consistency only; browser visual, accessibility, GPU and responsive verification remain separate."
+}

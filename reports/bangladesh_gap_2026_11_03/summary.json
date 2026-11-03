@@ -1,0 +1,20 @@
+{
+  "status": "BANGLADESH_GAPS_SOURCE_CHECKS_PASS",
+  "javascript_tests_passed": 90,
+  "static_pages_checked": 6,
+  "shared_local_bangladesh_gcov_files": 6,
+  "missing_gcov_downloads": 4,
+  "missing_dates": [
+    "2026-06-30",
+    "2026-07-12",
+    "2026-09-10",
+    "2026-10-04"
+  ],
+  "total_gib": 25.0546875,
+  "permanent_outage_slot": "2026-08-05",
+  "fresh_both_crop_searches_complete": true,
+  "historical_bangladesh_and_calendar_outputs_unchanged": 505,
+  "frozen_baseline_files_verified": 795,
+  "new_science_downloads": 0,
+  "browser_visual_acceptance": "UNVERIFIED; earlier local-URL policy block retained"
+}
