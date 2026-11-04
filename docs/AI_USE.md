@@ -26,3 +26,5 @@ On 3 November 2026, the user requested a recorded-visit-only presentation that o
 
 
 On 4 November 2026, the user requested Git ignore hardening, a polished README and a push to their specified GitHub repository, then explicitly chose to keep the repository private. Codex audited the publication set and known credential patterns in existing historical text; hardened ignore precedence and source attributes; separated processed runtime binaries from Git via checksum-verified private release assets; added safe restoration and hygiene tests; and rewrote the README using actual radar composites and the existing claim ledger. The source/AI disclosure and original data provenance remain intact. No raw HDF5 or credentials are included in the publication.
+
+On 4 November 2026, Codex revised the README presentation at the user's request: an authentic output gallery, country-based judging walkthrough, descriptive captions and restrained emojis. Existing scientific previews were copied unchanged and their hashes recorded. The earlier interface screenshot is labeled archival; no new browser screenshot or synthetic scientific imagery was generated.

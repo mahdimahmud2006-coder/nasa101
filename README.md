@@ -1,14 +1,18 @@
 <p align="center"><img src="docs/assets/terrapulse-banner.svg" alt="TerraPulse — Earth moves. Keep the evidence." width="100%"></p>
 
-<p align="center"><strong>From a radar image to an investigation someone can inspect, question and share.</strong></p>
+<p align="center"><strong>🛰️ Follow the change. Understand the pattern. Carry the evidence.</strong></p>
 
-<p align="center"><a href="#the-question-that-started-terrapulse">Why it matters</a> · <a href="#one-platform-two-countries">Explore the platform</a> · <a href="#run-terrapulse">Run locally</a> · <a href="#the-evidence-behind-the-story">Science & evidence</a> · <a href="docs/AI_USE.md">AI disclosure</a></p>
+<p align="center">🌊 River Memory &nbsp; · &nbsp; 🌿 Wetland Pulse &nbsp; · &nbsp; 🏔️ Surface-change investigations</p>
+
+<p align="center"><a href="#project-snapshots">Project snapshots</a> · <a href="#judges-tour">Judges’ tour</a> · <a href="#one-platform-two-countries">Explore the platform</a> · <a href="#run-terrapulse">Run locally</a> · <a href="#the-evidence-behind-the-story">Science & evidence</a> · <a href="docs/AI_USE.md">AI disclosure</a></p>
 
 **TerraPulse** turns NASA–ISRO NISAR radar observations into interactive surface-change investigations across **Bangladesh and Nepal**. Follow a river corridor, explore a wetland, or investigate a disturbance that persists after its initial alert fades. Compare recorded visits, inspect the same physical footprint through time, examine competing explanations and export the evidence.
 
 Built for **NASA Space Apps — Dancing with the SARs** by **DevAtMad**.
 
-## The question that started TerraPulse
+<a id="the-question-that-started-terrapulse"></a>
+
+## 🔎 The question that started TerraPulse
 
 ### The alert disappeared. Did the landscape recover?
 
@@ -18,7 +22,77 @@ TerraPulse makes that distinction visible. In the tracked Nepal footprint, the o
 
 **The outcome is a traceable investigation:** a location, a temporal record, the measurements behind it, possible explanations and a clear next question for follow-up.
 
-## One platform. Two countries.
+<a id="project-snapshots"></a>
+
+## 📸 Inside TerraPulse
+
+Real outputs from the project's accepted satellite products. Click an image to inspect it at full size. These are scientific layer snapshots; their dates and meanings stay attached.
+
+<table>
+<tr>
+<td width="50%"><strong>🌊 River Memory · Bangladesh</strong><br><sub>Jamuna / Sirajganj · 16 October 2026</sub></td>
+<td width="50%"><strong>🌿 Wetland Pulse · Bangladesh</strong><br><sub>Tanguar Haor · 16 October 2026</sub></td>
+</tr>
+<tr>
+<td><a href="docs/assets/jamuna-radar-composite.png"><img src="docs/assets/jamuna-radar-composite.png" alt="Actual Jamuna HH/HV false-colour radar composite, 16 October 2026" width="100%"></a></td>
+<td><a href="docs/assets/tanguar-radar-composite.png"><img src="docs/assets/tanguar-radar-composite.png" alt="Actual Tanguar Haor HH/HV false-colour radar composite, 16 October 2026" width="100%"></a></td>
+</tr>
+<tr>
+<td>Follow radar-dark signatures along the river corridor. Compare where they appear, recede or persist.</td>
+<td>Explore contrasting wetland radar responses across recorded visits and both polarization channels.</td>
+</tr>
+<tr>
+<td><strong>🏔️ Surface change · Nepal</strong><br><sub>Kathmandu · 18 October 2026</sub></td>
+<td><strong>🛰️ Coherence · Nepal</strong><br><sub>Kathmandu · 19–31 August 2026</sub></td>
+</tr>
+<tr>
+<td><a href="docs/assets/nepal-surface-october.png"><img src="docs/assets/nepal-surface-october.png" alt="Actual Kathmandu HH backscatter observation from 18 October 2026" width="100%"></a></td>
+<td><a href="docs/assets/nepal-coherence-august.png"><img src="docs/assets/nepal-coherence-august.png" alt="Actual Nepal HH coherence preview for the 19–31 August 2026 NISAR pair" width="100%"></a></td>
+</tr>
+<tr>
+<td>Inspect the longer surface record and test whether a selected footprint still differs from its reference.</td>
+<td>Examine pairwise radar phase consistency alongside intensity. Coherence alone does not measure displacement.</td>
+</tr>
+</table>
+
+*Source: NASA–ISRO NISAR GCOV and GUNW, distributed through NASA Earthdata / ASF DAAC. Bangladesh colours combine HH, HV and their relationship; they are radar composites, not optical photographs or habitat classes. The Nepal panels show different measurements and dates. [Snapshot provenance](docs/assets/SNAPSHOTS.md).*
+
+<details>
+<summary><strong>🗺️ Explore terrain and scenario context</strong></summary>
+
+![Nepal scientific comparison of flood attention, static hillside terrain and the combined landslide index](docs/reports/implementation_06_07_maps.png)
+
+The Nepal environmental workspace compares valley-focused and hillside-focused model responses. These are illustrative susceptibility indices, with assumptions and limitations displayed in the project. Separate Landsat thermal and optical layers add dated environmental context. [Methods and interpretation](docs/IMPLEMENTATION_06_07.md).
+
+</details>
+
+<details>
+<summary><strong>🖥️ Interface archive · original Nepal comparison viewer</strong></summary>
+
+![Archived TerraPulse Nepal radar comparison interface](docs/demo.png)
+
+This saved interface capture shows the earlier Nepal comparison viewer. The current application opens with country navigation and the expanded investigation workspaces described below; this archive is not a screenshot of the latest layout.
+
+</details>
+
+<a id="judges-tour"></a>
+
+## 🧭 A short tour for judges
+
+After [starting TerraPulse locally](#run-terrapulse), follow this route:
+
+| Stop | Try this | The question it answers |
+|---|---|---|
+| **Bangladesh → River Memory** | Play the Jamuna visits, then inspect one fixed footprint. | Does a radar-dark signature recur at the same location? |
+| **Bangladesh → Wetland Pulse / Surface change** | Switch to Tanguar and compare HH, HV and reference differences. | Do the channels tell the same story, and which explanations still fit? |
+| **Nepal → Surface & coherence** | Follow a saved footprint through the longer record; inspect an available coherence pair. | Has the recent change become smaller while the earlier difference persists? |
+| **Evidence dossier** | Export the selected investigation and inspect its sources and limitations. | Can another person retrace and challenge the conclusion? |
+
+**What to look for:** the same physical footprint through time, actual acquisition dates, visible measurement units, competing explanations and a portable evidence record.
+
+<a id="one-platform-two-countries"></a>
+
+## 🌍 One platform. Two countries.
 
 **Twenty unique GCOV acquisitions · four study windows · ten dates per country · two measured Nepal coherence pairs.** The two crops within each country share their source acquisitions; they are not four independent satellite series.
 
@@ -34,11 +108,8 @@ TerraPulse makes that distinction visible. In the tracked Nepal footprint, the o
 
 Bangladesh Surface change uses the same Jamuna and Tanguar observations as the river and wetland workspaces. Environmental layers have their own dates, resolutions and coverage. The application identifies the scope of the selected evidence.
 
-<table><tr><td width="50%"><img src="docs/assets/jamuna-radar-composite.png" alt="Jamuna NISAR false-colour radar composite from 16 October 2026" width="100%"></td><td width="50%"><img src="docs/assets/tanguar-radar-composite.png" alt="Tanguar Haor NISAR false-colour radar composite from 16 October 2026" width="100%"></td></tr><tr><td><strong>River Memory · Jamuna</strong></td><td><strong>Wetland Pulse · Tanguar Haor</strong></td></tr></table>
 
-*Actual NISAR observations, 16 October 2026. False-colour channels combine HH, HV and their relationship; these are radar composites, not optical photographs or classified habitat maps. Source: NASA–ISRO NISAR GCOV / NASA Earthdata, ASF DAAC.*
-
-## An investigation in four steps
+## ▶️ An investigation in four steps
 
 1. **Choose a landscape.** Open the overview, select Bangladesh or Nepal and start with a question.
 2. **Play the recorded visits.** Compare actual radar observations using consistent display scales. The primary timeline shows acquired dates only.
@@ -47,7 +118,9 @@ Bangladesh Surface change uses the same Jamuna and Tanguar observations as the r
 
 The interface supports keyboard map inspection, playback ranges, speed controls, looping, visible focus and reduced-motion preferences. Observation coverage is available under methods and in exports; unavailable acquisitions never become synthetic measurements.
 
-## The evidence behind the story
+<a id="the-evidence-behind-the-story"></a>
+
+## 🔬 The evidence behind the story
 
 TerraPulse keeps measurements, interpretation and scenarios distinct:
 
@@ -65,7 +138,9 @@ TerraPulse keeps measurements, interpretation and scenarios distinct:
 
 The intended users are researchers, environmental teams and educators deciding where to investigate more closely. Operational decision accuracy, user adoption and field impact have not yet been established. Radar-dark candidates are not validated water or erosion; wetland signatures are not habitat diagnoses; coherence is not displacement; susceptibility is not a flood forecast.
 
-## Run TerraPulse
+<a id="run-terrapulse"></a>
+
+## 🚀 Run TerraPulse
 
 ### 1. Get the source and processed runtime data
 
@@ -130,7 +205,7 @@ Acquisition is separate from viewing. The numerical methods live in `src/compute
 | `tests` · `reports` · `reference` | Automated checks, retained evidence and frozen reference design. |
 | `docs` | Methods, data provenance, implementation records and submission preparation. |
 
-## Verification and reproducibility
+## ✅ Verification and reproducibility
 
 ```bash
 # Source consistency and the JavaScript controller/model suites:
