@@ -1,0 +1,49 @@
+{
+  "verified_utc": "2026-11-04T12:01:49.849813+00:00",
+  "repository": "https://github.com/mahdimahmud2006-coder/nasa101",
+  "visibility": "PRIVATE",
+  "source_commit": "4ed9906867567178488a060bbd0dc44e2328bf35",
+  "documentation_commit": "c7ef9cd085e695bea46fe7083e9cc06e496ff53e",
+  "release_tag": "runtime-20261104",
+  "release_url": "https://github.com/mahdimahmud2006-coder/nasa101/releases/tag/runtime-20261104",
+  "release_id": 433821990,
+  "release_published": true,
+  "asset_integrity": "PASS: GitHub SHA-256, byte counts and uploaded state match local manifest",
+  "assets": [
+    {
+      "name": "terrapulse-runtime-core-01.zip",
+      "bytes": 1466748291,
+      "sha256": "2c948b6ea41e20d761fd163370f8b868b35c4b18745037462e5de8e46d3d1780"
+    },
+    {
+      "name": "terrapulse-runtime-core-02.zip",
+      "bytes": 1265098101,
+      "sha256": "e75e2ef47141c48a095cb13c0ab0bb72375a14df9ad3d75af10a092e50db16a7"
+    },
+    {
+      "name": "terrapulse-runtime-native-01.zip",
+      "bytes": 1467429698,
+      "sha256": "7e81552a86e7d85e4d831f37e2d20153e724a30538f0ca92495e164452c19469"
+    },
+    {
+      "name": "terrapulse-runtime-native-02.zip",
+      "bytes": 1452274712,
+      "sha256": "7c78678c5fe6c0ac988c4f4f7a7b9ba134873a02db9f37b1f29e3f025e5ea945"
+    },
+    {
+      "name": "terrapulse-runtime-native-03.zip",
+      "bytes": 1254569999,
+      "sha256": "14fc25dd1b55e2bfd1fb964b0f74b1a193887afe7b741b2a9598a6cdfea74b85"
+    },
+    {
+      "name": "runtime-manifest.json",
+      "bytes": 396120,
+      "sha256": "10b3b7b9925f499c31ca1ee080a7c59667a10ff9fc01efb8a270b4386dc2939b"
+    }
+  ],
+  "source_tests": {
+    "python": 289,
+    "javascript": 104
+  },
+  "scope": "Remote publication verified; clean-machine restoration and rendered browser acceptance remain separate checks."
+}
