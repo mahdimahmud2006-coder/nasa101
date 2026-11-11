@@ -1,0 +1,7 @@
+{
+  "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27E084_Map.tif",
+  "doi": "10.5281/zenodo.7254221",
+  "year": 2021,
+  "crs": "EPSG:32645",
+  "sha256": "5a468d75ca5833ef56aab065b6c9dd4c058f16248803349719d5cf2658dde70f"
+}

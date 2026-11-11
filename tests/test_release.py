@@ -25,13 +25,14 @@ def test_package_allowlist_excludes_credentials_raw_satellites_and_git(tmp_path)
     (tmp_path/'web').mkdir();(tmp_path/'web/index.html').write_text('page')
     (tmp_path/'.env').write_text('sensitive');(tmp_path/'raw.h5').write_bytes(b'raw')
     (tmp_path/'.git').mkdir();(tmp_path/'.git/config').write_text('git')
+    (tmp_path/'docs').mkdir();(tmp_path/'docs/VIDEO_STORYBOARD.md').write_text('local notes')
     names={str(p.relative_to(tmp_path)) for p in files(tmp_path)}
     assert 'web/index.html' in names
-    assert not any(name in names for name in ['.env','raw.h5','.git/config'])
+    assert not any(name in names for name in ['.env','raw.h5','.git/config','docs/VIDEO_STORYBOARD.md'])
 
 def test_current_runtime_rules_claims_and_shared_shell_are_packaged():
     root=Path(__file__).resolve().parents[1];names={str(p.relative_to(root)) for p in files(root)}
-    assert {'PROJECT_PROGRESS.md','rules/explanations.yaml','claims/claims.yaml','config.claims.json','web/workspace-shell.mjs','web/investigation-state.mjs','reference/design.json','web/expanded.html','web/expanded.mjs','web/public/cases/expanded-v1.json','web/public/cases/supplied-source-audit-v1.json'}.issubset(names)
+    assert {'docs/CREDITS_UI.md','contracts/atlas-case-v1.schema.json','rules/explanations.yaml','claims/claims.yaml','config.claims.json','web/workspace-shell.mjs','web/investigation-state.mjs','reference/design.json','web/expanded.html','web/expanded.mjs','web/public/cases/expanded-v1.json','web/public/cases/supplied-source-audit-v1.json'}.issubset(names)
     assert not any(n.endswith(('.h5','.pem','.key')) or '/.env' in n for n in names)
 
 def test_archive_integrity_checks_every_entry_without_extracting(tmp_path):

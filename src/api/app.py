@@ -4,8 +4,10 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
 import os
+import re
 from pathlib import Path
 from urllib.parse import urlsplit, parse_qs
+from src.api.raster_range import RasterRangeMixin
 from src.compute.active_records import registry_path,case_directory
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -13,12 +15,28 @@ WEB=ROOT/'web'
 PUBLIC=WEB/'public'
 
 
-class Handler(SimpleHTTPRequestHandler):
+def bound_atlas_profile(result, case, manifest, selection):
+    from src.compute.atlas_contract import binding
+    return {**result, 'atlasBinding': {**binding(case, manifest), 'selection': selection}}
+
+
+class Handler(RasterRangeMixin, SimpleHTTPRequestHandler):
     def __init__(self,*args,**kwargs):
         super().__init__(*args,directory=str(WEB),**kwargs)
 
     def translate_path(self,path):
         url=urlsplit(path).path
+        if url.startswith('/atlas-simulations/'):
+            name=url.removeprefix('/atlas-simulations/')
+            if re.fullmatch(r'[a-z_]+\.json|[a-z0-9_-]+-[a-f0-9]{16}\.bin',name):
+                return str(ROOT/'output/atlas/simulations'/name)
+            return str(ROOT/'missing')
+        if url.startswith('/atlas-catalog/'):
+            folder=ROOT/'output/atlas/native-stac'
+            target=(folder/url.removeprefix('/atlas-catalog/')).resolve()
+            if target.is_relative_to(folder) and target.suffix=='.json':
+                return str(target)
+            return str(ROOT/'missing')
         if url.startswith('/cases/'):
             relative=Path(url.removeprefix('/cases/'))
             target=(PUBLIC/'cases'/relative).resolve()
@@ -59,7 +77,10 @@ class Handler(SimpleHTTPRequestHandler):
                 try:
                     from src.compute.expanded_record import probe
                     query=parse_qs(urlsplit(self.path).query)
-                    return self.send_json(probe(case,int(query['row'][0]),int(query['col'][0]),ROOT))
+                    row,col=int(query['row'][0]),int(query['col'][0])
+                    result=probe(case,row,col,ROOT)
+                    manifest=PUBLIC/'cases'/case/result['version']/'manifest.json'
+                    return self.send_json(bound_atlas_profile(result,case,manifest,{'kind':'point','row':row,'col':col}))
                 except (ValueError,KeyError,TypeError,OverflowError):
                     return self.send_json({'error':'Invalid expanded native neighborhood'},status=422)
                 except FileNotFoundError:
@@ -71,12 +92,13 @@ class Handler(SimpleHTTPRequestHandler):
                 return self.send_json(json.loads(path.read_text()))
             if name=='investigation-reasoning':
                 try:
-                    from src.compute.investigation_dna import polygon_evidence
+                    from src.compute.atlas_measurements import polygon_with_boundary
                     query=parse_qs(urlsplit(self.path).query);row=int(query['row'][0]);col=int(query['col'][0])
                     directory=case_directory(case,ROOT);manifest=json.loads((directory/'investigation/manifest.json').read_text());height,width=manifest['grid']['shape']
                     if not 0<=row<height or not 0<=col<width:raise ValueError('Outside grid')
                     points=[[max(0,col-5),max(0,row-5)],[min(width,col+6),max(0,row-5)],[min(width,col+6),min(height,row+6)],[max(0,col-5),min(height,row+6)]]
-                    return self.send_json(polygon_evidence(case,points,ROOT,directory))
+                    result=polygon_with_boundary(case,points,ROOT,directory)
+                    return self.send_json(bound_atlas_profile(result,case,directory/'investigation/manifest.json',{'kind':'point','row':row,'col':col}))
                 except (ValueError,KeyError,TypeError):return self.send_json({'error':'Invalid native neighborhood'},status=422)
                 except FileNotFoundError:return self.send_json({'error':'Investigation evidence unavailable'},status=404)
             if name=='investigation-probe':
@@ -209,6 +231,8 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         parts=urlsplit(self.path).path.strip('/').split('/')
+        if len(parts)==4 and parts[:2]==['api','cases'] and parts[3]=='atlas-native':
+            return self.atlas_native(parts[2])
         if len(parts)==4 and parts[:2]==['api','cases'] and parts[3]=='investigation-polygon':
             case=parts[2]
             if not case.replace('_','').replace('-','').isalnum():return self.send_error(404)
@@ -216,8 +240,11 @@ class Handler(SimpleHTTPRequestHandler):
                 length=int(self.headers.get('Content-Length','0'))
                 if not 1<=length<=32768:return self.send_json({'error':'Polygon JSON must be at most 32768 bytes'},status=413)
                 payload=json.loads(self.rfile.read(length))
-                from src.compute.investigation_dna import polygon_evidence
-                return self.send_json(polygon_evidence(case,payload['vertices'],ROOT,case_directory(case,ROOT)))
+                from src.compute.atlas_measurements import polygon_with_boundary
+                directory=case_directory(case,ROOT)
+                vertices=payload['vertices']
+                result=polygon_with_boundary(case,vertices,ROOT,directory)
+                return self.send_json(bound_atlas_profile(result,case,directory/'investigation/manifest.json',{'kind':'polygon','vertices':vertices}))
             except (ValueError,KeyError,TypeError):return self.send_json({'error':'Use a valid nonempty polygon inside the native case grid'},status=422)
             except FileNotFoundError:return self.send_json({'error':'Case evidence unavailable'},status=404)
         if len(parts)!=5 or parts[:2]!=['api','cases'] or parts[3:]!=['scenario','flood']:
@@ -229,12 +256,49 @@ class Handler(SimpleHTTPRequestHandler):
             if length<1 or length>4096:return self.send_json({'error':'JSON request must be 1–4096 bytes'},status=413)
             payload=json.loads(self.rfile.read(length))
             from src.compute.flood_engine import get_engine
-            result=get_engine(ROOT,case).scenario(payload)
+            from src.compute.flood_model import scenario_id,scenario_parameters
+            engine=get_engine(ROOT,case)
+            parameters=scenario_parameters(payload,engine.ids)
+            result=engine.scenario(parameters)
+            version=engine.config['model_version']
+            inputs=engine.manifest['inputs_sha256']
+            if not isinstance(result,dict) or (result.get('case_id'),result.get('scenario_id'),result.get('model_version'),
+                result.get('inputs_sha256'),result.get('parameters')) != (
+                case,scenario_id(parameters,version,inputs),version,inputs,parameters):
+                raise RuntimeError('Scenario cache does not match accepted inputs')
             return self.send_json(result)
         except (ValueError,TypeError):
             return self.send_json({'error':'Invalid scenario. Use a known observation, multiplier 0.5–3, duration 6/12/24/48/72, and wetness dry/normal/wet/saturated. Historical sensitivity is unavailable.'},status=422)
         except (FileNotFoundError,ImportError,RuntimeError):
             return self.send_json({'error':'Flood model unavailable. Run make setup and make flood.'},status=503)
+
+    def atlas_native(self,case):
+        from src.compute.atlas_admission import active_manifests, require_admitted
+        from src.compute.atlas_spatial import native_profile
+        from rasterio.errors import RasterioIOError
+
+        try:
+            length=int(self.headers.get('Content-Length','0'))
+            if not 1<=length<=32768:
+                return self.send_json({'error':'Footprint JSON must be 1–32768 bytes.'},status=413)
+            payload=json.loads(self.rfile.read(length))
+        except ValueError:
+            return self.send_json({'error':'Expected a JSON footprint selection.'},status=422)
+        try:
+            paths=active_manifests(ROOT)
+            if case not in paths:
+                return self.send_json({'error':'Unknown atlas window.'},status=404)
+            require_admitted(ROOT,paths)
+        except (OSError,ValueError,KeyError):
+            return self.send_json({'error':'Accepted atlas evidence is unavailable.'},status=503)
+        try:
+            selection=payload.get('selection') if isinstance(payload,dict) else None
+            result=native_profile(ROOT,case,paths[case],selection)
+            return self.send_json(bound_atlas_profile(result,case,paths[case],selection))
+        except ValueError as error:
+            return self.send_json({'error':str(error)},status=422)
+        except (OSError,RuntimeError,RasterioIOError):
+            return self.send_json({'error':'Native evidence is unavailable for this accepted grid.'},status=503)
 
     def send_json(self,data,status=200):
         content=json.dumps(data,allow_nan=False).encode()

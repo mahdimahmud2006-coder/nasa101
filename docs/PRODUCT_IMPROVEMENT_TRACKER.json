@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-07",
   "project": "TerraPulse",
   "challenge": "Dancing with the SARs",
-  "status_note": "Bangladesh SCI-01 is implemented from accepted local files. Browser, user and independent scientific validation remain separate.",
+  "status_note": "The primary atlas and portable HTML edition are implemented. Scientific validation, real-browser acceptance and public release are separate gates.",
   "tasks": [
     {
       "id": "UX-01",
@@ -140,6 +140,30 @@
       "status": "DEFERRED",
       "dependency": "Phase unwrapping/reference/correction/geometry validation",
       "acceptance": "Documented sign, reference, units, uncertainty and external checks; never convert raw phase directly into a claimed movement map"
+    },
+    {
+      "id": "ATLAS-01",
+      "priority": "P0",
+      "task": "Four-window investigation atlas and offline edition",
+      "status": "IMPLEMENTED; rendered acceptance pending",
+      "dependency": "Accepted records; no new acquisition",
+      "acceptance": "Guided visits, matched dates, playback, non-drag comparison, keyboard controls, saved footprints and offline evidence export exercised in controller rehearsal."
+    },
+    {
+      "id": "ATLAS-02",
+      "priority": "P0",
+      "task": "Integrate scoped evidence without mixing study areas or dates",
+      "status": "IMPLEMENTED",
+      "dependency": "Existing source manifests and native local APIs",
+      "acceptance": "Bound Bangladesh hypotheses and optical references, Nepal coherence pairs, Kathmandu dated context and area comparisons; local native point and polygon responses checked."
+    },
+    {
+      "id": "ATLAS-03",
+      "priority": "P1",
+      "task": "Review portable case with intended users",
+      "status": "WAITING_USER_STUDY",
+      "dependency": "Real participants and independent local labels",
+      "acceptance": "Measure task completion, interpretation errors, evidence handoff and reproducibility; retain contradictory findings."
     }
   ],
   "next_scientific_task": "SCI-02 / SCI-03 when compatible GUNW is supplied; independent corroboration remains REF-01",

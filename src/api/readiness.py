@@ -58,6 +58,14 @@ def readiness(root):
                 if case.get('record_version'):
                     for name in ['calendar.json','dualpol-v1/manifest.json','dualpol-v1/sensitivity.json','context-v2/manifest.json','evidence-v2/manifest.json','references-v1/manifest.json']:
                         if not (record/name).is_file():missing.append(str((record/name).relative_to(root)))
+                    supplement=record/'coherence-v1/manifest.json'
+                    if supplement.is_file():
+                        for value in json.loads(supplement.read_text())['asset_sha256']:
+                            asset=root/'web/public'/value.lstrip('/')
+                            if not asset.resolve().is_relative_to(record.resolve()):
+                                invalid.append(str(supplement.relative_to(root)))
+                            elif not asset.is_file():
+                                missing.append(str(asset.relative_to(root)))
         except (ValueError,KeyError,TypeError):invalid.append(str(registry.relative_to(root)))
     expanded=root/'web/public/cases/expanded-v1.json'
     if not expanded.is_file():missing.append(str(expanded.relative_to(root)))

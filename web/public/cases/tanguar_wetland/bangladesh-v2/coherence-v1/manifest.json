@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "case_id": "tanguar_wetland",
+  "radar_manifest_sha256": "84e914d7cb8e9220b2c81a54d403992bbe8739b10fe31803272307142e1dcd7b",
+  "interferometry": [
+    {
+      "identification": {
+        "granuleId": "NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001",
+        "productType": "GUNW",
+        "productLevel": "L2",
+        "productVersion": "1.0.11",
+        "compositeReleaseId": "P05023",
+        "trackNumber": 69,
+        "frameNumber": 14,
+        "orbitPassDirection": "Ascending",
+        "lookDirection": "Left",
+        "referenceZeroDopplerStartTime": "2026-09-22T23:21:32.000000000",
+        "secondaryZeroDopplerStartTime": "2026-10-04T23:21:32.000000000",
+        "referenceHasInputDataException": 0,
+        "secondaryHasInputDataException": 0
+      },
+      "timestamps": [
+        "2026-09-22T23:21:32Z",
+        "2026-10-04T23:21:32Z"
+      ],
+      "source_slc_granules": [
+        [
+          "NISAR_L1_PR_RSLC_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001.h5"
+        ],
+        [
+          "NISAR_L1_PR_RSLC_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5"
+        ]
+      ],
+      "source_file": "database/extra datasets/jamuna-ground-motion/NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 2306867200,
+      "dem_source": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+      "water_mask_source": "Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.",
+      "phase_corrections": "Source ionosphere and external correction metadata retained. Not applied by this extension. No LOS displacement published.",
+      "source_policy": "NASA\u2013ISRO, JPL / ASF DAAC; declared DEM ESA/Copernicus, water mask JRC/Google, ESA, OpenStreetMap and NASA MEaSUREs. No Chinese provider identified in these declared inputs.",
+      "pair_id": "gunw_20261004",
+      "source_sha256": "7be182ca6169184388b42968bf741b4b5c5eceb0afdb2aca20933f4eef76239e",
+      "source_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+      "source_concept_id": "G4345936173-ASF",
+      "layers": {
+        "coherence20": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence20.png",
+        "coherence80": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence80.png"
+      },
+      "rasters": {
+        "coherence20": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence20.tif",
+        "mask20": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_mask20.tif",
+        "coherence_valid20": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence_valid20.tif",
+        "coherence80": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence80.tif",
+        "mask80": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_mask80.tif",
+        "coherence_valid80": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence_valid80.tif"
+      },
+      "grids": {
+        "20": {
+          "shape": [
+            800,
+            900
+          ],
+          "affine": [
+            20.0,
+            0.0,
+            297380.0,
+            0.0,
+            -20.0,
+            2785400.0
+          ],
+          "crs": "EPSG:32646",
+          "native_spacing_m": 20,
+          "bounds": [
+            297380.0,
+            2769400.0,
+            315380.0,
+            2785400.0
+          ],
+          "source_window": [
+            6134,
+            11881,
+            800,
+            900
+          ]
+        },
+        "80": {
+          "shape": [
+            201,
+            226
+          ],
+          "affine": [
+            80.0,
+            0.0,
+            297360.0,
+            0.0,
+            -80.0,
+            2785440.0
+          ],
+          "crs": "EPSG:32646",
+          "native_spacing_m": 80,
+          "bounds": [
+            297360.0,
+            2769360.0,
+            315440.0,
+            2785440.0
+          ],
+          "source_window": [
+            1533,
+            2970,
+            201,
+            226
+          ]
+        }
+      },
+      "statistics": {
+        "20": {
+          "valid_pixels": 720000,
+          "total_pixels": 720000,
+          "mean_coherence": 0.22221611880982786,
+          "median_coherence": 0.2051623910665512
+        },
+        "80": {
+          "valid_pixels": 45426,
+          "total_pixels": 45426,
+          "mean_coherence": 0.12120510650168981,
+          "median_coherence": 0.08967664837837219
+        }
+      },
+      "phase_assessable_pixels": 0,
+      "connected_component_labels": []
+    },
+    {
+      "identification": {
+        "granuleId": "NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001",
+        "productType": "GUNW",
+        "productLevel": "L2",
+        "productVersion": "1.0.11",
+        "compositeReleaseId": "P05023",
+        "trackNumber": 69,
+        "frameNumber": 14,
+        "orbitPassDirection": "Ascending",
+        "lookDirection": "Left",
+        "referenceZeroDopplerStartTime": "2026-10-04T23:21:32.000000000",
+        "secondaryZeroDopplerStartTime": "2026-10-16T23:21:32.000000000",
+        "referenceHasInputDataException": 0,
+        "secondaryHasInputDataException": 0
+      },
+      "timestamps": [
+        "2026-10-04T23:21:32Z",
+        "2026-10-16T23:21:32Z"
+      ],
+      "source_slc_granules": [
+        [
+          "NISAR_L1_PR_RSLC_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5"
+        ],
+        [
+          "NISAR_L1_PR_RSLC_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001.h5"
+        ]
+      ],
+      "source_file": "database/extra datasets/jamuna-ground-motion/NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 2311061504,
+      "dem_source": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+      "water_mask_source": "Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.",
+      "phase_corrections": "Source ionosphere and external correction metadata retained. Not applied by this extension. No LOS displacement published.",
+      "source_policy": "NASA\u2013ISRO, JPL / ASF DAAC; declared DEM ESA/Copernicus, water mask JRC/Google, ESA, OpenStreetMap and NASA MEaSUREs. No Chinese provider identified in these declared inputs.",
+      "pair_id": "gunw_20261016",
+      "source_sha256": "e9b2002b604719ce2658f0d469b3883821caef8b6b506f22844ee3c2e39c2b2b",
+      "source_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001.h5",
+      "source_concept_id": "G4376481984-ASF",
+      "layers": {
+        "coherence20": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence20.png",
+        "coherence80": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence80.png"
+      },
+      "rasters": {
+        "coherence20": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence20.tif",
+        "mask20": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_mask20.tif",
+        "coherence_valid20": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence_valid20.tif",
+        "coherence80": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence80.tif",
+        "mask80": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_mask80.tif",
+        "coherence_valid80": "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence_valid80.tif"
+      },
+      "grids": {
+        "20": {
+          "shape": [
+            800,
+            900
+          ],
+          "affine": [
+            20.0,
+            0.0,
+            297380.0,
+            0.0,
+            -20.0,
+            2785400.0
+          ],
+          "crs": "EPSG:32646",
+          "native_spacing_m": 20,
+          "bounds": [
+            297380.0,
+            2769400.0,
+            315380.0,
+            2785400.0
+          ],
+          "source_window": [
+            6134,
+            11881,
+            800,
+            900
+          ]
+        },
+        "80": {
+          "shape": [
+            201,
+            226
+          ],
+          "affine": [
+            80.0,
+            0.0,
+            297360.0,
+            0.0,
+            -80.0,
+            2785440.0
+          ],
+          "crs": "EPSG:32646",
+          "native_spacing_m": 80,
+          "bounds": [
+            297360.0,
+            2769360.0,
+            315440.0,
+            2785440.0
+          ],
+          "source_window": [
+            1533,
+            2970,
+            201,
+            226
+          ]
+        }
+      },
+      "statistics": {
+        "20": {
+          "valid_pixels": 720000,
+          "total_pixels": 720000,
+          "mean_coherence": 0.23675761489414404,
+          "median_coherence": 0.20884281396865845
+        },
+        "80": {
+          "valid_pixels": 45426,
+          "total_pixels": 45426,
+          "mean_coherence": 0.1431354540365969,
+          "median_coherence": 0.09447488188743591
+        }
+      },
+      "phase_assessable_pixels": 2364,
+      "connected_component_labels": [
+        1
+      ]
+    }
+  ],
+  "asset_sha256": {
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence20.png": "1f63ae31aabda1b3a9ba053b857ef098b58c3b4ffc265c7170658bee24c52092",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence80.png": "6ca857bf695f2adae258e72ea156dfbba3f6f60500efdba56b99bad915c67052",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence20.tif": "50a1330dfe032669d3b65d7aae451d181e60928d2fa4c533949d7995fdca8fb5",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_mask20.tif": "445fd40826c2ad9478f8afe5f62fbb5ef585c7e7e9232d6d4560603374cff84c",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence_valid20.tif": "be226e3a4c1a0c9aa123e52441a92aa64e6fa597ae614f30f18ef96a6742dc2e",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence80.tif": "dbfc3ff37ee0017fdc252112a7d069431c39b0c7dee82c693d6c3d6e07d40bb4",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_mask80.tif": "e5ca5981419fddfb34d5d3bba565e1ca14d86a84314159098b66ea1368150489",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261004_coherence_valid80.tif": "1e642ff51e0ab9351ab09ec8d83daf0211006d1a4de4368d407f77d572ff4071",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence20.png": "8946daf489fc03c480c0c68bdccf6ec1cd70a68f084cc565facfe3318fc98633",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence80.png": "555a3827405e0ab9e9b3ba3df855857879988a04daf78b14901561a0e84911ec",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence20.tif": "caaef25fbfdff3b0298984df0b28788486a8eabc966bba137dda22a71fdddadd",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_mask20.tif": "445fd40826c2ad9478f8afe5f62fbb5ef585c7e7e9232d6d4560603374cff84c",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence_valid20.tif": "be226e3a4c1a0c9aa123e52441a92aa64e6fa597ae614f30f18ef96a6742dc2e",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence80.tif": "f4d221a26bafe2e90bfd306f9247d9074053e64b5599cda556eddde84c9fd986",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_mask80.tif": "dc51bd98e9d4f7415c873d6e975c6e1d536884478f2a8c52cf7b9680df204eea",
+    "/cases/tanguar_wetland/bangladesh-v2/coherence-v1/gunw_20261016_coherence_valid80.tif": "1e642ff51e0ab9351ab09ec8d83daf0211006d1a4de4368d407f77d572ff4071"
+  }
+}

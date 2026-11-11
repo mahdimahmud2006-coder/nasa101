@@ -20,10 +20,9 @@ test('trace records elapsed dates, reference and outage without an invented Augu
 test('playback offers available measurements only, including pair-based coherence',()=>{
  assert.equal(playbackIndices(m,'hh').length,10);assert.deepEqual(playbackIndices(m,'coherence20'),[5,6]);assert.deepEqual(playbackIndices(m,'coherence80'),[5,6]);assert.equal(playbackIndices(m,'hh_successive')[0],1);assert.deepEqual(playbackIndices(m,'missing'),[]);
 });
-test('new coherence status supersedes historical gate only for accepted cases',()=>{
- const gate={expanded_cases:[{case_id:'nepal_surface',coherence_pairs:2}],reason:'old gate',checks_remaining:['headers'],records:[]};
- assert.match(interferometryHTML(gate,'nepal_surface'),/MEASURED COHERENCE/);
- assert.match(interferometryHTML(gate,'jamuna_river'),/GATE NOT OPEN/);
+test('a coherence link is offered only for an available record',()=>{
+ assert.match(interferometryHTML([],{coherence_pairs:2},'nepal_surface'),/MEASURED COHERENCE/);
+ assert.equal(interferometryHTML([],null,'jamuna_river'),'');
 });
 test('shared view permits only actual supported case identifiers',()=>{
  assert.equal(readExpandedView('#case=../../secret').case,'nepal_surface');

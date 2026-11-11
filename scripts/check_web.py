@@ -30,6 +30,9 @@ def check(root=ROOT):
             assert not asset.startswith(('http:','https:','//')),'Runtime external asset: '+asset
             assert (root/'web'/asset.lstrip('/')).is_file(),'Missing script/CSS: '+asset
         refs=set(re.findall(r"\$\('([^']+)'\)",(root/'web'/script).read_text()))
+        if name=='index':
+            atlas_refs={ 'at-'+key for mod in (root/'web').glob('atlas*.mjs') for key in re.findall(r"\$\('([^']+)'\)",mod.read_text()) }
+            refs.update(atlas_refs)
         assert refs.issubset(page.ids),'Unknown page IDs: '+str(refs-set(page.ids))
         report[name]={'unique_ids':len(page.ids),'javascript_literal_ids_resolve':len(refs),'balanced_html':True,'all_scripts_css_local':True}
     for path in (root/'web').glob('*.css'):

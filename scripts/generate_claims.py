@@ -1,4 +1,4 @@
-"""Generate README, app and script claims from the YAML 1.2 JSON-subset ledger."""
+"""Generate README and application claims from the YAML 1.2 JSON-subset ledger."""
 import argparse,re,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
@@ -30,7 +30,6 @@ def generate(version=None,check=False):
         public=ROOT/f'web/public/cases/{version}.json'
         if public.exists():raise FileExistsError('Choose a new claim snapshot version')
         readme.write_text(expected);save(public,{'schema_version':1,'ledger_sha256':sha(ROOT/'claims/claims.yaml'),'claims':ledger['claims']})
-        path=ROOT/f'docs/VIDEO_CLAIMS_{version}.md';path.write_text('# Presentation claim checklist\n\n'+block(ledger)+'\n\nUse only these status-tagged claims. All numeric result statements must match the ledger.\n')
     return {'status':'CLAIMS_MATCH','claims':len(ledger['claims']),'version':version}
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--version',default=None);parser.add_argument('--check',action='store_true');a=parser.parse_args();print(generate(a.version,a.check))

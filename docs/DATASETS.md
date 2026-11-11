@@ -13,7 +13,7 @@ Primary dataset: **NASA–ISRO NISAR Provisional Geocoded Polarimetric Covarianc
 | sept12.h5 | 2026-09-12T23:39:18 | 1.0.11 | P05023 | Yes |
 | sept12(1).h5 | 2026-09-12T23:39:18 | 1.0.12 | X05026 | No |
 
-The archive `aug19.zip` is retained without extraction; its already available HDF5 contents are audited. Local filenames are preserved, while original granule identity comes from the file's own `identification/granuleId`.
+The supplied archive `aug19.zip` contained a byte-for-byte copy of the retained and audited `aug19.h5`. Local filenames are preserved, while original granule identity comes from the file's own `identification/granuleId`.
 
 Selected granule IDs:
 

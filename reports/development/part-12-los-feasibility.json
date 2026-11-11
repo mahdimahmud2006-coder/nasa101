@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "status": "no_go",
+  "cases": {
+    "jamuna_river": {
+      "manifestSha256": "445b115a7906100a5e2a469954934439c19e529faf87ab046a99ae82bda81540",
+      "pairs": {
+        "gunw_20261004": {
+          "sourceId": "NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001",
+          "frequencyHz": 1239000000.0,
+          "wavelengthM": 0.2419632429378531,
+          "postingM": 80,
+          "phaseUnits": "radians",
+          "phaseAssessablePixels": 27644,
+          "connectedComponentLabels": [
+            1
+          ],
+          "temporalBaselineDays": 12,
+          "sampledPerpendicularBaselineM": 35.039337158203125,
+          "baselineRangeM": [
+            34.976783752441406,
+            35.09834289550781
+          ],
+          "baselineSampleCount": 1600,
+          "baselineSample": [
+            166750.0,
+            2712250.0,
+            0.0
+          ],
+          "geocodingFlags": {
+            "azimuthIonosphericCorrectionApplied": "True",
+            "hydrostaticTroposphericCorrectionApplied": "True",
+            "rangeIonosphericCorrectionApplied": "True",
+            "wetTroposphericCorrectionApplied": "True"
+          },
+          "availablePhaseLayers": [
+            "unwrappedPhase",
+            "connectedComponents",
+            "ionospherePhaseScreen",
+            "ionospherePhaseScreenUncertainty"
+          ],
+          "correctionLUTs": [
+            "hydrostaticTroposphericPhaseScreen",
+            "slantRangeSolidEarthTidesPhase",
+            "wetTroposphericPhaseScreen"
+          ],
+          "geometryLUTs": [
+            "incidenceAngle",
+            "losUnitVectorX",
+            "losUnitVectorY"
+          ]
+        },
+        "gunw_20261016": {
+          "sourceId": "NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001",
+          "frequencyHz": 1239000000.0,
+          "wavelengthM": 0.2419632429378531,
+          "postingM": 80,
+          "phaseUnits": "radians",
+          "phaseAssessablePixels": 29322,
+          "connectedComponentLabels": [
+            1
+          ],
+          "temporalBaselineDays": 12,
+          "sampledPerpendicularBaselineM": 31.519929885864258,
+          "baselineRangeM": [
+            31.327333450317383,
+            31.71036148071289
+          ],
+          "baselineSampleCount": 1600,
+          "baselineSample": [
+            166750.0,
+            2712250.0,
+            0.0
+          ],
+          "geocodingFlags": {
+            "azimuthIonosphericCorrectionApplied": "True",
+            "hydrostaticTroposphericCorrectionApplied": "True",
+            "rangeIonosphericCorrectionApplied": "True",
+            "wetTroposphericCorrectionApplied": "True"
+          },
+          "availablePhaseLayers": [
+            "unwrappedPhase",
+            "connectedComponents",
+            "ionospherePhaseScreen",
+            "ionospherePhaseScreenUncertainty"
+          ],
+          "correctionLUTs": [
+            "hydrostaticTroposphericPhaseScreen",
+            "slantRangeSolidEarthTidesPhase",
+            "wetTroposphericPhaseScreen"
+          ],
+          "geometryLUTs": [
+            "incidenceAngle",
+            "losUnitVectorX",
+            "losUnitVectorY"
+          ]
+        }
+      }
+    },
+    "tanguar_wetland": {
+      "manifestSha256": "84e914d7cb8e9220b2c81a54d403992bbe8739b10fe31803272307142e1dcd7b",
+      "pairs": {
+        "gunw_20261004": {
+          "sourceId": "NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001",
+          "frequencyHz": 1239000000.0,
+          "wavelengthM": 0.2419632429378531,
+          "postingM": 80,
+          "phaseUnits": "radians",
+          "phaseAssessablePixels": 0,
+          "connectedComponentLabels": [],
+          "temporalBaselineDays": 12,
+          "sampledPerpendicularBaselineM": 34.92714309692383,
+          "baselineRangeM": [
+            34.88083267211914,
+            34.967220306396484
+          ],
+          "baselineSampleCount": 1152,
+          "baselineSample": [
+            306250.0,
+            2777250.0,
+            0.0
+          ],
+          "geocodingFlags": {
+            "azimuthIonosphericCorrectionApplied": "True",
+            "hydrostaticTroposphericCorrectionApplied": "True",
+            "rangeIonosphericCorrectionApplied": "True",
+            "wetTroposphericCorrectionApplied": "True"
+          },
+          "availablePhaseLayers": [
+            "unwrappedPhase",
+            "connectedComponents",
+            "ionospherePhaseScreen",
+            "ionospherePhaseScreenUncertainty"
+          ],
+          "correctionLUTs": [
+            "hydrostaticTroposphericPhaseScreen",
+            "slantRangeSolidEarthTidesPhase",
+            "wetTroposphericPhaseScreen"
+          ],
+          "geometryLUTs": [
+            "incidenceAngle",
+            "losUnitVectorX",
+            "losUnitVectorY"
+          ]
+        },
+        "gunw_20261016": {
+          "sourceId": "NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001",
+          "frequencyHz": 1239000000.0,
+          "wavelengthM": 0.2419632429378531,
+          "postingM": 80,
+          "phaseUnits": "radians",
+          "phaseAssessablePixels": 2364,
+          "connectedComponentLabels": [
+            1
+          ],
+          "temporalBaselineDays": 12,
+          "sampledPerpendicularBaselineM": 33.84354019165039,
+          "baselineRangeM": [
+            33.67753982543945,
+            34.01941680908203
+          ],
+          "baselineSampleCount": 1152,
+          "baselineSample": [
+            306250.0,
+            2777250.0,
+            0.0
+          ],
+          "geocodingFlags": {
+            "azimuthIonosphericCorrectionApplied": "True",
+            "hydrostaticTroposphericCorrectionApplied": "True",
+            "rangeIonosphericCorrectionApplied": "True",
+            "wetTroposphericCorrectionApplied": "True"
+          },
+          "availablePhaseLayers": [
+            "unwrappedPhase",
+            "connectedComponents",
+            "ionospherePhaseScreen",
+            "ionospherePhaseScreenUncertainty"
+          ],
+          "correctionLUTs": [
+            "hydrostaticTroposphericPhaseScreen",
+            "slantRangeSolidEarthTidesPhase",
+            "wetTroposphericPhaseScreen"
+          ],
+          "geometryLUTs": [
+            "incidenceAngle",
+            "losUnitVectorX",
+            "losUnitVectorY"
+          ]
+        }
+      }
+    },
+    "nepal_surface": {
+      "manifestSha256": "10b4ee141704d32acb29a586c6317582d93ef0fc23b3903d3892079cb0232320",
+      "pairs": {
+        "pair_0": {
+          "sourceId": "NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001",
+          "frequencyHz": 1239000000.0,
+          "wavelengthM": 0.2419632429378531,
+          "postingM": 80,
+          "phaseUnits": "radians",
+          "phaseAssessablePixels": 85867,
+          "connectedComponentLabels": [
+            1
+          ],
+          "temporalBaselineDays": 12,
+          "sampledPerpendicularBaselineM": null,
+          "baselineRangeM": [
+            18.89986228942871,
+            19.14933204650879
+          ],
+          "baselineSampleCount": 929,
+          "baselineSample": [
+            335250.0,
+            3076250.0,
+            0.0
+          ],
+          "geocodingFlags": {
+            "azimuthIonosphericCorrectionApplied": "True",
+            "hydrostaticTroposphericCorrectionApplied": "True",
+            "rangeIonosphericCorrectionApplied": "True",
+            "wetTroposphericCorrectionApplied": "True"
+          },
+          "availablePhaseLayers": [
+            "unwrappedPhase",
+            "connectedComponents",
+            "ionospherePhaseScreen",
+            "ionospherePhaseScreenUncertainty"
+          ],
+          "correctionLUTs": [
+            "hydrostaticTroposphericPhaseScreen",
+            "slantRangeSolidEarthTidesPhase",
+            "wetTroposphericPhaseScreen"
+          ],
+          "geometryLUTs": [
+            "incidenceAngle",
+            "losUnitVectorX",
+            "losUnitVectorY"
+          ]
+        },
+        "pair_1": {
+          "sourceId": "NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001",
+          "frequencyHz": 1239000000.0,
+          "wavelengthM": 0.2419632429378531,
+          "postingM": 80,
+          "phaseUnits": "radians",
+          "phaseAssessablePixels": 85011,
+          "connectedComponentLabels": [
+            1
+          ],
+          "temporalBaselineDays": 12,
+          "sampledPerpendicularBaselineM": null,
+          "baselineRangeM": [
+            -58.87690353393555,
+            -58.04991149902344
+          ],
+          "baselineSampleCount": 780,
+          "baselineSample": [
+            335250.0,
+            3076250.0,
+            0.0
+          ],
+          "geocodingFlags": {
+            "azimuthIonosphericCorrectionApplied": "True",
+            "hydrostaticTroposphericCorrectionApplied": "True",
+            "rangeIonosphericCorrectionApplied": "True",
+            "wetTroposphericCorrectionApplied": "True"
+          },
+          "availablePhaseLayers": [
+            "unwrappedPhase",
+            "connectedComponents",
+            "ionospherePhaseScreen",
+            "ionospherePhaseScreenUncertainty"
+          ],
+          "correctionLUTs": [
+            "hydrostaticTroposphericPhaseScreen",
+            "slantRangeSolidEarthTidesPhase",
+            "wetTroposphericPhaseScreen"
+          ],
+          "geometryLUTs": [
+            "incidenceAngle",
+            "losUnitVectorX",
+            "losUnitVectorY"
+          ]
+        }
+      }
+    },
+    "nepal_impact_corridor": {
+      "manifestSha256": "54fc790953ea667c106e48e95c04025496eec83298a8949e48e41462ffeca347",
+      "pairs": {
+        "pair_0": {
+          "sourceId": "NISAR_L2_PR_GUNW_028_098_A_016_029_4000_SH_20260819T233918_20260819T233953_20260831T233918_20260831T233952_P05023_N_F_J_001",
+          "frequencyHz": 1239000000.0,
+          "wavelengthM": 0.2419632429378531,
+          "postingM": 80,
+          "phaseUnits": "radians",
+          "phaseAssessablePixels": 88539,
+          "connectedComponentLabels": [
+            1
+          ],
+          "temporalBaselineDays": 12,
+          "sampledPerpendicularBaselineM": 18.66080665588379,
+          "baselineRangeM": [
+            18.427967071533203,
+            18.885345458984375
+          ],
+          "baselineSampleCount": 2304,
+          "baselineSample": [
+            335250.0,
+            3114250.0,
+            0.0
+          ],
+          "geocodingFlags": {
+            "azimuthIonosphericCorrectionApplied": "True",
+            "hydrostaticTroposphericCorrectionApplied": "True",
+            "rangeIonosphericCorrectionApplied": "True",
+            "wetTroposphericCorrectionApplied": "True"
+          },
+          "availablePhaseLayers": [
+            "unwrappedPhase",
+            "connectedComponents",
+            "ionospherePhaseScreen",
+            "ionospherePhaseScreenUncertainty"
+          ],
+          "correctionLUTs": [
+            "hydrostaticTroposphericPhaseScreen",
+            "slantRangeSolidEarthTidesPhase",
+            "wetTroposphericPhaseScreen"
+          ],
+          "geometryLUTs": [
+            "incidenceAngle",
+            "losUnitVectorX",
+            "losUnitVectorY"
+          ]
+        },
+        "pair_1": {
+          "sourceId": "NISAR_L2_PR_GUNW_029_098_A_016_030_4000_SH_20260831T233918_20260831T233952_20260912T233918_20260912T233952_P05023_N_F_J_001",
+          "frequencyHz": 1239000000.0,
+          "wavelengthM": 0.2419632429378531,
+          "postingM": 80,
+          "phaseUnits": "radians",
+          "phaseAssessablePixels": 85799,
+          "connectedComponentLabels": [
+            1
+          ],
+          "temporalBaselineDays": 12,
+          "sampledPerpendicularBaselineM": -58.838531494140625,
+          "baselineRangeM": [
+            -59.3289680480957,
+            -58.34158706665039
+          ],
+          "baselineSampleCount": 2304,
+          "baselineSample": [
+            335250.0,
+            3114250.0,
+            0.0
+          ],
+          "geocodingFlags": {
+            "azimuthIonosphericCorrectionApplied": "True",
+            "hydrostaticTroposphericCorrectionApplied": "True",
+            "rangeIonosphericCorrectionApplied": "True",
+            "wetTroposphericCorrectionApplied": "True"
+          },
+          "availablePhaseLayers": [
+            "unwrappedPhase",
+            "connectedComponents",
+            "ionospherePhaseScreen",
+            "ionospherePhaseScreenUncertainty"
+          ],
+          "correctionLUTs": [
+            "hydrostaticTroposphericPhaseScreen",
+            "slantRangeSolidEarthTidesPhase",
+            "wetTroposphericPhaseScreen"
+          ],
+          "geometryLUTs": [
+            "incidenceAngle",
+            "losUnitVectorX",
+            "losUnitVectorY"
+          ]
+        }
+      }
+    }
+  },
+  "phaseSign": "Release-specific phase-to-LOS sign and projection convention need independent verification.",
+  "reference": "Stable reference and control points in common reliable components have not been established.",
+  "corrections": "Geocoding flags describe source processing. ASF documents that external phase screens are not removed from interferometric data. Product-specific phase handling, including the separate ionosphere layer, needs verification before applying corrections or estimating residual uncertainty.",
+  "benchmark": "No admitted time-matched GNSS or other independent motion benchmark.",
+  "requiredChecks": [
+    "Resolve correction application and sign against the product version.",
+    "Demonstrate stable-reference residuals, component consistency and uncertainty.",
+    "Compare against independent motion projected into the same LOS."
+  ]
+}

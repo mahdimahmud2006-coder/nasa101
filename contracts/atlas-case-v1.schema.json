@@ -1,0 +1,371 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "caseId",
+    "recordVersion",
+    "manifestSha256",
+    "gridId",
+    "evidenceVersion",
+    "grid",
+    "referenceId",
+    "observations",
+    "pairs",
+    "footprints",
+    "context",
+    "capabilities"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "caseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recordVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manifestSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "gridId": {
+      "type": "string",
+      "pattern": "^grid:[0-9a-f]{64}$"
+    },
+    "evidenceVersion": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "grid": {
+      "type": "object",
+      "required": [
+        "id",
+        "crs",
+        "shape",
+        "affine"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^grid:[0-9a-f]{64}$"
+        },
+        "crs": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shape": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "affine": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "referenceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "utc",
+          "sourceId"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "utc": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$"
+          },
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "pairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "firstId",
+          "secondId",
+          "startUtc",
+          "endUtc",
+          "sourceId",
+          "grid"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "firstId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "secondId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "startUtc": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$"
+          },
+          "endUtc": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$"
+          },
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "grid": {
+            "type": "object",
+            "required": [
+              "id",
+              "crs",
+              "shape",
+              "affine"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^grid:[0-9a-f]{64}$"
+              },
+              "crs": {
+                "type": "string",
+                "minLength": 1
+              },
+              "shape": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "affine": {
+                "type": "array",
+                "minItems": 6,
+                "maxItems": 6,
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "footprints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "ordinal",
+          "label",
+          "gridId",
+          "maskSource",
+          "profileManifestSha256",
+          "sampleRule"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ordinal": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "gridId": {
+            "type": "string",
+            "pattern": "^grid:[0-9a-f]{64}$"
+          },
+          "maskSource": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "profileManifestSha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "sampleRule": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "context": {
+      "type": "object",
+      "required": [
+        "thermal",
+        "scenarios",
+        "rain",
+        "terrainManifestSha256"
+      ],
+      "properties": {
+        "thermal": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "utc"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "utc": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "Z$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "observationId"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "observationId": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "rain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "observationId",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "observationId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "provider": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "terrainManifestSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "layers",
+        "localFootprints",
+        "portableFootprints",
+        "lenses"
+      ],
+      "properties": {
+        "layers": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "hh",
+              "hv",
+              "fraction",
+              "coherence"
+            ]
+          }
+        },
+        "localFootprints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "portableFootprints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "lenses": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

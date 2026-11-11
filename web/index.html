@@ -1,10 +1,352 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="description" content="TerraPulse turns NISAR radar observations into surface-change investigations across Bangladesh and Nepal. Explore rivers, wetlands and persistent disturbances with traceable evidence."><title>TerraPulse · Read the changing Earth</title><link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/workspace-shell.css"><script type="module" src="/home.mjs"></script><script type="module" src="/workspace-shell.mjs"></script></head>
+<head>
+<meta charset="utf-8">
+<script>
+  if (location.protocol === 'file:') {
+    document.documentElement.dataset.localFile = 'true';
+    document.addEventListener('DOMContentLoaded', () => {
+      const lab = new URLSearchParams(location.search).get('lab');
+      if (['radar', 'bank', 'orbit'].includes(lab)) {
+        const launch = document.getElementById('file-launch-link');
+        const address = new URL(launch.href);
+        address.searchParams.set('lab', lab);
+        launch.href = address.href;
+      }
+    });
+  }
+</script>
+<style>
+  html[data-local-file] body { margin: 0; background: #101e27; color: #eff7f8; font: 1rem/1.55 system-ui, sans-serif; }
+  html[data-local-file] body > :not(#file-launch) { display: none !important; }
+  html[data-local-file] #file-launch { display: block !important; max-width: 40rem; margin: clamp(1rem, 8vh, 5rem) auto; padding: 1.5rem; }
+  #file-launch a { color: #87e4d4; }
+  #file-launch pre { padding: .75rem 1rem; border: 1px solid #45616d; border-radius: .4rem; overflow: auto; }
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="description" content="TerraPulse turns NISAR radar observations into surface-change investigations across Bangladesh and Nepal. Explore rivers, wetlands and persistent disturbances with traceable evidence."><title>TerraPulse · Read the changing Earth</title><link rel="stylesheet" href="/home.css"><link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/fonts.css"><link rel="stylesheet" href="/workspace-shell.css"><link rel="stylesheet" href="/atlas.css"><link rel="stylesheet" href="/atlas-ui.css"><script type="module" src="/atlas.mjs"></script><script type="module" src="/home.mjs"></script><script type="module" src="/workspace-shell.mjs"></script></head>
 <body class="home-page"><a class="tp-skip" href="#main-content">Skip to content</a>
-<nav id="workspace-rail" class="tp-rail" aria-label="TerraPulse navigation"><a class="tp-wordmark" href="/" aria-label="TerraPulse home"><span aria-hidden="true">◉</span> TerraPulse</a><div class="tp-primary"><a data-primary="home" href="/">Overview</a><a data-primary="bangladesh" href="/#bangladesh">Bangladesh</a><a data-primary="nepal" href="/#nepal">Nepal</a><a data-primary="guide" href="/guide.html">Field guide</a></div><span class="tp-local"><i></i> LOCAL OBSERVATIONS</span></nav><nav id="workspace-sections" class="tp-sections" aria-label="Country workspace sections" hidden></nav>
+<section id="file-launch" hidden>
+  <h1>Open TerraPulse in your browser</h1>
+  <p>You opened the source HTML as a file. The full Atlas loads its styles, maps and lab data from the local TerraPulse server.</p>
+  <p><a id="file-launch-link" href="http://127.0.0.1:8023/#atlas">Open the local Atlas</a></p>
+  <p>If the address does not load, run this in a terminal from the TerraPulse project folder, then open the link above.</p>
+  <pre><code>./run.sh --port 8023</code></pre>
+  <p>For saved observations without a server, <a href="../output/atlas/TerraPulse.html">open the generated offline Atlas</a>. The interactive labs are available in the server edition.</p>
+</section>
 <main id="main-content">
-<section class="home-hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span class="signal-dot"></span> EARTH OBSERVATION / SURFACE INVESTIGATIONS</p><h1 id="hero-title">Earth moves.<br><em>Keep the evidence.</em></h1><p class="hero-lede">A river shifts. A wetland changes. A disturbance lingers. Follow the radar record to see what changed—and what stayed changed.</p><div class="hero-actions"><a class="action primary" href="#bangladesh">Explore Bangladesh <span aria-hidden="true">↗</span></a><a class="action secondary" href="#nepal">Explore Nepal <span aria-hidden="true">↗</span></a></div><div class="hero-facts"><span><strong>NISAR</strong>NASA–ISRO radar</span><span><strong>Two countries</strong>Four study areas</span><span><strong>Traceable</strong>Exportable evidence</span></div></div>
+<!-- atlas:start -->
+<section id="atlas" aria-labelledby="atlas-title" data-ready="loading">
+  <svg class="tp-symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="tp-icon-zoom-out" viewBox="0 0 24 24"><path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-zoom-in" viewBox="0 0 24 24"><path d="M4 12h16M12 4v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-fit" viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4M9 12h6m-3-3v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-fullscreen" viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-wipe" viewBox="0 0 24 24"><path d="M3 12h18M7 8l-4 4 4 4m10-8 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-rotate" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3 6M4 12V6m0 6h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-satellite" viewBox="0 0 24 24"><path d="m10 9 5 5-2 2-5-5zm-2 3-4 4 4 4 4-4m4-8 4-4-4-4-4 4m1 13 3 3m-2-6 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-first" viewBox="0 0 24 24"><path d="M5 5v14m13-13-9 6 9 6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-previous" viewBox="0 0 24 24"><path d="m17 5-11 7 11 7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-next" viewBox="0 0 24 24"><path d="m7 5 11 7-11 7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tp-icon-last" viewBox="0 0 24 24"><path d="M19 5v14M6 6l9 6-9 6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+  <header class="atlas-shell">
+    <a class="tp-skip" id="at-jump-time" href="#at-date-dock">Skip to recorded timeline</a>
+    <a class="tp-skip" id="at-jump-evidence" href="#at-evidence-inspector">Skip to evidence</a>
+    <a class="atlas-brand" href="./" aria-label="TerraPulse home"><span aria-hidden="true">◉</span> TerraPulse</a>
+    <nav class="atlas-primary" aria-label="TerraPulse navigation">
+      <a id="at-observations-tab" href="./">Atlas</a>
+      <!-- labs:only --><a id="at-simulations-tab" href="?view=simulations">Simulations</a><!-- labs:end -->
+      <a id="at-guide-link" href="/guide.html">Field guide</a>
+    </nav>
+    <details class="atlas-more"><summary>More lenses</summary><div>
+      <!-- local:only -->
+      <a href="/investigations.html?country=bangladesh&amp;mode=river">River Memory <small>Jamuna radar recurrence</small></a>
+      <a href="/investigations.html?country=bangladesh&amp;mode=wetland">Wetland Pulse <small>Tanguar radar and optical evidence</small></a>
+      <a href="/investigations.html?country=bangladesh&amp;mode=surface">Bangladesh surface change <small>Fixed-footprint radar comparisons</small></a>
+      <a href="/investigations.html?country=nepal&amp;mode=surface">Nepal investigations <small>Surface change and dossiers</small></a>
+      <a href="/expanded.html">Surface &amp; coherence <small>Observed Nepal pairs</small></a>
+      <a href="/studio.html">Terrain &amp; thermal <small>Elevation, temperature and rainfall</small></a>
+      <a href="/change-lab.html">Change DNA &amp; slopes <small>Persistence and slope context</small></a>
+      <a href="/timeseries.html">Nepal timeline <small>Original recorded series</small></a>
+      <a href="/comparison.html">Radar comparison <small>Original matched HH comparison</small></a>
+      <!-- local:end -->
+      <button id="at-shell-evidence" type="button">Dossiers <small>Reopen and verify an investigation</small></button>
+    </div></details>
+    <details id="at-tour-menu" class="atlas-more atlas-tour-menu"><summary>Tour</summary><div>
+      <button id="at-tour-start" type="button">Start guided story</button>
+      <button id="at-spotlight" type="button">30-second spotlight</button>
+    </div></details>
+    <span class="atlas-edition" id="at-edition"></span>
+  </header>
+  <div class="atlas-body">
+  <header class="atlas-heading">
+    <h1 id="atlas-title">Read a landscape through time.</h1>
+    <p id="at-intro">Compare NISAR radar visits across Bangladesh and Nepal.</p>
+  </header>
+  <div class="atlas-study-row"><div id="at-studies" role="group" aria-label="Study windows">
+    <button type="button" data-study="jamuna_river" aria-pressed="false"><img src="data:image/webp;base64,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" alt="" width="40" height="40"><span><strong>Jamuna</strong><small>Bangladesh · 10 visits</small></span></button>
+    <button type="button" data-study="tanguar_wetland" aria-pressed="false"><img src="data:image/webp;base64,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" alt="" width="40" height="40"><span><strong>Tanguar Haor</strong><small>Bangladesh · 10 visits</small></span></button>
+    <button type="button" data-study="nepal_surface" aria-pressed="false"><img src="data:image/webp;base64,UklGRsgDAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSPYBAAABoCTbdiJJ2v96agFMM2amZogKdPj/vztwSa50qXEUERNAm0HeRrE0tj6qSN+PynBIDHvTxhijBM7kxdKm4x2rEiNYnThMKipUJAKu/5ZxL/EDTHWuUAtdk/86JMTqQQ9e2paSeiFOBvgU68QPX7S5wnDWn4XFlcirhGXiPDCpbBJ4lIXK7E/PqWD+cAA5yYiy9SFAXoABrkUUwH6PIoUWg9aFJwxAHPYJuwBEIj9OgBHsfk4kD99jVek8wm+7RNhi7TAmjOHPuQCvJVE3IgDFYvnDHZZjCUhVzIuU0ygRQpF59wkQQ9m2BRil5xmYnLa9JCaWv1pb5QEcj79HFzxInn7e4W0ppSFlFsaGVSMpsH0COFkTobKsbNFTzb3ponsHpCJTB8KLsu4tlUprTtEcMCcqmm0mTAXzgR5qilyMXYApp8Az0VSxlFFDVsaoVEVXpcu4SodzmVPbRWWbVzFdyurvqq3WxCbFhrUNF7EVsXZSHcCbUFDfA4gtrNVVaXvNzt35V1HdcW0gtKl/w9Wd6IzOPBv6Mc8w8nBAvYgA2AU99EHA5QASgJrTG3OQQPNiVGtgF/LBMtQYmGUcjgLwOKilP7/+lgLGhPjJ1JD2A5fgF1FuDYXDKB2mFS0vQFN0Q7HIewfWRluq0bZdeoMOvSG6839zVlA4IKwBAACQCgCdASpQAFAAPpFInUulpKKhopgKGLASCWVmqVnUOV3jACYv7YqBsFA0jCD9kjo3sX82eOd9BIFpcXbZD+fjzwG+FkNRR09YngzQwbzVnVf1SbB6OcQGMZVbJeAA/sNiOTawnsN74DT/SIOzv/icffnWr85X98q9XmDnPAZF/2nqI7WpmvAsAZUHG8zHjuuErpgc1uZfNWjmRA5tYB/squ05LOehsVTjHTH/M/sQoBJPJ3tZ4gVfxss/IWW5d/6fByILJEGd/CVUukPdBFlCc1oFA+F8R9unlYJljrjEafzK+yz14bXNbywJSTO3L1gWbEf9Gz9SHu+zLbjYaHDcqA0W8rsg2B2PhgrAzraXneCRudJ4TS8bxQFmTXmnpOLEmKpl0iTeGSwIqzEGrxo4F+3odYrp5gsL4NusoEQXG/SDcxnHFZX1ZCjbdDC4TYfLFgY32BhVFGs7I+AbMxFIT7xyereP/z0ERmJ/T0W9ReB5zmAhIF5UDIVM03sbSKvzmdQ7RGogMgbeBs+hf0CHjWE9soTFYSpW24Ur11Hz6AKMp9Y/zhne3AAAAA==" alt="" width="40" height="40"><span><strong>Kathmandu</strong><small>Nepal · 10 visits</small></span></button>
+    <button type="button" data-study="nepal_impact_corridor" aria-pressed="false"><img src="data:image/webp;base64,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" alt="" width="40" height="40"><span><strong>Rasuwa–Nuwakot</strong><small>Nepal · 10 visits</small></span></button>
+  </div><details class="atlas-select-fallback"><summary>Study list</summary><label>Study window<select id="at-case"></select></label></details></div>
+  <!-- labs:only -->
+  <details id="at-tool-gallery" class="atlas-workspace-nav" hidden><summary>Simulation tools <span id="at-active-tool"></span></summary>
+  <nav id="at-simulation-tools" class="atlas-tool-picker" aria-label="Choose a simulation" hidden>
+    <button id="at-launch-surge" aria-pressed="false"><span aria-hidden="true">≋</span><strong>River surge</strong><small>Where could water connect as stage rises?</small><small>Jamuna · Tanguar Haor</small></button>
+    <button id="at-launch-bank" aria-pressed="false"><span aria-hidden="true">↦</span><strong>Bank retreat</strong><small>How far does the scenario extend inland?</small><small>Jamuna</small></button>
+    <button id="at-launch-slope" aria-pressed="false"><span aria-hidden="true">△</span><strong>Slope stability</strong><small>Where does modeled FoS drop below 1?</small><small>Kathmandu · Rasuwa–Nuwakot</small></button>
+    <button id="at-launch-orbit" aria-pressed="false"><span aria-hidden="true">◔</span><strong>Sensor orbit</strong><small>What does the radar look direction hide?</small><small>Kathmandu · Rasuwa–Nuwakot</small></button>
+    <button id="at-launch-radar" aria-pressed="false"><span aria-hidden="true">◎</span><strong>Be the NISAR Sensor</strong><small>How do assumed conditions change the radar return?</small><small>All study windows</small></button>
+  </nav></details>
+  <!-- labs:end -->
+  <p id="at-status" class="tp-visually-hidden" role="status" aria-atomic="true">Loading recorded visits…</p>
+  <div class="atlas-layout" id="at-layout"><article class="atlas-map-card" aria-label="Radar stage">
+    <div class="atlas-stage" id="at-stage">
+      <div class="atlas-map-head"><div id="at-layers" role="group" aria-label="Radar layer"></div><label class="tp-visually-hidden">Radar layer<select id="at-layer" tabindex="-1"></select></label>
+      <button id="at-tools-toggle" type="button" aria-label="Map tools" title="Map tools" aria-expanded="false" aria-controls="at-map-tools">☷</button><div class="atlas-views" id="at-map-tools">
+        <button id="at-zoom-out" aria-label="Zoom out" title="Zoom out"><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-zoom-out"></use></svg></button>
+        <button id="at-zoom-in" aria-label="Zoom in" title="Zoom in"><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-zoom-in"></use></svg></button>
+        <button id="at-zoom-reset" title="Show the entire study window">Fit map</button>
+        <button id="at-mode" aria-pressed="false" title="Switch between plan and 3D terrain">Terrain</button>
+        <button id="at-rotate" hidden aria-label="Rotate terrain 45 degrees" title="Rotate terrain 45°"><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-rotate"></use></svg></button>
+        <button id="at-footprint-tool" title="Inspect a point or polygon">Footprint</button>
+        <button id="at-fullscreen" aria-label="Fullscreen map" title="Fullscreen map" aria-pressed="false"><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-fullscreen"></use></svg></button>
+      </div></div>
+      <div class="atlas-scene-provenance"><span id="at-map-date"></span><span class="atlas-badge atlas-observed">Observed NISAR</span><!-- labs:only --><span class="atlas-badge atlas-modeled" id="at-modeled-badge" hidden>Modeled scenario</span><!-- labs:end --></div>
+      <div class="atlas-map-frame">
+      <p id="at-notice" class="atlas-notice" hidden></p><span id="at-loading" class="atlas-loading" aria-hidden="true">Loading frame</span>
+      <div id="at-map" class="atlas-map" role="region" aria-label="Radar map and footprint preview. Arrow keys move the footprint cursor. Enter selects it." tabindex="0">
+        <canvas id="at-drape" width="1100" height="550" hidden role="img" aria-label="Radar preview on sampled NASADEM terrain"></canvas>
+        <div id="at-plan">
+          <div id="at-reference-stack" class="atlas-radar-pane" hidden><svg id="at-reference-outline" aria-hidden="true"></svg><span id="at-reference-pane-label" class="atlas-pane-label"></span></div>
+          <div id="at-image-stack" class="atlas-radar-pane">
+            <img id="at-current" alt="" fetchpriority="high"><img id="at-reference" alt=""><canvas id="at-sim-map" hidden aria-hidden="true"></canvas>
+            <!-- labs:only --><canvas id="at-orbit-map" hidden aria-hidden="true"></canvas><svg id="at-bank-map" hidden aria-hidden="true"></svg><svg id="at-radar-map" hidden aria-hidden="true"></svg><div id="at-radar-map-key" hidden aria-hidden="true"><span><i id="at-radar-map-model"></i> Model</span><span><i id="at-radar-map-observed"></i> Recorded</span></div><!-- labs:end -->
+            <span id="at-divider" aria-hidden="true" hidden></span><div id="at-wipe-handle" tabindex="0" role="slider" aria-label="Reference share" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" title="Drag to compare. Arrow keys change 1%, Shift + arrows change 10%."><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-wipe"></use></svg></div><svg id="at-overlay" aria-hidden="true"></svg>
+            <span id="at-selected-pane-label" class="atlas-pane-label" hidden></span>
+          </div>
+        </div>
+      </div>
+      <span id="at-map-position" class="tp-visually-hidden" role="status"></span><div id="at-wipe-flags" class="atlas-wipe-flags"><span id="at-wipe-ref"></span><span id="at-wipe-now"></span></div>
+      <div class="atlas-map-key"><span id="at-north" aria-label="Grid north up">↑ N</span><span id="at-scale" class="tp-num"></span><span id="at-outline-key">□ Footprint</span></div>
+      </div>
+    </div>
+    <div class="atlas-map-caption"><p id="at-place"></p><h2 id="at-scene" class="tp-visually-hidden"></h2><p id="at-caption"></p><p id="at-compare-caption" hidden>Both visits show the full study window.</p><span id="at-map-resolution"></span></div><p id="at-frame-status" role="status"></p><div id="at-legend" class="atlas-legend"></div><p id="at-sim-map-caption" hidden></p><!-- labs:only --><p id="at-lab-map-caption" hidden></p><!-- labs:end -->
+    <div id="at-date-dock" class="atlas-date-dock" aria-label="Recorded radar timeline">
+      <div class="atlas-time">
+        <button id="at-first" aria-label="First recorded frame" title="First recorded frame"><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-first"></use></svg></button><button id="at-prev" aria-label="Previous observed visit" title="Previous recorded visit"><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-previous"></use></svg><span>Prev</span></button>
+        <button id="at-play" class="atlas-primary-button" aria-pressed="false">Play visits</button><button id="at-next" aria-label="Next observed visit" title="Next recorded visit"><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-next"></use></svg><span>Next</span></button><button id="at-last" aria-label="Last recorded frame" title="Last recorded frame"><svg class="tp-icon" aria-hidden="true" focusable="false"><use href="#tp-icon-last"></use></svg></button>
+        <label class="atlas-speed">Speed <select id="at-speed" aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label>
+        <label class="atlas-loop"><input id="at-loop" type="checkbox"> Loop</label>
+        <label class="tp-visually-hidden"><span id="at-date-label">Recorded visit</span><select id="at-date" tabindex="-1"></select></label>
+      </div>
+      <div id="at-time-axis" class="atlas-time-axis" role="group" aria-label="Elapsed UTC time across recorded visits"></div>
+      <p id="at-gap-key" class="atlas-gap-key" hidden>Recorded gap · no acquisition</p>
+      <label class="atlas-scrub">Recorded frame <input id="at-scrub" type="range" min="0" max="9" value="9" aria-label="Scrub recorded frames"></label>
+    </div>
+
+    <details class="atlas-wipe-options"><summary>Reference wipe controls</summary><div class="atlas-wipe"><button id="at-less" aria-label="Show ten percent less reference">−10%</button><label>Reference share <output id="at-share"></output><input id="at-split" aria-label="Reference share" type="range" min="0" max="100" step="1" value="50"></label><button id="at-more" aria-label="Show ten percent more reference">+10%</button></div></details>
+
+  </article>
+  <aside id="at-evidence-inspector" class="atlas-inspector" data-sheet="collapsed"><div class="atlas-answer-label"><p class="atlas-tag">Evidence brief</p><button id="at-sheet" type="button" aria-expanded="false">Expand evidence</button></div>  <section id="at-tour-panel" class="atlas-tour" aria-labelledby="at-tour-question" hidden>
+    <div class="atlas-tour-header"><p id="at-tour-step" class="atlas-tag"></p><button id="at-tour-exit" type="button" aria-label="Exit tour" title="Exit tour">×</button></div><h2 id="at-tour-question"></h2><p id="at-tour-answer"></p>
+    <div id="at-tour-visits" hidden>
+      <p id="at-tour-reference"></p>
+      <div id="at-tour-checkpoints" class="atlas-checkpoints" role="group" aria-label="Kathmandu comparison visits"></div>
+    </div>
+    <p id="at-tour-next-check"></p>
+    <div id="at-presenter" class="atlas-presenter" hidden><output id="at-cut-clock" aria-label="Chapter timer"></output><button id="at-cut-stop" type="button" hidden>Stop timed tour</button><button id="at-presenter-export" type="button" hidden>Export investigation ↓</button><span id="at-presenter-status" role="status"></span></div>
+    <div class="atlas-tour-nav" role="group" aria-label="Tour navigation"><button id="at-tour-back">Back</button><button id="at-tour-next" aria-label="Next chapter">Next</button><div id="at-tour-progress" class="atlas-progress" role="group" aria-label="Chapters"></div></div>
+    <label class="atlas-inline atlas-tour-secondary"><input id="at-tour-scroll" type="checkbox"> Change chapters as I scroll through chapter notes</label>
+    <ol id="at-tour-scroll-stops" hidden><li data-tour-chapter="0">Jamuna · recurring signatures in the river corridor.</li><li data-tour-chapter="1">Tanguar · dated wetland signatures.</li><li data-tour-chapter="2">Kathmandu · recent change and the reference.</li><li data-tour-chapter="3">Rasuwa–Nuwakot · observed pair similarity.</li></ol>
+  <details id="at-chapters" class="atlas-chapters"><summary>Guided chapters</summary><div>
+    <button type="button" aria-pressed="false" data-story="river"><strong>Jamuna</strong><small>Where do river signatures recur?</small></button>
+    <button type="button" aria-pressed="false" data-story="wetland"><strong>Tanguar Haor</strong><small>Which visits show a radar-dark signature?</small></button>
+    <button type="button" aria-pressed="false" data-story="persist"><strong>Kathmandu</strong><small>Did the radar difference persist?</small></button>
+    <button type="button" aria-pressed="false" data-story="corridor"><strong>Rasuwa–Nuwakot</strong><small>Where did pair similarity change?</small></button>
+  </div></details>
+  </section>
+<h2 id="at-question"></h2><p id="at-verdict"></p>
+    <div class="atlas-pair">
+      <div><h3>Recent change</h3><p id="at-recent-endpoints" class="atlas-endpoints"></p><div class="atlas-reading"><span class="atlas-channel">HH</span><strong class="tp-num" id="at-recent"></strong></div><small id="at-recent-hv"></small></div>
+      <div><h3>Difference from reference</h3><p id="at-base-endpoints" class="atlas-endpoints"></p><div class="atlas-reading"><span class="atlas-channel">HH</span><strong class="tp-num" id="at-base"></strong></div><small id="at-base-hv"></small></div>
+    </div>
+    <div id="at-support-chips" class="atlas-support-chips" aria-label="Measurement support"></div>
+    <p class="atlas-callout"><strong>What to check next</strong><br><span id="at-next-check"></span><br><button id="at-discovery-open" type="button">Find comparison data</button></p>
+    <div class="atlas-answer-body" id="at-answer-body">
+    <details class="atlas-ladder"><summary>Evidence and verification</summary><ol id="at-evidence-ladder"></ol></details>
+    <div class="atlas-actions atlas-export-actions"><details id="at-export-menu"><summary>Export</summary><div><button id="at-export">Investigation dossier ↓</button><button id="at-field-export" disabled>Field-check GeoJSON ↓</button></div></details><button id="at-reopen-jump">Reopen dossier</button></div>
+    <p id="at-export-toast" class="atlas-toast" role="status"></p>
+    <div id="at-export-card" class="atlas-export-card" hidden><strong>Investigation dossier</strong><p id="at-export-description"></p><button id="at-copy-id">Copy evidence ID</button></div>
+    <div class="atlas-panel-tabs" id="at-panel-tabs" role="tablist" aria-label="Evidence views">
+      <button type="button" role="tab" aria-controls="at-tab-evidence" aria-selected="true" id="at-view-evidence">Evidence</button>
+      <button type="button" role="tab" aria-controls="at-tab-context" aria-selected="false" tabindex="-1" id="at-view-context">Context</button>
+      <button type="button" role="tab" aria-controls="at-tab-quality" aria-selected="false" tabindex="-1" id="at-view-quality">Quality</button>
+      <button type="button" role="tab" aria-controls="at-tab-text" aria-selected="false" tabindex="-1" id="at-view-text">Text</button>
+    </div>
+    <section id="at-tab-evidence" role="tabpanel" aria-labelledby="at-view-evidence" tabindex="0">
+      <div class="atlas-footprint-tools"><label>Lens<select id="at-lens"></select></label><label>Footprint<select id="at-profile"></select></label></div>
+      <details id="at-probe-panel"><summary>Inspect a native footprint</summary><div class="atlas-actions"><button id="at-draw" aria-pressed="false">Draw or edit polygon</button><button id="at-undo" disabled>Undo vertex</button><button id="at-cancel" disabled>Cancel draft</button></div><label>Zero-based row, column; polygon vertices use [[column,row], …]<textarea id="at-coords" rows="2" placeholder="1200, 1200"></textarea></label><button id="at-probe">Measure footprint</button><button id="at-clear">Use saved footprint</button><p id="at-probe-help" role="status"></p><div id="at-native-support"></div></details>
+      <details><summary>Browse measured footprints</summary><label>Order by<select id="at-sort"><option value="reference">Largest HH difference from reference</option><option value="successive">Largest HH difference since previous visit</option></select></label><ul id="at-queue"></ul><small>Ordering uses measured magnitude.</small></details>
+      <details><summary>HH and HV measurements</summary><div id="at-dualpol"></div></details>
+      <button id="at-fit-jump">Compare explanations ↓</button>
+      <section class="atlas-explanations" aria-labelledby="at-fit-title">
+    <p class="atlas-tag">RADAR SIGNATURES / FOLLOW-UP</p>
+    <h2 id="at-fit-title" tabindex="-1">Test possible explanations</h2>
+    <p class="atlas-fit-intro">Compare the selected footprint’s measurements with exploratory screening criteria. Pattern matches point to evidence worth checking.</p>
+    <p id="at-fit-scope" class="atlas-mirror"></p>
+    <p id="at-fit-coverage" class="atlas-mirror"></p>
+    <div id="at-fit" class="atlas-fit-grid"></div>
+    <details id="at-fit-disclosure" class="atlas-fit-disclosure" hidden>
+      <summary id="at-fit-other-label">Other screening results</summary>
+      <div id="at-fit-other" class="atlas-fit-grid"></div>
+    </details>
+  </section>
+    </section>
+    <section id="at-tab-context" role="tabpanel" aria-labelledby="at-view-context" tabindex="0" hidden>
+      <section id="at-discovery" class="atlas-context-panel atlas-discovery" aria-labelledby="at-discovery-title" hidden>
+        <h3 id="at-discovery-title" tabindex="-1">Find comparison data</h3>
+        <div id="at-discovery-content"></div>
+      </section>
+      <section id="at-field-review" class="atlas-context-panel atlas-field-review" hidden></section>
+      <section id="at-pairs" class="atlas-context-panel atlas-field-review" hidden></section><details id="at-context" open><summary>Dated environmental evidence</summary><div id="at-ancillary"></div>
+    <section id="at-scenario-section" class="atlas-context-panel">
+      <h3>Rainfall scenario</h3><p>Explore how the Kathmandu model responds to changes in earlier rainfall and assumed wetness.</p>
+      <label id="at-scenario-presets">Saved scenario<select id="at-scenario-select"></select></label>
+      <form id="at-scenario-form" class="atlas-scenario-form" hidden>
+        <label>Rain multiplier<input id="at-scenario-multiplier" type="number" min="0.5" max="3" step="0.1" value="1.5" required></label>
+        <label>Recent rainfall window<select id="at-scenario-duration"><option value="6">6 h</option><option value="12">12 h</option><option value="24">24 h</option><option value="48" selected>48 h</option><option value="72">72 h</option></select></label>
+        <label>Wetness assumption<select id="at-scenario-wetness"><option value="dry">Dry</option><option value="normal">Normal</option><option value="wet" selected>Wet</option><option value="saturated">Saturated</option></select></label>
+        <button type="submit">Run dated scenario</button>
+      </form>
+      <p id="at-scenario-status" role="status"></p><div id="at-scenario-output"></div>
+    </section></details>
+    </section>
+    <section id="at-tab-quality" role="tabpanel" aria-labelledby="at-view-quality" tabindex="0" hidden>
+      <p id="at-support"></p><p id="at-trace-support" class="atlas-mirror"></p><div id="at-quality"></div>
+      <p id="at-provenance"></p><details><summary>Source identity and study area</summary><p id="at-source"></p><p id="at-area"></p></details>
+    </section>
+    <section id="at-tab-text" role="tabpanel" aria-labelledby="at-view-text" tabindex="0" hidden>
+      <h3>Selected visit as text</h3><p id="at-mirror" class="atlas-mirror"></p><a href="#at-table-view" id="at-text-table">Open visit measurements table ↓</a>
+    </section>
+    <details class="atlas-handoff"><summary>Fieldwork and reproducibility</summary>
+      <p>Take a navigation point and suggested field check into a GIS, or reproduce the Kathmandu comparison in Python.</p>
+      <div class="atlas-actions"><a id="at-notebook" href="/atlas-replay.ipynb" download="terrapulse-atlas-replay.ipynb">Download replay notebook ↓</a></div>
+    </details>
+    <details id="at-dossier-tools"><summary>Reopen a dossier or add review notes</summary>
+      <label>Notes to include in your next export<textarea id="at-dossier-notes" rows="2" maxlength="800"></textarea></label>
+      <label id="at-dossier-drop">Choose or drop a TerraPulse dossier<input id="at-dossier-file" type="file" accept=".json,application/json"></label>
+      <button id="at-dossier-open" disabled>Reopen and verify</button>
+      <p id="at-dossier-status" role="status"></p><p id="at-dossier-summary" class="atlas-dossier-summary"></p>
+    </details><a id="at-native" hidden>Inspect native pixels ↗</a></div></aside>
+  <aside id="at-sim-inspector" class="atlas-inspector atlas-sim-inspector" aria-label="Simulation controls" hidden>
+    <p class="atlas-tag">SCENARIO CONTROL</p><p class="atlas-sim-disclaimer">Scenario assumptions · exploratory model</p>
+    <!-- labs:only --><div class="atlas-sim-actions" aria-label="Scenario settings"><button id="at-sim-preset" type="button">Apply example assumptions</button><button id="at-sim-reset" type="button">Reset inputs</button><button id="at-sim-baseline" type="button" aria-pressed="false">Compare baseline</button><button id="at-sim-explain" type="button">How computed?</button></div>
+    <p id="at-sim-input-note" role="status"></p><!-- labs:end -->
+    <details id="at-simulation" class="atlas-simulation" hidden>
+      <summary><span class="atlas-tag">WHAT IF?</span> <strong id="at-sim-title">Terrain scenarios</strong></summary>
+      <p id="at-sim-scope"></p>
+      <p id="at-sim-status" role="status"></p><button id="at-sim-retry" hidden>Retry loading</button>
+      <div id="at-sim-controls" hidden>
+        <div id="at-sim-stage">
+          <label>Simulate river surge <output id="at-sim-stage-value" for="at-sim-stage-level"></output><input id="at-sim-stage-level" type="range" min="0" max="10" step="0.1" value="2"></label>
+        </div>
+        <div id="at-sim-slope" hidden>
+          <label>Pore-water saturation (m) <output id="at-sim-m-value" for="at-sim-m"></output><input id="at-sim-m" type="range" min="0" max="1" step="0.01" value="0.3"></label>
+          <label><span>Peak ground acceleration (k<sub>h</sub>)</span><output id="at-sim-kh-value" for="at-sim-kh"></output><input id="at-sim-kh" type="range" min="0" max="0.4" step="0.01" value="0"></label>
+          <details><summary>Soil assumptions</summary><div class="atlas-sim-soil">
+            <label>Effective cohesion (kPa)<input id="at-sim-cohesion" type="number" min="0" max="50" step="0.5" value="5"></label>
+            <label>Friction angle (°)<input id="at-sim-friction" type="number" min="10" max="50" step="1" value="32"></label>
+            <label>Soil depth (m)<input id="at-sim-depth" type="number" min="0.2" max="10" step="0.1" value="2"></label>
+            <label>Soil unit weight (kN/m³)<input id="at-sim-weight" type="number" min="12" max="26" step="0.5" value="18"></label>
+          </div></details>
+        </div>
+        <label>Scenario map layer<select id="at-sim-view"></select></label>
+        <p id="at-sim-result" class="atlas-sim-result" role="status"></p>
+        <p id="at-sim-compare"></p><a id="at-sim-source" hidden>UNOSAT source and coverage ↗</a>
+        <div id="at-sim-legend" class="atlas-sim-legend"></div>
+        <details id="at-sim-breach" hidden><summary>Test an embankment opening</summary>
+          <p>Draw an assumed barrier across low terrain and choose a drainage cell on one side. Compare connected areas before and after opening its middle 30 m cell. This checks terrain connectivity.</p>
+          <div class="atlas-actions"><button id="at-sim-example" hidden>Try a sample barrier</button><button id="at-sim-pick" aria-pressed="false">Pick on map</button><button id="at-sim-clear">Clear</button></div>
+          <label>Barrier ends and source (column,row)<input id="at-sim-coords" type="text" placeholder="20,30 / 70,32 / 50,18"></label>
+          <button id="at-sim-apply">Apply coordinates</button><p id="at-sim-breach-result" role="status"></p>
+        </details>
+        <p id="at-sim-map-note"></p><button id="at-sim-show">Show on map ↑</button>
+        <details><summary>Model and limits</summary><p id="at-sim-method"></p></details>
+      </div>
+    </details>
+    <!-- labs:only -->
+    <details id="at-radar-lab" class="atlas-simulation atlas-lab" hidden>
+      <summary><span class="atlas-tag">SAR LAB</span><strong>Be the NISAR Sensor</strong></summary>
+      <div id="at-radar-selection"></div><p id="at-radar-footprint"></p>
+      <div class="atlas-lab-inputs">
+        <label><span>Volumetric soil moisture <output id="at-radar-moisture-value"></output></span><input id="at-radar-moisture" type="range" min="0" max="60" step="1" value="25"></label>
+        <label><span>Standing water depth <output id="at-radar-water-value"></output></span><input id="at-radar-water" type="range" min="0" max="100" step="1" value="0"></label>
+        <label><span>Canopy scattering proxy <output id="at-radar-canopy-value"></output></span><input id="at-radar-canopy" type="range" min="0" max="1" step="0.01" value="0.35"></label>
+      </div>
+      <div class="atlas-actions"><button id="at-radar-water-preset">Open water</button><button id="at-radar-stems-preset">Flooded stems</button><button id="at-radar-dry-preset">Dry canopy</button></div>
+      <div class="atlas-lab-swatches" role="group" aria-label="Simulated and observed radar comparison">
+        <div><strong>Simulated state</strong><div id="at-radar-sim-swatch" class="atlas-lab-swatch" aria-hidden="true"></div><p id="at-radar-sim-values"></p></div>
+        <div><strong>Observed NISAR</strong><div id="at-radar-obs-swatch" class="atlas-lab-swatch" aria-hidden="true"></div><p id="at-radar-obs-values"></p></div>
+      </div>
+      <p id="at-radar-difference"></p><p id="at-radar-mechanisms"></p><p class="atlas-mirror">R: HH · G: HV · B: HV power share. Both swatches use the same scales.</p>
+      <details><summary>Model and limits</summary><p>The teaching model mixes a soil or water surface with canopy volume scattering and a water–stem double bounce. The canopy control is an assumed proxy. It does not measure biomass or DpRVI<sub>c</sub>. Similar radar returns can come from different surfaces.</p></details>
+    </details>
+    <details id="at-bank-lab" class="atlas-simulation atlas-lab" hidden>
+      <summary><span class="atlas-tag">JAMUNA / RIVER MEMORY</span><strong>Monsoon bank retreat</strong></summary>
+      <p>Draw from the main channel into land, approximately perpendicular to the apparent bank. Follow the radar-dark edge across the recorded visits.</p>
+      <p id="at-bank-status" role="status"></p>
+      <div id="at-bank-controls" hidden>
+        <div class="atlas-actions"><button id="at-bank-example">Try sample transect</button><button id="at-bank-pick" aria-pressed="false">Draw transect</button></div>
+        <label>Channel and inland endpoints (column,row)<input class="atlas-lab-coords" id="at-bank-coords" type="text"></label>
+        <button id="at-bank-apply">Apply transect</button>
+        <div class="atlas-lab-inputs">
+          <label><span>Peak discharge multiplier <output id="at-bank-multiplier-value"></output></span><input id="at-bank-multiplier" type="range" min="1" max="2.5" step="0.1" value="1.5"></label>
+          <label><span>Monsoon cycles <output id="at-bank-cycles-value"></output></span><input id="at-bank-cycles" type="range" min="1" max="3" step="1" value="2"></label>
+        </div>
+        <p id="at-bank-result" class="atlas-sim-result" role="status"></p>
+        <p id="at-bank-support"></p><div id="at-bank-recurrence" class="atlas-bank-strip" aria-hidden="true"></div>
+        <details><summary>Edge by recorded visit</summary><div id="at-bank-visits" class="atlas-lab-visits"></div></details>
+        <p id="at-bank-exposure"></p>
+        <details><summary>Check an asset</summary><p>Mark an assumed embankment or other asset point to test the drawn corridor.</p>
+          <button id="at-bank-pick-asset" aria-pressed="false">Mark on map</button><label>Asset point (column,row)<input class="atlas-lab-coords" id="at-bank-asset" type="text"></label>
+          <div class="atlas-actions"><button id="at-bank-apply-asset">Apply point</button><button id="at-bank-clear-asset">Clear point</button></div><p id="at-bank-asset-result" role="status"></p>
+        </details>
+        <details><summary>Model and limits</summary><p>Across-bank radar-dark recurrence uses observed HH at or below the screening cutoff. The scenario scales the observed edge excursion by its recurrence, the multiplier and the assumed number of cycles. It has no measured discharge relationship. The corridor is a local sensitivity exercise; it does not establish erosion, a future water zone, or the location of real embankments.</p></details>
+      </div>
+    </details>
+    <details id="at-orbit-lab" class="atlas-simulation atlas-lab" hidden>
+      <summary><span class="atlas-tag">NEPAL / SENSOR TRADE-OFFS</span><strong>Sensor &amp; Orbit Simulator</strong></summary>
+      <p id="at-orbit-status" role="status"></p>
+      <div id="at-orbit-controls" hidden>
+        <div class="atlas-lab-inputs">
+          <label><span>Incidence from vertical <output id="at-orbit-angle-value"></output></span><input id="at-orbit-angle" type="range" min="25" max="50" step="0.1" value="40"></label>
+          <label>Look preset<select id="at-orbit-look"><option value="asc">Ascending · Track 098</option><option value="desc">Descending · opposite-look scenario</option></select></label>
+        </div>
+        <button id="at-orbit-show">Show on 3D terrain ↑</button>
+        <p id="at-orbit-result" class="atlas-sim-result" role="status"></p>
+        <div class="atlas-lab-key"><button id="at-orbit-shadow" aria-pressed="true">■ Terrain shadow</button><button id="at-orbit-layover" aria-pressed="true">■ Layover screen</button><span id="at-orbit-direction" aria-hidden="true"><svg class="tp-icon" focusable="false"><use href="#tp-icon-satellite"></use></svg>↑</span></div>
+        <p id="at-orbit-azimuth"></p>
+        <label>Wavelength comparison<select id="at-orbit-band"><option value="L">NISAR L-band · 24 cm</option><option value="C">C-band example · 5.6 cm</option></select></label>
+        <label><span>Assumed canopy scatterer motion (RMS) <output id="at-orbit-motion-value"></output></span><input id="at-orbit-motion" type="range" min="0" max="10" step="0.1" value="1"></label>
+        <p id="at-orbit-model"></p><p id="at-orbit-observed"></p><button id="at-orbit-pair">Show latest observed pair</button>
+        <details><summary>Model and limits</summary><p>Parallel rays are traced across a buffered NASADEM grid. A local range slope flags layover where it reverses near-to-far ordering. Wavelength changes the phase sensitivity example; it does not move geometric shadows. The C-band example is simulated. Observed L-band coherence also depends on temporal change, baseline, geometry and noise.</p></details>
+      </div>
+    </details>
+    <!-- labs:end -->
+  </aside></div>
+  <details class="atlas-guide" id="atlas-guide-reference"><summary>Field Guide · read this observation</summary><p id="at-guide-current"></p>
+  <p>HH and HV are radar polarization channels. A dB difference compares mean backscatter on the same footprint. The previous visit shows recent change. The reference shows the difference from a fixed starting observation. The table labels unavailable values explicitly.</p>
+  <p>Coherence measures how similar the radar signal is across a recorded pair. Thermal and optical scenes keep their own acquisition dates. Use dated independent evidence to investigate the cause of a radar change.</p>
+  <p>Choose <strong>Find comparison data</strong> to look up NASA water maps for Bangladesh or vegetation disturbance maps for Nepal near the radar dates. Review the time offset and map coverage before drawing a conclusion.</p>
+  <a href="https://opensarlab-docs.asf.alaska.edu/user-guides/opensarlab/" target="_blank" rel="noopener noreferrer">Optional ASF OpenSARLab access guide ↗</a>
+  </details>
+  <div class="atlas-details"><section><p class="atlas-tag">FIXED FOOTPRINT / DECIBELS</p><h2>Intensity across recorded visits</h2><div id="at-chart"></div><details><summary>Acquisition coverage</summary><div id="at-trace-gaps"></div></details><details id="at-table-view"><summary>Read the measurements as a table</summary><div class="atlas-scroll" tabindex="0" role="region" aria-label="Measurement table, scroll horizontally if needed"><table><caption id="at-table-caption">Reference and preceding-visit differences (dB)</caption><thead><tr><th scope="col">Selected UTC</th><th scope="col">Previous UTC</th><th scope="col">HH / ref.</th><th scope="col">HV / ref.</th><th scope="col">HH / prev.</th><th scope="col">HV / prev.</th></tr></thead><tbody id="at-table"></tbody></table></div></details></section>
+  <section><p class="atlas-tag">SOURCES / CONTEXT</p><h2>Onset, persistence and return</h2><label>HH difference threshold<select id="at-threshold"><option value="1">1 dB</option><option value="3" selected>3 dB</option><option value="5">5 dB</option></select></label><div id="at-chronology"></div><details><summary>How the rule works</summary><p id="at-chronology-method"></p></details></section></div>
+</div>
+</section>
+<!-- atlas:end -->
+<section class="home-hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span class="signal-dot"></span> EARTH OBSERVATION / SURFACE INVESTIGATIONS</p><h2 id="hero-title">Earth moves.<br><em>Keep the evidence.</em></h2><p class="hero-lede">A river shifts. A wetland changes. A disturbance lingers. Follow the radar record to see what changed—and what stayed changed.</p><div class="hero-actions"><a class="action primary" href="#bangladesh">Explore Bangladesh <span aria-hidden="true">↗</span></a><a class="action secondary" href="#nepal">Explore Nepal <span aria-hidden="true">↗</span></a></div><div class="hero-facts"><span><strong>NISAR</strong>NASA–ISRO radar</span><span><strong>Two countries</strong>Four study areas</span><span><strong>Traceable</strong>Exportable evidence</span></div></div>
 <figure class="hero-observation"><div class="figure-top"><span><i></i> JAMUNA RIVER / BANGLADESH</span><span>HH RADAR</span></div><div class="observation-wipe" id="observation-wipe"><img id="hero-after" src="/cases/jamuna_river/investigation/hh_5.webp" alt="Jamuna radar observation on 16 October 2026"><img id="hero-before" class="wipe-before" src="/cases/jamuna_river/investigation/hh_0.webp" alt="Jamuna radar observation on 18 June 2026"><span class="wipe-rule" aria-hidden="true"></span><span class="image-date before" id="before-label">18 JUN 2026</span><span class="image-date after" id="after-label">16 OCT 2026</span><div class="radar-caption"><span>23.21 UTC / L-BAND</span><strong>One landscape.<br>Two moments.</strong></div></div><figcaption><label for="hero-split">Compare the observed endpoints <span aria-hidden="true">↔</span></label><input id="hero-split" type="range" min="0" max="100" value="50" aria-label="Position of June and October radar comparison"><p>Shared HH contrast. Dark areas have low radar return; water is one possible explanation.</p><p id="hero-image-status" role="status" hidden>Radar preview unavailable. Open River Memory to inspect the observation record.</p></figcaption></figure></section>
 <section class="country-workspaces" aria-labelledby="workspace-title"><div class="section-heading"><div><p class="eyebrow">CHOOSE YOUR LANDSCAPE</p><h2 id="workspace-title">Two countries. Distinct questions.</h2></div><p>Start with a question.<br>Leave with an evidence record.</p></div>
 <div class="country-tabs" role="tablist" aria-label="Study country"><button id="tab-bangladesh" role="tab" aria-selected="true" aria-controls="panel-bangladesh" tabindex="0"><span>01</span> Bangladesh <small>Rivers · wetlands · surface change</small></button><button id="tab-nepal" role="tab" aria-selected="false" aria-controls="panel-nepal" tabindex="-1"><span>02</span> Nepal <small>Disturbance · coherence · terrain</small></button></div>

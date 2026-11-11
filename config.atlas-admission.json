@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "scope": "Existing local release only; proposed sources cannot enter the atlas without versioned review.",
+  "auditReport": "reports/development/part-03-input-audit.json",
+  "auditSha256": "a7326d951df68342e6f8602a86c3b2297ef6d1f0068fb2a4b68cd079f00e7fb2",
+  "supportingManifests": {
+    "web/public/cases/jamuna_river/bangladesh-v2/context-v2/manifest.json": "a079d2c036b97c809bf6dd99cfb87c7c785014f638b17a4e4d2242a14b1281d7",
+    "web/public/cases/jamuna_river/bangladesh-v2/evidence-v2/manifest.json": "d192fc1588205f3a9e8fdda673ab68e36bb583ace6b4541f04528a4c1bc3150e",
+    "web/public/cases/jamuna_river/bangladesh-v2/references-v1/manifest.json": "a642aeea051f2a319933b8a858f6064315a16b3d90de83653dc70e9c49225d48",
+    "web/public/cases/nepal_case_01/context/context.json": "a442106effd9f47756feb0e9bbf89a9aa6781ae74a4d91cd69c122dedb72fa60",
+    "web/public/cases/nepal_case_01/flood/manifest.json": "dc666716c37e9654b25eea9e46c8ae22e114e62175de150c966c1a3cc854a7bc",
+    "web/public/cases/nepal_case_01/flood/scenarios/flood-0a9bccef77fdb02c8199/result.json": "a9596446cd2d0c8168b03f2c2bf9a7e13decb6e4845e01fede2bfe69ce47eb38",
+    "web/public/cases/nepal_case_01/flood/scenarios/flood-118393a3620643eb8b40/result.json": "8dac5074935dcd7a1c6941f7a5c04401fae68ea417ff3b9eb31ee9e7c8bef926",
+    "web/public/cases/nepal_case_01/flood/scenarios/flood-1882b1f21f35977a0dec/result.json": "5b7c2d2431fa7dd41e0f8c9434bee9710d5ec5269ed756b137e639a60657061f",
+    "web/public/cases/nepal_case_01/flood/scenarios/flood-83f32a0043cd8610ce74/result.json": "5f68bcd9047ec56a21c62995e6794d46c67071ece3730d51fa935283af694835",
+    "web/public/cases/nepal_case_01/flood/scenarios/flood-a6d7d7ac8ede31cbbf8b/result.json": "c3ef7345ddd6d640d771391c79b23261ac63c87493243cc32f337e17848c31ea",
+    "web/public/cases/nepal_case_01/flood/scenarios/flood-f191134b4a1bbebf79d4/result.json": "62736bf3c64de63f52971b141025fda5ec620ec46e2cfababcbf5677f9f2f124",
+    "web/public/cases/nepal_case_01/landslide/manifest.json": "4b1495ad94d98dd7cd833fee978f4561d4a2e91cf7e03714bd89f304397d7062",
+    "web/public/cases/nepal_case_01/thermal/manifest.json": "8bb006120030253af4a1e83a3807fe329fcf91475b5ff92e7b65c9736717742e",
+    "web/public/cases/nepal_impact_corridor/context-v2/manifest.json": "b25b71ac013a6dc02f2cbcbd81d5f965cbdc64b0643e3785c50516fad062d597",
+    "web/public/cases/nepal_surface/context-v2/manifest.json": "6c4e3414fad3b4c262ffa42d84ffb82a86a66cd7c66ce4d7894266793b4794de",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/context-v2/manifest.json": "4fb6844da19e3d42e4acd57cd44ae788e19b696dd768a249c27fdbe5905e4049",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/evidence-v2/manifest.json": "2cec7a079bfb6ae51f1258287a19bd7208fe82544e1c1b1bc74512c57222479e",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/references-v1/manifest.json": "03931222056ed5b25b326a3b162bfdc98226bc31309d287084eca4879e8d4ec9",
+    "web/public/cases/jamuna_river/bangladesh-v2/coherence-v1/manifest.json": "9a0a12eae3df2cb12af65142f5a464fb7938c7e1773d3b18b70ea23403ff26d8",
+    "web/public/cases/tanguar_wetland/bangladesh-v2/coherence-v1/manifest.json": "0f1298d5b90df58d786d24b8c03fcd255f48b9463c77e4429f164b854e90e9d7"
+  },
+  "cases": {
+    "jamuna_river": {
+      "status": "accepted",
+      "binding": {
+        "caseId": "jamuna_river",
+        "recordVersion": "bangladesh-v2",
+        "manifestSha256": "445b115a7906100a5e2a469954934439c19e529faf87ab046a99ae82bda81540",
+        "gridId": "grid:91ad060d401612075da64b76f39784a013edf7e0ff27d3dfabf4106154bbbb0f",
+        "path": "web/public/cases/jamuna_river/bangladesh-v2/investigation/manifest.json"
+      }
+    },
+    "tanguar_wetland": {
+      "status": "accepted",
+      "binding": {
+        "caseId": "tanguar_wetland",
+        "recordVersion": "bangladesh-v2",
+        "manifestSha256": "84e914d7cb8e9220b2c81a54d403992bbe8739b10fe31803272307142e1dcd7b",
+        "gridId": "grid:68ec9a225113c8c9cdcf0b8f0a244fcc628f093c233504add5f3978bc8b98028",
+        "path": "web/public/cases/tanguar_wetland/bangladesh-v2/investigation/manifest.json"
+      }
+    },
+    "nepal_surface": {
+      "status": "accepted",
+      "binding": {
+        "caseId": "nepal_surface",
+        "recordVersion": "expanded-v1",
+        "manifestSha256": "10b4ee141704d32acb29a586c6317582d93ef0fc23b3903d3892079cb0232320",
+        "gridId": "grid:2fea0acc7ff35ffdb83f3acaece9aabfd372cb939e4713468373fff7bcae68fc",
+        "path": "web/public/cases/nepal_surface/expanded-v1/manifest.json"
+      }
+    },
+    "nepal_impact_corridor": {
+      "status": "accepted",
+      "binding": {
+        "caseId": "nepal_impact_corridor",
+        "recordVersion": "expanded-v1",
+        "manifestSha256": "54fc790953ea667c106e48e95c04025496eec83298a8949e48e41462ffeca347",
+        "gridId": "grid:a23707292f3cc51afade96c6e8b349d79f66eb2fa2eb5600bc2f6f199bcd71f2",
+        "path": "web/public/cases/nepal_impact_corridor/expanded-v1/manifest.json"
+      }
+    }
+  }
+}

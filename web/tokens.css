@@ -1,0 +1,31 @@
+:root {
+  color-scheme: dark;
+  --tp-ink-0:#060d13; --tp-ink-1:#0a1620; --tp-ink-2:#0e1c25;
+  --tp-surface:#122430; --tp-raised:#183240; --tp-line:#2c4654; --tp-line-strong:#5e808f;
+  --tp-text:#eef6f6; --tp-text-2:#c4d6db; --tp-text-3:#93aeb7;
+  --tp-accent:#77e4c9; --tp-accent-ink:#052a25; --tp-focus:#ffce79;
+  --tp-neg:#ff9f6b; --tp-pos:#6bb7ff; --tp-zero:#9db2ba;
+  --tp-observed:var(--tp-accent); --tp-modeled:#c9a7ff; --tp-context:var(--tp-focus); --tp-missing:#6c7f88;
+  --tp-r-sm:6px; --tp-r-md:10px; --tp-r-lg:16px;
+  --tp-s-1:4px; --tp-s-2:8px; --tp-s-3:12px; --tp-s-4:16px; --tp-s-5:24px; --tp-s-6:32px; --tp-s-7:48px;
+  --tp-shadow-1:0 1px 0 #ffffff0a inset,0 8px 24px #0006;
+  --tp-ease:cubic-bezier(.2,.7,.2,1); --tp-dur-1:120ms; --tp-dur-2:240ms; --tp-dur-3:480ms;
+  --tp-font:system-ui,-apple-system,"Segoe UI",sans-serif;
+  --tp-mono:ui-monospace,"Cascadia Mono","DejaVu Sans Mono",monospace;
+  --tp-bg:var(--tp-ink-0); --tp-panel:var(--tp-surface); --tp-border:var(--tp-line); --tp-muted:var(--tp-text-3);
+}
+body {font-variant-numeric:tabular-nums}
+:where(a,button,input,select,textarea,summary,[tabindex]):focus-visible {outline:3px solid var(--tp-focus);outline-offset:3px}
+.tp-num {font-family:var(--tp-mono);font-variant-numeric:tabular-nums}
+.tp-visually-hidden {position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.tp-skip {position:fixed;z-index:300;left:12px;top:-100px;background:var(--tp-text);color:var(--tp-ink-0);padding:12px}
+.tp-skip:focus {top:10px}
+@media (prefers-reduced-motion:reduce) {
+  :root {--tp-dur-1:0ms;--tp-dur-2:0ms;--tp-dur-3:0ms}
+}
+@media (prefers-contrast:more) {
+  :root {--tp-line:#7c9ca8;--tp-line-strong:#aec6d1;--tp-text-3:var(--tp-text-2)}
+}
+@media (forced-colors:active) {
+  :where(a,button,input,select,textarea,summary,[tabindex]):focus-visible {outline-color:Highlight}
+}

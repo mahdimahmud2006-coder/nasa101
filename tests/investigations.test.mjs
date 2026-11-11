@@ -160,6 +160,8 @@ test('separate terrain layers stay static and missing scientific rain is explici
 test('saved DNA footprints and ledger are displayed with scoped rule evidence',async()=>{
  const f=await fixture({search:'?mode=river'});
  assert.equal(f.api.state.evidence.profiles.length,7);assert.match(f.elements.get('reasoning-detail').innerHTML,/observed visits/);
+ assert.match(f.elements.get('reasoning-detail').innerHTML,/Mean HH .* dB · criterion ≤ -17 dB<small>Outside criterion/);
+ assert.match(f.elements.get('reasoning-detail').innerHTML,/Required context · Scientific IMERG rainfall in the prior 72 h/);
  assert.match(f.elements.get('claims-panel').innerHTML,/TP-PERSIST/);
  f.elements.get('profile-select').value='1';await f.elements.get('profile-select').emit('change');
  assert.equal(f.api.state.selectedEvidence.profile.saved_evidence_index,1);
@@ -174,18 +176,25 @@ test('frozen reference selection is scoped to the selected footprint and visit',
  assert.ok(index>=0);f.elements.get('profile-select').value=String(index);await f.elements.get('profile-select').emit('change');assert.equal(f.api.state.polygon.length,4);
  await f.document.querySelectorAll('[data-visit="3"]')[0].emit('click');
  assert.match(f.elements.get('matched-reference-detail').innerHTML,/date-matched, descriptive/);
+ assert.match(f.elements.get('reasoning-detail').innerHTML,/Matched HLS water-mask context/);
  await f.document.querySelectorAll('[data-visit="0"]')[0].emit('click');
  assert.match(f.elements.get('matched-reference-detail').innerHTML,/Unavailable/);
+ assert.doesNotMatch(f.elements.get('reasoning-detail').innerHTML,/Matched HLS water-mask context/);
  f.elements.get('profile-select').value='0';await f.elements.get('profile-select').emit('change');
  assert.match(f.elements.get('matched-reference-detail').innerHTML,/No date-matched reference evaluated/);
 });
 
-test('supplied Nepal coherence supersedes its old gate while Bangladesh remains unavailable',async()=>{
- const f=await fixture();assert.match(f.elements.get('interferometry-detail').innerHTML,/MEASURED COHERENCE/);
- assert.match(f.elements.get('interferometry-detail').innerHTML,/Ground displacement remains unresolved/);
- await f.document.querySelectorAll('[data-mode="river"]')[0].emit('click');
- await f.until(()=>f.api.state.data?.case_id==='jamuna_river');
- assert.match(f.elements.get('interferometry-detail').innerHTML,/search incomplete/);
+test('investigations offer the measured pair maps and omit the catalog-only gate',async()=>{
+ const f=await fixture({recordVersion:'bangladesh-v2'});assert.match(f.elements.get('interferometry-detail').innerHTML,/MEASURED COHERENCE/);
+ for(const [mode,caseId] of [['river','jamuna_river'],['wetland','tanguar_wetland']]){
+  await f.document.querySelectorAll('[data-mode="'+mode+'"]')[0].emit('click');
+  await f.until(()=>f.api.state.data?.case_id===caseId);
+  const panel=f.elements.get('interferometry-detail').innerHTML;
+  assert.match(panel,/2026-09-22 → 2026-10-04/);
+  assert.match(panel,/2026-10-04 → 2026-10-16/);
+  assert.match(panel,/layer=coherence/);
+  assert.doesNotMatch(panel,/displacement|gate not open/i);
+ }
 });
 
 test('late reference responses cannot overwrite a newly selected case',async()=>{

@@ -2,7 +2,7 @@
 export class TerrainView{
   constructor(canvas,mesh,{onPick=()=>{},onStatus=()=>{}}={}){
     this.canvas=canvas;this.mesh=mesh;this.onPick=onPick;this.onStatus=onStatus;
-    this.yaw=-.35;this.tilt=.68;this.zoom=1;this.exaggeration=4;this.center=[0,0];this.is3D=true;this.auto=false;this.split=1;this.opacity=.83;this.marker=null;this.tile=null;this.images={};this.frame=null;
+    this.yaw=-.35;this.tilt=.68;this.zoom=1;this.exaggeration=1;this.center=[0,0];this.is3D=true;this.auto=false;this.split=1;this.opacity=.83;this.marker=null;this.tile=null;this.images={};this.frame=null;
     this.gl=canvas.getContext('webgl',{alpha:false,antialias:true});
     if(this.gl){try{this.initGL();}catch{const fallback=canvas.cloneNode();canvas.replaceWith(fallback);canvas=fallback;this.canvas=fallback;this.gl=null;}}
     if(!this.gl){this.context=canvas.getContext('2d');this.is3D=false;onStatus('2D fallback · WebGL unavailable');}

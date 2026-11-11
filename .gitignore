@@ -8,10 +8,11 @@
 *.[hH][eE]5
 *.[nN][cC]
 *.[nN][cC]4
-*.SAFE/
+*.[sS][aA][fF][eE]/
 /database/
 /database for imp2/
 /downloads/
+/raw-data/
 *.download
 *.part
 *.partial
@@ -37,6 +38,40 @@
 /output/
 /runtime-downloads/
 /.runtime-staging/
+/ui-review/
+
+# Local documents and presentation collateral
+*.[pP][dD][fF]
+*.[dD][oO][cC][xX]
+*.[pP][pP][tT][xX]
+*.[mM][pP]4
+*.[mM][oO][vV]
+*.mkv
+*.webm
+/docs/assets/
+/docs/**/*.[pP][nN][gG]
+/docs/**/*.[jJ][pP][gG]
+/docs/**/*.[jJ][pP][eE][gG]
+/docs/**/*.[wW][eE][bB][pP]
+/docs/**/*.[gG][iI][fF]
+/docs/VIDEO_*.md
+/docs/SUBMISSION_BRIEF.md
+/docs/CHALLENGE_STRATEGY_*.md
+/docs/CHALLENGE_VALUE_REVIEW.md
+/docs/README_HISTORY_*.md
+/docs/ELEVATION_REPORT_AUDIT.md
+/docs/EVALUATION_FOLLOW_THROUGH.md
+/reports/presentation_*/
+/reports/development/*.md
+/reports/development/part-17-static-benchmark.json
+/PROJECT_PROGRESS.md
+/PROGRESS_SUMMARY.md
+/TERRAPULSE_FULL_PROGRESS_*.md
+/TERRAPULSE_PROJECT_HANDBOOK.md
+/TERRAPULSE_VIDEO_PRODUCTION_KIT.md
+/UI_CHANGELOG.md
+/IMPLEMENTATION.md
+/SKILL.md
 
 # Generated public products: retain small metadata and provenance in Git.
 /web/public/cases/**
@@ -77,6 +112,7 @@
 *.temp
 *.bak
 *.orig
+*.rej
 .cache/
 scratch/
 tmp/
@@ -143,8 +179,9 @@ Desktop.ini
 # Credentials and machine-local identity
 .env
 .env.*
-!.env.example
-!.env.*.example
+.envrc
+.direnv/
+!/.env.example
 .netrc
 .netrc.*
 _netrc
@@ -155,10 +192,20 @@ _netrc
 .npmrc
 .git-credentials
 credentials.json
+credentials.local.json
+credentials.yml
+credentials.yaml
+secrets.json
+secrets.yml
+secrets.yaml
 client_secret*.json
 service-account*.json
+service_account*.json
+*.tfstate
+*.tfstate.*
 *.[pP][eE][mM]
 *.[kK][eE][yY]
+*.kdbx
 *.p12
 *.pfx
 *.jks
@@ -169,3 +216,5 @@ id_ed25519*
 .ssh/
 .gnupg/
 .config/gcloud/
+.kube/
+.docker/config.json

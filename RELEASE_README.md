@@ -1,6 +1,6 @@
 # TerraPulse local judging package
 
-Current source/runtime distribution: 4 November 2026, Asia/Dhaka. The core project version remains 1.0.0. Earlier standalone archives retain their dated scope.
+The processed runtime release is dated 4 November 2026. For a checkout of the current source, the [standalone Atlas](README.md#open-the-atlas) is the quickest way to open the project.
 
 **Cloned from GitHub?** Restore the processed data first with `python3 scripts/fetch_runtime.py` (or `py -3 scripts\fetch_runtime.py` on Windows). This repository and its runtime release are private; authorized users need GitHub CLI authentication. Then follow the environment/server steps below. A source clone does not contain `RELEASE_MANIFEST.json`; use `scripts/fetch_runtime.py --verify` for its data check. The `verify_release.py` command below applies to a complete standalone judging archive.
 
@@ -38,20 +38,4 @@ Use a current desktop browser. A practical starting target is 8 GB RAM and an or
 
 The archive contains current local web assets, canonical radar rasters needed by neighborhood/polygon inspection, context and reference bundles, rules, claims, source, tests and the small flood runtime component cube. Raw HDF5 granules, source caches, credentials and full reprocessing inputs are excluded. `scripts/verify_release.py` checks all packaged file hashes. Full `make verify` requires the separately retained source datasets and phase reports in the development repository; it is not the portable package's self-test.
 
-## Three-minute investigation
-
-1. Open Investigations and choose **Show the alert**: inspect the preserved Nepal footprint at the first changed observation.
-2. Choose **Show what stayed changed**: the later alert disappears while the measured HH baseline difference remains. Read the limits beside the measurement.
-3. Choose **Investigate River Memory**, then explore Wetland Pulse. Select a **Frozen reference** footprint and an observed date to inspect optical comparisons, including gaps and mixed results.
-4. Expand competing explanations. Review next evidence and measured Nepal coherence links. Export a dossier.
-5. Open **Expanded Nepal record** to play ten visits from June 20 to October 18. Compare with the explicit August 19 reference, then choose native 20 m or 80 m coherence for one of the two supplied pairs. The original Three Movements story stays attached to its original three-date record.
-
-The top navigation preserves supported investigation state. Nepal-only tools are labeled. A requested unloaded date is explicitly unavailable; it is never interpolated. Copy the URL to share the current Investigations case/date/layer/footprint. Saved footprints, point neighborhoods and assessed polygons can be restored. A link to a Nepal-only workspace cannot reproduce a Bangladesh crop.
-
-On the map, arrows move the cursor, Shift+arrow moves farther, Enter inspects or adds a drawing vertex, and Escape cancels drawing. Use the standard **Inspect polygon** button to finish. Story buttons work without automatic scrolling. Scroll-driven changes are opt-in and disabled when reduced motion is requested. The map's selected evidence is also summarized as text.
-
-## Mandatory rehearsal and known limits
-
-Complete [the disconnected runbook](docs/OFFLINE_REHEARSAL.md) and [browser/accessibility checklist](docs/reports/browser_a11y_2026-11-03.md) before treating this as a polished final submission. Automated network-denied handler checks are not proof of a physically disconnected browser rehearsal. Real-browser visual/accessibility/GPU checks are unverified under the recorded browser policy block.
-
-IMERG rainfall remains unavailable for the requested dates; the August pattern remains unresolved. Rules/cutoffs are uncalibrated, optical overlap is descriptive, and event causes remain unverified. The two supplied Nepal GUNW pairs now have header-compatible native coherence crops. Bangladesh coherence is unavailable. LOS displacement remains unresolved; phase downloads are uncorrected radians. Public repository/video access and actual submission remain unverified.
+For the current Atlas editions, see [the judging quickstart](docs/ATLAS_JUDGING_QUICKSTART.md) and [runtime distribution](docs/REPOSITORY_AND_RUNTIME.md). The existing runtime archives are dated, and the latest local edition requires the processed supplements listed there.

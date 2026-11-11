@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "scope": "Crop-only sensitivity audit. Boundaries and DEM voids are open outlets.",
+  "routing": "Priority-flood conditioning, D8 descent with deterministic flat routing, no breach. Heights use the original DEM.",
+  "gate": "Independent drainage comparison and buffer sensitivity are required before publishing a HAND layer.",
+  "cases": {
+    "jamuna_river": {
+      "grid": {
+        "shape": [
+          667,
+          667
+        ],
+        "affine": [
+          30.0,
+          0.0,
+          156520.0,
+          0.0,
+          -30.0,
+          2722450.0
+        ],
+        "crs": "EPSG:32646",
+        "resolution_m": 30
+      },
+      "contextManifestSha256": "a079d2c036b97c809bf6dd99cfb87c7c785014f638b17a4e4d2242a14b1281d7",
+      "verticalDatum": "EGM96 orthometric metres",
+      "published": false,
+      "processed_cells": 444889,
+      "outlet_count": 2664,
+      "outlet_contributing_area_m2": 400400100.0,
+      "valid_domain_area_m2": 400400100,
+      "maximum_fill_depth_m": 55.756263732910156,
+      "drainage_cell_count": 10203,
+      "hand_sensitivity": {
+        "500000": {
+          "assessed": 363315,
+          "masked": 0,
+          "boundaryAffected": 20090,
+          "negativeHeight": 61484,
+          "unresolved": 0
+        },
+        "1000000": {
+          "assessed": 357987,
+          "masked": 0,
+          "boundaryAffected": 30024,
+          "negativeHeight": 56878,
+          "unresolved": 0
+        },
+        "2000000": {
+          "assessed": 351440,
+          "masked": 0,
+          "boundaryAffected": 47774,
+          "negativeHeight": 45675,
+          "unresolved": 0
+        }
+      }
+    },
+    "tanguar_wetland": {
+      "grid": {
+        "shape": [
+          534,
+          600
+        ],
+        "affine": [
+          30.0,
+          0.0,
+          297380.0,
+          0.0,
+          -30.0,
+          2785400.0
+        ],
+        "crs": "EPSG:32646",
+        "resolution_m": 30
+      },
+      "contextManifestSha256": "4fb6844da19e3d42e4acd57cd44ae788e19b696dd768a249c27fdbe5905e4049",
+      "verticalDatum": "EGM96 orthometric metres",
+      "published": false,
+      "processed_cells": 320400,
+      "outlet_count": 2264,
+      "outlet_contributing_area_m2": 288360000.0,
+      "valid_domain_area_m2": 288360000,
+      "maximum_fill_depth_m": 34.68022298812866,
+      "drainage_cell_count": 6613,
+      "hand_sensitivity": {
+        "500000": {
+          "assessed": 227516,
+          "masked": 0,
+          "boundaryAffected": 19446,
+          "negativeHeight": 73438,
+          "unresolved": 0
+        },
+        "1000000": {
+          "assessed": 219871,
+          "masked": 0,
+          "boundaryAffected": 30144,
+          "negativeHeight": 70385,
+          "unresolved": 0
+        },
+        "2000000": {
+          "assessed": 215451,
+          "masked": 0,
+          "boundaryAffected": 39202,
+          "negativeHeight": 65747,
+          "unresolved": 0
+        }
+      }
+    },
+    "nepal_surface": {
+      "grid": {
+        "shape": [
+          800,
+          800
+        ],
+        "affine": [
+          30.0,
+          0.0,
+          323480.0,
+          0.0,
+          -30.0,
+          3088170.0
+        ],
+        "crs": "EPSG:32645",
+        "resolution_m": 30
+      },
+      "contextManifestSha256": "6c4e3414fad3b4c262ffa42d84ffb82a86a66cd7c66ce4d7894266793b4794de",
+      "verticalDatum": "EGM96 orthometric metres",
+      "published": false,
+      "processed_cells": 640000,
+      "outlet_count": 3196,
+      "outlet_contributing_area_m2": 576000000.0,
+      "valid_domain_area_m2": 576000000,
+      "maximum_fill_depth_m": 23.20947265625,
+      "drainage_cell_count": 11545,
+      "hand_sensitivity": {
+        "500000": {
+          "assessed": 605681,
+          "masked": 0,
+          "boundaryAffected": 22047,
+          "negativeHeight": 12272,
+          "unresolved": 0
+        },
+        "1000000": {
+          "assessed": 600143,
+          "masked": 0,
+          "boundaryAffected": 28146,
+          "negativeHeight": 11711,
+          "unresolved": 0
+        },
+        "2000000": {
+          "assessed": 587890,
+          "masked": 0,
+          "boundaryAffected": 40951,
+          "negativeHeight": 11159,
+          "unresolved": 0
+        }
+      }
+    },
+    "nepal_impact_corridor": {
+      "grid": {
+        "shape": [
+          800,
+          800
+        ],
+        "affine": [
+          30.0,
+          0.0,
+          323030.0,
+          0.0,
+          -30.0,
+          3126350.0
+        ],
+        "crs": "EPSG:32645",
+        "resolution_m": 30
+      },
+      "contextManifestSha256": "b25b71ac013a6dc02f2cbcbd81d5f965cbdc64b0643e3785c50516fad062d597",
+      "verticalDatum": "EGM96 orthometric metres",
+      "published": false,
+      "processed_cells": 640000,
+      "outlet_count": 3196,
+      "outlet_contributing_area_m2": 576000000.0,
+      "valid_domain_area_m2": 576000000,
+      "maximum_fill_depth_m": 51.1121826171875,
+      "drainage_cell_count": 9288,
+      "hand_sensitivity": {
+        "500000": {
+          "assessed": 611309,
+          "masked": 0,
+          "boundaryAffected": 27212,
+          "negativeHeight": 1479,
+          "unresolved": 0
+        },
+        "1000000": {
+          "assessed": 604247,
+          "masked": 0,
+          "boundaryAffected": 34283,
+          "negativeHeight": 1470,
+          "unresolved": 0
+        },
+        "2000000": {
+          "assessed": 588344,
+          "masked": 0,
+          "boundaryAffected": 50279,
+          "negativeHeight": 1377,
+          "unresolved": 0
+        }
+      }
+    }
+  }
+}

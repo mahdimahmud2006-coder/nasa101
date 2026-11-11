@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "caseId",
+    "recordVersion",
+    "manifestSha256",
+    "gridId",
+    "evidenceVersion",
+    "currentId",
+    "referenceId",
+    "layerId",
+    "footprint",
+    "pair",
+    "contextSelections",
+    "display"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "caseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recordVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manifestSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "gridId": {
+      "type": "string",
+      "pattern": "^grid:[0-9a-f]{64}$"
+    },
+    "evidenceVersion": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "currentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "referenceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "layerId": {
+      "enum": [
+        "hh",
+        "hv",
+        "fraction",
+        "coherence"
+      ]
+    },
+    "footprint": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "gridId",
+            "id"
+          ],
+          "properties": {
+            "kind": {
+              "const": "saved"
+            },
+            "gridId": {
+              "type": "string",
+              "pattern": "^grid:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^saved:[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "gridId",
+            "row",
+            "col"
+          ],
+          "properties": {
+            "kind": {
+              "const": "point"
+            },
+            "gridId": {
+              "type": "string",
+              "pattern": "^grid:[0-9a-f]{64}$"
+            },
+            "row": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "col": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "gridId",
+            "vertices"
+          ],
+          "properties": {
+            "kind": {
+              "const": "polygon"
+            },
+            "gridId": {
+              "type": "string",
+              "pattern": "^grid:[0-9a-f]{64}$"
+            },
+            "vertices": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 200,
+              "items": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "pair": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "firstId",
+            "secondId",
+            "gridId"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "firstId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "secondId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "gridId": {
+              "type": "string",
+              "pattern": "^grid:[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "contextSelections": {
+      "type": "object",
+      "required": [
+        "thermalId",
+        "scenarioId"
+      ],
+      "properties": {
+        "thermalId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scenarioId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "display": {
+      "type": "object",
+      "required": [
+        "lens",
+        "split",
+        "terrain",
+        "bearing"
+      ],
+      "properties": {
+        "lens": {
+          "enum": [
+            "river",
+            "wetland",
+            "surface"
+          ]
+        },
+        "split": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "terrain": {
+          "enum": [
+            "on",
+            "off"
+          ]
+        },
+        "bearing": {
+          "enum": [
+            0,
+            45,
+            90,
+            135,
+            180,
+            225,
+            270,
+            315
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

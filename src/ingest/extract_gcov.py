@@ -24,6 +24,16 @@ def analysis_window(observation, center, size):
     return window,window_transform(window,full)
 
 
+def gcov_valid_samples(power, mask, looks, fill_values=()):
+    """GCOV's subswath codes and positive diagonal-power support."""
+    valid = np.isfinite(power) & (power > 0) & (mask > 0) & (mask < 255)
+    valid &= np.isfinite(looks) & (looks > 0)
+    for fill in fill_values:
+        if fill is not None and np.isfinite(fill):
+            valid &= power != fill
+    return valid
+
+
 def extract(path, observation, window):
     grid=observation['grid_path']
     row,col=int(window.row_off),int(window.col_off)
@@ -52,10 +62,7 @@ def extract(path, observation, window):
         power=layer[selection]
         mask=file[grid+'/mask'][selection]
         looks=file[grid+'/numberOfLooks'][selection]
-        valid=np.isfinite(power)&(power>0)&(mask>0)&(mask<255)&np.isfinite(looks)&(looks>0)
-        for fill in [layer.attrs.get('_FillValue'), layer.fillvalue]:
-            if fill is not None and np.isfinite(fill):
-                valid &= power != fill
+        valid=gcov_valid_samples(power,mask,looks,(layer.attrs.get('_FillValue'),layer.fillvalue))
         db=np.full(power.shape,np.nan,dtype=np.float32)
         db[valid]=10*np.log10(power[valid])
         digest=hashlib.sha256(power.tobytes()+mask.tobytes()+looks.tobytes()).hexdigest()

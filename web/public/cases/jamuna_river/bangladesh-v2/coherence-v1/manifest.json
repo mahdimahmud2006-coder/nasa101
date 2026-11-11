@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "case_id": "jamuna_river",
+  "radar_manifest_sha256": "445b115a7906100a5e2a469954934439c19e529faf87ab046a99ae82bda81540",
+  "interferometry": [
+    {
+      "identification": {
+        "granuleId": "NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001",
+        "productType": "GUNW",
+        "productLevel": "L2",
+        "productVersion": "1.0.11",
+        "compositeReleaseId": "P05023",
+        "trackNumber": 69,
+        "frameNumber": 14,
+        "orbitPassDirection": "Ascending",
+        "lookDirection": "Left",
+        "referenceZeroDopplerStartTime": "2026-09-22T23:21:32.000000000",
+        "secondaryZeroDopplerStartTime": "2026-10-04T23:21:32.000000000",
+        "referenceHasInputDataException": 0,
+        "secondaryHasInputDataException": 0
+      },
+      "timestamps": [
+        "2026-09-22T23:21:32Z",
+        "2026-10-04T23:21:32Z"
+      ],
+      "source_slc_granules": [
+        [
+          "NISAR_L1_PR_RSLC_031_069_A_014_4005_DHDH_A_20260922T232132_20260922T232206_P05023_N_F_J_001.h5"
+        ],
+        [
+          "NISAR_L1_PR_RSLC_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5"
+        ]
+      ],
+      "source_file": "database/extra datasets/jamuna-ground-motion/NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 2306867200,
+      "dem_source": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+      "water_mask_source": "Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.",
+      "phase_corrections": "Source ionosphere and external correction metadata retained. Not applied by this extension. No LOS displacement published.",
+      "source_policy": "NASA\u2013ISRO, JPL / ASF DAAC; declared DEM ESA/Copernicus, water mask JRC/Google, ESA, OpenStreetMap and NASA MEaSUREs. No Chinese provider identified in these declared inputs.",
+      "pair_id": "gunw_20261004",
+      "source_sha256": "7be182ca6169184388b42968bf741b4b5c5eceb0afdb2aca20933f4eef76239e",
+      "source_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_031_069_A_014_032_4000_SH_20260922T232132_20260922T232206_20261004T232132_20261004T232206_P05023_N_F_J_001.h5",
+      "source_concept_id": "G4345936173-ASF",
+      "layers": {
+        "coherence20": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence20.png",
+        "coherence80": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence80.png"
+      },
+      "rasters": {
+        "coherence20": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence20.tif",
+        "mask20": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_mask20.tif",
+        "coherence_valid20": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence_valid20.tif",
+        "coherence80": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence80.tif",
+        "mask80": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_mask80.tif",
+        "coherence_valid80": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence_valid80.tif"
+      },
+      "grids": {
+        "20": {
+          "shape": [
+            1001,
+            1000
+          ],
+          "affine": [
+            20.0,
+            0.0,
+            156520.0,
+            0.0,
+            -20.0,
+            2722460.0
+          ],
+          "crs": "EPSG:32646",
+          "native_spacing_m": 20,
+          "bounds": [
+            156520.0,
+            2702440.0,
+            176520.0,
+            2722460.0
+          ],
+          "source_window": [
+            9281,
+            4838,
+            1001,
+            1000
+          ]
+        },
+        "80": {
+          "shape": [
+            251,
+            251
+          ],
+          "affine": [
+            80.0,
+            0.0,
+            156480.0,
+            0.0,
+            -80.0,
+            2722480.0
+          ],
+          "crs": "EPSG:32646",
+          "native_spacing_m": 80,
+          "bounds": [
+            156480.0,
+            2702400.0,
+            176560.0,
+            2722480.0
+          ],
+          "source_window": [
+            2320,
+            1209,
+            251,
+            251
+          ]
+        }
+      },
+      "statistics": {
+        "20": {
+          "valid_pixels": 1001000,
+          "total_pixels": 1001000,
+          "mean_coherence": 0.38641470005586426,
+          "median_coherence": 0.34950631856918335
+        },
+        "80": {
+          "valid_pixels": 63001,
+          "total_pixels": 63001,
+          "mean_coherence": 0.3334063253098867,
+          "median_coherence": 0.3336828947067261
+        }
+      },
+      "phase_assessable_pixels": 27644,
+      "connected_component_labels": [
+        1
+      ]
+    },
+    {
+      "identification": {
+        "granuleId": "NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001",
+        "productType": "GUNW",
+        "productLevel": "L2",
+        "productVersion": "1.0.11",
+        "compositeReleaseId": "P05023",
+        "trackNumber": 69,
+        "frameNumber": 14,
+        "orbitPassDirection": "Ascending",
+        "lookDirection": "Left",
+        "referenceZeroDopplerStartTime": "2026-10-04T23:21:32.000000000",
+        "secondaryZeroDopplerStartTime": "2026-10-16T23:21:32.000000000",
+        "referenceHasInputDataException": 0,
+        "secondaryHasInputDataException": 0
+      },
+      "timestamps": [
+        "2026-10-04T23:21:32Z",
+        "2026-10-16T23:21:32Z"
+      ],
+      "source_slc_granules": [
+        [
+          "NISAR_L1_PR_RSLC_032_069_A_014_4005_DHDH_A_20261004T232132_20261004T232206_P05023_N_F_J_001.h5"
+        ],
+        [
+          "NISAR_L1_PR_RSLC_033_069_A_014_4005_DHDH_A_20261016T232132_20261016T232206_P05023_N_F_J_001.h5"
+        ]
+      ],
+      "source_file": "database/extra datasets/jamuna-ground-motion/NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001.h5",
+      "size_bytes": 2311061504,
+      "dem_source": "Digital Elevation Model (DEM) for the NASA-ISRO NISAR mission, version 1.2, based on the Copernicus DEM 30-m (2023_1), referenced to the WGS84 ellipsoid. This digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30  DLR e.V. 2010-2014 and  Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement. For additional information, please refer to https://doi.org/10.5067/NIDEM-1 and https://doi.org/10.5270/ESA-c5d3d65.",
+      "water_mask_source": "Water Mask for the NASA-ISRO NISAR mission version 0.5, derived through analysis and processing of multiple input datasets, referenced to the WGS84 ellipsoid. Water mask derived at the Jet Propulsion Laboratory, California Institute of Technology, under contract with NASA, using multiple open datasets: JRC Global Surface Water v1.3 (Pekel et al 2016, Nature 540, 418-422,  EC JRC/Google); ESA WorldCover 10 m 2020 ( ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium); OpenStreetMap Water Polygons ( OpenStreetMap contributors, ODbL 1.0); MEaSUREs GIMP Mask v1 (Howat 2017, doi:10.5067/B8X58MQBFUPA; Howat et al 2014). All trademarks and rights remain with their respective owners; NISAR mission organizations assume no liability for use of this product.",
+      "phase_corrections": "Source ionosphere and external correction metadata retained. Not applied by this extension. No LOS displacement published.",
+      "source_policy": "NASA\u2013ISRO, JPL / ASF DAAC; declared DEM ESA/Copernicus, water mask JRC/Google, ESA, OpenStreetMap and NASA MEaSUREs. No Chinese provider identified in these declared inputs.",
+      "pair_id": "gunw_20261016",
+      "source_sha256": "e9b2002b604719ce2658f0d469b3883821caef8b6b506f22844ee3c2e39c2b2b",
+      "source_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GUNW_PROVISIONAL_V1/NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001/NISAR_L2_PR_GUNW_032_069_A_014_033_4000_SH_20261004T232132_20261004T232206_20261016T232132_20261016T232206_P05023_N_F_J_001.h5",
+      "source_concept_id": "G4376481984-ASF",
+      "layers": {
+        "coherence20": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence20.png",
+        "coherence80": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence80.png"
+      },
+      "rasters": {
+        "coherence20": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence20.tif",
+        "mask20": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_mask20.tif",
+        "coherence_valid20": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence_valid20.tif",
+        "coherence80": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence80.tif",
+        "mask80": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_mask80.tif",
+        "coherence_valid80": "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence_valid80.tif"
+      },
+      "grids": {
+        "20": {
+          "shape": [
+            1001,
+            1000
+          ],
+          "affine": [
+            20.0,
+            0.0,
+            156520.0,
+            0.0,
+            -20.0,
+            2722460.0
+          ],
+          "crs": "EPSG:32646",
+          "native_spacing_m": 20,
+          "bounds": [
+            156520.0,
+            2702440.0,
+            176520.0,
+            2722460.0
+          ],
+          "source_window": [
+            9281,
+            4838,
+            1001,
+            1000
+          ]
+        },
+        "80": {
+          "shape": [
+            251,
+            251
+          ],
+          "affine": [
+            80.0,
+            0.0,
+            156480.0,
+            0.0,
+            -80.0,
+            2722480.0
+          ],
+          "crs": "EPSG:32646",
+          "native_spacing_m": 80,
+          "bounds": [
+            156480.0,
+            2702400.0,
+            176560.0,
+            2722480.0
+          ],
+          "source_window": [
+            2320,
+            1209,
+            251,
+            251
+          ]
+        }
+      },
+      "statistics": {
+        "20": {
+          "valid_pixels": 1001000,
+          "total_pixels": 1001000,
+          "mean_coherence": 0.4394614477100858,
+          "median_coherence": 0.421089231967926
+        },
+        "80": {
+          "valid_pixels": 63001,
+          "total_pixels": 63001,
+          "mean_coherence": 0.4007279528354752,
+          "median_coherence": 0.4238015413284302
+        }
+      },
+      "phase_assessable_pixels": 29322,
+      "connected_component_labels": [
+        1
+      ]
+    }
+  ],
+  "asset_sha256": {
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence20.png": "6b675d605a13e49f745df010852952b64867541d6d9b62abdcfb464e77abe2ed",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence80.png": "c4f1199a53750626ddb27f5607a57affaec089711396c7b47dc0dbfe419172bd",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence20.tif": "d8aca4e84403287ca1f512ad7e0878af89beb695f616ee9feb874dd2292e5def",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_mask20.tif": "fa8d6deaf03831643036b2573a35933b37db901be2d017ef0a78004bd9f063d2",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence_valid20.tif": "e7fa0259e9ff6d8444560bf4d6738014bccd936f9c6faf5a06f22f3931f387d3",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence80.tif": "4c8358f94367594e1a425209e6aac2aba57630a5d57e2edd291a137040066c9c",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_mask80.tif": "42a584b8f9a47789e2ad0019b23c6d208370d547ae54d800d776e527cadfff10",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261004_coherence_valid80.tif": "c29472e46b1c3df49c3d302e9e7b95c6a9805b4131a3c14bc46a3debe0fad941",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence20.png": "beff927bd29f6f462ceb22f662e08cdb569552b6401964027399242018a1190a",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence80.png": "9d58ae0edc7bd990b6a2d8f1c2fb16e81df19005fb001a56feba7f933735e951",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence20.tif": "c86ca1f95a664adbe480657b9f0f43848e032e1f382da03293e7ece162d0a305",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_mask20.tif": "fa8d6deaf03831643036b2573a35933b37db901be2d017ef0a78004bd9f063d2",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence_valid20.tif": "e7fa0259e9ff6d8444560bf4d6738014bccd936f9c6faf5a06f22f3931f387d3",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence80.tif": "5a6fb904dce5883da0d68ec1f1f96e31c1975028c0356e3385701992d635e647",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_mask80.tif": "2a3b18e7a2efb841e06627f43064cec9fa4c46214b8dda4d99ad9447bf17c283",
+    "/cases/jamuna_river/bangladesh-v2/coherence-v1/gunw_20261016_coherence_valid80.tif": "c29472e46b1c3df49c3d302e9e7b95c6a9805b4131a3c14bc46a3debe0fad941"
+  }
+}

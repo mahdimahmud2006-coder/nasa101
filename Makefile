@@ -30,7 +30,12 @@ validate-context:
 	$(PYTHON) -m src.compute.validate_context
 
 .PHONY: test-ui
-test-ui:
+test-ui: atlas-portable
+	node tests/atlas-contract.test.mjs
+	node tests/atlas-dossier.test.mjs
+	node tests/atlas.test.mjs
+	node --test tests/atlas-simulation.test.mjs
+	node --test tests/atlas-labs.test.mjs
 	node tests/navigation.test.mjs
 	node tests/home.test.mjs
 	node tests/playback.test.mjs
@@ -75,7 +80,7 @@ run:
 	./run.sh
 check-ready:
 	$(PYTHON) -m src.api.readiness
-verify: test test-ui validate validate-timeseries validate-context validate-flood validate-change-lab validate-investigations validate-dualpol validate-context-v2 validate-dna-v2 validate-references validate-interferometry-gate validate-expanded check-ready check-web
+verify: test test-ui validate validate-timeseries validate-context validate-flood validate-change-lab validate-investigations validate-dualpol validate-context-v2 validate-dna-v2 validate-references validate-interferometry-gate validate-expanded check-ready check-web check-atlas-contract check-atlas-palettes check-atlas-static
 release:
 	$(PYTHON) scripts/package_release.py
 
@@ -142,3 +147,40 @@ bangladesh-record:
 	$(PYTHON) -m src.compute.bangladesh_record
 validate-bangladesh-record:
 	$(PYTHON) -m src.compute.validate_bangladesh_record
+
+.PHONY: atlas
+atlas:
+	$(PYTHON) scripts/build_atlas.py
+
+.PHONY: atlas-portable
+atlas-portable:
+	python3 scripts/package_atlas.py
+
+.PHONY: bangladesh-coherence
+bangladesh-coherence:
+	$(PYTHON) scripts/build_bangladesh_coherence.py
+
+.PHONY: check-atlas-contract
+check-atlas-contract:
+	$(PYTHON) scripts/build_atlas_contracts.py --check
+
+.PHONY: check-atlas-palettes
+check-atlas-palettes:
+	$(PYTHON) scripts/check_atlas_palettes.py
+
+.PHONY: atlas-simulations atlas-static check-atlas-static check-atlas-native-cogs atlas-native-stac
+atlas-simulations:
+	$(PYTHON) scripts/build_atlas_simulators.py
+
+atlas-static:
+	$(PYTHON) scripts/package_atlas_static.py
+
+check-atlas-static: atlas-static
+	$(PYTHON) scripts/package_atlas_static.py --check
+	node scripts/verify_portable_atlas.mjs
+
+check-atlas-native-cogs:
+	$(PYTHON) scripts/check_atlas_native_cogs.py
+
+atlas-native-stac:
+	$(PYTHON) scripts/atlas_stac.py

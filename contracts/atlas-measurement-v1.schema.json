@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "quantity",
+    "unit",
+    "status",
+    "value",
+    "sourceIds",
+    "support",
+    "method",
+    "interpretation"
+  ],
+  "properties": {
+    "quantity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "measured",
+        "missing",
+        "out_of_scope",
+        "invalid"
+      ]
+    },
+    "value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "sourceIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "support": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "validPixels",
+            "gridId"
+          ],
+          "properties": {
+            "validPixels": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "gridId": {
+              "type": "string",
+              "pattern": "^grid:[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "method": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interpretation": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "measured"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "number"
+          },
+          "sourceIds": {
+            "minItems": 1
+          },
+          "support": {
+            "type": "object",
+            "properties": {
+              "validPixels": {
+                "minimum": 1
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "value": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ]
+}

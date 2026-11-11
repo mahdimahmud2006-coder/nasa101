@@ -36,7 +36,7 @@ function paintProfile(){
  $('record-reading').textContent=before.length?'Earlier HH differences range from '+number(Math.min(...before))+' to '+number(Math.max(...before))+' dB relative to August 19. This earlier variability matters: the reference date is not independently established as undisturbed.':'Earlier fixed-footprint measurements are unavailable.';
 }
 function paintPair(pair){
- const rows=pair?[['Observed pair',day(pair.timestamps[0])+' → '+day(pair.timestamps[1])],...['20','80'].flatMap(res=>[['Mean coherence · '+res+' m',number(pair.statistics[res].mean_coherence)],['Valid support · '+res+' m',number(pair.statistics[res].valid_fraction*100)+'%']])]:[['Pair at this visit','Unavailable'],['Ground displacement','Unresolved']];
+ const rows=pair?[['Observed pair',day(pair.timestamps[0])+' → '+day(pair.timestamps[1])],...['20','80'].flatMap(res=>[['Mean coherence · '+res+' m',number(pair.statistics[res].mean_coherence)],['Valid support · '+res+' m',number(pair.statistics[res].valid_fraction*100)+'%']])]:[];
  $('coherence-metrics').innerHTML=rows.map(([k,v])=>`<dt>${escape(k)}</dt><dd>${escape(v)}</dd>`).join('');
 }
 async function show(next){

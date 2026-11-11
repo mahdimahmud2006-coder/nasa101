@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "method": "Nearest 500 m GCOV metadata sample at each case center and 0 m ellipsoid plane. ENU target-to-sensor vector rotated into UTM at the center. Descending is an idealized opposite look.",
+  "cases": {
+    "nepal_surface": {
+      "sourceId": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "track": 98,
+      "pass": "Ascending",
+      "side": "Left",
+      "ascAzimuth": 76.72,
+      "ascIncidence": 40.79,
+      "sampleEnu": [
+        0.6336653828620911,
+        0.15871237218379974
+      ],
+      "sampleColumnRow": [
+        422,
+        547
+      ],
+      "convergenceDegrees": -0.7790704753606466
+    },
+    "nepal_impact_corridor": {
+      "sourceId": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_P05023_N_F_J_001",
+      "track": 98,
+      "pass": "Ascending",
+      "side": "Left",
+      "ascAzimuth": 76.74,
+      "ascIncidence": 40.25,
+      "sampleEnu": [
+        0.6268267035484314,
+        0.15687225759029388
+      ],
+      "sampleColumnRow": [
+        422,
+        471
+      ],
+      "convergenceDegrees": -0.7926098551582555
+    }
+  }
+}

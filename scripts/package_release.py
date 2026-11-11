@@ -9,6 +9,12 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from src.api.readiness import readiness
 
 ROOT=Path(__file__).resolve().parents[1]
+RELEASE_DOCS = (
+    'AI_USE.md', 'ATLAS_ASSET_REVIEW.md', 'ATLAS_JUDGING_QUICKSTART.md',
+    'ATLAS_RELEASE_RUNBOOK.md', 'ATLAS_SCENARIOS.md', 'ATLAS_VALIDATION_PROTOCOL.md',
+    'CREDITS_UI.md', 'DATASETS.md', 'LIMITATIONS.md', 'METHODOLOGY.md',
+    'REPOSITORY_AND_RUNTIME.md', 'VALIDATION.md',
+)
 
 
 def digest(path):
@@ -18,8 +24,9 @@ def digest(path):
 def files(root):
     # Explicit allowlist: no home folders, environment files, Git metadata or raw granules.
     paths=[]
-    for folder in ['src','web','tests','docs','rules','claims','reference','scripts']:
+    for folder in ['src','web','tests','contracts','rules','claims','reference','scripts']:
         paths.extend(p for p in (root/folder).rglob('*') if p.is_file() and not p.is_symlink() and '__pycache__' not in p.parts and p.suffix not in ('.pyc','.zip','.h5','.hdf5','.pem','.key') and not p.name.startswith('.env') and p.name!='release_package_qa.json')
+    paths.extend(root/'docs'/name for name in RELEASE_DOCS if (root/'docs'/name).is_file())
     paths.extend(p for p in root.glob('config*.json') if p.is_file())
     ledger=root/'claims/claims.yaml'
     if ledger.is_file():
@@ -36,7 +43,7 @@ def files(root):
     for name in ['source_audit.json','covariance_inventory.json','native_validation.json','build.json','activation.json','lineage_review.json']:
         p=root/'reports/bangladesh_import_2026_11_03'/name
         if p.is_file():paths.append(p)
-    for name in ['README.md','PROJECT_PROGRESS.md','RELEASE_README.md','LICENSE','requirements.txt','pyproject.toml','Makefile','run.sh','scripts/package_release.py','scripts/verify_release.py','scripts/check_web.py']:
+    for name in ['README.md','RELEASE_README.md','LICENSE','requirements.txt','pyproject.toml','Makefile','run.sh','scripts/package_release.py','scripts/verify_release.py','scripts/check_web.py']:
         paths.append(root/name)
     # Runtime counterfactuals use this local component cube, not raw satellites or live APIs.
     for name in ['manifest.json','model.json','components.npz']:

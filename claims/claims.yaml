@@ -142,7 +142,7 @@
       "text": "Two supplied Nepal GUNW products now provide measured native 20 m and 80 m HH coherence for August 19–31 and August 31–September 12 in both Nepal crops.",
       "status": "measured",
       "evidence_path": "web/public/cases/nepal_surface/expanded-v1/manifest.json",
-      "limitation": "Pairwise coherence is not displacement or a unique physical cause. Original Change DNA and Bangladesh retain their original unavailable coherence inputs. Reference-point, correction and unwrap checks are still required before LOS displacement.",
+      "limitation": "Pairwise coherence measures phase consistency. Line-of-sight displacement requires corrected phase, a stable reference and independent checks.",
       "values": [
         401,
         13,
@@ -276,11 +276,27 @@
       ]
     },
     {
+      "id": "TP-ATLAS-SCENARIOS",
+      "text": "The Atlas runs a buffered NASADEM stage screen with an assumed barrier opening in Bangladesh and an infinite-slope sensitivity calculation in Nepal. The stage screen can show observed NISAR HH below −19.5 dB and above −11.5 dB as display bins.",
+      "status": "implemented",
+      "evidence_path": "scripts/build_atlas_simulators.py",
+      "limitation": "The bins are not a crop classification or forecast. Barrier connectivity is not flood routing. Coherence and preliminary mapped impacts do not change soil cohesion or verify modeled slope failure.",
+      "values": [-19.5, -11.5]
+    },
+    {
+      "id": "TP-ATLAS-SAR-LABS",
+      "text": "TerraPulse compares a simulated HH/HV scattering state with the observed footprint and visit, traces a Jamuna radar-dark edge across recorded visits, and tests look geometry and wavelength sensitivity on Nepal terrain.",
+      "status": "implemented",
+      "evidence_path": "docs/ATLAS_SCENARIOS.md",
+      "limitation": "The simulated canopy input is not measured biomass or DpRVIc. The Jamuna corridor is not a bank forecast. The opposite look and C-band responses are hypothetical; observed coherence uses the admitted NISAR pair.",
+      "values": []
+    },
+    {
       "id": "TP-BD-RECORD",
       "text": "The ten-visit Bangladesh record recomputes HH/HV differences, dual-polarization signatures, observed occupancy, sensitivity, controls and fixed-footprint evidence. Only the August 5 nominal slot remains unobserved.",
       "status": "measured",
       "evidence_path": "reports/bangladesh_import_2026_11_03/native_validation.json",
-      "limitation": "Added dates improve temporal sampling; they do not establish water, erosion, habitat, causal or hazard accuracy. No new coherence, scientific rain or thermal observations were supplied.",
+      "limitation": "Added dates improve temporal sampling; they do not establish water, erosion, habitat, causal or hazard accuracy. The separate GUNW record provides paired coherence. Scientific rainfall and thermal data are separate evidence sources.",
       "values": [
         10,
         11,

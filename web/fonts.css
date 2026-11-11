@@ -1,0 +1,21 @@
+/* local-font:start */
+@font-face {
+  font-family:"TerraPulse Source";
+  src:url("./fonts/source-sans-3.woff2") format("woff2");
+  font-weight:400 800;
+  font-style:normal;
+  font-display:swap;
+}
+body {
+  --tp-font:"TerraPulse Source",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+/* local-font:end */
+@font-face {
+  font-family:"TerraPulse Numbers";
+  src:url("./fonts/jetbrains-mono.woff2") format("woff2");
+  font-weight:400 800;
+  font-style:normal;
+  font-display:swap;
+  unicode-range:U+0020,U+0025,U+002B-003A,U+003C,U+003E,U+00B0,U+00D7,U+2013,U+2192,U+2212;
+}
+body {--tp-mono:"TerraPulse Numbers",ui-monospace,"Cascadia Mono","DejaVu Sans Mono",monospace}

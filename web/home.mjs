@@ -14,7 +14,7 @@ window.addEventListener('hashchange',()=>fromHash(true));fromHash(true);
 $('hero-split').addEventListener('input',()=>{$('observation-wipe').style.setProperty('--split',$('hero-split').value+'%');});
 for(const id of ['hero-before','hero-after'])$(id).addEventListener('error',()=>{$('hero-image-status').hidden=false;});
 // Older shared studio URLs used the root path. Keep their selected Nepal view usable.
-if(new URLSearchParams(location.hash.slice(1)).get('case')==='nepal_surface')location.replace('/studio.html'+location.hash);
+if(!new URLSearchParams(location.hash.slice(1)).has('atlas') && new URLSearchParams(location.hash.slice(1)).get('case')==='nepal_surface')location.replace('/studio.html'+location.hash);
 // Counts come from accepted local manifests. Downloading files never implies readiness.
 try{
  const response=await fetch('/api/investigations');if(!response.ok)throw Error('Registry unavailable');const registry=await response.json();

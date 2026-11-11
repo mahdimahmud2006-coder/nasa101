@@ -10,7 +10,7 @@ const $=id=>document.getElementById(id);
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(v,d=2)=>v===null||v===undefined?'Unavailable':Number(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
 const day=value=>new Date(value).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric',timeZone:'UTC'});
-const state={registry:null,plan:null,calendars:null,calendar:null,dualpol:null,sensitivity:null,contextV2:null,evidence:null,selectedEvidence:null,references:null,interferometry:null,claims:null,drawing:false,polygon:[],country:'nepal',mode:'surface',case:null,data:null,index:0,layer:'hh',profile:null,profileIndex:0,marker:null,epoch:0,mapEpoch:0,probeEpoch:0};
+const state={registry:null,plan:null,calendars:null,calendar:null,dualpol:null,sensitivity:null,contextV2:null,evidence:null,selectedEvidence:null,references:null,coherence:[],expandedCases:[],claims:null,drawing:false,polygon:[],country:'nepal',mode:'surface',case:null,data:null,index:0,layer:'hh',profile:null,profileIndex:0,marker:null,epoch:0,mapEpoch:0,probeEpoch:0};
 let player=null,currentImage=null,firstImage=null;
 let restoringView=true,sharedFootprint='saved:0';
 const initialView=readView(window.location?.hash||'');
@@ -83,14 +83,29 @@ function renderDualpol(){
 }
 function renderProfile(){
  if(state.data&&state.profile){const row=state.profile.observations[state.index];$('map-summary').textContent=state.data.title+' · '+state.data.observations[state.index].timestamp+' · '+state.layer+' · '+state.profile.label+'. HH baseline '+(Number.isFinite(row?.hh_baseline_delta_db)?fmt(row.hh_baseline_delta_db)+' dB':'unavailable')+'; HV baseline '+(Number.isFinite(row?.hv_baseline_delta_db)?fmt(row.hv_baseline_delta_db)+' dB':'unavailable')+'. Causes remain unresolved.';}persistView();
- renderDualpol();$('reasoning-detail').innerHTML=reasoningHTML(state.selectedEvidence,state.index);$('interferometry-detail').innerHTML=interferometryHTML(state.interferometry,state.data.case_id);$('matched-reference-detail').innerHTML=referenceHTML(state.references,state.selectedEvidence,state.data.observations[state.index].observation_id);$('context-v2-detail').innerHTML=contextHTML(state.contextV2,state.index);
  const p=state.profile,obs=state.data.observations[state.index],row=p?.observations[state.index];
+ const selectedReference=referenceForSelection(state.references,state.selectedEvidence,obs.observation_id);
+ const selectedPair=state.coherence.find(pair=>pair.timestamps[1]===obs.timestamp);
+ const explanations=$('reasoning-detail');
+ const openCards=new Set(Array.from(explanations.querySelectorAll?.('[data-explanation][open]')??[],card=>card.dataset.explanation));
+ renderDualpol();
+ explanations.innerHTML=reasoningHTML(state.selectedEvidence,state.index,{
+  observation:obs,optical:selectedReference.result,pair:selectedPair,openCards,
+  otherOpen:explanations.querySelector?.('.explanation-more')?.open??false
+ });
+ const coherence = interferometryHTML(state.coherence,state.expandedCases.find(c=>c.case_id===state.data.case_id),
+   state.data.case_id,state.mode,sharedFootprint);
+ $('interferometry-panel').hidden=!coherence;
+ $('interferometry-detail').innerHTML=coherence;
+ $('matched-reference-detail').innerHTML=referenceHTML(state.references,state.selectedEvidence,obs.observation_id);
+ $('context-v2-detail').innerHTML=contextHTML(state.contextV2,state.index);
  $('profile-title').textContent=p?.label||'Select a footprint on the map.';
  $('profile-status').textContent=p?`${p.status==='MEASURED'?'Measured':'Insufficient common data'} · ${p.selection}`:'No selected-region interpretation is generated until a footprint is available.';
  $('measure-hh').textContent=row?.hh_baseline_delta_db===null||!row?'Unavailable':fmt(row.hh_baseline_delta_db)+' dB';
  $('measure-hv').textContent=row?.hv_baseline_delta_db===null||!row?'Unavailable':fmt(row.hv_baseline_delta_db)+' dB';
  $('measure-successive').textContent=row?.hh_successive_delta_db===null||!row?'Unavailable':fmt(row.hh_successive_delta_db)+' dB';
  $('successive-note').textContent=recordedIntervalLabel(intervalForVisit(state.calendar,state.index))||(state.index?'signed HH difference since prior visit':'no previous visit at baseline');
+ if(p?.boundary_area)$('profile-status').textContent+=' Drawn boundary: '+fmt(p.boundary_area.ellipsoidal_km2*100,3)+' ha on WGS84; common-valid pixel area is reported separately.';
  $('measure-area').textContent=p?fmt(p.measured_area_km2*100,2)+' ha':'—';$('measure-common').textContent=p?fmt(p.common_valid_fraction*100,1)+'% of fixed footprint':'fixed across channels and visits';
  $('measurement-conclusion').textContent=finding(p,state.index,state.data.thresholds.baseline_disturbance_db);
  $('export-dossier').disabled=!p;
@@ -122,7 +137,10 @@ function renderHypotheses(){
 }
 async function show(index){
  state.index=index;state.layer=layersForVisit(index).includes(state.layer)?state.layer:'hh';$('layer-select').value=state.layer;
- for(const option of $('layer-select').options)option.disabled=!layersForVisit(index).includes(option.value);
+ const available=layersForVisit(index);
+ for(const option of $('layer-select').options){
+  option.hidden=option.disabled=!available.includes(option.value);
+ }
  const obs=state.data.observations[index],token=++state.mapEpoch,caseEpoch=state.epoch;
  $('map-loading').hidden=false;$('investigation-map').setAttribute('aria-busy','true');
  const extension=isDualpolLayer(state.layer)&&state.dualpol,terrain=state.layer.startsWith('context_')&&state.contextV2,base=(state.case.record_base||'/cases/'+state.data.case_id)+(terrain?'/context-v2/':extension?'/dualpol-v1/':'/investigation/');
@@ -152,7 +170,7 @@ function methods(){
  $('methods-content').innerHTML=`<p>${esc(d.selection_note)}</p><h3>What the measurements mean</h3><pre>${esc(JSON.stringify(d.formulas,null,2))}</pre><h3>Illustrative thresholds</h3><pre>${esc(JSON.stringify(d.thresholds,null,2))}</pre><h3>Sources and exact granules</h3><p>NASA Earthdata / ASF DAAC · ${esc(d.collection)}. Pixel quality/window hashes are included in the dossier. Both channels here are L-band.</p><ul>${d.observations.map(o=>`<li>${esc(day(o.timestamp))}<br><code>${esc(o.source_granule_id)}</code></li>`).join('')}</ul><h3>Limits</h3><ul>${d.limitations.map(s=>`<li>${esc(s)}</li>`).join('')}</ul><h3>Provenance</h3><pre>${esc(JSON.stringify(d.provenance,null,2))}</pre><p><a href="https://nisar-docs.asf.alaska.edu/gcov/" target="_blank" rel="noreferrer">ASF GCOV guide ↗</a> · <a href="${esc(state.case.manifest_url)}" download>Full saved manifest ↓</a></p>`;
 }
 async function selectCase(id){
- const token=++state.epoch;++state.probeEpoch;++state.mapEpoch;player?.destroy();player=null;state.data=null;state.calendar=null;state.dualpol=null;state.sensitivity=null;state.contextV2=null;state.evidence=null;state.selectedEvidence=null;state.references=null;state.drawing=false;state.polygon=[];state.profile=null;state.marker=null;currentImage=null;firstImage=null;
+ const token=++state.epoch;++state.probeEpoch;++state.mapEpoch;player?.destroy();player=null;state.data=null;state.calendar=null;state.dualpol=null;state.sensitivity=null;state.contextV2=null;state.evidence=null;state.selectedEvidence=null;state.references=null;state.coherence=[];state.drawing=false;state.polygon=[];state.profile=null;state.marker=null;currentImage=null;firstImage=null;
  $('investigation-error').hidden=true;$('ready-workspace').hidden=true;$('pending').hidden=true;$('methods-open').disabled=true;
  const row=state.registry.cases.find(c=>c.case_id===id);state.case=row;$('case-select').value=id;$('case-question').textContent=row.question;
  $('case-state').textContent=row.status==='OBSERVATIONS_READY'?'SAVED OBSERVATIONS':'AWAITING DATA';
@@ -175,7 +193,16 @@ async function selectCase(id){
  if(token!==state.epoch)return;
  try{references=await json(recordBase+'/references-v1/manifest.json');}catch{}
  if(token!==state.epoch)return;
- state.contextV2=contextV2;state.references=references;
+ let pairs=[];
+ if(row.record_version==='bangladesh-v2'){
+  try{
+   const coherence=await json(recordBase+'/coherence-v1/manifest.json');
+   const dates=new Set(data.observations.map(visit=>visit.timestamp));
+   if(coherence.case_id===id) pairs=coherence.interferometry.filter(pair=>pair.timestamps.every(t=>dates.has(t)));
+  }catch{}
+ }
+ if(token!==state.epoch)return;
+ state.contextV2=contextV2;state.references=references;state.coherence=pairs;
  state.evidence=evidence?{...evidence,profiles:[...evidence.profiles,...(references?.profiles||[])]}:null;
  if(state.evidence){data.profiles=state.evidence.profiles.map(r=>r.profile);state.selectedEvidence=state.evidence.profiles[0]||null;}
  sharedFootprint='saved:0';state.data=data;state.calendar=calendarForCase(activeCalendar?{series:{active:activeCalendar}}:state.calendars,id,data.observations);state.layer='hh';state.index=data.observations.length-1;state.profileIndex=0;state.profile=data.profiles[0]||null;
@@ -241,13 +268,12 @@ $('investigation-map').addEventListener('keydown',e=>{
  if(e.key==='Enter'){e.preventDefault();if(state.drawing){state.polygon.push([p.col+.5,p.row+.5]);$('polygon-note').textContent=state.polygon.length+' vertices selected. Move with arrow keys; Enter adds a vertex. Tab to Inspect polygon when ready.';canvasDraw();}else inspect(p);}
 });
 $('methods-open').addEventListener('click',()=>$('methods-dialog').showModal());$('methods-close').addEventListener('click',()=>$('methods-dialog').close());
-$('export-dossier').addEventListener('click',()=>{if(state.data&&state.profile)download('terrapulse-'+state.data.case_id+'-'+state.data.observations[state.index].timestamp.slice(0,10)+'.json',JSON.stringify({...dossier(state.data,state.profile,state.index,state.layer),exploration_focus:state.mode,country:state.country,record_version:state.data.record_version||"original",acquisition_calendar:state.calendar,selected_interval:intervalForVisit(state.calendar,state.index),dualpol:dualpolDossier(state.dualpol,state.profile,state.index,state.sensitivity),case_context:state.contextV2,investigation_evidence:state.selectedEvidence?{...state.selectedEvidence,reference_status:referenceForSelection(state.references,state.selectedEvidence,state.data.observations[state.index].observation_id).status}:null,independent_reference:referenceForSelection(state.references,state.selectedEvidence,state.data.observations[state.index].observation_id),reference_status:referenceForSelection(state.references,state.selectedEvidence,state.data.observations[state.index].observation_id).status,interferometry_gate:state.interferometry?{...state.interferometry,records:state.interferometry.records.filter(r=>r.case_ids.includes(state.data.case_id))}:null,claims:state.claims},null,2),'application/json');});
+$('export-dossier').addEventListener('click',()=>{if(state.data&&state.profile)download('terrapulse-'+state.data.case_id+'-'+state.data.observations[state.index].timestamp.slice(0,10)+'.json',JSON.stringify({...dossier(state.data,state.profile,state.index,state.layer),exploration_focus:state.mode,country:state.country,record_version:state.data.record_version||"original",acquisition_calendar:state.calendar,selected_interval:intervalForVisit(state.calendar,state.index),dualpol:dualpolDossier(state.dualpol,state.profile,state.index,state.sensitivity),case_context:state.contextV2,investigation_evidence:state.selectedEvidence?{...state.selectedEvidence,reference_status:referenceForSelection(state.references,state.selectedEvidence,state.data.observations[state.index].observation_id).status}:null,independent_reference:referenceForSelection(state.references,state.selectedEvidence,state.data.observations[state.index].observation_id),reference_status:referenceForSelection(state.references,state.selectedEvidence,state.data.observations[state.index].observation_id).status,coherence_pairs:state.coherence,claims:state.claims},null,2),'application/json');});
 for(const [id,key] of [['download-list','granule_id'],['download-urls','url']])$(id).addEventListener('click',()=>download('terrapulse-bangladesh-'+key+'.txt',state.plan.granules.filter(g=>g.priority==='START_HERE').map(g=>g[key]).join('\n')+'\n'));
 window.addEventListener('pagehide',()=>player?.destroy());document.addEventListener('visibilitychange',()=>{if(document.hidden)player?.pause();});
 try{
  const [registry,plan]=await Promise.all([json('/api/investigations'),json('/cases/download-plan.json')]);state.registry=registry;state.plan=plan;
- try{state.interferometry=await json('/cases/interferometry-v2.json');}catch{state.interferometry=null;}
- try{const expanded=await json('/cases/expanded-v1.json');state.interferometry={...(state.interferometry||{records:[]}),expanded_cases:expanded.cases};}catch{}
+ try{state.expandedCases=(await json('/cases/expanded-v1.json')).cases;}catch{}
  try{state.claims=await json('/api/claims');}catch{state.claims=null;}$('claims-panel').innerHTML=claimsHTML(state.claims);const hero=state.claims?.claims.find(c=>c.id==='TP-PERSIST');if(hero){$('movement-detect').textContent=hero.text;$('movement-persist').textContent=hero.limitation;}
  try{state.calendars=await json('/cases/time-axis-v1/calendars.json');}catch{state.calendars=null;}
  try{state.missingGcov=await json('/cases/bangladesh-missing-gcov-v1.json');}catch{state.missingGcov=null;}

@@ -78,7 +78,7 @@ async function renderMap(){
     layer=thermalBase+(state.layer==='thermal'?state.scene.preview:state.scene.optical_preview);before=layer;terrain.opacity=.95;
     caption=state.layer==='thermal'?'USGS Landsat land surface temperature · cloud/QA screened, reported uncertainty ≤ 5 K. Thermal date is independent of radar.':'USGS Landsat surface reflectance · visible RGB context with cloud/QA gaps. Actual optical acquisition date shown.';
   }
-  if(state.layer==='terrain'){layer=floodBase+'relief.png';before=layer;terrain.opacity=0;caption='NASADEM historical elevation · true height mesh with display exaggeration. Modeled drainage is not surveyed river geometry.';}
+  if(state.layer==='terrain'){layer=floodBase+'relief.png';before=layer;terrain.opacity=0;caption='NASADEM historical elevation · sampled height mesh at 1× vertical scale. Modeled drainage is not surveyed river geometry.';}
   if(state.layer==='delta'&&scenario){layer=scenario.delta_preview_url;before=layer;terrain.opacity=.91;caption='Difference between counterfactual and same-date baseline susceptibility indices. This is not a map of future inundation.';}
   if(state.layer==='escalation'&&scenario){layer=scenario.preview_url;before=scenario.baseline_preview_url;terrain.split=Number($('compare-slider').value)/100;caption=`Applied ${fmt(scenario.parameters.rainfall_multiplier,2)}× over prior ${scenario.parameters.duration_hours} h · ${scenario.parameters.wetness} wetness. Left: unmodified rain, normal wetness assumed. Right: counterfactual.`;}
   await terrain.setImages(floodBase+'relief.png',layer,before);if(token!==state.generation)return;

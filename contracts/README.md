@@ -1,0 +1,11 @@
+# Atlas contracts
+
+The generated case catalog is `web/atlas-contract-records.json`. The accepted radar manifest digest identifies the observation record; the evidence version pins the full saved record, including derived displays and context. Grid IDs are case-scoped hashes of CRS, shape and affine. Saved footprint IDs are scoped to case, grid, source profile manifest and frozen footprint identity; they cannot be moved by choosing the same list index in another record. Point coordinates are zero-based row/column indices; polygon vertices are native pixel edge coordinates in column,row order. Geometry validity and actual native support remain server checks.
+
+The current shared URL is `#atlas=2&view=<URL-encoded atlas-view-v1 JSON>`. It rejects unresolved or mismatched IDs with a readable error. The baseline reference is fixed by this edition. A coherence pair has its own grid and endpoint IDs; it is not a footprint-level coherence measurement. Terrain and optical previews do not change the support of the radar measurement.
+
+An `atlas=1` URL is restored against the current catalog only when its recorded date, footprint ordinal, layer and context still resolve, then migrated to the versioned format. Older specialist routes keep their own URL formats and data; they are not silently reinterpreted as atlas selections. Existing dossier fields remain readable. New exports add `contract` and `measurementRecords`. See Part 16 for the later dossier import/replay interface; Part 2 restores the exported shared view.
+
+Typed records represent a finite measured value (including zero) or a null with one of `missing`, `out_of_scope`, or `invalid`. They retain source IDs, support grid/pixel count, method and interpretation. Native API responses include the case, source manifest/version, grid and requested coordinates; the atlas rejects responses with a mismatched binding or observation sequence.
+
+JSON Schemas define the interchange shapes. Runtime checks in `web/atlas-contract.mjs` additionally enforce cross-record bindings, bounds and allowed choices. Regenerate and check the identity catalog with `python3 scripts/build_atlas_contracts.py` and `make check-atlas-contract`; use `make atlas-portable` to embed the contracts in the no-install HTML.

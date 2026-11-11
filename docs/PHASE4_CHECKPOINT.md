@@ -46,4 +46,4 @@ Phase 6 metadata searches are also staged under `data/candidates/interferometry_
 
 From the repository directory, run `./run.sh`, then open `http://127.0.0.1:8000/investigations.html`. Restart an already-running server to load the new API handlers. Choose a case and saved footprint, inspect a map neighborhood, or use **Draw footprint** and **Inspect polygon**. The DNA, competing explanations, missing evidence, context and claims accompany the investigation and dossier export.
 
-Detailed implementation reports: [Phase 3](IMPLEMENTATION_12_CONTEXT_BD.md), [Phase 4](IMPLEMENTATION_13_EXPLANATION_FIT.md). The project-wide history remains in [PROJECT_PROGRESS.md](../PROJECT_PROGRESS.md).
+Detailed implementation reports: [Phase 3](IMPLEMENTATION_12_CONTEXT_BD.md), [Phase 4](IMPLEMENTATION_13_EXPLANATION_FIT.md).

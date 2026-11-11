@@ -69,7 +69,7 @@ def native_window(group, bounds, names):
     return arrays, window_transform(window, full), int(group['projection'][()]), window
 
 
-def gunw_header(path, accepted):
+def gunw_header(path, accepted, track=98, frame=16):
     with h5py.File(path, 'r') as f:
         g = f['science/LSAR/identification']
         fields = {k: native(g[k][()]) for k in ['granuleId', 'productType', 'productLevel', 'productVersion',
@@ -77,7 +77,7 @@ def gunw_header(path, accepted):
                   'referenceZeroDopplerStartTime', 'secondaryZeroDopplerStartTime',
                   'referenceHasInputDataException', 'secondaryHasInputDataException']}
         expected = {'productType': 'GUNW', 'productLevel': 'L2', 'productVersion': '1.0.11',
-                    'compositeReleaseId': 'P05023', 'trackNumber': 98, 'frameNumber': 16,
+                    'compositeReleaseId': 'P05023', 'trackNumber': track, 'frameNumber': frame,
                     'orbitPassDirection': 'Ascending', 'lookDirection': 'Left',
                     'referenceHasInputDataException': 0, 'secondaryHasInputDataException': 0}
         if any(fields[k] != v for k, v in expected.items()):
@@ -89,7 +89,8 @@ def gunw_header(path, accepted):
         slcs = [native(inputs[k][()]) for k in ['l1ReferenceSlcGranules', 'l1SecondarySlcGranules']]
         for values, t in zip(slcs, times):
             compact = parse_date(t).strftime('%Y%m%dT%H%M%S')
-            if len(values) != 1 or not all(s in values[0] for s in ['_098_A_016_4005_DHDH_A_', compact, '_P05023_']):
+            mode = f'_{track:03d}_A_{frame:03d}_4005_DHDH_A_'
+            if len(values) != 1 or not all(s in values[0] for s in [mode, compact, '_P05023_']):
                 raise ValueError('GUNW source RSLC identity/mode mismatch')
         parameters = f['science/LSAR/GUNW/metadata/processingInformation/parameters']
         for role in ['reference', 'secondary']:

@@ -5,7 +5,7 @@ from types import SimpleNamespace
 import pytest
 from src.api import app
 from src.compute import flood_engine
-from src.compute.flood_model import scenario_parameters
+from src.compute.flood_model import scenario_id,scenario_parameters
 from test_timeseries_api import LocalRequest,request
 
 
@@ -19,10 +19,19 @@ def local_flood(tmp_path,monkeypatch):
     (case/'thermal').mkdir();(case/'thermal/manifest.json').write_text(json.dumps({'case_id':'nepal_case_01','scenes':[]}))
     monkeypatch.setattr(app,'PUBLIC',public)
     class FakeEngine:
+        ids=['saved-date']
+
+        def __init__(self,config):
+            self.config=config
+            self.manifest={'inputs_sha256':'fixture-inputs'}
+
         def scenario(self,payload):
-            parameters=scenario_parameters(payload,['saved-date'])
-            return {'scenario_id':'flood-test','parameters':parameters,'confidence':None}
-    monkeypatch.setattr(flood_engine,'get_engine',lambda *args:FakeEngine())
+            parameters=scenario_parameters(payload,self.ids)
+            version=self.config['model_version']
+            inputs=self.manifest['inputs_sha256']
+            return {'case_id':'nepal_case_01','scenario_id':scenario_id(parameters,version,inputs),
+                    'parameters':parameters,'model_version':version,'inputs_sha256':inputs,'confidence':None}
+    monkeypatch.setattr(flood_engine,'get_engine',lambda *args:FakeEngine(manifest['model']))
     return record
 
 
@@ -52,6 +61,15 @@ def test_zone_contributions_and_confidence_are_separate(local_flood,endpoint):
 def test_scenario_post_serves_validated_request(local_flood):
     status,body=post('/api/cases/nepal_case_01/scenario/flood',{'rainfall_multiplier':2.,'duration_hours':48,'wetness':'wet'})
     assert status==200 and json.loads(body)['parameters']['rainfall_multiplier']==2
+
+
+def test_mismatched_cached_scenario_is_rejected(local_flood,monkeypatch):
+    engine=flood_engine.get_engine()
+    scenario=engine.scenario
+    monkeypatch.setattr(engine,'scenario',lambda parameters:{**scenario(parameters),'inputs_sha256':'stale'})
+    monkeypatch.setattr(flood_engine,'get_engine',lambda *args:engine)
+    status,_=post('/api/cases/nepal_case_01/scenario/flood',{})
+    assert status==503
 
 
 @pytest.mark.parametrize('payload',[{'rainfall_multiplier':4},{'duration_hours':5},{'historical_sensitivity':True},['bad']])

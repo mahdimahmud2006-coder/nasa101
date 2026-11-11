@@ -59,7 +59,8 @@ def terrain_derivatives(dem, resolution, relative_radius=510):
     return output
 
 
-def flow_metrics(dem, resolution, slope, drainage_threshold_m2=1e6, epsilon=.001):
+def flow_metrics(dem, resolution, slope, drainage_threshold_m2=1e6, epsilon=.001,
+                 hand_thresholds=(), *, include_hand=False):
     """Priority-flood fill and D8 routing with deterministic parent routing on flats.
 
     The buffered domain has open boundary outlets. Contributing area is limited to
@@ -119,8 +120,21 @@ def flow_metrics(dem, resolution, slope, drainage_threshold_m2=1e6, epsilon=.001
     output={'flow_accumulation':area,'drainage_distance':distance,'twi':twi,'fill_depth':fill_depth}
     for name,array in output.items():
         array[~valid]=np.nan;output[name]=array.astype('float32')
-    return output, {'processed_cells':processed,'outlet_count':int(boundary.sum()),
+    metadata = {'processed_cells':processed,'outlet_count':int(boundary.sum()),
                     'outlet_contributing_area_m2':float(area[boundary].sum()),
                     'valid_domain_area_m2':int(valid.sum())*resolution**2,
                     'maximum_fill_depth_m':float(np.nanmax(fill_depth)),
                     'drainage_cell_count':int(channel.sum())}
+    if hand_thresholds or include_hand:
+        from src.compute.atlas_terrain import height_above_drainage
+
+        valid_indices = np.flatnonzero(flat_valid)
+        downstream_first = valid_indices[np.argsort(order[valid_indices])]
+        metadata['hand_sensitivity'] = {}
+        thresholds = tuple(dict.fromkeys((*hand_thresholds, *((drainage_threshold_m2,) if include_hand else ()))))
+        for threshold in thresholds:
+            height, counts = height_above_drainage(dem,receiver,area,downstream_first,threshold)
+            metadata['hand_sensitivity'][str(threshold)] = counts
+            if include_hand and threshold == drainage_threshold_m2:
+                output['hand'] = height
+    return output, metadata

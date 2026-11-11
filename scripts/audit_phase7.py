@@ -42,7 +42,9 @@ def audit():
         text=(ROOT/f'web/{name}.html').read_text();p=Page();p.feed(text)
         missing=[id for id,labelled in p.controls if not labelled and id not in p.labels]
         assert not missing,(name,missing)
-        assert 'workspace-rail' in text and 'tp-skip' in text and 'aria-live="polite"' in text
+        navigation='atlas-shell' if name=='index' else 'workspace-rail'
+        assert navigation in text and 'tp-skip' in text
+        assert 'aria-live="polite"' in text or 'role="status"' in text
         pages[name]={'form_controls_with_source_labels':len(p.controls),'missing_form_labels':missing,'shared_navigation':True,'live_region_present':True}
         paths.add('/' if name=='index' else '/'+name+'.html');paths.update(p.assets)
     # Imported modules are served locally too. This is source inspection, not observed browser traffic.
@@ -52,7 +54,7 @@ def audit():
             assert not re.search(r'(?:fetch\(|from\s+|import\s*)[\s\'\"]*https?://',text),'External runtime import/fetch: '+path.name
     paths.update(['/api/project','/api/claims','/api/investigations','/cases/time-axis-v1/calendars.json','/cases/interferometry-v2.json'])
     # Include the active version's sidecars, not just the frozen original manifests.
-    from src.compute.active_records import registry_path,case_directory
+    from src.compute.active_records import registry_path
     paths.add('/cases/'+registry_path(ROOT).name)
     for row in json.loads(registry_path(ROOT).read_text())['cases']:
         if row.get('record_base'):
@@ -65,13 +67,7 @@ def audit():
         for path in sorted(paths):
             status,body=request(path);assert status==200,(path,status);assert body
             checked.append({'path':path,'status':status,'bytes':len(body)})
-        # Include the active version's sidecars, not just the frozen original manifests.
-    from src.compute.active_records import registry_path,case_directory
-    paths.add('/cases/'+registry_path(ROOT).name)
-    for row in json.loads(registry_path(ROOT).read_text())['cases']:
-        if row.get('record_base'):
-            base=row['record_base'];paths.update(base+'/'+name for name in ['investigation/manifest.json','dualpol-v1/manifest.json','dualpol-v1/sensitivity.json','context-v2/manifest.json','evidence-v2/manifest.json','references-v1/manifest.json','calendar.json'])
-    for case in ['nepal_surface','nepal_impact_corridor','jamuna_river','tanguar_wetland']:
+        for case in ['nepal_surface','nepal_impact_corridor','jamuna_river','tanguar_wetland']:
             path=f'/api/cases/{case}/investigation-polygon';status,body=request(path,{'vertices':[[900,900],[911,900],[911,911],[900,911]]})
             assert status==200;assert json.loads(body)['dna']['coherence'] is None;checked.append({'path':path,'status':status,'method':'POST'})
     colors=[('#d9e9ee','#101e29'),('#0b2527','#87e4d4'),('#e5eff1','#142a34'),('#a7bbc6','#111c26')]

@@ -19,11 +19,15 @@ export function focusCopy(country,mode){
 }
 export function navigationContext(path,search='',hash=''){
  const p=new URLSearchParams(hash.replace(/^#/,'')),view={case:p.get('case'),mode:p.get('mode')};
- const home=path==='/'||path==='/index.html',guide=path==='/guide.html';
+ const root=path==='/'||path==='/index.html',guide=path==='/guide.html';
+ const query=new URLSearchParams(search),lab=query.get('lab'),requestedCountry=query.get('country')||hash.slice(1);
+ const simulations=root&&(query.get('view')==='simulations'||['surge','bank','slope','orbit','radar'].includes(lab));
+ const landingCountry=root&&!simulations&&['bangladesh','nepal'].includes(requestedCountry)?requestedCountry:null;
+ const home=root&&!simulations&&!landingCountry;
  const {country,mode}=investigationContext(search,view);
- const group=home||guide?null:path==='/investigations.html'?country:'nepal';
+ const group=root?landingCountry:guide?null:path==='/investigations.html'?country:'nepal';
  const bd=[['River Memory','/investigations.html?country=bangladesh&mode=river','river'],['Wetland Pulse','/investigations.html?country=bangladesh&mode=wetland','wetland'],['Surface change','/investigations.html?country=bangladesh&mode=surface','surface']];
  const np=[['Surface & coherence','/expanded.html','/expanded.html'],['Evidence dossiers','/investigations.html?country=nepal&mode=surface','/investigations.html'],['Terrain & thermal','/studio.html','/studio.html'],['Change DNA & slopes','/change-lab.html','/change-lab.html'],['Timeline','/timeseries.html','/timeseries.html'],['Radar comparison','/comparison.html','/comparison.html']];
  const shared=readView(hash);
- return {home,guide,group,links:(group==='bangladesh'?bd:group==='nepal'?np:[]).map(([label,href,key])=>({label,href:group==='nepal'&&shared.case?.startsWith('nepal_')&&key!=='/expanded.html'?workspaceHref(key,shared):href,active:group==='bangladesh'?mode===key:path===key}))};
+ return {home,guide,simulations,group,links:(group==='bangladesh'?bd:group==='nepal'?np:[]).map(([label,href,key])=>({label,href:group==='nepal'&&shared.case?.startsWith('nepal_')&&key!=='/expanded.html'?workspaceHref(key,shared):href,active:!root&&(group==='bangladesh'?mode===key:path===key)}))};
 }

@@ -12,7 +12,7 @@ Investigations adds keyboard map cursor movement, Shift steps, Enter inspection/
 
 The release packager now includes current runtime rules, claims, reference design, scripts and shared modules. It writes a new dated archive, refuses overwriting an existing release, excludes raw granules/credentials, and streams every entry against the package manifest before accepting the archive. The original distribution remains frozen. [Portable instructions](../RELEASE_README.md) distinguish runtime integrity from full-source scientific reproduction, dependency installation from offline use, and estimated hardware from verified performance.
 
-[The three-minute storyboard](VIDEO_STORYBOARD.md) ties narration to ledger IDs. [The offline runbook](OFFLINE_REHEARSAL.md) describes the actual human rehearsal still required.
+[The offline runbook](OFFLINE_REHEARSAL.md) describes the actual human rehearsal still required.
 
 ## Verification
 

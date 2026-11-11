@@ -6,10 +6,13 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def ignored(path):return subprocess.run(['git','check-ignore','--no-index','-q',path],cwd=ROOT).returncode==0
 
-@pytest.mark.parametrize('name',['database/new/catalog.json','anything.HDF5','.venv-search/bin/python','web/public/cases/sample/map.tif','web/public/cases/sample/view.png','data/derived/cube.npz','dist/release.zip','output/report.pdf','runtime-downloads/part.zip','web/public/cases/sample/credentials.json','data/palettes/v1/.env','nested/.aws/credentials','.netrc'])
+@pytest.mark.parametrize('name',['database/new/catalog.json','anything.HDF5','.venv-search/bin/python','web/public/cases/sample/map.tif','web/public/cases/sample/view.png','data/derived/cube.npz','dist/release.zip','output/report.pdf','runtime-downloads/part.zip','web/public/cases/sample/credentials.json','data/palettes/v1/.env','nested/.aws/credentials','.netrc',
+    'docs/assets/snapshot.png','docs/reports/figure.PNG','docs/VIDEO_STORYBOARD.md','notes/handbook.PDF',
+    'ui-review/after/browser.json','web/public/cases/sample/secrets.json','data/context/service_account_dev.json',
+    'nested/.env.example','nested/.envrc','nested/.kube/config','infra/terraform.tfstate.backup'])
 def test_local_large_and_secret_files_are_ignored(name):assert ignored(name)
 
-@pytest.mark.parametrize('name',['README.md','.env.example','config.records.json','docs/assets/terrapulse-banner.svg','docs/assets/jamuna-radar-composite.png','web/public/cases/sample/manifest.json','data/context/source.json','data/palettes/v1/matplotlib_source'])
+@pytest.mark.parametrize('name',['README.md','.env.example','config.records.json','docs/CREDITS_UI.md','web/fonts/source-sans-3.woff2','web/public/cases/sample/manifest.json','data/context/source.json','data/palettes/v1/matplotlib_source','reports/development/part-03-imerg-catalog.json'])
 def test_source_provenance_and_curated_docs_remain_publishable(name):assert not ignored(name)
 
 @pytest.mark.parametrize('name',['../escape','/tmp/escape','.git/config','web/public/cases/../../../../escape','web/public/cases/file.py'])
