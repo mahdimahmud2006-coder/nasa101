@@ -54,6 +54,13 @@
 /docs/**/*.[jJ][pP][eE][gG]
 /docs/**/*.[wW][eE][bB][pP]
 /docs/**/*.[gG][iI][fF]
+# Reviewed README figures are the only image exceptions under docs.
+!/docs/readme-media/atlas-kathmandu.webp
+!/docs/readme-media/jamuna-hh.webp
+!/docs/readme-media/kathmandu-hh.webp
+!/docs/readme-media/rasuwa-coherence.webp
+!/docs/readme-media/simulations-river-surge.webp
+!/docs/readme-media/tanguar-hv.webp
 /docs/VIDEO_*.md
 /docs/SUBMISSION_BRIEF.md
 /docs/CHALLENGE_STRATEGY_*.md

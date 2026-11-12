@@ -41,7 +41,7 @@ The actual inventory includes all source datasets, not only these paths. Mask de
 
 Search [ASF Vertex](https://search.asf.alaska.edu/) for NISAR GCOV track 98/frame 16 on the dates above, selecting the matching granule IDs and product release, or find the collection in [NASA Earthdata Search](https://search.earthdata.nasa.gov/). Downloads may require an Earthdata account. Direct per-granule download URLs were not supplied and are not invented. Place the matching local files at the project root, or edit `config.json` to point to their original filenames and raw directory; then run the audit on that directory before processing.
 
-Demo assets are included locally so judging never depends on NASA availability. NASA data and Copernicus ancillary DEMs retain their own access/licensing terms; the Apache-2.0 code license does not relicense those products.
+Demo assets are included locally so judging never depends on NASA availability. NASA data and Copernicus ancillary DEMs retain their own access and licensing terms. The MIT license applies to the TerraPulse code.
 
 
 ## Added environmental and thermal sources

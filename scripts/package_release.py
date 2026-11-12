@@ -13,7 +13,13 @@ RELEASE_DOCS = (
     'AI_USE.md', 'ATLAS_ASSET_REVIEW.md', 'ATLAS_JUDGING_QUICKSTART.md',
     'ATLAS_RELEASE_RUNBOOK.md', 'ATLAS_SCENARIOS.md', 'ATLAS_VALIDATION_PROTOCOL.md',
     'CREDITS_UI.md', 'DATASETS.md', 'LIMITATIONS.md', 'METHODOLOGY.md',
-    'REPOSITORY_AND_RUNTIME.md', 'VALIDATION.md',
+    'README_EVIDENCE.md', 'REPOSITORY_AND_RUNTIME.md', 'VALIDATION.md',
+    'readme-media/atlas-kathmandu.webp',
+    'readme-media/jamuna-hh.webp',
+    'readme-media/kathmandu-hh.webp',
+    'readme-media/rasuwa-coherence.webp',
+    'readme-media/simulations-river-surge.webp',
+    'readme-media/tanguar-hv.webp',
 )
 
 

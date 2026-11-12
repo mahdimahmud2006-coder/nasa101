@@ -1,6 +1,6 @@
 # TerraPulse preview asset review
 
-The public candidate consists of TerraPulse's atlas interface, display derivatives, rounded terrain mesh samples and selected measurements from the four admitted records. The HH and HV derivatives are up to 1,100 pixels on the long edge. The release inventory maps each preview to its case, source record field and SHA-256. STAC records point to display derivatives. The code is Apache-2.0. Dataset terms and third-party notices apply independently.
+The public candidate consists of TerraPulse's atlas interface, display derivatives, rounded terrain mesh samples and selected measurements from the four admitted records. The HH and HV derivatives are up to 1,100 pixels on the long edge. The release inventory maps each preview to its case, source record field and SHA-256. STAC records point to display derivatives. TerraPulse code is distributed under MIT. Dataset terms and third-party notices apply independently.
 
 | Included material | Source and basis |
 | --- | --- |
