@@ -1,8 +1,8 @@
 # TerraPulse local judging package
 
-The processed runtime release is dated 4 November 2026. For a checkout of the current source, the [standalone Atlas](README.md#open-the-atlas) is the quickest way to open the project.
+The processed runtime release is dated 4 November 2026. For a checkout of the current source, the [standalone Atlas](README.md#offline-atlas-for-judges) is the quickest way to open the project.
 
-**Cloned from GitHub?** Restore the processed data first with `python3 scripts/fetch_runtime.py` (or `py -3 scripts\fetch_runtime.py` on Windows). This repository and its runtime release are private; authorized users need GitHub CLI authentication. Then follow the environment/server steps below. A source clone does not contain `RELEASE_MANIFEST.json`; use `scripts/fetch_runtime.py --verify` for its data check. The `verify_release.py` command below applies to a complete standalone judging archive.
+**Cloned from GitHub?** Restore the processed data first with `python3 scripts/fetch_runtime.py` (or `py -3 scripts\fetch_runtime.py` on Windows). See the [public runtime download and setup instructions](docs/REPOSITORY_AND_RUNTIME.md#runtime-installation) for direct downloads and the additional inputs required by the current source. After creating the environment and installing dependencies, run `make check-ready` on Linux or macOS or `python -m src.api.readiness` with the virtual environment active on Windows. Use `scripts/fetch_runtime.py --verify` to check the release data. The `verify_release.py` command below applies to the complete local judging archive.
 
 ## Start on Linux or macOS
 

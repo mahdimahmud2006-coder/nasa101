@@ -4,7 +4,7 @@
 
 Built by **Team DevAtMad** for the **2026 NASA International Space Apps Challenge**, under **Dancing with the SARs**. The challenge asks teams to use NISAR radar observations to track surface change and communicate what they find through an interactive application. [NASA Space Apps 2026](https://www.spaceappschallenge.org/2026/) · [Challenge statement](https://hackathlone.com/challenges/dancing-with-the-sars)
 
-[Explore the four cases](#four-investigation-cases) · [Run TerraPulse](#how-to-use-terrapulse) · [See the measurements](#performance-and-verification) · [Read the methods](#how-terrapulse-calculates-change)
+[Run TerraPulse for judging](#how-to-use-terrapulse) · [Explore the four cases](#four-investigation-cases) · [See the measurements](#performance-and-verification) · [Read the methods](#how-terrapulse-calculates-change)
 
 `NISAR` `SAR` `Python` `JavaScript` `HTML` `CSS` `Canvas` `NumPy` `SciPy` `Rasterio` `GDAL` `h5py` `PyProj` `Shapely` `PyArrow` `STAC` `pytest` `Node.js` `MIT`
 
@@ -150,26 +150,26 @@ The following images are actual NISAR display derivatives. Their dates, radar ch
 
 ## How to use TerraPulse
 
-### Offline Atlas from the source repository
+### Offline Atlas for judges
 
-Clone with authorized access to the private repository. The standalone build uses Python’s standard library and embeds the four saved study windows. The browser can then open the file without a server or an internet connection.
+Build a single HTML file with Python and open it in a desktop browser. The public source includes the saved observations for all four study windows. Setup requires no GitHub sign-in, Earthdata account, raw HDF5 granules or runtime archives. After building, you can open the Atlas offline without a server.
 
 ```bash
-gh auth login
-gh auth setup-git
 git clone --depth 1 https://github.com/mahdimahmud2006-coder/nasa101.git
 cd nasa101
 python3 scripts/package_atlas.py
 ```
 
+You can also extract the [source ZIP](https://github.com/mahdimahmud2006-coder/nasa101/archive/refs/heads/main.zip), open a terminal in the extracted folder and run the Python command above. On Windows, use `py -3 scripts/package_atlas.py`.
+
 1. Open `output/atlas/TerraPulse.html` in a desktop browser.
-2. Choose **Tour → Start guided story**, or select a study window directly. Try **Kathmandu → 12 September 2026** for the worked case.
-3. Use the timeline and layer controls. Open **Context**, **Quality** or **Text** to inspect the dates, validity and evidence behind the map.
-4. Choose **Export → Investigation dossier**. Use **Reopen dossier** to restore and verify the saved investigation in a compatible edition.
+2. Choose **Tour → Start guided story** and open the Kathmandu chapter for **12 September 2026**. On the saved 1.99 ha footprint, HH rose **0.45 dB** since the preceding visit and was still **7.08 dB below** the 19 August reference.
+3. Use the timeline and layer controls. Open **Context**, **Quality** or **Text** to inspect the dates, valid pixels and evidence behind the map.
+4. Choose **Export → Investigation dossier**. Use **Reopen dossier** to restore and verify the saved investigation.
 
-### Static judging bundle
+### Static judging bundle, if supplied separately
 
-Extract the prepared bundle, open its `START_HERE.md`, then serve the `static/` folder from the extracted directory. This edition includes the five simulation tools when built with their grids. NASA Worldview links use the internet for external browsing. [Judging quickstart](docs/ATLAS_JUDGING_QUICKSTART.md)
+If you received a prepared judging bundle, extract it and open `START_HERE.md`. Serve its `static/` folder to use the simulations included with that build. External NASA Worldview links require internet access. [Judging quickstart](docs/ATLAS_JUDGING_QUICKSTART.md)
 
 ```bash
 python3 -m http.server 8017 --bind 127.0.0.1 --directory static
@@ -179,7 +179,7 @@ Open [the static Atlas on port 8017](http://127.0.0.1:8017/).
 
 ### Full local edition
 
-Use **Python 3.12+** and a desktop browser. The full edition adds native measurements and specialist workspaces. Restore the processed assets from the existing GitHub release, then restore or build the later Bangladesh coherence and simulation inputs before starting the server. [Runtime inputs and distribution](docs/REPOSITORY_AND_RUNTIME.md) · [Windows and local setup](RELEASE_README.md)
+Use **Python 3.12+** and a desktop browser. The full edition adds native measurements and specialist workspaces. Restore the processed assets from the public runtime release (about 2.73 GB for the core archives), then restore or build the later Bangladesh coherence and simulation inputs before starting the server. [Runtime release](https://github.com/mahdimahmud2006-coder/nasa101/releases/tag/runtime-20261104) · [Runtime inputs and distribution](docs/REPOSITORY_AND_RUNTIME.md) · [Windows and local setup](RELEASE_README.md)
 
 ```bash
 python3 scripts/fetch_runtime.py
@@ -205,7 +205,7 @@ Open [the local Atlas on port 8000](http://127.0.0.1:8000/) or the address print
 | --- | --- |
 | **Time to usable comparison** | **531.4 ms median**, **517.1–577.9 ms** across five cache-disabled desktop runs of static release `cb8a034621aa7903`. Chrome headless ran at 1440 × 1000 against the local preview server with 20 Mbps downstream pacing and 100 ms response delay. The marker waits for the selected and reference frames to decode. |
 | **Initial static payload** | **474,928 bytes** of compressed response bodies in the release’s first-view inventory. The other cases and scenario inputs load when opened. |
-| **Standalone download** | **8,038,780 bytes** for the self-contained Atlas from that release. |
+| **Standalone HTML size** | **8,038,780 bytes** for the self-contained Atlas from that release. |
 | **Automated verification** | Application revision `646394c` recorded **348** passing Python cases with its processed runtime. The JavaScript suite and offline dossier, playback and zero-network checks also passed on the staged source. |
 
 These timings describe the local test profile and build, with latency and throughput conditions recorded alongside the individual runs. [Measurements and image provenance](docs/README_EVIDENCE.md)

@@ -4,16 +4,16 @@ TerraPulse helps you compare dated radar observations on the same footprint and 
 
 ## Start offline
 
-Open `TerraPulse.html` in a desktop browser. You can open the four saved study windows, compare radar visits, use the guided chapters, and verify saved dossiers without a server.
+Open `TerraPulse.html` in a desktop browser if you received a judging bundle. From the public source checkout, run `python3 scripts/package_atlas.py` and open `output/atlas/TerraPulse.html`. Both give you the four saved study windows, recorded visits, guided chapters and dossier verification without a server.
 
-1. Select **Kathmandu**, or start a guided story and choose chapter 3.
+1. Choose **Tour → Start guided story** and open chapter 3, **Kathmandu**.
 2. Choose **12 September 2026** in the timeline. On the tracked 1.99 ha footprint, HH increased **+0.45 dB** from the preceding visit while remaining **−7.08 dB** below the fixed reference. The comparisons use **199 paired-valid pixels**.
-3. Choose **Reopen dossier**, select `examples/Kathmandu-dossier.json`, then choose **Reopen and verify**. A successful verification restores the saved footprint and view.
+3. If you have the bundle, use its `examples/Kathmandu-dossier.json`. From the source build, use **Export → Investigation dossier** after step 2. Choose **Reopen dossier**, select the JSON file, then choose **Reopen and verify** to restore the saved footprint and view.
 4. Choose **Tour → 30-second spotlight** for a timed introduction.
 
 ## Run the static preview and simulations
 
-Extract the archive into one folder. From that folder, run:
+This section applies to the separately prepared static bundle. Extract it into one folder, then serve its `static/` directory with the following command.
 
 ```bash
 python3 -m http.server 8017 --bind 127.0.0.1 --directory static
